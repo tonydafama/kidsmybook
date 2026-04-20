@@ -1,0 +1,12 @@
+{
+  "source_message_id": "<CA+PROC-demo-20260417-001@outlook.office365.com>",
+  "sender_name": "Heidi Kwok",
+  "email_subject": "Procurement update: Uniform quotation pending DH signature",
+  "attachment_name": "uniform_pr_v5.xlsx",
+  "status": "new_instruction",
+  "notes": "Procurement document requires DH sign-off today.",
+  "target_owner_name": "Heidi Kwok",
+  "source_received_at": "2026-04-17T11:00:00+08:00",
+  "create_reminder": true,
+  "auto_create_task": true
+}

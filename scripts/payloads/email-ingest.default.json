@@ -1,0 +1,12 @@
+{
+  "source_message_id": "<CA+IJSO-demo-20260417-001@outlook.office365.com>",
+  "sender_name": "Rachel Zhang",
+  "email_subject": "IJSO handover updates and payment follow-up",
+  "attachment_name": "Handover Note_Rachel_as of 20260413.xlsx",
+  "status": "new_instruction",
+  "notes": "Please review handover and update progress before Friday.",
+  "target_owner_name": "Ann Tang",
+  "source_received_at": "2026-04-17T09:15:00+08:00",
+  "create_reminder": true,
+  "auto_create_task": true
+}
