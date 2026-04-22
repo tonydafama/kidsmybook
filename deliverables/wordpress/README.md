@@ -14,7 +14,13 @@
 - `redirects-htaccess-snippet.txt`  
   Marketing redirect shortcuts.
 - `page-copy-blocks.md`  
-  Copy blocks for `/apply`, `/deposit`, FAQ.
+  Copy blocks for `/apply`, `/deposit`, `/thank-you`, `/privacy`, FAQ.
+- `faq-elementor-block.html`  
+  Single paste-ready FAQ HTML block for Elementor text widget.
+- `search-console-verification-snippet.txt`  
+  One-line meta verification snippet template for Google Search Console.
+- `woocommerce-deposit-product-copy.md`  
+  Ready-to-paste product copy for HKD 500 WooCommerce deposit product.
 
 ## Suggested import order
 

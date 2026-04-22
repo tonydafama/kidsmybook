@@ -49,6 +49,16 @@
 6. Search Console 驗證與 sitemap 提交
 7. 手機端最終 QA（付款、表單、WhatsApp、頁面速度）
 
+## Monica 最新同步（今晚本機可先完成）
+
+1. 補齊 `/thank-you` 頁文案（已完成，見 `deliverables/wordpress/page-copy-blocks.md`）
+2. 補齊 `/privacy` 頁文案（已完成，見 `deliverables/wordpress/page-copy-blocks.md`）
+3. 準備可直接貼 Elementor 的 FAQ HTML 區塊（已完成，見 `deliverables/wordpress/faq-elementor-block.html`）
+4. 維持 HKD 500 訂金門檻與感謝頁導向（已在交付文案與程式骨架標註）
+5. 風險提醒：不得公開舊客可識別姓名、學校、媒體定位資訊（已在文案規範落地）
+6. Search Console 驗證 meta snippet 模板（已完成，見 `deliverables/wordpress/search-console-verification-snippet.txt`）
+7. WooCommerce HKD 500 訂金商品完整文案（已完成，見 `deliverables/wordpress/woocommerce-deposit-product-copy.md`）
+
 ## 隱私規則（強制）
 
 - 不可公開舊客戶可識別姓名

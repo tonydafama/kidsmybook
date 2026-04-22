@@ -1,0 +1,8 @@
+<!-- Paste into <head> before closing </head> -->
+<meta name="google-site-verification" content="REPLACE_WITH_YOUR_TOKEN" />
+
+Instructions:
+1) Get token from Google Search Console domain verification flow.
+2) Replace REPLACE_WITH_YOUR_TOKEN with the exact token value.
+3) Paste into theme header output (child theme or header injection plugin).
+4) Keep token active until verification is confirmed.
