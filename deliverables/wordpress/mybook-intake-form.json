@@ -1,0 +1,57 @@
+{
+  "form_name": "MyBook Intake Form",
+  "description": "Apply intake for high-potential family screening",
+  "fields": [
+    {
+      "name": "child_name",
+      "label": "Child Name",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "child_age",
+      "label": "Child Age",
+      "type": "select",
+      "required": true,
+      "options": ["6", "7", "8", "9", "10", "11", "12", "13", "14"]
+    },
+    {
+      "name": "interest_topic",
+      "label": "Interest Topic",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "school_type",
+      "label": "School Type",
+      "type": "select",
+      "required": true,
+      "options": ["International", "Bilingual", "Local", "Other"]
+    },
+    {
+      "name": "preferred_language",
+      "label": "Preferred Language",
+      "type": "select",
+      "required": true,
+      "options": ["Traditional Chinese", "English", "Bilingual"]
+    },
+    {
+      "name": "parent_whatsapp",
+      "label": "Parent WhatsApp",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "referral_source",
+      "label": "How did you hear about us?",
+      "type": "select",
+      "required": true,
+      "options": ["Friend", "WhatsApp", "Xiaohongshu", "Google", "Other"]
+    }
+  ],
+  "notifications": {
+    "enabled": true,
+    "to": "YOUR_EMAIL@example.com",
+    "subject": "[MyBook] New Apply Intake Submission"
+  }
+}

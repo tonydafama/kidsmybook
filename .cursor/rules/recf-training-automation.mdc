@@ -1,0 +1,39 @@
+---
+description: RECF Training (training.recf.org) 自動化／擷取測驗題目前的流程與限制
+alwaysApply: true
+---
+
+# RECF Training 工作流程（持久規則）
+
+使用 Chrome DevTools MCP 或類似方式操作 `https://training.recf.org` 時，**必須**遵守以下順序與判斷：
+
+## 1. 先完成 Read and Learn
+
+- 在處理 **Knowledge Check**／`mod/quiz` 之前，先處理該課程 **Read and Learn** 區塊。
+- 將其中標示為 **To do** 的活動完成（依平台：開啟內容、滿足完成條件、標記完成等）。
+
+## 2. 遇到 Restricted 時
+
+- 若測驗或活動顯示 **Restricted**（或訊息表示需先完成其他內容／前序課程）：
+  - **不要**繼續擷取該測驗題目。
+  - **回到同一門課**（或畫面提示的計畫／前序課程），補齊 **Read and Learn** 與其他前置。
+  - 完成後 **重新開啟** Knowledge Check／測驗頁，確認已不再 Restricted，再繼續後續步驟。
+
+## 3. 與「是否擷取題目」的搭配
+
+- **已通過**（已達 Grade to pass、不需再考）：預設不重複擷取；若使用者**明確要求**匯出全部章節題目備考，可改從 **Review**（`review.php?…&showall=1`）擷取，避免遺漏。
+- **未完成或未通過**，且**非 Restricted**：可協助擷取題目（僅供使用者個人複習；遵守平台條款）。
+- 個人複習稿若存於本 repo，放在 `docs/study/`（此目錄已列入 `.gitignore`，不進版控）。
+
+## 4. 進行中測驗：先 Continue，再逐頁 Next
+
+在 `mod/quiz/view.php` 若出現 **Continue your attempt**（表單 POST 至 `mod/quiz/startattempt.php`）：
+
+1. **先**完成「繼續作答」：在瀏覽器內提交該按鈕／表單，或依頁面上的 `sesskey` 與 `cmid` 以同等 POST 進入 `attempt.php?attempt=…&cmid=…`。
+2. 進入試卷後，**不要只抓第一頁**：應依序 **Next page**（或以 `attempt.php` 加上 `&page=1`、`&page=2`…）**逐頁**讀取，直到沒有新題或已到卷末。
+3. 自動化時須偵測**重複題組或空頁**後停止，避免在末頁之後空轉。
+
+## 5. 技術備註
+
+- 以 `fetch` 抓課程頁 HTML 常無法取得 `mod/quiz` 連結；需在瀏覽器內開啟課程並展開課程大綱（course index）從 DOM 收集 `cmid`。
+- 登入需由使用者在本機完成；不代填密碼。

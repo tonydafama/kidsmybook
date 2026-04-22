@@ -1,0 +1,5 @@
+RewriteEngine On
+
+# MyBook campaign shortcuts
+RewriteRule ^book/?$ /apply/ [R=301,L]
+RewriteRule ^pay/?$ /deposit/ [R=301,L]

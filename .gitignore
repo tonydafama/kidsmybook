@@ -8,3 +8,7 @@ dist/
 .tools/
 .reference-manus/
 reports/
+.vercel
+
+# Personal study notes (not for version control)
+docs/study/

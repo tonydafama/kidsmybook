@@ -56,6 +56,7 @@ Edge Function 已提供：`supabase/functions/email-ingest/index.ts`
 
 完整 Outlook/middleware 對接規格見：`docs/outlook-integration.md`
 安全與部署建議見：`docs/security-and-hosting-hkage.md`
+RECF Event Partner 訓練／認證流程整理見：`docs/event-partner-training-onboarding.md`
 
 本機快速測試：
 
