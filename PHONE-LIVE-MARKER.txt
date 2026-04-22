@@ -1,0 +1,2 @@
+Phone visible marker at 2026-04-22 10:04:46
+branch: cursor/live-sync-master
