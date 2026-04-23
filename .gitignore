@@ -10,5 +10,10 @@ dist/
 reports/
 .vercel
 
+# Local deploy artifacts / scratch screenshots (do not sync)
+kidsmybook-app-upload.zip
+/t2.png
+/t3.png
+
 # Personal study notes (not for version control)
 docs/study/

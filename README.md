@@ -28,8 +28,8 @@ npm run dev
 5. `.env` 設定：
    - `VITE_SUPABASE_URL`
    - `VITE_SUPABASE_ANON_KEY`
-6. 後端 function secrets 建議加入：
-   - `ALLOWED_NOTIFY_HOSTS`（例如 `outlook.office.com,logic.azure.com`）
+6. 後端 function secrets（選用）：
+   - `ALLOWED_NOTIFY_HOSTS`：逗號分隔 host；**留空或不設** = 允許任意 HTTPS webhook；有設值則只允許列出的 host（例如 `outlook.office.com,logic.azure.com`）
 
 ## 3) Email ingest pipeline
 
@@ -96,7 +96,7 @@ EMAIL_INGEST_PAYLOAD=./scripts/payloads/email-ingest.procurement.json npm run te
 
 - `manager`：
   - 可讀寫所有 tasks / email_signals / reminders / email_task_rules
-  - 必須同時在 `manager_whitelist` 才有 manager 管理權限
+  - `team_members.role = 'manager'` 即有 manager 管理權限（`manager_whitelist` 表仍保留，可選用於紀錄／擴充）
   - 可切換 manager/member 視角
   - 可上載 CSV 匯入
 - `member`：
@@ -106,8 +106,7 @@ EMAIL_INGEST_PAYLOAD=./scripts/payloads/email-ingest.procurement.json npm run te
 ## 9) 機構安全強化（已實作）
 
 - `team_members` 限制 `@hkage.edu.hk` 網域
-- `manager_whitelist` 白名單控制 manager 寫入權限
-- `notify-dispatch` 只允許 HTTPS，並可用 `ALLOWED_NOTIFY_HOSTS` host allowlist
+- manager 寫入權限：以 `team_members.role = 'manager'` 為準；未設定 `ALLOWED_NOTIFY_HOSTS` 時，`notify-dispatch` 允許任意 **HTTPS** webhook 目標
 - 通知內容會做基本敏感資訊遮罩（email / 長數字 ID）
 
 ## 8) Owner mapping 模板

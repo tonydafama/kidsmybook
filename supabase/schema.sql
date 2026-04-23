@@ -112,6 +112,7 @@ begin
 end;
 $$;
 
+-- Any team_member with role = manager is treated as elevated (no separate table allowlist).
 create or replace function public.is_manager_whitelisted()
 returns boolean
 language sql
@@ -120,7 +121,6 @@ as $$
   select exists (
     select 1
     from public.team_members tm
-    join public.manager_whitelist mw on lower(mw.email) = lower(tm.email)
     where tm.email = auth.jwt() ->> 'email'
       and tm.role = 'manager'
   );
