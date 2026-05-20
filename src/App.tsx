@@ -44,7 +44,7 @@ const serviceItems: ServiceItem[] = [
     icon: "Book",
     cardArt: "services/service-author-programme.png",
     desc: "由興趣出發，1 對 1 指導完成正式出版成果。",
-    price: "From HKD XX,XXX",
+    price: "私人報價",
     detail: "包含出版指導、雙語支援、線上音頻整合與 ISBN 出版選項。",
     audience: ["孩子有明確興趣主題", "家庭希望建立長期成果", "需要雙語學習輸出"],
     process: ["Discovery 訪談", "內容創作引導", "編輯與設計", "成書與交付"],
@@ -55,7 +55,7 @@ const serviceItems: ServiceItem[] = [
     icon: "Celebration",
     cardArt: "services/service-book-launch.png",
     desc: "為孩子作品打造有儀式感的新書發布會。",
-    price: "From HKD XX,XXX",
+    price: "私人報價",
     detail: "涵蓋場地策劃、流程設計、嘉賓邀請、現場佈置與攝影紀錄。",
     audience: ["孩子準備公開發表作品", "家庭重視儀式感與社交影響", "需要完整活動執行"],
     process: ["活動定位", "流程與嘉賓規劃", "現場執行", "活動後回顧素材交付"],
@@ -66,7 +66,7 @@ const serviceItems: ServiceItem[] = [
     icon: "Gallery",
     cardArt: "services/service-exhibition.png",
     desc: "讓創作被看見，從作品到空間完整呈現。",
-    price: "From HKD XX,XXX",
+    price: "私人報價",
     detail: "支援攝影展/插畫展、展板設計、場地協調與開幕活動規劃。",
     audience: ["孩子有系列作品", "希望成果被更多人看見", "需要展覽型履歷亮點"],
     process: ["展覽主題策展", "展板與空間設計", "場地協調", "開幕與導覽"],
@@ -77,7 +77,7 @@ const serviceItems: ServiceItem[] = [
     icon: "Newspaper",
     cardArt: "services/service-media-pr.png",
     desc: "把孩子故事轉化成可被報導的內容。",
-    price: "Custom quote",
+    price: "私人報價",
     detail: "包括新聞稿、媒體邀請、報導協調與線上傳播策略。",
     audience: ["希望建立外部公信力", "需要媒體曝光", "準備學校/升學作品敘事"],
     process: ["媒體角度定位", "新聞稿與素材包", "媒體邀請溝通", "報導追蹤整理"],
@@ -88,7 +88,7 @@ const serviceItems: ServiceItem[] = [
     icon: "Video",
     cardArt: "services/service-live-streaming.png",
     desc: "活動當日即時直播與線上互動，擴大影響力。",
-    price: "From HKD X,XXX",
+    price: "私人報價",
     detail: "提供直播導播、即時分享、互動監看與永久記錄素材。",
     audience: ["有外地親友需要線上參與", "重視活動擴散", "需要可重播紀錄"],
     process: ["直播規劃", "現場導播", "線上互動監看", "回放與剪輯交付"],
@@ -99,7 +99,7 @@ const serviceItems: ServiceItem[] = [
     icon: "Folder",
     cardArt: "services/service-portfolio-package.png",
     desc: "把完整成果整理成升學可用的作品集。",
-    price: "From HKD X,XXX",
+    price: "私人報價",
     detail: "整合出版、活動、媒體素材，支援多格式輸出。",
     audience: ["有升學申請需求", "需要完整成就證據", "希望統一對外展示素材"],
     process: ["素材整合", "敘事與版面編排", "多格式輸出", "申請版本微調"],
@@ -151,6 +151,64 @@ const JOURNEY_STEPS: JourneyStep[] = [
     deliverable: "報導 · 剪報 · 作品集",
   },
 ];
+
+const PROGRAMME_PILLARS = [
+  { title: "Author Programme", note: "1 對 1 出版共創 · 成書與作者身份" },
+  { title: "Book Launch", note: "新書發布會 · 儀式與現場紀錄" },
+  { title: "Exhibition", note: "展覽策展 · 作品被公開看見" },
+  { title: "Media & PR", note: "媒體報導 · 公信力與敘事" },
+  { title: "Live Streaming", note: "線上擴散 · 永久活動素材" },
+  { title: "Portfolio", note: "升學作品集 · 完整成就證據" },
+];
+
+const CASE_PROOF_TILES = [
+  { src: "services/service-author-programme.png", label: "正式出版成書" },
+  { src: "services/service-book-launch.png", label: "新書發布會" },
+  { src: "services/service-exhibition.png", label: "展覽呈現" },
+  { src: "services/service-media-pr.png", label: "媒體報導" },
+];
+
+const MEDIA_OUTLETS = [
+  { name: "深圳特區報", tag: "平面報導" },
+  { name: "南方+", tag: "數位媒體" },
+  { name: "活動直播", tag: "3,569+ 線上觀看" },
+];
+
+function FullProgrammeSection() {
+  const whatsapp = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
+    "你好，我想了解 MyBook 高訂兒童成就出版全案（私人報價），請安排顧問面談。"
+  )}`;
+
+  return (
+    <section className="panel programme-panel" id="programme">
+      <div className="section-head">
+        <span className="section-kicker">Bespoke Programme</span>
+        <h3>高訂兒童成就出版全案</h3>
+      </div>
+      <p className="programme-lede">
+        不是單一服務加總，而是一套<strong>從興趣到被世界看見</strong>的整合方案：出版、發布、展覽、媒體與作品集，由同一團隊策劃與交付。典型週期約{" "}
+        <strong>9–12 個月</strong>（視孩子節奏調整）。
+      </p>
+      <p className="programme-quote-note">全案為私人報價 · 顧問面談後提供正式方案與合約（網站不列價，保障客製深度）。</p>
+      <ul className="programme-pillar-grid">
+        {PROGRAMME_PILLARS.map((item) => (
+          <li key={item.title} className="programme-pillar">
+            <h4>{item.title}</h4>
+            <p>{item.note}</p>
+          </li>
+        ))}
+      </ul>
+      <div className="programme-cta-row">
+        <a className="btn primary" href={appHref("/#ai-book-lab")}>
+          先為孩子生成封面預覽
+        </a>
+        <a className="btn ghost" href={whatsapp} target="_blank" rel="noreferrer">
+          WhatsApp 預約全案諮詢
+        </a>
+      </div>
+    </section>
+  );
+}
 
 function JourneyPathSection() {
   const whatsapp = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
@@ -216,19 +274,22 @@ function HomePage() {
           <h1>{BRAND_TITLE}</h1>
           <p className="lead">出版 · 發布會 · 展覽 · 媒體報導 · 一站式全案服務</p>
           <p className="lead en">{BRAND_EN}</p>
-          <div className="cta-row">
+          <div className="cta-row hero-cta-row">
             <a className="btn primary" href={appHref("/#ai-book-lab")}>
               生成孩子專屬封面
             </a>
             <a className="btn ghost" href={whatsapp} target="_blank" rel="noreferrer">
               預約私人諮詢
             </a>
-            <a className="btn ghost" href={appHref("/#services")}>
-              查看服務
-            </a>
+          </div>
+          <p className="hero-secondary-links">
+            <a href={appHref("/#programme")}>了解全案內容</a>
+            <span aria-hidden>·</span>
+            <a href={appHref("/#case-studies")}>查看案例</a>
+            <span aria-hidden>·</span>
             <button
-              className="btn ghost"
               type="button"
+              className="hero-link-btn"
               onClick={async () => {
                 await navigator.clipboard?.writeText(WECHAT_ID);
                 setWechatCopied(true);
@@ -237,10 +298,18 @@ function HomePage() {
             >
               {wechatCopied ? "已複製 WeChat" : "複製 WeChat"}
             </button>
-          </div>
+          </p>
         </div>
         <div className="hero-visual hero-visual--glass">
           <div className="hero-visual-shine" aria-hidden />
+          <div className="hero-showcase-img">
+            <img
+              src={serviceCardImgSrc("services/service-author-programme.png")}
+              alt="高訂兒童成就出版 — 成書與品牌視覺示意"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
           <div className="hero-badge">Featured · 徐多案例</div>
           <p className="hero-stat-line">8 歲 · 歷時 1 年 · 新書發布會 · 媒體報導 · 3,569 人次線上觀看</p>
           <p className="hero-stat-sub">高訂出版視覺 · 策展敘事 · 全鏈路成就展示</p>
@@ -255,9 +324,10 @@ function HomePage() {
             <span className="section-kicker">Services</span>
             <h3>What We Do</h3>
           </div>
+          <p className="services-intro">六項能力整合於<strong>高訂全案</strong>，單項亦接受諮詢（私人報價）。</p>
           <div className="service-grid">
             {services.map((item) => (
-              <a key={item.slug} className="service-card link-card" href={appHref(`/services/${item.slug}`)}>
+              <article key={item.slug} className="service-card">
                 <div className="service-card-visual" aria-hidden>
                   <img src={serviceCardImgSrc(item.cardArt)} alt="" loading="lazy" decoding="async" />
                 </div>
@@ -265,11 +335,14 @@ function HomePage() {
                   <p className="icon">{item.icon}</p>
                   <h4>{item.title}</h4>
                   <p>{item.desc}</p>
+                  <p className="price">{item.price}</p>
                 </div>
-              </a>
+              </article>
             ))}
           </div>
         </section>
+
+        <FullProgrammeSection />
 
         <section className="panel featured-case" id="case-studies">
           <div className="section-head">
@@ -279,9 +352,22 @@ function HomePage() {
           <h4>徐多《蝴蝶雙語圖鑑》</h4>
           <p>8 歲 · 歷時 1 年 · 新書發布會 · 媒體報導 · 3,569 人次線上觀看</p>
           <p>由興趣觀察到正式出版，並延伸展覽與媒體報導，形成可用於升學展示的完整成果鏈。</p>
-          <a className="btn ghost" href={whatsapp} target="_blank" rel="noreferrer">
-            WhatsApp 了解此案例
-          </a>
+          <div className="case-proof-grid">
+            {CASE_PROOF_TILES.map((tile) => (
+              <figure key={tile.label} className="case-proof-tile">
+                <img src={serviceCardImgSrc(tile.src)} alt={tile.label} loading="lazy" decoding="async" />
+                <figcaption>{tile.label}</figcaption>
+              </figure>
+            ))}
+          </div>
+          <div className="cta-row">
+            <a className="btn primary" href={appHref("/#ai-book-lab")}>
+              為我的孩子試做封面
+            </a>
+            <a className="btn ghost" href={whatsapp} target="_blank" rel="noreferrer">
+              WhatsApp 了解此案例
+            </a>
+          </div>
         </section>
 
         <JourneyPathSection />
@@ -310,23 +396,34 @@ function HomePage() {
           </div>
         </section>
 
-        <section className="panel">
-          <h3>Media Coverage</h3>
-          <div className="media-wall">
-            <span>深圳特區報</span>
-            <span>南方+</span>
-            <span>Regional Parenting Media</span>
+        <section className="panel media-panel" id="media">
+          <div className="section-head">
+            <span className="section-kicker">Press</span>
+            <h3>Media Coverage</h3>
+          </div>
+          <p className="media-lede">真實報導與傳播紀錄，為全案成果提供第三方背書（詳細剪報於諮詢時分享）。</p>
+          <div className="media-outlet-grid">
+            {MEDIA_OUTLETS.map((outlet) => (
+              <article key={outlet.name} className="media-outlet-card">
+                <p className="media-outlet-name">{outlet.name}</p>
+                <p className="media-outlet-tag">{outlet.tag}</p>
+              </article>
+            ))}
           </div>
         </section>
 
         <section className="panel final-cta">
+          <p className="eyebrow">Next step</p>
           <h3>開始你孩子的出版之旅</h3>
+          <p className="final-cta-copy">
+            建議先完成封面預覽，再 WhatsApp 與顧問對齊全案節奏。全案私人報價，面談後提供正式方案。
+          </p>
           <div className="cta-row">
-            <a className="btn primary" href={whatsapp} target="_blank" rel="noreferrer">
-              WhatsApp 聯繫
+            <a className="btn primary" href={appHref("/#ai-book-lab")}>
+              生成孩子專屬封面
             </a>
-            <a className="btn ghost" href={appHref("/services")}>
-              查看 6 大服務
+            <a className="btn ghost" href={whatsapp} target="_blank" rel="noreferrer">
+              WhatsApp 私人諮詢
             </a>
           </div>
         </section>

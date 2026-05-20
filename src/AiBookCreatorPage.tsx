@@ -252,7 +252,8 @@ export function AiBookCreatorPanel({ showBackLink = true, releaseTag }: AiBookCr
       <div className="ai-book-layout">
         <div className="ai-book-form">
           <p className="ai-form-kicker">Step 1 · 約 2 分鐘</p>
-          <h4 className="ai-form-title">Tell Us About Your Child</h4>
+          <h4 className="ai-form-title">告訴我們關於您的孩子</h4>
+          <p className="ai-form-subtitle">Tell Us About Your Child</p>
 
           <label className="ai-field">
             <span>
@@ -324,6 +325,7 @@ export function AiBookCreatorPanel({ showBackLink = true, releaseTag }: AiBookCr
             {isGenerating ? "正在為孩子編排封面…" : "✨ 生成專屬封面預覽"}
           </button>
           <p className="meta ai-form-hint">預覽為高訂版型示意；成書由編輯、設計與策展團隊為孩子完整打造。</p>
+          <p className="meta ai-response-note">顧問通常於 1 個工作天內回覆 WhatsApp（旺季稍延）。</p>
         </div>
 
         <div className="ai-book-side">
