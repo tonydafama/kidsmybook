@@ -1,10 +1,5 @@
-import { useEffect, useMemo, useState, type CSSProperties } from "react";
-
-type CoverSet = {
-  front: string;
-  back: string;
-  source: "Monica API" | "Demo Fallback";
-};
+import { useEffect, useState } from "react";
+import { AiBookCreatorPanel } from "./AiBookCreatorPage";
 
 type ServiceItem = {
   slug: string;
@@ -19,8 +14,6 @@ type ServiceItem = {
   cardArt: string;
 };
 
-const API_URL = import.meta.env.VITE_MONICA_API_URL || "https://api.monica.im/v1/images/generate";
-const API_KEY = import.meta.env.VITE_MONICA_API_KEY || "";
 const WHATSAPP_NUMBER = import.meta.env.VITE_WHATSAPP_NUMBER || "85200000000";
 const WECHAT_ID = import.meta.env.VITE_WECHAT_ID || "mybook_service";
 
@@ -113,150 +106,97 @@ const serviceItems: ServiceItem[] = [
   },
 ];
 
-const clamp = (value: number, min: number, max: number) => Math.min(max, Math.max(min, value));
-
-const svgCover = (title: string, subtitle: string, interest: string, dark = false) => {
-  return `data:image/svg+xml;utf8,${encodeURIComponent(`
-  <svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1536" viewBox="0 0 1024 1536">
-    <defs>
-      <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-        <stop offset="0%" stop-color="${dark ? "#070a16" : "#fdf2f8"}"/>
-        <stop offset="55%" stop-color="${dark ? "#4f46e5" : "#f59e0b"}"/>
-        <stop offset="100%" stop-color="${dark ? "#8b5cf6" : "#db2777"}"/>
-      </linearGradient>
-    </defs>
-    <rect width="1024" height="1536" fill="url(#g)"/>
-    <rect x="62" y="62" width="900" height="1412" rx="32" fill="rgba(255,255,255,0.09)" stroke="rgba(255,255,255,0.28)"/>
-    <text x="120" y="208" fill="white" font-size="40" font-family="Arial" opacity="0.86">MYBOOK ACHIEVEMENT EDITION</text>
-    <text x="120" y="842" fill="white" font-size="84" font-weight="700" font-family="Arial">${title}</text>
-    <text x="120" y="922" fill="white" font-size="42" font-family="Arial" opacity="0.92">${subtitle}</text>
-    <text x="120" y="1168" fill="white" font-size="36" font-family="Arial" opacity="0.84">主題：${interest}</text>
-    <text x="120" y="1242" fill="white" font-size="30" font-family="Arial" opacity="0.76">Author Programme · Launch · Exhibition · PR</text>
-  </svg>`)}`
+type JourneyStep = {
+  title: string;
+  en: string;
+  desc: string;
+  deliverable: string;
 };
 
-const extractImageUrls = (payload: unknown): string[] => {
-  const out: string[] = [];
-  const walk = (node: unknown) => {
-    if (!node) return;
-    if (typeof node === "string" && /^https?:\/\//.test(node)) {
-      out.push(node);
-      return;
-    }
-    if (Array.isArray(node)) {
-      node.forEach(walk);
-      return;
-    }
-    if (typeof node === "object") {
-      Object.values(node as Record<string, unknown>).forEach(walk);
-    }
-  };
-  walk(payload);
-  return out;
-};
+const JOURNEY_STEPS: JourneyStep[] = [
+  {
+    title: "發現興趣",
+    en: "Discover",
+    desc: "深度訪談與觀察，鎖定孩子真正願意投入的題材。",
+    deliverable: "興趣地圖 · 出版可行性",
+  },
+  {
+    title: "規劃項目",
+    en: "Plan",
+    desc: "以 PBL 思維設計里程碑，讓熱愛變成可執行的全案。",
+    deliverable: "項目藍圖 · 時程與目標",
+  },
+  {
+    title: "創作內容",
+    en: "Create",
+    desc: "內容共創與專業編輯並行，保留孩子聲音與個性。",
+    deliverable: "文稿 · 訪談 · 素材庫",
+  },
+  {
+    title: "設計出版",
+    en: "Publish",
+    desc: "高訂裝幀與版面敘事，把作品提升到正式出版物級別。",
+    deliverable: "成書 · ISBN · 作者身份",
+  },
+  {
+    title: "發布展覽",
+    en: "Launch",
+    desc: "發布會與展覽策展，讓成就被親友、學校與社群親眼看見。",
+    deliverable: "發布禮 · 展覽 · 現場紀錄",
+  },
+  {
+    title: "媒體傳播",
+    en: "Amplify",
+    desc: "媒體報導與數位傳播，建立可被引用的公信力與影響力。",
+    deliverable: "報導 · 剪報 · 作品集",
+  },
+];
 
-function BookPreviewSection() {
-  const [interest, setInterest] = useState("蝴蝶、生態觀察與自然攝影");
-  const [tone, setTone] = useState("Quiet Luxury");
-  const [lang, setLang] = useState("中英雙語");
-  const [isGenerating, setIsGenerating] = useState(false);
-  const [error, setError] = useState("");
-  const [rotation, setRotation] = useState({ x: 7, y: -14 });
-  const [dragging, setDragging] = useState<{ startX: number; startY: number; baseX: number; baseY: number } | null>(null);
-  const [covers, setCovers] = useState<CoverSet>({
-    front: svgCover("Passion in Print", "Hero Cover Preview", "蝴蝶圖鑑", true),
-    back: svgCover("Achievement Story", "Back Cover Preview", "創作旅程", false),
-    source: "Demo Fallback",
-  });
+function JourneyPathSection() {
+  const whatsapp = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
+    "你好，我想了解 MyBook 從興趣到出版的完整成就路徑，請安排私人諮詢。"
+  )}`;
 
-  const generateCovers = async () => {
-    setIsGenerating(true);
-    setError("");
-    const prompt = `Create premium child achievement book FRONT and BACK cover. Interest: ${interest}. Tone: ${tone}. Language: ${lang}. Elegant editorial style.`;
-    try {
-      if (!API_KEY) throw new Error("未設定 Monica API key，已使用 demo 封面。");
-      const response = await fetch(API_URL, {
-        method: "POST",
-        headers: { "Content-Type": "application/json", Authorization: `Bearer ${API_KEY}` },
-        body: JSON.stringify({ prompt, image_size: "1024x1536", count: 2 }),
-      });
-      if (!response.ok) throw new Error(`Monica API 失敗：${response.status}`);
-      const data = (await response.json()) as unknown;
-      const urls = extractImageUrls(data);
-      if (urls.length < 2) throw new Error("Monica API 回傳不足兩張封面。");
-      setCovers({ front: urls[0], back: urls[1], source: "Monica API" });
-    } catch (reason) {
-      const message = reason instanceof Error ? reason.message : "封面生成失敗";
-      setError(message);
-      setCovers({
-        front: svgCover("Passion in Print", `${tone} Front`, interest, true),
-        back: svgCover("Achievement Story", `${lang} Back`, interest, false),
-        source: "Demo Fallback",
-      });
-    } finally {
-      setIsGenerating(false);
-    }
-  };
   return (
-    <section className="panel panel-showcase">
-      <div className="showcase-heading">
-        <p className="eyebrow">Immersive preview</p>
-        <h3>3D 出版預覽工作室</h3>
-        <p className="meta showcase-lede">拖曳即可 360 度檢視封面，採用穩定 CSS 3D，避免 WebGL 相容性問題。</p>
+    <section className="panel journey-path-panel" aria-labelledby="journey-path-heading">
+      <div className="journey-path-aurora" aria-hidden />
+      <div className="section-head">
+        <span className="section-kicker">Achievement Pathway</span>
+        <h3 id="journey-path-heading">The Journey</h3>
       </div>
-      <div className="preview-layout">
-        <div className="book-stage-wrap">
-          <div className="book-stage">
-            <div
-              className="book"
-              style={
-                {
-                  "--rx": `${rotation.x}deg`,
-                  "--ry": `${rotation.y}deg`,
-                  "--front": `url("${covers.front}")`,
-                  "--back": `url("${covers.back}")`,
-                } as CSSProperties
-              }
-              onPointerDown={(event) => {
-                (event.currentTarget as HTMLDivElement).setPointerCapture(event.pointerId);
-                setDragging({ startX: event.clientX, startY: event.clientY, baseX: rotation.x, baseY: rotation.y });
-              }}
-              onPointerMove={(event) => {
-                if (!dragging) return;
-                const nextY = dragging.baseY + (event.clientX - dragging.startX) * 0.17;
-                const nextX = clamp(dragging.baseX - (event.clientY - dragging.startY) * 0.12, -12, 16);
-                setRotation({ x: nextX, y: nextY });
-              }}
-              onPointerUp={() => setDragging(null)}
-              onPointerCancel={() => setDragging(null)}
-            >
-              <div className="book-face front" />
-              <div className="book-face back" />
-              <div className="book-core" />
-              <div className="book-face spine" />
-              <div className="book-face fore-edge" />
-              <div className="book-shadow" />
+      <p className="journey-path-lede">
+        六個階段，把孩子的熱愛鍊成<strong>可出版、可展出、可報導、可升學引用</strong>的完整成就鏈——不是單一本書，而是一套能被世界看見的證據。
+      </p>
+
+      <div className="journey-path-track" role="list">
+        {JOURNEY_STEPS.map((step, index) => (
+          <article key={step.title} className="journey-step" role="listitem">
+            <div className="journey-step__rail" aria-hidden>
+              {index < JOURNEY_STEPS.length - 1 ? <span className="journey-step__connector" /> : null}
             </div>
-          </div>
-        </div>
-        <div className="generator-grid">
-          <p className="generator-label">封面實驗室</p>
-          <input value={interest} onChange={(event) => setInterest(event.target.value)} placeholder="孩子主題：例 蝴蝶、機械、歷史" />
-          <select value={tone} onChange={(event) => setTone(event.target.value)}>
-            <option>Quiet Luxury</option>
-            <option>Editorial Premium</option>
-            <option>Modern Global</option>
-          </select>
-          <select value={lang} onChange={(event) => setLang(event.target.value)}>
-            <option>中英雙語</option>
-            <option>繁中</option>
-            <option>English</option>
-          </select>
-          <button type="button" className="btn primary" onClick={generateCovers} disabled={isGenerating}>
-            {isGenerating ? "生成中..." : "生成前後封"}
-          </button>
-          <p className="meta">來源：{covers.source}{error ? ` ｜ ${error}` : ""}</p>
-        </div>
+            <div className="journey-step__node" aria-hidden>
+              <span className="journey-step__num">{String(index + 1).padStart(2, "0")}</span>
+            </div>
+            <div className="journey-step__body">
+              <p className="journey-step__en">{step.en}</p>
+              <h4 className="journey-step__title">{step.title}</h4>
+              <p className="journey-step__desc">{step.desc}</p>
+              <p className="journey-step__deliverable">
+                <span className="journey-step__deliverable-label">交付</span>
+                {step.deliverable}
+              </p>
+            </div>
+          </article>
+        ))}
+      </div>
+
+      <div className="journey-path-footer">
+        <p className="journey-path-outcome">
+          成果可同步沉澱為升學 portfolio、媒體剪報與展覽紀錄——讓每一次努力都有「被看見」的證明。
+        </p>
+        <a className="btn ghost journey-path-cta" href={whatsapp} target="_blank" rel="noreferrer">
+          了解完整路徑 · WhatsApp 諮詢
+        </a>
       </div>
     </section>
   );
@@ -277,10 +217,13 @@ function HomePage() {
           <p className="lead">出版 · 發布會 · 展覽 · 媒體報導 · 一站式全案服務</p>
           <p className="lead en">{BRAND_EN}</p>
           <div className="cta-row">
-            <a className="btn primary" href={whatsapp} target="_blank" rel="noreferrer">
+            <a className="btn primary" href={appHref("/#ai-book-lab")}>
+              生成孩子專屬封面
+            </a>
+            <a className="btn ghost" href={whatsapp} target="_blank" rel="noreferrer">
               預約私人諮詢
             </a>
-            <a className="btn ghost" href={appHref("/services")}>
+            <a className="btn ghost" href={appHref("/#services")}>
               查看服務
             </a>
             <button
@@ -305,7 +248,9 @@ function HomePage() {
       </header>
 
       <main className="content-flow">
-        <section className="panel panel--standard">
+        <AiBookCreatorPanel showBackLink={false} />
+
+        <section className="panel panel--standard" id="services">
           <div className="section-head">
             <span className="section-kicker">Services</span>
             <h3>What We Do</h3>
@@ -326,7 +271,7 @@ function HomePage() {
           </div>
         </section>
 
-        <section className="panel featured-case">
+        <section className="panel featured-case" id="case-studies">
           <div className="section-head">
             <span className="section-kicker">Spotlight</span>
             <h3>Featured Case Study</h3>
@@ -334,24 +279,12 @@ function HomePage() {
           <h4>徐多《蝴蝶雙語圖鑑》</h4>
           <p>8 歲 · 歷時 1 年 · 新書發布會 · 媒體報導 · 3,569 人次線上觀看</p>
           <p>由興趣觀察到正式出版，並延伸展覽與媒體報導，形成可用於升學展示的完整成果鏈。</p>
-          <a className="btn ghost" href={appHref("/case-studies/xu-duo-butterfly-guide")}>
-            查看完整案例
+          <a className="btn ghost" href={whatsapp} target="_blank" rel="noreferrer">
+            WhatsApp 了解此案例
           </a>
         </section>
 
-        <section className="panel">
-          <h3>The Journey</h3>
-          <ol className="journey-list">
-            <li>發現興趣</li>
-            <li>規劃項目</li>
-            <li>創作內容</li>
-            <li>設計出版</li>
-            <li>發布展覽</li>
-            <li>媒體傳播</li>
-          </ol>
-        </section>
-
-        <BookPreviewSection />
+        <JourneyPathSection />
 
         <section className="panel panel--standard">
           <div className="section-head">
@@ -405,7 +338,7 @@ function HomePage() {
 function ServicesIndexPage() {
   return (
     <main>
-      <section className="panel">
+          <section className="panel">
         <h2>Services</h2>
         <p className="meta">Minimal · Elegant · Full-stack execution</p>
         <div className="service-grid">
@@ -413,7 +346,7 @@ function ServicesIndexPage() {
             <a key={item.slug} className="service-card link-card" href={appHref(`/services/${item.slug}`)}>
               <div className="service-card-visual" aria-hidden>
                 <img src={serviceCardImgSrc(item.cardArt)} alt="" loading="lazy" decoding="async" />
-              </div>
+                </div>
               <div className="service-card-body">
                 <p className="icon">{item.icon}</p>
                 <h4>{item.title}</h4>
@@ -421,9 +354,9 @@ function ServicesIndexPage() {
                 <p className="price">{item.price}</p>
               </div>
             </a>
-          ))}
+            ))}
         </div>
-      </section>
+          </section>
     </main>
   );
 }
@@ -432,7 +365,7 @@ function ServiceDetailPage({ item }: { item: ServiceItem }) {
   const whatsapp = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(`你好，我想了解 ${item.title} 服務。`)}`;
   return (
     <main>
-      <section className="panel">
+          <section className="panel">
         <p className="eyebrow">Service Detail</p>
         <h2>{item.title}</h2>
         <p className="lead">{item.desc}</p>
@@ -457,7 +390,7 @@ function ServiceDetailPage({ item }: { item: ServiceItem }) {
           <a className="btn ghost" href={appHref("/services")}>
             返回 Services
           </a>
-        </div>
+            </div>
       </section>
     </main>
   );
@@ -477,7 +410,7 @@ function CaseStudyPage() {
           <button type="button" className="btn ghost" onClick={() => setPrivacyMode((old) => !old)}>
             {privacyMode ? "顯示原名" : "隱私模式"}
           </button>
-        </div>
+                </div>
       </section>
 
       <section className="panel">
@@ -493,19 +426,19 @@ function CaseStudyPage() {
         <h3>The Story</h3>
         <p>孩子由日常觀察蝴蝶出發，逐步建立研究習慣，完成圖像與文字內容，最終成功出版並公開發表。</p>
         <p>過程中克服了資料整理與口語表達挑戰，學會用作品向世界分享自己的興趣與成長。</p>
-      </section>
+          </section>
 
-      <section className="panel">
+            <section className="panel">
         <h3>Gallery</h3>
         <div className="media-wall">
           <span>Book Spreads</span>
           <span>Event Photos</span>
           <span>Exhibition Photos</span>
           <span>Media Coverage Screenshots</span>
-        </div>
-      </section>
+              </div>
+            </section>
 
-      <section className="panel">
+            <section className="panel">
         <h3>Results</h3>
         <ul className="privacy-list">
           <li>Media mentions：深圳特區報、南方+（示例）</li>
@@ -539,26 +472,34 @@ function CaseStudiesIndex() {
             <h4>[future cases]</h4>
             <p>預留後續案例頁模板，沿用同一結構。</p>
           </article>
-        </div>
-      </section>
+              </div>
+            </section>
     </main>
   );
 }
 
+function getLogicalPathname(): string {
+  const raw = window.location.pathname || "/";
+  const baseNoSlash = APP_BASE.replace(/\/$/, "");
+  let logical = raw;
+  if (baseNoSlash && (raw === baseNoSlash || raw.startsWith(`${baseNoSlash}/`))) {
+    logical = raw.slice(baseNoSlash.length) || "/";
+  }
+  if (logical === "/index.html") {
+    logical = "/";
+  }
+  const normalized = logical.replace(/\/+$/, "");
+  return normalized || "/";
+}
+
 function usePathname() {
-  return useMemo(() => {
-    const raw = window.location.pathname || "/";
-    const baseNoSlash = APP_BASE.replace(/\/$/, "");
-    let logical = raw;
-    if (baseNoSlash && (raw === baseNoSlash || raw.startsWith(`${baseNoSlash}/`))) {
-      logical = raw.slice(baseNoSlash.length) || "/";
-    }
-    if (logical === "/index.html") {
-      logical = "/";
-    }
-    const normalized = logical.replace(/\/+$/, "");
-    return normalized || "/";
+  const [pathname, setPathname] = useState(getLogicalPathname);
+  useEffect(() => {
+    const sync = () => setPathname(getLogicalPathname());
+    window.addEventListener("popstate", sync);
+    return () => window.removeEventListener("popstate", sync);
   }, []);
+  return pathname;
 }
 
 export default function App() {
@@ -604,6 +545,17 @@ export default function App() {
     }
   }, [pathname]);
 
+  useEffect(() => {
+    if (pathname !== "/ai-book") return;
+    window.history.replaceState(null, "", appHref("/#ai-book-lab"));
+    const scrollToLab = () => document.getElementById("ai-book-lab")?.scrollIntoView({ behavior: "smooth", block: "start" });
+    scrollToLab();
+    const t = window.setTimeout(scrollToLab, 120);
+    return () => window.clearTimeout(t);
+  }, [pathname]);
+
+  const isHome = pathname === "/" || pathname === "/ai-book";
+
   return (
     <div className="site">
       <nav className="top-nav" aria-label="主選單">
@@ -612,20 +564,21 @@ export default function App() {
           MyBook Achievement Studio
         </a>
         <div className="nav-links">
-          <a href={appHref("/services")}>Services</a>
-          <a href={appHref("/case-studies")}>Case Studies</a>
+          <a href={appHref("/#ai-book-lab")}>AI Book</a>
+          <a href={appHref("/#services")}>Services</a>
+          <a href={appHref("/#case-studies")}>Case Studies</a>
           <a href={whatsappFloating} target="_blank" rel="noreferrer">
             WhatsApp
           </a>
-        </div>
+          </div>
       </nav>
 
-      {pathname === "/" && <HomePage />}
+      {isHome && <HomePage />}
       {pathname === "/services" && <ServicesIndexPage />}
       {currentService && <ServiceDetailPage item={currentService} />}
       {pathname === "/case-studies" && <CaseStudiesIndex />}
       {pathname === "/case-studies/xu-duo-butterfly-guide" && <CaseStudyPage />}
-      {!["/", "/services", "/case-studies", "/case-studies/xu-duo-butterfly-guide", ...serviceItems.map((item) => `/services/${item.slug}`)].includes(
+      {!["/", "/ai-book", "/services", "/case-studies", "/case-studies/xu-duo-butterfly-guide", ...serviceItems.map((item) => `/services/${item.slug}`)].includes(
         pathname
       ) && (
         <main>
@@ -636,7 +589,7 @@ export default function App() {
               返回首頁
             </a>
           </section>
-        </main>
+      </main>
       )}
 
       <a className="floating-wa" href={whatsappFloating} target="_blank" rel="noreferrer">
