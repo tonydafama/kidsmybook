@@ -1,1 +1,1 @@
-{"root":["./src/app.tsx","./src/main.tsx","./src/types.ts","./src/vite-env.d.ts","./src/data/seed.ts","./src/lib/supabase.ts","./src/services/csv.ts"],"version":"5.9.3"}
+{"root":["./src/aibookcreatorpage.tsx","./src/app.tsx","./src/main.tsx","./src/types.ts","./src/vite-env.d.ts","./src/components/languageswitcher.tsx","./src/data/seed.ts","./src/i18n/localecontext.tsx","./src/i18n/locale.ts","./src/i18n/translations.ts","./src/lib/bookcover.ts","./src/lib/monica.ts","./src/lib/supabase.ts","./src/services/csv.ts"],"version":"5.9.3"}

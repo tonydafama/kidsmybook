@@ -1,0 +1,24 @@
+name = "mybook-kids"
+main = "worker/index.ts"
+compatibility_date = "2026-08-05"
+workers_dev = false
+
+[assets]
+directory = "./dist"
+binding = "ASSETS"
+not_found_handling = "single-page-application"
+[[routes]]
+pattern = "kidsmybook.com/*"
+zone_id = "d815252f7819e38a94d61f166aed2a69"
+
+[[routes]]
+pattern = "www.kidsmybook.com/*"
+zone_id = "d815252f7819e38a94d61f166aed2a69"
+
+[[routes]]
+pattern = "mybook.pub/*"
+zone_id = "0c3761137e946af97dd4019636c0f140"
+
+[[routes]]
+pattern = "www.mybook.pub/*"
+zone_id = "0c3761137e946af97dd4019636c0f140"

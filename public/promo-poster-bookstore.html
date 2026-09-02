@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kidsmybook · 推廣海報 · 書店成就</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Noto+Serif+TC:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * { box-sizing: border-box; }
+      html, body {
+        margin: 0;
+        background: #111;
+        color: #f6f1e8;
+        font-family: "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+      }
+      .hint {
+        max-width: 210mm;
+        margin: 16px auto 8px;
+        text-align: center;
+        color: #999;
+        font-size: 13px;
+      }
+      .sheet {
+        width: 210mm;
+        min-height: 297mm;
+        margin: 0 auto 24px;
+        position: relative;
+        overflow: hidden;
+        background: #0b1220 url("kidsmybook-promo-bookstore-bg.png") right center / cover no-repeat;
+        box-shadow: 0 16px 48px rgba(0,0,0,.45);
+      }
+      .sheet::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background:
+          linear-gradient(90deg, rgba(8,12,22,.96) 0%, rgba(8,12,22,.88) 42%, rgba(8,12,22,.35) 68%, rgba(8,12,22,.12) 100%);
+      }
+      .inner {
+        position: relative;
+        z-index: 1;
+        min-height: 297mm;
+        padding: 16mm 15mm 14mm;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+      .brand {
+        font-size: 13px;
+        letter-spacing: 0.28em;
+        text-transform: uppercase;
+        color: #dab97d;
+        font-weight: 700;
+      }
+      h1 {
+        margin: 4px 0 0;
+        font-family: "Noto Serif TC", Georgia, serif;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.22;
+        max-width: none;
+      }
+      h1 .headline-line {
+        display: block;
+        white-space: nowrap;
+      }
+      h1 em {
+        font-style: normal;
+        color: #dab97d;
+        display: block;
+        font-size: 22px;
+        margin-top: 10px;
+        font-weight: 600;
+      }
+      .path {
+        margin: 0;
+        color: #d6cebf;
+        font-size: 14px;
+        line-height: 1.55;
+        max-width: 28em;
+      }
+      .points {
+        margin: 4px 0 0;
+        padding: 0;
+        list-style: none;
+        display: grid;
+        gap: 8px;
+        max-width: 32em;
+      }
+      .points li {
+        font-size: 14px;
+        line-height: 1.45;
+        padding-left: 14px;
+        border-left: 2px solid #c8a874;
+      }
+      .quotes {
+        display: grid;
+        gap: 10px;
+        max-width: 34em;
+        margin-top: 4px;
+      }
+      .quotes p {
+        margin: 0;
+        font-family: "Noto Serif TC", Georgia, serif;
+        font-size: 13px;
+        line-height: 1.6;
+        color: #efe6d4;
+        background: rgba(255,255,255,0.05);
+        border: 1px solid rgba(200,168,116,0.22);
+        padding: 10px 12px;
+      }
+      .price {
+        margin-top: auto;
+        font-family: "Noto Serif TC", Georgia, serif;
+        font-size: 28px;
+        color: #dab97d;
+        font-weight: 700;
+      }
+      .price small {
+        display: block;
+        font-family: "Noto Sans TC", sans-serif;
+        font-size: 12px;
+        font-weight: 500;
+        color: #b8b0a3;
+        margin-top: 4px;
+        letter-spacing: 0.04em;
+      }
+      .contact {
+        display: grid;
+        gap: 4px;
+        font-size: 14px;
+        font-weight: 600;
+      }
+      .contact span {
+        color: #9d9587;
+        font-weight: 500;
+        font-size: 11px;
+        letter-spacing: 0.08em;
+        margin-right: 8px;
+      }
+      .foot {
+        font-size: 10px;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: rgba(184,176,163,.7);
+      }
+      @media print {
+        body { background: #fff; }
+        .hint { display: none; }
+        .sheet { margin: 0; box-shadow: none; }
+        @page { size: A4; margin: 0; }
+      }
+    </style>
+  </head>
+  <body>
+    <p class="hint">風格 B · 書店成就 · Ctrl/Cmd + P 另存 PDF（字準確，可再改）</p>
+    <article class="sheet">
+      <div class="inner">
+        <div class="brand">Kidsmybook</div>
+        <h1>
+          <span class="headline-line">最強Portfolio，一本屬於孩子的書</span>
+          <em>出書上架，唔再係遙不可及</em>
+        </h1>
+        <p class="path">編寫 · 製作 · 大學教授參與 · 出版 · 上架 · 一條龍</p>
+        <ul class="points">
+          <li>提供專業寫作及設計培訓</li>
+          <li>由孩子真實興趣出發，寫出屬於佢嘅內容</li>
+          <li>正式成書，書店買得到、書架睇得到</li>
+          <li>升學面試有真實作品，唔只係證書同相</li>
+        </ul>
+        <div class="quotes">
+          <p>「見到其他小朋友出書一直都覺得遙不可及。直至而家擁有一本屬於自己嘅書……見到佢同同學分享嗰份自信，一切都值得！」</p>
+          <p>「有導師、顧問、大學教授參與製作。攞起成品我好有信心。」</p>
+        </div>
+        <div class="price">
+          HKD 3,800 起
+          <small>諮詢後按題材規模報價</small>
+        </div>
+        <div class="contact">
+          <div><span>WHATSAPP</span>@kidsmybook</div>
+          <div><span>EMAIL</span>kidsmybook@outlook.com</div>
+          <div><span>WEB</span>kidsmybook.com</div>
+        </div>
+        <div class="foot">Hong Kong · Bookstore Achievement</div>
+      </div>
+    </article>
+  </body>
+</html>

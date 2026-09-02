@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "deploy:pack": "npm run build && node scripts/pack-dist.mjs",
+    "deploy:live": "npm run build && wrangler deploy",
     "preview": "vite preview",
     "test:email-ingest": "node scripts/test-email-ingest.mjs",
     "test:deadline-reminder": "node scripts/test-deadline-reminder.mjs",

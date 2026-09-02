@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kidsmybook · 合作夥伴海報 B</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #1b1f24;
+        --panel: #23282f;
+        --ink: #f3f5f7;
+        --muted: #9aa3ad;
+        --teal: #1f7a6c;
+        --teal-bright: #2a9b89;
+      }
+      * { box-sizing: border-box; }
+      html, body {
+        margin: 0;
+        padding: 0;
+        background: #0e1013;
+        color: var(--ink);
+        font-family: "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+      }
+      .hint {
+        max-width: 210mm;
+        margin: 16px auto 8px;
+        text-align: center;
+        color: #888;
+        font-size: 13px;
+      }
+      .sheet {
+        width: 210mm;
+        min-height: 297mm;
+        margin: 0 auto 24px;
+        padding: 0;
+        background: var(--bg);
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 14px 40px rgba(0,0,0,.45);
+        display: flex;
+        flex-direction: column;
+      }
+      .accent-bar {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 8px;
+        background: var(--teal);
+      }
+      .pad {
+        padding: 18mm 16mm 0 18mm;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        position: relative;
+        z-index: 1;
+      }
+      .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 12px;
+      }
+      .eyebrow {
+        margin: 0;
+        font-size: 11px;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        color: var(--teal-bright);
+        font-weight: 700;
+      }
+      .tag {
+        font-size: 11px;
+        letter-spacing: 0.14em;
+        color: var(--muted);
+        border: 1px solid rgba(154,163,173,.35);
+        padding: 6px 10px;
+      }
+      h1 {
+        margin: 6px 0 0;
+        font-size: 54px;
+        font-weight: 900;
+        line-height: 1.12;
+        letter-spacing: -0.02em;
+        max-width: 7.2em;
+      }
+      h1 em {
+        font-style: normal;
+        color: var(--teal-bright);
+      }
+      .lead {
+        margin: 0;
+        color: var(--muted);
+        font-size: 15px;
+        line-height: 1.6;
+        max-width: 32em;
+      }
+      .offer {
+        margin-top: 4px;
+        background: var(--panel);
+        border-left: 4px solid var(--teal);
+        padding: 16px 18px;
+      }
+      .offer p { margin: 0; }
+      .offer .big {
+        font-size: 28px;
+        font-weight: 900;
+        line-height: 1.25;
+      }
+      .offer .sub {
+        margin-top: 6px;
+        font-size: 13px;
+        color: var(--muted);
+        line-height: 1.5;
+      }
+      .mid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+      }
+      .box {
+        background: rgba(255,255,255,0.03);
+        border: 1px solid rgba(255,255,255,0.08);
+        padding: 14px;
+      }
+      .box h2 {
+        margin: 0 0 10px;
+        font-size: 11px;
+        letter-spacing: 0.18em;
+        color: var(--teal-bright);
+      }
+      .box ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: grid;
+        gap: 8px;
+      }
+      .box li {
+        font-size: 13px;
+        line-height: 1.4;
+        color: #d8dee5;
+      }
+      .contact-strip {
+        margin-top: auto;
+        background: var(--teal);
+        color: #fff;
+        padding: 16px 18mm 14px;
+      }
+      .contact-strip h2 {
+        margin: 0 0 10px;
+        font-size: 11px;
+        letter-spacing: 0.2em;
+      }
+      .rows {
+        display: grid;
+        gap: 6px;
+      }
+      .row {
+        display: grid;
+        grid-template-columns: 78px 1fr;
+        gap: 8px;
+        font-size: 15px;
+        align-items: baseline;
+      }
+      .row span {
+        opacity: 0.85;
+        font-size: 12px;
+      }
+      .row a, .row strong {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 800;
+        word-break: break-all;
+      }
+      .cta {
+        margin: 10px 0 0;
+        font-size: 12px;
+        opacity: 0.92;
+      }
+      .foot {
+        padding: 10px 18mm 14px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 10px;
+        letter-spacing: 0.14em;
+        color: var(--muted);
+        text-transform: uppercase;
+      }
+      @media print {
+        body { background: #fff; }
+        .hint { display: none; }
+        .sheet { margin: 0; box-shadow: none; }
+        @page { size: A4; margin: 0; }
+      }
+    </style>
+  </head>
+  <body>
+    <p class="hint">風格 B · 現代石板＋青綠 · Ctrl/Cmd + P 另存 PDF</p>
+    <article class="sheet">
+      <div class="accent-bar" aria-hidden="true"></div>
+      <div class="pad">
+        <header class="top">
+          <p class="eyebrow">Kidsmybook · 兒童成就出版</p>
+          <div class="tag">合作夥伴</div>
+        </header>
+
+        <h1>推薦家庭<br />成交一單<br /><em>佣金五萬</em></h1>
+        <p class="lead">把孩子的熱愛做成正式出版成果：成書、發布會、媒體與升學 Portfolio，同一團隊走完。</p>
+
+        <section class="offer">
+          <p class="big">介紹費 HKD 50,000</p>
+          <p class="sub">全案約 HKD 300,000 · 你介紹，我們交付 · 成交即結佣</p>
+        </section>
+
+        <div class="mid">
+          <section class="box">
+            <h2>四步合作</h2>
+            <ul>
+              <li>01 介紹合適家庭</li>
+              <li>02 我們一對一諮詢</li>
+              <li>03 全案執行交付</li>
+              <li>04 成交支付五萬</li>
+            </ul>
+          </section>
+          <section class="box">
+            <h2>歡迎合作</h2>
+            <ul>
+              <li>升學／入學顧問</li>
+              <li>Portfolio 教練</li>
+              <li>高端補習／STEAM</li>
+              <li>Family Office</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+
+      <section class="contact-strip">
+        <h2>聯絡</h2>
+        <div class="rows">
+          <div class="row"><span>電郵</span><a href="mailto:kidsmybook@outlook.com"><strong>kidsmybook@outlook.com</strong></a></div>
+          <div class="row"><span>WhatsApp</span><a href="https://wa.me/85291214157"><strong>@kidsmybook</strong></a></div>
+          <div class="row"><span>網站</span><strong>kidsmybook.com</strong></div>
+        </div>
+        <p class="cta">回覆「PARTNER」索取合作協議與案例簡報。</p>
+      </section>
+      <footer class="foot">
+        <span>Hong Kong</span>
+        <span>Partner Poster B</span>
+      </footer>
+    </article>
+  </body>
+</html>

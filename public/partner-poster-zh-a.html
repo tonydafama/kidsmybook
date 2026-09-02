@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kidsmybook · 合作夥伴海報 A</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #f2f4f7;
+        --ink: #16181c;
+        --muted: #5c636e;
+        --line: #c9ced6;
+        --seal: #c23b22;
+        --panel: #ffffff;
+      }
+      * { box-sizing: border-box; }
+      html, body {
+        margin: 0;
+        padding: 0;
+        background: #d8dbe1;
+        color: var(--ink);
+        font-family: "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+      }
+      .hint {
+        max-width: 210mm;
+        margin: 16px auto 8px;
+        text-align: center;
+        color: #666;
+        font-size: 13px;
+      }
+      .sheet {
+        width: 210mm;
+        min-height: 297mm;
+        margin: 0 auto 24px;
+        padding: 18mm 17mm 15mm;
+        background:
+          linear-gradient(180deg, #f7f8fa 0%, var(--bg) 100%);
+        position: relative;
+        box-shadow: 0 14px 40px rgba(0,0,0,.18);
+      }
+      .sheet::before {
+        content: "";
+        position: absolute;
+        inset: 9mm;
+        border: 1px solid var(--line);
+        pointer-events: none;
+      }
+      .inner {
+        position: relative;
+        z-index: 1;
+        min-height: calc(297mm - 33mm);
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+      .top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+      }
+      .seal {
+        width: 42px;
+        height: 42px;
+        background: var(--seal);
+        color: #fff;
+        display: grid;
+        place-items: center;
+        font-family: "Noto Serif TC", serif;
+        font-size: 22px;
+        font-weight: 700;
+        letter-spacing: 0;
+      }
+      .brand {
+        text-align: right;
+      }
+      .brand strong {
+        display: block;
+        font-size: 14px;
+        letter-spacing: 0.12em;
+      }
+      .brand span {
+        font-size: 11px;
+        color: var(--muted);
+        letter-spacing: 0.08em;
+      }
+      h1 {
+        margin: 8px 0 0;
+        font-family: "Noto Serif TC", Georgia, serif;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 1.28;
+        max-width: 10em;
+      }
+      .lead {
+        margin: 0;
+        color: var(--muted);
+        font-size: 15px;
+        line-height: 1.65;
+        max-width: 34em;
+      }
+      .offer {
+        background: var(--panel);
+        border: 1px solid var(--ink);
+        padding: 18px 20px;
+        display: grid;
+        gap: 6px;
+      }
+      .offer-kicker {
+        margin: 0;
+        font-size: 12px;
+        letter-spacing: 0.2em;
+        color: var(--seal);
+        font-weight: 700;
+      }
+      .offer-amount {
+        margin: 0;
+        font-family: "Noto Serif TC", serif;
+        font-size: 34px;
+        font-weight: 700;
+        line-height: 1.2;
+      }
+      .offer-note {
+        margin: 0;
+        font-size: 13px;
+        color: var(--muted);
+        line-height: 1.55;
+      }
+      .cols {
+        display: grid;
+        grid-template-columns: 1.15fr 0.85fr;
+        gap: 18px;
+        margin-top: 2px;
+      }
+      h2 {
+        margin: 0 0 10px;
+        font-size: 12px;
+        letter-spacing: 0.18em;
+        color: var(--seal);
+      }
+      ol, ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: grid;
+        gap: 10px;
+      }
+      ol li {
+        display: grid;
+        grid-template-columns: 28px 1fr;
+        gap: 8px;
+        font-size: 13px;
+        line-height: 1.45;
+      }
+      .n {
+        font-family: "Noto Serif TC", serif;
+        color: var(--seal);
+        font-weight: 700;
+      }
+      .who {
+        border-left: 2px solid var(--ink);
+        padding-left: 14px;
+      }
+      .who li {
+        font-size: 13px;
+        color: var(--muted);
+        line-height: 1.45;
+      }
+      .contact {
+        margin-top: auto;
+        border-top: 2px solid var(--ink);
+        padding-top: 14px;
+        display: grid;
+        gap: 8px;
+      }
+      .contact h2 { margin-bottom: 2px; }
+      .row {
+        display: grid;
+        grid-template-columns: 72px 1fr;
+        gap: 8px;
+        font-size: 15px;
+        align-items: baseline;
+      }
+      .row span { color: var(--muted); font-size: 12px; }
+      .row a, .row strong {
+        color: var(--ink);
+        text-decoration: none;
+        font-weight: 700;
+        word-break: break-all;
+      }
+      .cta {
+        margin: 4px 0 0;
+        font-size: 13px;
+        color: var(--muted);
+      }
+      .footer {
+        display: flex;
+        justify-content: space-between;
+        font-size: 10px;
+        letter-spacing: 0.14em;
+        color: #8a909a;
+        text-transform: uppercase;
+      }
+      @media print {
+        body { background: #fff; }
+        .hint { display: none; }
+        .sheet { margin: 0; box-shadow: none; }
+        @page { size: A4; margin: 0; }
+      }
+    </style>
+  </head>
+  <body>
+    <p class="hint">風格 A · 淺色印章風 · Ctrl/Cmd + P 另存 PDF</p>
+    <article class="sheet">
+      <div class="inner">
+        <header class="top">
+          <div class="seal" aria-hidden="true">書</div>
+          <div class="brand">
+            <strong>Kidsmybook</strong>
+            <span>兒童成就出版 · 合作邀請</span>
+          </div>
+        </header>
+
+        <h1>把孩子的熱愛，變成被世界看見的成就。</h1>
+        <p class="lead">出版、發布會、展覽、媒體、升學作品集——一條路徑做完。適合願意把孩子興趣做成代表作的家庭。</p>
+
+        <section class="offer">
+          <p class="offer-kicker">PARTNER COMMISSION</p>
+          <p class="offer-amount">介紹費 HKD 50,000／成交一單</p>
+          <p class="offer-note">全案約 HKD 300,000。你負責介紹合適家庭；諮詢、出版、發布、媒體與 Portfolio 全部由我們交付。</p>
+        </section>
+
+        <div class="cols">
+          <section>
+            <h2>合作流程</h2>
+            <ol>
+              <li><span class="n">01</span><span>介紹有明確題材、預算合適的家庭</span></li>
+              <li><span class="n">02</span><span>我們進行諮詢，規劃 9–12 個月成就路徑</span></li>
+              <li><span class="n">03</span><span>我們負責成書、發布會、媒體與作品集</span></li>
+              <li><span class="n">04</span><span>成交後支付介紹費 HKD 50,000</span></li>
+            </ol>
+          </section>
+          <section class="who">
+            <h2>適合夥伴</h2>
+            <ul>
+              <li>升學／入學顧問</li>
+              <li>Portfolio 與面試教練</li>
+              <li>高端補習／STEAM 機構</li>
+              <li>Family Office 教育窗口</li>
+            </ul>
+          </section>
+        </div>
+
+        <section class="contact">
+          <h2>聯絡我們</h2>
+          <div class="row"><span>電郵</span><a href="mailto:kidsmybook@outlook.com"><strong>kidsmybook@outlook.com</strong></a></div>
+          <div class="row"><span>WhatsApp</span><a href="https://wa.me/85291214157"><strong>@kidsmybook</strong></a></div>
+          <div class="row"><span>網站</span><strong>kidsmybook.com</strong></div>
+          <p class="cta">回覆「PARTNER」，我們會寄上合作協議一頁與案例簡報。</p>
+        </section>
+
+        <footer class="footer">
+          <span>Hong Kong</span>
+          <span>Partner Poster A</span>
+        </footer>
+      </div>
+    </article>
+  </body>
+</html>

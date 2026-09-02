@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kidsmybook · Partner Poster</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Outfit:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #060814;
+        --bg-2: #12101c;
+        --purple: #7351b8;
+        --purple-deep: #2c193f;
+        --gold: #c8a874;
+        --gold-bright: #dab97d;
+        --ink: #f4efe6;
+        --muted: #b8b0a3;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        background: #1a1a1a;
+        color: var(--ink);
+        font-family: Outfit, "Noto Sans TC", sans-serif;
+      }
+
+      .sheet {
+        width: 210mm;
+        min-height: 297mm;
+        margin: 24px auto;
+        padding: 18mm 16mm 16mm;
+        background:
+          radial-gradient(ellipse 80% 50% at 50% -10%, rgba(115, 81, 184, 0.28), transparent 55%),
+          linear-gradient(165deg, #0a0c16 0%, #14101f 48%, #0b0d16 100%);
+        color: var(--ink);
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 18px 50px rgba(0, 0, 0, 0.45);
+      }
+
+      .sheet::before {
+        content: "";
+        position: absolute;
+        inset: 10mm;
+        border: 1px solid rgba(200, 168, 116, 0.35);
+        pointer-events: none;
+      }
+
+      .sheet::after {
+        content: "";
+        position: absolute;
+        inset: 11.5mm;
+        border: 1px solid rgba(200, 168, 116, 0.14);
+        pointer-events: none;
+      }
+
+      .inner {
+        position: relative;
+        z-index: 1;
+        height: 100%;
+        min-height: calc(297mm - 34mm);
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+      }
+
+      .brand {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 12px;
+      }
+
+      .brand-mark {
+        font-size: 13px;
+        letter-spacing: 0.28em;
+        text-transform: uppercase;
+        color: var(--gold-bright);
+        font-weight: 600;
+      }
+
+      .brand-tag {
+        font-size: 11px;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--muted);
+      }
+
+      h1 {
+        margin: 8px 0 0;
+        font-family: "Cormorant Garamond", Georgia, serif;
+        font-weight: 600;
+        font-size: 42px;
+        line-height: 1.12;
+        letter-spacing: -0.01em;
+        max-width: 16ch;
+      }
+
+      .lead {
+        margin: 0;
+        max-width: 46ch;
+        color: var(--muted);
+        font-size: 15px;
+        line-height: 1.55;
+        font-weight: 300;
+      }
+
+      .rule {
+        height: 1px;
+        background: linear-gradient(90deg, transparent, rgba(200, 168, 116, 0.55), transparent);
+        border: 0;
+        margin: 4px 0;
+      }
+
+      .offer {
+        border: 1px solid rgba(200, 168, 116, 0.38);
+        background: linear-gradient(145deg, rgba(44, 25, 63, 0.55), rgba(8, 10, 18, 0.7));
+        padding: 18px 20px;
+        display: grid;
+        gap: 6px;
+      }
+
+      .offer-kicker {
+        margin: 0;
+        font-size: 11px;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: var(--gold);
+      }
+
+      .offer-amount {
+        margin: 0;
+        font-family: "Cormorant Garamond", Georgia, serif;
+        font-size: 36px;
+        font-weight: 700;
+        color: var(--gold-bright);
+        line-height: 1.1;
+      }
+
+      .offer-note {
+        margin: 0;
+        font-size: 13px;
+        color: var(--muted);
+        line-height: 1.45;
+      }
+
+      .grid-2 {
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 16px;
+        margin-top: 4px;
+      }
+
+      h2 {
+        margin: 0 0 8px;
+        font-size: 12px;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: var(--gold);
+        font-weight: 600;
+      }
+
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: grid;
+        gap: 8px;
+      }
+
+      li {
+        font-size: 13px;
+        line-height: 1.4;
+        color: #e8e1d4;
+        padding-left: 0;
+      }
+
+      li strong {
+        color: var(--gold-bright);
+        font-weight: 600;
+      }
+
+      .steps li {
+        display: grid;
+        grid-template-columns: 28px 1fr;
+        gap: 8px;
+        align-items: start;
+      }
+
+      .num {
+        font-family: "Cormorant Garamond", Georgia, serif;
+        color: var(--gold);
+        font-size: 18px;
+        line-height: 1.1;
+      }
+
+      .who {
+        border-left: 2px solid rgba(200, 168, 116, 0.45);
+        padding-left: 14px;
+      }
+
+      .who p {
+        margin: 0 0 8px;
+        font-size: 13px;
+        color: var(--muted);
+        line-height: 1.45;
+      }
+
+      .contact {
+        margin-top: auto;
+        padding: 16px 18px;
+        border: 1px solid rgba(200, 168, 116, 0.3);
+        background: rgba(0, 0, 0, 0.28);
+        display: grid;
+        gap: 10px;
+      }
+
+      .contact-title {
+        margin: 0;
+        font-size: 11px;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: var(--gold);
+      }
+
+      .contact-rows {
+        display: grid;
+        gap: 8px;
+      }
+
+      .row {
+        display: grid;
+        grid-template-columns: 88px 1fr;
+        gap: 8px;
+        align-items: baseline;
+        font-size: 15px;
+      }
+
+      .row span {
+        color: var(--muted);
+        font-size: 12px;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+      }
+
+      .row a,
+      .row strong {
+        color: var(--ink);
+        text-decoration: none;
+        font-weight: 600;
+        word-break: break-all;
+      }
+
+      .cta {
+        margin: 0;
+        font-size: 13px;
+        color: #d9d1c2;
+        line-height: 1.45;
+      }
+
+      .footer {
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        font-size: 10px;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: rgba(184, 176, 163, 0.75);
+        margin-top: 4px;
+      }
+
+      .print-hint {
+        max-width: 210mm;
+        margin: 0 auto 24px;
+        text-align: center;
+        color: #aaa;
+        font-size: 13px;
+        font-family: Outfit, sans-serif;
+      }
+
+      @media print {
+        body {
+          background: white;
+        }
+        .print-hint {
+          display: none;
+        }
+        .sheet {
+          margin: 0;
+          box-shadow: none;
+          width: 210mm;
+          min-height: 297mm;
+          page-break-after: always;
+        }
+        @page {
+          size: A4;
+          margin: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <p class="print-hint">Open this page → Ctrl/Cmd + P → Save as PDF · or screenshot the poster below</p>
+
+    <article class="sheet" aria-label="Kidsmybook partner poster">
+      <div class="inner">
+        <header class="brand">
+          <div class="brand-mark">Kidsmybook</div>
+          <div class="brand-tag">Partner Invitation</div>
+        </header>
+
+        <h1>Turn a child’s passion into a published achievement.</h1>
+        <p class="lead">
+          Publishing · Book Launch · Exhibition · Media · Portfolio — one pathway for families who want a flagship result
+          their child can own.
+        </p>
+
+        <hr class="rule" />
+
+        <section class="offer">
+          <p class="offer-kicker">Referral partner benefit</p>
+          <p class="offer-amount">HKD 50,000 commission</p>
+          <p class="offer-note">
+            Per closed full programme (≈ HKD 300,000). You introduce the family — we handle discovery, publishing,
+            launch, media and portfolio delivery.
+          </p>
+        </section>
+
+        <div class="grid-2">
+          <section>
+            <h2>How it works</h2>
+            <ul class="steps">
+              <li>
+                <span class="num">01</span>
+                <span><strong>Introduce</strong> a family with a clear interest topic and budget fit.</span>
+              </li>
+              <li>
+                <span class="num">02</span>
+                <span><strong>We consult</strong> and design the 9–12 month achievement pathway.</span>
+              </li>
+              <li>
+                <span class="num">03</span>
+                <span><strong>We deliver</strong> book, launch, media and portfolio assets end-to-end.</span>
+              </li>
+              <li>
+                <span class="num">04</span>
+                <span><strong>You earn</strong> HKD 50,000 when the case closes.</span>
+              </li>
+            </ul>
+          </section>
+
+          <section class="who">
+            <h2>Ideal partners</h2>
+            <p>Education / admissions consultants</p>
+            <p>Portfolio &amp; interview coaches</p>
+            <p>Premium tutoring &amp; STEAM studios</p>
+            <p>Family offices &amp; private education desks</p>
+          </section>
+        </div>
+
+        <section class="contact">
+          <p class="contact-title">Partner contact</p>
+          <div class="contact-rows">
+            <div class="row">
+              <span>Email</span>
+              <a href="mailto:kidsmybook@outlook.com"><strong>kidsmybook@outlook.com</strong></a>
+            </div>
+            <div class="row">
+              <span>WhatsApp</span>
+              <a href="https://wa.me/85291214157"><strong>@kidsmybook</strong></a>
+            </div>
+            <div class="row">
+              <span>Web</span>
+              <strong>kidsmybook.com</strong>
+            </div>
+          </div>
+          <p class="cta">Reply with “PARTNER” — we will send the one-page partner agreement and Hilary case brief.</p>
+        </section>
+
+        <footer class="footer">
+          <span>Hong Kong · Academic Press</span>
+          <span>Young Scholar Series</span>
+        </footer>
+      </div>
+    </article>
+  </body>
+</html>
