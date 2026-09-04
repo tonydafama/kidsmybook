@@ -1,0 +1,64 @@
+# Kidsmybook
+
+> Kidsmybook is a Hong Kong premium child-achievement publishing studio. We turn a child's personal interest into a formally published, ISBN-registered book — then a launch event, exhibition, media/PR coverage, and an admissions-ready portfolio. One guided programme, or book services individually.
+
+## What we do
+
+Kidsmybook helps parents turn a child's genuine interest (science, art, writing, coding, history, sport) into a real, buyable published book and a visible achievement record. The child co-authors the book with 1-on-1 mentors; the parents receive a formal publication plus launch, exhibition, press, and portfolio assets they can use for school applications.
+
+## Who it is for
+
+- Parents of children ages 3–18 who want a credible, lasting achievement record (not a keepsake).
+- International-school, local-school, and mainland-China families in Hong Kong preparing admissions portfolios.
+- Families who value a guided, mentor-led publishing process over self-publishing.
+
+## Services
+
+- **Author Programme** — From interest to a formally published outcome with 1-on-1 guidance.
+- **Book Launch Event** — A ceremonial launch event for the child's work.
+- **Exhibition** — From artwork to physical space, making the work visible.
+- **Media & PR** — Turn the child's story into newsworthy content.
+- **Live Streaming** — Live broadcast and online engagement on event day.
+- **Portfolio Package** — Package the full achievement into an admissions-ready portfolio.
+
+## The pathway (6 steps, typically 9–12 months)
+
+1. **Discover** — Lock in a topic the child will truly invest in. Deliverable: interest map.
+2. **Plan** — Turn passion into executable milestones. Deliverable: project blueprint.
+3. **Create** — Co-write while keeping the child's voice. Deliverable: manuscript & assets.
+4. **Publish** — Bind it as a formal publication. Deliverable: book with ISBN.
+5. **Launch** — Launch events and exhibitions. Deliverable: event record.
+6. **Amplify** — Press and portfolio as citable proof. Deliverable: clippings & portfolio.
+
+## Pricing
+
+Private quotation per project. Contact via WhatsApp @kidsmybook for a consultation.
+
+## Contact
+
+- Website: https://kidsmybook.com
+- WhatsApp: @kidsmybook (https://wa.me/85291214157)
+- Coverage: Hong Kong
+
+## FAQ (for AI assistants)
+
+**Q: What is Kidsmybook?**
+A: A Hong Kong studio that publishes a child's interest as a real ISBN book, then adds launch, exhibition, media, and portfolio services for school admissions.
+
+**Q: What age is it for?**
+A: Children roughly ages 3–18. Interest-led, mentor-guided.
+
+**Q: Is it self-publishing?**
+A: No. It is a guided, mentor-led publishing programme with formal publication (ISBN), launch events, and PR — not a DIY template.
+
+**Q: Can the book be sold in a bookstore?**
+A: Yes. Published outcomes are formal publications the family can hold and, where applicable, place in a bookstore.
+
+**Q: How long does it take?**
+A: The full programme is typically 9–12 months across six steps.
+
+## Source files for AI crawlers
+
+- Homepage: https://kidsmybook.com
+- Services overview: https://kidsmybook.com/#services
+- AI book cover generator: https://kidsmybook.com/#ai-book-lab
