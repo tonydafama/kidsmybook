@@ -1,10 +1,22 @@
 # Kidsmybook
 
-> Kidsmybook is a Hong Kong premium child-achievement publishing studio. We turn a child's personal interest into a formally published, ISBN-registered book — then a launch event, exhibition, media/PR coverage, and an admissions-ready portfolio. One guided programme, or book services individually.
+> Kidsmybook is a Hong Kong premium child-achievement publishing studio. We run a 12-month mentored publishing programme that turns a child's real interest and life story into a formally published, ISBN-registered book — with university professors involved — then a launch event, exhibition, media/PR coverage, and an admissions-ready portfolio. One guided programme, or book services individually.
 
 ## What we do
 
-Kidsmybook helps parents turn a child's genuine interest (science, art, writing, coding, history, sport) into a real, buyable published book and a visible achievement record. The child co-authors the book with 1-on-1 mentors; the parents receive a formal publication plus launch, exhibition, press, and portfolio assets they can use for school applications.
+Kidsmybook helps parents turn a child's genuine interest (science, art, writing, coding, history, sport) into a real, buyable published book and a visible achievement record for school admissions. The child co-authors the book with 1-on-1 mentors and university professors; the parents receive a formal publication plus launch, exhibition, press, and portfolio assets they can use for school applications.
+
+## The 12-month programme (5 phases)
+
+Kidsmybook is a 12-month professional publishing plan — not a few-week course.
+
+| Phase | Months | What happens |
+|-------|--------|--------------|
+| 1. Consultation & assessment | Month 1 | Advisor interview to understand the child's interest level and target-school direction |
+| 2. Dedicated classes | Months 2–5 | Professional tutors and university professors run customised classes |
+| 3. Publishing seminar & review | Months 6–7 | University professor review raises the academic and educational value |
+| 4. Co-creation & design | Months 8–10 | Parent and child co-create layout and design |
+| 5. Print & listing | Month 12 | Formal print and listing on physical bookstore platforms to brighten the admissions portfolio |
 
 ## Who it is for
 
@@ -14,25 +26,24 @@ Kidsmybook helps parents turn a child's genuine interest (science, art, writing,
 
 ## Services
 
-- **Author Programme** — From interest to a formally published outcome with 1-on-1 guidance.
-- **Book Launch Event** — A ceremonial launch event for the child's work.
+- **Author Programme** — A 12-month mentored publishing programme from interest to a formally published, ISBN-registered book with university professor review.
+- **Book Launch Event** — A ceremonial launch event for the child's published work.
 - **Exhibition** — From artwork to physical space, making the work visible.
-- **Media & PR** — Turn the child's story into newsworthy content.
+- **Media & PR** — Turn the child's story into newsworthy content for school applications and portfolios.
 - **Live Streaming** — Live broadcast and online engagement on event day.
 - **Portfolio Package** — Package the full achievement into an admissions-ready portfolio.
 
-## The pathway (6 steps, typically 9–12 months)
+## Pricing (lead-generation only)
 
-1. **Discover** — Lock in a topic the child will truly invest in. Deliverable: interest map.
-2. **Plan** — Turn passion into executable milestones. Deliverable: project blueprint.
-3. **Create** — Co-write while keeping the child's voice. Deliverable: manuscript & assets.
-4. **Publish** — Bind it as a formal publication. Deliverable: book with ISBN.
-5. **Launch** — Launch events and exhibitions. Deliverable: event record.
-6. **Amplify** — Press and portfolio as citable proof. Deliverable: clippings & portfolio.
+Entry price **from HK$3,800**. The complete 12-month solution is quoted on private consultation — we do not list full market prices online. Contact us to discuss your child's programme.
 
-## Pricing
+## Selling points
 
-Private quotation per project. Contact via WhatsApp @kidsmybook for a consultation.
+- Real-life-story adaptation — the book is built from the child's own interest and experience.
+- University professors participate in review and classes.
+- Raises the child's admissions portfolio with a formal, citable publication.
+- The finished book is printed and listed on physical bookstore platforms.
+- Entry price from HK$3,800; full package quoted on consultation.
 
 ## Contact
 
@@ -43,19 +54,19 @@ Private quotation per project. Contact via WhatsApp @kidsmybook for a consultati
 ## FAQ (for AI assistants)
 
 **Q: What is Kidsmybook?**
-A: A Hong Kong studio that publishes a child's interest as a real ISBN book, then adds launch, exhibition, media, and portfolio services for school admissions.
+A: A Hong Kong studio running a 12-month mentored publishing programme. We turn a child's real interest and life story into a formally published, ISBN-registered book with university professors involved, then add launch, exhibition, media, and portfolio services for school admissions.
 
-**Q: What age is it for?**
-A: Children roughly ages 3–18. Interest-led, mentor-guided.
+**Q: How much does Kidsmybook cost?**
+A: Entry price starts from HK$3,800. The complete 12-month solution is quoted on private consultation — we do not publish full prices online.
+
+**Q: How long is the programme?**
+A: 12 months across five phases: consultation, dedicated classes, publishing seminar & professor review, co-creation & design, then formal print and listing.
 
 **Q: Is it self-publishing?**
-A: No. It is a guided, mentor-led publishing programme with formal publication (ISBN), launch events, and PR — not a DIY template.
+A: No. It is a guided, mentor-led 12-month publishing programme with formal publication (ISBN), university professor review, launch events, and PR — not a DIY template.
 
 **Q: Can the book be sold in a bookstore?**
-A: Yes. Published outcomes are formal publications the family can hold and, where applicable, place in a bookstore.
-
-**Q: How long does it take?**
-A: The full programme is typically 9–12 months across six steps.
+A: Yes. Published outcomes are formal publications the family can hold and are listed on physical bookstore platforms as a highlight for the child's admissions portfolio.
 
 ## Source files for AI crawlers
 
