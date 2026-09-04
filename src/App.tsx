@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import { AiBookCreatorPanel } from "./AiBookCreatorPage";
 import { LanguageSwitcher } from "./components/LanguageSwitcher";
 import { useLocale } from "./i18n/LocaleContext";
+import { BlogIndexPage, BlogPostPage, POSTS } from "./BlogPages";
 import {
   SERVICE_CARD_ART,
   SERVICE_ICONS,
@@ -403,9 +404,11 @@ export default function App() {
     "/",
     "/ai-book",
     "/services",
+    "/blog",
     "/case-studies",
     "/case-studies/xu-duo-butterfly-guide",
     ...serviceItems.map((item) => `/services/${item.slug}`),
+    ...POSTS.map((item) => `/blog/${item.slug}`),
   ];
 
   useEffect(() => {
@@ -413,7 +416,8 @@ export default function App() {
       "/": { title: t.seo.homeTitle, description: t.seo.homeDesc },
       "/services": { title: t.seo.servicesTitle, description: t.seo.servicesDesc },
       "/case-studies": { title: t.seo.caseStudiesTitle, description: t.seo.caseStudiesDesc },
-      "/case-studies/xu-duo-butterfly-guide": { title: t.seo.xuDuoTitle, description: t.seo.xuDuoDesc },
+      "/blog": { title: "Kidsmybook 博客｜香港升學與子女教育", description: "大陸家長嚟港升學觀察，同埋一本書點樣變成子女升學亮點嘅真實經驗。" },
+      ...POSTS.reduce((acc, item) => { acc[`/blog/${item.slug}`] = { title: item.title, description: item.excerpt }; return acc; }, {} as Record<string, { title: string; description: string }>),
     };
     for (const item of serviceItems) {
       seoMap[`/services/${item.slug}`] = {
@@ -457,6 +461,7 @@ export default function App() {
           <LanguageSwitcher />
           <a href={appHref("/#ai-book-lab")}>{t.nav.aiBook}</a>
           <a href={appHref("/#services")}>{t.nav.services}</a>
+          <a href={appHref("/blog")}>博客</a>
           <a href={appHref("/#case-studies")}>{t.nav.caseStudies}</a>
           <a href={whatsappFloating} target="_blank" rel="noreferrer">
             {t.nav.whatsapp}
@@ -469,6 +474,8 @@ export default function App() {
       {currentService && <ServiceDetailPage item={currentService} />}
       {pathname === "/case-studies" && <CaseStudiesIndex />}
       {pathname === "/case-studies/xu-duo-butterfly-guide" && <CaseStudyPage />}
+      {pathname === "/blog" && <BlogIndexPage />}
+      {pathname.startsWith("/blog/") && <BlogPostPage slug={pathname.slice("/blog/".length)} />}
       {!knownPaths.includes(pathname) && (
         <main>
           <section className="panel">
