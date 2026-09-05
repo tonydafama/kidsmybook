@@ -28,6 +28,48 @@ const POSTS: PostMeta[] = [
     date: "2026-09-05",
     readMin: 4,
   },
+  {
+    slug: "talent-admission-book-advantage",
+    title: "高才通子女點樣用一本書建立香港升學優勢？",
+    excerpt: "高才通家庭嚟港後，發現競爭唔係靠報多幾個班，而係靠子女有冇自己嘅故事。",
+    date: "2026-09-06",
+    readMin: 4,
+  },
+  {
+    slug: "gaocaitong-yisheng-xue-you-shi",
+    title: "高才通子女點樣用一本書建立香港升學優勢",
+    excerpt: "從深圳過關嘅高才通家長視角，講點樣用一本真正屬於小朋友嘅書，幫佢喺升學面試突圍。",
+    date: "2026-09-02",
+    readMin: 4,
+  },
+  {
+    slug: "xing-qu-bian-chu-ban",
+    title: "小朋友嘅興趣點樣變成一本正式出版嘅書",
+    excerpt: "昆蟲、繪畫、觀星——呢啲「無用」嘅興趣，點樣經導師同教授整理成可上架嘅出版成果。",
+    date: "2026-09-04",
+    readMin: 4,
+  },
+  {
+    slug: "zheng-shu-pi-juan",
+    title: "為何證書堆砌嘅履歷會令面試官疲倦",
+    excerpt: "大家都係奥數、游泳、弦樂，面試官睇到第三個已經眼定。點樣用一本書突圍？",
+    date: "2026-09-06",
+    readMin: 4,
+  },
+  {
+    slug: "jiao-shou-chu-ban-shuo-fu-li",
+    title: "大學教授參與出版對升學嘅說服力",
+    excerpt: "一本有教授背書、真人真事改編嘅書，點樣比十張課外活動證書更有說服力。",
+    date: "2026-09-08",
+    readMin: 4,
+  },
+  {
+    slug: "san-lian-shang-jia-yi-yi",
+    title: "實體書店上架（三聯/商務/中華）對家長嘅意義",
+    excerpt: "一本書唔係印嚟送人，而係擺得落書店平台搜得到——呢點對子女升學履歷意味住咩。",
+    date: "2026-09-10",
+    readMin: 4,
+  },
 ];
 
 const APP_BASE = import.meta.env.BASE_URL;
