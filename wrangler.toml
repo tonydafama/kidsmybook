@@ -2,6 +2,7 @@ name = "mybook-kids"
 main = "worker/index.ts"
 compatibility_date = "2026-08-05"
 workers_dev = false
+account_id = "a5305840219e568d113495a70265631d"
 
 [assets]
 directory = "./dist"
