@@ -1,5 +1,6 @@
 export interface Env {
   ASSETS: Fetcher;
+  kidsmybook_leads: KVNamespace;
   MONICA_API_KEY?: string;
   PREVIEW_LEAD_WEBHOOK?: string;
   TELEGRAM_BOT_TOKEN?: string;
@@ -30,7 +31,7 @@ type MonicaFluxResponse = {
 
 async function generateFluxImage(prompt: string, apiKey: string): Promise<string> {
   const controller = new AbortController();
-  const timeoutId = setTimeout(() => controller.abort(), 25000); // 25s timeout
+  const timeoutId = setTimeout(() => controller.abort(), 55000); // 55s timeout
 
   try {
     const res = await fetch(MONICA_FLUX_URL, {
@@ -74,6 +75,26 @@ async function handleCoverGenerate(request: Request, env: Env): Promise<Response
     return new Response(null, { status: 204, headers: CORS_HEADERS });
   }
 
+  // Rate Limiting: Max 3 requests per IP per day (using Cloudflare Cache API)
+  const ip = request.headers.get("cf-connecting-ip") || "unknown-ip";
+  const cache = caches.default;
+  const today = new Date().toISOString().split("T")[0]; // e.g., "2026-09-03"
+  const cacheKey = new Request(`https://kidsmybook.com/ratelimit/${ip}/${today}`);
+  
+  let count = 0;
+  try {
+    const cachedResponse = await cache.match(cacheKey);
+    if (cachedResponse) {
+      count = parseInt(await cachedResponse.text(), 10) || 0;
+    }
+  } catch (err) {
+    console.error("Cache read error:", err);
+  }
+
+  if (count >= 3) {
+    return json({ error: "Daily limit reached. Please try again tomorrow." }, 429);
+  }
+
   const apiKey = env.MONICA_API_KEY?.trim();
   if (!apiKey) {
     return json({ error: "Cover API is not configured (missing MONICA_API_KEY)." }, 503);
@@ -97,6 +118,16 @@ async function handleCoverGenerate(request: Request, env: Env): Promise<Response
     
     // For back cover, use the high-quality companion front artwork background
     const backUrl = frontUrl;
+
+    // Increment rate limit counter on success
+    try {
+      const newResponse = new Response((count + 1).toString(), {
+        headers: { "Cache-Control": "max-age=86400" }, // Cache for 24 hours
+      });
+      await cache.put(cacheKey, newResponse);
+    } catch (err) {
+      console.error("Cache write error:", err);
+    }
 
     return json({ frontUrl, backUrl }, 200);
   } catch (err) {
@@ -328,8 +359,8 @@ async function handlePreviewLead(request: Request, env: Env): Promise<Response> 
   const previewUrl = body.previewUrl?.trim() ?? "";
   const whatsapp = body.whatsapp?.trim() ?? "";
   const wechat = body.wechat?.trim() ?? "";
-  if (!name || !previewUrl || (!whatsapp && !wechat)) {
-    return json({ error: "name, previewUrl, and a contact method are required." }, 400);
+  if (!name || !previewUrl) {
+    return json({ error: "name and previewUrl are required." }, 400);
   }
 
   const lead: LeadPayload = {
@@ -392,6 +423,78 @@ async function handlePreviewLead(request: Request, env: Env): Promise<Response> 
   return json({ ok: true, delivery }, 200);
 }
 
+type IntakeBody = {
+  student?: string;
+  grade?: string;
+  stage?: string;
+  t1?: string;
+  t2?: string;
+  t3?: string;
+  deadline?: string;
+  contact?: string;
+  remark?: string;
+};
+
+async function handleIntake(request: Request, env: Env): Promise<Response> {
+  if (request.method === "OPTIONS") {
+    return new Response(null, { status: 204, headers: CORS_HEADERS });
+  }
+  if (request.method !== "POST") {
+    return json({ error: "Method not allowed" }, 405);
+  }
+  let body: IntakeBody;
+  try {
+    body = (await request.json()) as IntakeBody;
+  } catch {
+    return json({ error: "Invalid JSON body." }, 400);
+  }
+
+  const student = body.student?.trim() ?? "";
+  const contact = body.contact?.trim() ?? "";
+  if (!student || !contact) {
+    return json({ error: "student and contact are required." }, 400);
+  }
+
+  const id = `intake_${Date.now()}_${Math.random().toString(36).slice(2, 8)}`;
+  const record = {
+    id,
+    student,
+    grade: body.grade?.trim() ?? "",
+    stage: body.stage?.trim() ?? "",
+    topics: [body.t1?.trim(), body.t2?.trim(), body.t3?.trim()].filter(Boolean),
+    deadline: body.deadline?.trim() ?? "",
+    contact,
+    remark: body.remark?.trim() ?? "",
+    receivedAt: new Date().toISOString(),
+    status: "new",
+  };
+
+  try {
+    await env.kidsmybook_leads.put(id, JSON.stringify(record));
+    const idxRaw = await env.kidsmybook_leads.get("__index__");
+    const idx: string[] = idxRaw ? JSON.parse(idxRaw) : [];
+    idx.unshift(id);
+    await env.kidsmybook_leads.put("__index__", JSON.stringify(idx.slice(0, 500)));
+  } catch (err) {
+    console.error("KV put failed:", err);
+    return json({ error: "Storage failed" }, 500);
+  }
+
+  console.log("intake-lead", JSON.stringify(record));
+  return json({ ok: true, id }, 200);
+}
+
+async function handleIntakeList(env: Env): Promise<Response> {
+  const idxRaw = await env.kidsmybook_leads.get("__index__");
+  const idx: string[] = idxRaw ? JSON.parse(idxRaw) : [];
+  const records = [];
+  for (const id of idx.slice(0, 100)) {
+    const r = await env.kidsmybook_leads.get(id);
+    if (r) records.push(JSON.parse(r));
+  }
+  return json({ count: records.length, leads: records }, 200);
+}
+
 type WhatsAppWebhookEntry = {
   changes?: {
     value?: {
@@ -438,6 +541,12 @@ export default {
     }
     if (url.pathname === "/api/preview-lead") {
       return handlePreviewLead(request, env);
+    }
+    if (url.pathname === "/api/intake" && request.method === "POST") {
+      return handleIntake(request, env);
+    }
+    if (url.pathname === "/api/intake" && request.method === "GET") {
+      return handleIntakeList(env);
     }
     if (url.pathname === "/api/whatsapp-webhook") {
       return handleWhatsAppWebhook(request, env);

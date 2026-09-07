@@ -4,6 +4,10 @@ compatibility_date = "2026-08-05"
 workers_dev = false
 account_id = "a5305840219e568d113495a70265631d"
 
+[[kv_namespaces]]
+binding = "kidsmybook_leads"
+id = "ee8d200a425a45fbba808eb6383b3e44"
+
 [assets]
 directory = "./dist"
 binding = "ASSETS"

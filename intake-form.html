@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Kidsmybook 興趣出版諮詢表</title>
+<style>
+  body { font-family: -apple-system, "PingFang HK", "Microsoft JhengHei", sans-serif; max-width: 640px; margin: 2rem auto; padding: 0 1.2rem; color: #1a1a1a; }
+  h1 { font-size: 1.5rem; }
+  label { display: block; margin: 1.1rem 0 .4rem; font-weight: 600; }
+  input, select, textarea { width: 100%; padding: .6rem; font-size: 1rem; border: 1px solid #ccc; border-radius: 8px; box-sizing: border-box; }
+  button { margin-top: 1.5rem; background: #c0392b; color: #fff; border: 0; padding: .8rem 1.5rem; font-size: 1.05rem; border-radius: 8px; cursor: pointer; }
+  .note { font-size: .85rem; color: #666; margin-top: .3rem; }
+  .succ { background: #e8f5e9; padding: 1rem; border-radius: 8px; margin-top: 1rem; display:none; }
+</style>
+</head>
+<body>
+<h1>Kidsmybook 興趣出版諮詢表</h1>
+<p class="note">填咗基本資料，Anthony 會約你坐低傾，睇實物同已出版嘅書，再按你子女嘅題目配教授同 schedule。</p>
+
+<form id="f">
+  <label>學生姓名 / 稱呼</label>
+  <input name="student" required placeholder="例如：David" />
+
+  <label>讀緊咩年級 / 階段</label>
+  <select name="grade" required>
+    <option value="">請選擇</option>
+    <option>幼稚園</option>
+    <option>小學</option>
+    <option>初中（中一至中三）</option>
+    <option>高中（中四至中六 / DSE / IB / A-Level）</option>
+    <option>大學 / 已畢業</option>
+  </select>
+
+  <label>呢本書主要想喺邊個階段用？</label>
+  <select name="stage" required>
+    <option value="">請選擇</option>
+    <option>升小學（叩門 / 面試 portfolio）</option>
+    <option>升中學（中學面試 / 呈分）</option>
+    <option>升大學（海外 / 本地大學申請）</option>
+    <option>以防不時之需（先建立，遲啲用）</option>
+    <option>純粹留念 / 家庭紀錄</option>
+  </select>
+
+  <label>第一感興趣嘅 topic / 項目</label>
+  <input name="t1" required placeholder="例如：天文、烹飪、海洋生物" />
+
+  <label>第二感興趣嘅 topic / 項目</label>
+  <input name="t2" placeholder="例如：攝影、寫作、運動" />
+
+  <label>第三感興趣嘅 topic / 項目</label>
+  <input name="t3" placeholder="例如：歷史、程式、音樂" />
+
+  <label>想幾時完成？</label>
+  <select name="deadline" required>
+    <option value="">請選擇</option>
+    <option>3 個月內</option>
+    <option>6 個月內</option>
+    <option>1 年內</option>
+    <option>未確定，傾咗再講</option>
+  </select>
+
+  <label>家長聯絡（WhatsApp / 電郵）</label>
+  <input name="contact" required placeholder="852xxxxxxx 或 email" />
+
+  <label>備註（optional）</label>
+  <textarea name="remark" rows="3"></textarea>
+
+  <button type="submit">提交諮詢</button>
+</form>
+
+<div class="succ" id="succ">多謝！Anthony 會盡快聯絡你約時間傾。</div>
+
+<script>
+// 提交去 CF Worker /api/intake，寫落 KV，Anthony 隨時查
+document.getElementById('f').addEventListener('submit', async function(e){
+  e.preventDefault();
+  var btn = document.querySelector('button[type=submit]');
+  btn.disabled = true; btn.textContent = '提交中...';
+  var d = Object.fromEntries(new FormData(e.target).entries());
+  try {
+    var res = await fetch('/api/intake', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify(d)
+    });
+    var r = await res.json();
+    if (r.ok) {
+      document.getElementById('succ').style.display = 'block';
+      document.getElementById('f').style.display = 'none';
+    } else {
+      alert('提交失敗：' + (r.error || '未知錯誤'));
+      btn.disabled = false; btn.textContent = '提交諮詢';
+    }
+  } catch (err) {
+    alert('網絡錯誤，請稍後再試或 WhatsApp 85291214157');
+    btn.disabled = false; btn.textContent = '提交諮詢';
+  }
+});
+</script>
+</body>
+</html>
