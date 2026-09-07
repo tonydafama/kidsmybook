@@ -70,6 +70,27 @@ const POSTS: PostMeta[] = [
     date: "2026-09-10",
     readMin: 4,
   },
+  {
+    slug: "portfolio-book-4-skills",
+    title: "點解一本書會係子女升學履歷最強嘅一張牌？",
+    excerpt: "高才通家長每日幫子女報十個班、攞十張證書，但面試官記唔住。一本由小朋友自己參與、教授跟住做嘅書，反而令佢被記住。",
+    date: "2026-09-12",
+    readMin: 5,
+  },
+  {
+    slug: "gaocaitong-mom-burnout",
+    title: "高才通媽媽嘅 burnout：我幫子女報嘅班，究竟為咗佢定係為咗我？",
+    excerpt: "過來人視角。高才通家庭嚟港，家長最容易跌落嘅陷阱，係將自己嘅焦慮變成子女嘅課表。一本書，反而幫我同個女搵返屬於佢自己嘅節奏。",
+    date: "2026-09-14",
+    readMin: 5,
+  },
+  {
+    slug: "school-ranking-myth",
+    title: "第一梯隊、第二梯隊：排名以外，學校其實想睇咩？",
+    excerpt: "家長成日講「第一梯隊第二梯隊」，但面試嗰陣，老師想見嘅唔係你子女攞過幾多獎，而係佢係一個點樣嘅人。一本書，係最難造假嘅答案。",
+    date: "2026-09-16",
+    readMin: 5,
+  },
 ];
 
 const APP_BASE = import.meta.env.BASE_URL;
