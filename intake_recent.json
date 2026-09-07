@@ -1,0 +1,72 @@
+{
+  "count": 4,
+  "leads": [
+    {
+      "id": "intake_1788790912044_99joh5",
+      "student": "test",
+      "parent": "����",
+      "grade": "����",
+      "stage": "��Ū�j��",
+      "topics": [
+        "�Ѥ�"
+      ],
+      "deadline": "���Ӥ뤺",
+      "contact": "91234567",
+      "remark": "",
+      "competition": "",
+      "receivedAt": "2026-09-07T14:21:52.044Z",
+      "status": "new"
+    },
+    {
+      "id": "intake_1788790896420_5x9b5x",
+      "student": "Peter",
+      "parent": "���k�h",
+      "grade": "�����]���|�ܤ��� / DSE / IB / A-Level�^",
+      "stage": "��Ū�j�ǡ]���~ / ���a�j�ǥӽС^",
+      "topics": [
+        "�Ѥ�",
+        "��v"
+      ],
+      "deadline": "���Ӥ뤺",
+      "contact": "85291112233",
+      "remark": "test",
+      "competition": "����Ѥ���ɪ���",
+      "receivedAt": "2026-09-07T14:21:36.420Z",
+      "status": "new"
+    },
+    {
+      "id": "intake_1788788777151_iq8zya",
+      "student": "David",
+      "parent": "����",
+      "grade": "����",
+      "stage": "�ɤj��",
+      "topics": [
+        "�Ѥ�",
+        "�s�{",
+        "��v"
+      ],
+      "deadline": "6�Ӥ뤺",
+      "contact": "85291219999",
+      "remark": "",
+      "competition": "����Ѥ���L�ǧJ����",
+      "receivedAt": "2026-09-07T13:46:17.151Z",
+      "status": "new"
+    },
+    {
+      "id": "intake_1788788358786_ihlzxf",
+      "student": "David",
+      "grade": "�����]���|�ܤ��� / DSE / IB / A-Level�^",
+      "stage": "�ɤj�ǡ]���~ / ���a�j�ǥӽС^",
+      "topics": [
+        "�Ѥ�",
+        "�s�{",
+        "��v"
+      ],
+      "deadline": "6 �Ӥ뤺",
+      "contact": "85291219999",
+      "remark": "VSA �a������",
+      "receivedAt": "2026-09-07T13:39:18.786Z",
+      "status": "new"
+    }
+  ]
+}
