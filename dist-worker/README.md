@@ -1,1 +1,0 @@
-This folder contains the built output assets for the worker "mybook-kids" generated at 2026-09-07T14:19:31.689Z.

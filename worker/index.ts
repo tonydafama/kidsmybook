@@ -443,10 +443,12 @@ async function sendIntakeTelegram(rec: Record<string, unknown>, env: Env): Promi
   if (!token || !chatId) return false;
   const topics = (rec.topics as string[])?.join("、") || "（未填）";
   const lines = [
-    "📋 <b>Kidsmybook 新諮詢</b>",
+    "📋 <b>Kidsmybook 新升學資產諮詢</b>",
     "",
-    `• <b>學員</b>：${rec.student}`,
+    `• <b>學員</b>：${rec.surname} ${rec.givenName}`,
     rec.parent ? `• <b>家長</b>：${rec.parent}` : "",
+    rec.school ? `• <b>學校</b>：${rec.school}` : "",
+    rec.curriculum ? `• <b>學制</b>：${rec.curriculum}` : "",
     rec.grade ? `• <b>年級</b>：${rec.grade}` : "",
     rec.stage ? `• <b>用途</b>：${rec.stage}` : "",
     `• <b>興趣</b>：${topics}`,
@@ -511,7 +513,7 @@ const INTAKE_FORM_HTML = `<!DOCTYPE html>
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Kidsmybook 興趣出版諮詢表</title>
+<title>Kidsmybook 升學資產諮詢表</title>
 <style>
   body { font-family: -apple-system, "PingFang HK", "Microsoft JhengHei", sans-serif; max-width: 640px; margin: 2rem auto; padding: 0 1.2rem; color: #1a1a1a; }
   h1 { font-size: 1.5rem; }
@@ -523,35 +525,30 @@ const INTAKE_FORM_HTML = `<!DOCTYPE html>
 </style>
 </head>
 <body>
-<h1>Kidsmybook 興趣出版諮詢表</h1>
-<p class="note">填寫以下資料，本機構將安排會面，展示已出版書籍實物，並按學員之課題配對相關教授及編撰日程。</p>
+<h1>Kidsmybook 升學資產諮詢表</h1>
+<p class="note">填寫以下資料，本機構將安排會面，展示學員升學資產實物，並按學員之課題配對相關教授及編撰日程。</p>
 
 <form id="f">
-  <label>學員姓名</label>
-  <input name="student" required placeholder="例如：Peter" />
+  <label>學員姓氏</label>
+  <input name="surname" required placeholder="例如：陳" />
+
+  <label>學員名字</label>
+  <input name="givenName" required placeholder="例如：志明" />
 
   <label>家長姓名（中文）</label>
-  <input name="parent" required placeholder="例如：陳女士" />
+  <input name="parent" required placeholder="例如：陳大文" />
 
-  <label>就讀年級 / 階段</label>
-  <select name="grade" required>
-    <option value="">請選擇</option>
-    <option>幼稚園</option>
-    <option>小學</option>
-    <option>初中（中一至中三）</option>
-    <option>高中（中四至中六 / DSE / IB / A-Level）</option>
-    <option>大學 / 已畢業</option>
-  </select>
+  <label>就讀學校名稱</label>
+  <input name="school" required placeholder="例如：維多利亞書院 / 拔萃男書院" />
+
+  <label>學制</label>
+  <input name="curriculum" required placeholder="例如：DSE / IB / A-Level / AP" />
+
+  <label>年級</label>
+  <input name="grade" required placeholder="例如：中四 / Grade 10 / Year 12" />
 
   <label>本書主要應用階段</label>
-  <select name="stage" required>
-    <option value="">請選擇</option>
-    <option>升讀小學（叩門 / 面試檔案）</option>
-    <option>升讀中學（中學面試 / 呈分試）</option>
-    <option>升讀大學（海外 / 本地大學申請）</option>
-    <option>未確定，先行建立備用</option>
-    <option>純粹留念 / 家庭紀錄</option>
-  </select>
+  <input name="stage" required placeholder="例如：升讀大學（海外 / 本地大學申請）" />
 
   <label>第一興趣主題</label>
   <input name="t1" required placeholder="例如：天文、烹飪、海洋生物" />
@@ -566,9 +563,8 @@ const INTAKE_FORM_HTML = `<!DOCTYPE html>
   <select name="deadline" required>
     <option value="">請選擇</option>
     <option>三個月內</option>
-    <option>六個月內</option>
+    <option>半年內</option>
     <option>一年內</option>
-    <option>尚未確定，面議後再定</option>
   </select>
 
   <label>家長聯絡方式（WhatsApp / 電郵）</label>
@@ -628,19 +624,27 @@ async function handleIntake(request: Request, env: Env): Promise<Response> {
     return json({ error: "Invalid JSON body." }, 400);
   }
 
-  const student = body.student?.trim() ?? "";
+  const surname = body.surname?.trim() ?? "";
+  const givenName = body.givenName?.trim() ?? "";
   const parent = body.parent?.trim() ?? "";
+  const school = body.school?.trim() ?? "";
+  const curriculum = body.curriculum?.trim() ?? "";
+  const grade = body.grade?.trim() ?? "";
   const contact = body.contact?.trim() ?? "";
-  if (!student || !contact) {
-    return json({ error: "student and contact are required." }, 400);
+  if (!surname || !givenName || !contact) {
+    return json({ error: "surname, givenName and contact are required." }, 400);
   }
 
   const id = `intake_${Date.now()}_${Math.random().toString(36).slice(2, 8)}`;
   const record = {
     id,
-    student,
+    surname,
+    givenName,
+    student: `${surname}${givenName}`,
     parent,
-    grade: body.grade?.trim() ?? "",
+    school,
+    curriculum,
+    grade,
     stage: body.stage?.trim() ?? "",
     topics: [body.t1?.trim(), body.t2?.trim(), body.t3?.trim()].filter(Boolean),
     deadline: body.deadline?.trim() ?? "",
@@ -662,9 +666,7 @@ async function handleIntake(request: Request, env: Env): Promise<Response> {
     return json({ error: "Storage failed" }, 500);
   }
 
-  // notify Anthony: WhatsApp + Telegram
-  const sentWa = await sendIntakeWhatsApp(record as unknown as Record<string, unknown>, env);
-  console.log("intake-whatsapp", sentWa ? "sent" : "skipped(no creds)");
+  // 1) saved to KV already. 2) notify + 3) pull result to Telegram
   const sentTg = await sendIntakeTelegram(record, env);
   console.log("intake-telegram", sentTg ? "sent" : "skipped(no creds)");
 
@@ -767,6 +769,8 @@ export default {
       return handleIntakeList(env);
     }
     if (url.pathname === "/api/intake" && request.method === "DELETE") {
+      const body = await request.json().catch(() => ({}));
+      const drop = body.drop || [];
       const idxRaw = await env.kidsmybook_leads.get("__index__");
       const idx: string[] = idxRaw ? JSON.parse(idxRaw) : [];
       const kept: string[] = [];
@@ -776,7 +780,7 @@ export default {
         if (!rec) continue;
         try {
           const obj = JSON.parse(rec);
-          if (obj.student === "David") { await env.kidsmybook_leads.delete(id); removed++; continue; }
+          if (drop.includes(obj.student) || drop.includes("test") || drop.includes("irene")) { await env.kidsmybook_leads.delete(id); removed++; continue; }
         } catch { /* keep */ }
         kept.push(id);
       }

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Kidsmybook 興趣出版諮詢表</title>
+<title>Kidsmybook 升學資產諮詢表</title>
 <style>
   body { font-family: -apple-system, "PingFang HK", "Microsoft JhengHei", sans-serif; max-width: 640px; margin: 2rem auto; padding: 0 1.2rem; color: #1a1a1a; }
   h1 { font-size: 1.5rem; }
@@ -15,35 +15,30 @@
 </style>
 </head>
 <body>
-<h1>Kidsmybook 興趣出版諮詢表</h1>
-<p class="note">填寫以下資料，本機構將安排會面，展示已出版書籍實物，並按學員之課題配對相關教授及編撰日程。</p>
+<h1>Kidsmybook 升學資產諮詢表</h1>
+<p class="note">填寫以下資料，本機構將安排會面，展示學員升學資產實物，並按學員之課題配對相關教授及編撰日程。</p>
 
 <form id="f">
-  <label>學員姓名</label>
-  <input name="student" required placeholder="例如：David" />
+  <label>學員姓氏</label>
+  <input name="surname" required placeholder="例如：陳" />
+
+  <label>學員名字</label>
+  <input name="givenName" required placeholder="例如：志明" />
 
   <label>家長姓名（中文）</label>
-  <input name="parent" required placeholder="例如：陳女士" />
+  <input name="parent" required placeholder="例如：陳大文" />
 
-  <label>就讀年級 / 階段</label>
-  <select name="grade" required>
-    <option value="">請選擇</option>
-    <option>幼稚園</option>
-    <option>小學</option>
-    <option>初中（中一至中三）</option>
-    <option>高中（中四至中六 / DSE / IB / A-Level）</option>
-    <option>大學 / 已畢業</option>
-  </select>
+  <label>就讀學校名稱</label>
+  <input name="school" required placeholder="例如：維多利亞書院 / 拔萃男書院" />
+
+  <label>學制</label>
+  <input name="curriculum" required placeholder="例如：DSE / IB / A-Level / AP" />
+
+  <label>年級</label>
+  <input name="grade" required placeholder="例如：中四 / Grade 10 / Year 12" />
 
   <label>本書主要應用階段</label>
-  <select name="stage" required>
-    <option value="">請選擇</option>
-    <option>升讀小學（叩門 / 面試檔案）</option>
-    <option>升讀中學（中學面試 / 呈分試）</option>
-    <option>升讀大學（海外 / 本地大學申請）</option>
-    <option>未確定，先行建立備用</option>
-    <option>純粹留念 / 家庭紀錄</option>
-  </select>
+  <input name="stage" required placeholder="例如：升讀大學（海外 / 本地大學申請）" />
 
   <label>第一興趣主題</label>
   <input name="t1" required placeholder="例如：天文、烹飪、海洋生物" />
@@ -58,9 +53,8 @@
   <select name="deadline" required>
     <option value="">請選擇</option>
     <option>三個月內</option>
-    <option>六個月內</option>
+    <option>半年內</option>
     <option>一年內</option>
-    <option>尚未確定，面議後再定</option>
   </select>
 
   <label>家長聯絡方式（WhatsApp / 電郵）</label>
