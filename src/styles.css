@@ -2254,41 +2254,41 @@ select:focus {
   }
 }
 
-.wa-handshake {
-  display: grid;
-  gap: 10px;
-  padding: 12px 14px;
-  border: 1px solid rgba(37, 211, 102, 0.28);
-  border-radius: 12px;
-  background: rgba(37, 211, 102, 0.06);
-}
-
-.wa-handshake__code {
-  margin: 0;
-  color: #d8f5e3;
-  font-size: 14px;
-}
-
-.wa-handshake__code strong {
-  letter-spacing: 0.14em;
-  font-size: 16px;
-}
-
-.wa-handshake__open {
-  justify-self: start;
-}
-
-.wa-handshake__confirm {
+.ai-chips {
   display: flex;
-  align-items: flex-start;
+  flex-wrap: wrap;
   gap: 8px;
-  font-size: 13px;
-  color: #d6cebf;
-  cursor: pointer;
+  margin-top: 8px;
 }
 
-.wa-handshake__confirm input {
-  margin-top: 2px;
+.ai-chip {
+  appearance: none;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
+  color: #d2cabd;
+  font-size: 12px;
+  padding: 4px 10px;
+  cursor: pointer;
+  transition: all 0.2s var(--ease);
+}
+
+.ai-chip:hover {
+  background: rgba(200, 168, 116, 0.15);
+  border-color: rgba(200, 168, 116, 0.4);
+  color: #efe9dc;
+}
+
+.wa-btn {
+  background: #25D366;
+  color: #fff;
+  border-color: #25D366;
+  font-weight: 600;
+}
+
+.wa-btn:hover {
+  background: #128C7E;
+  border-color: #128C7E;
 }
 
 .ai-book-side {

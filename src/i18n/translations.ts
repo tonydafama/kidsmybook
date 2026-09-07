@@ -66,19 +66,8 @@ export type Translations = {
     ageSelect: string;
     personality: string;
     personalityPlaceholder: string;
-    whatsapp: string;
-    whatsappPlaceholder: string;
-    wechat: string;
-    wechatPlaceholder: string;
-    contactHint: string;
-    waStartChat: string;
-    waChatOpened: string;
-    waConfirmSent: string;
-    waCodeLabel: string;
-    waChatHint: string;
-    errNeedWhatsAppChat: string;
-    previewSentWhatsApp: string;
-    waHandshakeMessage: (code: string, name: string) => string;
+    personalityChips: string[];
+    waHandshakeMessage: (name: string, url: string) => string;
     generateBtn: string;
     generating: string;
     generatePhase: string;
@@ -87,6 +76,9 @@ export type Translations = {
     dragHintIdle: string;
     dragHintReady: string;
     backHome: string;
+    successTitle: string;
+    successDesc: string;
+    getLinkBtn: string;
     previewReady: string;
     previewSent: string;
     previewSendCopy: string;
@@ -100,8 +92,6 @@ export type Translations = {
     defaultBackBlurb: string;
     defaultProfHint: string;
     errNameTopic: string;
-    errContact: string;
-    errWhatsAppInvalid: string;
     aiFallbackNotice: (message: string) => string;
     consultSummaryHeader: string;
     consultChild: string;
@@ -110,8 +100,6 @@ export type Translations = {
     consultProfessor: string;
     consultAge: string;
     consultPersonality: string;
-    consultWhatsapp: string;
-    consultWechat: string;
     consultSendNote: string;
     previewLinkInMessage: string;
     ageRanges: Record<AgeRangeKey, string>;
@@ -238,21 +226,10 @@ const zhHant: Translations = {
     ageSelect: "請選擇",
     personality: "孩子特質 / 性格（選填）",
     personalityPlaceholder: "例如：好奇專注、喜愛探索、觀察細膩",
-    whatsapp: "WhatsApp",
-    whatsappPlaceholder: "例如：91234567",
-    wechat: "WeChat",
-    wechatPlaceholder: "WeChat ID",
-    contactHint: "請先用 WhatsApp 開啟對話並送出驗證碼，生成後封面連結與圖檔才會發到這個號碼。亦可只填 WeChat。",
-    waStartChat: "開啟 WhatsApp 開始對話",
-    waChatOpened: "已開啟 WhatsApp",
-    waConfirmSent: "我已把驗證碼發到 @kidsmybook",
-    waCodeLabel: "驗證碼",
-    waChatHint: "點擊後會開啟 WhatsApp，請把含驗證碼的訊息發出。對話開始後，系統才能把封面連結／圖檔發回這個號碼。",
-    errNeedWhatsAppChat: "請先開啟 WhatsApp 對話並勾選「我已把驗證碼發出」，再生成封面。",
-    previewSentWhatsApp: "封面預覽已發到你的 WhatsApp",
-    waHandshakeMessage: (code, name) =>
-      `Kidsmybook 驗證碼：${code}\n我想開始對話，請在封面生成後把 3D 預覽連結與封面圖發到這個 WhatsApp。${name ? `\n小作者：${name}` : ""}`,
-    generateBtn: "生成並發送專著預覽",
+    personalityChips: ["好奇心強", "觀察力敏銳", "富有創意", "邏輯清晰", "充滿熱情", "善於表達"],
+    waHandshakeMessage: (name, url) =>
+      `你好！我剛剛為 ${name} 生成了專著封面，想索取 3D 預覽連結與高清圖檔！\n\n預覽連結參考：${url}`,
+    generateBtn: "生成 3D 專屬封面",
     generating: "正在繪製學者級封面…",
     generatePhase: "正在繪製專業學者級封面…",
     aiTimingHint: "AI 學術繪製約需 15–30 秒。",
@@ -260,6 +237,9 @@ const zhHant: Translations = {
     dragHintIdle: "生成後在此預覽 3D 學術專著",
     dragHintReady: "拖曳可旋轉 · 查看封底學者評語與書脊",
     backHome: "← 返回首頁",
+    successTitle: "🎉 你的專屬 3D 專著預覽已生成！",
+    successDesc: "請點擊下方按鈕，透過 WhatsApp 獲取完整的 3D 預覽連結與高清封面圖，並與我們的出版顧問進行免費諮詢。",
+    getLinkBtn: "📲 透過 WhatsApp 獲取預覽連結",
     previewReady: "專著預覽已備妥",
     previewSent: "專著預覽已交給顧問發送",
     previewSendCopy: "我們會把連結發到",
@@ -274,8 +254,6 @@ const zhHant: Translations = {
       "【學術專著審定與出版】\nKidsmybook 專為孩子打造具備國際出版規範的正式專著。\n由大學教授學術指導、正式登記國際標準書號 (ISBN)、香港實體書店公開發行。\n請於左側填寫小作者姓名與興趣題材，立即預覽專屬封面。",
     defaultProfHint: "請於左側填寫資料 · 即時預覽專屬 3D 封面",
     errNameTopic: "請填寫小作者姓名與興趣題材。",
-    errContact: "請留下 WhatsApp 或 WeChat，以便我們把專著預覽連結發給你。",
-    errWhatsAppInvalid: "請輸入有效的 WhatsApp 手機號碼（香港 8 位，例如 91234567；或連國家碼）。我們無法即時向 WhatsApp 查詢是否已註冊，請確認此號碼能收發 WhatsApp 訊息。",
     aiFallbackNotice: (message) => `已改為學術版型示意預覽（${message}）`,
     consultSummaryHeader: "【Kidsmybook 專著封面預覽】",
     consultChild: "小作者",
@@ -284,8 +262,6 @@ const zhHant: Translations = {
     consultProfessor: "聯名指導教授",
     consultAge: "年齡階段",
     consultPersonality: "孩子特質",
-    consultWhatsapp: "家長 WhatsApp",
-    consultWechat: "家長 WeChat",
     consultSendNote: "請把下方預覽連結發送給家長。",
     previewLinkInMessage: "預覽連結",
     ageRanges: { "3-6": "3–6 歲", "7-10": "7–10 歲", "10+": "10 歲以上" },
@@ -496,17 +472,10 @@ const zhHans: Translations = {
     ageSelect: "请选择",
     personality: "孩子特质 / 性格（选填）",
     personalityPlaceholder: "例如：好奇专注、喜爱探索、观察细腻",
-    contactHint: "请先用 WhatsApp 开启对话并送出验证码，生成后封面链接与图档才会发到这个号码。亦可只填 WeChat。",
-    waStartChat: "开启 WhatsApp 开始对话",
-    waChatOpened: "已开启 WhatsApp",
-    waConfirmSent: "我已把验证码发到 @kidsmybook",
-    waCodeLabel: "验证码",
-    waChatHint: "点击后会开启 WhatsApp，请把含验证码的讯息发出。对话开始后，系统才能把封面链接／图档发回这个号码。",
-    errNeedWhatsAppChat: "请先开启 WhatsApp 对话并勾选「我已把验证码发出」，再生成封面。",
-    previewSentWhatsApp: "封面预览已发到你的 WhatsApp",
-    waHandshakeMessage: (code, name) =>
-      `Kidsmybook 验证码：${code}\n我想开始对话，请在封面生成后把 3D 预览链接与封面图发到这个 WhatsApp。${name ? `\n小作者：${name}` : ""}`,
-    generateBtn: "生成并发送专著预览",
+    personalityChips: ["好奇心强", "观察力敏锐", "富有创意", "逻辑清晰", "充满热情", "善于表达"],
+    waHandshakeMessage: (name, url) =>
+      `你好！我刚刚为 ${name} 生成了专著封面，想索取 3D 预览链接与高清图档！\n\n预览链接参考：${url}`,
+    generateBtn: "生成 3D 专属封面",
     generating: "正在绘制学者级封面…",
     generatePhase: "正在绘制专业学者级封面…",
     aiTimingHint: "AI 学术绘制约需 15–30 秒。",
@@ -514,6 +483,9 @@ const zhHans: Translations = {
     dragHintIdle: "生成后在此预览 3D 学术专著",
     dragHintReady: "拖曳可旋转 · 查看封底学者评语与书脊",
     backHome: "← 返回首页",
+    successTitle: "🎉 你的专属 3D 专著预览已生成！",
+    successDesc: "请点击下方按钮，透过 WhatsApp 获取完整的 3D 预览链接与高清封面图，并与我们的出版顾问进行免费咨询。",
+    getLinkBtn: "📲 透过 WhatsApp 获取预览链接",
     previewReady: "专著预览已备妥",
     previewSent: "专著预览已交给顾问发送",
     previewSendCopy: "我们会把链接发到",
@@ -527,8 +499,6 @@ const zhHans: Translations = {
       "【学术专著审定与出版】\nKidsmybook 专为孩子打造具备国际出版规范的正式专著。\n由大学教授学术指导、正式登记国际标准书号 (ISBN)、香港实体书店公开发行。\n请于左侧填写小作者姓名与兴趣题材，立即预览专属封面。",
     defaultProfHint: "请于左侧填写资料 · 即时预览专属 3D 封面",
     errNameTopic: "请填写小作者姓名与兴趣题材。",
-    errContact: "请留下 WhatsApp 或 WeChat，以便我们把专著预览链接发给你。",
-    errWhatsAppInvalid: "请输入有效的 WhatsApp 手机号码（香港 8 位，例如 91234567；或连国家码）。我们无法即时向 WhatsApp 查询是否已注册，请确认此号码能收发 WhatsApp 消息。",
     aiFallbackNotice: (message) => `已改为学术版型示意预览（${message}）`,
     consultSummaryHeader: "【Kidsmybook 专著封面预览】",
     consultChild: "小作者",
@@ -537,8 +507,6 @@ const zhHans: Translations = {
     consultProfessor: "联名指导教授",
     consultAge: "年龄阶段",
     consultPersonality: "孩子特质",
-    consultWhatsapp: "家长 WhatsApp",
-    consultWechat: "家长 WeChat",
     consultSendNote: "请把下方预览链接发送给家长。",
     previewLinkInMessage: "预览链接",
     ageRanges: { "3-6": "3–6 岁", "7-10": "7–10 岁", "10+": "10 岁以上" },
@@ -738,21 +706,10 @@ const en: Translations = {
     ageSelect: "Select",
     personality: "Traits / personality (optional)",
     personalityPlaceholder: "e.g. curious, focused, observant",
-    whatsapp: "WhatsApp",
-    whatsappPlaceholder: "e.g. 91234567",
-    wechat: "WeChat",
-    wechatPlaceholder: "WeChat ID",
-    contactHint: "Start a WhatsApp chat and send the code first — then we can send the cover link and image to this number. WeChat alone is also fine.",
-    waStartChat: "Open WhatsApp to start chat",
-    waChatOpened: "WhatsApp opened",
-    waConfirmSent: "I sent the code to @kidsmybook",
-    waCodeLabel: "Code",
-    waChatHint: "This opens WhatsApp with a pre-filled code. Send it to start the chat — then we can return the cover link and file to this number.",
-    errNeedWhatsAppChat: "Please start the WhatsApp chat and confirm you sent the code before generating.",
-    previewSentWhatsApp: "Cover preview sent to your WhatsApp",
-    waHandshakeMessage: (code, name) =>
-      `Kidsmybook code: ${code}\nPlease start this chat, then send the 3D preview link and cover image to this WhatsApp after generation.${name ? `\nYoung author: ${name}` : ""}`,
-    generateBtn: "Generate & send preview",
+    personalityChips: ["Curious", "Observant", "Creative", "Logical", "Passionate", "Expressive"],
+    waHandshakeMessage: (name, url) =>
+      `Hi! I just generated a cover for ${name}, please send me the 3D preview link and high-res image!\n\nPreview link reference: ${url}`,
+    generateBtn: "Generate 3D Cover",
     generating: "Rendering scholar-grade cover…",
     generatePhase: "Rendering professional scholar-grade cover…",
     aiTimingHint: "AI academic rendering takes about 15–30 seconds.",
@@ -760,6 +717,9 @@ const en: Translations = {
     dragHintIdle: "Your 3D academic monograph preview appears here after generation",
     dragHintReady: "Drag to rotate · View back-cover blurb and spine",
     backHome: "← Back to home",
+    successTitle: "🎉 Your custom 3D monograph preview is ready!",
+    successDesc: "Click the button below to get the full 3D preview link and high-res cover image via WhatsApp, and enjoy a free consultation with our publishing advisors.",
+    getLinkBtn: "📲 Get Preview Link via WhatsApp",
     previewReady: "Monograph preview ready",
     previewSent: "Preview handed to consultant for delivery",
     previewSendCopy: "We will send the link to",
@@ -774,9 +734,6 @@ const en: Translations = {
       "[Academic monograph review & publishing]\nKidsmybook creates formal monographs that meet international publishing standards for children.\nUniversity professor guidance · Registered ISBN · Available in Hong Kong bookstores.\nFill in the young author's name and topic on the left to preview your cover.",
     defaultProfHint: "Fill in details on the left · Live 3D cover preview",
     errNameTopic: "Please enter the young author's name and interest/topic.",
-    errContact: "Please leave WhatsApp or WeChat so we can send your preview link.",
-    errWhatsAppInvalid:
-      "Enter a valid WhatsApp mobile number (HK 8 digits, e.g. 91234567, or with country code). We cannot query WhatsApp registration in real time — please confirm this number can send/receive WhatsApp.",
     aiFallbackNotice: (message) => `Showing academic layout preview instead (${message})`,
     consultSummaryHeader: "[Kidsmybook monograph cover preview]",
     consultChild: "Young author",
@@ -785,8 +742,6 @@ const en: Translations = {
     consultProfessor: "Co-advising professor",
     consultAge: "Age range",
     consultPersonality: "Traits",
-    consultWhatsapp: "Parent WhatsApp",
-    consultWechat: "Parent WeChat",
     consultSendNote: "Please send the preview link below to the parent.",
     previewLinkInMessage: "Preview link",
     ageRanges: { "3-6": "Ages 3–6", "7-10": "Ages 7–10", "10+": "Age 10+" },

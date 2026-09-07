@@ -55,43 +55,6 @@ const OPEN_THEME: StoryTheme = {
   c2: "#1e2b44",
 };
 
-function normalizeWhatsApp(raw: string): string {
-  const digits = raw.replace(/\D/g, "");
-  if (!digits) return "";
-  if (digits.length === 8) return `852${digits}`;
-  if (digits.startsWith("852") && digits.length === 11) return digits;
-  if (digits.startsWith("86") && digits.length === 13) return digits;
-  if (digits.length === 11 && digits.startsWith("1")) return `86${digits}`;
-  return digits;
-}
-
-/** Format check only — WhatsApp does not expose a public "is registered" API. */
-function isPlausibleWhatsAppNumber(raw: string): boolean {
-  const digits = normalizeWhatsApp(raw);
-  if (!digits) return false;
-
-  // Hong Kong mobile: 852 + 8 digits (typically starts with 4–9)
-  if (digits.startsWith("852") && digits.length === 11) {
-    return /^852[4-9]\d{7}$/.test(digits);
-  }
-  // Mainland China mobile: 86 + 11 digits starting with 1
-  if (digits.startsWith("86") && digits.length === 13) {
-    return /^86[1]\d{10}$/.test(digits);
-  }
-  // Other E.164: country code + national number, 10–15 digits total
-  if (digits.length >= 10 && digits.length <= 15) {
-    return /^\d{10,15}$/.test(digits) && !/^0+$/.test(digits);
-  }
-  return false;
-}
-
-function makeHandshakeCode(): string {
-  const alphabet = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
-  const bytes = new Uint8Array(6);
-  crypto.getRandomValues(bytes);
-  return Array.from(bytes, (b) => alphabet[b % alphabet.length]).join("");
-}
-
 function blankCoverSvgDataUri(variant: "front" | "back"): string {
   const c0 = variant === "back" ? "#080a10" : "#0c0d14";
   const c1 = variant === "back" ? "#101524" : "#141a29";
@@ -242,13 +205,7 @@ export function AiBookCreatorPanel({ showBackLink = true, releaseTag }: AiBookCr
   const [age, setAge] = useState("");
   const [interests, setInterests] = useState("");
   const [personality, setPersonality] = useState("");
-  const [whatsappContact, setWhatsappContact] = useState("");
-  const [wechatContact, setWechatContact] = useState("");
-  const [handshakeCode, setHandshakeCode] = useState("");
-  const [waChatOpened, setWaChatOpened] = useState(false);
-  const [waConfirmedSent, setWaConfirmedSent] = useState(false);
-  const [deliveryChannel, setDeliveryChannel] = useState<"whatsapp" | "studio" | null>(null);
-  const [leadSent, setLeadSent] = useState(false);
+  const [step, setStep] = useState<"form" | "ready">("form");
   const [shareCopied, setShareCopied] = useState<"link" | "wechat" | null>(null);
   const [formError, setFormError] = useState("");
   const [apiNotice, setApiNotice] = useState("");
@@ -305,8 +262,6 @@ export function AiBookCreatorPanel({ showBackLink = true, releaseTag }: AiBookCr
       `${t.aiLab.consultProfessor}：${profile.professorName}`,
       ageLabel && `${t.aiLab.consultAge}：${ageLabel}`,
       personality.trim() && `${t.aiLab.consultPersonality}：${personality.trim()}`,
-      whatsappContact.trim() && `${t.aiLab.consultWhatsapp}：${whatsappContact.trim()}`,
-      wechatContact.trim() && `${t.aiLab.consultWechat}：${wechatContact.trim()}`,
       t.aiLab.consultSendNote,
     ].filter(Boolean);
     return bits.join("\n");
@@ -389,10 +344,8 @@ export function AiBookCreatorPanel({ showBackLink = true, releaseTag }: AiBookCr
     ageLine: string,
     imageUrls?: { front: string; back: string }
   ) => {
-    const wa = whatsappContact.trim();
-    const wx = wechatContact.trim();
     try {
-      const res = await fetch("/api/preview-lead", {
+      await fetch("/api/preview-lead", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -400,49 +353,27 @@ export function AiBookCreatorPanel({ showBackLink = true, releaseTag }: AiBookCr
           age: ageLine,
           topic: interests.trim(),
           personality: personality.trim(),
-          whatsapp: normalizeWhatsApp(wa) || wa,
-          wechat: wx,
           previewUrl,
-          handshakeCode,
-          conversationStarted: Boolean(wa && waChatOpened && waConfirmedSent),
           frontImg: imageUrls?.front?.startsWith("http") ? imageUrls.front : "",
           backImg: imageUrls?.back?.startsWith("http") ? imageUrls.back : "",
         }),
       });
-      const payload = (await res.json().catch(() => ({}))) as { delivery?: "whatsapp" | "studio" };
-      setDeliveryChannel(payload.delivery === "whatsapp" ? "whatsapp" : "studio");
     } catch {
-      setDeliveryChannel("studio");
+      // Ignore errors for background tracking
     }
-    setLeadSent(true);
   };
 
   const generatePreview = async () => {
     const name = childName.trim();
     const ageLine = age.trim();
     const topic = interests.trim();
-    const wa = whatsappContact.trim();
-    const wx = wechatContact.trim();
     if (!name || !topic) {
       setFormError(t.aiLab.errNameTopic);
       return;
     }
-    if (!wa && !wx) {
-      setFormError(t.aiLab.errContact);
-      return;
-    }
-    if (wa && !isPlausibleWhatsAppNumber(wa)) {
-      setFormError(t.aiLab.errWhatsAppInvalid);
-      return;
-    }
-    if (wa && (!waChatOpened || !waConfirmedSent)) {
-      setFormError(t.aiLab.errNeedWhatsAppChat);
-      return;
-    }
+    
     setFormError("");
     setApiNotice("");
-    setLeadSent(false);
-    setDeliveryChannel(null);
     setIsGenerating(true);
     setGeneratePhase(t.aiLab.generatePhase);
     resetBookView();
@@ -488,12 +419,14 @@ export function AiBookCreatorPanel({ showBackLink = true, releaseTag }: AiBookCr
       setCoverSource("ai");
       setApiNotice("");
       setPreviewReady(true);
+      setStep("ready");
       const query = buildPreviewQuery(name, ageLine, generatedImages);
       previewUrl = `${window.location.origin}${window.location.pathname}?${query}#ai-book-lab`;
       window.history.replaceState(null, "", `${window.location.pathname}?${query}#ai-book-lab`);
     } catch (err) {
       applySvgCovers(name, theme, profile);
       setPreviewReady(true);
+      setStep("ready");
       const message = err instanceof Error ? err.message : "AI cover unavailable";
       setApiNotice(t.aiLab.aiFallbackNotice(message));
       const query = buildPreviewQuery(name, ageLine);
@@ -504,7 +437,8 @@ export function AiBookCreatorPanel({ showBackLink = true, releaseTag }: AiBookCr
       setGeneratePhase("");
     }
     if (previewUrl) {
-      await notifyStudioToSendPreview(previewUrl, name, ageLine, generatedImages);
+      // Fire and forget tracking
+      void notifyStudioToSendPreview(previewUrl, name, ageLine, generatedImages);
     }
   };
 
@@ -559,7 +493,7 @@ export function AiBookCreatorPanel({ showBackLink = true, releaseTag }: AiBookCr
   const consultSummary = useMemo(() => {
     if (!previewReady || !childName.trim()) return "";
     return buildConsultSummary(childName.trim(), age.trim());
-  }, [previewReady, childName, age, interests, personality, whatsappContact, wechatContact, t]);
+  }, [previewReady, childName, age, interests, personality, t]);
 
   const previewShareUrl = useMemo(() => {
     if (!previewReady || !childName.trim()) return "";
@@ -639,112 +573,55 @@ export function AiBookCreatorPanel({ showBackLink = true, releaseTag }: AiBookCr
               onChange={(e) => setPersonality(e.target.value)}
               placeholder={t.aiLab.personalityPlaceholder}
             />
+            <div className="ai-chips">
+              {t.aiLab.personalityChips.map(chip => (
+                <button 
+                  key={chip}
+                  type="button" 
+                  className="ai-chip" 
+                  onClick={() => setPersonality(p => p ? `${p}, ${chip}` : chip)}
+                >
+                  {chip}
+                </button>
+              ))}
+            </div>
           </label>
 
-          <div className="ai-contact-grid">
-            <label className="ai-field">
-              <span>{t.aiLab.whatsapp}</span>
-              <input
-                value={whatsappContact}
-                onChange={(e) => {
-                  setWhatsappContact(e.target.value);
-                  setWaChatOpened(false);
-                  setWaConfirmedSent(false);
-                  setHandshakeCode("");
-                }}
-                placeholder={t.aiLab.whatsappPlaceholder}
-                inputMode="tel"
-                autoComplete="tel"
-              />
-            </label>
-            <label className="ai-field">
-              <span>{t.aiLab.wechat}</span>
-              <input
-                value={wechatContact}
-                onChange={(e) => setWechatContact(e.target.value)}
-                placeholder={t.aiLab.wechatPlaceholder}
-                autoComplete="off"
-              />
-            </label>
-          </div>
-          {isPlausibleWhatsAppNumber(whatsappContact) ? (
-            <div className="wa-handshake">
-              <p className="meta ai-form-hint">{t.aiLab.waChatHint}</p>
-              {handshakeCode ? (
-                <p className="wa-handshake__code">
-                  {t.aiLab.waCodeLabel}：<strong>{handshakeCode}</strong>
-                </p>
-              ) : null}
+          {formError ? <p className="ai-form-error" role="alert">{formError}</p> : null}
+          {apiNotice ? <p className="ai-form-notice" role="status">{apiNotice}</p> : null}
+
+          {step === "form" ? (
+            <>
               <button
                 type="button"
-                className="btn ghost wa-handshake__open"
+                className="btn primary ai-generate-btn"
+                onClick={() => void generatePreview()}
+                disabled={isGenerating}
+              >
+                {isGenerating ? generatePhase || t.aiLab.generating : t.aiLab.generateBtn}
+              </button>
+              <p className="meta ai-form-hint">{t.aiLab.aiTimingHint}</p>
+            </>
+          ) : (
+            <div className="ai-cta-card ai-cta-card--ready">
+              <h4>{t.aiLab.successTitle}</h4>
+              <p className="ai-cta-copy">{t.aiLab.successDesc}</p>
+              <button 
+                type="button" 
+                className="btn primary wa-btn" 
                 onClick={() => {
-                  const code = handshakeCode || makeHandshakeCode();
-                  if (!handshakeCode) setHandshakeCode(code);
-                  const text = t.aiLab.waHandshakeMessage(code, childName.trim());
+                  const text = t.aiLab.waHandshakeMessage(childName.trim(), previewShareUrl);
                   window.open(
                     `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`,
                     "_blank",
                     "noopener,noreferrer"
                   );
-                  setWaChatOpened(true);
                 }}
               >
-                {waChatOpened ? t.aiLab.waChatOpened : t.aiLab.waStartChat}
+                {t.aiLab.getLinkBtn}
               </button>
-              <label className="wa-handshake__confirm">
-                <input
-                  type="checkbox"
-                  checked={waConfirmedSent}
-                  onChange={(e) => setWaConfirmedSent(e.target.checked)}
-                  disabled={!waChatOpened}
-                />
-                <span>{t.aiLab.waConfirmSent}</span>
-              </label>
             </div>
-          ) : null}
-          <p className="meta ai-form-hint">{t.aiLab.contactHint}</p>
-
-          {formError ? <p className="ai-form-error" role="alert">{formError}</p> : null}
-          {apiNotice ? <p className="ai-form-notice" role="status">{apiNotice}</p> : null}
-
-          <button
-            type="button"
-            className="btn primary ai-generate-btn"
-            onClick={() => void generatePreview()}
-            disabled={isGenerating}
-          >
-            {isGenerating ? generatePhase || t.aiLab.generating : t.aiLab.generateBtn}
-          </button>
-          <p className="meta ai-form-hint">{t.aiLab.aiTimingHint}</p>
-
-          {previewReady ? (
-            <div className="ai-cta-card ai-cta-card--ready">
-              <h4>
-                {leadSent
-                  ? deliveryChannel === "whatsapp"
-                    ? t.aiLab.previewSentWhatsApp
-                    : t.aiLab.previewSent
-                  : t.aiLab.previewReady}
-              </h4>
-              <p className="ai-cta-copy">
-                {t.aiLab.previewSendCopy}
-                {whatsappContact.trim() ? ` WhatsApp ${whatsappContact.trim()}` : ""}
-                {whatsappContact.trim() && wechatContact.trim() ? " /" : ""}
-                {wechatContact.trim() ? ` WeChat ${wechatContact.trim()}` : ""}
-                {t.aiLab.previewSendEnd}
-              </p>
-              <div className="ai-share-link-row">
-                <input className="ai-share-link-input" readOnly value={previewShareUrl} aria-label={t.aiLab.previewLinkLabel} />
-                <button type="button" className="btn ghost ai-share-copy-btn" onClick={copyShareLink}>
-                  {shareCopied === "link" ? t.aiLab.copiedLink : t.aiLab.copyLink}
-                </button>
-              </div>
-              <a className="btn ghost ai-cta-primary" href={studioNotifyUrl} target="_blank" rel="noreferrer">
-                {t.aiLab.notifyStudio}
-              </a>
-            </div>
-          ) : null}
+          )}
         </div>
 
         <div className="ai-book-side">

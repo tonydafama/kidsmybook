@@ -425,6 +425,7 @@ async function handlePreviewLead(request: Request, env: Env): Promise<Response> 
 
 type IntakeBody = {
   student?: string;
+  parent?: string;
   grade?: string;
   stage?: string;
   t1?: string;
@@ -433,7 +434,77 @@ type IntakeBody = {
   deadline?: string;
   contact?: string;
   remark?: string;
+  competition?: string;
 };
+
+async function sendIntakeTelegram(rec: Record<string, unknown>, env: Env): Promise<boolean> {
+  const token = env.TELEGRAM_BOT_TOKEN?.trim();
+  const chatId = env.TELEGRAM_CHAT_ID?.trim();
+  if (!token || !chatId) return false;
+  const topics = (rec.topics as string[])?.join("、") || "（未填）";
+  const lines = [
+    "📋 <b>Kidsmybook 新諮詢</b>",
+    "",
+    `• <b>學員</b>：${rec.student}`,
+    rec.parent ? `• <b>家長</b>：${rec.parent}` : "",
+    rec.grade ? `• <b>年級</b>：${rec.grade}` : "",
+    rec.stage ? `• <b>用途</b>：${rec.stage}` : "",
+    `• <b>興趣</b>：${topics}`,
+    rec.competition ? `• <b>比賽/獎項</b>：${rec.competition}` : "",
+    rec.deadline ? `• <b>完成</b>：${rec.deadline}` : "",
+    rec.contact ? `• <b>聯絡</b>：<code>${rec.contact}</code>` : "",
+    rec.remark ? `• <b>備註</b>：${rec.remark}` : "",
+    "",
+    `🕐 ${String(rec.receivedAt).slice(0,16).replace("T"," ")}`,
+  ].filter(Boolean);
+  const text = lines.join("\n");
+  try {
+    const res = await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ chat_id: chatId, text, parse_mode: "HTML" }),
+    });
+    return res.ok;
+  } catch (err) {
+    console.error("intake telegram failed:", err);
+    return false;
+  }
+}
+
+async function sendIntakeWhatsApp(rec: Record<string, unknown>, env: Env): Promise<boolean> {
+  const token = env.WHATSAPP_TOKEN?.trim();
+  const phoneId = env.WHATSAPP_PHONE_NUMBER_ID?.trim();
+  const to = "85291214157";
+  if (!token || !phoneId) return false;
+  const lines = [
+    "📝 Kidsmybook 新諮詢",
+    `學生：${rec.student}`,
+    rec.parent ? `家長：${rec.parent}` : "",
+    rec.grade ? `年級：${rec.grade}` : "",
+    rec.stage ? `用途：${rec.stage}` : "",
+    (rec.topics as string[])?.length ? `興趣：${(rec.topics as string[]).join("、")}` : "",
+    rec.competition ? `比賽/獎項：${rec.competition}` : "",
+    rec.deadline ? `完成：${rec.deadline}` : "",
+    rec.contact ? `聯絡：${rec.contact}` : "",
+    rec.remark ? `備註：${rec.remark}` : "",
+  ].filter(Boolean);
+  try {
+    const res = await fetch(`https://graph.facebook.com/v21.0/${phoneId}/messages`, {
+      method: "POST",
+      headers: { Authorization: `Bearer ${token}`, "Content-Type": "application/json" },
+      body: JSON.stringify({
+        messaging_product: "whatsapp",
+        to,
+        type: "text",
+        text: { body: lines.join("\n") },
+      }),
+    });
+    return res.ok;
+  } catch (err) {
+    console.error("intake whatsapp failed:", err);
+    return false;
+  }
+}
 
 async function handleIntake(request: Request, env: Env): Promise<Response> {
   if (request.method === "OPTIONS") {
@@ -450,6 +521,7 @@ async function handleIntake(request: Request, env: Env): Promise<Response> {
   }
 
   const student = body.student?.trim() ?? "";
+  const parent = body.parent?.trim() ?? "";
   const contact = body.contact?.trim() ?? "";
   if (!student || !contact) {
     return json({ error: "student and contact are required." }, 400);
@@ -459,12 +531,14 @@ async function handleIntake(request: Request, env: Env): Promise<Response> {
   const record = {
     id,
     student,
+    parent,
     grade: body.grade?.trim() ?? "",
     stage: body.stage?.trim() ?? "",
     topics: [body.t1?.trim(), body.t2?.trim(), body.t3?.trim()].filter(Boolean),
     deadline: body.deadline?.trim() ?? "",
     contact,
     remark: body.remark?.trim() ?? "",
+    competition: body.competition?.trim() ?? "",
     receivedAt: new Date().toISOString(),
     status: "new",
   };
@@ -480,6 +554,12 @@ async function handleIntake(request: Request, env: Env): Promise<Response> {
     return json({ error: "Storage failed" }, 500);
   }
 
+  // notify Anthony: WhatsApp + Telegram
+  const sentWa = await sendIntakeWhatsApp(record as unknown as Record<string, unknown>, env);
+  console.log("intake-whatsapp", sentWa ? "sent" : "skipped(no creds)");
+  const sentTg = await sendIntakeTelegram(record, env);
+  console.log("intake-telegram", sentTg ? "sent" : "skipped(no creds)");
+
   console.log("intake-lead", JSON.stringify(record));
   return json({ ok: true, id }, 200);
 }
@@ -493,6 +573,30 @@ async function handleIntakeList(env: Env): Promise<Response> {
     if (r) records.push(JSON.parse(r));
   }
   return json({ count: records.length, leads: records }, 200);
+}
+
+const ADMIN_PASSWORD = "kmyb2026";
+
+async function handleAdmin(request: Request, env: Env): Promise<Response> {
+  const url = new URL(request.url);
+  const pw = url.searchParams.get("pw") || request.headers.get("x-admin-pw") || "";
+  if (pw !== ADMIN_PASSWORD) {
+    return new Response(
+      `<!DOCTYPE html><html lang="zh"><body style="font-family:sans-serif;max-width:400px;margin:4rem auto"><h2>Kidsmybook Admin</h2><form method="get"><input name="pw" placeholder="password" style="padding:.5rem;font-size:1rem;width:100%"/><br><button style="margin-top:1rem;padding:.5rem 1rem">進入</button></form></body></html>`,
+      { status: 401, headers: { "Content-Type": "text/html; charset=utf-8" } }
+    );
+  }
+  const idxRaw = await env.kidsmybook_leads.get("__index__");
+  const idx: string[] = idxRaw ? JSON.parse(idxRaw) : [];
+  const rows: string[] = [];
+  for (const id of idx.slice(0, 200)) {
+    const r = await env.kidsmybook_leads.get(id);
+    if (!r) continue;
+    const d = JSON.parse(r);
+    rows.push(`<tr><td>${d.receivedAt?.slice(0,10) || ""}</td><td>${d.student||""}</td><td>${d.parent||""}</td><td>${d.grade||""}</td><td>${d.stage||""}</td><td>${(d.topics||[]).join("、")}</td><td>${d.competition||""}</td><td>${d.deadline||""}</td><td>${d.contact||""}</td><td>${d.remark||""}</td></tr>`);
+  }
+  const html = `<!DOCTYPE html><html lang="zh"><head><meta charset="utf-8"><title>Kidsmybook Leads</title><style>body{font-family:-apple-system,sans-serif;margin:2rem;font-size:14px}table{border-collapse:collapse;width:100%}th,td{border:1px solid #ccc;padding:.5rem;text-align:left;vertical-align:top}th{background:#c0392b;color:#fff}</style></head><body><h2>Kidsmybook 諮詢名單 (${rows.length})</h2><table><tr><th>提交日期</th><th>學員姓名</th><th>家長姓名</th><th>就讀年級</th><th>出版用途</th><th>興趣主題</th><th>比賽經驗 / 獎項</th><th>預期完成</th><th>聯絡方式</th><th>備註</th></tr>${rows.join("")}</table></body></html>`;
+  return new Response(html, { status: 200, headers: { "Content-Type": "text/html; charset=utf-8" } });
 }
 
 type WhatsAppWebhookEntry = {
@@ -542,11 +646,17 @@ export default {
     if (url.pathname === "/api/preview-lead") {
       return handlePreviewLead(request, env);
     }
+    if (url.pathname === "/intake-form" || url.pathname === "/intake-form/") {
+      return env.ASSETS.fetch(new Request("https://kidsmybook.com/intake-form.html"));
+    }
     if (url.pathname === "/api/intake" && request.method === "POST") {
       return handleIntake(request, env);
     }
     if (url.pathname === "/api/intake" && request.method === "GET") {
       return handleIntakeList(env);
+    }
+    if (url.pathname === "/admin") {
+      return handleAdmin(request, env);
     }
     if (url.pathname === "/api/whatsapp-webhook") {
       return handleWhatsAppWebhook(request, env);
