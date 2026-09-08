@@ -453,8 +453,8 @@ const zhHant: Translations = {
     ]
   },
   seo: {
-    homeTitle: "Kidsmybook｜兒童成就出版 + 展覽 + 公關全案服務",
-    homeDesc: "專為高才通及高收入家庭打造的兒童成就出版。把孩子的熱愛，變成香港頂尖學校面試最亮眼的 Portfolio。出版、發布會、媒體與升學作品集一站式服務。",
+    homeTitle: "Kidsmybook｜兒童成就出版與升學 Portfolio 策劃",
+    homeDesc: "專為高才通及新港人家庭打造的兒童成就出版與升學 Portfolio 策劃。提供小朋友出書、ISBN 註冊、大學教授審閱及發佈會服務，打造國際學校面試與小一叩門最強履歷亮點。",
     servicesTitle: "Services｜Kidsmybook 6 大兒童成就服務",
     servicesDesc: "Author Programme、Book Launch、Exhibition、Media & PR、Live Streaming、Portfolio Package。",
     caseStudiesTitle: "Case Studies｜Kidsmybook 兒童案例",
@@ -703,8 +703,8 @@ const zhHans: Translations = {
     ]
   },
   seo: {
-    homeTitle: "Kidsmybook｜儿童成就出版 + 展览 + 公关全案服务",
-    homeDesc: "专为高才通及高收入家庭打造的儿童成就出版。把孩子的热爱，变成香港顶尖学校面试最亮眼的 Portfolio。出版、发布会、媒体与升学作品集一站式服务。",
+    homeTitle: "Kidsmybook｜儿童成就出版与升学 Portfolio 策划",
+    homeDesc: "专为高才通及新港人家庭打造的儿童成就出版与升学 Portfolio 策划。提供小朋友出书、ISBN 注册、大学教授审阅及发布会服务，打造国际学校面试与小一叩门最强履历亮点。",
     servicesTitle: "Services｜Kidsmybook 6 大儿童成就服务",
     servicesDesc: "Author Programme、Book Launch、Exhibition、Media & PR、Live Streaming、Portfolio Package。",
     caseStudiesTitle: "Case Studies｜Kidsmybook 儿童案例",
@@ -977,8 +977,8 @@ const en: Translations = {
     ]
   },
   seo: {
-    homeTitle: "Kidsmybook | Child achievement publishing, exhibitions & PR",
-    homeDesc: "Premium child achievement publishing for Top Talent Pass and high-income families in HK. Turn your child's passion into a standout school admissions portfolio.",
+    homeTitle: "Kidsmybook | Child Publishing & Admissions Portfolio",
+    homeDesc: "Premium child achievement publishing and admissions portfolio planning for Top Talent Pass and expat families in HK. We offer ISBN book publishing, professor reviews, and launch events to create standout highlights for international school interviews.",
     servicesTitle: "Services | Kidsmybook six achievement programmes",
     servicesDesc: "Author Programme, Book Launch, Exhibition, Media & PR, Live Streaming, Portfolio Package.",
     caseStudiesTitle: "Case Studies | Kidsmybook",
