@@ -170,8 +170,8 @@ export type Translations = {
   };
   caseIndex: {
     title: string;
-    xuDuoTitle: string;
-    xuDuoDesc: string;
+    hilaryTitle: string;
+    hilaryDesc: string;
     futureTitle: string;
     futureDesc: string;
   };
@@ -192,8 +192,8 @@ export type Translations = {
     servicesDesc: string;
     caseStudiesTitle: string;
     caseStudiesDesc: string;
-    xuDuoTitle: string;
-    xuDuoDesc: string;
+    hilaryTitle: string;
+    hilaryDesc: string;
     serviceDetailTitle: (name: string) => string;
     serviceDetailDesc: (desc: string, detail: string) => string;
   };
@@ -409,7 +409,7 @@ const zhHant: Translations = {
   },
   caseStudy: {
     privacyName: "小作者 X",
-    realName: "徐多",
+    realName: "Hilary",
     showName: "顯示原名",
     hideName: "隱私模式",
     bookTitle: "《蝴蝶雙語圖鑑》",
@@ -434,8 +434,8 @@ const zhHant: Translations = {
   },
   caseIndex: {
     title: "Case Studies",
-    xuDuoTitle: "xu-duo-butterfly-guide",
-    xuDuoDesc: "徐多蝴蝶圖鑑案例（可切換隱私模式）",
+    hilaryTitle: "hilary-butterfly-guide",
+    hilaryDesc: "Hilary蝴蝶圖鑑案例（可切換隱私模式）",
     futureTitle: "[future cases]",
     futureDesc: "預留後續案例頁模板，沿用同一結構。",
   },
@@ -473,8 +473,8 @@ const zhHant: Translations = {
     servicesDesc: "Author Programme、Book Launch、Exhibition、Media & PR、Live Streaming、Portfolio Package。",
     caseStudiesTitle: "Case Studies｜Kidsmybook 兒童案例",
     caseStudiesDesc: "查看兒童成就出版與活動案例，了解從興趣到被世界看見的完整旅程。",
-    xuDuoTitle: "徐多蝴蝶圖鑑案例｜Kidsmybook",
-    xuDuoDesc: "8 歲孩子從興趣出發完成雙語出版，並延伸發布會、展覽與媒體曝光。",
+    hilaryTitle: "Hilary蝴蝶圖鑑案例｜Kidsmybook",
+    hilaryDesc: "8 歲孩子從興趣出發完成雙語出版，並延伸發布會、展覽與媒體曝光。",
     serviceDetailTitle: (name) => `${name}｜Kidsmybook Services`,
     serviceDetailDesc: (desc, detail) => `${desc} ${detail}`,
   },
@@ -695,8 +695,8 @@ const zhHans: Translations = {
   },
   caseIndex: {
     title: "Case Studies",
-    xuDuoTitle: "xu-duo-butterfly-guide",
-    xuDuoDesc: "徐多蝴蝶图鉴案例（可切换隐私模式）",
+    hilaryTitle: "hilary-butterfly-guide",
+    hilaryDesc: "Hilary蝴蝶图鉴案例（可切换隐私模式）",
     futureTitle: "[future cases]",
     futureDesc: "预留后续案例页模板，沿用同一结构。",
   },
@@ -734,8 +734,8 @@ const zhHans: Translations = {
     servicesDesc: "Author Programme、Book Launch、Exhibition、Media & PR、Live Streaming、Portfolio Package。",
     caseStudiesTitle: "Case Studies｜Kidsmybook 儿童案例",
     caseStudiesDesc: "查看儿童成就出版与活动案例，了解从兴趣到被世界看见的完整旅程。",
-    xuDuoTitle: "徐多蝴蝶图鉴案例｜Kidsmybook",
-    xuDuoDesc: "8 岁孩子从兴趣出发完成双语出版，并延伸发布会、展览与媒体曝光。",
+    hilaryTitle: "Hilary蝴蝶图鉴案例｜Kidsmybook",
+    hilaryDesc: "8 岁孩子从兴趣出发完成双语出版，并延伸发布会、展览与媒体曝光。",
     serviceDetailTitle: (name) => `${name}｜Kidsmybook Services`,
     serviceDetailDesc: (desc, detail) => `${desc} ${detail}`,
   },
@@ -951,7 +951,7 @@ const en: Translations = {
   },
   caseStudy: {
     privacyName: "Young Author X",
-    realName: "Xu Duo",
+    realName: "Hilary",
     showName: "Show real name",
     hideName: "Privacy mode",
     bookTitle: "Butterfly Bilingual Field Guide",
@@ -976,8 +976,8 @@ const en: Translations = {
   },
   caseIndex: {
     title: "Case Studies",
-    xuDuoTitle: "xu-duo-butterfly-guide",
-    xuDuoDesc: "Xu Duo butterfly guide case (privacy mode available)",
+    hilaryTitle: "hilary-butterfly-guide",
+    hilaryDesc: "Hilary butterfly guide case (privacy mode available)",
     futureTitle: "[future cases]",
     futureDesc: "Template reserved for upcoming case studies.",
   },
@@ -1015,8 +1015,8 @@ const en: Translations = {
     servicesDesc: "Author Programme, Book Launch, Exhibition, Media & PR, Live Streaming, Portfolio Package.",
     caseStudiesTitle: "Case Studies | Kidsmybook",
     caseStudiesDesc: "See how children move from interest to public achievement.",
-    xuDuoTitle: "Xu Duo butterfly guide | Kidsmybook",
-    xuDuoDesc: "An 8-year-old's bilingual publication extended into launch, exhibition, and media.",
+    hilaryTitle: "Hilary butterfly guide | Kidsmybook",
+    hilaryDesc: "An 8-year-old's bilingual publication extended into launch, exhibition, and media.",
     serviceDetailTitle: (name) => `${name} | Kidsmybook Services`,
     serviceDetailDesc: (desc, detail) => `${desc} ${detail}`,
   },

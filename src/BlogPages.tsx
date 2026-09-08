@@ -92,6 +92,76 @@ const POSTS: PostMeta[] = [
     date: "2026-09-16",
     readMin: 5,
   },
+  {
+    slug: "portfolio-vs-extracurriculars-hk-admissions",
+    title: "香港升學履歷比較：實體書出版 vs 傳統興趣班",
+    excerpt: "大家都學鋼琴同奧數，點樣令小朋友嘅 Portfolio 脫穎而出？一文比較傳統興趣班與兒童成就出版嘅升學優勢。",
+    date: "2026-09-18",
+    readMin: 4,
+  },
+  {
+    slug: "top-talent-pass-first-year-portfolio",
+    title: "高才通來港第一年：如何快速建立符合香港名校口味的 Portfolio",
+    excerpt: "新港人家庭必看！剛搬到香港，如何避開盲目報班的陷阱，用一年時間為子女打造高含金量的升學履歷？",
+    date: "2026-09-20",
+    readMin: 5,
+  },
+  {
+    slug: "international-school-interview-portfolio-highlight",
+    title: "國際學校面試履歷亮點：為什麼「獨特性」比「全能」更重要？",
+    excerpt: "想入讀香港頂尖國際學校？面試官真正在找的不是十項全能的完美學生，而是擁有獨特熱情與深度的孩子。",
+    date: "2026-09-22",
+    readMin: 4,
+  },
+  {
+    slug: "primary-school-door-knocking-portfolio-prep",
+    title: "小學叩門 Portfolio 準備：面試官真正在看什麼？",
+    excerpt: "叩門階段競爭白熱化，一份普通的 Portfolio 已經無法引起校長注意。了解如何用出版實體書作為叩門的終極武器。",
+    date: "2026-09-24",
+    readMin: 4,
+  },
+  {
+    slug: "child-background-enhancement-hk",
+    title: "兒童背景提升：香港名校喜歡什麼樣的課外活動？",
+    excerpt: "高收入家庭在為子女規劃課外活動時，常陷入「越多越好」的誤區。了解名校真正看重的背景提升策略。",
+    date: "2026-09-26",
+    readMin: 5,
+  },
+  {
+    slug: "mainland-parents-hk-international-schools-prep",
+    title: "內地家長必看：香港國際學校準備的 3 個常見誤區",
+    excerpt: "剛透過優才或高才通來港的內地家長，在準備香港國際學校面試時，最容易犯的三個致命錯誤，以及如何用出版書籍來破局。",
+    date: "2026-09-28",
+    readMin: 4,
+  },
+  {
+    slug: "kids-publishing-a-book-hk-isbn",
+    title: "小朋友出書香港：從興趣到 ISBN 註冊的完整指南",
+    excerpt: "想幫小朋友在香港出一本書？了解 Kidsmybook 的 12 個月出版計劃，如何將孩子的熱情轉化為有 ISBN 的正式出版物。",
+    date: "2026-09-30",
+    readMin: 5,
+  },
+  {
+    slug: "university-professor-child-work-review",
+    title: "大學教授兒童作品審閱：如何為升學履歷增加學術權威性？",
+    excerpt: "為什麼一份有大學教授推薦語的 Portfolio，能瞬間秒殺其他競爭者？探討學術權威背書在香港名校面試中的決定性作用。",
+    date: "2026-10-02",
+    readMin: 4,
+  },
+  {
+    slug: "children-project-based-learning-hk",
+    title: "兒童項目式學習 (PBL) 香港實踐：出版一本書的教育價值",
+    excerpt: "除了升學履歷，幫小朋友出書還能帶來什麼？深入探討 PBL 項目式學習如何培養孩子解決問題、邏輯思考與長期專注的能力。",
+    date: "2026-10-04",
+    readMin: 5,
+  },
+  {
+    slug: "gifted-child-development-program-hk",
+    title: "資優兒童發展計劃：除了跳級，還能如何展現天賦？",
+    excerpt: "你的孩子在某些領域展現出驚人天賦？探討如何透過出版專著，為資優兒童提供更廣闊的舞台與升學優勢。",
+    date: "2026-10-06",
+    readMin: 4,
+  },
 ];
 
 const APP_BASE = import.meta.env.BASE_URL;
@@ -224,7 +294,7 @@ function parseMarkdownBlocks(md: string): MdBlock[] {
   return out;
 }
 
-function upsertJsonLd(id: string, data: Record<string, unknown> | null) {
+export function upsertJsonLd(id: string, data: Record<string, unknown> | null) {
   const existing = document.getElementById(id);
   if (!data) {
     existing?.remove();

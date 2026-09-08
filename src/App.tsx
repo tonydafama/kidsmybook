@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import { AiBookCreatorPanel } from "./AiBookCreatorPage";
 import { LanguageSwitcher } from "./components/LanguageSwitcher";
 import { useLocale } from "./i18n/LocaleContext";
-import { BlogIndexPage, BlogPostPage, POSTS, SITE_ORIGIN, getLocalizedPostMeta } from "./BlogPages";
+import { BlogIndexPage, BlogPostPage, POSTS, SITE_ORIGIN, getLocalizedPostMeta, upsertJsonLd } from "./BlogPages";
 import {
   SERVICE_CARD_ART,
   SERVICE_ICONS,
@@ -187,7 +187,7 @@ function HomePage({ services }: { services: ServiceItem[] }) {
             {t.voices.items.map((item, index) => (
               <figure key={item.cite} className={`voice-note voice-note--${index}`}>
                 <span className="voice-note__mark" aria-hidden>
-                  “
+                  ?
                 </span>
                 <blockquote>
                   <p>{item.quote}</p>
@@ -308,12 +308,39 @@ function CaseStudyPage() {
   const [privacyMode, setPrivacyMode] = useState(false);
   const childName = privacyMode ? t.caseStudy.privacyName : t.caseStudy.realName;
   const whatsapp = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(t.whatsapp.caseStudy)}`;
+
+  useEffect(() => {
+    upsertJsonLd("kidsmybook-case-study-ld", {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      headline: t.caseIndex.hilaryTitle,
+      description: t.caseIndex.hilaryDesc,
+      author: {
+        "@type": "Organization",
+        name: "Kidsmybook",
+        url: SITE_ORIGIN,
+      },
+      publisher: {
+        "@type": "Organization",
+        name: "Kidsmybook",
+        url: SITE_ORIGIN,
+      },
+      mainEntityOfPage: `${SITE_ORIGIN}/case-studies/hilary-butterfly-guide`,
+      about: [
+        "Child achievement publishing",
+        "Hong Kong school admissions portfolio",
+        "Project-Based Learning",
+      ],
+    });
+    return () => upsertJsonLd("kidsmybook-case-study-ld", null);
+  }, [t.caseIndex.hilaryTitle, t.caseIndex.hilaryDesc]);
+
   return (
     <main>
       <section className="panel">
         <p className="eyebrow">Case Study</p>
         <h2>
-          {childName}｜{t.caseStudy.bookTitle}
+          {childName}?{t.caseStudy.bookTitle}
         </h2>
         <p className="meta">{t.caseStudy.meta}</p>
         <div className="cta-row">
@@ -373,9 +400,9 @@ function CaseStudiesIndex() {
       <section className="panel">
         <h2>{t.caseIndex.title}</h2>
         <div className="service-grid">
-          <a className="service-card link-card" href={appHref("/case-studies/xu-duo-butterfly-guide")}>
-            <h4>{t.caseIndex.xuDuoTitle}</h4>
-            <p>{t.caseIndex.xuDuoDesc}</p>
+          <a className="service-card link-card" href={appHref("/case-studies/hilary-butterfly-guide")}>
+            <h4>{t.caseIndex.hilaryTitle}</h4>
+            <p>{t.caseIndex.hilaryDesc}</p>
           </a>
           <article className="service-card">
             <h4>{t.caseIndex.futureTitle}</h4>
@@ -423,7 +450,7 @@ export default function App() {
     "/services",
     "/blog",
     "/case-studies",
-    "/case-studies/xu-duo-butterfly-guide",
+    "/case-studies/hilary-butterfly-guide",
     ...serviceItems.map((item) => `/services/${item.slug}`),
     ...POSTS.map((item) => `/blog/${item.slug}`),
   ];
@@ -434,9 +461,9 @@ export default function App() {
       "/services": { title: t.seo.servicesTitle, description: t.seo.servicesDesc },
       "/case-studies": { title: t.seo.caseStudiesTitle, description: t.seo.caseStudiesDesc },
       "/blog": {
-        title: "Kidsmybook Blog｜香港升學・子女教育・兒童成就出版",
+        title: "Kidsmybook Blog?????????????????",
         description:
-          "Mainland and Top Talent Pass parents on Hong Kong school admissions — how a child's published book becomes a real portfolio highlight.",
+          "Mainland and Top Talent Pass parents on Hong Kong school admissions ? how a child's published book becomes a real portfolio highlight.",
       },
       ...POSTS.reduce((acc, item) => {
         const loc = getLocalizedPostMeta(item.slug, locale);
@@ -532,7 +559,7 @@ export default function App() {
       {pathname === "/services" && <ServicesIndexPage services={serviceItems} />}
       {currentService && <ServiceDetailPage item={currentService} />}
       {pathname === "/case-studies" && <CaseStudiesIndex />}
-      {pathname === "/case-studies/xu-duo-butterfly-guide" && <CaseStudyPage />}
+      {pathname === "/case-studies/hilary-butterfly-guide" && <CaseStudyPage />}
       {pathname === "/blog" && <BlogIndexPage />}
       {pathname.startsWith("/blog/") && <BlogPostPage slug={pathname.slice("/blog/".length)} />}
       {!knownPaths.includes(pathname) && (
