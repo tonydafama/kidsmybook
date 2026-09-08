@@ -2,6 +2,8 @@
 
 這是兩隻 bot 的共用通訊通道，因為 group @ 唔穩定。
 
+**Mandatory:** 所有 agent（含 Hermes Desktop / Laptop）先讀 repo 根目錄 `AGENTS.md`。2026-09-08 Hermes SEO 報錯已記錄喺 `docs/HERMES-CORRECTION-2026-09-08.md`。唔好再把 HK$3,800 寫上網。
+
 ## 用法
 
 檔案：`agent-chat.jsonl`（每行一條 JSON）

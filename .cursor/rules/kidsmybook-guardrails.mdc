@@ -1,0 +1,16 @@
+---
+description: Kidsmybook hard guardrails — no public prices, no fake live claims, no parent impersonation
+alwaysApply: true
+---
+
+# Kidsmybook guardrails
+
+Read `AGENTS.md` first. If you are Hermes/Desktop/Laptop: you were wrong on 2026-09-08 — see `docs/HERMES-CORRECTION-2026-09-08.md`. Pull `main` and do not revert `01fa645`.
+
+- **No public prices.** Never add `HK$3,800` / `HKD 3800` / `priceRange` / JSON-LD `Offer.price`. Quote privately only.
+- **No fake live reports.** Bing pings, Perplexity “not indexed”, and Worker cron are not done unless the live URL or Cloudflare trigger actually exists. This account cannot register cron until workers.dev is created in the dashboard.
+- **No fake local SEO.** No invented street, opening hours, professor names, school partnerships, admission guarantees, or old customer name 徐多/Xu Duo (use Hilary).
+- **Brand voice only** on Xiaohongshu. Do not write first-person parent stories as if they are Anthony.
+- **Do not** auto-post Zhihu/LinkedIn/WhatsApp broadcasts with the owner’s accounts.
+- FAQ JSON-LD must match visible FAQ. `llms.txt` must stay valid UTF-8 and tell AIs not to invent prices.
+- After SEO edits: build, deploy, curl `https://kidsmybook.com/` and `/llms.txt` before claiming live.
