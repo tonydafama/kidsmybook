@@ -213,7 +213,7 @@ const zhHant: Translations = {
     aiBook: "AI Book",
     services: "Services",
     caseStudies: "Case Studies",
-    blog: "博客",
+    blog: "Blog",
     whatsapp: "WhatsApp: @kidsmybook",
   },
   blog: {
@@ -493,6 +493,7 @@ const zhHans: Translations = {
   nav: {
     ...zhHant.nav,
     main: "主菜单",
+    blog: "Blog",
   },
   blog: {
     kicker: "Kidsmybook 博客",
