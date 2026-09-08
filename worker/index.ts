@@ -677,9 +677,11 @@ async function handleIntake(request: Request, env: Env): Promise<Response> {
     return json({ error: "Storage failed" }, 500);
   }
 
-  // 1) saved to KV already. 2) notify + 3) pull result to Telegram
+  // 1) saved to KV already. 2) notify studio on Telegram. 3) ack the parent if they left an email.
   const sentTg = await sendIntakeTelegram(record, env);
+  const sentAck = await sendIntakeAckEmail(record, env);
   console.log("intake-telegram", sentTg ? "sent" : "skipped(no creds)");
+  console.log("intake-ack-email", sentAck ? "sent" : "skipped");
 
   console.log("intake-lead", JSON.stringify(record));
   return json({ ok: true, id }, 200);
@@ -865,7 +867,86 @@ async function serveSeoAsset(request: Request, env: Env, pathname: string): Prom
   );
 }
 
+async function sendIntakeAckEmail(rec: Record<string, unknown>, env: Env): Promise<boolean> {
+  const apiKey = env.RESEND_API_KEY?.trim();
+  const contact = String(rec.contact || "");
+  const emailMatch = contact.match(/[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/i);
+  if (!apiKey || !emailMatch) return false;
+  const student = `${rec.surname ?? ""} ${rec.givenName ?? ""}`.trim() || "小朋友";
+  try {
+    const res = await fetch("https://api.resend.com/emails", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${apiKey}`,
+      },
+      body: JSON.stringify({
+        from: "Kidsmybook <onboarding@resend.dev>",
+        to: [emailMatch[0]],
+        reply_to: "kidsmybook@outlook.com",
+        subject: "Kidsmybook 已收到你的諮詢",
+        html: `<p>你好${rec.parent ? ` ${rec.parent}` : ""}，</p>
+<p>我哋已收到 <strong>${student}</strong> 嘅出版諮詢。顧問會喺辦公時間內用 WhatsApp 或電郵回覆你，唔使重複提交。</p>
+<p>如要即時聯絡：<a href="https://wa.me/85291214157">WhatsApp @kidsmybook</a></p>
+<p>Kidsmybook<br>https://kidsmybook.com</p>`,
+      }),
+    });
+    return res.ok;
+  } catch (err) {
+    console.error("intake ack email failed:", err);
+    return false;
+  }
+}
+
+const PRICE_LEAK = /HK\$?\s*3,?800|HKD\s*3,?800|priceRange":\s*"HKD 3800|Entry packages start from HKD/i;
+
+async function runSeoHealthCheck(env: Env): Promise<void> {
+  const checks = [
+    { name: "homepage", url: "https://kidsmybook.com/" },
+    { name: "llms.txt", url: "https://kidsmybook.com/llms.txt" },
+    { name: "sitemap.xml", url: "https://kidsmybook.com/sitemap.xml" },
+    { name: "robots.txt", url: "https://kidsmybook.com/robots.txt" },
+  ];
+  const lines: string[] = ["📋 Kidsmybook SEO health check（資產健康，唔係 AI 排名）"];
+  let bad = false;
+  for (const check of checks) {
+    try {
+      const res = await fetch(check.url, { headers: { "Cache-Control": "no-cache" } });
+      const text = await res.text();
+      const leak = PRICE_LEAK.test(text);
+      const garbled = check.name === "llms.txt" && (text.includes("??") || text.includes("�"));
+      const blogs = check.name === "sitemap.xml" ? (text.match(/\/blog\//g) || []).length : null;
+      if (!res.ok || leak || garbled) bad = true;
+      lines.push(
+        `${res.ok && !leak && !garbled ? "✅" : "❌"} ${check.name} HTTP ${res.status}` +
+          (leak ? " · 公開價錢漏出" : "") +
+          (garbled ? " · 亂碼" : "") +
+          (blogs != null ? ` · blog URLs ${blogs}` : ""),
+      );
+    } catch (err) {
+      bad = true;
+      lines.push(`❌ ${check.name} fetch failed: ${String(err)}`);
+    }
+  }
+  lines.push(bad ? "需要人手睇一眼。" : "公開 SEO 資產正常。");
+  const token = env.TELEGRAM_BOT_TOKEN?.trim();
+  const chatId = env.TELEGRAM_CHAT_ID?.trim();
+  if (!token || !chatId) {
+    console.log("seo-health", lines.join(" | "));
+    return;
+  }
+  await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ chat_id: chatId, text: lines.join("\n") }),
+  });
+}
+
 export default {
+  async scheduled(_event: unknown, env: Env, ctx: { waitUntil: (p: Promise<unknown>) => void }): Promise<void> {
+    ctx.waitUntil(runSeoHealthCheck(env));
+  },
+
   async fetch(request: Request, env: Env): Promise<Response> {
     const url = new URL(request.url);
 
@@ -878,6 +959,12 @@ export default {
       return Response.redirect(`https://kidsmybook.com${url.pathname}${url.search}`, 301);
     }
 
+    if (url.pathname === "/api/seo-health") {
+      const pw = url.searchParams.get("pw") || request.headers.get("x-admin-pw") || "";
+      if (pw !== ADMIN_PASSWORD) return json({ error: "Forbidden" }, 403);
+      await runSeoHealthCheck(env);
+      return json({ ok: true, note: "SEO asset health check sent to Telegram if credentials exist." });
+    }
     if (url.pathname === "/api/cover-generate") {
       return handleCoverGenerate(request, env);
     }

@@ -449,22 +449,38 @@ const zhHant: Translations = {
     title: "常見問題",
     items: [
       {
-        q: "Kidsmybook 點樣幫小朋友考入香港好學校 (HK study)？",
-        a: "香港頂尖國際學校同私立學校，每年收到幾千份一模一樣嘅 Portfolio（鋼琴、游水、奧數）。Kidsmybook 專為高收入及高才通家庭，打造獨一無二嘅升學亮點——一本由小朋友親自參與、大學教授審閱嘅正式出版實體書。這證明了小朋友嘅熱情、專注力同埋學術潛力，令面試官留下深刻印象。"
+        q: "Kidsmybook 係咩？",
+        a: "香港兒童成就出版工作室。我哋用 12 個月導師制出版計劃，將小朋友真正嘅興趣同生活故事，變成有 ISBN 嘅正式出版物，並有大學教授參與審閱，再配發布會、展覽、媒體同升學 Portfolio。",
       },
       {
-        q: "呢個計劃適合高才通 (Top Talent Pass) 家庭嗎？",
-        a: "非常適合。好多剛搬到香港嘅高才通家庭，唔清楚本地學校想睇咩，往往只係盲目幫子女報興趣班。我哋嘅 12 個月出版計劃，直接提供一個具備權威性（大學教授參與、ISBN 註冊、實體書店上架）嘅成果，完美填補履歷空白。"
+        q: "適合幾歲？",
+        a: "大概 3 至 18 歲。計劃以興趣為本、導師帶領，書裏面保留小朋友自己嘅聲音。",
+      },
+      {
+        q: "係咪自己出書／self-publishing？",
+        a: "唔係。呢個係 12 個月導師帶領嘅出版計劃：正式出版（ISBN）、大學教授審閱、發布會同公關——唔係 DIY 模板，亦唔係自費出書工具。",
+      },
+      {
+        q: "書可唔可以喺實體書店上架？",
+        a: "可以。完成嘅書係正式出版物，家庭拎得到實體書，亦會喺實體書店平台上架，作為升學履歷亮點。",
+      },
+      {
+        q: "Kidsmybook 點樣幫小朋友考入香港好學校？",
+        a: "香港頂尖國際學校同私立學校，每年收到好多份一模一樣嘅 Portfolio（鋼琴、游水、奧數）。Kidsmybook 幫家庭做出一本由小朋友親自參與、大學教授審閱嘅正式出版實體書，證明熱情、專注同學術潛力，令面試官更容易記住。",
+      },
+      {
+        q: "呢個計劃適合高才通（Top Talent Pass）家庭嗎？",
+        a: "適合。好多剛搬到香港嘅高才通家庭，唔清楚本地學校想睇咩，往往只係盲目幫子女報興趣班。12 個月出版計劃提供一個有教授參與、ISBN 註冊、實體書店上架嘅成果，用來填補履歷空白。",
       },
       {
         q: "成個出版計劃需要幾耐時間？",
-        a: "完整計劃為期 12 個月，分為 5 個階段：首月諮詢評估、第 2-5 個月專屬課程（專業導師與教授指導）、第 6-7 個月出版研討與教授審閱、第 8-10 個月親子排版設計，最後第 12 個月正式印刷並於實體書店平台上架。"
+        a: "完整計劃為期 12 個月，分為 5 個階段：首月諮詢評估、第 2-5 個月專屬課程（專業導師與教授指導）、第 6-7 個月出版研討與教授審閱、第 8-10 個月親子排版設計，最後第 12 個月正式印刷並於實體書店平台上架。",
       },
       {
-        q: "收費大概係幾多？",
-        a: "入門方案由 HK$3,800 起。完整嘅 12 個月出版、發佈會、媒體公關及 Portfolio 升學包，會根據小朋友嘅具體需求進行專屬報價，歡迎預約免費諮詢。"
-      }
-    ]
+        q: "收費點樣計？",
+        a: "完整 12 個月方案按小朋友嘅題材同配套私人報價，網站唔公開價目。歡迎 WhatsApp（@kidsmybook）或填表預約諮詢。",
+      },
+    ],
   },
   seo: {
     homeTitle: "Kidsmybook｜兒童成就出版與升學 Portfolio 策劃",
@@ -710,22 +726,38 @@ const zhHans: Translations = {
     title: "常见问题",
     items: [
       {
-        q: "Kidsmybook 怎样帮小朋友考入香港好学校 (HK study)？",
-        a: "香港顶尖国际学校和私立学校，每年收到几千份一模一样的 Portfolio（钢琴、游泳、奥数）。Kidsmybook 专为高收入及高才通家庭，打造独一无二的升学亮点——一本由小朋友亲自参与、大学教授审阅的正式出版实体书。这证明了小朋友的热情、专注力和学术潜力，令面试官留下深刻印象。"
+        q: "Kidsmybook 是什么？",
+        a: "香港儿童成就出版工作室。我们用 12 个月导师制出版计划，把孩子真正的兴趣和生活故事，做成有 ISBN 的正式出版物，并由大学教授参与审阅，再配发布会、展览、媒体和升学 Portfolio。",
       },
       {
-        q: "这个计划适合高才通 (Top Talent Pass) 家庭吗？",
-        a: "非常适合。很多刚搬到香港的高才通家庭，不清楚本地学校想看什么，往往只是盲目帮子女报兴趣班。我们的 12 个月出版计划，直接提供一个具备权威性（大学教授参与、ISBN 注册、实体书店上架）的成果，完美填补履历空白。"
+        q: "适合几岁？",
+        a: "大约 3 至 18 岁。计划以兴趣为本、导师带领，书里保留孩子自己的声音。",
+      },
+      {
+        q: "是不是自己出书／self-publishing？",
+        a: "不是。这是 12 个月导师带领的出版计划：正式出版（ISBN）、大学教授审阅、发布会和公关——不是 DIY 模板，也不是自费出书工具。",
+      },
+      {
+        q: "书可不可以在实体书店上架？",
+        a: "可以。完成的书是正式出版物，家庭拿得到实体书，也会在实体书店平台上架，作为升学履历亮点。",
+      },
+      {
+        q: "Kidsmybook 怎样帮小朋友考入香港好学校？",
+        a: "香港顶尖国际学校和私立学校，每年收到很多份一模一样的 Portfolio（钢琴、游泳、奥数）。Kidsmybook 帮家庭做出一本由小朋友亲自参与、大学教授审阅的正式出版实体书，证明热情、专注和学术潜力，让面试官更容易记住。",
+      },
+      {
+        q: "这个计划适合高才通（Top Talent Pass）家庭吗？",
+        a: "适合。很多刚搬到香港的高才通家庭，不清楚本地学校想看什么，往往只是盲目帮子女报兴趣班。12 个月出版计划提供一个有教授参与、ISBN 注册、实体书店上架的成果，用来填补履历空白。",
       },
       {
         q: "整个出版计划需要多久时间？",
-        a: "完整计划为期 12 个月，分为 5 个阶段：首月咨询评估、第 2-5 个月专属课程（专业导师与教授指导）、第 6-7 个月出版研讨与教授审阅、第 8-10 个月亲子排版设计，最后第 12 个月正式印刷并于实体书店平台上架。"
+        a: "完整计划为期 12 个月，分为 5 个阶段：首月咨询评估、第 2-5 个月专属课程（专业导师与教授指导）、第 6-7 个月出版研讨与教授审阅、第 8-10 个月亲子排版设计，最后第 12 个月正式印刷并于实体书店平台上架。",
       },
       {
-        q: "收费大概是多少？",
-        a: "入门方案从 HK$3,800 起。完整的 12 个月出版、发布会、媒体公关及 Portfolio 升学包，会根据小朋友的具体需求进行专属报价，欢迎预约免费咨询。"
-      }
-    ]
+        q: "收费怎么算？",
+        a: "完整 12 个月方案按孩子的题材和配套私人报价，网站不公开价目。欢迎 WhatsApp（@kidsmybook）或填表预约咨询。",
+      },
+    ],
   },
   seo: {
     homeTitle: "Kidsmybook｜儿童成就出版与升学 Portfolio 策划",
@@ -991,22 +1023,38 @@ const en: Translations = {
     title: "Frequently Asked Questions",
     items: [
       {
-        q: "How does Kidsmybook help children get into good schools in HK (HK study)?",
-        a: "Top international and private schools in Hong Kong receive thousands of identical portfolios filled with standard certificates (piano, swimming, olympiad math). Kidsmybook helps high-income and Top Talent Pass families create a unique, citable achievement—a real published book co-authored by the child and reviewed by a university professor. This proves genuine interest, dedication, and academic backing, which makes the child's portfolio stand out to admissions officers."
+        q: "What is Kidsmybook?",
+        a: "Kidsmybook is a Hong Kong studio running a 12-month mentored publishing programme. We turn a child's real interest and life story into a formally published, ISBN-registered book with university professors involved, then add launch, exhibition, media, and portfolio services for school admissions.",
+      },
+      {
+        q: "What age is Kidsmybook for?",
+        a: "Children roughly ages 3 to 18. The programme is interest-led and mentor-guided, keeping the child's own voice in the book.",
+      },
+      {
+        q: "Is Kidsmybook self-publishing?",
+        a: "No. It is a guided, mentor-led 12-month publishing programme with formal publication (ISBN), university professor review, launch events, and PR — not a DIY template or self-publishing tool.",
+      },
+      {
+        q: "Can the published book be listed in a bookstore?",
+        a: "Yes. Published outcomes are formal publications the family can hold and are listed on physical bookstore platforms as a highlight for the child's admissions portfolio.",
+      },
+      {
+        q: "How does Kidsmybook help with Hong Kong school admissions?",
+        a: "Top international and private schools in Hong Kong receive many identical portfolios filled with standard certificates (piano, swimming, olympiad math). Kidsmybook helps families create a citable published book co-authored by the child and reviewed by a university professor — proof of genuine interest that interviewers remember.",
       },
       {
         q: "Is this programme suitable for Top Talent Pass families?",
-        a: "Absolutely. Many Top Talent Pass families who recently relocated to Hong Kong are unsure what local schools look for and end up blindly enrolling children in extracurricular classes. Our 12-month publishing programme provides an authoritative outcome (university professor involvement, ISBN registration, physical bookstore listing) that perfectly fills the gaps in a school portfolio."
+        a: "Yes. Many Top Talent Pass families who recently relocated to Hong Kong are unsure what local schools look for and end up stacking weekend classes. The 12-month publishing programme provides an outcome with professor involvement, ISBN registration, and physical bookstore listing.",
       },
       {
         q: "How long does the entire publishing programme take?",
-        a: "The full programme lasts 12 months and is divided into 5 phases: Month 1 consultation & assessment, Months 2-5 dedicated classes (with professional tutors and professors), Months 6-7 publishing seminar & professor review, Months 8-10 parent-child layout design, and finally Month 12 formal print and physical bookstore listing."
+        a: "The full programme lasts 12 months across five phases: Month 1 consultation and assessment; Months 2-5 dedicated classes with tutors and professors; Months 6-7 publishing seminar and professor review; Months 8-10 parent-child layout and design; Month 12 formal print and listing.",
       },
       {
         q: "How much does it cost?",
-        a: "Entry plans start from HK$3,800. The complete 12-month publishing, launch event, media PR, and Portfolio package is quoted based on the child's specific needs. Contact us for a free consultation."
-      }
-    ]
+        a: "The complete 12-month solution is quoted on private consultation based on the child's topic and programme scope. We do not publish prices online. Contact WhatsApp (@kidsmybook) or the enquiry form to book a consultation.",
+      },
+    ],
   },
   seo: {
     homeTitle: "Kidsmybook | Child Publishing & Admissions Portfolio",

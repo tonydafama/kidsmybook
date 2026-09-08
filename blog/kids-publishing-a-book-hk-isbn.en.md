@@ -40,4 +40,4 @@ The book is formally printed, receives an ISBN, and is listed on physical bookst
 
 Helping a child publish a book isn't just for school admissions; it's giving them a chance to be "seen by the world." This sense of achievement will stay with them for life.
 
-> Ready to start your child's publishing journey? Kidsmybook starter plans begin at HK$3,800. Contact us today to learn more.
+> Ready to start your child's publishing journey? Book a private consultation with Kidsmybook.

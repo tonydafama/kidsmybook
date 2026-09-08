@@ -96,6 +96,20 @@ function HomePage({ services }: { services: ServiceItem[] }) {
   const { t } = useLocale();
   const whatsapp = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(t.whatsapp.home)}`;
 
+  useEffect(() => {
+    upsertJsonLd("kidsmybook-faq-ld", {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": `${SITE_ORIGIN}/#faq`,
+      mainEntity: t.faq.items.map((item) => ({
+        "@type": "Question",
+        name: item.q,
+        acceptedAnswer: { "@type": "Answer", text: item.a },
+      })),
+    });
+    return () => upsertJsonLd("kidsmybook-faq-ld", null);
+  }, [t.faq.items]);
+
   return (
     <>
       <header className="hero hero--premium">

@@ -42,9 +42,8 @@
       "offers": {
         "@type": "Offer",
         "priceCurrency": "HKD",
-        "price": "3800",
-        "name": "Entry price from HK$3,800",
-        "description": "Entry price from HK$3,800. Full programme quotation provided on private consultation — not listed online."
+        "name": "Customized Programme",
+        "description": "Full programme quotation provided on private consultation — not listed online."
       }
     },
     {
@@ -59,9 +58,8 @@
       "offers": {
         "@type": "Offer",
         "priceCurrency": "HKD",
-        "price": "3800",
-        "name": "Entry price from HK$3,800",
-        "description": "Entry price from HK$3,800; full package quoted on consultation."
+        "name": "Customized Programme",
+        "description": "Full package quoted on consultation."
       }
     },
     {
@@ -80,9 +78,8 @@
       "offers": {
         "@type": "Offer",
         "priceCurrency": "HKD",
-        "price": "3800",
-        "name": "Entry price from HK$3,800",
-        "description": "Entry price from HK$3,800. Complete solution quoted on private consultation."
+        "name": "Customized Programme",
+        "description": "Complete solution quoted on private consultation."
       }
     },
     {
@@ -162,7 +159,7 @@
           "name": "How much does Kidsmybook cost?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Entry price starts from HK$3,800. The complete 12-month solution is quoted on private consultation — contact us to discuss your child's programme."
+            "text": "The complete 12-month solution is quoted on private consultation — contact us to discuss your child's programme."
           }
         }
       ]

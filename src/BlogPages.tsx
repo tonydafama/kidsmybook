@@ -393,8 +393,7 @@ function BlogPostPage({ slug }: { slug: string }) {
       upsertJsonLd("kidsmybook-blog-post-ld", null);
       return;
     }
-    upsertJsonLd("kidsmybook-blog-post-ld", {
-      "@context": "https://schema.org",
+    const posting = {
       "@type": "BlogPosting",
       headline: localized.title,
       description: localized.excerpt,
@@ -423,9 +422,34 @@ function BlogPostPage({ slug }: { slug: string }) {
         name: "Kidsmybook Blog",
         url: `${SITE_ORIGIN}/blog`,
       },
-    });
+    };
+    const faqEntities = [] as Array<{
+      "@type": "Question";
+      name: string;
+      acceptedAnswer: { "@type": "Answer"; text: string };
+    }>;
+    for (let i = 0; i < blocks.length; i++) {
+      const heading = blocks[i];
+      if (heading.kind !== "h2" || !/[?？]/.test(heading.text)) continue;
+      const next = blocks[i + 1];
+      const answer =
+        next && (next.kind === "p" || next.kind === "quote")
+          ? next.text
+          : localized.excerpt;
+      faqEntities.push({
+        "@type": "Question",
+        name: heading.text,
+        acceptedAnswer: { "@type": "Answer", text: answer },
+      });
+    }
+    upsertJsonLd(
+      "kidsmybook-blog-post-ld",
+      faqEntities.length > 0
+        ? { "@context": "https://schema.org", "@graph": [posting, { "@type": "FAQPage", mainEntity: faqEntities }] }
+        : { "@context": "https://schema.org", ...posting },
+    );
     return () => upsertJsonLd("kidsmybook-blog-post-ld", null);
-  }, [meta, localized.title, localized.excerpt, pageUrl, inLanguage]);
+  }, [meta, localized.title, localized.excerpt, pageUrl, inLanguage, blocks]);
 
   return (
     <main>

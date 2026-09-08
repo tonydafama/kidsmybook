@@ -34,4 +34,4 @@ Many Top Talent Pass and high-income families initially approach Kidsmybook to b
 
 Publishing a book not only wins the child a ticket to an elite school but endows them with lifelong learning skills.
 
-> Let your child experience true Project-Based Learning. Kidsmybook child achievement publishing programme, starter plans from HK$3,800. Book a consultation today.
+> Let your child experience true Project-Based Learning. Book a private consultation with Kidsmybook.
