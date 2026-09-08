@@ -36,4 +36,4 @@ Door-knocking interviews are short. If the child can proactively introduce their
 
 Door-knocking is a battlefield. Instead of struggling in traditional extracurricular classes, take a different path. Use a dedicated physical book to open the doors of elite schools for your child.
 
-> Kidsmybook's child achievement publishing programme helps you build the most persuasive door-knocking portfolio. Starter plans from HK$3,800. Book a consultation today.
+> Kidsmybook's child achievement publishing programme helps you build the most persuasive door-knocking portfolio. Book a consultation today.

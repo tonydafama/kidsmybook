@@ -24,4 +24,4 @@ The useful thing about a book is that it is hard to fake. You can enrol in ten c
 
 Instead of chasing the tier, help a child build one thing that is theirs. Cooking, stars, collecting insects — if they are truly in it, you can help turn it into a book, and into the moment an interviewer does not forget.
 
-*Kidsmybook helps families shape a child’s interest into a publication with a professor involved, ready to go on a shelf. Starter plans from HK$3,800.*
+*Kidsmybook helps families shape a child’s interest into a publication with a professor involved, ready to go on a shelf. *

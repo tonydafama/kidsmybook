@@ -18,4 +18,4 @@ After it came out she took it to school constantly. Even the class teacher borro
 
 An interest that becomes something you can hold feels real to a child. She knows her work was taken seriously.
 
-If you want to try making a book with your child, Kidsmybook is a Hong Kong studio for children’s achievement publishing. They walk with you from the interest to the printed book. Starter plans from HK$3,800.
+If you want to try making a book with your child, Kidsmybook is a Hong Kong studio for children’s achievement publishing. They walk with you from the interest to the printed book. 

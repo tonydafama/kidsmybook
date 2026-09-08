@@ -33,4 +33,4 @@ Completing a book takes months. This proves to the school that the child possess
 
 If your goal is a top-tier international or private school in Hong Kong, instead of spending time getting another certificate everyone else has, help your child create a "masterpiece" that truly belongs to them.
 
-> Kidsmybook offers a 12-month child achievement publishing programme to help Top Talent Pass and Hong Kong families build the strongest admissions portfolios. Starter plans from HK$3,800. Book a free consultation today.
+> Kidsmybook offers a 12-month child achievement publishing programme to help Top Talent Pass and Hong Kong families build the strongest admissions portfolios. Book a free consultation today.

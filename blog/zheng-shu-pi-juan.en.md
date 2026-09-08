@@ -18,4 +18,4 @@ I went home and asked myself: have I turned my daughter into a stack of paper? T
 
 Certificates are not useless. Stacked too densely, they cover who the child already is. Interviewers want a person with their own thoughts, who can say why. No number of sheets replaces that.
 
-If you want to keep what a child has truly been inside, Kidsmybook is a Hong Kong studio for children’s achievement publishing. They can help turn that interest into a book that belongs to them. Starter plans from HK$3,800.
+If you want to keep what a child has truly been inside, Kidsmybook is a Hong Kong studio for children’s achievement publishing. They can help turn that interest into a book that belongs to them. 

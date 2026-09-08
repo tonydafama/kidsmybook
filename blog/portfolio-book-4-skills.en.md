@@ -34,4 +34,4 @@ No. The starter version took us a few months, at a pace a family can actually ke
 
 If you are building a school portfolio too, ask: is there one thing that is theirs — not a class you signed them up for?
 
-*Kidsmybook helps GTP families turn a child’s interest into a book with a professor involved, ready to go on a shelf. Starter plans from HK$3,800; full programmes by consultation.*
+*Kidsmybook helps GTP families turn a child’s interest into a book with a professor involved, ready to go on a shelf. ; full programmes by consultation.*

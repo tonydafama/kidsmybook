@@ -42,4 +42,4 @@ You have already worked hard enough to move here. On education, you do not need 
 
 A book they truly took part in often says who they are more clearly than ten weekend-class certificates.
 
-> Kidsmybook is a Hong Kong studio for children’s achievement publishing. Over 12 months we walk with a child from an interest to a formally published book; university professors take part in review and class. Starter plans from HK$3,800; full programmes by consultation.
+> Kidsmybook is a Hong Kong studio for children’s achievement publishing. Over 12 months we walk with a child from an interest to a formally published book; university professors take part in review and class. ; full programmes by consultation.

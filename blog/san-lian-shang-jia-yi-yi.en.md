@@ -18,4 +18,4 @@ For parents like me there is another layer. Hong Kong admissions cares about a c
 
 So if you are thinking about this, do not only think online. The copy you can hold is what a child remembers for life.
 
-Kidsmybook is a Hong Kong studio for children’s achievement publishing. They help get a child’s book into shops like Joint Publishing, Commercial Press, and Chung Hwa. Starter plans from HK$3,800.
+Kidsmybook is a Hong Kong studio for children’s achievement publishing. They help get a child’s book into shops like Joint Publishing, Commercial Press, and Chung Hwa. 

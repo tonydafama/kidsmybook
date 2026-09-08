@@ -18,4 +18,4 @@ What I learned: a professor’s involvement is not a back door. It is proof that
 
 Not every book finds a professor. If the content is real, the chance tends to come. For me, the process itself was already the best lesson my son had.
 
-If you want to know how a child’s book can be matched with the right academic, Kidsmybook is a Hong Kong studio for children’s achievement publishing. Starter plans from HK$3,800 — you can talk it through first.
+If you want to know how a child’s book can be matched with the right academic, Kidsmybook is a Hong Kong studio for children’s achievement publishing. — you can talk it through first.

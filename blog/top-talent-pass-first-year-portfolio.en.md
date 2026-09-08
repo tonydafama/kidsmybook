@@ -35,4 +35,4 @@ When you place a physical book with an ISBN, perhaps even listed in Joint Publis
 
 In your first year in Hong Kong, instead of filling your child's weekends, take the time to focus on doing "one thing" well together. This one thing will become the strongest key to opening the doors of Hong Kong's elite schools.
 
-> Kidsmybook provides a 12-month child achievement publishing service tailored for Top Talent Pass and new Hong Kong families. Starter plans from HK$3,800, helping you easily navigate HK admissions challenges.
+> Kidsmybook provides a 12-month child achievement publishing service tailored for Top Talent Pass and new Hong Kong families. helping you easily navigate HK admissions challenges.

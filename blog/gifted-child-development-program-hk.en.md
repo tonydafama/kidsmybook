@@ -33,4 +33,4 @@ When a child brings a monograph they wrote themselves, registered with an ISBN, 
 
 Talent needs to be seen and correctly guided. Don't let your child's brilliance remain only in their mind or in a drawer.
 
-> Kidsmybook creates dedicated publishing programmes for gifted children, turning talent into physical achievements. Starter plans from HK$3,800. Book a consultation with our educational advisors today.
+> Kidsmybook creates dedicated publishing programmes for gifted children, turning talent into physical achievements. Book a consultation with our educational advisors today.

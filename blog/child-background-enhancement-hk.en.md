@@ -36,4 +36,4 @@ Kidsmybook's publishing programme incorporates reviews by university professors.
 
 True background enhancement isn't about piling up activities with money; it's about guiding a child to transform their passion into a valuable outcome.
 
-> Kidsmybook specializes in child achievement publishing, providing top-tier background enhancement services for high-income and Top Talent Pass families. Starter plans from HK$3,800, making your child's portfolio impeccable.
+> Kidsmybook specializes in child achievement publishing, providing top-tier background enhancement services for high-income and Top Talent Pass families. making your child's portfolio impeccable.

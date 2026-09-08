@@ -36,4 +36,4 @@ If you are a GTP family and the admissions anxiety is sitting with you, ask: doe
 
 That thing may be the part of the résumé that actually stands out.
 
-> Kidsmybook is a Hong Kong studio for children’s achievement publishing. We help children turn their interests into a formally published book. Starter plans from HK$3,800; full programmes by consultation. You can find us on the website.
+> Kidsmybook is a Hong Kong studio for children’s achievement publishing. We help children turn their interests into a formally published book. ; full programmes by consultation. You can find us on the website.

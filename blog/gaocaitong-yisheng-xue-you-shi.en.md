@@ -18,4 +18,4 @@ We did it. The book is not thick. He wrote it, drew it, took the photos. I only 
 
 Hong Kong admissions is not a contest of who has more certificates. A book the child led, with traces of their thinking still in it, tells the school: this is a child who explores on their own.
 
-If you are only starting to think about it, Kidsmybook is a Hong Kong studio for children’s achievement publishing. They walk with you and the child from an interest to a real book. Starter plans from HK$3,800 — you can learn how they help first.
+If you are only starting to think about it, Kidsmybook is a Hong Kong studio for children’s achievement publishing. They walk with you and the child from an interest to a real book. — you can learn how they help first.

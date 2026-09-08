@@ -42,4 +42,4 @@ If you also cross the border every day and feel the admissions anxiety, ask your
 
 That thing may be the most valuable part of their résumé.
 
-> Kidsmybook is a Hong Kong studio for children’s achievement publishing. We help children turn their own interests into a formally published book. Starter plans from HK$3,800; full programmes by consultation. You can find us on the website.
+> Kidsmybook is a Hong Kong studio for children’s achievement publishing. We help children turn their own interests into a formally published book. ; full programmes by consultation. You can find us on the website.

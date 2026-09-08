@@ -33,4 +33,4 @@ The professors don't just go through the motions; they provide specific revision
 
 In Hong Kong's fiercely competitive admissions battlefield, stop testing principals' patience with ordinary hobby class certificates. Secure your child's ticket to an elite school with a publication endorsed by a university professor.
 
-> To learn more about Kidsmybook's university professor review mechanism, book a free consultation. Starter plans from HK$3,800.
+> To learn more about Kidsmybook's university professor review mechanism, book a free consultation. 

@@ -31,4 +31,4 @@ To avoid these traps, the most effective method is to abandon standardized certi
 2. **Authentic Display**: The book's content is entirely based on the child's genuine interest (e.g., insects, space, cooking), allowing them to speak confidently during the interview.
 3. **Cultural Integration**: This demonstrates the family's deep understanding of international educational philosophies (valuing creativity and project-based learning).
 
-> Kidsmybook provides child achievement publishing services tailored for new Hong Kong families, helping you avoid admissions traps and build the strongest portfolio. Starter plans from HK$3,800.
+> Kidsmybook provides child achievement publishing services tailored for new Hong Kong families, helping you avoid admissions traps and build the strongest portfolio. 
