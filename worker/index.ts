@@ -858,6 +858,16 @@ async function serveSeoAsset(request: Request, env: Env, pathname: string): Prom
 export default {
   async fetch(request: Request, env: Env): Promise<Response> {
     const url = new URL(request.url);
+
+    // Enforce canonical domain (SEO)
+    if (
+      url.hostname === "www.kidsmybook.com" ||
+      url.hostname === "mybook.pub" ||
+      url.hostname === "www.mybook.pub"
+    ) {
+      return Response.redirect(`https://kidsmybook.com${url.pathname}${url.search}`, 301);
+    }
+
     if (url.pathname === "/api/cover-generate") {
       return handleCoverGenerate(request, env);
     }
