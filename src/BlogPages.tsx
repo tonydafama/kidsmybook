@@ -277,7 +277,7 @@ function BlogIndexPage() {
   return (
     <main>
       <section className="panel">
-        <span className="section-kicker">Kidsmybook 博客</span>
+        <span className="section-kicker">{t.blog.kicker}</span>
         <h1>香港升學・子女教育・真人真事出版</h1>
         <p className="meta">
           大陸家長嚟港嘅升學觀察，同埋「一本書點樣變成子女升學亮點」嘅真實經驗。
@@ -361,7 +361,7 @@ function BlogPostPage({ slug }: { slug: string }) {
     <main>
       <article className="panel blog-post" itemScope itemType="https://schema.org/BlogPosting">
         <a className="btn ghost" href={appHref("/blog")}>
-          ← 返博客
+          {t.blog.backToBlog}
         </a>
         {meta && (
           <header className="blog-post__head">

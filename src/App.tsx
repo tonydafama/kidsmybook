@@ -520,7 +520,7 @@ export default function App() {
           <LanguageSwitcher />
           <a href={appHref("/#ai-book-lab")}>{t.nav.aiBook}</a>
           <a href={appHref("/#services")}>{t.nav.services}</a>
-          <a href={appHref("/blog")}>博客</a>
+          <a href={appHref("/blog")}>{t.nav.blog}</a>
           <a href={appHref("/#case-studies")}>{t.nav.caseStudies}</a>
           <a href={whatsappFloating} target="_blank" rel="noreferrer">
             {t.nav.whatsapp}

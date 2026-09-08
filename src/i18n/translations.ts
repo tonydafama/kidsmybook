@@ -41,7 +41,14 @@ export type Translations = {
     aiBook: string;
     services: string;
     caseStudies: string;
+    blog: string;
     whatsapp: string;
+  };
+  blog: {
+    kicker: string;
+    backToBlog: string;
+    indexTitle: string;
+    indexDesc: string;
   };
   hero: {
     eyebrow: string;
@@ -206,7 +213,14 @@ const zhHant: Translations = {
     aiBook: "AI Book",
     services: "Services",
     caseStudies: "Case Studies",
+    blog: "博客",
     whatsapp: "WhatsApp: @kidsmybook",
+  },
+  blog: {
+    kicker: "Kidsmybook 博客",
+    backToBlog: "← 返博客",
+    indexTitle: "香港升學・子女教育・真人真事出版",
+    indexDesc: "大陸家長嚟港嘅升學觀察，同埋「一本書點樣變成子女升學亮點」嘅真實經驗。",
   },
   hero: {
     eyebrow: "Hong Kong · Publishing · Exhibition · PR",
@@ -476,6 +490,16 @@ const zhHans: Translations = {
   ...zhHant,
   brandTitle: "把孩子的热爱，变成被世界看见的成就",
   brandEn: "Turn your child's passion into a published achievement.",
+  nav: {
+    ...zhHant.nav,
+    main: "主菜单",
+  },
+  blog: {
+    kicker: "Kidsmybook 博客",
+    backToBlog: "← 返回博客",
+    indexTitle: "香港升学・子女教育・真人真事出版",
+    indexDesc: "大陆家长来港的升学观察，以及「一本书怎样变成子女升学亮点」的真实经验。",
+  },
   hero: {
     ...zhHant.hero,
     lead: "出版、发布会、展览、媒体、作品集 — 一条路径做完。",
@@ -730,7 +754,14 @@ const en: Translations = {
     aiBook: "AI Book",
     services: "Services",
     caseStudies: "Case Studies",
+    blog: "Blog",
     whatsapp: "WhatsApp: @kidsmybook",
+  },
+  blog: {
+    kicker: "Kidsmybook Blog",
+    backToBlog: "← Back to Blog",
+    indexTitle: "Hong Kong Admissions · Child Education · True Publishing Stories",
+    indexDesc: "Real experiences from mainland and expat parents on how a published book becomes a standout highlight in school admissions.",
   },
   hero: {
     eyebrow: "Hong Kong · Publishing · Exhibition · PR",
