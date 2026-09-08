@@ -218,6 +218,23 @@ function HomePage({ services }: { services: ServiceItem[] }) {
             </a>
           </div>
         </section>
+
+        <section className="panel panel--standard" id="faq" itemScope itemType="https://schema.org/FAQPage">
+          <div className="section-head">
+            <span className="section-kicker">{t.faq.kicker}</span>
+            <h3>{t.faq.title}</h3>
+          </div>
+          <div className="faq-list">
+            {t.faq.items.map((item, i) => (
+              <details key={i} className="faq-item" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
+                <summary className="faq-q" itemProp="name">{item.q}</summary>
+                <div className="faq-a" itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
+                  <div itemProp="text">{item.a}</div>
+                </div>
+              </details>
+            ))}
+          </div>
+        </section>
       </main>
     </>
   );

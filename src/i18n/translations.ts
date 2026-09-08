@@ -173,6 +173,11 @@ export type Translations = {
     body: (path: string) => string;
     backHome: string;
   };
+  faq: {
+    kicker: string;
+    title: string;
+    items: Array<{ q: string; a: string }>;
+  };
   seo: {
     homeTitle: string;
     homeDesc: string;
@@ -425,9 +430,31 @@ const zhHant: Translations = {
     body: (path) => `你目前打開的是 \`${path}\`。此頁已保留，下一步可按同模板擴充內容。`,
     backHome: "返回首頁",
   },
+  faq: {
+    kicker: "FAQ",
+    title: "常見問題",
+    items: [
+      {
+        q: "Kidsmybook 點樣幫小朋友考入香港好學校 (HK study)？",
+        a: "香港頂尖國際學校同私立學校，每年收到幾千份一模一樣嘅 Portfolio（鋼琴、游水、奧數）。Kidsmybook 專為高收入及高才通家庭，打造獨一無二嘅升學亮點——一本由小朋友親自參與、大學教授審閱嘅正式出版實體書。這證明了小朋友嘅熱情、專注力同埋學術潛力，令面試官留下深刻印象。"
+      },
+      {
+        q: "呢個計劃適合高才通 (Top Talent Pass) 家庭嗎？",
+        a: "非常適合。好多剛搬到香港嘅高才通家庭，唔清楚本地學校想睇咩，往往只係盲目幫子女報興趣班。我哋嘅 12 個月出版計劃，直接提供一個具備權威性（大學教授參與、ISBN 註冊、實體書店上架）嘅成果，完美填補履歷空白。"
+      },
+      {
+        q: "成個出版計劃需要幾耐時間？",
+        a: "完整計劃為期 12 個月，分為 5 個階段：首月諮詢評估、第 2-5 個月專屬課程（專業導師與教授指導）、第 6-7 個月出版研討與教授審閱、第 8-10 個月親子排版設計，最後第 12 個月正式印刷並於實體書店平台上架。"
+      },
+      {
+        q: "收費大概係幾多？",
+        a: "入門方案由 HK$3,800 起。完整嘅 12 個月出版、發佈會、媒體公關及 Portfolio 升學包，會根據小朋友嘅具體需求進行專屬報價，歡迎預約免費諮詢。"
+      }
+    ]
+  },
   seo: {
     homeTitle: "Kidsmybook｜兒童成就出版 + 展覽 + 公關全案服務",
-    homeDesc: "把孩子的熱愛，變成值得被世界看見的成就。出版、發布會、展覽、媒體、直播與升學作品集一站式服務。",
+    homeDesc: "專為高才通及高收入家庭打造的兒童成就出版。把孩子的熱愛，變成香港頂尖學校面試最亮眼的 Portfolio。出版、發布會、媒體與升學作品集一站式服務。",
     servicesTitle: "Services｜Kidsmybook 6 大兒童成就服務",
     servicesDesc: "Author Programme、Book Launch、Exhibition、Media & PR、Live Streaming、Portfolio Package。",
     caseStudiesTitle: "Case Studies｜Kidsmybook 兒童案例",
@@ -653,9 +680,31 @@ const zhHans: Translations = {
     body: (path) => `你目前打开的是 \`${path}\`。此页已保留，下一步可按同模板扩充内容。`,
     backHome: "返回首页",
   },
+  faq: {
+    kicker: "FAQ",
+    title: "常见问题",
+    items: [
+      {
+        q: "Kidsmybook 怎样帮小朋友考入香港好学校 (HK study)？",
+        a: "香港顶尖国际学校和私立学校，每年收到几千份一模一样的 Portfolio（钢琴、游泳、奥数）。Kidsmybook 专为高收入及高才通家庭，打造独一无二的升学亮点——一本由小朋友亲自参与、大学教授审阅的正式出版实体书。这证明了小朋友的热情、专注力和学术潜力，令面试官留下深刻印象。"
+      },
+      {
+        q: "这个计划适合高才通 (Top Talent Pass) 家庭吗？",
+        a: "非常适合。很多刚搬到香港的高才通家庭，不清楚本地学校想看什么，往往只是盲目帮子女报兴趣班。我们的 12 个月出版计划，直接提供一个具备权威性（大学教授参与、ISBN 注册、实体书店上架）的成果，完美填补履历空白。"
+      },
+      {
+        q: "整个出版计划需要多久时间？",
+        a: "完整计划为期 12 个月，分为 5 个阶段：首月咨询评估、第 2-5 个月专属课程（专业导师与教授指导）、第 6-7 个月出版研讨与教授审阅、第 8-10 个月亲子排版设计，最后第 12 个月正式印刷并于实体书店平台上架。"
+      },
+      {
+        q: "收费大概是多少？",
+        a: "入门方案从 HK$3,800 起。完整的 12 个月出版、发布会、媒体公关及 Portfolio 升学包，会根据小朋友的具体需求进行专属报价，欢迎预约免费咨询。"
+      }
+    ]
+  },
   seo: {
     homeTitle: "Kidsmybook｜儿童成就出版 + 展览 + 公关全案服务",
-    homeDesc: "把孩子的热爱，变成值得被世界看见的成就。出版、发布会、展览、媒体、直播与升学作品集一站式服务。",
+    homeDesc: "专为高才通及高收入家庭打造的儿童成就出版。把孩子的热爱，变成香港顶尖学校面试最亮眼的 Portfolio。出版、发布会、媒体与升学作品集一站式服务。",
     servicesTitle: "Services｜Kidsmybook 6 大儿童成就服务",
     servicesDesc: "Author Programme、Book Launch、Exhibition、Media & PR、Live Streaming、Portfolio Package。",
     caseStudiesTitle: "Case Studies｜Kidsmybook 儿童案例",
@@ -903,11 +952,33 @@ const en: Translations = {
   notFound: {
     title: "Page in Progress",
     body: (path) => `You opened \`${path}\`. This route is reserved for future content using the same template.`,
-    backHome: "Back to home",
+    backHome: "Back to Home",
+  },
+  faq: {
+    kicker: "FAQ",
+    title: "Frequently Asked Questions",
+    items: [
+      {
+        q: "How does Kidsmybook help children get into good schools in HK (HK study)?",
+        a: "Top international and private schools in Hong Kong receive thousands of identical portfolios filled with standard certificates (piano, swimming, olympiad math). Kidsmybook helps high-income and Top Talent Pass families create a unique, citable achievement—a real published book co-authored by the child and reviewed by a university professor. This proves genuine interest, dedication, and academic backing, which makes the child's portfolio stand out to admissions officers."
+      },
+      {
+        q: "Is this programme suitable for Top Talent Pass families?",
+        a: "Absolutely. Many Top Talent Pass families who recently relocated to Hong Kong are unsure what local schools look for and end up blindly enrolling children in extracurricular classes. Our 12-month publishing programme provides an authoritative outcome (university professor involvement, ISBN registration, physical bookstore listing) that perfectly fills the gaps in a school portfolio."
+      },
+      {
+        q: "How long does the entire publishing programme take?",
+        a: "The full programme lasts 12 months and is divided into 5 phases: Month 1 consultation & assessment, Months 2-5 dedicated classes (with professional tutors and professors), Months 6-7 publishing seminar & professor review, Months 8-10 parent-child layout design, and finally Month 12 formal print and physical bookstore listing."
+      },
+      {
+        q: "How much does it cost?",
+        a: "Entry plans start from HK$3,800. The complete 12-month publishing, launch event, media PR, and Portfolio package is quoted based on the child's specific needs. Contact us for a free consultation."
+      }
+    ]
   },
   seo: {
     homeTitle: "Kidsmybook | Child achievement publishing, exhibitions & PR",
-    homeDesc: "Turn your child's passion into a visible achievement. Publishing, launches, exhibitions, media, live streaming, and admission portfolios — one team.",
+    homeDesc: "Premium child achievement publishing for Top Talent Pass and high-income families in HK. Turn your child's passion into a standout school admissions portfolio.",
     servicesTitle: "Services | Kidsmybook six achievement programmes",
     servicesDesc: "Author Programme, Book Launch, Exhibition, Media & PR, Live Streaming, Portfolio Package.",
     caseStudiesTitle: "Case Studies | Kidsmybook",
