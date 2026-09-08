@@ -443,21 +443,23 @@ async function sendIntakeTelegram(rec: Record<string, unknown>, env: Env): Promi
   if (!token || !chatId) return false;
   const topics = (rec.topics as string[])?.join("、") || "（未填）";
   const lines = [
-    "📋 <b>Kidsmybook 新升學資產諮詢</b>",
-    "",
-    `• <b>學員</b>：${rec.surname} ${rec.givenName}`,
-    rec.parent ? `• <b>家長</b>：${rec.parent}` : "",
-    rec.school ? `• <b>學校</b>：${rec.school}` : "",
-    rec.curriculum ? `• <b>學制</b>：${rec.curriculum}` : "",
-    rec.grade ? `• <b>年級</b>：${rec.grade}` : "",
-    rec.stage ? `• <b>用途</b>：${rec.stage}` : "",
-    `• <b>興趣</b>：${topics}`,
-    rec.competition ? `• <b>比賽/獎項</b>：${rec.competition}` : "",
-    rec.deadline ? `• <b>完成</b>：${rec.deadline}` : "",
-    rec.contact ? `• <b>聯絡</b>：<code>${rec.contact}</code>` : "",
-    rec.remark ? `• <b>備註</b>：${rec.remark}` : "",
-    "",
+    "⚠️⚠️ <b>新升學資產諮詢 — 請確認收到</b> ⚠️⚠️",
+    "━━━━━━━━━━━━━━━━━━",
+    `🔴 <b>學員</b>：${rec.surname} ${rec.givenName}`,
+    rec.parent ? `👤 <b>家長</b>：${rec.parent}` : "",
+    rec.school ? `🏫 <b>學校</b>：${rec.school}` : "",
+    rec.curriculum ? `📚 <b>學制</b>：${rec.curriculum}` : "",
+    rec.grade ? `🎓 <b>年級</b>：${rec.grade}` : "",
+    rec.stage ? `🎯 <b>用途</b>：${rec.stage}` : "",
+    `💡 <b>興趣</b>：${topics}`,
+    rec.competition ? `🏆 <b>比賽/獎項</b>：${rec.competition}` : "",
+    rec.deadline ? `⏰ <b>完成</b>：${rec.deadline}` : "",
+    rec.contact ? `📱 <b>聯絡</b>：<code>${rec.contact}</code>` : "",
+    rec.remark ? `📝 <b>備註</b>：${rec.remark}` : "",
+    "━━━━━━━━━━━━━━━━━━",
     `🕐 ${String(rec.receivedAt).slice(0,16).replace("T"," ")}`,
+    "",
+    "👉 <b>請回覆「✅ 收到」確認，唔好錯過任何客。</b>",
   ].filter(Boolean);
   const text = lines.join("\n");
   try {
@@ -466,6 +468,15 @@ async function sendIntakeTelegram(rec: Record<string, unknown>, env: Env): Promi
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ chat_id: chatId, text, parse_mode: "HTML" }),
     });
+    if (res.ok) {
+      // mark lead as unconfirmed, store msg id for read receipt
+      const r = await res.json();
+      const msgId = r?.result?.message_id;
+      try {
+        const key = `pending_${rec.id}`;
+        await env.kidsmybook_leads.put(key, JSON.stringify({ msgId, leadId: rec.id, askedAt: new Date().toISOString() }));
+      } catch {}
+    }
     return res.ok;
   } catch (err) {
     console.error("intake telegram failed:", err);

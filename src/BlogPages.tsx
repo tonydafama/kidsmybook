@@ -102,13 +102,28 @@ function appHref(path: string): string {
 
 const WHATSAPP_NUMBER = import.meta.env.VITE_WHATSAPP_NUMBER || "85291214157";
 
-async function loadPostBody(slug: string): Promise<string> {
-  try {
-    const mod = await import(/* @vite-ignore */ `../blog/${slug}.md?raw`);
-    return mod.default as string;
-  } catch {
-    return "_文章內容暫時未能載入。_";
+/* Statically inline ALL blog markdown at build time (Vite glob, eager).
+   Files: ../blog/<slug>.md (Traditional, default)
+          ../blog/<slug>.hans.md (Simplified)
+          ../blog/<slug>.en.md   (English)            */
+const BLOG_MODULES = import.meta.glob("../blog/*.md", {
+  query: "?raw",
+  import: "default",
+  eager: true,
+}) as Record<string, string>;
+
+function loadPostBody(slug: string, locale: string): string {
+  const ext =
+    locale === "zhHans" ? ".hans" : locale === "en" ? ".en" : "";
+  const candidates = [
+    `../blog/${slug}${ext}.md`,
+    `../blog/${slug}.md`, // fallback to Traditional if localized missing
+  ];
+  for (const c of candidates) {
+    const body = BLOG_MODULES[c];
+    if (body) return body;
   }
+  return "_文章內容暫時未能載入。_";
 }
 
 /* strip the front-matter (--- ... ---) and render as plain paragraphs */
@@ -156,7 +171,7 @@ function BlogIndexPage() {
 }
 
 function BlogPostPage({ slug }: { slug: string }) {
-  const { t } = useLocale();
+  const { t, locale } = useLocale();
   const [body, setBody] = useState<string>("");
   const [loaded, setLoaded] = useState(false);
   const meta = POSTS.find((p) => p.slug === slug);
@@ -164,16 +179,13 @@ function BlogPostPage({ slug }: { slug: string }) {
 
   useEffect(() => {
     let alive = true;
-    loadPostBody(slug).then((txt) => {
-      if (alive) {
-        setBody(txt);
-        setLoaded(true);
-      }
-    });
+    const txt = loadPostBody(slug, locale);
+    setBody(txt);
+    setLoaded(true);
     return () => {
       alive = false;
     };
-  }, [slug]);
+  }, [slug, locale]);
 
   const blocks = useMemo(() => (loaded ? renderMarkdown(body) : []), [loaded, body]);
 
