@@ -12,6 +12,19 @@ id = "ee8d200a425a45fbba808eb6383b3e44"
 directory = "./dist"
 binding = "ASSETS"
 not_found_handling = "single-page-application"
+# Worker must handle these before SPA shell can swallow them on browser navigations
+run_worker_first = [
+  "/robots.txt",
+  "/sitemap.xml",
+  "/llms.txt",
+  "/api/*",
+  "/admin",
+  "/admin/*",
+  "/intake",
+  "/intake/",
+  "/intake-form",
+  "/intake-form/",
+]
 [[routes]]
 pattern = "kidsmybook.com/*"
 zone_id = "d815252f7819e38a94d61f166aed2a69"

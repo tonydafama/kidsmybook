@@ -399,10 +399,18 @@ main {
   font-weight: 600;
 }
 
+.panel h1,
 .panel h2,
 .panel h3 {
   margin: 0 0 10px;
   color: var(--ink);
+}
+
+.panel h1 {
+  font-family: var(--font-display);
+  font-size: clamp(26px, 3.2vw, 36px);
+  letter-spacing: 0.02em;
+  font-weight: 600;
 }
 
 .panel h4 {
@@ -2492,4 +2500,49 @@ select:focus {
   .theme-chip-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+}
+
+/* Blog article SEO-friendly typography */
+.blog-card-title {
+  margin: 0 0 8px;
+  color: #efe3cb;
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.blog-post__head h1 {
+  margin-bottom: 8px;
+}
+
+.blog-post__body h2 {
+  margin: 1.4em 0 0.55em;
+  font-family: var(--font-display);
+  font-size: clamp(20px, 2.2vw, 26px);
+  font-weight: 600;
+}
+
+.blog-post__body h3 {
+  margin: 1.2em 0 0.45em;
+  font-size: 1.05rem;
+}
+
+.blog-post__body p,
+.blog-post__body li {
+  line-height: 1.7;
+  color: rgba(239, 227, 203, 0.92);
+}
+
+.blog-post__body ul {
+  margin: 0.6em 0 1em;
+  padding-left: 1.25em;
+}
+
+.blog-post__body blockquote {
+  margin: 1em 0;
+  padding: 0.85em 1em;
+  border-left: 3px solid rgba(218, 185, 125, 0.75);
+  background: rgba(255, 255, 255, 0.04);
+  color: rgba(245, 230, 200, 0.95);
 }

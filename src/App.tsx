@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import { AiBookCreatorPanel } from "./AiBookCreatorPage";
 import { LanguageSwitcher } from "./components/LanguageSwitcher";
 import { useLocale } from "./i18n/LocaleContext";
-import { BlogIndexPage, BlogPostPage, POSTS } from "./BlogPages";
+import { BlogIndexPage, BlogPostPage, POSTS, SITE_ORIGIN, getLocalizedPostMeta } from "./BlogPages";
 import {
   SERVICE_CARD_ART,
   SERVICE_ICONS,
@@ -395,7 +395,7 @@ function usePathname() {
 }
 
 export default function App() {
-  const { t } = useLocale();
+  const { t, locale } = useLocale();
   const pathname = usePathname();
   const serviceItems = useMemo(() => buildServiceItems(t), [t]);
   const currentService = serviceItems.find((item) => pathname === `/services/${item.slug}`);
@@ -416,8 +416,16 @@ export default function App() {
       "/": { title: t.seo.homeTitle, description: t.seo.homeDesc },
       "/services": { title: t.seo.servicesTitle, description: t.seo.servicesDesc },
       "/case-studies": { title: t.seo.caseStudiesTitle, description: t.seo.caseStudiesDesc },
-      "/blog": { title: "Kidsmybook 博客｜香港升學與子女教育", description: "大陸家長嚟港升學觀察，同埋一本書點樣變成子女升學亮點嘅真實經驗。" },
-      ...POSTS.reduce((acc, item) => { acc[`/blog/${item.slug}`] = { title: item.title, description: item.excerpt }; return acc; }, {} as Record<string, { title: string; description: string }>),
+      "/blog": {
+        title: "Kidsmybook Blog｜香港升學・子女教育・兒童成就出版",
+        description:
+          "Mainland and Top Talent Pass parents on Hong Kong school admissions — how a child's published book becomes a real portfolio highlight.",
+      },
+      ...POSTS.reduce((acc, item) => {
+        const loc = getLocalizedPostMeta(item.slug, locale);
+        acc[`/blog/${item.slug}`] = { title: loc.title, description: loc.excerpt };
+        return acc;
+      }, {} as Record<string, { title: string; description: string }>),
     };
     for (const item of serviceItems) {
       seoMap[`/services/${item.slug}`] = {
@@ -427,17 +435,51 @@ export default function App() {
     }
     const fallback = { title: "Kidsmybook", description: t.brandEn };
     const meta = seoMap[pathname] || fallback;
+    const canonical = `${SITE_ORIGIN}${pathname === "/" ? "/" : pathname}`;
+    const ogType = pathname.startsWith("/blog/") ? "article" : "website";
+
     document.title = meta.title;
-    const existing = document.querySelector('meta[name="description"]');
-    if (existing) {
-      existing.setAttribute("content", meta.description);
-    } else {
-      const tag = document.createElement("meta");
-      tag.setAttribute("name", "description");
-      tag.setAttribute("content", meta.description);
-      document.head.appendChild(tag);
+
+    const setNamed = (name: string, content: string) => {
+      let el = document.querySelector(`meta[name="${name}"]`) as HTMLMetaElement | null;
+      if (!el) {
+        el = document.createElement("meta");
+        el.setAttribute("name", name);
+        document.head.appendChild(el);
+      }
+      el.setAttribute("content", content);
+    };
+    const setProp = (property: string, content: string) => {
+      let el = document.querySelector(`meta[property="${property}"]`) as HTMLMetaElement | null;
+      if (!el) {
+        el = document.createElement("meta");
+        el.setAttribute("property", property);
+        document.head.appendChild(el);
+      }
+      el.setAttribute("content", content);
+    };
+
+    setNamed("description", meta.description);
+    setNamed("robots", "index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1");
+    setNamed("twitter:card", "summary_large_image");
+    setNamed("twitter:title", meta.title);
+    setNamed("twitter:description", meta.description);
+    setProp("og:type", ogType);
+    setProp("og:site_name", "Kidsmybook");
+    setProp("og:locale", locale === "en" ? "en_HK" : locale === "zh-Hans" ? "zh_CN" : "zh_HK");
+    setProp("og:url", canonical);
+    setProp("og:title", meta.title);
+    setProp("og:description", meta.description);
+    setProp("og:image", `${SITE_ORIGIN}/og-default.svg`);
+
+    let link = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
+    if (!link) {
+      link = document.createElement("link");
+      link.rel = "canonical";
+      document.head.appendChild(link);
     }
-  }, [pathname, t, serviceItems]);
+    link.href = canonical;
+  }, [pathname, t, locale, serviceItems]);
 
   useEffect(() => {
     if (pathname !== "/ai-book") return;

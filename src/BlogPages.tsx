@@ -1,6 +1,7 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, type ReactNode } from "react";
 import { useLocale } from "./i18n/LocaleContext";
-import type { Translations } from "./i18n/translations";
+
+export const SITE_ORIGIN = "https://kidsmybook.com";
 
 /* ------------------------------------------------------------------ */
 /* Blog post manifest — add a new entry per post. md files live in /blog */
@@ -102,48 +103,182 @@ function appHref(path: string): string {
 
 const WHATSAPP_NUMBER = import.meta.env.VITE_WHATSAPP_NUMBER || "85291214157";
 
-/* Statically inline ALL blog markdown at build time (Vite glob, eager).
-   Files: ../blog/<slug>.md (Traditional, default)
-          ../blog/<slug>.hans.md (Simplified)
-          ../blog/<slug>.en.md   (English)            */
 const BLOG_MODULES = import.meta.glob("../blog/*.md", {
   query: "?raw",
   import: "default",
   eager: true,
 }) as Record<string, string>;
 
-function loadPostBody(slug: string, locale: string): string {
-  const ext =
-    locale === "zhHans" ? ".hans" : locale === "en" ? ".en" : "";
-  const candidates = [
-    `../blog/${slug}${ext}.md`,
-    `../blog/${slug}.md`, // fallback to Traditional if localized missing
-  ];
+function localeFileExt(locale: string): string {
+  if (locale === "zh-Hans" || locale === "zhHans") return ".hans";
+  if (locale === "en") return ".en";
+  return "";
+}
+
+function loadPostRaw(slug: string, locale: string): string {
+  const ext = localeFileExt(locale);
+  const candidates = [`../blog/${slug}${ext}.md`, `../blog/${slug}.md`];
   for (const c of candidates) {
     const body = BLOG_MODULES[c];
     if (body) return body;
   }
-  return "_文章內容暫時未能載入。_";
+  return "";
 }
 
-/* strip the front-matter (--- ... ---) and render as plain paragraphs */
-function renderMarkdown(md: string): string[] {
-  const withoutFm = md.replace(/^---\n[\s\S]*?\n---\n/, "");
-  return withoutFm
+function parseFrontMatter(md: string): { title: string; description: string; date: string; body: string } {
+  const match = md.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n([\s\S]*)$/);
+  if (!match) return { title: "", description: "", date: "", body: md };
+  const fm = match[1];
+  const body = match[2];
+  const pick = (key: string) => {
+    const re = new RegExp(`^${key}:\\s*"(.*)"\\s*$`, "m");
+    const m = fm.match(re);
+    if (m) return m[1].replace(/\\"/g, '"');
+    const bare = fm.match(new RegExp(`^${key}:\\s*(.+?)\\s*$`, "m"));
+    return bare?.[1]?.replace(/^["']|["']$/g, "") ?? "";
+  };
+  return { title: pick("title"), description: pick("description"), date: pick("date"), body };
+}
+
+function getLocalizedPostMeta(slug: string, locale: string): Pick<PostMeta, "title" | "excerpt"> {
+  const fallback = POSTS.find((p) => p.slug === slug);
+  const raw = loadPostRaw(slug, locale);
+  if (!raw) {
+    return { title: fallback?.title ?? slug, excerpt: fallback?.excerpt ?? "" };
+  }
+  const { title, description } = parseFrontMatter(raw);
+  return {
+    title: title || fallback?.title || slug,
+    excerpt: description || fallback?.excerpt || "",
+  };
+}
+
+function inlineFormat(text: string): ReactNode {
+  // light markdown: **bold**, *italic*, `code`
+  const parts: ReactNode[] = [];
+  const re = /(\*\*[^*]+\*\*|\*[^*]+\*|`[^`]+`)/g;
+  let last = 0;
+  let m: RegExpExecArray | null;
+  let key = 0;
+  while ((m = re.exec(text)) !== null) {
+    if (m.index > last) parts.push(text.slice(last, m.index));
+    const token = m[0];
+    if (token.startsWith("**")) parts.push(<strong key={key++}>{token.slice(2, -2)}</strong>);
+    else if (token.startsWith("*")) parts.push(<em key={key++}>{token.slice(1, -1)}</em>);
+    else parts.push(<code key={key++}>{token.slice(1, -1)}</code>);
+    last = m.index + token.length;
+  }
+  if (last < text.length) parts.push(text.slice(last));
+  return parts.length === 1 ? parts[0] : <>{parts}</>;
+}
+
+type MdBlock =
+  | { kind: "h2"; text: string }
+  | { kind: "h3"; text: string }
+  | { kind: "p"; text: string }
+  | { kind: "quote"; text: string }
+  | { kind: "ul"; items: string[] };
+
+function parseMarkdownBlocks(md: string): MdBlock[] {
+  const withoutFm = md.replace(/^---\r?\n[\s\S]*?\r?\n---\r?\n/, "");
+  const chunks = withoutFm
     .split(/\n{2,}/)
     .map((b) => b.trim())
     .filter(Boolean);
+  const out: MdBlock[] = [];
+  for (const chunk of chunks) {
+    if (/^###\s+/.test(chunk)) {
+      out.push({ kind: "h3", text: chunk.replace(/^###\s+/, "").trim() });
+      continue;
+    }
+    if (/^##\s+/.test(chunk)) {
+      out.push({ kind: "h2", text: chunk.replace(/^##\s+/, "").trim() });
+      continue;
+    }
+    if (/^>\s?/.test(chunk)) {
+      out.push({
+        kind: "quote",
+        text: chunk
+          .split("\n")
+          .map((l) => l.replace(/^>\s?/, ""))
+          .join(" ")
+          .trim(),
+      });
+      continue;
+    }
+    if (/^[-*]\s+/m.test(chunk) && chunk.split("\n").every((l) => !l.trim() || /^[-*]\s+/.test(l.trim()))) {
+      out.push({
+        kind: "ul",
+        items: chunk
+          .split("\n")
+          .map((l) => l.trim())
+          .filter(Boolean)
+          .map((l) => l.replace(/^[-*]\s+/, "")),
+      });
+      continue;
+    }
+    // strip wrapping single italics used as CTA footer
+    const plain = chunk.replace(/^\*([\s\S]+)\*$/, "$1").trim();
+    out.push({ kind: "p", text: plain });
+  }
+  return out;
+}
+
+function upsertJsonLd(id: string, data: Record<string, unknown> | null) {
+  const existing = document.getElementById(id);
+  if (!data) {
+    existing?.remove();
+    return;
+  }
+  const el = (existing as HTMLScriptElement | null) ?? document.createElement("script");
+  el.type = "application/ld+json";
+  el.id = id;
+  el.text = JSON.stringify(data);
+  if (!existing) document.head.appendChild(el);
 }
 
 function BlogIndexPage() {
-  const { t } = useLocale();
+  const { t, locale } = useLocale();
   const whatsapp = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent("想了解 Kidsmybook 兒童出版計劃")}`;
-  const sorted = [...POSTS].sort((a, b) => b.date.localeCompare(a.date));
+  const sorted = useMemo(() => {
+    return [...POSTS]
+      .sort((a, b) => b.date.localeCompare(a.date))
+      .map((p) => {
+        const loc = getLocalizedPostMeta(p.slug, locale);
+        return { ...p, title: loc.title, excerpt: loc.excerpt };
+      });
+  }, [locale]);
+
+  useEffect(() => {
+    upsertJsonLd("kidsmybook-blog-index-ld", {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      name: "Kidsmybook Blog — Hong Kong school admissions & child publishing",
+      url: `${SITE_ORIGIN}/blog`,
+      isPartOf: { "@type": "WebSite", name: "Kidsmybook", url: SITE_ORIGIN },
+      about: [
+        "Hong Kong school admissions",
+        "Top Talent Pass / Quality Migrant families",
+        "Children's achievement publishing",
+      ],
+      mainEntity: {
+        "@type": "ItemList",
+        itemListElement: sorted.map((p, i) => ({
+          "@type": "ListItem",
+          position: i + 1,
+          url: `${SITE_ORIGIN}/blog/${p.slug}`,
+          name: p.title,
+        })),
+      },
+    });
+    return () => upsertJsonLd("kidsmybook-blog-index-ld", null);
+  }, [sorted]);
+
   return (
     <main>
       <section className="panel">
         <span className="section-kicker">Kidsmybook 博客</span>
-        <h2>香港升學・子女教育・真人真事出版</h2>
+        <h1>香港升學・子女教育・真人真事出版</h1>
         <p className="meta">
           大陸家長嚟港嘅升學觀察，同埋「一本書點樣變成子女升學亮點」嘅真實經驗。
         </p>
@@ -151,7 +286,7 @@ function BlogIndexPage() {
           {sorted.map((p) => (
             <a key={p.slug} className="service-card link-card" href={appHref(`/blog/${p.slug}`)}>
               <div className="service-card-body">
-                <h4>{p.title}</h4>
+                <h2 className="blog-card-title">{p.title}</h2>
                 <p>{p.excerpt}</p>
                 <p className="price">
                   {p.date} · 約 {p.readMin} 分鐘
@@ -172,41 +307,89 @@ function BlogIndexPage() {
 
 function BlogPostPage({ slug }: { slug: string }) {
   const { t, locale } = useLocale();
-  const [body, setBody] = useState<string>("");
-  const [loaded, setLoaded] = useState(false);
   const meta = POSTS.find((p) => p.slug === slug);
+  const localized = useMemo(() => getLocalizedPostMeta(slug, locale), [slug, locale]);
+  const blocks = useMemo(() => {
+    const raw = loadPostRaw(slug, locale);
+    if (!raw) return [] as MdBlock[];
+    return parseMarkdownBlocks(raw);
+  }, [slug, locale]);
   const whatsapp = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent("想了解 Kidsmybook 兒童出版計劃")}`;
+  const pageUrl = `${SITE_ORIGIN}/blog/${slug}`;
+  const inLanguage = locale === "en" ? "en" : locale === "zh-Hans" ? "zh-Hans" : "zh-Hant";
 
   useEffect(() => {
-    let alive = true;
-    const txt = loadPostBody(slug, locale);
-    setBody(txt);
-    setLoaded(true);
-    return () => {
-      alive = false;
-    };
-  }, [slug, locale]);
-
-  const blocks = useMemo(() => (loaded ? renderMarkdown(body) : []), [loaded, body]);
+    if (!meta) {
+      upsertJsonLd("kidsmybook-blog-post-ld", null);
+      return;
+    }
+    upsertJsonLd("kidsmybook-blog-post-ld", {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      headline: localized.title,
+      description: localized.excerpt,
+      datePublished: meta.date,
+      dateModified: meta.date,
+      inLanguage,
+      mainEntityOfPage: pageUrl,
+      url: pageUrl,
+      author: {
+        "@type": "Organization",
+        name: "Kidsmybook",
+        url: SITE_ORIGIN,
+      },
+      publisher: {
+        "@type": "Organization",
+        name: "Kidsmybook",
+        url: SITE_ORIGIN,
+      },
+      about: [
+        "Hong Kong school admissions",
+        "Child achievement publishing",
+        "Top Talent Pass families",
+      ],
+      isPartOf: {
+        "@type": "Blog",
+        name: "Kidsmybook Blog",
+        url: `${SITE_ORIGIN}/blog`,
+      },
+    });
+    return () => upsertJsonLd("kidsmybook-blog-post-ld", null);
+  }, [meta, localized.title, localized.excerpt, pageUrl, inLanguage]);
 
   return (
     <main>
-      <article className="panel blog-post">
+      <article className="panel blog-post" itemScope itemType="https://schema.org/BlogPosting">
         <a className="btn ghost" href={appHref("/blog")}>
           ← 返博客
         </a>
         {meta && (
           <header className="blog-post__head">
-            <h2>{meta.title}</h2>
+            <h1 itemProp="headline">{localized.title}</h1>
             <p className="meta">
-              {meta.date} · 約 {meta.readMin} 分鐘閱讀
+              <time dateTime={meta.date} itemProp="datePublished">
+                {meta.date}
+              </time>
+              {" · "}約 {meta.readMin} 分鐘閱讀
             </p>
           </header>
         )}
-        <div className="blog-post__body">
-          {blocks.map((b, i) => (
-            <p key={i}>{b}</p>
-          ))}
+        <div className="blog-post__body" itemProp="articleBody">
+          {blocks.length === 0 && <p>_文章內容暫時未能載入。_</p>}
+          {blocks.map((b, i) => {
+            if (b.kind === "h2") return <h2 key={i}>{inlineFormat(b.text)}</h2>;
+            if (b.kind === "h3") return <h3 key={i}>{inlineFormat(b.text)}</h3>;
+            if (b.kind === "quote") return <blockquote key={i}>{inlineFormat(b.text)}</blockquote>;
+            if (b.kind === "ul")
+              return (
+                <ul key={i}>
+                  {b.items.map((item, j) => (
+                    <li key={j}>{inlineFormat(item)}</li>
+                  ))}
+                </ul>
+              );
+            return <p key={i}>{inlineFormat(b.text)}</p>;
+          })}
         </div>
         <div className="cta-row">
           <a className="btn primary" href={whatsapp} target="_blank" rel="noreferrer">
@@ -218,4 +401,4 @@ function BlogPostPage({ slug }: { slug: string }) {
   );
 }
 
-export { BlogIndexPage, BlogPostPage, POSTS };
+export { BlogIndexPage, BlogPostPage, POSTS, getLocalizedPostMeta };

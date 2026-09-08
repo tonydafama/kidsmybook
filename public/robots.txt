@@ -1,0 +1,45 @@
+User-agent: *
+Allow: /
+
+# Prefer canonical host for indexing
+Host: https://kidsmybook.com
+
+# Sitemaps (Google, Bing, and AI crawlers)
+Sitemap: https://kidsmybook.com/sitemap.xml
+Sitemap: https://www.kidsmybook.com/sitemap.xml
+
+# Explicit allow for common AI / answer-engine crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+Disallow: /admin
+Disallow: /intake
+Disallow: /intake-form
+Disallow: /api/

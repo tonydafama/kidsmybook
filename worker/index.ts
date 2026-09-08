@@ -758,6 +758,103 @@ async function handleWhatsAppWebhook(request: Request, env: Env): Promise<Respon
   return json({ ok: true }, 200);
 }
 
+const ROBOTS_TXT = `User-agent: *
+Allow: /
+
+# Prefer canonical host for indexing
+Host: https://kidsmybook.com
+
+# Sitemaps (Google, Bing, and AI crawlers)
+Sitemap: https://kidsmybook.com/sitemap.xml
+Sitemap: https://www.kidsmybook.com/sitemap.xml
+
+# Explicit allow for common AI / answer-engine crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+Disallow: /admin
+Disallow: /intake
+Disallow: /intake-form
+Disallow: /api/
+`;
+
+const SITEMAP_XML = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://kidsmybook.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://kidsmybook.com/blog</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://kidsmybook.com/services</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kidsmybook.com/case-studies</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://kidsmybook.com/case-studies/xu-duo-butterfly-guide</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://kidsmybook.com/llms.txt</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://kidsmybook.com/blog/hk-international-school-book-mainland-parents</loc><lastmod>2026-09-05</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kidsmybook.com/blog/gtp-family-child-book-portfolio</loc><lastmod>2026-09-05</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kidsmybook.com/blog/talent-admission-book-advantage</loc><lastmod>2026-09-06</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kidsmybook.com/blog/gaocaitong-yisheng-xue-you-shi</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kidsmybook.com/blog/xing-qu-bian-chu-ban</loc><lastmod>2026-09-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kidsmybook.com/blog/zheng-shu-pi-juan</loc><lastmod>2026-09-06</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kidsmybook.com/blog/jiao-shou-chu-ban-shuo-fu-li</loc><lastmod>2026-09-08</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kidsmybook.com/blog/san-lian-shang-jia-yi-yi</loc><lastmod>2026-09-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kidsmybook.com/blog/portfolio-book-4-skills</loc><lastmod>2026-09-12</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kidsmybook.com/blog/gaocaitong-mom-burnout</loc><lastmod>2026-09-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kidsmybook.com/blog/school-ranking-myth</loc><lastmod>2026-09-16</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+</urlset>
+`;
+
+function plainText(body: string, contentType: string): Response {
+  return new Response(body, {
+    status: 200,
+    headers: {
+      "Content-Type": contentType,
+      "Cache-Control": "public, max-age=300",
+      "X-Content-Type-Options": "nosniff",
+    },
+  });
+}
+
+async function serveSeoAsset(request: Request, env: Env, pathname: string): Promise<Response> {
+  if (pathname === "/robots.txt") return plainText(ROBOTS_TXT, "text/plain; charset=utf-8");
+  if (pathname === "/sitemap.xml") return plainText(SITEMAP_XML, "application/xml; charset=utf-8");
+
+  // llms.txt: prefer static asset, but never return the SPA HTML shell
+  const assetRes = await env.ASSETS.fetch(new Request(new URL("/llms.txt", request.url), request));
+  const ct = assetRes.headers.get("content-type") || "";
+  const text = await assetRes.text();
+  if (assetRes.ok && !ct.includes("text/html") && !text.trimStart().startsWith("<!")) {
+    return plainText(text, "text/plain; charset=utf-8");
+  }
+  return plainText(
+    "# Kidsmybook\n\nSee https://kidsmybook.com and https://kidsmybook.com/sitemap.xml\n",
+    "text/plain; charset=utf-8",
+  );
+}
+
 export default {
   async fetch(request: Request, env: Env): Promise<Response> {
     const url = new URL(request.url);
@@ -804,6 +901,11 @@ export default {
     if (url.pathname === "/api/whatsapp-webhook") {
       return handleWhatsAppWebhook(request, env);
     }
+
+    if (url.pathname === "/robots.txt" || url.pathname === "/sitemap.xml" || url.pathname === "/llms.txt") {
+      return serveSeoAsset(request, env, url.pathname);
+    }
+
     return env.ASSETS.fetch(request);
   },
 };
