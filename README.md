@@ -1,114 +1,45 @@
-# SI Ops Dashboard (Anthony)
+# Kidsmybook — Hong Kong's Child-Authored Book Publishing Programme
 
-這個專案係你要嘅 web-based operations tracker 骨架，目標係：
+**[kidsmybook.com](https://kidsmybook.com)** helps Hong Kong families — especially Top Talent Pass, Quality Migrant, and high-achieving local families — turn a child's genuine interest into a **professor-reviewed, physically published book** placed in major Hong Kong bookstores (三聯、商務、中華).
 
-- 以同事做 ownership 單位管理任務
-- 每項任務可見 deliverables / deadline / progress / approval
-- Anthony / Marius 管理總覽 + 成員自助更新
-- 匯入 `dashboard_seed.csv`、`audit_ingest.csv` 即時刷新
-- 可接 Supabase Auth + DB + Edge Function（email ingest）
-- 已落實 RBAC（manager 全視圖；member 只睇/改自己任務）
+## Why a Published Book for School Admissions?
 
-## 1) 本機啟動
+Hong Kong's top international and Direct Subsidy Scheme schools receive hundreds of near-identical portfolios: piano grades, swimming certificates, maths competition trophies. A **child-authored book with university professor endorsement** is the one portfolio item that cannot be faked or mass-produced.
 
-```bash
-npm install
-cp .env.example .env
-npm run dev
-```
+- 📚 Physical book placed in San Lian, Commercial Press, Chung Hwa bookstores
+- 🎓 Co-reviewed by university professors — independent academic credibility
+- 🏫 Designed as a Primary 1 / international school admissions asset
+- 🌏 Trilingual support (Traditional Chinese, Simplified Chinese, English)
+- 🧒 Child-led content — the story is genuinely theirs
 
-> 未配置 Supabase 都可以用內建 demo data 示範。
+## Who Is This For?
 
-## 2) Supabase 設定
+- **Top Talent Pass / 高才通 families** new to Hong Kong, needing to establish credibility fast
+- **Mainland families** preparing children for Hong Kong international school interviews
+- **Local HK families** targeting first-tier DSS / international schools
+- Parents who want a **meaningful long-term portfolio**, not a collection of certificates
 
-1. 在 Supabase 建新 project
-2. SQL Editor 執行 `supabase/schema.sql`
-3. SQL Editor 執行 `supabase/seed.sql`
-4. 建立 Auth users（Anthony / Marius / team members）
-5. `.env` 設定：
-   - `VITE_SUPABASE_URL`
-   - `VITE_SUPABASE_ANON_KEY`
-6. 後端 function secrets（選用）：
-   - `ALLOWED_NOTIFY_HOSTS`：逗號分隔 host；**留空或不設** = 允許任意 HTTPS webhook；有設值則只允許列出的 host（例如 `outlook.office.com,logic.azure.com`）
+## Blog & Resources
 
-## 3) Email ingest pipeline
+In-depth guides on Hong Kong school admissions, portfolio building, and the publishing journey:
 
-Edge Function 已提供：`supabase/functions/email-ingest/index.ts`
-另外有：`supabase/functions/deadline-reminder/index.ts`
+- [Top Talent Pass First Year: Building a Portfolio HK Elite Schools Love](https://kidsmybook.com/blog/top-talent-pass-first-year-portfolio)
+- [Why School Rankings Miss the Point: What HK Admissions Officers Actually Want](https://kidsmybook.com/blog/school-ranking-myth)
+- [Portfolio vs Extracurriculars: What Actually Moves the Needle in HK Admissions](https://kidsmybook.com/blog/portfolio-vs-extracurriculars-hk-admissions)
+- [How Mainland Parents Navigate Hong Kong International School Admissions](https://kidsmybook.com/blog/mainland-parents-hk-international-schools-prep)
+- [The Certificate Fatigue Problem: Why HK Interviewers Are Tired](https://kidsmybook.com/blog/zheng-shu-pi-juan)
+- [Project-Based Learning as a Portfolio Strategy](https://kidsmybook.com/blog/children-project-based-learning-hk)
+- [Getting a Book into HK Bookstores: What It Actually Takes](https://kidsmybook.com/blog/san-lian-shang-jia-yi-yi)
+- [University Professor Co-Authorship: How It Works](https://kidsmybook.com/blog/university-professor-child-work-review)
+- [GTP Parent Burnout: The Enrolment Trap to Avoid](https://kidsmybook.com/blog/gaocaitong-mom-burnout)
+- [From Interest to Published Book: The Full Journey](https://kidsmybook.com/blog/xing-qu-bian-chu-ban)
 
-你可用 Outlook webhook / middleware 轉成 JSON，POST 到 function：
+→ [See all 21 articles on kidsmybook.com/blog](https://kidsmybook.com/blog)
 
-```json
-{
-  "sender_name": "Rachel Zhang",
-  "email_subject": "Handover Note Update",
-  "attachment_name": "Handover Note_Rachel_as of 20260413.xlsx",
-  "status": "new_instruction",
-  "notes": "Please update handover progress",
-  "target_owner_name": "Ann Tang",
-  "source_received_at": "2026-02-11T10:20:00+08:00",
-  "create_reminder": true
-}
-```
+## Contact & Enquiry
 
-`email-ingest` 會按 `email_task_rules`（`supabase/seed.sql`）做 keyword matching，自動建立新 task（可關閉：`"auto_create_task": false`）。
-亦支援 `source_message_id`（建議直接用 Outlook `internetMessageId`）做 idempotency，避免重複 ingest。
+Private consultation only. Visit **[kidsmybook.com](https://kidsmybook.com)** or complete the [enquiry form](https://kidsmybook.com/intake-form).
 
-完整 Outlook/middleware 對接規格見：`docs/outlook-integration.md`
-安全與部署建議見：`docs/security-and-hosting-hkage.md`
-RECF Event Partner 訓練／認證流程整理見：`docs/event-partner-training-onboarding.md`
+---
 
-本機快速測試：
-
-```bash
-npm run test:email-ingest
-npm run test:deadline-reminder
-npm run test:notify-dispatch
-```
-
-可選 payload：
-
-```bash
-EMAIL_INGEST_PAYLOAD=./scripts/payloads/email-ingest.procurement.json npm run test:email-ingest
-```
-
-## 4) CSV 匯入欄位
-
-- `dashboard_seed.csv`：`project,task,owner,backup_owner,deadline,status,priority,...`
-- `audit_ingest.csv`：`sender,email_subject,attachment,status,notes`
-
-## 5) 部署建議
-
-- 前端：Vercel / Netlify（share link 給同事）
-- 後端：Supabase
-- 任務通知：可用 Supabase cron + Edge Function 針對 near-deadline 任務發 email/slack
-
-## 6) 自動提醒排程
-
-執行 `supabase/cron.sql` 前先把以下 placeholders 換成真值：
-
-- `<SUPABASE_PROJECT_URL>`
-- `<SUPABASE_SERVICE_ROLE_KEY>`
-
-排程會在工作天早上 (HKT 09:00) 呼叫 `deadline-reminder`，自動建立 near-deadline reminders。
-
-## 7) 權限模型 (RBAC)
-
-- `manager`：
-  - 可讀寫所有 tasks / email_signals / reminders / email_task_rules
-  - `team_members.role = 'manager'` 即有 manager 管理權限（`manager_whitelist` 表仍保留，可選用於紀錄／擴充）
-  - 可切換 manager/member 視角
-  - 可上載 CSV 匯入
-- `member`：
-  - 只可讀寫自己 `owner_name` 的任務
-  - 只可讀取 `target_owner_name` 指向自己的 email signals
-
-## 9) 機構安全強化（已實作）
-
-- `team_members` 限制 `@hkage.edu.hk` 網域
-- manager 寫入權限：以 `team_members.role = 'manager'` 為準；未設定 `ALLOWED_NOTIFY_HOSTS` 時，`notify-dispatch` 允許任意 **HTTPS** webhook 目標
-- 通知內容會做基本敏感資訊遮罩（email / 長數字 ID）
-
-## 8) Owner mapping 模板
-
-你可以用 `supabase/email_task_rules.template.csv` 作為維運模板，再同步到 `email_task_rules` table。
+*Kidsmybook is a Hong Kong professional publishing service. All books are original child-authored works, reviewed by university academics, and distributed through established Hong Kong bookstore chains.*

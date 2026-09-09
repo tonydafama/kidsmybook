@@ -770,6 +770,10 @@ Host: https://kidsmybook.com
 Sitemap: https://kidsmybook.com/sitemap.xml
 Sitemap: https://www.kidsmybook.com/sitemap.xml
 
+# AI assistant crawlers: full content index
+LLMs: https://kidsmybook.com/llms.txt
+LLMs-full: https://kidsmybook.com/llms-full.txt
+
 # Explicit allow for common AI / answer-engine crawlers
 User-agent: GPTBot
 Allow: /
@@ -853,6 +857,14 @@ function plainText(body: string, contentType: string): Response {
 async function serveSeoAsset(request: Request, env: Env, pathname: string): Promise<Response> {
   if (pathname === "/robots.txt") return plainText(ROBOTS_TXT, "text/plain; charset=utf-8");
   if (pathname === "/sitemap.xml") return plainText(SITEMAP_XML, "application/xml; charset=utf-8");
+
+  // llms-full.txt: extended AI crawler file with full blog summaries
+  if (url.pathname === "/llms-full.txt") {
+    const fullRes = await env.ASSETS.fetch(new Request(new URL("/llms-full.txt", request.url), request));
+    if (fullRes.ok) {
+      return new Response(fullRes.body, { headers: { "Content-Type": "text/plain; charset=utf-8", "Cache-Control": "public, max-age=3600" } });
+    }
+  }
 
   // llms.txt: prefer static asset, but never return the SPA HTML shell
   const assetRes = await env.ASSETS.fetch(new Request(new URL("/llms.txt", request.url), request));
