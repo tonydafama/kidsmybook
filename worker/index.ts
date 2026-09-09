@@ -859,11 +859,17 @@ async function serveSeoAsset(request: Request, env: Env, pathname: string): Prom
   if (pathname === "/sitemap.xml") return plainText(SITEMAP_XML, "application/xml; charset=utf-8");
 
   // llms-full.txt: extended AI crawler file with full blog summaries
-  if (url.pathname === "/llms-full.txt") {
+  if (pathname === "/llms-full.txt") {
     const fullRes = await env.ASSETS.fetch(new Request(new URL("/llms-full.txt", request.url), request));
-    if (fullRes.ok) {
-      return new Response(fullRes.body, { headers: { "Content-Type": "text/plain; charset=utf-8", "Cache-Control": "public, max-age=3600" } });
+    const fullCt = fullRes.headers.get("content-type") || "";
+    const fullText = await fullRes.text();
+    if (fullRes.ok && !fullCt.includes("text/html") && !fullText.trimStart().startsWith("<!")) {
+      return plainText(fullText, "text/plain; charset=utf-8");
     }
+    return plainText(
+      "# Kidsmybook (full)\n\nSee https://kidsmybook.com/llms.txt and https://kidsmybook.com/sitemap.xml\n",
+      "text/plain; charset=utf-8",
+    );
   }
 
   // llms.txt: prefer static asset, but never return the SPA HTML shell
@@ -1021,7 +1027,12 @@ export default {
       return handleWhatsAppWebhook(request, env);
     }
 
-    if (url.pathname === "/robots.txt" || url.pathname === "/sitemap.xml" || url.pathname === "/llms.txt") {
+    if (
+      url.pathname === "/robots.txt" ||
+      url.pathname === "/sitemap.xml" ||
+      url.pathname === "/llms.txt" ||
+      url.pathname === "/llms-full.txt"
+    ) {
       return serveSeoAsset(request, env, url.pathname);
     }
 
