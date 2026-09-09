@@ -123,8 +123,8 @@ Do NOT post on behalf of Anthony or using a fake identity (AGENTS.md rule).
 | sitemap.xml | ✅ Live |
 | robots.txt (with AI crawler allows) | ✅ Live |
 | JSON-LD schema (ProfessionalService, FAQPage, BlogPosting) | ✅ Live |
-| llms-full.txt | ❌ Not live (deploy token expired) |
-| robots.txt LLMs pointer | ❌ Not live (same deploy) |
+| llms-full.txt | ✅ Live (deployed 2026-09-09 by Cursor; route bug fixed) |
+| robots.txt LLMs pointer | ✅ Live |
 | Google Search Console | ❌ Not set up (Anthony to do) |
 | Google Business Profile | ❌ Not set up (Anthony to do) |
 | Xiaohongshu posts | ❌ Awaiting Anthony to paste |
