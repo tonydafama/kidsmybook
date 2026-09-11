@@ -1,3 +1,5 @@
+import { maybePrerender } from "./prerender";
+
 export interface Env {
   ASSETS: Fetcher;
   kidsmybook_leads: KVNamespace;
@@ -818,7 +820,6 @@ const SITEMAP_XML = `<?xml version="1.0" encoding="UTF-8"?>
   <url><loc>https://kidsmybook.com/services</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kidsmybook.com/case-studies</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://kidsmybook.com/case-studies/hilary-butterfly-guide</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://kidsmybook.com/llms.txt</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
   <url><loc>https://kidsmybook.com/blog/hk-international-school-book-mainland-parents</loc><lastmod>2026-09-05</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kidsmybook.com/blog/gtp-family-child-book-portfolio</loc><lastmod>2026-09-05</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kidsmybook.com/blog/talent-admission-book-advantage</loc><lastmod>2026-09-06</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
@@ -966,6 +967,9 @@ export default {
   },
 
   async fetch(request: Request, env: Env): Promise<Response> {
+    const pre = maybePrerender(request);
+    if (pre) return pre;
+
     const url = new URL(request.url);
 
     // Enforce canonical domain (SEO)
