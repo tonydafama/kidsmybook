@@ -967,12 +967,9 @@ export default {
   },
 
   async fetch(request: Request, env: Env): Promise<Response> {
-    const pre = maybePrerender(request);
-    if (pre) return pre;
-
     const url = new URL(request.url);
 
-    // Enforce canonical domain (SEO)
+    // Canonical host first so www / mybook.pub never get a second entity.
     if (
       url.hostname === "www.kidsmybook.com" ||
       url.hostname === "mybook.pub" ||
@@ -980,6 +977,9 @@ export default {
     ) {
       return Response.redirect(`https://kidsmybook.com${url.pathname}${url.search}`, 301);
     }
+
+    const pre = maybePrerender(request);
+    if (pre) return pre;
 
     if (url.pathname === "/api/seo-health") {
       const pw = url.searchParams.get("pw") || request.headers.get("x-admin-pw") || "";
