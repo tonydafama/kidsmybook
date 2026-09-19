@@ -43,6 +43,7 @@ export type Translations = {
     caseStudies: string;
     blog: string;
     whatsapp: string;
+    intake: string;
   };
   blog: {
     kicker: string;
@@ -215,6 +216,7 @@ const zhHant: Translations = {
     caseStudies: "Case Studies",
     blog: "Blog",
     whatsapp: "WhatsApp: @kidsmybook",
+    intake: "升學諮詢",
   },
   blog: {
     kicker: "Kidsmybook 博客",
@@ -789,6 +791,7 @@ const en: Translations = {
     caseStudies: "Case Studies",
     blog: "Blog",
     whatsapp: "WhatsApp: @kidsmybook",
+    intake: "Admissions Consultation",
   },
   blog: {
     kicker: "Kidsmybook Blog",

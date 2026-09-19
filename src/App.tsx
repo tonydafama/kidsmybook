@@ -125,6 +125,9 @@ function HomePage({ services }: { services: ServiceItem[] }) {
             <a className="btn ghost" href={whatsapp} target="_blank" rel="noreferrer">
               {t.hero.bookConsult}
             </a>
+            <a className="btn ghost" href={appHref("/intake-form")} rel="noreferrer">
+              {t.nav.intake ?? "升學諮詢表"}
+            </a>
           </div>
         </div>
         <div className="hero-visual hero-visual--glass">
@@ -563,6 +566,9 @@ export default function App() {
           <a href={appHref("/#services")}>{t.nav.services}</a>
           <a href={appHref("/blog")}>{t.nav.blog}</a>
           <a href={appHref("/#case-studies")}>{t.nav.caseStudies}</a>
+          <a href={appHref("/intake-form")} rel="noreferrer">
+            {t.nav.intake ?? "升學諮詢"}
+          </a>
           <a href={whatsappFloating} target="_blank" rel="noreferrer">
             {t.nav.whatsapp}
           </a>
