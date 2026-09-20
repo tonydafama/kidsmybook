@@ -347,13 +347,21 @@ ${page.faqs
       "itemListElement": [
 ${page.breadcrumb
   .map(
-    (name, i) => `        {
+    (name, i) => {
+      let itemUrl = `${BASE}/`;
+      if (i > 0) {
+        if (name === '服務') itemUrl = `${BASE}/services`;
+        else if (name === '個案') itemUrl = `${BASE}/case-studies`;
+        else if (name === '文章') itemUrl = `${BASE}/blog`;
+        else itemUrl = canonical;
+      }
+      return `        {
           "@type": "ListItem",
           "position": ${i + 1},
-          "name": ${JSON.stringify(name)}${
-      i === 0 ? `,\n          "item": "${BASE}/"` : ''
+          "name": ${JSON.stringify(name)},
+          "item": "${itemUrl}"
+        }`;
     }
-        }`
   )
   .join(',\n')}
       ]
