@@ -1,7 +1,7 @@
 ---
 title: "International vs local school interviews: how a published portfolio differs"
 description: "The same child's book is told differently in an international interview and a local, DSS, or private one. Prepare language and evidence for one story, not two. Private quotation. No place is guaranteed."
-date: 2026-10-19
+date: 2026-10-16
 slug: "guo-ji-vs-ben-di-mian-shi-zuo-pin-ji"
 tags: ["國際學校", "本地學校", "面試", "作品集"]
 ---

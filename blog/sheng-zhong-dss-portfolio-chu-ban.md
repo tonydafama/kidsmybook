@@ -1,7 +1,7 @@
 ---
 title: "升中面試、DSS 同直資：作品集點樣放一本出版物"
 description: "升中、直資同 DSS 面試想睇持續興趣同自述。講一本正式出版物可以放喺作品集前面，同證書堆有咩分別。私人報價，唔保證取錄。"
-date: 2026-10-18
+date: 2026-10-16
 slug: "sheng-zhong-dss-portfolio-chu-ban"
 tags: ["升中", "DSS", "直資", "作品集"]
 ---
