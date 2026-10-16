@@ -120,14 +120,14 @@ function HomePage({ services }: { services: ServiceItem[] }) {
           <h1>{t.brandTitle}</h1>
           <p className="lead">{t.hero.lead}</p>
           <div className="cta-row hero-cta-row">
-            <a className="btn primary" href={appHref("/#ai-book-lab")}>
-              {t.hero.generateCover}
-            </a>
-            <a className="btn ghost" href={whatsapp} target="_blank" rel="noreferrer">
+            <a className="btn primary" href={whatsapp} target="_blank" rel="noreferrer">
               {t.hero.bookConsult}
             </a>
             <a className="btn ghost" href={appHref("/intake-form")} rel="noreferrer">
               {t.nav.intake ?? "升學諮詢表"}
+            </a>
+            <a className="btn ghost" href={appHref("/#ai-book-lab")}>
+              {t.hero.generateCover}
             </a>
           </div>
         </div>
@@ -228,11 +228,11 @@ function HomePage({ services }: { services: ServiceItem[] }) {
           <h3>{t.finalCta.title}</h3>
           <p className="final-cta-copy">{t.finalCta.copy}</p>
           <div className="cta-row">
-            <a className="btn primary" href={appHref("/#ai-book-lab")}>
-              {t.finalCta.generateCover}
+            <a className="btn primary" href={whatsapp} target="_blank" rel="noreferrer">
+              {t.hero.bookConsult}
             </a>
-            <a className="btn ghost" href={whatsapp} target="_blank" rel="noreferrer">
-              {t.nav.whatsapp}
+            <a className="btn ghost" href={appHref("/intake-form")} rel="noreferrer">
+              {t.nav.intake ?? "升學諮詢表"}
             </a>
           </div>
         </section>
@@ -359,7 +359,7 @@ function CaseStudyPage() {
       <section className="panel">
         <p className="eyebrow">Case Study</p>
         <h2>
-          {childName}?{t.caseStudy.bookTitle}
+          {childName} · {t.caseStudy.bookTitle}
         </h2>
         <p className="meta">{t.caseStudy.meta}</p>
         <div className="cta-row">
@@ -382,14 +382,21 @@ function CaseStudyPage() {
         <h3>{t.caseStudy.storyTitle}</h3>
         <p>{t.caseStudy.storyP1}</p>
         <p>{t.caseStudy.storyP2}</p>
+        <p>{t.caseStudy.storyP3}</p>
       </section>
 
       <section className="panel">
         <h3>{t.caseStudy.gallery}</h3>
-        <div className="media-wall">
-          {t.caseStudy.galleryItems.map((label) => (
-            <span key={label}>{label}</span>
-          ))}
+        <div className="case-proof-grid case-proof-grid--hilary">
+          <figure className="case-proof-tile">
+            <img
+              src={publicAssetSrc(HERO_FEATURED_SRC, FEATURED_ART_CACHE)}
+              alt={t.hero.featuredAlt}
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>{t.hero.featuredAlt}</figcaption>
+          </figure>
         </div>
       </section>
 
@@ -420,13 +427,11 @@ function CaseStudiesIndex() {
         <h2>{t.caseIndex.title}</h2>
         <div className="service-grid">
           <a className="service-card link-card" href={appHref("/case-studies/hilary-butterfly-guide")}>
-            <h4>{t.caseIndex.hilaryTitle}</h4>
-            <p>{t.caseIndex.hilaryDesc}</p>
+            <h4>
+              {t.caseStudy.realName} · {t.caseStudy.bookTitle}
+            </h4>
+            <p>{t.seo.hilaryDesc}</p>
           </a>
-          <article className="service-card">
-            <h4>{t.caseIndex.futureTitle}</h4>
-            <p>{t.caseIndex.futureDesc}</p>
-          </article>
         </div>
       </section>
     </main>
@@ -569,9 +574,9 @@ export default function App() {
         <div className="nav-links">
           <LanguageSwitcher />
           <a href={appHref("/#ai-book-lab")}>{t.nav.aiBook}</a>
-          <a href={appHref("/#services")}>{t.nav.services}</a>
+          <a href={appHref("/services")}>{t.nav.services}</a>
           <a href={appHref("/blog")}>{t.nav.blog}</a>
-          <a href={appHref("/#case-studies")}>{t.nav.caseStudies}</a>
+          <a href={appHref("/case-studies")}>{t.nav.caseStudies}</a>
           <a href={appHref("/intake-form")} rel="noreferrer">
             {t.nav.intake ?? "升學諮詢"}
           </a>
@@ -599,6 +604,18 @@ export default function App() {
           </section>
         </main>
       )}
+
+      <footer className="site-footer">
+        <p>{t.footer.studio}</p>
+        <p className="site-footer__links">
+          <a href={whatsappFloating} target="_blank" rel="noreferrer">
+            WhatsApp +852 9121 4157
+          </a>
+          <a href="mailto:kidsmybook@outlook.com">kidsmybook@outlook.com</a>
+        </p>
+        <p>{t.footer.quote}</p>
+        <p>{t.footer.privacy}</p>
+      </footer>
 
       <a className="floating-wa" href={whatsappFloating} target="_blank" rel="noreferrer" aria-label={t.nav.whatsapp}>
         {t.nav.whatsapp}

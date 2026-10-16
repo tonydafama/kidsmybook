@@ -528,71 +528,53 @@ const INTAKE_FORM_HTML = `<!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Kidsmybook 升學資產諮詢表</title>
 <style>
-  body { font-family: -apple-system, "PingFang HK", "Microsoft JhengHei", sans-serif; max-width: 640px; margin: 2rem auto; padding: 0 1.2rem; color: #1a1a1a; }
-  h1 { font-size: 1.5rem; }
-  label { display: block; margin: 1.1rem 0 .4rem; font-weight: 600; }
-  input, select, textarea { width: 100%; padding: .6rem; font-size: 1rem; border: 1px solid #ccc; border-radius: 8px; box-sizing: border-box; }
-  button { margin-top: 1.5rem; background: #c0392b; color: #fff; border: 0; padding: .8rem 1.5rem; font-size: 1.05rem; border-radius: 8px; cursor: pointer; }
-  .note { font-size: .85rem; color: #666; margin-top: .3rem; }
-  .succ { background: #e8f5e9; padding: 1rem; border-radius: 8px; margin-top: 1rem; display:none; }
+  body { margin: 0; font-family: Outfit, "PingFang HK", "Noto Sans TC", sans-serif; color: #d7d1c7; background: radial-gradient(90% 50% at 10% -10%, rgba(115,81,184,.22), transparent 55%), linear-gradient(180deg, #060606, #0f0f11); }
+  main { max-width: 640px; margin: 0 auto; padding: 2.2rem 1.2rem 3rem; }
+  a { color: #c8a874; }
+  h1 { margin: 0 0 .6rem; font-family: "Cormorant Garamond", Georgia, serif; font-weight: 600; font-size: 2rem; color: #f6f3ee; }
+  label { display: block; margin: 1rem 0 .35rem; font-weight: 600; color: #f6f3ee; }
+  .opt { font-weight: 500; color: #9d9587; }
+  input, select, textarea { width: 100%; padding: .7rem .75rem; font-size: 1rem; color: #f6f3ee; background: #111215; border: 1px solid rgba(200,168,116,.35); border-radius: 12px; box-sizing: border-box; }
+  button { margin-top: 1.4rem; background: #c8a874; color: #1a140c; border: 0; padding: .85rem 1.4rem; font-size: 1rem; font-weight: 700; border-radius: 999px; cursor: pointer; }
+  .note, .privacy { font-size: .9rem; color: #9d9587; line-height: 1.55; }
+  details { margin-top: 1.4rem; border-top: 1px solid rgba(200,168,116,.2); padding-top: .8rem; }
+  summary { cursor: pointer; color: #c8a874; font-weight: 600; }
+  .succ { background: rgba(200,168,116,.12); padding: 1rem; border-radius: 12px; margin-top: 1rem; display: none; color: #f6f3ee; }
 </style>
 </head>
 <body>
-<h1>Kidsmybook 升學資產諮詢表</h1>
-<p class="note">填寫以下資料，本機構將安排會面，展示學員升學資產實物，並按學員之課題配對相關教授及編撰日程。</p>
+<main>
+<h1>Kidsmybook 升學資產諮詢</h1>
+<p class="note">第一次聯絡只需三項。顧問會用 WhatsApp 回覆，私人報價。</p>
 
 <form id="f">
-  <label>學員姓氏</label>
-  <input name="surname" required placeholder="例如：陳" />
+  <label>家長姓名</label>
+  <input name="parent" required placeholder="例如：陳太" />
 
-  <label>學員名字</label>
-  <input name="givenName" required placeholder="例如：志明" />
+  <label>小朋友年齡</label>
+  <input name="grade" required placeholder="例如：8 歲 / 小三 / P3" />
 
-  <label>家長姓名（中文）</label>
-  <input name="parent" required placeholder="例如：陳大文" />
+  <label>WhatsApp</label>
+  <input name="contact" required placeholder="85291234567" inputmode="tel" />
 
-  <label>就讀學校名稱</label>
-  <input name="school" required placeholder="例如：維多利亞書院 / 拔萃男書院" />
+  <details>
+    <summary>之後再補的資料（可留空）</summary>
+    <label>小朋友名字 <span class="opt">選填</span></label>
+    <input name="givenName" placeholder="例如：希賢" />
+    <label>興趣主題 <span class="opt">選填</span></label>
+    <input name="t1" placeholder="例如：蝴蝶、天文、烹飪" />
+    <label>就讀年級或學校 <span class="opt">選填</span></label>
+    <input name="school" placeholder="例如：本地小學小三 / 國際學校 P3" />
+    <label>備註 <span class="opt">選填</span></label>
+    <textarea name="remark" rows="3" placeholder="想了解出版、發布會，或其他問題"></textarea>
+  </details>
 
-  <label>學制</label>
-  <input name="curriculum" required placeholder="例如：DSE / IB / A-Level / AP" />
-
-  <label>年級</label>
-  <input name="grade" required placeholder="例如：中四 / Grade 10 / Year 12" />
-
-  <label>本書主要應用階段</label>
-  <input name="stage" required placeholder="例如：升讀大學（海外 / 本地大學申請）" />
-
-  <label>第一興趣主題</label>
-  <input name="t1" required placeholder="例如：天文、烹飪、海洋生物" />
-
-  <label>第二興趣主題</label>
-  <input name="t2" placeholder="例如：攝影、寫作、運動" />
-
-  <label>第三興趣主題</label>
-  <input name="t3" placeholder="例如：歷史、程式設計、音樂" />
-
-  <label>預期完成時間</label>
-  <select name="deadline" required>
-    <option value="">請選擇</option>
-    <option>三個月內</option>
-    <option>半年內</option>
-    <option>一年內</option>
-  </select>
-
-  <label>家長聯絡方式（WhatsApp / 電郵）</label>
-  <input name="contact" required placeholder="852xxxxxxx 或 email" />
-
-  <label>備註</label>
-  <textarea name="remark" rows="3"></textarea>
-
-  <label>比賽經驗 / 所獲獎項</label>
-  <textarea name="competition" rows="3" placeholder="例如：全港數學比賽金獎、小提琴八級、科學展覽入圍"></textarea>
-
+  <p class="privacy">你提交的資料只用於 Kidsmybook 回覆這次諮詢（個人資料（私隱）條例）。未經同意，不會公開小朋友的姓名或學校。如需刪除，請 WhatsApp +852 9121 4157 或電郵 kidsmybook@outlook.com。</p>
   <button type="submit">提交諮詢</button>
 </form>
 
-<div class="succ" id="succ">感謝填寫！本機構將盡快與您聯絡，安排會面詳談。</div>
+<div class="succ" id="succ">已收到。顧問會用 WhatsApp 回覆你，私人報價。</div>
+</main>
 
 <script>
 document.getElementById('f').addEventListener('submit', async function(e){
@@ -644,8 +626,8 @@ async function handleIntake(request: Request, env: Env): Promise<Response> {
   const curriculum = body.curriculum?.trim() ?? "";
   const grade = body.grade?.trim() ?? "";
   const contact = body.contact?.trim() ?? "";
-  if (!surname || !givenName || !contact) {
-    return json({ error: "surname, givenName and contact are required." }, 400);
+  if (!parent || !grade || !contact) {
+    return json({ error: "parent, grade and contact are required." }, 400);
   }
 
   const id = `intake_${Date.now()}_${Math.random().toString(36).slice(2, 8)}`;
@@ -653,7 +635,7 @@ async function handleIntake(request: Request, env: Env): Promise<Response> {
     id,
     surname,
     givenName,
-    student: `${surname}${givenName}`,
+    student: `${surname}${givenName}`.trim() || parent,
     parent,
     school,
     curriculum,

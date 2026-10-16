@@ -349,10 +349,8 @@ function BlogIndexPage() {
     <main>
       <section className="panel">
         <span className="section-kicker">{t.blog.kicker}</span>
-        <h1>香港升學・子女教育・真人真事出版</h1>
-        <p className="meta">
-          大陸家長嚟港嘅升學觀察，同埋「一本書點樣變成子女升學亮點」嘅真實經驗。
-        </p>
+        <h1>{t.blog.indexTitle}</h1>
+        <p className="meta">{t.blog.indexDesc}</p>
         <div className="service-grid">
           {sorted.map((p) => (
             <a key={p.slug} className="service-card link-card" href={appHref(`/blog/${p.slug}`)}>
@@ -489,7 +487,7 @@ function BlogPostPage({ slug }: { slug: string }) {
         </div>
         <div className="social-share">
           <span className="social-share-label">Share:</span>
-          <a href={`https://wa.me/?text=${encodeURIComponent(localized.title + " " + pageUrl)}`} target="_blank" rel="noreferrer" className="share-btn share-wa">WhatsApp</a>
+          <a href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(localized.title + " " + pageUrl)}`} target="_blank" rel="noreferrer" className="share-btn share-wa">WhatsApp</a>
           <a href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(pageUrl)}`} target="_blank" rel="noreferrer" className="share-btn share-fb">Facebook</a>
           <a href={`https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(pageUrl)}&title=${encodeURIComponent(localized.title)}`} target="_blank" rel="noreferrer" className="share-btn share-in">LinkedIn</a>
         </div>

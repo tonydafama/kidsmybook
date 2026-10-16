@@ -417,7 +417,7 @@ function staticRoutes(posts: RouteDocument[]): RouteDocument[] {
       publisher: orgRef(),
     },
     snapshotHtml: pageWrap(
-      `        <article>\n          <h1>Hilary《蝴蝶雙語圖鑑》</h1>\n          <p>Age at publication: 8 · Duration: 1 year</p>\n          <p>孩子由日常觀察蝴蝶出發，逐步建立研究習慣，完成圖像與文字內容，最終成功出版並公開發表。</p>\n          <p>過程中克服了資料整理與口語表達挑戰，學會用作品向世界分享自己的興趣與成長。</p>\n        </article>`,
+      `        <article>\n          <h1>Hilary《蝴蝶雙語圖鑑》</h1>\n          <p>Age at publication: 8 · Duration: 1 year</p>\n          <p>孩子由日常觀察蝴蝶出發，逐步建立研究習慣，完成圖像與文字內容，最終成功出版並公開發表。</p>\n          <p>過程中克服了資料整理與口語表達挑戰，學會用作品向世界分享自己的興趣與成長。</p>\n          <p>這是目前公開具名的個案：Hilary，出版時八歲，約一年完成。成品是中英雙語圖鑑，其後有新書發布會、媒體公關與活動直播；線上觀看 3,569 次。家庭可以將這份成果放進升學檔案。</p>\n        </article>`,
     ),
   };
 
@@ -492,6 +492,7 @@ function assertSources(posts: RouteDocument[]) {
     assertCopy(translations, service.slug, service.detail);
   }
   assertCopy(translations, "hilary", "孩子由日常觀察蝴蝶出發，逐步建立研究習慣，完成圖像與文字內容，最終成功出版並公開發表。");
+  assertCopy(translations, "hilary-story", "這是目前公開具名的個案：Hilary，出版時八歲，約一年完成。");
   assertCopy(translations, "services-title", "Services｜Kidsmybook 6 大兒童成就服務");
   assertCopy(translations, "blog-index", "香港升學・子女教育・真人真事出版");
 
