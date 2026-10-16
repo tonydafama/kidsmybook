@@ -321,6 +321,25 @@ export function PortfolioHubPage() {
         </ul>
       </section>
 
+      <section className="panel" id="stages">
+        <h2>{page.tracksTitle}</h2>
+        <p>{page.tracksIntro}</p>
+        {page.tracks.map((track) => (
+          <div key={track.href}>
+            <h3>{track.title}</h3>
+            <p>{track.body}</p>
+            <p>
+              <a href={appHref(track.href)}>{track.link}</a>
+            </p>
+          </div>
+        ))}
+        <p>
+          <a className="btn primary" href={whatsappHref(t.whatsapp.home)} target="_blank" rel="noreferrer">
+            {page.whatsappLink}
+          </a>
+        </p>
+      </section>
+
       <section className="panel">
         <h2>{page.limitTitle}</h2>
         <p>{page.limit}</p>

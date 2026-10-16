@@ -6,6 +6,7 @@
  */
 import fs from "node:fs";
 import path from "node:path";
+import { safeHttpsUrl, splitTrailingPunct } from "../src/seo/linkify.ts";
 import {
   FAQ_PAGE_ZH,
   FAQ_READING_ZH,
@@ -101,10 +102,29 @@ const SERVICES: ServiceCopy[] = [
 ];
 
 function inline(text: string): string {
-  return escapeHtml(text)
-    .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
-    .replace(/\*([^*]+)\*/g, "<em>$1</em>")
-    .replace(/`([^`]+)`/g, "<code>$1</code>");
+  const re = /(https:\/\/[^\s<>"']+|\*\*[^*]+\*\*|\*[^*]+\*|`[^`]+`)/g;
+  let last = 0;
+  let out = "";
+  let match: RegExpExecArray | null;
+  while ((match = re.exec(text)) !== null) {
+    if (match.index > last) out += escapeHtml(text.slice(last, match.index));
+    const token = match[0];
+    if (token.startsWith("https://")) {
+      const { href, rest } = splitTrailingPunct(token);
+      const safe = safeHttpsUrl(href);
+      out += safe ? `<a href="${escapeHtml(safe)}">${escapeHtml(safe)}</a>` : escapeHtml(href);
+      if (rest) out += escapeHtml(rest);
+    } else if (token.startsWith("**")) {
+      out += `<strong>${escapeHtml(token.slice(2, -2))}</strong>`;
+    } else if (token.startsWith("`")) {
+      out += `<code>${escapeHtml(token.slice(1, -1))}</code>`;
+    } else {
+      out += `<em>${escapeHtml(token.slice(1, -1))}</em>`;
+    }
+    last = match.index + token.length;
+  }
+  if (last < text.length) out += escapeHtml(text.slice(last));
+  return out;
 }
 
 function parseFrontMatter(md: string): { title: string; description: string; date: string; body: string } {
@@ -587,6 +607,16 @@ ${waLine()}`,
         <ul>
 ${PORTFOLIO_ZH.points.map((point) => `          <li>${escapeHtml(point)}</li>`).join("\n")}
         </ul>
+        <h2 id="stages">${escapeHtml(PORTFOLIO_ZH.tracksTitle)}</h2>
+        <p>${escapeHtml(PORTFOLIO_ZH.tracksIntro)}</p>
+${PORTFOLIO_ZH.tracks
+  .map(
+    (track) => `        <h3>${escapeHtml(track.title)}</h3>
+        <p>${escapeHtml(track.body)}</p>
+        <p><a href="${canonicalUrl(track.href)}">${escapeHtml(track.link)}</a></p>`,
+  )
+  .join("\n")}
+        <p><a href="https://wa.me/85291214157">${escapeHtml(PORTFOLIO_ZH.whatsappLink)}</a></p>
         <h2>${escapeHtml(PORTFOLIO_ZH.limitTitle)}</h2>
         <p>${escapeHtml(PORTFOLIO_ZH.limit)}</p>
         <p><a href="${canonicalUrl("/blog/you-zhi-yuan-zuo-pin-ji-chu-shu")}">幼稚園作品集：細路都出得書嗎？</a></p>
@@ -654,6 +684,10 @@ function assertDocument(html: string, route: RouteDocument) {
   if (route.path === "/sheng-xue-zuo-pin-ji") {
     if (!html.includes("BreadcrumbList")) throw new Error("/sheng-xue-zuo-pin-ji missing BreadcrumbList");
     if (!html.includes(`<h1>${escapeHtml(PORTFOLIO_ZH.h1)}</h1>`)) throw new Error("portfolio H1 missing");
+    for (const track of PORTFOLIO_ZH.tracks) {
+      if (!html.includes(canonicalUrl(track.href))) throw new Error(`portfolio hub missing ${track.href}`);
+    }
+    if (!html.includes("https://wa.me/85291214157")) throw new Error("portfolio hub missing WhatsApp");
   }
   if (route.path.startsWith("/blog/") && route.path !== "/blog") {
     if (!html.includes("BlogPosting") || !html.includes('"@type": "Article"') && !html.includes('"Article"')) {
