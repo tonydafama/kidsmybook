@@ -73,9 +73,54 @@ export const HOME_FAQ: { q: string; a: string }[] = [
   },
   {
     q: "收費點樣計？",
-    a: "完整 12 個月方案按小朋友嘅題材同配套私人報價，網站唔公開價目。歡迎 WhatsApp（@kidsmybook）或填表預約諮詢。",
+    a: "完整 12 個月方案按小朋友題材同配套私人報價，網站唔公開價目。歡迎 WhatsApp（https://wa.me/85291214157）或電郵 kidsmybook@outlook.com。",
+  },
+  {
+    q: "小朋友出書同普通興趣班有咩分別？",
+    a: "興趣班多數換一張證書；我哋做嘅係 12 個月導師制出版：由真實興趣出發，經創作、教授審閱、正式 ISBN 出版，再可配發布會、展覽、媒體同升學作品集。成果係一本面試官記得住、可以引用嘅正式出版物，唔係再多一張一樣嘅證書。",
+  },
+  {
+    q: "同自己搵印刷店／自費出書有咩分別？",
+    a: "自費印刷通常得本紀念冊，唔一定有導師帶領、學術審閱、ISBN 註冊流程同書店上架路徑。Kidsmybook 係導師制出版計劃，重點係小朋友親身參與、教授審閱、正式出版同升學可用嘅作品集包裝——唔係 DIY 模板或者純代印。",
+  },
+  {
+    q: "香港申請 ISBN 係點？你哋會處理嗎？",
+    a: "香港書刊註冊組可為在港營運嘅出版者編配 ISBN（申請本身一般唔收費；細節以香港公共圖書館／書刊註冊組為準）。家庭唔使自己摸索成個出版流程；喺計劃裏面我哋會按正式出版要求處理書號同出版相關安排。想知個案點行，WhatsApp 我哋講你小朋友題材就得。",
+  },
+  {
+    q: "書會用中文定英文？可唔可以雙語？",
+    a: "常見係中文、英文或者中英雙語，視乎小朋友學校語境同目標學校。語言喺諮詢階段一齊定，唔會一刀切。",
+  },
+  {
+    q: "幼稚園細路都合適嗎？會唔會太早？",
+    a: "大約 3 歲起都可以用興趣帶動（例如圖畫、觀察、口述故事），由導師同家長一齊把關深度同表達方式。重點係保留小朋友自己嘅聲音，而唔係叫佢寫「大人作文」。是否適合，要睇興趣穩定度同家庭目標——歡迎用 WhatsApp 做免費初步了解（報價仍然私人）。",
+  },
+  {
+    q: "可唔可以只報發布會／展覽／PR，唔報成個 12 個月？",
+    a: "可以。Author Programme 可以全案，亦可以單項諮詢 Book Launch、Exhibition、Media & PR、Live Streaming、Portfolio Package。適合已經有成品、想加強曝光或升學包裝嘅家庭。",
+  },
+  {
+    q: "會唔會保證入到某間學校？",
+    a: "唔會。我哋係出版工作室，唔係升學中介，亦唔保證取錄。一本有 ISBN、教授參與嘅正式出版物，可以令作品集更有說服力、面試更好講故事；最終取錄由學校決定。",
+  },
+  {
+    q: "點樣開始？第一次諮詢要準備咩？",
+    a: "WhatsApp https://wa.me/85291214157 或者電郵 kidsmybook@outlook.com，簡單講：（1）小朋友年齡同階段（幼稚園／小學／中學）；（2）而家學校／目標學校類型；（3）佢最感興趣嘅一件事；（4）你最想解決嘅作品集／面試問題。我哋會先了解再私人報價，網站唔放價目表。",
+  },
+  {
+    q: "資優／特別興趣嘅小朋友適唔適合？",
+    a: "適合。好多家庭唔想只靠跳級或者再堆班，而想用一本專題式出版展現深度。出版過程本身亦係項目式學習（研究、表達、修改、完成），對資優同有持續興趣嘅小朋友都好有價值。",
+  },
+  {
+    q: "實體書店上架係必須嗎？係咩意思？",
+    a: "計劃目標包括正式印刷，並喺實體書店平台上架路徑（例如三聯／商務／中華等渠道相關安排，視題材同出版配套）。對家長嚟講，重點係「睇得見、搜得到」嘅正式出版成果，升學履歷更好引用——詳情喺諮詢按個案說明。",
   },
 ];
+
+export const HOME_TITLE_ZH = "Kidsmybook｜兒童成就出版｜小朋友出書・ISBN・升學作品集";
+
+export const HOME_DESCRIPTION_ZH =
+  "香港兒童成就出版工作室。12 個月導師制，將小朋友真實興趣做成有 ISBN 嘅正式出版物（可有大學教授審閱），再配發布會、展覽、媒體同升學作品集。私人報價：WhatsApp。";
 
 const SERVICE_OG: Record<string, { file: string; width: number; height: number }> = {
   "author-programme": { file: "/services/service-author-programme.png", width: 1376, height: 768 },
@@ -149,6 +194,30 @@ export function homeFaqJsonLd(): unknown {
     "@type": "FAQPage",
     "@id": `${SITE_ORIGIN}/#faq`,
     mainEntity: HOME_FAQ.map((item) => ({
+      "@type": "Question",
+      name: item.q,
+      acceptedAnswer: { "@type": "Answer", text: item.a },
+    })),
+  };
+}
+
+export function breadcrumbList(items: { name: string; path: string }[]) {
+  return {
+    "@type": "BreadcrumbList",
+    itemListElement: items.map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: item.name,
+      item: canonicalUrl(item.path),
+    })),
+  };
+}
+
+export function faqPageEntity(items: { q: string; a: string }[], id: string) {
+  return {
+    "@type": "FAQPage",
+    "@id": id,
+    mainEntity: items.map((item) => ({
       "@type": "Question",
       name: item.q,
       acceptedAnswer: { "@type": "Answer", text: item.a },

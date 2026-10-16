@@ -426,6 +426,21 @@ main {
   font-weight: 600;
 }
 
+.landing-crumb {
+  margin: 0 0 14px;
+  color: #b7ad9c;
+  font-size: 13px;
+}
+
+.landing-crumb a {
+  color: #e6d3ae;
+  text-decoration: none;
+}
+
+.landing-crumb a:hover {
+  text-decoration: underline;
+}
+
 .panel h4 {
   margin: 0 0 8px;
   color: #efe3cb;

@@ -1,4 +1,18 @@
 import type { Locale } from "./locale";
+import {
+  EXPLORE_EN,
+  EXPLORE_HANS,
+  FAQ_EN,
+  FAQ_HANS,
+  FAQ_PAGE_EN,
+  FAQ_PAGE_HANS,
+  PORTFOLIO_EN,
+  PORTFOLIO_HANS,
+  PROGRAMME_EN,
+  PROGRAMME_HANS,
+} from "./landing-extra";
+import { EXPLORE_ZH, FAQ_PAGE_ZH, PORTFOLIO_ZH, PROGRAMME_ZH } from "../seo/landing-zh";
+import { HOME_DESCRIPTION_ZH, HOME_FAQ, HOME_TITLE_ZH } from "../seo/meta";
 
 export type ServiceSlug =
   | "author-programme"
@@ -44,6 +58,9 @@ export type Translations = {
     blog: string;
     whatsapp: string;
     intake: string;
+    programme: string;
+    faq: string;
+    portfolio: string;
   };
   blog: {
     kicker: string;
@@ -187,6 +204,10 @@ export type Translations = {
     title: string;
     items: Array<{ q: string; a: string }>;
   };
+  explore: typeof EXPLORE_ZH;
+  programmePage: typeof PROGRAMME_ZH;
+  faqPage: typeof FAQ_PAGE_ZH;
+  portfolioPage: typeof PORTFOLIO_ZH;
   seo: {
     homeTitle: string;
     homeDesc: string;
@@ -223,6 +244,9 @@ const zhHant: Translations = {
     blog: "Blog",
     whatsapp: "WhatsApp: @kidsmybook",
     intake: "升學諮詢",
+    programme: "出書計劃",
+    faq: "常見問題",
+    portfolio: "升學作品集",
   },
   blog: {
     kicker: "Kidsmybook 博客",
@@ -455,44 +479,15 @@ const zhHant: Translations = {
   faq: {
     kicker: "FAQ",
     title: "常見問題",
-    items: [
-      {
-        q: "Kidsmybook 係咩？",
-        a: "香港兒童成就出版工作室。我哋用 12 個月導師制出版計劃，將小朋友真正嘅興趣同生活故事，變成有 ISBN 嘅正式出版物，並有大學教授參與審閱，再配發布會、展覽、媒體同升學 Portfolio。",
-      },
-      {
-        q: "適合幾歲？",
-        a: "大概 3 至 18 歲。計劃以興趣為本、導師帶領，書裏面保留小朋友自己嘅聲音。",
-      },
-      {
-        q: "係咪自己出書／self-publishing？",
-        a: "唔係。呢個係 12 個月導師帶領嘅出版計劃：正式出版（ISBN）、大學教授審閱、發布會同公關——唔係 DIY 模板，亦唔係自費出書工具。",
-      },
-      {
-        q: "書可唔可以喺實體書店上架？",
-        a: "可以。完成嘅書係正式出版物，家庭拎得到實體書，亦會喺實體書店平台上架，作為升學履歷亮點。",
-      },
-      {
-        q: "Kidsmybook 點樣幫小朋友考入香港好學校？",
-        a: "香港頂尖國際學校同私立學校，每年收到好多份一模一樣嘅 Portfolio（鋼琴、游水、奧數）。Kidsmybook 幫家庭做出一本由小朋友親自參與、大學教授審閱嘅正式出版實體書，證明熱情、專注同學術潛力，令面試官更容易記住。",
-      },
-      {
-        q: "呢個計劃適合高才通（Top Talent Pass）家庭嗎？",
-        a: "適合。好多剛搬到香港嘅高才通家庭，唔清楚本地學校想睇咩，往往只係盲目幫子女報興趣班。12 個月出版計劃提供一個有教授參與、ISBN 註冊、實體書店上架嘅成果，用來填補履歷空白。",
-      },
-      {
-        q: "成個出版計劃需要幾耐時間？",
-        a: "完整計劃為期 12 個月，分為 5 個階段：首月諮詢評估、第 2-5 個月專屬課程（專業導師與教授指導）、第 6-7 個月出版研討與教授審閱、第 8-10 個月親子排版設計，最後第 12 個月正式印刷並於實體書店平台上架。",
-      },
-      {
-        q: "收費點樣計？",
-        a: "完整 12 個月方案按小朋友嘅題材同配套私人報價，網站唔公開價目。歡迎 WhatsApp（@kidsmybook）或填表預約諮詢。",
-      },
-    ],
+    items: HOME_FAQ,
   },
+  explore: EXPLORE_ZH,
+  programmePage: PROGRAMME_ZH,
+  faqPage: FAQ_PAGE_ZH,
+  portfolioPage: PORTFOLIO_ZH,
   seo: {
-    homeTitle: "Kidsmybook｜兒童成就出版與升學 Portfolio 策劃",
-    homeDesc: "專為高才通及新港人家庭打造的兒童成就出版與升學 Portfolio 策劃。提供小朋友出書、ISBN 註冊、大學教授審閱及發佈會服務，打造國際學校面試與小一叩門最強履歷亮點。",
+    homeTitle: HOME_TITLE_ZH,
+    homeDesc: HOME_DESCRIPTION_ZH,
     servicesTitle: "Services｜Kidsmybook 6 大兒童成就服務",
     servicesDesc: "Author Programme、Book Launch、Exhibition、Media & PR、Live Streaming、Portfolio Package。",
     caseStudiesTitle: "Case Studies｜Kidsmybook 兒童案例",
@@ -523,6 +518,9 @@ const zhHans: Translations = {
     ...zhHant.nav,
     main: "主菜单",
     blog: "Blog",
+    programme: "出书计划",
+    faq: "常见问题",
+    portfolio: "升学作品集",
   },
   blog: {
     kicker: "Kidsmybook 博客",
@@ -742,44 +740,16 @@ const zhHans: Translations = {
   faq: {
     kicker: "FAQ",
     title: "常见问题",
-    items: [
-      {
-        q: "Kidsmybook 是什么？",
-        a: "香港儿童成就出版工作室。我们用 12 个月导师制出版计划，把孩子真正的兴趣和生活故事，做成有 ISBN 的正式出版物，并由大学教授参与审阅，再配发布会、展览、媒体和升学 Portfolio。",
-      },
-      {
-        q: "适合几岁？",
-        a: "大约 3 至 18 岁。计划以兴趣为本、导师带领，书里保留孩子自己的声音。",
-      },
-      {
-        q: "是不是自己出书／self-publishing？",
-        a: "不是。这是 12 个月导师带领的出版计划：正式出版（ISBN）、大学教授审阅、发布会和公关——不是 DIY 模板，也不是自费出书工具。",
-      },
-      {
-        q: "书可不可以在实体书店上架？",
-        a: "可以。完成的书是正式出版物，家庭拿得到实体书，也会在实体书店平台上架，作为升学履历亮点。",
-      },
-      {
-        q: "Kidsmybook 怎样帮小朋友考入香港好学校？",
-        a: "香港顶尖国际学校和私立学校，每年收到很多份一模一样的 Portfolio（钢琴、游泳、奥数）。Kidsmybook 帮家庭做出一本由小朋友亲自参与、大学教授审阅的正式出版实体书，证明热情、专注和学术潜力，让面试官更容易记住。",
-      },
-      {
-        q: "这个计划适合高才通（Top Talent Pass）家庭吗？",
-        a: "适合。很多刚搬到香港的高才通家庭，不清楚本地学校想看什么，往往只是盲目帮子女报兴趣班。12 个月出版计划提供一个有教授参与、ISBN 注册、实体书店上架的成果，用来填补履历空白。",
-      },
-      {
-        q: "整个出版计划需要多久时间？",
-        a: "完整计划为期 12 个月，分为 5 个阶段：首月咨询评估、第 2-5 个月专属课程（专业导师与教授指导）、第 6-7 个月出版研讨与教授审阅、第 8-10 个月亲子排版设计，最后第 12 个月正式印刷并于实体书店平台上架。",
-      },
-      {
-        q: "收费怎么算？",
-        a: "完整 12 个月方案按孩子的题材和配套私人报价，网站不公开价目。欢迎 WhatsApp（@kidsmybook）或填表预约咨询。",
-      },
-    ],
+    items: FAQ_HANS,
   },
+  explore: EXPLORE_HANS,
+  programmePage: PROGRAMME_HANS,
+  faqPage: FAQ_PAGE_HANS,
+  portfolioPage: PORTFOLIO_HANS,
   seo: {
-    homeTitle: "Kidsmybook｜儿童成就出版与升学 Portfolio 策划",
-    homeDesc: "专为高才通及新港人家庭打造的儿童成就出版与升学 Portfolio 策划。提供小朋友出书、ISBN 注册、大学教授审阅及发布会服务，打造国际学校面试与小一叩门最强履历亮点。",
+    homeTitle: "Kidsmybook｜儿童成就出版｜小朋友出书・ISBN・升学作品集",
+    homeDesc:
+      "香港儿童成就出版工作室。12 个月导师制，将小朋友真实兴趣做成有 ISBN 的正式出版物（可有大学教授审阅），再配发布会、展览、媒体和升学作品集。私人报价：WhatsApp。",
     servicesTitle: "Services｜Kidsmybook 6 大儿童成就服务",
     servicesDesc: "Author Programme、Book Launch、Exhibition、Media & PR、Live Streaming、Portfolio Package。",
     caseStudiesTitle: "Case Studies｜Kidsmybook 儿童案例",
@@ -808,6 +778,9 @@ const en: Translations = {
     blog: "Blog",
     whatsapp: "WhatsApp: @kidsmybook",
     intake: "Admissions Consultation",
+    programme: "Programme",
+    faq: "FAQ",
+    portfolio: "Portfolio",
   },
   blog: {
     kicker: "Kidsmybook Blog",
@@ -1040,44 +1013,16 @@ const en: Translations = {
   faq: {
     kicker: "FAQ",
     title: "Frequently Asked Questions",
-    items: [
-      {
-        q: "What is Kidsmybook?",
-        a: "Kidsmybook is a Hong Kong studio running a 12-month mentored publishing programme. We turn a child's real interest and life story into a formally published, ISBN-registered book with university professors involved, then add launch, exhibition, media, and portfolio services for school admissions.",
-      },
-      {
-        q: "What age is Kidsmybook for?",
-        a: "Children roughly ages 3 to 18. The programme is interest-led and mentor-guided, keeping the child's own voice in the book.",
-      },
-      {
-        q: "Is Kidsmybook self-publishing?",
-        a: "No. It is a guided, mentor-led 12-month publishing programme with formal publication (ISBN), university professor review, launch events, and PR — not a DIY template or self-publishing tool.",
-      },
-      {
-        q: "Can the published book be listed in a bookstore?",
-        a: "Yes. Published outcomes are formal publications the family can hold and are listed on physical bookstore platforms as a highlight for the child's admissions portfolio.",
-      },
-      {
-        q: "How does Kidsmybook help with Hong Kong school admissions?",
-        a: "Top international and private schools in Hong Kong receive many identical portfolios filled with standard certificates (piano, swimming, olympiad math). Kidsmybook helps families create a citable published book co-authored by the child and reviewed by a university professor — proof of genuine interest that interviewers remember.",
-      },
-      {
-        q: "Is this programme suitable for Top Talent Pass families?",
-        a: "Yes. Many Top Talent Pass families who recently relocated to Hong Kong are unsure what local schools look for and end up stacking weekend classes. The 12-month publishing programme provides an outcome with professor involvement, ISBN registration, and physical bookstore listing.",
-      },
-      {
-        q: "How long does the entire publishing programme take?",
-        a: "The full programme lasts 12 months across five phases: Month 1 consultation and assessment; Months 2-5 dedicated classes with tutors and professors; Months 6-7 publishing seminar and professor review; Months 8-10 parent-child layout and design; Month 12 formal print and listing.",
-      },
-      {
-        q: "How much does it cost?",
-        a: "The complete 12-month solution is quoted on private consultation based on the child's topic and programme scope. We do not publish prices online. Contact WhatsApp (@kidsmybook) or the enquiry form to book a consultation.",
-      },
-    ],
+    items: FAQ_EN,
   },
+  explore: EXPLORE_EN,
+  programmePage: PROGRAMME_EN,
+  faqPage: FAQ_PAGE_EN,
+  portfolioPage: PORTFOLIO_EN,
   seo: {
-    homeTitle: "Kidsmybook | Child Publishing & Admissions Portfolio",
-    homeDesc: "Premium child achievement publishing and admissions portfolio planning for Top Talent Pass and expat families in HK. We offer ISBN book publishing, professor reviews, and launch events to create standout highlights for international school interviews.",
+    homeTitle: "Kidsmybook | Child author programme Hong Kong",
+    homeDesc:
+      "Hong Kong child-achievement publishing studio. A 12-month mentored programme turns a child's real interest into a formally published ISBN book, with university professor review available, plus launch, exhibition, media, and an admissions portfolio. Quoted privately via WhatsApp.",
     servicesTitle: "Services | Kidsmybook six achievement programmes",
     servicesDesc: "Author Programme, Book Launch, Exhibition, Media & PR, Live Streaming, Portfolio Package.",
     caseStudiesTitle: "Case Studies | Kidsmybook",

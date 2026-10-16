@@ -1,0 +1,389 @@
+import { useEffect } from "react";
+import { getLocalizedPostMeta, upsertJsonLd, SITE_ORIGIN } from "./BlogPages";
+import { useLocale } from "./i18n/LocaleContext";
+import type { Locale } from "./i18n/locale";
+import { PORTFOLIO_READING_ZH, READING_ZH } from "./seo/landing-zh";
+import { breadcrumbList, canonicalUrl, faqPageEntity } from "./seo/meta";
+
+const WHATSAPP_NUMBER = import.meta.env.VITE_WHATSAPP_NUMBER || "85291214157";
+const APP_BASE = import.meta.env.BASE_URL;
+
+function appHref(path: string): string {
+  if (!path || path === "/") return APP_BASE;
+  const trimmed = path.startsWith("/") ? path.slice(1) : path;
+  return `${APP_BASE}${trimmed}`;
+}
+
+function whatsappHref(text: string): string {
+  return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
+}
+
+function homeLabelFor(locale: Locale): string {
+  if (locale === "en") return "Home";
+  if (locale === "zh-Hans") return "首页";
+  return "首頁";
+}
+
+function localizedReading(links: { href: string; label: string }[], locale: Locale) {
+  return links.map((link) => {
+    const slug = link.href.startsWith("/blog/") ? link.href.slice("/blog/".length) : "";
+    if (!slug || locale === "zh-Hant") return link;
+    return { href: link.href, label: getLocalizedPostMeta(slug, locale).title };
+  });
+}
+
+function faqAnchor(question: string): string | undefined {
+  if (question.includes("申請 ISBN") || question.includes("申请 ISBN") || question.toLowerCase().includes("isbn registration")) {
+    return "isbn";
+  }
+  return undefined;
+}
+
+function Breadcrumb({ items }: { items: { href: string; label: string }[] }) {
+  return (
+    <nav className="landing-crumb" aria-label="Breadcrumb">
+      {items.map((item, index) => (
+        <span key={item.href}>
+          {index > 0 && <span aria-hidden> / </span>}
+          {index === items.length - 1 ? <span>{item.label}</span> : <a href={item.href}>{item.label}</a>}
+        </span>
+      ))}
+    </nav>
+  );
+}
+
+function QuoteCta({ title, body, whatsappLabel }: { title: string; body: string; whatsappLabel: string }) {
+  const { t } = useLocale();
+  return (
+    <section className="panel final-cta">
+      <h2>{title}</h2>
+      <p>{body}</p>
+      <div className="cta-row">
+        <a className="btn primary" href={whatsappHref(t.whatsapp.home)} target="_blank" rel="noreferrer">
+          {whatsappLabel}
+        </a>
+        <a className="btn ghost" href="mailto:kidsmybook@outlook.com">
+          kidsmybook@outlook.com
+        </a>
+      </div>
+    </section>
+  );
+}
+
+function ReadingList({ title, links }: { title: string; links: { href: string; label: string }[] }) {
+  return (
+    <section className="panel">
+      <h2>{title}</h2>
+      <ul className="privacy-list">
+        {links.map((link) => (
+          <li key={link.href}>
+            <a href={appHref(link.href)}>{link.label}</a>
+          </li>
+        ))}
+      </ul>
+    </section>
+  );
+}
+
+export function ProgrammePage() {
+  const { t, locale } = useLocale();
+  const page = t.programmePage;
+  const homeLabel = homeLabelFor(locale);
+
+  useEffect(() => {
+    upsertJsonLd("kidsmybook-page-ld", {
+      "@context": "https://schema.org",
+      "@graph": [
+        breadcrumbList([
+          { name: homeLabel, path: "/" },
+          { name: page.h1, path: "/programme" },
+        ]),
+        {
+          "@type": "HowTo",
+          name: page.phasesTitle,
+          description: page.phasesIntro,
+          totalTime: "P12M",
+          step: page.phases.map((phase, index) => ({
+            "@type": "HowToStep",
+            position: index + 1,
+            name: phase.name,
+            text: phase.text,
+            url: `${canonicalUrl("/programme")}#phases`,
+          })),
+        },
+      ],
+    });
+    return () => upsertJsonLd("kidsmybook-page-ld", null);
+  }, [homeLabel, page]);
+
+  return (
+    <main className="landing">
+      <section className="panel">
+        <Breadcrumb
+          items={[
+            { href: appHref("/"), label: homeLabel },
+            { href: appHref("/programme"), label: t.nav.programme },
+          ]}
+        />
+        <p className="eyebrow">{page.eyebrow}</p>
+        <h1>{page.h1}</h1>
+        <p className="lead">{page.lead}</p>
+        <p>{page.notLabel}：{page.notBody}</p>
+        <div className="cta-row">
+          <a className="btn primary" href={whatsappHref(t.whatsapp.home)} target="_blank" rel="noreferrer">
+            {t.hero.bookConsult}
+          </a>
+          <a className="btn ghost" href={appHref("/faq")}>
+            {t.nav.faq}
+          </a>
+        </div>
+      </section>
+
+      <section className="panel">
+        <h2>{page.whoTitle}</h2>
+        <ul className="privacy-list">
+          {page.whoItems.map((item) => (
+            <li key={item}>{item}</li>
+          ))}
+        </ul>
+      </section>
+
+      <section className="panel" id="phases">
+        <h2>{page.phasesTitle}</h2>
+        <p>{page.phasesIntro}</p>
+        <ol className="journey-list">
+          {page.phases.map((phase) => (
+            <li key={phase.name}>
+              <strong>{phase.name}</strong> — {phase.text}
+            </li>
+          ))}
+        </ol>
+      </section>
+
+      <section className="panel">
+        <h2>{page.vsClassTitle}</h2>
+        <p>{page.vsClass}</p>
+        <h2>{page.vsDiyTitle}</h2>
+        <p>{page.vsDiy}</p>
+        <h2>{page.singleTitle}</h2>
+        <p>{page.single}</p>
+      </section>
+
+      <section className="panel">
+        <h2>{page.caseTitle}</h2>
+        <p>{page.caseBody}</p>
+        <p>
+          <a href={appHref("/case-studies/hilary-butterfly-guide")}>{page.caseLink}</a>
+        </p>
+        <p>
+          <a href={appHref("/sheng-xue-zuo-pin-ji")}>{page.portfolioLink}</a>
+        </p>
+        <p>
+          <a href={appHref("/faq")}>{page.faqLink}</a>
+        </p>
+      </section>
+
+      <ReadingList title={page.readingTitle} links={localizedReading(READING_ZH, locale)} />
+      <QuoteCta title={page.ctaTitle} body={page.ctaBody} whatsappLabel={t.hero.bookConsult} />
+    </main>
+  );
+}
+
+export function FaqPage() {
+  const { t, locale } = useLocale();
+  const page = t.faqPage;
+  const homeLabel = homeLabelFor(locale);
+
+  useEffect(() => {
+    upsertJsonLd("kidsmybook-faq-ld", {
+      "@context": "https://schema.org",
+      "@graph": [
+        breadcrumbList([
+          { name: homeLabel, path: "/" },
+          { name: page.h1, path: "/faq" },
+        ]),
+        faqPageEntity(t.faq.items, `${SITE_ORIGIN}/faq#faq`),
+      ],
+    });
+    return () => upsertJsonLd("kidsmybook-faq-ld", null);
+  }, [homeLabel, page.h1, t.faq.items]);
+
+  return (
+    <main className="landing">
+      <section className="panel">
+        <Breadcrumb
+          items={[
+            { href: appHref("/"), label: homeLabel },
+            { href: appHref("/faq"), label: t.nav.faq },
+          ]}
+        />
+        <p className="eyebrow">{page.eyebrow}</p>
+        <h1>{page.h1}</h1>
+        <p className="lead">{page.lead}</p>
+        <p>
+          <a href={appHref("/programme")}>{page.programmeLink}</a>
+          {" · "}
+          <a href={appHref("/sheng-xue-zuo-pin-ji")}>{page.portfolioLink}</a>
+        </p>
+      </section>
+
+      <section className="panel" id="faq" itemScope itemType="https://schema.org/FAQPage">
+        <div className="faq-list">
+          {t.faq.items.map((item) => {
+            const anchor = faqAnchor(item.q);
+            return (
+              <details
+                key={item.q}
+                id={anchor}
+                className="faq-item"
+                open={Boolean(anchor)}
+                itemScope
+                itemProp="mainEntity"
+                itemType="https://schema.org/Question"
+              >
+                <summary className="faq-q" itemProp="name">
+                  {item.q}
+                </summary>
+                <div className="faq-a" itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
+                  <div itemProp="text">{item.a}</div>
+                </div>
+              </details>
+            );
+          })}
+        </div>
+      </section>
+
+      <QuoteCta title={page.ctaTitle} body={page.ctaBody} whatsappLabel={t.hero.bookConsult} />
+    </main>
+  );
+}
+
+export function PortfolioHubPage() {
+  const { t, locale } = useLocale();
+  const page = t.portfolioPage;
+  const homeLabel = homeLabelFor(locale);
+
+  useEffect(() => {
+    upsertJsonLd("kidsmybook-page-ld", {
+      "@context": "https://schema.org",
+      "@graph": [
+        breadcrumbList([
+          { name: homeLabel, path: "/" },
+          { name: page.h1, path: "/sheng-xue-zuo-pin-ji" },
+        ]),
+        {
+          "@type": "WebPage",
+          name: page.h1,
+          description: page.lead,
+          url: canonicalUrl("/sheng-xue-zuo-pin-ji"),
+          isPartOf: { "@type": "WebSite", name: "Kidsmybook", url: SITE_ORIGIN },
+          about: ["Hong Kong school admissions portfolio", "Child achievement publishing"],
+        },
+      ],
+    });
+    return () => upsertJsonLd("kidsmybook-page-ld", null);
+  }, [homeLabel, page.h1, page.lead]);
+
+  return (
+    <main className="landing">
+      <section className="panel">
+        <Breadcrumb
+          items={[
+            { href: appHref("/"), label: homeLabel },
+            { href: appHref("/sheng-xue-zuo-pin-ji"), label: t.nav.portfolio },
+          ]}
+        />
+        <p className="eyebrow">{page.eyebrow}</p>
+        <h1>{page.h1}</h1>
+        <p className="lead">{page.lead}</p>
+        <div className="cta-row">
+          <a className="btn primary" href={whatsappHref(t.whatsapp.home)} target="_blank" rel="noreferrer">
+            {t.hero.bookConsult}
+          </a>
+          <a className="btn ghost" href={appHref("/programme")}>
+            {page.programmeLink}
+          </a>
+        </div>
+      </section>
+
+      <section className="panel">
+        <h2>{page.pointsTitle}</h2>
+        <ul className="privacy-list">
+          {page.points.map((item) => (
+            <li key={item}>{item}</li>
+          ))}
+        </ul>
+      </section>
+
+      <section className="panel">
+        <h2>{page.limitTitle}</h2>
+        <p>{page.limit}</p>
+        <h2>{page.whoTitle}</h2>
+        <ul className="privacy-list">
+          {page.whoItems.map((item) => (
+            <li key={item}>{item}</li>
+          ))}
+        </ul>
+      </section>
+
+      <section className="panel">
+        <h2>{page.caseTitle}</h2>
+        <p>{page.caseBody}</p>
+        <p>
+          <a href={appHref("/case-studies/hilary-butterfly-guide")}>{page.caseLink}</a>
+        </p>
+      </section>
+
+      <ReadingList title={page.readingTitle} links={localizedReading(PORTFOLIO_READING_ZH, locale)} />
+      <QuoteCta title={page.ctaTitle} body={page.ctaBody} whatsappLabel={t.hero.bookConsult} />
+    </main>
+  );
+}
+
+export function HomeExplore() {
+  const { t, locale } = useLocale();
+  const links = localizedReading(READING_ZH, locale);
+  return (
+    <section className="panel panel--standard" id="explore" aria-labelledby="explore-heading">
+      <div className="section-head">
+        <span className="section-kicker">{t.explore.kicker}</span>
+        <h3 id="explore-heading">{t.explore.title}</h3>
+      </div>
+      <p>{t.explore.intro}</p>
+      <div className="service-grid">
+        <a className="service-card link-card" href={appHref("/programme")}>
+          <div className="service-card-body">
+            <h4>{t.explore.programme}</h4>
+            <p>{t.explore.programmeBlurb}</p>
+          </div>
+        </a>
+        <a className="service-card link-card" href={appHref("/sheng-xue-zuo-pin-ji")}>
+          <div className="service-card-body">
+            <h4>{t.explore.portfolio}</h4>
+            <p>{t.explore.portfolioBlurb}</p>
+          </div>
+        </a>
+        <a className="service-card link-card" href={appHref("/faq")}>
+          <div className="service-card-body">
+            <h4>{t.explore.faq}</h4>
+            <p>{t.explore.faqBlurb}</p>
+          </div>
+        </a>
+        <a className="service-card link-card" href={appHref("/case-studies/hilary-butterfly-guide")}>
+          <div className="service-card-body">
+            <h4>{t.explore.caseLabel}</h4>
+            <p>{t.explore.caseBlurb}</p>
+          </div>
+        </a>
+      </div>
+      <h4>{t.explore.readingTitle}</h4>
+      <ul className="privacy-list">
+        {links.map((link) => (
+          <li key={link.href}>
+            <a href={appHref(link.href)}>{link.label}</a>
+          </li>
+        ))}
+      </ul>
+    </section>
+  );
+}

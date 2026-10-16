@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import { AiBookCreatorPanel } from "./AiBookCreatorPage";
+import { FaqPage, HomeExplore, PortfolioHubPage, ProgrammePage } from "./LandingPages";
 import { LanguageSwitcher } from "./components/LanguageSwitcher";
 import { useLocale } from "./i18n/LocaleContext";
 import { BlogIndexPage, BlogPostPage, POSTS, SITE_ORIGIN, getLocalizedPostMeta, upsertJsonLd } from "./BlogPages";
@@ -195,6 +196,8 @@ function HomePage({ services }: { services: ServiceItem[] }) {
 
         <JourneyPathSection />
 
+        <HomeExplore />
+
         <section className="panel panel--standard voices-panel" aria-labelledby="voices-heading">
           <div className="voices-head">
             <span className="section-kicker">{t.voices.kicker}</span>
@@ -243,8 +246,15 @@ function HomePage({ services }: { services: ServiceItem[] }) {
             <h3>{t.faq.title}</h3>
           </div>
           <div className="faq-list">
-            {t.faq.items.map((item, i) => (
-              <details key={i} className="faq-item" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
+            {t.faq.items.map((item) => (
+              <details
+                key={item.q}
+                id={item.q.includes("申請 ISBN") || item.q.includes("申请 ISBN") || item.q.toLowerCase().includes("isbn registration") ? "isbn" : undefined}
+                className="faq-item"
+                itemScope
+                itemProp="mainEntity"
+                itemType="https://schema.org/Question"
+              >
                 <summary className="faq-q" itemProp="name">{item.q}</summary>
                 <div className="faq-a" itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
                   <div itemProp="text">{item.a}</div>
@@ -265,6 +275,13 @@ function ServicesIndexPage({ services }: { services: ServiceItem[] }) {
       <section className="panel">
         <h2>{t.services.kicker}</h2>
         <p className="meta">{t.services.indexMeta}</p>
+        <p>
+          <a href={appHref("/programme")}>{t.nav.programme}</a>
+          {" · "}
+          <a href={appHref("/sheng-xue-zuo-pin-ji")}>{t.nav.portfolio}</a>
+          {" · "}
+          <a href={appHref("/faq")}>{t.nav.faq}</a>
+        </p>
         <div className="service-grid">
           {services.map((item) => (
             <a key={item.slug} className="service-card link-card" href={appHref(`/services/${item.slug}`)}>
@@ -312,6 +329,16 @@ function ServiceDetailPage({ item }: { item: ServiceItem }) {
           <a className="btn primary" href={whatsapp} target="_blank" rel="noreferrer">
             {t.hero.bookConsult}
           </a>
+          {item.slug === "author-programme" && (
+            <a className="btn ghost" href={appHref("/programme")}>
+              {t.nav.programme}
+            </a>
+          )}
+          {item.slug === "portfolio-package" && (
+            <a className="btn ghost" href={appHref("/sheng-xue-zuo-pin-ji")}>
+              {t.nav.portfolio}
+            </a>
+          )}
           <a className="btn ghost" href={appHref("/services")}>
             {t.services.backToServices}
           </a>
@@ -473,6 +500,9 @@ export default function App() {
     "/ai-book",
     "/services",
     "/blog",
+    "/programme",
+    "/faq",
+    "/sheng-xue-zuo-pin-ji",
     "/case-studies",
     "/case-studies/hilary-butterfly-guide",
     ...serviceItems.map((item) => `/services/${item.slug}`),
@@ -482,6 +512,9 @@ export default function App() {
   useEffect(() => {
     const seoMap: Record<string, { title: string; description: string }> = {
       "/": { title: t.seo.homeTitle, description: t.seo.homeDesc },
+      "/programme": { title: t.programmePage.title, description: t.programmePage.description },
+      "/faq": { title: t.faqPage.title, description: t.faqPage.description },
+      "/sheng-xue-zuo-pin-ji": { title: t.portfolioPage.title, description: t.portfolioPage.description },
       "/services": { title: t.seo.servicesTitle, description: t.seo.servicesDesc },
       "/case-studies": { title: t.seo.caseStudiesTitle, description: t.seo.caseStudiesDesc },
       "/blog": {
@@ -573,6 +606,9 @@ export default function App() {
         </a>
         <div className="nav-links">
           <LanguageSwitcher />
+          <a href={appHref("/programme")}>{t.nav.programme}</a>
+          <a href={appHref("/sheng-xue-zuo-pin-ji")}>{t.nav.portfolio}</a>
+          <a href={appHref("/faq")}>{t.nav.faq}</a>
           <a href={appHref("/#ai-book-lab")}>{t.nav.aiBook}</a>
           <a href={appHref("/services")}>{t.nav.services}</a>
           <a href={appHref("/blog")}>{t.nav.blog}</a>
@@ -587,6 +623,9 @@ export default function App() {
       </nav>
 
       {isHome && <HomePage services={serviceItems} />}
+      {pathname === "/programme" && <ProgrammePage />}
+      {pathname === "/faq" && <FaqPage />}
+      {pathname === "/sheng-xue-zuo-pin-ji" && <PortfolioHubPage />}
       {pathname === "/services" && <ServicesIndexPage services={serviceItems} />}
       {currentService && <ServiceDetailPage item={currentService} />}
       {pathname === "/case-studies" && <CaseStudiesIndex />}
