@@ -8,6 +8,7 @@ import fs from "node:fs";
 import path from "node:path";
 import {
   FAQ_PAGE_ZH,
+  FAQ_READING_ZH,
   PORTFOLIO_READING_ZH,
   PORTFOLIO_ZH,
   PROGRAMME_ZH,
@@ -511,6 +512,7 @@ ${PROGRAMME_ZH.phases.map((phase) => `          <li><strong>${escapeHtml(phase.n
         <p>${escapeHtml(PROGRAMME_ZH.vsClass)}</p>
         <h2>${escapeHtml(PROGRAMME_ZH.vsDiyTitle)}</h2>
         <p>${escapeHtml(PROGRAMME_ZH.vsDiy)}</p>
+        <p><a href="${canonicalUrl("/blog/zi-fei-chu-shu-vs-dao-shi-zhi")}">自費出書 vs 導師制出版：邊樣先幫到香港升學面試？</a></p>
         <p><a href="${canonicalUrl("/case-studies/hilary-butterfly-guide")}">${escapeHtml(PROGRAMME_ZH.caseLink)}</a></p>
         <p><a href="${canonicalUrl("/sheng-xue-zuo-pin-ji")}">${escapeHtml(PROGRAMME_ZH.portfolioLink)}</a></p>
         <p><a href="${canonicalUrl("/faq")}">${escapeHtml(PROGRAMME_ZH.faqLink)}</a></p>
@@ -543,6 +545,10 @@ ${waLine()}`,
       `        <h1>${escapeHtml(FAQ_PAGE_ZH.h1)}</h1>
         <p>${escapeHtml(FAQ_PAGE_ZH.lead)}</p>
         <p><a href="${canonicalUrl("/programme")}">${escapeHtml(FAQ_PAGE_ZH.programmeLink)}</a></p>
+        <h2>${escapeHtml(FAQ_PAGE_ZH.readingTitle)}</h2>
+        <ul>
+${linkList(FAQ_READING_ZH)}
+        </ul>
 ${HOME_FAQ.map((item) => {
   const id = item.q.includes("申請 ISBN") ? ' id="isbn"' : "";
   return `        <section${id}>\n          <h2>${escapeHtml(item.q)}</h2>\n          <p>${escapeHtml(item.a)}</p>\n        </section>`;
@@ -583,6 +589,7 @@ ${PORTFOLIO_ZH.points.map((point) => `          <li>${escapeHtml(point)}</li>`).
         </ul>
         <h2>${escapeHtml(PORTFOLIO_ZH.limitTitle)}</h2>
         <p>${escapeHtml(PORTFOLIO_ZH.limit)}</p>
+        <p><a href="${canonicalUrl("/blog/you-zhi-yuan-zuo-pin-ji-chu-shu")}">幼稚園作品集：細路都出得書嗎？</a></p>
         <p><a href="${canonicalUrl("/case-studies/hilary-butterfly-guide")}">${escapeHtml(PORTFOLIO_ZH.caseLink)}</a></p>
         <p><a href="${canonicalUrl("/programme")}">${escapeHtml(PORTFOLIO_ZH.programmeLink)}</a></p>
         <ul>

@@ -163,6 +163,27 @@ const POSTS: PostMeta[] = [
     date: "2026-10-06",
     readMin: 4,
   },
+  {
+    slug: "zi-fei-chu-shu-vs-dao-shi-zhi",
+    title: "自費出書 vs 導師制出版：邊樣先幫到香港升學面試？",
+    excerpt: "自費印刷多數係紀念冊。導師制出版有小朋友參與、教授審閱、ISBN 同升學作品集包裝。私人報價，亦唔保證取錄。",
+    date: "2026-10-10",
+    readMin: 5,
+  },
+  {
+    slug: "you-zhi-yuan-zuo-pin-ji-chu-shu",
+    title: "幼稚園作品集：細路都出得書嗎？",
+    excerpt: "K1–K3 可以用圖畫、觀察同口述故事做一本保留小朋友聲音嘅書。深度由導師同家長把關，唔保證入學。",
+    date: "2026-10-13",
+    readMin: 5,
+  },
+  {
+    slug: "isbn-tong-shu-jia-zhang-zhi-nan",
+    title: "香港 ISBN 童書家長指南：正式出版要知嘅 7 件事",
+    excerpt: "根據香港公共圖書館書刊註冊組公開資料，分清 ISBN、書刊註冊同版權。Kidsmybook 唔係官方機構。私人報價。",
+    date: "2026-10-16",
+    readMin: 7,
+  },
 ];
 
 const APP_BASE = import.meta.env.BASE_URL;

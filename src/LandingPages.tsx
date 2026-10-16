@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { getLocalizedPostMeta, upsertJsonLd, SITE_ORIGIN } from "./BlogPages";
 import { useLocale } from "./i18n/LocaleContext";
 import type { Locale } from "./i18n/locale";
-import { PORTFOLIO_READING_ZH, READING_ZH } from "./seo/landing-zh";
+import { FAQ_READING_ZH, PORTFOLIO_READING_ZH, READING_ZH } from "./seo/landing-zh";
 import { breadcrumbList, canonicalUrl, faqPageEntity } from "./seo/meta";
 
 const WHATSAPP_NUMBER = import.meta.env.VITE_WHATSAPP_NUMBER || "85291214157";
@@ -165,6 +165,11 @@ export function ProgrammePage() {
         <p>{page.vsClass}</p>
         <h2>{page.vsDiyTitle}</h2>
         <p>{page.vsDiy}</p>
+        <p>
+          <a href={appHref("/blog/zi-fei-chu-shu-vs-dao-shi-zhi")}>
+            {localizedReading([{ href: "/blog/zi-fei-chu-shu-vs-dao-shi-zhi", label: "自費出書 vs 導師制出版" }], locale)[0].label}
+          </a>
+        </p>
         <h2>{page.singleTitle}</h2>
         <p>{page.single}</p>
       </section>
@@ -253,6 +258,7 @@ export function FaqPage() {
         </div>
       </section>
 
+      <ReadingList title={page.readingTitle} links={localizedReading(FAQ_READING_ZH, locale)} />
       <QuoteCta title={page.ctaTitle} body={page.ctaBody} whatsappLabel={t.hero.bookConsult} />
     </main>
   );
@@ -324,6 +330,11 @@ export function PortfolioHubPage() {
             <li key={item}>{item}</li>
           ))}
         </ul>
+        <p>
+          <a href={appHref("/blog/you-zhi-yuan-zuo-pin-ji-chu-shu")}>
+            {localizedReading([{ href: "/blog/you-zhi-yuan-zuo-pin-ji-chu-shu", label: "幼稚園作品集：細路都出得書嗎？" }], locale)[0].label}
+          </a>
+        </p>
       </section>
 
       <section className="panel">

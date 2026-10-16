@@ -53,6 +53,7 @@ export const FAQ_PAGE_HANS = {
   ctaBody: "WhatsApp 或电邮讲小朋友年龄、现在／目标学校，以及最想解决的作品集问题。我们先了解，再私人报价。",
   programmeLink: "看 12 个月出书计划",
   portfolioLink: "看升学作品集说明",
+  readingTitle: "延伸阅读",
 };
 
 export const PORTFOLIO_HANS = {
@@ -232,6 +233,7 @@ export const FAQ_PAGE_EN = {
   ctaBody: "WhatsApp or email the child's age, current or target school, and the portfolio problem you want to solve. We listen first, then quote privately.",
   programmeLink: "See the 12-month author programme",
   portfolioLink: "See the school portfolio page",
+  readingTitle: "Further reading",
 };
 
 export const PORTFOLIO_EN = {
