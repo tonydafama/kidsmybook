@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import { AiBookCreatorPanel } from "./AiBookCreatorPage";
-import { FaqPage, GaocaiHubPage, HomeExplore, PortfolioHubPage, ProgrammePage, XingquHubPage } from "./LandingPages";
+import { AboutPage, FaqPage, GaocaiHubPage, HomeExplore, PortfolioHubPage, ProgrammePage, XingquHubPage } from "./LandingPages";
 import { LanguageSwitcher } from "./components/LanguageSwitcher";
 import { useLocale } from "./i18n/LocaleContext";
 import { BlogIndexPage, BlogPostPage, POSTS, SITE_ORIGIN, getLocalizedPostMeta, upsertJsonLd } from "./BlogPages";
@@ -273,7 +273,7 @@ function ServicesIndexPage({ services }: { services: ServiceItem[] }) {
   return (
     <main>
       <section className="panel">
-        <h2>{t.services.kicker}</h2>
+        <h1>{t.services.indexHeading}</h1>
         <p className="meta">{t.services.indexMeta}</p>
         <p>
           <a href={appHref("/programme")}>{t.nav.programme}</a>
@@ -448,16 +448,23 @@ function CaseStudyPage() {
 
 function CaseStudiesIndex() {
   const { t } = useLocale();
+  const whatsapp = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(t.whatsapp.caseStudy)}`;
   return (
     <main>
       <section className="panel">
-        <h2>{t.caseIndex.title}</h2>
+        <h1>{t.caseIndex.title}</h1>
+        <p>{t.seo.caseStudiesDesc}</p>
         <div className="service-grid">
           <a className="service-card link-card" href={appHref("/case-studies/hilary-butterfly-guide")}>
             <h4>
               {t.caseStudy.realName} · {t.caseStudy.bookTitle}
             </h4>
             <p>{t.seo.hilaryDesc}</p>
+          </a>
+        </div>
+        <div className="cta-row">
+          <a className="btn primary" href={whatsapp} target="_blank" rel="noreferrer">
+            {t.nav.whatsapp}
           </a>
         </div>
       </section>
@@ -505,6 +512,7 @@ export default function App() {
     "/sheng-xue-zuo-pin-ji",
     "/gao-cai-tong-sheng-xue-zuo-pin-ji",
     "/xing-qu-chu-ban",
+    "/about",
     "/case-studies",
     "/case-studies/hilary-butterfly-guide",
     ...serviceItems.map((item) => `/services/${item.slug}`),
@@ -519,6 +527,7 @@ export default function App() {
       "/sheng-xue-zuo-pin-ji": { title: t.portfolioPage.title, description: t.portfolioPage.description },
       "/gao-cai-tong-sheng-xue-zuo-pin-ji": { title: t.gaocaiPage.title, description: t.gaocaiPage.description },
       "/xing-qu-chu-ban": { title: t.xingquPage.title, description: t.xingquPage.description },
+      "/about": { title: t.aboutPage.title, description: t.aboutPage.description },
       "/services": { title: t.seo.servicesTitle, description: t.seo.servicesDesc },
       "/case-studies": { title: t.seo.caseStudiesTitle, description: t.seo.caseStudiesDesc },
       "/blog": {
@@ -617,6 +626,7 @@ export default function App() {
           <a href={appHref("/services")}>{t.nav.services}</a>
           <a href={appHref("/blog")}>{t.nav.blog}</a>
           <a href={appHref("/case-studies")}>{t.nav.caseStudies}</a>
+          <a href={appHref("/about")}>{t.nav.about}</a>
           <a href={appHref("/intake-form")} rel="noreferrer">
             {t.nav.intake ?? "升學諮詢"}
           </a>
@@ -634,6 +644,7 @@ export default function App() {
       {pathname === "/xing-qu-chu-ban" && <XingquHubPage />}
       {pathname === "/services" && <ServicesIndexPage services={serviceItems} />}
       {currentService && <ServiceDetailPage item={currentService} />}
+      {pathname === "/about" && <AboutPage />}
       {pathname === "/case-studies" && <CaseStudiesIndex />}
       {pathname === "/case-studies/hilary-butterfly-guide" && <CaseStudyPage />}
       {pathname === "/blog" && <BlogIndexPage />}
@@ -653,6 +664,7 @@ export default function App() {
       <footer className="site-footer">
         <p>{t.footer.studio}</p>
         <p className="site-footer__links">
+          <a href={appHref("/about")}>{t.footer.about}</a>
           <a href={whatsappFloating} target="_blank" rel="noreferrer">
             WhatsApp +852 9121 4157
           </a>

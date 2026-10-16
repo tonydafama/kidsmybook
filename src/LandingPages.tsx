@@ -3,7 +3,7 @@ import { getLocalizedPostMeta, upsertJsonLd, SITE_ORIGIN } from "./BlogPages";
 import { useLocale } from "./i18n/LocaleContext";
 import type { Locale } from "./i18n/locale";
 import { FAQ_READING_ZH, GAOCAI_PATH, PORTFOLIO_READING_ZH, READING_ZH, XINGQU_PATH, type HubCopy } from "./seo/landing-zh";
-import { breadcrumbList, canonicalUrl, faqPageEntity } from "./seo/meta";
+import { ORGANIZATION_SAME_AS, breadcrumbList, canonicalUrl, faqPageEntity } from "./seo/meta";
 
 const WHATSAPP_NUMBER = import.meta.env.VITE_WHATSAPP_NUMBER || "85291214157";
 const APP_BASE = import.meta.env.BASE_URL;
@@ -489,6 +489,92 @@ export function GaocaiHubPage() {
 export function XingquHubPage() {
   const { t } = useLocale();
   return <HubLandingPage path={XINGQU_PATH} page={t.xingquPage} />;
+}
+
+export function AboutPage() {
+  const { t, locale } = useLocale();
+  const page = t.aboutPage;
+  const homeLabel = homeLabelFor(locale);
+
+  useEffect(() => {
+    upsertJsonLd("kidsmybook-page-ld", {
+      "@context": "https://schema.org",
+      "@graph": [
+        breadcrumbList([
+          { name: homeLabel, path: "/" },
+          { name: t.nav.about, path: "/about" },
+        ]),
+        {
+          "@type": "AboutPage",
+          "@id": `${canonicalUrl("/about")}#webpage`,
+          name: page.h1,
+          description: page.lead,
+          url: canonicalUrl("/about"),
+          inLanguage: locale === "en" ? "en" : locale === "zh-Hans" ? "zh-Hans" : "zh-Hant",
+          isPartOf: { "@type": "WebSite", name: "Kidsmybook", url: SITE_ORIGIN },
+          about: { "@id": `${SITE_ORIGIN}/#organization` },
+          mainEntity: {
+            "@type": "Organization",
+            "@id": `${SITE_ORIGIN}/#organization`,
+            name: "Kidsmybook",
+            alternateName: "兒童成就出版",
+            url: SITE_ORIGIN,
+            email: "kidsmybook@outlook.com",
+            telephone: "+852-9121-4157",
+            description: page.lead,
+            areaServed: "Hong Kong",
+            sameAs: [...ORGANIZATION_SAME_AS],
+          },
+        },
+      ],
+    });
+    return () => upsertJsonLd("kidsmybook-page-ld", null);
+  }, [homeLabel, locale, page.h1, page.lead, t.nav.about]);
+
+  return (
+    <main className="landing">
+      <section className="panel">
+        <Breadcrumb
+          items={[
+            { href: appHref("/"), label: homeLabel },
+            { href: appHref("/about"), label: t.nav.about },
+          ]}
+        />
+        <p className="eyebrow">{page.eyebrow}</p>
+        <h1>{page.h1}</h1>
+        <p className="lead">{page.lead}</p>
+        <div className="cta-row">
+          <a className="btn primary" href={whatsappHref(t.whatsapp.home)} target="_blank" rel="noreferrer">
+            {t.hero.bookConsult}
+          </a>
+          <a className="btn ghost" href="mailto:kidsmybook@outlook.com">
+            kidsmybook@outlook.com
+          </a>
+        </div>
+      </section>
+
+      <section className="panel">
+        <h2>{page.coverageTitle}</h2>
+        <p>{page.coverage}</p>
+        <h2>{page.programmeTitle}</h2>
+        <p>{page.programme}</p>
+        <p>
+          <a href={appHref("/programme")}>{page.programmeLink}</a>
+          {" · "}
+          <a href={appHref("/sheng-xue-zuo-pin-ji")}>{page.portfolioLink}</a>
+          {" · "}
+          <a href={appHref("/faq")}>{page.faqLink}</a>
+        </p>
+      </section>
+
+      <section className="panel">
+        <h2>{page.disclaimerTitle}</h2>
+        <p>{page.disclaimer}</p>
+      </section>
+
+      <QuoteCta title={page.contactTitle} body={page.contact} whatsappLabel={t.hero.bookConsult} />
+    </main>
+  );
 }
 
 export function HomeExplore() {

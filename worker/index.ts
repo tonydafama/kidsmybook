@@ -838,6 +838,7 @@ const SITEMAP_XML = `<?xml version="1.0" encoding="UTF-8"?>
   <url><loc>https://kidsmybook.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
   <url><loc>https://kidsmybook.com/programme</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://kidsmybook.com/faq</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kidsmybook.com/about</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://kidsmybook.com/sheng-xue-zuo-pin-ji</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kidsmybook.com/gao-cai-tong-sheng-xue-zuo-pin-ji</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kidsmybook.com/xing-qu-chu-ban</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
@@ -968,6 +969,7 @@ async function serveSeoAsset(request: Request, env: Env, pathname: string): Prom
       mapText.includes("https://kidsmybook.com/sheng-xue-zuo-pin-ji") &&
       mapText.includes("https://kidsmybook.com/gao-cai-tong-sheng-xue-zuo-pin-ji") &&
       mapText.includes("https://kidsmybook.com/xing-qu-chu-ban") &&
+      mapText.includes("https://kidsmybook.com/about") &&
       mapText.includes("https://kidsmybook.com/llms-full.txt")
     ) {
       return plainText(mapText, "application/xml; charset=utf-8");

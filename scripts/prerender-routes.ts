@@ -8,6 +8,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { safeHttpsUrl, splitTrailingPunct } from "../src/seo/linkify.ts";
 import {
+  ABOUT_ZH,
   FAQ_PAGE_ZH,
   FAQ_READING_ZH,
   GAOCAI_PATH,
@@ -21,6 +22,10 @@ import {
   type HubCopy,
 } from "../src/seo/landing-zh.ts";
 import {
+  HOME_DESCRIPTION_ZH,
+  HOME_FAQ,
+  HOME_TITLE_ZH,
+  ORGANIZATION_SAME_AS,
   SITE_ORIGIN,
   applyDocument,
   breadcrumbList,
@@ -28,9 +33,6 @@ import {
   escapeHtml,
   faqPageEntity,
   ogImageForPath,
-  HOME_DESCRIPTION_ZH,
-  HOME_FAQ,
-  HOME_TITLE_ZH,
 } from "../src/seo/meta.ts";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
@@ -227,6 +229,7 @@ function navHtml(): string {
         <a href="${SITE_ORIGIN}/services">服務</a>
         <a href="${SITE_ORIGIN}/blog">文章</a>
         <a href="${SITE_ORIGIN}/case-studies">個案</a>
+        <a href="${SITE_ORIGIN}/about">關於我們</a>
       </nav>`;
 }
 
@@ -325,8 +328,9 @@ function loadBlogPosts(): RouteDocument[] {
 function serviceRoutes(): RouteDocument[] {
   const index: RouteDocument = {
     path: "/services",
-    title: "Services｜Kidsmybook 6 大兒童成就服務",
-    description: "Author Programme、Book Launch、Exhibition、Media & PR、Live Streaming、Portfolio Package。",
+    title: "服務｜Kidsmybook 六項兒童成就出版",
+    description:
+      "出版計劃、新書發布會、展覽、媒體公關、直播同升學作品集，可全案或單項諮詢。私人報價，WhatsApp。Author Programme、Book Launch、Exhibition、Media & PR、Live Streaming、Portfolio Package。",
     ogType: "website",
     ogImage: ogImageForPath("/services"),
     mode: "page",
@@ -334,8 +338,8 @@ function serviceRoutes(): RouteDocument[] {
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "CollectionPage",
-      name: "Kidsmybook 服務",
-      description: "六項合成一條全案，亦可單項諮詢。私人報價。",
+      name: "Kidsmybook 六項兒童成就服務",
+      description: "出版計劃、新書發布會、展覽、媒體公關、直播同升學作品集。私人報價。",
       url: canonicalUrl("/services"),
       isPartOf: { "@type": "WebSite", name: "Kidsmybook", url: SITE_ORIGIN },
       mainEntity: {
@@ -349,7 +353,7 @@ function serviceRoutes(): RouteDocument[] {
       },
     },
     snapshotHtml: pageWrap(
-      `        <h1>服務</h1>\n        <p>六項合成一條全案，亦可單項諮詢。私人報價。</p>\n        <ul>\n${SERVICES.map(
+      `        <h1>六項兒童成就服務</h1>\n        <p>六項合成一條全案，亦可單項諮詢。私人報價。</p>\n        <p>英文服務名：Author Programme、Book Launch、Exhibition、Media &amp; PR、Live Streaming、Portfolio Package。</p>\n        <ul>\n${SERVICES.map(
         (item) =>
           `          <li><a href="${canonicalUrl(`/services/${item.slug}`)}">${escapeHtml(item.title)}</a> — ${escapeHtml(item.desc)}</li>`,
       ).join("\n")}\n        </ul>`,
@@ -421,8 +425,8 @@ function staticRoutes(posts: RouteDocument[]): RouteDocument[] {
 
   const caseIndex: RouteDocument = {
     path: "/case-studies",
-    title: "Case Studies｜Kidsmybook 兒童案例",
-    description: "查看兒童成就出版與活動案例，了解從興趣到被世界看見的完整旅程。",
+    title: "個案｜Kidsmybook 兒童成就出版案例",
+    description: "目前公開具名個案係 Hilary《蝴蝶雙語圖鑑》：由興趣到正式出版、發布會同媒體紀錄。私人報價，WhatsApp 查詢。",
     ogType: "website",
     ogImage: ogImageForPath("/case-studies"),
     mode: "page",
@@ -430,7 +434,8 @@ function staticRoutes(posts: RouteDocument[]): RouteDocument[] {
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "CollectionPage",
-      name: "Kidsmybook 個案",
+      name: "Kidsmybook 兒童成就出版個案",
+      description: "目前公開具名個案係 Hilary《蝴蝶雙語圖鑑》。私人報價。",
       url: canonicalUrl("/case-studies"),
       mainEntity: {
         "@type": "ItemList",
@@ -445,7 +450,7 @@ function staticRoutes(posts: RouteDocument[]): RouteDocument[] {
       },
     },
     snapshotHtml: pageWrap(
-      `        <h1>個案</h1>\n        <p>查看兒童成就出版與活動案例，了解從興趣到被世界看見的完整旅程。</p>\n        <p><a href="${canonicalUrl("/case-studies/hilary-butterfly-guide")}">Hilary《蝴蝶雙語圖鑑》</a></p>`,
+      `        <h1>兒童成就出版個案</h1>\n        <p>目前公開具名個案係 Hilary《蝴蝶雙語圖鑑》：由興趣到正式出版、發布會同媒體紀錄。私人報價，WhatsApp 查詢。</p>\n        <p><a href="${canonicalUrl("/case-studies/hilary-butterfly-guide")}">Hilary《蝴蝶雙語圖鑑》</a></p>\n${waLine()}`,
     ),
   };
 
@@ -636,10 +641,65 @@ ${waLine()}`,
     ),
   };
 
+  const about: RouteDocument = {
+    path: "/about",
+    title: ABOUT_ZH.title,
+    description: ABOUT_ZH.description,
+    ogType: "website",
+    ogImage: ogImageForPath("/about"),
+    mode: "page",
+    jsonLdId: "kidsmybook-page-ld",
+    jsonLd: {
+      "@context": "https://schema.org",
+      "@graph": [
+        breadcrumbList([
+          { name: "首頁", path: "/" },
+          { name: "關於我們", path: "/about" },
+        ]),
+        {
+          "@type": "AboutPage",
+          "@id": `${canonicalUrl("/about")}#webpage`,
+          name: ABOUT_ZH.h1,
+          description: ABOUT_ZH.lead,
+          url: canonicalUrl("/about"),
+          inLanguage: "zh-Hant",
+          isPartOf: { "@type": "WebSite", name: "Kidsmybook", url: SITE_ORIGIN },
+          about: { "@id": `${SITE_ORIGIN}/#organization` },
+          mainEntity: {
+            "@type": "Organization",
+            "@id": `${SITE_ORIGIN}/#organization`,
+            name: "Kidsmybook",
+            alternateName: "兒童成就出版",
+            url: SITE_ORIGIN,
+            email: "kidsmybook@outlook.com",
+            telephone: "+852-9121-4157",
+            description: ABOUT_ZH.lead,
+            areaServed: "Hong Kong",
+            sameAs: [...ORGANIZATION_SAME_AS],
+          },
+        },
+      ],
+    },
+    snapshotHtml: pageWrap(
+      `        <h1>${escapeHtml(ABOUT_ZH.h1)}</h1>
+        <p>${escapeHtml(ABOUT_ZH.lead)}</p>
+        <h2>${escapeHtml(ABOUT_ZH.coverageTitle)}</h2>
+        <p>${escapeHtml(ABOUT_ZH.coverage)}</p>
+        <h2>${escapeHtml(ABOUT_ZH.programmeTitle)}</h2>
+        <p>${escapeHtml(ABOUT_ZH.programme)}</p>
+        <p><a href="${canonicalUrl("/programme")}">${escapeHtml(ABOUT_ZH.programmeLink)}</a></p>
+        <h2>${escapeHtml(ABOUT_ZH.disclaimerTitle)}</h2>
+        <p>${escapeHtml(ABOUT_ZH.disclaimer)}</p>
+        <h2>${escapeHtml(ABOUT_ZH.contactTitle)}</h2>
+        <p>${escapeHtml(ABOUT_ZH.contact)}</p>
+${waLine()}`,
+    ),
+  };
+
   const gaocai = hubDocument(GAOCAI_ZH, GAOCAI_PATH);
   const xingqu = hubDocument(XINGQU_ZH, XINGQU_PATH);
 
-  return [home, programme, faq, portfolio, gaocai, xingqu, blogIndex, caseIndex, hilary];
+  return [home, programme, faq, portfolio, about, gaocai, xingqu, blogIndex, caseIndex, hilary];
 }
 
 function hubDocument(copy: HubCopy, path: string): RouteDocument {
@@ -759,6 +819,31 @@ function assertDocument(html: string, route: RouteDocument) {
       if (!html.includes(canonicalUrl(track.href))) throw new Error(`portfolio hub missing ${track.href}`);
     }
     if (!html.includes("https://wa.me/85291214157")) throw new Error("portfolio hub missing WhatsApp");
+    if (!html.includes("香港本地、跨境同高才通家庭")) {
+      throw new Error("/sheng-xue-zuo-pin-ji body missing Hong Kong coverage");
+    }
+  }
+  if (route.path === "/about") {
+    if (!html.includes(`<h1>${escapeHtml(ABOUT_ZH.h1)}</h1>`)) throw new Error("/about H1 missing");
+    if (!html.includes("kidsmybook@outlook.com")) throw new Error("/about missing email");
+    if (!html.includes("https://wa.me/85291214157")) throw new Error("/about missing WhatsApp");
+    if (!html.includes("唔係升學中介")) throw new Error("/about missing admissions disclaimer");
+    if (!html.includes("AboutPage")) throw new Error("/about missing AboutPage JSON-LD");
+    if (!html.includes(`<!-- ${"kmb-route"}:/about -->`) && !html.includes("kmb-route:/about")) {
+      throw new Error("/about missing prerender route marker");
+    }
+    if (html.includes("把孩子的熱愛，變成被世界看見的成就")) {
+      throw new Error("/about soft-served homepage copy");
+    }
+  }
+  if (route.path === "/services") {
+    if (!html.includes("<h1>六項兒童成就服務</h1>")) throw new Error("/services H1 is not Traditional Chinese");
+    if (html.includes("Services｜Kidsmybook")) throw new Error("/services title still English-led");
+  }
+  if (route.path === "/case-studies") {
+    if (!html.includes("<h1>兒童成就出版個案</h1>")) throw new Error("/case-studies H1 is not Traditional Chinese");
+    if (!html.includes("https://wa.me/85291214157")) throw new Error("/case-studies index missing WhatsApp");
+    if (html.includes("Case Studies｜")) throw new Error("/case-studies title still English-led");
   }
   if (route.path === GAOCAI_PATH || route.path === XINGQU_PATH) {
     const copy = route.path === GAOCAI_PATH ? GAOCAI_ZH : XINGQU_ZH;
@@ -813,7 +898,9 @@ function assertSources(posts: RouteDocument[]) {
   }
   assertCopy(translations, "hilary", "孩子由日常觀察蝴蝶出發，逐步建立研究習慣，完成圖像與文字內容，最終成功出版並公開發表。");
   assertCopy(translations, "hilary-story", "這是目前公開具名的個案：Hilary，出版時八歲，約一年完成。");
-  assertCopy(translations, "services-title", "Services｜Kidsmybook 6 大兒童成就服務");
+  assertCopy(translations, "services-title", "服務｜Kidsmybook 六項兒童成就出版");
+  assertCopy(translations, "case-studies-title", "個案｜Kidsmybook 兒童成就出版案例");
+  assertCopy(translations, "about-page", "aboutPage: ABOUT_ZH");
   assertCopy(translations, "blog-index", "香港升學・子女教育・真人真事出版");
 
   const blogSrc = fs.readFileSync(path.join(ROOT, "src/BlogPages.tsx"), "utf8");
@@ -843,6 +930,21 @@ function assertSources(posts: RouteDocument[]) {
     throw new Error("robots.txt missing llms.txt comment");
   }
 
+  const llms = fs.readFileSync(path.join(ROOT, "public/llms.txt"), "utf8");
+  const llmsFull = fs.readFileSync(path.join(ROOT, "public/llms-full.txt"), "utf8");
+  const fakeLangClaim = "Each article is available in Traditional Chinese, Simplified Chinese, and English.";
+  if (llmsFull.includes(fakeLangClaim) || llms.includes(fakeLangClaim)) {
+    throw new Error("llms files still claim separate TC/SC/EN article versions");
+  }
+  for (const [label, source] of [
+    ["llms.txt", llms],
+    ["llms-full.txt", llmsFull],
+  ] as const) {
+    if (!source.includes(`${SITE_ORIGIN}/about`)) throw new Error(`${label} missing /about`);
+    if (!source.includes("language switcher")) throw new Error(`${label} missing language-switcher clarification`);
+    if (source.includes("hreflang")) throw new Error(`${label} must not advertise hreflang`);
+  }
+
   const sitemap = fs.readFileSync(path.join(ROOT, "public/sitemap.xml"), "utf8");
   const worker = fs.readFileSync(path.join(ROOT, "worker/index.ts"), "utf8");
   if (!worker.includes("User-agent: OAI-SearchBot") || !worker.includes("isLlmsAlias")) {
@@ -857,6 +959,7 @@ function assertSources(posts: RouteDocument[]) {
   for (const loc of [
     `${SITE_ORIGIN}/programme`,
     `${SITE_ORIGIN}/faq`,
+    `${SITE_ORIGIN}/about`,
     `${SITE_ORIGIN}/sheng-xue-zuo-pin-ji`,
     `${SITE_ORIGIN}/gao-cai-tong-sheng-xue-zuo-pin-ji`,
     `${SITE_ORIGIN}/xing-qu-chu-ban`,

@@ -1,5 +1,7 @@
 import type { Locale } from "./locale";
 import {
+  ABOUT_EN,
+  ABOUT_HANS,
   EXPLORE_EN,
   EXPLORE_HANS,
   FAQ_EN,
@@ -15,7 +17,7 @@ import {
   XINGQU_EN,
   XINGQU_HANS,
 } from "./landing-extra";
-import { EXPLORE_ZH, FAQ_PAGE_ZH, GAOCAI_ZH, PORTFOLIO_ZH, PROGRAMME_ZH, XINGQU_ZH, type HubCopy } from "../seo/landing-zh";
+import { ABOUT_ZH, EXPLORE_ZH, FAQ_PAGE_ZH, GAOCAI_ZH, PORTFOLIO_ZH, PROGRAMME_ZH, XINGQU_ZH, type HubCopy } from "../seo/landing-zh";
 import { HOME_DESCRIPTION_ZH, HOME_FAQ, HOME_TITLE_ZH } from "../seo/meta";
 
 export type ServiceSlug =
@@ -65,6 +67,7 @@ export type Translations = {
     programme: string;
     faq: string;
     portfolio: string;
+    about: string;
   };
   blog: {
     kicker: string;
@@ -141,6 +144,7 @@ export type Translations = {
     suitableFor: string;
     process: string;
     backToServices: string;
+    indexHeading: string;
     indexMeta: string;
     detailEyebrow: string;
     items: Record<ServiceSlug, ServiceCopy>;
@@ -214,6 +218,7 @@ export type Translations = {
   portfolioPage: typeof PORTFOLIO_ZH;
   gaocaiPage: HubCopy;
   xingquPage: HubCopy;
+  aboutPage: typeof ABOUT_ZH;
   seo: {
     homeTitle: string;
     homeDesc: string;
@@ -236,6 +241,7 @@ export type Translations = {
     studio: string;
     privacy: string;
     quote: string;
+    about: string;
   };
 };
 
@@ -245,14 +251,15 @@ const zhHant: Translations = {
   nav: {
     main: "主選單",
     aiBook: "AI Book",
-    services: "Services",
-    caseStudies: "Case Studies",
+    services: "服務",
+    caseStudies: "個案",
     blog: "Blog",
     whatsapp: "WhatsApp: @kidsmybook",
     intake: "升學諮詢",
     programme: "出書計劃",
     faq: "常見問題",
     portfolio: "升學作品集",
+    about: "關於我們",
   },
   blog: {
     kicker: "Kidsmybook 博客",
@@ -324,14 +331,15 @@ const zhHant: Translations = {
     ageRanges: { "3-6": "3–6 歲", "7-10": "7–10 歲", "10+": "10 歲以上" },
   },
   services: {
-    kicker: "Services",
+    kicker: "服務",
     title: "我們做什麼",
     intro: "六項合成一條全案，亦可單項諮詢。私人報價。",
     privateQuote: "私人報價",
     suitableFor: "適合對象",
     process: "服務流程",
-    backToServices: "返回 Services",
-    indexMeta: "Minimal · Elegant · Full-stack execution",
+    backToServices: "返回服務",
+    indexHeading: "六項兒童成就服務",
+    indexMeta: "出版計劃、新書發布會、展覽、媒體公關、直播同升學作品集。英文服務名：Author Programme、Book Launch、Exhibition、Media & PR、Live Streaming、Portfolio Package。私人報價。",
     detailEyebrow: "Service Detail",
     items: {
       "author-programme": {
@@ -471,7 +479,7 @@ const zhHant: Translations = {
     ctaTitle: "Start your child's publishing journey",
   },
   caseIndex: {
-    title: "Case Studies",
+    title: "兒童成就出版個案",
     hilaryTitle: "hilary-butterfly-guide",
     hilaryDesc: "Hilary蝴蝶圖鑑案例（可切換隱私模式）",
     futureTitle: "[future cases]",
@@ -493,13 +501,15 @@ const zhHant: Translations = {
   portfolioPage: PORTFOLIO_ZH,
   gaocaiPage: GAOCAI_ZH,
   xingquPage: XINGQU_ZH,
+  aboutPage: ABOUT_ZH,
   seo: {
     homeTitle: HOME_TITLE_ZH,
     homeDesc: HOME_DESCRIPTION_ZH,
-    servicesTitle: "Services｜Kidsmybook 6 大兒童成就服務",
-    servicesDesc: "Author Programme、Book Launch、Exhibition、Media & PR、Live Streaming、Portfolio Package。",
-    caseStudiesTitle: "Case Studies｜Kidsmybook 兒童案例",
-    caseStudiesDesc: "查看兒童成就出版與活動案例，了解從興趣到被世界看見的完整旅程。",
+    servicesTitle: "服務｜Kidsmybook 六項兒童成就出版",
+    servicesDesc:
+      "出版計劃、新書發布會、展覽、媒體公關、直播同升學作品集，可全案或單項諮詢。私人報價，WhatsApp。Author Programme、Book Launch、Exhibition、Media & PR、Live Streaming、Portfolio Package。",
+    caseStudiesTitle: "個案｜Kidsmybook 兒童成就出版案例",
+    caseStudiesDesc: "目前公開具名個案係 Hilary《蝴蝶雙語圖鑑》：由興趣到正式出版、發布會同媒體紀錄。私人報價，WhatsApp 查詢。",
     hilaryTitle: "Hilary蝴蝶圖鑑案例｜Kidsmybook",
     hilaryDesc: "8 歲孩子從興趣出發完成雙語出版，並延伸發布會、展覽與媒體曝光。",
     serviceDetailTitle: (name) => `${name}｜Kidsmybook Services`,
@@ -515,6 +525,7 @@ const zhHant: Translations = {
     studio: "Kidsmybook · 香港兒童成就出版工作室",
     privacy: "查詢資料只用於回覆你。未經同意，不會公開小朋友的姓名或學校。",
     quote: "私人報價，於諮詢時提供。",
+    about: "關於我們",
   },
 };
 
@@ -529,6 +540,9 @@ const zhHans: Translations = {
     programme: "出书计划",
     faq: "常见问题",
     portfolio: "升学作品集",
+    about: "关于我们",
+    services: "服务",
+    caseStudies: "个案",
   },
   blog: {
     kicker: "Kidsmybook 博客",
@@ -600,12 +614,15 @@ const zhHans: Translations = {
   },
   services: {
     ...zhHant.services,
+    kicker: "服务",
     title: "我们做什么",
     intro: "六项合成一条全案，亦可单项咨询。私人报价。",
     privateQuote: "私人报价",
     suitableFor: "适合对象",
     process: "服务流程",
-    backToServices: "返回 Services",
+    backToServices: "返回服务",
+    indexHeading: "六项儿童成就服务",
+    indexMeta: "出版计划、新书发布会、展览、媒体公关、直播和升学作品集。英文服务名：Author Programme、Book Launch、Exhibition、Media & PR、Live Streaming、Portfolio Package。私人报价。",
     items: {
       "author-programme": {
         title: "Author Programme",
@@ -729,7 +746,7 @@ const zhHans: Translations = {
     ],
   },
   caseIndex: {
-    title: "Case Studies",
+    title: "儿童成就出版个案",
     hilaryTitle: "hilary-butterfly-guide",
     hilaryDesc: "Hilary蝴蝶图鉴案例（可切换隐私模式）",
     futureTitle: "[future cases]",
@@ -744,6 +761,7 @@ const zhHans: Translations = {
     studio: "Kidsmybook · 香港儿童成就出版工作室",
     privacy: "查询资料只用于回复你。未经同意，不会公开小朋友的姓名或学校。",
     quote: "私人报价，于咨询时提供。",
+    about: "关于我们",
   },
   faq: {
     kicker: "FAQ",
@@ -756,14 +774,16 @@ const zhHans: Translations = {
   portfolioPage: PORTFOLIO_HANS,
   gaocaiPage: GAOCAI_HANS,
   xingquPage: XINGQU_HANS,
+  aboutPage: ABOUT_HANS,
   seo: {
     homeTitle: "Kidsmybook｜儿童成就出版｜小朋友出书・ISBN・升学作品集",
     homeDesc:
       "香港儿童成就出版工作室。12 个月导师制，将小朋友真实兴趣做成有 ISBN 的正式出版物（可有大学教授审阅），再配发布会、展览、媒体和升学作品集。私人报价：WhatsApp。",
-    servicesTitle: "Services｜Kidsmybook 6 大儿童成就服务",
-    servicesDesc: "Author Programme、Book Launch、Exhibition、Media & PR、Live Streaming、Portfolio Package。",
-    caseStudiesTitle: "Case Studies｜Kidsmybook 儿童案例",
-    caseStudiesDesc: "查看儿童成就出版与活动案例，了解从兴趣到被世界看见的完整旅程。",
+    servicesTitle: "服务｜Kidsmybook 六项儿童成就出版",
+    servicesDesc:
+      "出版计划、新书发布会、展览、媒体公关、直播和升学作品集，可全案或单项咨询。私人报价，WhatsApp。Author Programme、Book Launch、Exhibition、Media & PR、Live Streaming、Portfolio Package。",
+    caseStudiesTitle: "个案｜Kidsmybook 儿童成就出版案例",
+    caseStudiesDesc: "目前公开具名个案是 Hilary《蝴蝶双语图鉴》：由兴趣到正式出版、发布会和媒体纪录。私人报价，WhatsApp 查询。",
     hilaryTitle: "Hilary蝴蝶图鉴案例｜Kidsmybook",
     hilaryDesc: "8 岁孩子从兴趣出发完成双语出版，并延伸发布会、展览与媒体曝光。",
     serviceDetailTitle: (name) => `${name}｜Kidsmybook Services`,
@@ -791,6 +811,7 @@ const en: Translations = {
     programme: "Programme",
     faq: "FAQ",
     portfolio: "Portfolio",
+    about: "About",
   },
   blog: {
     kicker: "Kidsmybook Blog",
@@ -869,7 +890,8 @@ const en: Translations = {
     suitableFor: "Who it's for",
     process: "Process",
     backToServices: "Back to Services",
-    indexMeta: "Minimal · Elegant · Full-stack execution",
+    indexHeading: "Six child-achievement services",
+    indexMeta: "Author Programme, Book Launch, Exhibition, Media & PR, Live Streaming, and Portfolio Package. Full programme or a single service. Private quotation.",
     detailEyebrow: "Service Detail",
     items: {
       "author-programme": {
@@ -1031,6 +1053,7 @@ const en: Translations = {
   portfolioPage: PORTFOLIO_EN,
   gaocaiPage: GAOCAI_EN,
   xingquPage: XINGQU_EN,
+  aboutPage: ABOUT_EN,
   seo: {
     homeTitle: "Kidsmybook | Child author programme Hong Kong",
     homeDesc:
@@ -1054,6 +1077,7 @@ const en: Translations = {
     studio: "Kidsmybook · Hong Kong child-achievement publishing studio",
     privacy: "Enquiry details are used only to reply to you. A child's name or school is not published without consent.",
     quote: "Quoted privately during consultation.",
+    about: "About",
   },
 };
 

@@ -9,6 +9,16 @@
  */
 
 export const SITE_ORIGIN = "https://kidsmybook.com";
+
+/**
+ * Public profiles verified in this repo and on the live homepage JSON-LD.
+ * WhatsApp and the GitHub repository only. No Google Business Profile,
+ * Xiaohongshu, LinkedIn, or WeChat official URL was found — do not invent sameAs.
+ */
+export const ORGANIZATION_SAME_AS = [
+  "https://wa.me/85291214157",
+  "https://github.com/tonydafama/kidsmybook",
+] as const;
 export const DEFAULT_OG_PATH = "/og-default.png";
 export const ROUTE_MARKER = "kmb-route";
 

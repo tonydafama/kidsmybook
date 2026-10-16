@@ -63,8 +63,8 @@ export const PORTFOLIO_ZH = {
   description:
     "升小學面試、升中／DSS／直資，同國際學校 portfolio：用有 ISBN、小朋友參與嘅正式出版物做記得住嘅亮點。私人報價，唔保證取錄。",
   eyebrow: "School portfolio · 香港",
-  h1: "升學作品集：升小學、升中同國際學校面試點樣用一本書",
-  lead: "證書堆唔掣勝。升小學、升中／直資／DSS，同國際學校面試，每年都見到好多份相近嘅鋼琴、游水、奧數履歷。一本由小朋友參與、可有大學教授審閱、有 ISBN 嘅正式出版物，係面試官記得住、可以引用嘅亮點。",
+  h1: "香港升學作品集：升小學、升中同國際學校面試點樣用一本書",
+  lead: "香港本地、跨境同高才通家庭，都可以用呢條升學作品集路徑。證書堆唔掣勝。升小學、升中／直資／DSS，同國際學校面試，每年都見到好多份相近嘅鋼琴、游水、奧數履歷。一本由小朋友參與、可有大學教授審閱、有 ISBN 嘅正式出版物，係面試官記得住、可以引用嘅亮點。",
   pointsTitle: "一本書可以點用",
   points: [
     "面試時有一個具體故事：興趣點嚟、做過咩研究、點樣改到可以出版",
@@ -164,6 +164,29 @@ export const PORTFOLIO_READING_ZH: { href: string; label: string }[] = [
   { href: "/blog/international-school-interview-portfolio-highlight", label: "國際學校面試履歷亮點" },
   { href: "/blog/children-project-based-learning-hk", label: "出版一本書作為項目式學習" },
 ];
+
+export const ABOUT_ZH = {
+  title: "關於我們｜香港兒童成就出版工作室｜Kidsmybook",
+  description:
+    "Kidsmybook 係香港兒童成就出版工作室。12 個月導師制，將大約 3 至 18 歲小朋友嘅真實興趣做成有 ISBN 嘅正式出版物。私人報價，WhatsApp 或電郵。唔係升學中介，唔保證取錄。",
+  eyebrow: "工作室 · 香港",
+  h1: "關於 Kidsmybook：香港兒童成就出版工作室",
+  lead: "Kidsmybook 係香港兒童成就出版工作室。我哋用 12 個月導師制出版計劃，將大約 3 至 18 歲小朋友真正嘅興趣同生活故事，做成有 ISBN 嘅正式出版物；過程可有大學教授審閱，完成後再按需要配發布會、展覽、媒體同升學作品集。",
+  coverageTitle: "邊啲家庭用到",
+  coverage:
+    "香港本地、跨境同高才通家庭都可以用呢條路徑。語言可以係中文、英文或中英雙語，視乎小朋友學校語境，喺諮詢時先定。",
+  programmeTitle: "12 個月導師制，先講重點",
+  programme:
+    "大約一年：先了解興趣同目標學校方向，再由導師帶領創作，可有大學教授審閱，然後親子排版，最後正式印刷並走上實體書店平台。階段細節見出書計劃頁；呢頁講工作室係邊個。",
+  disclaimerTitle: "我哋唔係升學中介",
+  disclaimer:
+    "Kidsmybook 係出版工作室，唔係升學中介，亦唔保證入到任何學校。最終取錄由學校決定。一本正式出版物可以令作品集更有說服力、面試更好講故事。",
+  contactTitle: "聯絡同報價",
+  contact: "報價私人，網站唔公開價目。WhatsApp 或電郵講小朋友年齡、一個興趣，同目標學校類型就得。",
+  programmeLink: "睇 12 個月出書計劃",
+  faqLink: "常見問題",
+  portfolioLink: "升學作品集",
+};
 
 export const FAQ_READING_ZH: { href: string; label: string }[] = [
   { href: "/blog/isbn-tong-shu-jia-zhang-zhi-nan", label: "香港 ISBN 童書：家長要知嘅 7 件事" },
