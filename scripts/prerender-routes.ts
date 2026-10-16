@@ -7,12 +7,23 @@
 import fs from "node:fs";
 import path from "node:path";
 import {
+  FAQ_PAGE_ZH,
+  PORTFOLIO_READING_ZH,
+  PORTFOLIO_ZH,
+  PROGRAMME_ZH,
+  READING_ZH,
+} from "../src/seo/landing-zh.ts";
+import {
   SITE_ORIGIN,
   applyDocument,
+  breadcrumbList,
   canonicalUrl,
   escapeHtml,
+  faqPageEntity,
   ogImageForPath,
+  HOME_DESCRIPTION_ZH,
   HOME_FAQ,
+  HOME_TITLE_ZH,
 } from "../src/seo/meta.ts";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
@@ -182,10 +193,23 @@ function questionFaqs(blocks: MdBlock[]): { q: string; a: string }[] {
 function navHtml(): string {
   return `      <nav>
         <a href="${SITE_ORIGIN}/">首頁</a>
+        <a href="${SITE_ORIGIN}/programme">出書計劃</a>
+        <a href="${SITE_ORIGIN}/sheng-xue-zuo-pin-ji">升學作品集</a>
+        <a href="${SITE_ORIGIN}/faq">常見問題</a>
         <a href="${SITE_ORIGIN}/services">服務</a>
         <a href="${SITE_ORIGIN}/blog">文章</a>
         <a href="${SITE_ORIGIN}/case-studies">個案</a>
       </nav>`;
+}
+
+function linkList(links: { href: string; label: string }[]): string {
+  return links
+    .map((link) => `          <li><a href="${canonicalUrl(link.href)}">${escapeHtml(link.label)}</a></li>`)
+    .join("\n");
+}
+
+function waLine(): string {
+  return `        <p>私人報價。<a href="https://wa.me/85291214157">WhatsApp</a> · <a href="mailto:kidsmybook@outlook.com">kidsmybook@outlook.com</a></p>`;
 }
 
 function pageWrap(inner: string): string {
@@ -264,7 +288,7 @@ function loadBlogPosts(): RouteDocument[] {
       jsonLdId: "kidsmybook-blog-post-ld",
       jsonLd,
       snapshotHtml: pageWrap(
-        `        <article>\n          <h1>${inline(headline)}</h1>\n          <p><time datetime="${date}">${date}</time></p>\n${blocksToHtml(blocks)}\n        </article>`,
+        `        <article>\n          <h1>${inline(headline)}</h1>\n          <p><time datetime="${date}">${date}</time></p>\n${blocksToHtml(blocks)}\n          <p><a href="https://wa.me/85291214157">WhatsApp 私人報價</a> · <a href="${canonicalUrl("/programme")}">小朋友出書計劃</a></p>\n        </article>`,
       ),
     };
   });
@@ -423,17 +447,152 @@ function staticRoutes(posts: RouteDocument[]): RouteDocument[] {
 
   const home: RouteDocument = {
     path: "/",
-    title: "Kidsmybook｜兒童成就出版",
-    description:
-      "Hong Kong child-achievement publishing studio. A 12-month mentored programme that turns a child's real interest into a formally published ISBN book with university professors — then launch, exhibition, media, and an admissions-ready portfolio.",
-    ogDescription:
-      "12-month child achievement publishing in Hong Kong — ISBN book, professor review, bookstore listing, admissions portfolio.",
+    title: HOME_TITLE_ZH,
+    description: HOME_DESCRIPTION_ZH,
+    ogDescription: HOME_DESCRIPTION_ZH,
     ogType: "website",
     ogImage: ogImageForPath("/"),
     mode: "home",
+    snapshotHtml: pageWrap(
+      `        <h1>把孩子的熱愛，變成被世界看見的成就</h1>
+        <p>${escapeHtml(HOME_DESCRIPTION_ZH)}</p>
+        <ul>
+          <li><a href="${canonicalUrl("/programme")}">小朋友出書計劃</a></li>
+          <li><a href="${canonicalUrl("/faq")}">常見問題</a></li>
+          <li><a href="${canonicalUrl("/sheng-xue-zuo-pin-ji")}">升學作品集</a></li>
+          <li><a href="${canonicalUrl("/case-studies/hilary-butterfly-guide")}">Hilary 個案</a></li>
+${linkList(READING_ZH)}
+        </ul>
+        <section id="faq">
+${HOME_FAQ.map((item) => `          <h2>${escapeHtml(item.q)}</h2>\n          <p>${escapeHtml(item.a)}</p>`).join("\n")}
+        </section>`,
+    ),
   };
 
-  return [home, blogIndex, caseIndex, hilary];
+  const programme: RouteDocument = {
+    path: "/programme",
+    title: PROGRAMME_ZH.title,
+    description: PROGRAMME_ZH.description,
+    ogType: "website",
+    ogImage: ogImageForPath("/programme"),
+    mode: "page",
+    jsonLdId: "kidsmybook-page-ld",
+    jsonLd: {
+      "@context": "https://schema.org",
+      "@graph": [
+        breadcrumbList([
+          { name: "首頁", path: "/" },
+          { name: "小朋友出書計劃", path: "/programme" },
+        ]),
+        {
+          "@type": "HowTo",
+          name: PROGRAMME_ZH.phasesTitle,
+          description: PROGRAMME_ZH.phasesIntro,
+          totalTime: "P12M",
+          step: PROGRAMME_ZH.phases.map((phase, index) => ({
+            "@type": "HowToStep",
+            position: index + 1,
+            name: phase.name,
+            text: phase.text,
+            url: `${canonicalUrl("/programme")}#phases`,
+          })),
+        },
+      ],
+    },
+    snapshotHtml: pageWrap(
+      `        <h1>${escapeHtml(PROGRAMME_ZH.h1)}</h1>
+        <p>${escapeHtml(PROGRAMME_ZH.lead)}</p>
+        <p>${escapeHtml(PROGRAMME_ZH.notBody)}</p>
+        <h2>${escapeHtml(PROGRAMME_ZH.phasesTitle)}</h2>
+        <ol>
+${PROGRAMME_ZH.phases.map((phase) => `          <li><strong>${escapeHtml(phase.name)}</strong> — ${escapeHtml(phase.text)}</li>`).join("\n")}
+        </ol>
+        <h2>${escapeHtml(PROGRAMME_ZH.vsClassTitle)}</h2>
+        <p>${escapeHtml(PROGRAMME_ZH.vsClass)}</p>
+        <h2>${escapeHtml(PROGRAMME_ZH.vsDiyTitle)}</h2>
+        <p>${escapeHtml(PROGRAMME_ZH.vsDiy)}</p>
+        <p><a href="${canonicalUrl("/case-studies/hilary-butterfly-guide")}">${escapeHtml(PROGRAMME_ZH.caseLink)}</a></p>
+        <p><a href="${canonicalUrl("/sheng-xue-zuo-pin-ji")}">${escapeHtml(PROGRAMME_ZH.portfolioLink)}</a></p>
+        <p><a href="${canonicalUrl("/faq")}">${escapeHtml(PROGRAMME_ZH.faqLink)}</a></p>
+        <ul>
+${linkList(READING_ZH)}
+        </ul>
+${waLine()}`,
+    ),
+  };
+
+  const faq: RouteDocument = {
+    path: "/faq",
+    title: FAQ_PAGE_ZH.title,
+    description: FAQ_PAGE_ZH.description,
+    ogType: "website",
+    ogImage: ogImageForPath("/faq"),
+    mode: "page",
+    jsonLdId: "kidsmybook-faq-ld",
+    jsonLd: {
+      "@context": "https://schema.org",
+      "@graph": [
+        breadcrumbList([
+          { name: "首頁", path: "/" },
+          { name: "常見問題", path: "/faq" },
+        ]),
+        faqPageEntity(HOME_FAQ, `${SITE_ORIGIN}/faq#faq`),
+      ],
+    },
+    snapshotHtml: pageWrap(
+      `        <h1>${escapeHtml(FAQ_PAGE_ZH.h1)}</h1>
+        <p>${escapeHtml(FAQ_PAGE_ZH.lead)}</p>
+        <p><a href="${canonicalUrl("/programme")}">${escapeHtml(FAQ_PAGE_ZH.programmeLink)}</a></p>
+${HOME_FAQ.map((item) => {
+  const id = item.q.includes("申請 ISBN") ? ' id="isbn"' : "";
+  return `        <section${id}>\n          <h2>${escapeHtml(item.q)}</h2>\n          <p>${escapeHtml(item.a)}</p>\n        </section>`;
+}).join("\n")}
+${waLine()}`,
+    ),
+  };
+
+  const portfolio: RouteDocument = {
+    path: "/sheng-xue-zuo-pin-ji",
+    title: PORTFOLIO_ZH.title,
+    description: PORTFOLIO_ZH.description,
+    ogType: "website",
+    ogImage: ogImageForPath("/sheng-xue-zuo-pin-ji"),
+    mode: "page",
+    jsonLdId: "kidsmybook-page-ld",
+    jsonLd: {
+      "@context": "https://schema.org",
+      "@graph": [
+        breadcrumbList([
+          { name: "首頁", path: "/" },
+          { name: "升學作品集", path: "/sheng-xue-zuo-pin-ji" },
+        ]),
+        {
+          "@type": "WebPage",
+          name: PORTFOLIO_ZH.h1,
+          description: PORTFOLIO_ZH.lead,
+          url: canonicalUrl("/sheng-xue-zuo-pin-ji"),
+        },
+      ],
+    },
+    snapshotHtml: pageWrap(
+      `        <h1>${escapeHtml(PORTFOLIO_ZH.h1)}</h1>
+        <p>${escapeHtml(PORTFOLIO_ZH.lead)}</p>
+        <h2>${escapeHtml(PORTFOLIO_ZH.pointsTitle)}</h2>
+        <ul>
+${PORTFOLIO_ZH.points.map((point) => `          <li>${escapeHtml(point)}</li>`).join("\n")}
+        </ul>
+        <h2>${escapeHtml(PORTFOLIO_ZH.limitTitle)}</h2>
+        <p>${escapeHtml(PORTFOLIO_ZH.limit)}</p>
+        <p><a href="${canonicalUrl("/case-studies/hilary-butterfly-guide")}">${escapeHtml(PORTFOLIO_ZH.caseLink)}</a></p>
+        <p><a href="${canonicalUrl("/programme")}">${escapeHtml(PORTFOLIO_ZH.programmeLink)}</a></p>
+        <ul>
+${linkList(PORTFOLIO_READING_ZH)}
+        </ul>
+${waLine()}`,
+    ),
+  };
+
+  return [home, programme, faq, portfolio, blogIndex, caseIndex, hilary];
 }
 
 function outputFile(routePath: string): string {
@@ -466,9 +625,28 @@ function assertDocument(html: string, route: RouteDocument) {
       throw new Error("homepage missing Course");
     }
     if (!html.includes("FAQPage")) throw new Error("homepage missing FAQPage");
+    if (!html.includes(HOME_DESCRIPTION_ZH)) throw new Error("homepage description is not Traditional-Chinese-first");
     for (const item of HOME_FAQ) {
       if (!html.includes(item.q)) throw new Error(`homepage FAQ missing question: ${item.q}`);
     }
+  }
+  if (route.path === "/programme") {
+    if (!html.includes("HowTo") || !html.includes("BreadcrumbList")) {
+      throw new Error("/programme missing HowTo or BreadcrumbList");
+    }
+    if (!html.includes(`<h1>${escapeHtml(PROGRAMME_ZH.h1)}</h1>`)) throw new Error("/programme H1 missing");
+  }
+  if (route.path === "/faq") {
+    if (!html.includes("FAQPage") || !html.includes("BreadcrumbList")) {
+      throw new Error("/faq missing FAQPage or BreadcrumbList");
+    }
+    for (const item of HOME_FAQ) {
+      if (!html.includes(item.q) || !html.includes(item.a)) throw new Error(`/faq missing ${item.q}`);
+    }
+  }
+  if (route.path === "/sheng-xue-zuo-pin-ji") {
+    if (!html.includes("BreadcrumbList")) throw new Error("/sheng-xue-zuo-pin-ji missing BreadcrumbList");
+    if (!html.includes(`<h1>${escapeHtml(PORTFOLIO_ZH.h1)}</h1>`)) throw new Error("portfolio H1 missing");
   }
   if (route.path.startsWith("/blog/") && route.path !== "/blog") {
     if (!html.includes("BlogPosting") || !html.includes('"@type": "Article"') && !html.includes('"Article"')) {
@@ -483,9 +661,17 @@ function assertDocument(html: string, route: RouteDocument) {
 
 function assertSources(posts: RouteDocument[]) {
   const translations = fs.readFileSync(path.join(ROOT, "src/i18n/translations.ts"), "utf8");
+  const metaSrc = fs.readFileSync(path.join(ROOT, "src/seo/meta.ts"), "utf8");
+  if (!translations.includes("items: HOME_FAQ")) {
+    throw new Error("zh-Hant FAQ must render HOME_FAQ so visible copy matches JSON-LD");
+  }
   for (const item of HOME_FAQ) {
-    assertCopy(translations, "faq", item.q);
-    assertCopy(translations, "faq", item.a);
+    assertCopy(metaSrc, "faq", item.q);
+    assertCopy(metaSrc, "faq", item.a);
+  }
+  const shellSource = fs.readFileSync(path.join(ROOT, "index.html"), "utf8");
+  if (!shellSource.includes(HOME_DESCRIPTION_ZH)) {
+    throw new Error("index.html meta description is not the Traditional-Chinese homepage description");
   }
   for (const service of SERVICES) {
     assertCopy(translations, service.slug, service.desc);
@@ -521,6 +707,15 @@ function assertSources(posts: RouteDocument[]) {
   const worker = fs.readFileSync(path.join(ROOT, "worker/index.ts"), "utf8");
   for (const slug of manifest) {
     const loc = `${SITE_ORIGIN}/blog/${slug}`;
+    if (!sitemap.includes(loc) || !worker.includes(loc)) {
+      throw new Error(`sitemap missing ${loc}`);
+    }
+  }
+  for (const loc of [
+    `${SITE_ORIGIN}/programme`,
+    `${SITE_ORIGIN}/faq`,
+    `${SITE_ORIGIN}/sheng-xue-zuo-pin-ji`,
+  ]) {
     if (!sitemap.includes(loc) || !worker.includes(loc)) {
       throw new Error(`sitemap missing ${loc}`);
     }

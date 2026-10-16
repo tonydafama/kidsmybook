@@ -828,6 +828,9 @@ Sitemap: https://kidsmybook.com/sitemap.xml
 const SITEMAP_XML = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://kidsmybook.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://kidsmybook.com/programme</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://kidsmybook.com/faq</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kidsmybook.com/sheng-xue-zuo-pin-ji</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kidsmybook.com/blog</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://kidsmybook.com/services</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kidsmybook.com/case-studies</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -867,8 +870,24 @@ function plainText(body: string, contentType: string): Response {
   });
 }
 
+const NOT_FOUND_HTML = `<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8" />
+<meta name="robots" content="noindex" />
+<title>找不到頁面｜Kidsmybook</title>
+</head>
+<body>
+<main>
+<h1>找不到頁面</h1>
+<p>呢個網址未有獨立頁面。</p>
+<p><a href="https://kidsmybook.com/">首頁</a> · <a href="https://kidsmybook.com/programme">小朋友出書計劃</a> · <a href="https://kidsmybook.com/faq">常見問題</a> · <a href="https://kidsmybook.com/sheng-xue-zuo-pin-ji">升學作品集</a></p>
+</main>
+</body>
+</html>`;
+
 async function servePrerenderedDocument(request: Request, env: Env): Promise<Response | null> {
-  if (request.method !== "GET") return null;
+  if (request.method !== "GET" && request.method !== "HEAD") return null;
   const url = new URL(request.url);
   const assetPath = prerenderAssetPath(url.pathname);
   if (!assetPath) return null;
@@ -882,6 +901,7 @@ async function servePrerenderedDocument(request: Request, env: Env): Promise<Res
   headers.set("content-type", "text/html; charset=utf-8");
   headers.set("cache-control", "public, max-age=300");
   headers.set("x-prerender", "kidsmybook-ssg");
+  if (request.method === "HEAD") return new Response(null, { status: 200, headers });
   return new Response(html, { status: 200, headers });
 }
 
@@ -900,7 +920,21 @@ async function serveSeoAsset(request: Request, env: Env, pathname: string): Prom
     }
     return plainText(ROBOTS_TXT, "text/plain; charset=utf-8");
   }
-  if (pathname === "/sitemap.xml") return plainText(SITEMAP_XML, "application/xml; charset=utf-8");
+  if (pathname === "/sitemap.xml") {
+    const mapRes = await env.ASSETS.fetch(new Request(new URL("/sitemap.xml", request.url), { method: "GET" }));
+    const mapText = await mapRes.text();
+    if (
+      mapRes.ok &&
+      !mapText.trimStart().startsWith("<!") &&
+      mapText.includes("<urlset") &&
+      mapText.includes("https://kidsmybook.com/programme") &&
+      mapText.includes("https://kidsmybook.com/faq") &&
+      mapText.includes("https://kidsmybook.com/sheng-xue-zuo-pin-ji")
+    ) {
+      return plainText(mapText, "application/xml; charset=utf-8");
+    }
+    return plainText(SITEMAP_XML, "application/xml; charset=utf-8");
+  }
 
   // llms-full.txt: extended AI crawler file with full blog summaries
   if (pathname === "/llms-full.txt") {
@@ -1086,6 +1120,21 @@ export default {
 
     const prerendered = await servePrerenderedDocument(request, env);
     if (prerendered) return prerendered;
+
+    if (
+      (request.method === "GET" || request.method === "HEAD") &&
+      prerenderAssetPath(url.pathname) &&
+      normalizeRoutePath(url.pathname) !== "/"
+    ) {
+      return new Response(request.method === "HEAD" ? null : NOT_FOUND_HTML, {
+        status: 404,
+        headers: {
+          "content-type": "text/html; charset=utf-8",
+          "cache-control": "public, max-age=300",
+          "x-robots-tag": "noindex",
+        },
+      });
+    }
 
     return env.ASSETS.fetch(request);
   },

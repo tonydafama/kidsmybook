@@ -495,6 +495,9 @@ function BlogPostPage({ slug }: { slug: string }) {
           <a className="btn primary" href={whatsapp} target="_blank" rel="noreferrer">
             {t.hero.bookConsult}
           </a>
+          <a className="btn ghost" href={appHref("/programme")}>
+            {t.nav.programme}
+          </a>
         </div>
       </article>
     </main>
