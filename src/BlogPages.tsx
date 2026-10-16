@@ -1,5 +1,6 @@
 import { useEffect, useMemo, type ReactNode } from "react";
 import { useLocale } from "./i18n/LocaleContext";
+import { DEFAULT_OG } from "./seo/meta";
 
 export const SITE_ORIGIN = "https://kidsmybook.com";
 
@@ -394,7 +395,7 @@ function BlogPostPage({ slug }: { slug: string }) {
       return;
     }
     const posting = {
-      "@type": "BlogPosting",
+      "@type": ["BlogPosting", "Article"],
       headline: localized.title,
       description: localized.excerpt,
       datePublished: meta.date,
@@ -402,6 +403,7 @@ function BlogPostPage({ slug }: { slug: string }) {
       inLanguage,
       mainEntityOfPage: pageUrl,
       url: pageUrl,
+      image: DEFAULT_OG.url,
       author: {
         "@type": "Organization",
         name: "Kidsmybook",

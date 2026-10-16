@@ -1,4 +1,4 @@
-import { maybePrerender } from "./prerender";
+import { markerComment, normalizeRoutePath, prerenderAssetPath } from "../src/seo/meta";
 
 export interface Env {
   ASSETS: Fetcher;
@@ -764,53 +764,83 @@ async function handleWhatsAppWebhook(request: Request, env: Env): Promise<Respon
 
 const ROBOTS_TXT = `User-agent: *
 Allow: /
-
-# Prefer canonical host for indexing
-Host: https://kidsmybook.com
-
-# Sitemaps (Google, Bing, and AI crawlers)
-Sitemap: https://kidsmybook.com/sitemap.xml
-Sitemap: https://www.kidsmybook.com/sitemap.xml
-
-# AI assistant crawlers: full content index
-LLMs: https://kidsmybook.com/llms.txt
-LLMs-full: https://kidsmybook.com/llms-full.txt
-
-# Explicit allow for common AI / answer-engine crawlers
-User-agent: GPTBot
-Allow: /
-
-User-agent: ChatGPT-User
-Allow: /
-
-User-agent: Google-Extended
-Allow: /
-
-User-agent: Googlebot
-Allow: /
-
-User-agent: PerplexityBot
-Allow: /
-
-User-agent: ClaudeBot
-Allow: /
-
-User-agent: anthropic-ai
-Allow: /
-
-User-agent: Bytespider
-Allow: /
-
-User-agent: cohere-ai
-Allow: /
-
-User-agent: Applebot-Extended
-Allow: /
-
 Disallow: /admin
 Disallow: /intake
 Disallow: /intake-form
 Disallow: /api/
+
+User-agent: GPTBot
+Allow: /
+Disallow: /admin
+Disallow: /intake
+Disallow: /intake-form
+Disallow: /api/
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /admin
+Disallow: /intake
+Disallow: /intake-form
+Disallow: /api/
+
+User-agent: Google-Extended
+Allow: /
+Disallow: /admin
+Disallow: /intake
+Disallow: /intake-form
+Disallow: /api/
+
+User-agent: Googlebot
+Allow: /
+Disallow: /admin
+Disallow: /intake
+Disallow: /intake-form
+Disallow: /api/
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /admin
+Disallow: /intake
+Disallow: /intake-form
+Disallow: /api/
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /admin
+Disallow: /intake
+Disallow: /intake-form
+Disallow: /api/
+
+User-agent: anthropic-ai
+Allow: /
+Disallow: /admin
+Disallow: /intake
+Disallow: /intake-form
+Disallow: /api/
+
+User-agent: Bytespider
+Allow: /
+Disallow: /admin
+Disallow: /intake
+Disallow: /intake-form
+Disallow: /api/
+
+User-agent: cohere-ai
+Allow: /
+Disallow: /admin
+Disallow: /intake
+Disallow: /intake-form
+Disallow: /api/
+
+User-agent: Applebot-Extended
+Allow: /
+Disallow: /admin
+Disallow: /intake
+Disallow: /intake-form
+Disallow: /api/
+
+Host: https://kidsmybook.com
+Sitemap: https://kidsmybook.com/sitemap.xml
 `;
 
 const SITEMAP_XML = `<?xml version="1.0" encoding="UTF-8"?>
@@ -855,8 +885,39 @@ function plainText(body: string, contentType: string): Response {
   });
 }
 
+async function servePrerenderedDocument(request: Request, env: Env): Promise<Response | null> {
+  if (request.method !== "GET") return null;
+  const url = new URL(request.url);
+  const assetPath = prerenderAssetPath(url.pathname);
+  if (!assetPath) return null;
+  const routePath = normalizeRoutePath(url.pathname);
+  const assetUrl = new URL(assetPath, url.origin);
+  const assetRes = await env.ASSETS.fetch(new Request(assetUrl, { method: "GET" }));
+  if (!assetRes.ok) return null;
+  const html = await assetRes.text();
+  if (!html.includes(markerComment(routePath))) return null;
+  const headers = new Headers();
+  headers.set("content-type", "text/html; charset=utf-8");
+  headers.set("cache-control", "public, max-age=300");
+  headers.set("x-prerender", "kidsmybook-ssg");
+  return new Response(html, { status: 200, headers });
+}
+
 async function serveSeoAsset(request: Request, env: Env, pathname: string): Promise<Response> {
-  if (pathname === "/robots.txt") return plainText(ROBOTS_TXT, "text/plain; charset=utf-8");
+  if (pathname === "/robots.txt") {
+    const assetRes = await env.ASSETS.fetch(new Request(new URL("/robots.txt", request.url), { method: "GET" }));
+    const text = await assetRes.text();
+    if (
+      assetRes.ok &&
+      !text.trimStart().startsWith("<!") &&
+      text.includes("User-agent:") &&
+      text.includes("Sitemap: https://kidsmybook.com/sitemap.xml") &&
+      !text.includes("www.kidsmybook.com/sitemap.xml")
+    ) {
+      return plainText(text, "text/plain; charset=utf-8");
+    }
+    return plainText(ROBOTS_TXT, "text/plain; charset=utf-8");
+  }
   if (pathname === "/sitemap.xml") return plainText(SITEMAP_XML, "application/xml; charset=utf-8");
 
   // llms-full.txt: extended AI crawler file with full blog summaries
@@ -978,9 +1039,6 @@ export default {
       return Response.redirect(`https://kidsmybook.com${url.pathname}${url.search}`, 301);
     }
 
-    const pre = maybePrerender(request);
-    if (pre) return pre;
-
     if (url.pathname === "/api/seo-health") {
       const pw = url.searchParams.get("pw") || request.headers.get("x-admin-pw") || "";
       if (pw !== ADMIN_PASSWORD) return json({ error: "Forbidden" }, 403);
@@ -1031,6 +1089,10 @@ export default {
       return handleWhatsAppWebhook(request, env);
     }
 
+    if (url.pathname === "/og-default.svg") {
+      return Response.redirect("https://kidsmybook.com/og-default.png", 301);
+    }
+
     if (
       url.pathname === "/robots.txt" ||
       url.pathname === "/sitemap.xml" ||
@@ -1039,6 +1101,9 @@ export default {
     ) {
       return serveSeoAsset(request, env, url.pathname);
     }
+
+    const prerendered = await servePrerenderedDocument(request, env);
+    if (prerendered) return prerendered;
 
     return env.ASSETS.fetch(request);
   },

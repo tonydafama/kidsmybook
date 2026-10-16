@@ -1,6 +1,9 @@
+import fs from "node:fs";
+import path from "node:path";
 import { defineConfig, loadEnv, type Plugin } from "vite";
 import react from "@vitejs/plugin-react";
 import type { IncomingMessage } from "node:http";
+import { prerenderAssetPath } from "./src/seo/meta";
 
 const MONICA_FLUX_URL = "https://openapi.monica.im/v1/image/gen/flux";
 
@@ -33,6 +36,31 @@ async function fluxImage(prompt: string, apiKey: string): Promise<string> {
   const url = data.data?.[0]?.url;
   if (!url) throw new Error("Monica returned no image URL");
   return url;
+}
+
+/** Serve build-time route HTML from dist/ during `vite preview` (before the SPA fallback). */
+function prerenderPreviewPlugin(): Plugin {
+  return {
+    name: "prerender-preview",
+    configurePreviewServer(server) {
+      server.middlewares.use((req, res, next) => {
+        if (!req.url || (req.method !== "GET" && req.method !== "HEAD")) return next();
+        const pathname = req.url.split("?")[0] || "/";
+        const assetPath = prerenderAssetPath(pathname);
+        if (!assetPath) return next();
+        const file = path.join(process.cwd(), "dist", assetPath);
+        if (!fs.existsSync(file)) return next();
+        res.statusCode = 200;
+        res.setHeader("Content-Type", "text/html; charset=utf-8");
+        res.setHeader("Cache-Control", "no-cache");
+        if (req.method === "HEAD") {
+          res.end();
+          return;
+        }
+        fs.createReadStream(file).pipe(res);
+      });
+    },
+  };
 }
 
 function coverApiDevPlugin(apiKey: string): Plugin {
@@ -112,7 +140,7 @@ export default defineConfig(({ mode }) => {
   const monicaKey = env.MONICA_API_KEY || env.VITE_MONICA_API_KEY || "";
 
   return {
-    plugins: [react(), coverApiDevPlugin(monicaKey)],
+    plugins: [react(), coverApiDevPlugin(monicaKey), prerenderPreviewPlugin()],
     base: "/",
   };
 });

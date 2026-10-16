@@ -3,6 +3,7 @@ import { AiBookCreatorPanel } from "./AiBookCreatorPage";
 import { LanguageSwitcher } from "./components/LanguageSwitcher";
 import { useLocale } from "./i18n/LocaleContext";
 import { BlogIndexPage, BlogPostPage, POSTS, SITE_ORIGIN, getLocalizedPostMeta, upsertJsonLd } from "./BlogPages";
+import { ogImageForPath } from "./seo/meta";
 import {
   SERVICE_CARD_ART,
   SERVICE_ICONS,
@@ -330,8 +331,9 @@ function CaseStudyPage() {
     upsertJsonLd("kidsmybook-case-study-ld", {
       "@context": "https://schema.org",
       "@type": "Article",
-      headline: t.caseIndex.hilaryTitle,
-      description: t.caseIndex.hilaryDesc,
+      headline: t.seo.hilaryTitle,
+      description: t.seo.hilaryDesc,
+      image: ogImageForPath("/case-studies/hilary-butterfly-guide").url,
       author: {
         "@type": "Organization",
         name: "Kidsmybook",
@@ -350,7 +352,7 @@ function CaseStudyPage() {
       ],
     });
     return () => upsertJsonLd("kidsmybook-case-study-ld", null);
-  }, [t.caseIndex.hilaryTitle, t.caseIndex.hilaryDesc]);
+  }, [t.seo.hilaryTitle, t.seo.hilaryDesc]);
 
   return (
     <main>
@@ -478,9 +480,8 @@ export default function App() {
       "/services": { title: t.seo.servicesTitle, description: t.seo.servicesDesc },
       "/case-studies": { title: t.seo.caseStudiesTitle, description: t.seo.caseStudiesDesc },
       "/blog": {
-        title: "Kidsmybook Blog?????????????????",
-        description:
-          "Mainland and Top Talent Pass parents on Hong Kong school admissions ? how a child's published book becomes a real portfolio highlight.",
+        title: `${t.blog.indexTitle}｜Kidsmybook`,
+        description: t.blog.indexDesc,
       },
       ...POSTS.reduce((acc, item) => {
         const loc = getLocalizedPostMeta(item.slug, locale);
@@ -497,7 +498,8 @@ export default function App() {
     const fallback = { title: "Kidsmybook", description: t.brandEn };
     const meta = seoMap[pathname] || fallback;
     const canonical = `${SITE_ORIGIN}${pathname === "/" ? "/" : pathname}`;
-    const ogType = pathname.startsWith("/blog/") ? "article" : "website";
+    const ogType = pathname.startsWith("/blog/") || pathname.startsWith("/case-studies/") ? "article" : "website";
+    const og = ogImageForPath(pathname);
 
     document.title = meta.title;
 
@@ -531,7 +533,11 @@ export default function App() {
     setProp("og:url", canonical);
     setProp("og:title", meta.title);
     setProp("og:description", meta.description);
-    setProp("og:image", `${SITE_ORIGIN}/og-default.svg`);
+    setProp("og:image", og.url);
+    setProp("og:image:width", String(og.width));
+    setProp("og:image:height", String(og.height));
+    setProp("og:image:alt", meta.title);
+    setNamed("twitter:image", og.url);
 
     let link = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
     if (!link) {
