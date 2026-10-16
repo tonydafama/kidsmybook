@@ -163,6 +163,7 @@ export type Translations = {
     storyTitle: string;
     storyP1: string;
     storyP2: string;
+    storyP3: string;
     gallery: string;
     galleryItems: string[];
     results: string;
@@ -203,6 +204,11 @@ export type Translations = {
     service: (title: string) => string;
     floating: string;
     caseStudy: string;
+  };
+  footer: {
+    studio: string;
+    privacy: string;
+    quote: string;
   };
 };
 
@@ -406,7 +412,7 @@ const zhHant: Translations = {
   },
   finalCta: {
     title: "開始諮詢",
-    copy: "先生成封面，再 WhatsApp (@kidsmybook) 對齊全案。私人報價。",
+    copy: "WhatsApp（@kidsmybook）或填表預約。私人報價。",
     generateCover: "生成封面",
   },
   caseStudy: {
@@ -423,11 +429,11 @@ const zhHant: Translations = {
     storyTitle: "The Story",
     storyP1: "孩子由日常觀察蝴蝶出發，逐步建立研究習慣，完成圖像與文字內容，最終成功出版並公開發表。",
     storyP2: "過程中克服了資料整理與口語表達挑戰，學會用作品向世界分享自己的興趣與成長。",
+    storyP3: "這是目前公開具名的個案：Hilary，出版時八歲，約一年完成。成品是中英雙語圖鑑，其後有新書發布會、媒體公關與活動直播；線上觀看 3,569 次。家庭可以將這份成果放進升學檔案。",
     gallery: "Gallery",
     galleryItems: ["Book Spreads", "Event Photos", "Exhibition Photos", "Media Coverage Screenshots"],
     results: "Results",
     resultItems: [
-      "Media mentions：深圳特區報、南方+（示例）",
       "Event attendance：現場家庭與嘉賓參與",
       "Online views：3,569+",
       "Parent testimonial：孩子更有自信，亦更主動分享成果",
@@ -501,6 +507,11 @@ const zhHant: Translations = {
     service: (title) => `你好，我想了解 ${title} 服務。`,
     floating: "Hi, I'd like premium child achievement publishing details.",
     caseStudy: "Start your child's publishing journey",
+  },
+  footer: {
+    studio: "Kidsmybook · 香港兒童成就出版工作室",
+    privacy: "查詢資料只用於回覆你。未經同意，不會公開小朋友的姓名或學校。",
+    quote: "私人報價，於諮詢時提供。",
   },
 };
 
@@ -697,15 +708,15 @@ const zhHans: Translations = {
   },
   finalCta: {
     title: "开始咨询",
-    copy: "先生成封面，再 WhatsApp (@kidsmybook) 对齐全案。私人报价。",
+    copy: "WhatsApp（@kidsmybook）或填表预约。私人报价。",
     generateCover: "生成封面",
   },
   caseStudy: {
     ...zhHant.caseStudy,
     storyP1: "孩子由日常观察蝴蝶出发，逐步建立研究习惯，完成图像与文字内容，最终成功出版并公开发表。",
     storyP2: "过程中克服了资料整理与口语表达挑战，学会用作品向世界分享自己的兴趣与成长。",
+    storyP3: "这是目前公开具名的个案：Hilary，出版时八岁，约一年完成。成品是中英双语图鉴，其后有新书发布会、媒体公关与活动直播；线上观看 3,569 次。家庭可以将这份成果放进升学档案。",
     resultItems: [
-      "Media mentions：深圳特区报、南方+（示例）",
       "Event attendance：现场家庭与嘉宾参与",
       "Online views：3,569+",
       "Parent testimonial：孩子更有自信，亦更主动分享成果",
@@ -722,6 +733,11 @@ const zhHans: Translations = {
     title: "Page in Progress",
     body: (path) => `你目前打开的是 \`${path}\`。此页已保留，下一步可按同模板扩充内容。`,
     backHome: "返回首页",
+  },
+  footer: {
+    studio: "Kidsmybook · 香港儿童成就出版工作室",
+    privacy: "查询资料只用于回复你。未经同意，不会公开小朋友的姓名或学校。",
+    quote: "私人报价，于咨询时提供。",
   },
   faq: {
     kicker: "FAQ",
@@ -981,7 +997,7 @@ const en: Translations = {
   },
   finalCta: {
     title: "Start your consultation",
-    copy: "Generate a cover first, then align the full programme on WhatsApp (@kidsmybook). Private quotation.",
+    copy: "Message WhatsApp (@kidsmybook) or send the enquiry form. Private quotation.",
     generateCover: "Generate cover",
   },
   caseStudy: {
@@ -998,11 +1014,11 @@ const en: Translations = {
     storyTitle: "The Story",
     storyP1: "Starting from daily butterfly observation, the child built research habits, completed images and text, and published publicly.",
     storyP2: "Along the way they worked through organisation and oral presentation — learning to share their interest with the world through the work itself.",
+    storyP3: "This is the named public case: Hilary, age 8 at publication, about one year. The result is a Chinese–English field guide, followed by a book launch, media support, and a live stream, with 3,569 online views. The family can place that result in an admissions portfolio.",
     gallery: "Gallery",
     galleryItems: ["Book Spreads", "Event Photos", "Exhibition Photos", "Media Coverage Screenshots"],
     results: "Results",
     resultItems: [
-      "Media mentions: Shenzhen Special Zone Daily, Nanfang Plus (examples)",
       "Event attendance: families and guests on site",
       "Online views: 3,569+",
       "Parent testimonial: more confidence, more willing to share the achievement",
@@ -1076,6 +1092,11 @@ const en: Translations = {
     service: (title) => `Hi, I'd like to learn more about ${title}.`,
     floating: "Hi, I'd like premium child achievement publishing details.",
     caseStudy: "Start your child's publishing journey",
+  },
+  footer: {
+    studio: "Kidsmybook · Hong Kong child-achievement publishing studio",
+    privacy: "Enquiry details are used only to reply to you. A child's name or school is not published without consent.",
+    quote: "Quoted privately during consultation.",
   },
 };
 

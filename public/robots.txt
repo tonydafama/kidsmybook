@@ -1,45 +1,84 @@
+# Canonical host: https://kidsmybook.com
+# www.kidsmybook.com and mybook.pub 301 here. One sitemap only.
+
 User-agent: *
 Allow: /
-
-# Prefer canonical host for indexing
-Host: https://kidsmybook.com
-
-# Sitemaps (Google, Bing, and AI crawlers)
-Sitemap: https://kidsmybook.com/sitemap.xml
-Sitemap: https://www.kidsmybook.com/sitemap.xml
-
-# Explicit allow for common AI / answer-engine crawlers
-User-agent: GPTBot
-Allow: /
-
-User-agent: ChatGPT-User
-Allow: /
-
-User-agent: Google-Extended
-Allow: /
-
-User-agent: Googlebot
-Allow: /
-
-User-agent: PerplexityBot
-Allow: /
-
-User-agent: ClaudeBot
-Allow: /
-
-User-agent: anthropic-ai
-Allow: /
-
-User-agent: Bytespider
-Allow: /
-
-User-agent: cohere-ai
-Allow: /
-
-User-agent: Applebot-Extended
-Allow: /
-
 Disallow: /admin
 Disallow: /intake
 Disallow: /intake-form
 Disallow: /api/
+
+# AI / answer-engine crawlers. A specific User-agent group does not inherit
+# rules from "*", so private paths are repeated in each group.
+User-agent: GPTBot
+Allow: /
+Disallow: /admin
+Disallow: /intake
+Disallow: /intake-form
+Disallow: /api/
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /admin
+Disallow: /intake
+Disallow: /intake-form
+Disallow: /api/
+
+User-agent: Google-Extended
+Allow: /
+Disallow: /admin
+Disallow: /intake
+Disallow: /intake-form
+Disallow: /api/
+
+User-agent: Googlebot
+Allow: /
+Disallow: /admin
+Disallow: /intake
+Disallow: /intake-form
+Disallow: /api/
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /admin
+Disallow: /intake
+Disallow: /intake-form
+Disallow: /api/
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /admin
+Disallow: /intake
+Disallow: /intake-form
+Disallow: /api/
+
+User-agent: anthropic-ai
+Allow: /
+Disallow: /admin
+Disallow: /intake
+Disallow: /intake-form
+Disallow: /api/
+
+User-agent: Bytespider
+Allow: /
+Disallow: /admin
+Disallow: /intake
+Disallow: /intake-form
+Disallow: /api/
+
+User-agent: cohere-ai
+Allow: /
+Disallow: /admin
+Disallow: /intake
+Disallow: /intake-form
+Disallow: /api/
+
+User-agent: Applebot-Extended
+Allow: /
+Disallow: /admin
+Disallow: /intake
+Disallow: /intake-form
+Disallow: /api/
+
+Host: https://kidsmybook.com
+Sitemap: https://kidsmybook.com/sitemap.xml
