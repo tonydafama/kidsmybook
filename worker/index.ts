@@ -744,7 +744,8 @@ async function handleWhatsAppWebhook(request: Request, env: Env): Promise<Respon
   return json({ ok: true }, 200);
 }
 
-const ROBOTS_TXT = `User-agent: *
+const ROBOTS_TXT = `# LLM context: https://kidsmybook.com/llms.txt
+User-agent: *
 Allow: /
 Disallow: /admin
 Disallow: /intake
@@ -759,6 +760,13 @@ Disallow: /intake-form
 Disallow: /api/
 
 User-agent: ChatGPT-User
+Allow: /
+Disallow: /admin
+Disallow: /intake
+Disallow: /intake-form
+Disallow: /api/
+
+User-agent: OAI-SearchBot
 Allow: /
 Disallow: /admin
 Disallow: /intake
@@ -835,6 +843,8 @@ const SITEMAP_XML = `<?xml version="1.0" encoding="UTF-8"?>
   <url><loc>https://kidsmybook.com/services</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kidsmybook.com/case-studies</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://kidsmybook.com/case-studies/hilary-butterfly-guide</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://kidsmybook.com/llms.txt</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://kidsmybook.com/llms-full.txt</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
   <url><loc>https://kidsmybook.com/blog/hk-international-school-book-mainland-parents</loc><lastmod>2026-09-05</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kidsmybook.com/blog/gtp-family-child-book-portfolio</loc><lastmod>2026-09-05</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kidsmybook.com/blog/talent-admission-book-advantage</loc><lastmod>2026-09-06</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
@@ -859,11 +869,25 @@ const SITEMAP_XML = `<?xml version="1.0" encoding="UTF-8"?>
   <url><loc>https://kidsmybook.com/blog/zi-fei-chu-shu-vs-dao-shi-zhi</loc><lastmod>2026-10-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kidsmybook.com/blog/you-zhi-yuan-zuo-pin-ji-chu-shu</loc><lastmod>2026-10-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kidsmybook.com/blog/isbn-tong-shu-jia-zhang-zhi-nan</loc><lastmod>2026-10-16</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://kidsmybook.com/blog/sheng-xiao-xue-mian-shi-zuo-pin-ji</loc><lastmod>2026-10-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://kidsmybook.com/blog/sheng-zhong-dss-portfolio-chu-ban</loc><lastmod>2026-10-18</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://kidsmybook.com/blog/guo-ji-vs-ben-di-mian-shi-zuo-pin-ji</loc><lastmod>2026-10-19</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kidsmybook.com/blog/sheng-xiao-xue-mian-shi-zuo-pin-ji</loc><lastmod>2026-10-16</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kidsmybook.com/blog/sheng-zhong-dss-portfolio-chu-ban</loc><lastmod>2026-10-16</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kidsmybook.com/blog/guo-ji-vs-ben-di-mian-shi-zuo-pin-ji</loc><lastmod>2026-10-16</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 </urlset>
 `;
+
+const LLMS_ALIAS_PATHS = new Set(["/.well-known/llms.txt", "/llm.txt"]);
+
+/** True for alternate llms URLs that must 301 to /llms.txt instead of the SPA shell. */
+function isLlmsAlias(pathname: string): boolean {
+  let path = pathname || "/";
+  try {
+    path = decodeURIComponent(path);
+  } catch {
+    /* keep the raw path */
+  }
+  if (path.length > 1 && path.endsWith("/")) path = path.slice(0, -1);
+  return LLMS_ALIAS_PATHS.has(path.toLowerCase());
+}
 
 function plainText(body: string, contentType: string): Response {
   return new Response(body, {
@@ -920,7 +944,8 @@ async function serveSeoAsset(request: Request, env: Env, pathname: string): Prom
       !text.trimStart().startsWith("<!") &&
       text.includes("User-agent:") &&
       text.includes("Sitemap: https://kidsmybook.com/sitemap.xml") &&
-      !text.includes("www.kidsmybook.com/sitemap.xml")
+      !text.includes("www.kidsmybook.com/sitemap.xml") &&
+      text.includes("User-agent: OAI-SearchBot")
     ) {
       return plainText(text, "text/plain; charset=utf-8");
     }
@@ -935,7 +960,8 @@ async function serveSeoAsset(request: Request, env: Env, pathname: string): Prom
       mapText.includes("<urlset") &&
       mapText.includes("https://kidsmybook.com/programme") &&
       mapText.includes("https://kidsmybook.com/faq") &&
-      mapText.includes("https://kidsmybook.com/sheng-xue-zuo-pin-ji")
+      mapText.includes("https://kidsmybook.com/sheng-xue-zuo-pin-ji") &&
+      mapText.includes("https://kidsmybook.com/llms-full.txt")
     ) {
       return plainText(mapText, "application/xml; charset=utf-8");
     }
@@ -1113,6 +1139,11 @@ export default {
 
     if (url.pathname === "/og-default.svg") {
       return Response.redirect("https://kidsmybook.com/og-default.png", 301);
+    }
+
+    // Alternate llms names must not fall through to the SPA homepage (HTML 200).
+    if (isLlmsAlias(url.pathname)) {
+      return Response.redirect("https://kidsmybook.com/llms.txt", 301);
     }
 
     if (

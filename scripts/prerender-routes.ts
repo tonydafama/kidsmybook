@@ -462,7 +462,7 @@ function staticRoutes(posts: RouteDocument[]): RouteDocument[] {
       publisher: orgRef(),
     },
     snapshotHtml: pageWrap(
-      `        <article>\n          <h1>Hilary《蝴蝶雙語圖鑑》</h1>\n          <p>Age at publication: 8 · Duration: 1 year</p>\n          <p>孩子由日常觀察蝴蝶出發，逐步建立研究習慣，完成圖像與文字內容，最終成功出版並公開發表。</p>\n          <p>過程中克服了資料整理與口語表達挑戰，學會用作品向世界分享自己的興趣與成長。</p>\n          <p>這是目前公開具名的個案：Hilary，出版時八歲，約一年完成。成品是中英雙語圖鑑，其後有新書發布會、媒體公關與活動直播；線上觀看 3,569 次。家庭可以將這份成果放進升學檔案。</p>\n        </article>`,
+      `        <article>\n          <h1>Hilary《蝴蝶雙語圖鑑》</h1>\n          <p>Age at publication: 8 · Duration: 1 year</p>\n          <p>孩子由日常觀察蝴蝶出發，逐步建立研究習慣，完成圖像與文字內容，最終成功出版並公開發表。</p>\n          <p>過程中克服了資料整理與口語表達挑戰，學會用作品向世界分享自己的興趣與成長。</p>\n          <p>這是目前公開具名的個案：Hilary，出版時八歲，約一年完成。成品是中英雙語圖鑑，其後有新書發布會、媒體公關與活動直播；線上觀看 3,569 次。家庭可以將這份成果放進升學檔案。</p>\n          <p><a href="https://wa.me/85291214157">WhatsApp 私人報價</a></p>\n        </article>`,
     ),
   };
 
@@ -689,6 +689,11 @@ function assertDocument(html: string, route: RouteDocument) {
     }
     if (!html.includes("https://wa.me/85291214157")) throw new Error("portfolio hub missing WhatsApp");
   }
+  if (route.path === "/case-studies/hilary-butterfly-guide") {
+    if (!html.includes("https://wa.me/85291214157")) {
+      throw new Error("Hilary case study missing WhatsApp CTA");
+    }
+  }
   if (route.path.startsWith("/blog/") && route.path !== "/blog") {
     if (!html.includes("BlogPosting") || !html.includes('"@type": "Article"') && !html.includes('"Article"')) {
       throw new Error(`${route.path} missing Article/BlogPosting`);
@@ -743,9 +748,18 @@ function assertSources(posts: RouteDocument[]) {
   if (!robots.includes("User-agent: GPTBot") || !robots.includes("User-agent: Google-Extended")) {
     throw new Error("robots.txt missing an AI crawler allow");
   }
+  if (!robots.includes("User-agent: OAI-SearchBot")) {
+    throw new Error("robots.txt missing OAI-SearchBot");
+  }
+  if (!robots.includes("# LLM context: https://kidsmybook.com/llms.txt")) {
+    throw new Error("robots.txt missing llms.txt comment");
+  }
 
   const sitemap = fs.readFileSync(path.join(ROOT, "public/sitemap.xml"), "utf8");
   const worker = fs.readFileSync(path.join(ROOT, "worker/index.ts"), "utf8");
+  if (!worker.includes("User-agent: OAI-SearchBot") || !worker.includes("isLlmsAlias")) {
+    throw new Error("worker missing OAI-SearchBot or llms alias redirect");
+  }
   for (const slug of manifest) {
     const loc = `${SITE_ORIGIN}/blog/${slug}`;
     if (!sitemap.includes(loc) || !worker.includes(loc)) {
@@ -756,11 +770,74 @@ function assertSources(posts: RouteDocument[]) {
     `${SITE_ORIGIN}/programme`,
     `${SITE_ORIGIN}/faq`,
     `${SITE_ORIGIN}/sheng-xue-zuo-pin-ji`,
+    `${SITE_ORIGIN}/llms.txt`,
+    `${SITE_ORIGIN}/llms-full.txt`,
   ]) {
     if (!sitemap.includes(loc) || !worker.includes(loc)) {
       throw new Error(`sitemap missing ${loc}`);
     }
   }
+
+  const today = localIsoDate();
+  for (const post of posts) {
+    const slug = post.path.slice("/blog/".length);
+    const published = readDateField(post.jsonLd, "datePublished");
+    const modified = readDateField(post.jsonLd, "dateModified");
+    if (!published || published !== modified) {
+      throw new Error(`${slug} datePublished and dateModified must match`);
+    }
+    if (published > today) throw new Error(`${slug} date ${published} is after ${today}`);
+    for (const suffix of ["", ".hans", ".en"]) {
+      const raw = fs.readFileSync(path.join(ROOT, "blog", `${slug}${suffix}.md`), "utf8");
+      const fmDate = parseFrontMatter(raw).date;
+      if (fmDate !== published) {
+        throw new Error(`${slug}${suffix}.md date ${fmDate} != ${published}`);
+      }
+    }
+    const manifestDate = blogSrc.match(
+      new RegExp(`slug:\\s*"${slug}"[\\s\\S]*?date:\\s*"(\\d{4}-\\d{2}-\\d{2})"`),
+    );
+    if (!manifestDate || manifestDate[1] !== published) {
+      throw new Error(`BlogPages date for ${slug} must match front matter ${published}`);
+    }
+    const loc = `${SITE_ORIGIN}/blog/${slug}`;
+    for (const [label, source] of [
+      ["sitemap", sitemap],
+      ["worker", worker],
+    ] as const) {
+      const found = source.match(
+        new RegExp(`${loc.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}[\\s\\S]{0,120}<lastmod>(\\d{4}-\\d{2}-\\d{2})</lastmod>`),
+      );
+      if (!found || found[1] !== published) {
+        throw new Error(`${label} lastmod for ${slug} must be ${published}`);
+      }
+      if (found[1] > today) throw new Error(`${label} lastmod ${found[1]} for ${slug} is after ${today}`);
+    }
+  }
+}
+
+function localIsoDate(): string {
+  const now = new Date();
+  const month = String(now.getMonth() + 1).padStart(2, "0");
+  const day = String(now.getDate()).padStart(2, "0");
+  return `${now.getFullYear()}-${month}-${day}`;
+}
+
+function readDateField(data: unknown, key: "datePublished" | "dateModified"): string {
+  const found: string[] = [];
+  const walk = (value: unknown) => {
+    if (!value || typeof value !== "object") return;
+    if (Array.isArray(value)) {
+      for (const item of value) walk(item);
+      return;
+    }
+    for (const [childKey, child] of Object.entries(value as Record<string, unknown>)) {
+      if (childKey === key && typeof child === "string") found.push(child);
+      else walk(child);
+    }
+  };
+  walk(data);
+  return found[0] ?? "";
 }
 
 function main() {

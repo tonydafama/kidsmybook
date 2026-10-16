@@ -1,7 +1,7 @@
 ---
 title: "Secondary, DSS, and direct-subsidy interviews: where a book sits in the portfolio"
 description: "Secondary, DSS, and direct-subsidy interviews look for a sustained interest the student can explain. Put a finished publication at the front of the portfolio. Private quotation. No offer is guaranteed."
-date: 2026-10-18
+date: 2026-10-16
 slug: "sheng-zhong-dss-portfolio-chu-ban"
 tags: ["升中", "DSS", "直資", "作品集"]
 ---

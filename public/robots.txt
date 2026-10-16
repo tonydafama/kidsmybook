@@ -1,5 +1,6 @@
 # Canonical host: https://kidsmybook.com
 # www.kidsmybook.com and mybook.pub 301 here. One sitemap only.
+# LLM context: https://kidsmybook.com/llms.txt
 
 User-agent: *
 Allow: /
@@ -18,6 +19,13 @@ Disallow: /intake-form
 Disallow: /api/
 
 User-agent: ChatGPT-User
+Allow: /
+Disallow: /admin
+Disallow: /intake
+Disallow: /intake-form
+Disallow: /api/
+
+User-agent: OAI-SearchBot
 Allow: /
 Disallow: /admin
 Disallow: /intake

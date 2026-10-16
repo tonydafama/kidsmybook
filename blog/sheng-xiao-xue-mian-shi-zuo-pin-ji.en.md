@@ -1,7 +1,7 @@
 ---
 title: "Primary interview portfolio: how to use one published book"
 description: "Primary discretionary interviews and door-knocking are short. A thick certificate file is hard to remember. This is how a child-made ISBN book gives one story to tell. Private quotation. No school place is guaranteed."
-date: 2026-10-17
+date: 2026-10-16
 slug: "sheng-xiao-xue-mian-shi-zuo-pin-ji"
 tags: ["升小學", "面試", "作品集", "叩門"]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "升中面试、DSS 和直资：作品集怎样放一本出版物"
 description: "升中、直资和 DSS 面试想看持续兴趣和自述。讲一本正式出版物可以放在作品集前面，和证书堆有什么分别。私人报价，不保证录取。"
-date: 2026-10-18
+date: 2026-10-16
 slug: "sheng-zhong-dss-portfolio-chu-ban"
 tags: ["升中", "DSS", "直資", "作品集"]
 ---
