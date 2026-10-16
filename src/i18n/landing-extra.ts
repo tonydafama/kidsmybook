@@ -62,8 +62,8 @@ export const PORTFOLIO_HANS = {
   title: "升学作品集｜升小学、升中 DSS／直资和国际学校面试｜Kidsmybook",
   description: "升小学面试、升中／DSS／直资，和国际学校 portfolio：用有 ISBN、小朋友参与的正式出版物做记得住的亮点。私人报价，不保证录取。",
   eyebrow: "School portfolio · 香港",
-  h1: "升学作品集：升小学、升中和国际学校面试怎样用一本书",
-  lead: "证书堆不占优。升小学、升中／直资／DSS，和国际学校面试，每年都见到很多份相近的钢琴、游泳、奥数履历。一本由小朋友参与、可有大学教授审阅、有 ISBN 的正式出版物，是面试官记得住、可以引用的亮点。",
+  h1: "香港升学作品集：升小学、升中和国际学校面试怎样用一本书",
+  lead: "香港本地、跨境和高才通家庭，都可以用这条升学作品集路径。证书堆不占优。升小学、升中／直资／DSS，和国际学校面试，每年都见到很多份相近的钢琴、游泳、奥数履历。一本由小朋友参与、可有大学教授审阅、有 ISBN 的正式出版物，是面试官记得住、可以引用的亮点。",
   pointsTitle: "一本书可以怎么用",
   points: [
     "面试时有一个具体故事：兴趣从哪来、做过什么研究、怎样改到可以出版",
@@ -267,8 +267,8 @@ export const PORTFOLIO_EN = {
   description:
     "Primary interviews, secondary DSS and direct-subsidy files, and international portfolios: a child-made ISBN book is a highlight someone can cite. Private quotation. No place is guaranteed.",
   eyebrow: "School portfolio · Hong Kong",
-  h1: "School portfolio: one book for primary, secondary, and international interviews",
-  lead: "Stacks of certificates start to look the same. Primary, secondary, DSS, and international interviews see plenty of piano, swimming, and olympiad files. A book the child actually made — with ISBN, and university professor review when it fits — is a highlight an interviewer can cite.",
+  h1: "Hong Kong school portfolio: one book for primary, secondary, and international interviews",
+  lead: "Hong Kong local families, cross-border families, and Top Talent Pass households can use this admissions-portfolio path. Stacks of certificates start to look the same. Primary, secondary, DSS, and international interviews see plenty of piano, swimming, and olympiad files. A book the child actually made — with ISBN, and university professor review when it fits — is a highlight an interviewer can cite.",
   pointsTitle: "What the book is for",
   points: [
     "A concrete interview story: where the interest came from, what was researched, and how it became publishable",
@@ -702,4 +702,50 @@ export const XINGQU_EN: HubCopy = {
   cardTitle: "Interest to ISBN",
   cardBlurb: "Golf, piano, riding, and other sustained interests, on a mentored ISBN path.",
   crumb: "Interest to ISBN",
+};
+
+export const ABOUT_HANS = {
+  title: "关于我们｜香港儿童成就出版工作室｜Kidsmybook",
+  description:
+    "Kidsmybook 是香港儿童成就出版工作室。12 个月导师制，将大约 3 至 18 岁小朋友的真实兴趣做成有 ISBN 的正式出版物。私人报价，WhatsApp 或电邮。不是升学中介，不保证录取。",
+  eyebrow: "工作室 · 香港",
+  h1: "关于 Kidsmybook：香港儿童成就出版工作室",
+  lead: "Kidsmybook 是香港儿童成就出版工作室。我们用 12 个月导师制出版计划，将大约 3 至 18 岁小朋友真正的兴趣和生活故事，做成有 ISBN 的正式出版物；过程可有大学教授审阅，完成后再按需要配发布会、展览、媒体和升学作品集。",
+  coverageTitle: "哪些家庭用得上",
+  coverage: "香港本地、跨境和高才通家庭都可以用这条路径。语言可以是中文、英文或中英双语，视乎小朋友学校语境，在咨询时再定。",
+  programmeTitle: "12 个月导师制，先讲重点",
+  programme:
+    "大约一年：先了解兴趣和目标学校方向，再由导师带领创作，可有大学教授审阅，然后亲子排版，最后正式印刷并走上实体书店平台。阶段细节见出书计划页；这页讲工作室是谁。",
+  disclaimerTitle: "我们不是升学中介",
+  disclaimer:
+    "Kidsmybook 是出版工作室，不是升学中介，也不保证进入任何学校。最终录取由学校决定。一本正式出版物可以让作品集更有说服力、面试更好讲故事。",
+  contactTitle: "联络和报价",
+  contact: "报价私人，网站不公开价目。WhatsApp 或电邮讲小朋友年龄、一个兴趣，和目标学校类型就可以。",
+  programmeLink: "看 12 个月出书计划",
+  faqLink: "常见问题",
+  portfolioLink: "升学作品集",
+};
+
+export const ABOUT_EN = {
+  title: "About | Hong Kong child-achievement publishing studio | Kidsmybook",
+  description:
+    "Kidsmybook is a Hong Kong child-achievement publishing studio. A 12-month mentored programme turns a real interest, for children about 3 to 18, into an ISBN book. Quoted privately by WhatsApp or email. Not an admissions agent, and no school place is guaranteed.",
+  eyebrow: "Studio · Hong Kong",
+  h1: "About Kidsmybook, a Hong Kong child-achievement publishing studio",
+  lead: "Kidsmybook is a Hong Kong child-achievement publishing studio. Over 12 mentored months we turn a real interest and life story, for children about 3 to 18, into a formally published ISBN book. University professor review can be part of the process, then a launch, exhibition, media, and an admissions portfolio when the family wants them.",
+  coverageTitle: "Who it is for",
+  coverage:
+    "Hong Kong local families, cross-border families, and Top Talent Pass households can use this path. The book can be Chinese, English, or bilingual, chosen for the child's school context during consultation.",
+  programmeTitle: "The 12-month programme, in brief",
+  programme:
+    "The year starts with the child's interest and school direction, continues with mentor-led making, can include university professor review, then parent-and-child layout, and ends with a formal print run and a physical bookstore listing path. The programme page has the phases. This page says who the studio is.",
+  disclaimerTitle: "Not an admissions agent",
+  disclaimer:
+    "Kidsmybook is a publishing studio, not an admissions agent, and does not guarantee a school place. The school decides. A formal publication can make a portfolio clearer and an interview easier to tell.",
+  contactTitle: "Contact and quotation",
+  contact:
+    "Quotations are private. Prices are not listed on the website. WhatsApp or email the child's age, one interest, and the target school type.",
+  programmeLink: "See the 12-month author programme",
+  faqLink: "FAQ",
+  portfolioLink: "School portfolio",
 };
