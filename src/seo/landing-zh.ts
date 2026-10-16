@@ -55,6 +55,7 @@ export const FAQ_PAGE_ZH = {
   ctaBody: "WhatsApp 或電郵講小朋友年齡、而家／目標學校，同埋最想解決嘅作品集問題。我哋先了解，再私人報價。",
   programmeLink: "睇 12 個月出書計劃",
   portfolioLink: "睇升學作品集說明",
+  readingTitle: "延伸閱讀",
 };
 
 export const PORTFOLIO_ZH = {
@@ -106,6 +107,9 @@ export const EXPLORE_ZH = {
 };
 
 export const READING_ZH: { href: string; label: string }[] = [
+  { href: "/blog/zi-fei-chu-shu-vs-dao-shi-zhi", label: "自費出書 vs 導師制出版：邊樣先幫到香港升學面試？" },
+  { href: "/blog/isbn-tong-shu-jia-zhang-zhi-nan", label: "香港 ISBN 童書：家長要知嘅 7 件事" },
+  { href: "/blog/you-zhi-yuan-zuo-pin-ji-chu-shu", label: "幼稚園作品集：細路都出得書嗎？" },
   { href: "/blog/kids-publishing-a-book-hk-isbn", label: "小朋友出書香港：從興趣到 ISBN" },
   { href: "/blog/international-school-interview-portfolio-highlight", label: "國際學校面試履歷亮點" },
   { href: "/blog/university-professor-child-work-review", label: "大學教授點樣參與兒童作品審閱" },
@@ -114,9 +118,17 @@ export const READING_ZH: { href: string; label: string }[] = [
 ];
 
 export const PORTFOLIO_READING_ZH: { href: string; label: string }[] = [
+  { href: "/blog/you-zhi-yuan-zuo-pin-ji-chu-shu", label: "幼稚園作品集：細路都出得書嗎？" },
+  { href: "/blog/zi-fei-chu-shu-vs-dao-shi-zhi", label: "自費出書 vs 導師制出版" },
   { href: "/blog/portfolio-vs-extracurriculars-hk-admissions", label: "實體書出版 vs 傳統興趣班" },
   { href: "/blog/zheng-shu-pi-juan", label: "點解證書堆砌會令面試官疲倦" },
   { href: "/blog/portfolio-book-4-skills", label: "點解一本書會係履歷最強嘅一張牌" },
   { href: "/blog/primary-school-door-knocking-portfolio-prep", label: "小學叩門 Portfolio 準備" },
   { href: "/blog/children-project-based-learning-hk", label: "出版一本書作為項目式學習" },
+];
+
+export const FAQ_READING_ZH: { href: string; label: string }[] = [
+  { href: "/blog/isbn-tong-shu-jia-zhang-zhi-nan", label: "香港 ISBN 童書：家長要知嘅 7 件事" },
+  { href: "/blog/zi-fei-chu-shu-vs-dao-shi-zhi", label: "自費出書 vs 導師制出版" },
+  { href: "/blog/you-zhi-yuan-zuo-pin-ji-chu-shu", label: "幼稚園／K1–K3 作品集用一本書" },
 ];
