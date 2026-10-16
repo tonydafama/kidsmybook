@@ -2590,6 +2590,12 @@ select:focus {
   color: rgba(239, 227, 203, 0.92);
 }
 
+.blog-post__body a,
+.landing p a,
+.landing .privacy-list a {
+  color: #e6d3ae;
+}
+
 .blog-post__body ul {
   margin: 0.6em 0 1em;
   padding-left: 1.25em;

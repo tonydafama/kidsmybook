@@ -57,11 +57,11 @@ export const FAQ_PAGE_HANS = {
 };
 
 export const PORTFOLIO_HANS = {
-  title: "升学作品集怎样用一本书突围｜香港面试 Portfolio｜Kidsmybook",
-  description: "证书堆不占优。用有 ISBN、教授参与的正式出版物，做国际学校／私立／直资面试记得住的作品集亮点。私人咨询。",
+  title: "升学作品集｜升小学、升中 DSS／直资和国际学校面试｜Kidsmybook",
+  description: "升小学面试、升中／DSS／直资，和国际学校 portfolio：用有 ISBN、小朋友参与的正式出版物做记得住的亮点。私人报价，不保证录取。",
   eyebrow: "School portfolio · 香港",
-  h1: "升学作品集：怎样用一本书突围",
-  lead: "证书堆不占优。国际学校、私立和直资面试，每年都见到很多份相近的钢琴、游泳、奥数履历。一本由小朋友参与、可有大学教授审阅、有 ISBN 的正式出版物，是面试官记得住、可以引用的亮点。",
+  h1: "升学作品集：升小学、升中和国际学校面试怎样用一本书",
+  lead: "证书堆不占优。升小学、升中／直资／DSS，和国际学校面试，每年都见到很多份相近的钢琴、游泳、奥数履历。一本由小朋友参与、可有大学教授审阅、有 ISBN 的正式出版物，是面试官记得住、可以引用的亮点。",
   pointsTitle: "一本书可以怎么用",
   points: [
     "面试时有一个具体故事：兴趣从哪来、做过什么研究、怎样改到可以出版",
@@ -83,6 +83,30 @@ export const PORTFOLIO_HANS = {
   caseLink: "看 Hilary 个案",
   readingTitle: "作品集相关文章",
   programmeLink: "了解 12 个月出书计划",
+  tracksTitle: "升小学、升中、国际学校",
+  tracksIntro:
+    "同一本由小朋友参与的正式出版物，在不同面试的用法不同。下面三篇讲清楚怎样带、怎样讲，以及和已有的叩门、直资、国际学校文章怎样一起看。Kidsmybook 是出版工作室，不保证录取。",
+  tracks: [
+    {
+      title: "升小学面试作品集",
+      body: "小一自行分配、面试和叩门，校长通常只有几分钟。重点是小朋友可以指着一页，用自己的话讲兴趣从哪来、做过什么，而不是再厚一本奖状复印。",
+      href: "/blog/sheng-xiao-xue-mian-shi-zuo-pin-ji",
+      link: "升小学面试作品集：一本书怎样用",
+    },
+    {
+      title: "升中、DSS 和直资",
+      body: "升中和直资、DSS 面试更常问持续兴趣和自述。出版物可以放在作品集前面，作为一项做完、可以核对的项目，而不是再多一张和别人一样的证书。",
+      href: "/blog/sheng-zhong-dss-portfolio-chu-ban",
+      link: "升中面试、DSS 和直资：作品集怎样放一本出版物",
+    },
+    {
+      title: "国际学校 vs 本地学校",
+      body: "国际学校面试多数用英文讲好奇心和项目；本地、私立和直资较常看中文表达和家庭怎样支持。同一本书可以准备两种讲法，不要做成两套故事。",
+      href: "/blog/guo-ji-vs-ben-di-mian-shi-zuo-pin-ji",
+      link: "国际学校 vs 本地学校面试：出版作品集有什么分别",
+    },
+  ],
+  whatsappLink: "WhatsApp 讲讲升小学或升中面试",
   ctaTitle: "想知这本书适不适合你的小朋友",
   ctaBody: "说说年龄、现在的学校类型、一个兴趣，和你最想解决的面试问题。报价私人，网站不公开价钱。",
 };
@@ -96,7 +120,7 @@ export const EXPLORE_HANS = {
   faq: "常见问题",
   faqBlurb: "ISBN、书店上架、幼儿园、高才通、私人报价。",
   portfolio: "升学作品集",
-  portfolioBlurb: "面试 portfolio：用一本正式出版物做出记得住的亮点。",
+  portfolioBlurb: "升小学、升中 DSS／直资，和国际学校面试：用一本正式出版物做亮点。",
   caseLabel: "Hilary 个案",
   caseBlurb: "八岁出版双语图鉴，其后有发布会和媒体纪录。",
   readingTitle: "家长最常看的文章",
@@ -237,12 +261,12 @@ export const FAQ_PAGE_EN = {
 };
 
 export const PORTFOLIO_EN = {
-  title: "School portfolio book Hong Kong | A publication interviewers remember | Kidsmybook",
+  title: "School portfolio | Primary, DSS secondary, and international interviews | Kidsmybook",
   description:
-    "Another certificate rarely wins the pile. A formally published ISBN book, with professor involvement available, is a memorable highlight for international, private, and DSS interviews. Private consultation.",
+    "Primary interviews, secondary DSS and direct-subsidy files, and international portfolios: a child-made ISBN book is a highlight someone can cite. Private quotation. No place is guaranteed.",
   eyebrow: "School portfolio · Hong Kong",
-  h1: "School portfolio: stand out with a book",
-  lead: "Stacks of certificates start to look the same. International, private, and DSS interviews see plenty of piano, swimming, and olympiad files. A book the child actually made — with ISBN, and university professor review when it fits — is a highlight an interviewer can cite.",
+  h1: "School portfolio: one book for primary, secondary, and international interviews",
+  lead: "Stacks of certificates start to look the same. Primary, secondary, DSS, and international interviews see plenty of piano, swimming, and olympiad files. A book the child actually made — with ISBN, and university professor review when it fits — is a highlight an interviewer can cite.",
   pointsTitle: "What the book is for",
   points: [
     "A concrete interview story: where the interest came from, what was researched, and how it became publishable",
@@ -266,6 +290,30 @@ export const PORTFOLIO_EN = {
   caseLink: "Read Hilary's case",
   readingTitle: "Portfolio reading",
   programmeLink: "See the 12-month author programme",
+  tracksTitle: "Primary, secondary, and international",
+  tracksIntro:
+    "The same child-made publication is used differently in each interview. These three articles explain what to bring and how to tell it, next to the existing door-knocking, DSS, and international-school posts. Kidsmybook is a publishing studio and does not guarantee a place.",
+  tracks: [
+    {
+      title: "Primary interview portfolio",
+      body: "Discretionary interviews and door-knocking give a principal only a few minutes. The child should point at one page and say where the interest came from, not hand over another stack of certificate copies.",
+      href: "/blog/sheng-xiao-xue-mian-shi-zuo-pin-ji",
+      link: "Primary interview portfolio: how to use one published book",
+    },
+    {
+      title: "Secondary, DSS, and direct subsidy",
+      body: "Secondary, DSS, and direct-subsidy interviews more often ask about a sustained interest the student can explain. Put the publication at the front as a finished, citable project.",
+      href: "/blog/sheng-zhong-dss-portfolio-chu-ban",
+      link: "Secondary, DSS, and direct-subsidy interviews: where a book sits",
+    },
+    {
+      title: "International vs local",
+      body: "International interviews often want the project in English. Local, private, and DSS interviews often look at Chinese expression and how the family supported the work. Prepare two tellings of one book, not two stories.",
+      href: "/blog/guo-ji-vs-ben-di-mian-shi-zuo-pin-ji",
+      link: "International vs local school interviews: how a published portfolio differs",
+    },
+  ],
+  whatsappLink: "WhatsApp about a primary or secondary interview",
   ctaTitle: "Ask whether a book fits your child",
   ctaBody: "Tell us the age, current school type, one interest, and the interview problem you want to solve. The quote stays private.",
 };
@@ -279,7 +327,7 @@ export const EXPLORE_EN = {
   faq: "FAQ",
   faqBlurb: "ISBN, bookstore listing, kindergarten, Top Talent Pass, private quotes.",
   portfolio: "School portfolio",
-  portfolioBlurb: "A memorable interview highlight built from a real publication.",
+  portfolioBlurb: "Primary, DSS secondary, and international interviews: one formal publication as the highlight.",
   caseLabel: "Hilary case",
   caseBlurb: "Age 8, a bilingual guide, then a launch and media record.",
   readingTitle: "Articles parents open first",

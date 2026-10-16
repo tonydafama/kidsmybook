@@ -1,5 +1,6 @@
 import { useEffect, useMemo, type ReactNode } from "react";
 import { useLocale } from "./i18n/LocaleContext";
+import { safeHttpsUrl, splitTrailingPunct } from "./seo/linkify";
 import { DEFAULT_OG } from "./seo/meta";
 
 export const SITE_ORIGIN = "https://kidsmybook.com";
@@ -184,6 +185,27 @@ const POSTS: PostMeta[] = [
     date: "2026-10-16",
     readMin: 7,
   },
+  {
+    slug: "sheng-xiao-xue-mian-shi-zuo-pin-ji",
+    title: "升小學面試作品集：一本書點樣用",
+    excerpt: "小一自行分配、面試同叩門，作品集唔係愈厚愈好。用一本小朋友參與、有 ISBN 嘅書，喺幾分鐘裡面講一個記得住嘅故事。私人報價，唔保證取錄。",
+    date: "2026-10-17",
+    readMin: 6,
+  },
+  {
+    slug: "sheng-zhong-dss-portfolio-chu-ban",
+    title: "升中面試、DSS 同直資：作品集點樣放一本出版物",
+    excerpt: "升中、直資同 DSS 面試想睇持續興趣同自述。正式出版物放喺作品集前面，同證書堆分開。私人報價，唔保證取錄。",
+    date: "2026-10-18",
+    readMin: 6,
+  },
+  {
+    slug: "guo-ji-vs-ben-di-mian-shi-zuo-pin-ji",
+    title: "國際學校 vs 本地學校面試：出版作品集有咩分別",
+    excerpt: "同一本小朋友嘅書，國際學校同本地、直資、私立面試嘅講法唔同。準備兩個講法，而唔係兩套故事。私人報價，唔保證取錄。",
+    date: "2026-10-19",
+    readMin: 6,
+  },
 ];
 
 const APP_BASE = import.meta.env.BASE_URL;
@@ -246,16 +268,30 @@ function getLocalizedPostMeta(slug: string, locale: string): Pick<PostMeta, "tit
 }
 
 function inlineFormat(text: string): ReactNode {
-  // light markdown: **bold**, *italic*, `code`
+  // light markdown: https links, **bold**, *italic*, `code`
   const parts: ReactNode[] = [];
-  const re = /(\*\*[^*]+\*\*|\*[^*]+\*|`[^`]+`)/g;
+  const re = /(https:\/\/[^\s<>"']+|\*\*[^*]+\*\*|\*[^*]+\*|`[^`]+`)/g;
   let last = 0;
   let m: RegExpExecArray | null;
   let key = 0;
   while ((m = re.exec(text)) !== null) {
     if (m.index > last) parts.push(text.slice(last, m.index));
     const token = m[0];
-    if (token.startsWith("**")) parts.push(<strong key={key++}>{token.slice(2, -2)}</strong>);
+    if (token.startsWith("https://")) {
+      const { href, rest } = splitTrailingPunct(token);
+      const safe = safeHttpsUrl(href);
+      if (safe) {
+        const external = !safe.includes("://kidsmybook.com") && !safe.includes("://www.kidsmybook.com");
+        parts.push(
+          <a key={key++} href={safe} {...(external ? { target: "_blank", rel: "noreferrer" } : {})}>
+            {safe}
+          </a>,
+        );
+      } else {
+        parts.push(href);
+      }
+      if (rest) parts.push(rest);
+    } else if (token.startsWith("**")) parts.push(<strong key={key++}>{token.slice(2, -2)}</strong>);
     else if (token.startsWith("*")) parts.push(<em key={key++}>{token.slice(1, -1)}</em>);
     else parts.push(<code key={key++}>{token.slice(1, -1)}</code>);
     last = m.index + token.length;

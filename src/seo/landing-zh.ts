@@ -59,12 +59,12 @@ export const FAQ_PAGE_ZH = {
 };
 
 export const PORTFOLIO_ZH = {
-  title: "升學作品集點樣用一本書突圍｜香港面試 Portfolio｜Kidsmybook",
+  title: "升學作品集｜升小學、升中 DSS／直資同國際學校面試｜Kidsmybook",
   description:
-    "證書堆唔掣勝。用有 ISBN、教授參與嘅正式出版物，做國際學校／私立／直資面試記得住嘅作品集亮點。私人諮詢。",
+    "升小學面試、升中／DSS／直資，同國際學校 portfolio：用有 ISBN、小朋友參與嘅正式出版物做記得住嘅亮點。私人報價，唔保證取錄。",
   eyebrow: "School portfolio · 香港",
-  h1: "升學作品集：點樣用一本書突圍",
-  lead: "證書堆唔掣勝。國際學校、私立同直資面試，每年都見到好多份相近嘅鋼琴、游水、奧數履歷。一本由小朋友參與、可有大學教授審閱、有 ISBN 嘅正式出版物，係面試官記得住、可以引用嘅亮點。",
+  h1: "升學作品集：升小學、升中同國際學校面試點樣用一本書",
+  lead: "證書堆唔掣勝。升小學、升中／直資／DSS，同國際學校面試，每年都見到好多份相近嘅鋼琴、游水、奧數履歷。一本由小朋友參與、可有大學教授審閱、有 ISBN 嘅正式出版物，係面試官記得住、可以引用嘅亮點。",
   pointsTitle: "一本書可以點用",
   points: [
     "面試時有一個具體故事：興趣點嚟、做過咩研究、點樣改到可以出版",
@@ -87,6 +87,30 @@ export const PORTFOLIO_ZH = {
   caseLink: "睇 Hilary 個案",
   readingTitle: "作品集相關文章",
   programmeLink: "了解 12 個月出書計劃",
+  tracksTitle: "升小學、升中、國際學校",
+  tracksIntro:
+    "同一本由小朋友參與嘅正式出版物，喺唔同面試嘅用法唔同。下面三篇講清楚點帶、點講，同已有嘅叩門、直資同國際學校文章點樣一齊睇。Kidsmybook 係出版工作室，唔保證取錄。",
+  tracks: [
+    {
+      title: "升小學面試作品集",
+      body: "小一自行分配、面試同叩門，校長通常只有幾分鐘。重點係小朋友可以指住一頁，用自己嘅說話講興趣點嚟、做過咩，而唔係再厚一本獎狀複印。",
+      href: "/blog/sheng-xiao-xue-mian-shi-zuo-pin-ji",
+      link: "升小學面試作品集：一本書點樣用",
+    },
+    {
+      title: "升中、DSS 同直資",
+      body: "升中同直資、DSS 面試更常問持續興趣同自述。出版物可以放喺作品集前面，作為一項做完、可以核對嘅項目，而唔係再多一張同班一樣嘅證書。",
+      href: "/blog/sheng-zhong-dss-portfolio-chu-ban",
+      link: "升中面試、DSS 同直資：作品集點樣放一本出版物",
+    },
+    {
+      title: "國際學校 vs 本地學校",
+      body: "國際學校面試多數用英文講好奇心同項目；本地、私立同直資較常睇中文表達同家庭點樣支持。同一本書可以準備兩個講法，唔好做成兩套故事。",
+      href: "/blog/guo-ji-vs-ben-di-mian-shi-zuo-pin-ji",
+      link: "國際學校 vs 本地學校面試：出版作品集有咩分別",
+    },
+  ],
+  whatsappLink: "WhatsApp 講吓升小學或升中面試",
   ctaTitle: "想知呢本書適唔適合你個小朋友",
   ctaBody: "講吓年齡、而家學校類型、一個興趣，同你最想解決嘅面試問題。報價私人，網站唔公開價錢。",
 };
@@ -100,13 +124,16 @@ export const EXPLORE_ZH = {
   faq: "常見問題",
   faqBlurb: "ISBN、書店上架、幼稚園、高才通、私人報價。",
   portfolio: "升學作品集",
-  portfolioBlurb: "面試 portfolio：用一本正式出版物做出記得住嘅亮點。",
+  portfolioBlurb: "升小學、升中 DSS／直資，同國際學校面試：用一本正式出版物做亮點。",
   caseLabel: "Hilary 個案",
   caseBlurb: "八歲出版雙語圖鑑，其後有發布會同媒體紀錄。",
   readingTitle: "家長最常睇嘅文章",
 };
 
 export const READING_ZH: { href: string; label: string }[] = [
+  { href: "/blog/sheng-xiao-xue-mian-shi-zuo-pin-ji", label: "升小學面試作品集：一本書點樣用" },
+  { href: "/blog/sheng-zhong-dss-portfolio-chu-ban", label: "升中面試、DSS 同直資：作品集點樣放一本出版物" },
+  { href: "/blog/guo-ji-vs-ben-di-mian-shi-zuo-pin-ji", label: "國際學校 vs 本地學校面試：出版作品集有咩分別" },
   { href: "/blog/zi-fei-chu-shu-vs-dao-shi-zhi", label: "自費出書 vs 導師制出版：邊樣先幫到香港升學面試？" },
   { href: "/blog/isbn-tong-shu-jia-zhang-zhi-nan", label: "香港 ISBN 童書：家長要知嘅 7 件事" },
   { href: "/blog/you-zhi-yuan-zuo-pin-ji-chu-shu", label: "幼稚園作品集：細路都出得書嗎？" },
@@ -118,12 +145,16 @@ export const READING_ZH: { href: string; label: string }[] = [
 ];
 
 export const PORTFOLIO_READING_ZH: { href: string; label: string }[] = [
+  { href: "/blog/sheng-xiao-xue-mian-shi-zuo-pin-ji", label: "升小學面試作品集：一本書點樣用" },
+  { href: "/blog/sheng-zhong-dss-portfolio-chu-ban", label: "升中面試、DSS 同直資：作品集點樣放一本出版物" },
+  { href: "/blog/guo-ji-vs-ben-di-mian-shi-zuo-pin-ji", label: "國際學校 vs 本地學校面試：出版作品集有咩分別" },
   { href: "/blog/you-zhi-yuan-zuo-pin-ji-chu-shu", label: "幼稚園作品集：細路都出得書嗎？" },
   { href: "/blog/zi-fei-chu-shu-vs-dao-shi-zhi", label: "自費出書 vs 導師制出版" },
   { href: "/blog/portfolio-vs-extracurriculars-hk-admissions", label: "實體書出版 vs 傳統興趣班" },
   { href: "/blog/zheng-shu-pi-juan", label: "點解證書堆砌會令面試官疲倦" },
   { href: "/blog/portfolio-book-4-skills", label: "點解一本書會係履歷最強嘅一張牌" },
   { href: "/blog/primary-school-door-knocking-portfolio-prep", label: "小學叩門 Portfolio 準備" },
+  { href: "/blog/international-school-interview-portfolio-highlight", label: "國際學校面試履歷亮點" },
   { href: "/blog/children-project-based-learning-hk", label: "出版一本書作為項目式學習" },
 ];
 
