@@ -18,6 +18,27 @@ interface PostMeta {
 
 const POSTS: PostMeta[] = [
   {
+    slug: "zheng-shu-ban-vs-isbn-chu-ban",
+    title: "證書班 vs ISBN 正式出版：面試作品集點樣睇",
+    excerpt: "證書班交一張等級紙；ISBN 正式出版交一本小朋友參與、可以翻開講嘅書。兩樣可以並存，但唔係同一種證據。私人報價，唔保證取錄。",
+    date: "2026-10-16",
+    readMin: 6,
+  },
+  {
+    slug: "bu-xi-zuo-pin-vs-chu-ban-zuo-pin-ji",
+    title: "補習作品 vs 出版作品集：面試官睇到咩",
+    excerpt: "補習作文、練習紙同模擬面試稿係學習過程。出版作品集係一本做完、有 ISBN、可以引用嘅書。兩樣唔互相取代。私人報價，唔保證取錄。",
+    date: "2026-10-16",
+    readMin: 6,
+  },
+  {
+    slug: "ben-di-xiao-xue-mian-shi-vs-guo-ji-portfolio",
+    title: "本地小學面試文件 vs 國際學校 portfolio：同一本書點樣交",
+    excerpt: "本地小學多數喺面試或叩門當日打開文件；國際學校多數喺申請時先交 portfolio。呢篇講交件時間同位置，唔重複面試講法。私人報價，唔保證取錄。",
+    date: "2026-10-16",
+    readMin: 6,
+  },
+  {
     slug: "hk-international-school-book-mainland-parents",
     title: "大陸家長點樣用一本書幫子女入香港國際學校？",
     excerpt: "從深圳過關送仔女返學嘅家長視角，講香港升學履歷點樣靠一本真人真事改編嘅書突圍。",

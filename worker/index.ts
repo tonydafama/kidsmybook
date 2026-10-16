@@ -839,6 +839,8 @@ const SITEMAP_XML = `<?xml version="1.0" encoding="UTF-8"?>
   <url><loc>https://kidsmybook.com/programme</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://kidsmybook.com/faq</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kidsmybook.com/sheng-xue-zuo-pin-ji</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kidsmybook.com/gao-cai-tong-sheng-xue-zuo-pin-ji</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kidsmybook.com/xing-qu-chu-ban</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kidsmybook.com/blog</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://kidsmybook.com/services</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kidsmybook.com/case-studies</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -872,6 +874,9 @@ const SITEMAP_XML = `<?xml version="1.0" encoding="UTF-8"?>
   <url><loc>https://kidsmybook.com/blog/sheng-xiao-xue-mian-shi-zuo-pin-ji</loc><lastmod>2026-10-16</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kidsmybook.com/blog/sheng-zhong-dss-portfolio-chu-ban</loc><lastmod>2026-10-16</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kidsmybook.com/blog/guo-ji-vs-ben-di-mian-shi-zuo-pin-ji</loc><lastmod>2026-10-16</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kidsmybook.com/blog/zheng-shu-ban-vs-isbn-chu-ban</loc><lastmod>2026-10-16</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kidsmybook.com/blog/bu-xi-zuo-pin-vs-chu-ban-zuo-pin-ji</loc><lastmod>2026-10-16</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kidsmybook.com/blog/ben-di-xiao-xue-mian-shi-vs-guo-ji-portfolio</loc><lastmod>2026-10-16</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 </urlset>
 `;
 
@@ -961,6 +966,8 @@ async function serveSeoAsset(request: Request, env: Env, pathname: string): Prom
       mapText.includes("https://kidsmybook.com/programme") &&
       mapText.includes("https://kidsmybook.com/faq") &&
       mapText.includes("https://kidsmybook.com/sheng-xue-zuo-pin-ji") &&
+      mapText.includes("https://kidsmybook.com/gao-cai-tong-sheng-xue-zuo-pin-ji") &&
+      mapText.includes("https://kidsmybook.com/xing-qu-chu-ban") &&
       mapText.includes("https://kidsmybook.com/llms-full.txt")
     ) {
       return plainText(mapText, "application/xml; charset=utf-8");
