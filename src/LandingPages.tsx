@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { getLocalizedPostMeta, upsertJsonLd, SITE_ORIGIN } from "./BlogPages";
 import { useLocale } from "./i18n/LocaleContext";
 import type { Locale } from "./i18n/locale";
-import { FAQ_READING_ZH, PORTFOLIO_READING_ZH, READING_ZH } from "./seo/landing-zh";
+import { FAQ_READING_ZH, GAOCAI_PATH, PORTFOLIO_READING_ZH, READING_ZH, XINGQU_PATH, type HubCopy } from "./seo/landing-zh";
 import { breadcrumbList, canonicalUrl, faqPageEntity } from "./seo/meta";
 
 const WHATSAPP_NUMBER = import.meta.env.VITE_WHATSAPP_NUMBER || "85291214157";
@@ -52,14 +52,24 @@ function Breadcrumb({ items }: { items: { href: string; label: string }[] }) {
   );
 }
 
-function QuoteCta({ title, body, whatsappLabel }: { title: string; body: string; whatsappLabel: string }) {
+function QuoteCta({
+  title,
+  body,
+  whatsappLabel,
+  whatsappText,
+}: {
+  title: string;
+  body: string;
+  whatsappLabel: string;
+  whatsappText?: string;
+}) {
   const { t } = useLocale();
   return (
     <section className="panel final-cta">
       <h2>{title}</h2>
       <p>{body}</p>
       <div className="cta-row">
-        <a className="btn primary" href={whatsappHref(t.whatsapp.home)} target="_blank" rel="noreferrer">
+        <a className="btn primary" href={whatsappHref(whatsappText || t.whatsapp.home)} target="_blank" rel="noreferrer">
           {whatsappLabel}
         </a>
         <a className="btn ghost" href="mailto:kidsmybook@outlook.com">
@@ -370,6 +380,117 @@ export function PortfolioHubPage() {
   );
 }
 
+export function HubLandingPage({ path, page }: { path: string; page: HubCopy }) {
+  const { t, locale } = useLocale();
+  const homeLabel = homeLabelFor(locale);
+
+  useEffect(() => {
+    upsertJsonLd("kidsmybook-page-ld", {
+      "@context": "https://schema.org",
+      "@graph": [
+        breadcrumbList([
+          { name: homeLabel, path: "/" },
+          { name: page.crumb, path },
+        ]),
+        {
+          "@type": "WebPage",
+          name: page.h1,
+          description: page.description,
+          url: canonicalUrl(path),
+          isPartOf: { "@type": "WebSite", name: "Kidsmybook", url: SITE_ORIGIN },
+        },
+        faqPageEntity(page.faqs, `${canonicalUrl(path)}#faq`),
+      ],
+    });
+    return () => upsertJsonLd("kidsmybook-page-ld", null);
+  }, [homeLabel, page, path]);
+
+  return (
+    <main className="landing">
+      <section className="panel">
+        <Breadcrumb
+          items={[
+            { href: appHref("/"), label: homeLabel },
+            { href: appHref(path), label: page.crumb },
+          ]}
+        />
+        <p className="eyebrow">{page.eyebrow}</p>
+        <h1>{page.h1}</h1>
+        <p className="lead">{page.lead}</p>
+        <p>
+          <strong>{page.notLabel}</strong>
+          {locale === "en" ? ": " : "："}
+          {page.notBody}
+        </p>
+        <div className="cta-row">
+          <a className="btn primary" href={whatsappHref(page.whatsappText)} target="_blank" rel="noreferrer">
+            {t.hero.bookConsult}
+          </a>
+          <a className="btn ghost" href={appHref("/programme")}>
+            {t.nav.programme}
+          </a>
+        </div>
+      </section>
+
+      <section className="panel">
+        <h2>{page.listTitle}</h2>
+        <ul className="privacy-list">
+          {page.listItems.map((item) => (
+            <li key={item}>{item}</li>
+          ))}
+        </ul>
+        <h2>{page.limitTitle}</h2>
+        <ul className="privacy-list">
+          {page.limitItems.map((item) => (
+            <li key={item}>{item}</li>
+          ))}
+        </ul>
+      </section>
+
+      <section className="panel" id="path">
+        <h2>{page.pathTitle}</h2>
+        <p>{page.pathIntro}</p>
+        <ol className="journey-list">
+          {page.steps.map((step) => (
+            <li key={step.name}>
+              <strong>{step.name}</strong> — {step.text}
+            </li>
+          ))}
+        </ol>
+      </section>
+
+      <section className="panel" id="faq" itemScope itemType="https://schema.org/FAQPage">
+        <h2>{page.faqTitle}</h2>
+        <div className="faq-list">
+          {page.faqs.map((item) => (
+            <details key={item.q} className="faq-item" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
+              <summary className="faq-q" itemProp="name">
+                {item.q}
+              </summary>
+              <div className="faq-a" itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
+                <div itemProp="text">{item.a}</div>
+              </div>
+            </details>
+          ))}
+        </div>
+      </section>
+
+      <ReadingList title={page.readingTitle} links={localizedReading(page.links, locale)} />
+      <QuoteCta title={page.ctaTitle} body={page.ctaBody} whatsappLabel={t.hero.bookConsult} whatsappText={page.whatsappText} />
+    </main>
+  );
+}
+
+export function GaocaiHubPage() {
+  const { t } = useLocale();
+  return <HubLandingPage path={GAOCAI_PATH} page={t.gaocaiPage} />;
+}
+
+export function XingquHubPage() {
+  const { t } = useLocale();
+  return <HubLandingPage path={XINGQU_PATH} page={t.xingquPage} />;
+}
+
 export function HomeExplore() {
   const { t, locale } = useLocale();
   const links = localizedReading(READING_ZH, locale);
@@ -391,6 +512,18 @@ export function HomeExplore() {
           <div className="service-card-body">
             <h4>{t.explore.portfolio}</h4>
             <p>{t.explore.portfolioBlurb}</p>
+          </div>
+        </a>
+        <a className="service-card link-card" href={appHref(GAOCAI_PATH)}>
+          <div className="service-card-body">
+            <h4>{t.gaocaiPage.cardTitle}</h4>
+            <p>{t.gaocaiPage.cardBlurb}</p>
+          </div>
+        </a>
+        <a className="service-card link-card" href={appHref(XINGQU_PATH)}>
+          <div className="service-card-body">
+            <h4>{t.xingquPage.cardTitle}</h4>
+            <p>{t.xingquPage.cardBlurb}</p>
           </div>
         </a>
         <a className="service-card link-card" href={appHref("/faq")}>

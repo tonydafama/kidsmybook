@@ -1,3 +1,5 @@
+import type { HubCopy } from "../seo/landing-zh";
+
 export const PROGRAMME_HANS = {
   title: "小朋友出书计划香港｜12 个月导师制 ISBN 出版｜Kidsmybook",
   description:
@@ -114,7 +116,7 @@ export const PORTFOLIO_HANS = {
 export const EXPLORE_HANS = {
   kicker: "开始了解",
   title: "小朋友出书、作品集、常见问题",
-  intro: "高意图问题有独立页面：计划怎么走、升学作品集怎么用一本书，以及 ISBN、收费方式等问答。",
+  intro: "高意图问题有独立页面：计划怎么走、升学作品集怎么用一本书、高才通证明物、兴趣出版，以及 ISBN、收费方式等问答。",
   programme: "小朋友出书计划",
   programmeBlurb: "12 个月导师制，由兴趣到 ISBN 正式出版。",
   faq: "常见问题",
@@ -321,7 +323,7 @@ export const PORTFOLIO_EN = {
 export const EXPLORE_EN = {
   kicker: "Start here",
   title: "Author programme, portfolio, and FAQ",
-  intro: "High-intent questions have their own pages: how the year runs, how a book works in admissions, and answers on ISBN and private quotes.",
+  intro: "High-intent questions have their own pages: how the year runs, how a book works in admissions, Top Talent Pass proof, an interest-to-ISBN path, and answers on ISBN and private quotes.",
   programme: "Child author programme",
   programmeBlurb: "12 mentored months, from an interest to a formal ISBN book.",
   faq: "FAQ",
@@ -407,3 +409,297 @@ export const FAQ_EN: { q: string; a: string }[] = [
     a: "The programme aims for a formal print run and a listing path on physical bookstore platforms (for example Joint Publishing, Commercial Press, or Chung Hwa arrangements, depending on the title and package). For parents, the point is a formal publication that can be seen and cited. Details are explained per case in consultation.",
   },
 ];
+
+export const GAOCAI_HANS: HubCopy = {
+  title: "高才通升学作品集｜新来港家庭用 ISBN 童书做证明物｜Kidsmybook",
+  description:
+    "高才通和新来港家庭：一本小朋友参与、有 ISBN 的正式出版物，可以放进香港升小学、升中或国际学校作品集，作为讲得清楚、可以引用的证明物。Kidsmybook 不是升学中介，不保证学位。私人报价。",
+  eyebrow: "高才通 · 新来港 · 香港",
+  h1: "高才通和新来港家庭：升学作品集怎样用一本 ISBN 童书做证明物",
+  lead: "刚以高才通或其他途径来港的家庭，作品集往往还没有本地学校纪录。一本由小朋友参与、可有大学教授审阅、有 ISBN 的正式出版物，是一件可以带去面试、可以引用的证明物：证明一段持续兴趣、小朋友做过的工序，以及一份做完的出版成果。",
+  notLabel: "诚实界限",
+  notBody:
+    "Kidsmybook 是出版工作室，不是升学中介，没有学校合作，也不保证任何学位。书不取代签证文件、成绩表或学校报告，也不是有书就录取。最终录取由学校决定。",
+  listTitle: "这本书可以证明什么",
+  listItems: [
+    "一段小朋友真的做过的兴趣：观察、练习、修改，而不是只报过班",
+    "一件可以打开、可以指着一页讲的实物，适合升小学短面试、升中自述，和国际学校 portfolio",
+    "正式出版路径上的书号和出版安排，家庭不必自己摸索整个流程",
+    "按需要先有发布会、展览或媒体纪录，才变成讲得出口的旁证",
+  ],
+  limitTitle: "这本书不证明什么",
+  limitItems: [
+    "不证明已经获任何学校录取，也不代替面试",
+    "不代替前一所城市的在学证明、成绩或推荐信",
+    "不是高才通签证本身的申请文件",
+    "公开具名个案只有 Hilary（出版时八岁，蝴蝶图鉴）。我们不会把其他家庭写成已完成个案",
+  ],
+  pathTitle: "由兴趣到可以引用的作品集",
+  pathIntro: "和 12 个月出书计划同一条路径。高才通家庭不必先成为本地专家才可以开始。",
+  steps: [
+    { name: "讲一件兴趣", text: "咨询时讲年龄、现在或目标是升小、升中还是国际学校，以及一件小朋友会自己翻开来做的事。" },
+    { name: "导师制完成一本书", text: "12 个月：创作、可有大学教授审阅、亲子排版，保留小朋友自己的声音。" },
+    { name: "ISBN 和正式出版", text: "按正式出版要求处理书号和出版安排。书号细节以香港公共图书馆书刊注册组为准。Kidsmybook 不是该组。" },
+    { name: "放进升学作品集", text: "同一本实物，按升小学、升中、DSS、直资或国际学校准备讲法。作品集总页讲怎么用。" },
+  ],
+  faqTitle: "高才通作品集常见问题",
+  faqs: [
+    {
+      q: "高才通用一本 ISBN 童书，是不是等于找升学中介？",
+      a: "不是。Kidsmybook 是出版工作室，负责导师制出版和作品集包装。我们不代表任何学校、不安排学位，也没有学校合作。",
+    },
+    {
+      q: "正式出版能不能保证香港学位？",
+      a: "不能。书可以让作品集更好讲、更容易被记住。录取由学校决定。网站不会写保证入学。",
+    },
+    {
+      q: "新来港第一年，作品集空白怎么补？",
+      a: "不必先堆满本地证书。由一件真实兴趣做起，用 12 个月完成一本小朋友参与的出版物，再放进升小学、升中或国际学校作品集。前一城市的在学文件仍然有用，书是加一件讲得清楚的成果，不是抹掉旧纪录。",
+    },
+    {
+      q: "这本书证明兴趣，还是证明成绩？",
+      a: "证明一段做完的兴趣和小朋友的参与，包括可有教授审阅和 ISBN 出版安排。它不是学科成绩，也不是公开考试分数。",
+    },
+    {
+      q: "怎样索取私人报价？",
+      a: "WhatsApp https://wa.me/85291214157 或电邮 kidsmybook@outlook.com。讲小朋友年龄、目标是升小、升中还是国际学校，以及一个兴趣。网站不公开价目。",
+    },
+  ],
+  readingTitle: "高才通和升学作品集延伸阅读",
+  links: [
+    { href: "/programme", label: "12 个月小朋友出书计划" },
+    { href: "/sheng-xue-zuo-pin-ji", label: "升学作品集总页" },
+    { href: "/faq", label: "常见问题" },
+    { href: "/xing-qu-chu-ban", label: "由兴趣走到 ISBN 童书" },
+    { href: "/blog/top-talent-pass-first-year-portfolio", label: "高才通来港第一年作品集" },
+    { href: "/blog/gtp-family-child-book-portfolio", label: "高才通家庭：一本书和证书堆" },
+    { href: "/blog/sheng-xiao-xue-mian-shi-zuo-pin-ji", label: "升小学面试作品集：一本书怎样用" },
+    { href: "/blog/sheng-zhong-dss-portfolio-chu-ban", label: "升中、DSS 和直资作品集" },
+  ],
+  ctaTitle: "先讲家庭情况，再私人报价",
+  ctaBody: "网站不公开价目，也不保证学位。WhatsApp 讲年龄、目标学校类型和一个兴趣。",
+  whatsappText: "想了解高才通／新来港家庭怎样用一本 ISBN 童书做升学作品集证明物",
+  cardTitle: "高才通升学作品集",
+  cardBlurb: "新来港家庭：ISBN 童书作为可引用的证明物。不保证学位。",
+  crumb: "高才通升学作品集",
+};
+
+export const XINGQU_HANS: HubCopy = {
+  title: "兴趣出版｜高尔夫、钢琴、马术到导师制 ISBN 童书｜Kidsmybook",
+  description:
+    "已经有高尔夫、钢琴、马术或其他持续兴趣？可以把练习里小朋友真正留意到的事，做成导师制 ISBN 童书，再放进升学作品集。不必停班。私人报价，不保证学位。",
+  eyebrow: "兴趣 → 出版 · 香港",
+  h1: "兴趣出版：高尔夫、钢琴、马术怎样走到一本导师制 ISBN 童书",
+  lead: "兴趣班已经买到练习时间。面试作品集还差一件讲得明白的成果：小朋友在高尔夫、钢琴、马术或其他兴趣里留意过什么、做过什么、改过什么。Kidsmybook 用 12 个月导师制，把这段兴趣做成有 ISBN 的正式出版物，再按需要放进升学作品集。",
+  notLabel: "这条路径不是",
+  notBody:
+    "不是叫你停钢琴、停高尔夫或停马术，也不是用书取代教练或考级。Kidsmybook 不是升学中介，没有学校合作，不保证学位。高尔夫、钢琴、马术是兴趣例子；公开具名个案仍然只有 Hilary 的蝴蝶图鉴，我们不会把未出版的兴趣写成已完成的书。",
+  listTitle: "哪种兴趣适合走这条路",
+  listItems: [
+    "已经持续练习，小朋友讲得出自己留意到的细节",
+    "家长想要一件面试官记得住的成果，而不是再添一个周末班",
+    "可以是运动、音乐、动物、手作或一个小题目；深度按年龄",
+    "中文、英文或双语，视乎目标学校，咨询时再定",
+  ],
+  limitTitle: "书和兴趣班各司其职",
+  limitItems: [
+    "兴趣班和考级继续负责练习；书负责把一段兴趣讲完",
+    "书不取代教练评语，也不是再多一张相同的证书",
+    "未出版的高尔夫、钢琴或马术，不会被写成已经出了书",
+    "录取由学校决定。公开具名出版个案只有 Hilary",
+  ],
+  pathTitle: "由兴趣班到可以带去面试的书",
+  pathIntro: "四步接到出书计划和升学作品集。中途可以先 WhatsApp 问适不适合，报价仍然私人。",
+  steps: [
+    { name: "留下一件兴趣", text: "选一件小朋友会自己回去做的事。运动、乐器、动物、城市观察都可以，不限高尔夫、钢琴或马术。" },
+    { name: "导师制写成书", text: "计划页讲五个阶段：咨询、专属课程、出版研讨和可有大学教授审阅、亲子排版、印刷与上架。" },
+    { name: "正式 ISBN 出版", text: "书是正式出版物，不是兴趣班再多一张证书。书号安排按香港书刊注册组公开做法处理；Kidsmybook 不是官方机构。" },
+    { name: "接到升学作品集", text: "完成后才放进升小学、升中或国际学校作品集。怎样带、怎样讲，见作品集总页。" },
+  ],
+  faqTitle: "兴趣出版常见问题",
+  faqs: [
+    {
+      q: "已经学钢琴、高尔夫或马术，还要不要出书？",
+      a: "不必为出书而停班。如果作品集只有考级纸，面试就只剩一个等级。书是把练习里小朋友真的留意到的事做成可以翻开讲的成果。",
+    },
+    {
+      q: "出书是不是取代兴趣班和考级？",
+      a: "不是。教练和考级继续负责练习。Kidsmybook 负责导师制出版：小朋友参与、可有大学教授审阅、ISBN 和升学作品集包装。",
+    },
+    {
+      q: "是不是一定要高尔夫、钢琴或马术才可以出书？",
+      a: "不是。这三样是家长已经长期投入的例子。昆虫、城市、手作或其他小题目一样可以，只要兴趣稳定、深度适合年龄。",
+    },
+    {
+      q: "这本书怎样接到升学作品集和出书计划？",
+      a: "先看 12 个月出书计划，完成后才放进升学作品集。Kidsmybook 不保证学位，也没有学校合作。",
+    },
+    {
+      q: "怎样索取私人报价？",
+      a: "WhatsApp https://wa.me/85291214157 或电邮 kidsmybook@outlook.com。讲年龄、一件兴趣，和目标是升小、升中还是国际学校。网站不公开价目。",
+    },
+  ],
+  readingTitle: "兴趣、计划和作品集",
+  links: [
+    { href: "/programme", label: "12 个月小朋友出书计划" },
+    { href: "/sheng-xue-zuo-pin-ji", label: "升学作品集总页" },
+    { href: "/faq", label: "常见问题" },
+    { href: "/gao-cai-tong-sheng-xue-zuo-pin-ji", label: "高才通／新来港证明物" },
+    { href: "/blog/xing-qu-bian-chu-ban", label: "兴趣怎样变成一本正式出版的书" },
+    { href: "/blog/zheng-shu-ban-vs-isbn-chu-ban", label: "证书班 vs ISBN 正式出版" },
+    { href: "/blog/portfolio-vs-extracurriculars-hk-admissions", label: "实体书出版 vs 传统兴趣班" },
+  ],
+  ctaTitle: "讲一件兴趣，再私人报价",
+  ctaBody: "网站不公开价目，也不保证学位。WhatsApp 讲年龄、兴趣和目标学校类型。",
+  whatsappText: "想了解由兴趣（例如高尔夫、钢琴或马术）走到导师制 ISBN 童书和升学作品集",
+  cardTitle: "兴趣出版",
+  cardBlurb: "高尔夫、钢琴、马术等持续兴趣，走到导师制 ISBN 童书。",
+  crumb: "兴趣出版",
+};
+
+export const GAOCAI_EN: HubCopy = {
+  title: "Top Talent Pass school portfolio | An ISBN children's book as proof | Kidsmybook",
+  description:
+    "Top Talent Pass and newly arrived families: a child-made ISBN book can sit in a Hong Kong primary, secondary, or international-school portfolio as something an interviewer can cite. Kidsmybook is not an admissions agent and does not guarantee a place. Private quotation.",
+  eyebrow: "Top Talent Pass · newly arrived · Hong Kong",
+  h1: "Top Talent Pass and newly arrived families: an ISBN children's book as portfolio proof",
+  lead: "Families who have just arrived often have no local school file yet. A formally published ISBN book the child took part in — with university professor review when it fits — is an object you can carry into an interview and cite: a sustained interest, the steps the child actually did, and a finished publication.",
+  notLabel: "Honest limits",
+  notBody:
+    "Kidsmybook is a publishing studio, not an admissions agent. There is no school partnership and no guaranteed place. The book does not replace visa papers, transcripts, or a school report, and it is not an offer of admission. The school decides.",
+  listTitle: "What the book can show",
+  listItems: [
+    "An interest the child actually worked on: noticing, practising, and revising, not only enrolling in a class",
+    "A physical object to open on one page, for a short primary interview, a secondary statement, or an international-school portfolio",
+    "ISBN and publishing arrangements on a formal path, so the family is not mapping the whole process alone",
+    "A launch, exhibition, or media record only when the family wants extra evidence they can talk about",
+  ],
+  limitTitle: "What the book does not show",
+  limitItems: [
+    "It does not show that any school has offered a place, and it does not replace the interview",
+    "It does not replace school records, grades, or references from the previous city",
+    "It is not a Top Talent Pass visa application document",
+    "The only named public case is Hilary (age 8 at publication, a butterfly guide). Other families are not written up as finished cases",
+  ],
+  pathTitle: "From an interest to a citable portfolio",
+  pathIntro: "The same 12-month author programme. A Top Talent Pass family does not need to become a local expert before starting.",
+  steps: [
+    { name: "Name one interest", text: "In consultation: age, whether the target is primary, secondary, or an international school, and one thing the child returns to." },
+    { name: "A mentored book", text: "Twelve months: creation, university professor review when it fits, and parent-child layout that keeps the child's voice." },
+    { name: "ISBN and formal publication", text: "Book number and publishing arrangements follow the formal path. Details follow the Hong Kong Public Libraries Books Registration Office. Kidsmybook is not that office." },
+    { name: "Place it in the portfolio", text: "One physical book, told for primary, secondary, DSS, direct-subsidy, or international interviews. The portfolio page explains the use." },
+  ],
+  faqTitle: "Top Talent Pass portfolio questions",
+  faqs: [
+    {
+      q: "Does an ISBN children's book mean Kidsmybook is an admissions agent?",
+      a: "No. Kidsmybook is a publishing studio. We mentor the book and package a portfolio. We do not represent any school, arrange places, or hold school partnerships.",
+    },
+    {
+      q: "Can formal publication guarantee a Hong Kong school place?",
+      a: "No. A book can make the portfolio easier to explain and easier to remember. The school decides. This site does not promise admission.",
+    },
+    {
+      q: "How do you fill an empty portfolio in the first year?",
+      a: "You do not need a full stack of local certificates first. Start from one real interest, finish a child-made publication over 12 months, then place it in a primary, secondary, or international-school portfolio. Records from the previous city still matter. The book adds a clear outcome.",
+    },
+    {
+      q: "Does the book prove an interest or a grade?",
+      a: "It shows a finished interest and the child's participation, including professor review when it fits and ISBN publishing arrangements. It is not a subject score and not a public exam result.",
+    },
+    {
+      q: "How do we ask for a private quotation?",
+      a: "WhatsApp https://wa.me/85291214157 or email kidsmybook@outlook.com. Share the child's age, whether the target is primary, secondary, or an international school, and one interest. Prices are not on the site.",
+    },
+  ],
+  readingTitle: "Further reading",
+  links: [
+    { href: "/programme", label: "12-month child author programme" },
+    { href: "/sheng-xue-zuo-pin-ji", label: "School portfolio hub" },
+    { href: "/faq", label: "FAQ" },
+    { href: "/xing-qu-chu-ban", label: "From an interest to an ISBN children's book" },
+    { href: "/blog/top-talent-pass-first-year-portfolio", label: "Top Talent Pass first-year portfolio" },
+    { href: "/blog/gtp-family-child-book-portfolio", label: "GTP families: one book and a certificate stack" },
+    { href: "/blog/sheng-xiao-xue-mian-shi-zuo-pin-ji", label: "Primary interview portfolio" },
+    { href: "/blog/sheng-zhong-dss-portfolio-chu-ban", label: "Secondary, DSS, and direct-subsidy portfolios" },
+  ],
+  ctaTitle: "Tell us the family situation, then we quote privately",
+  ctaBody: "Prices are not on the site, and no place is guaranteed. WhatsApp the age, target school type, and one interest.",
+  whatsappText: "We want to know how a Top Talent Pass or newly arrived family can use an ISBN children's book as portfolio proof",
+  cardTitle: "Top Talent Pass portfolio",
+  cardBlurb: "Newly arrived families: an ISBN book as citable proof. No place is guaranteed.",
+  crumb: "Top Talent Pass portfolio",
+};
+
+export const XINGQU_EN: HubCopy = {
+  title: "Interest to ISBN | Golf, piano, and riding into a mentored children's book | Kidsmybook",
+  description:
+    "Already in golf, piano, riding, or another sustained interest? Turn what the child actually notices into a mentored ISBN book, then a school portfolio. You do not have to quit the class. Private quotation. No place is guaranteed.",
+  eyebrow: "Interest → publication · Hong Kong",
+  h1: "From an interest to a book: golf, piano, and riding on a mentored ISBN path",
+  lead: "The class already buys practice time. A school portfolio still needs one outcome the child can explain: what they noticed, did, and changed in golf, piano, riding, or another interest. Kidsmybook uses a 12-month mentored programme to make that interest a formally published ISBN book, then places it in a portfolio when the family needs it.",
+  notLabel: "What this path is not",
+  notBody:
+    "It does not ask you to quit piano, golf, or riding, and it does not replace a coach or a grade exam. Kidsmybook is not an admissions agent, has no school partnership, and does not guarantee a place. Golf, piano, and riding are examples. The only named public case is still Hilary's butterfly guide. An unpublished interest is not written up as a finished book.",
+  listTitle: "Which interests fit",
+  listItems: [
+    "The child already practises and can name a detail they noticed",
+    "The family wants one outcome an interviewer remembers, not another weekend class",
+    "Sport, music, animals, making, or a small topic all fit. Depth follows age",
+    "Chinese, English, or bilingual, chosen for the target school in consultation",
+  ],
+  limitTitle: "The class and the book do different jobs",
+  limitItems: [
+    "The class and grade exams keep the practice. The book finishes the story of that interest",
+    "The book does not replace a coach's note, and it is not one more identical certificate",
+    "Golf, piano, or riding that has not been published is not described as a finished title",
+    "The school decides admission. The only named published case is Hilary",
+  ],
+  pathTitle: "From the class to a book you can carry in",
+  pathIntro: "Four steps connect the author programme and the school portfolio. A WhatsApp note can test fit first. The quotation stays private.",
+  steps: [
+    { name: "Keep one interest", text: "Choose something the child returns to. Sport, an instrument, animals, or city observation all work. Golf, piano, and riding are examples, not a list of finished books." },
+    { name: "Write it with a mentor", text: "The programme page sets five phases: consultation, classes, a publishing seminar with university professor review when it fits, parent-child layout, then print and listing." },
+    { name: "Formal ISBN publication", text: "The result is a formal publication, not another class certificate. ISBN arrangements follow the Books Registration Office. Kidsmybook is not that office." },
+    { name: "Move it into the portfolio", text: "After the book is finished, place it in a primary, secondary, or international-school portfolio. The portfolio page explains what to carry and how to tell it." },
+  ],
+  faqTitle: "Interest-to-book questions",
+  faqs: [
+    {
+      q: "If my child already does piano, golf, or riding, do we still need a book?",
+      a: "You do not quit the class to publish. If the portfolio is only a grade certificate, the interview is only a level. The book turns what the child actually noticed in practice into something they can open and explain.",
+    },
+    {
+      q: "Does the book replace the class or the grade exam?",
+      a: "No. The coach and the exam keep the practice. Kidsmybook runs mentor-led publishing: the child takes part, university professors may review, and the family gets ISBN arrangements plus portfolio packaging.",
+    },
+    {
+      q: "Does the interest have to be golf, piano, or riding?",
+      a: "No. Those three are examples of interests families already sustain. Insects, a city, making, or another small topic can work if the interest is steady and the depth fits the age.",
+    },
+    {
+      q: "How does the book connect to the portfolio and the programme?",
+      a: "Start with the 12-month author programme. Place the finished book in the school portfolio afterwards. Kidsmybook does not guarantee a place and has no school partnership.",
+    },
+    {
+      q: "How do we ask for a private quotation?",
+      a: "WhatsApp https://wa.me/85291214157 or email kidsmybook@outlook.com. Share the age, one interest, and whether the target is primary, secondary, or an international school. Prices are not on the site.",
+    },
+  ],
+  readingTitle: "Interest, programme, and portfolio",
+  links: [
+    { href: "/programme", label: "12-month child author programme" },
+    { href: "/sheng-xue-zuo-pin-ji", label: "School portfolio hub" },
+    { href: "/faq", label: "FAQ" },
+    { href: "/gao-cai-tong-sheng-xue-zuo-pin-ji", label: "Top Talent Pass proof object" },
+    { href: "/blog/xing-qu-bian-chu-ban", label: "How an interest becomes a published book" },
+    { href: "/blog/zheng-shu-ban-vs-isbn-chu-ban", label: "Certificate class vs formal ISBN publication" },
+    { href: "/blog/portfolio-vs-extracurriculars-hk-admissions", label: "A published book vs traditional classes" },
+  ],
+  ctaTitle: "Name one interest, then we quote privately",
+  ctaBody: "Prices are not on the site, and no place is guaranteed. WhatsApp the age, the interest, and the target school type.",
+  whatsappText: "We want to know how an interest such as golf, piano, or riding becomes a mentored ISBN children's book and a school portfolio",
+  cardTitle: "Interest to ISBN",
+  cardBlurb: "Golf, piano, riding, and other sustained interests, on a mentored ISBN path.",
+  crumb: "Interest to ISBN",
+};

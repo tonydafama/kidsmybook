@@ -6,12 +6,16 @@ import {
   FAQ_HANS,
   FAQ_PAGE_EN,
   FAQ_PAGE_HANS,
+  GAOCAI_EN,
+  GAOCAI_HANS,
   PORTFOLIO_EN,
   PORTFOLIO_HANS,
   PROGRAMME_EN,
   PROGRAMME_HANS,
+  XINGQU_EN,
+  XINGQU_HANS,
 } from "./landing-extra";
-import { EXPLORE_ZH, FAQ_PAGE_ZH, PORTFOLIO_ZH, PROGRAMME_ZH } from "../seo/landing-zh";
+import { EXPLORE_ZH, FAQ_PAGE_ZH, GAOCAI_ZH, PORTFOLIO_ZH, PROGRAMME_ZH, XINGQU_ZH, type HubCopy } from "../seo/landing-zh";
 import { HOME_DESCRIPTION_ZH, HOME_FAQ, HOME_TITLE_ZH } from "../seo/meta";
 
 export type ServiceSlug =
@@ -208,6 +212,8 @@ export type Translations = {
   programmePage: typeof PROGRAMME_ZH;
   faqPage: typeof FAQ_PAGE_ZH;
   portfolioPage: typeof PORTFOLIO_ZH;
+  gaocaiPage: HubCopy;
+  xingquPage: HubCopy;
   seo: {
     homeTitle: string;
     homeDesc: string;
@@ -485,6 +491,8 @@ const zhHant: Translations = {
   programmePage: PROGRAMME_ZH,
   faqPage: FAQ_PAGE_ZH,
   portfolioPage: PORTFOLIO_ZH,
+  gaocaiPage: GAOCAI_ZH,
+  xingquPage: XINGQU_ZH,
   seo: {
     homeTitle: HOME_TITLE_ZH,
     homeDesc: HOME_DESCRIPTION_ZH,
@@ -746,6 +754,8 @@ const zhHans: Translations = {
   programmePage: PROGRAMME_HANS,
   faqPage: FAQ_PAGE_HANS,
   portfolioPage: PORTFOLIO_HANS,
+  gaocaiPage: GAOCAI_HANS,
+  xingquPage: XINGQU_HANS,
   seo: {
     homeTitle: "Kidsmybook｜儿童成就出版｜小朋友出书・ISBN・升学作品集",
     homeDesc:
@@ -1019,6 +1029,8 @@ const en: Translations = {
   programmePage: PROGRAMME_EN,
   faqPage: FAQ_PAGE_EN,
   portfolioPage: PORTFOLIO_EN,
+  gaocaiPage: GAOCAI_EN,
+  xingquPage: XINGQU_EN,
   seo: {
     homeTitle: "Kidsmybook | Child author programme Hong Kong",
     homeDesc:

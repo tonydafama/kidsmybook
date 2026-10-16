@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import { AiBookCreatorPanel } from "./AiBookCreatorPage";
-import { FaqPage, HomeExplore, PortfolioHubPage, ProgrammePage } from "./LandingPages";
+import { FaqPage, GaocaiHubPage, HomeExplore, PortfolioHubPage, ProgrammePage, XingquHubPage } from "./LandingPages";
 import { LanguageSwitcher } from "./components/LanguageSwitcher";
 import { useLocale } from "./i18n/LocaleContext";
 import { BlogIndexPage, BlogPostPage, POSTS, SITE_ORIGIN, getLocalizedPostMeta, upsertJsonLd } from "./BlogPages";
@@ -503,6 +503,8 @@ export default function App() {
     "/programme",
     "/faq",
     "/sheng-xue-zuo-pin-ji",
+    "/gao-cai-tong-sheng-xue-zuo-pin-ji",
+    "/xing-qu-chu-ban",
     "/case-studies",
     "/case-studies/hilary-butterfly-guide",
     ...serviceItems.map((item) => `/services/${item.slug}`),
@@ -515,6 +517,8 @@ export default function App() {
       "/programme": { title: t.programmePage.title, description: t.programmePage.description },
       "/faq": { title: t.faqPage.title, description: t.faqPage.description },
       "/sheng-xue-zuo-pin-ji": { title: t.portfolioPage.title, description: t.portfolioPage.description },
+      "/gao-cai-tong-sheng-xue-zuo-pin-ji": { title: t.gaocaiPage.title, description: t.gaocaiPage.description },
+      "/xing-qu-chu-ban": { title: t.xingquPage.title, description: t.xingquPage.description },
       "/services": { title: t.seo.servicesTitle, description: t.seo.servicesDesc },
       "/case-studies": { title: t.seo.caseStudiesTitle, description: t.seo.caseStudiesDesc },
       "/blog": {
@@ -626,6 +630,8 @@ export default function App() {
       {pathname === "/programme" && <ProgrammePage />}
       {pathname === "/faq" && <FaqPage />}
       {pathname === "/sheng-xue-zuo-pin-ji" && <PortfolioHubPage />}
+      {pathname === "/gao-cai-tong-sheng-xue-zuo-pin-ji" && <GaocaiHubPage />}
+      {pathname === "/xing-qu-chu-ban" && <XingquHubPage />}
       {pathname === "/services" && <ServicesIndexPage services={serviceItems} />}
       {currentService && <ServiceDetailPage item={currentService} />}
       {pathname === "/case-studies" && <CaseStudiesIndex />}

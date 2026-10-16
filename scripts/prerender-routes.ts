@@ -10,10 +10,15 @@ import { safeHttpsUrl, splitTrailingPunct } from "../src/seo/linkify.ts";
 import {
   FAQ_PAGE_ZH,
   FAQ_READING_ZH,
+  GAOCAI_PATH,
+  GAOCAI_ZH,
   PORTFOLIO_READING_ZH,
   PORTFOLIO_ZH,
   PROGRAMME_ZH,
   READING_ZH,
+  XINGQU_PATH,
+  XINGQU_ZH,
+  type HubCopy,
 } from "../src/seo/landing-zh.ts";
 import {
   SITE_ORIGIN,
@@ -216,6 +221,8 @@ function navHtml(): string {
         <a href="${SITE_ORIGIN}/">首頁</a>
         <a href="${SITE_ORIGIN}/programme">出書計劃</a>
         <a href="${SITE_ORIGIN}/sheng-xue-zuo-pin-ji">升學作品集</a>
+        <a href="${SITE_ORIGIN}/gao-cai-tong-sheng-xue-zuo-pin-ji">高才通作品集</a>
+        <a href="${SITE_ORIGIN}/xing-qu-chu-ban">興趣出版</a>
         <a href="${SITE_ORIGIN}/faq">常見問題</a>
         <a href="${SITE_ORIGIN}/services">服務</a>
         <a href="${SITE_ORIGIN}/blog">文章</a>
@@ -629,7 +636,71 @@ ${waLine()}`,
     ),
   };
 
-  return [home, programme, faq, portfolio, blogIndex, caseIndex, hilary];
+  const gaocai = hubDocument(GAOCAI_ZH, GAOCAI_PATH);
+  const xingqu = hubDocument(XINGQU_ZH, XINGQU_PATH);
+
+  return [home, programme, faq, portfolio, gaocai, xingqu, blogIndex, caseIndex, hilary];
+}
+
+function hubDocument(copy: HubCopy, path: string): RouteDocument {
+  return {
+    path,
+    title: copy.title,
+    description: copy.description,
+    ogType: "website",
+    ogImage: ogImageForPath(path),
+    mode: "page",
+    jsonLdId: "kidsmybook-page-ld",
+    jsonLd: {
+      "@context": "https://schema.org",
+      "@graph": [
+        breadcrumbList([
+          { name: "首頁", path: "/" },
+          { name: copy.crumb, path },
+        ]),
+        {
+          "@type": "WebPage",
+          name: copy.h1,
+          description: copy.description,
+          url: canonicalUrl(path),
+          isPartOf: { "@type": "WebSite", name: "Kidsmybook", url: SITE_ORIGIN },
+        },
+        faqPageEntity(copy.faqs, `${canonicalUrl(path)}#faq`),
+      ],
+    },
+    snapshotHtml: pageWrap(
+      `        <h1>${escapeHtml(copy.h1)}</h1>
+        <p>${escapeHtml(copy.lead)}</p>
+        <p><strong>${escapeHtml(copy.notLabel)}</strong>：${escapeHtml(copy.notBody)}</p>
+        <h2>${escapeHtml(copy.listTitle)}</h2>
+        <ul>
+${copy.listItems.map((item) => `          <li>${escapeHtml(item)}</li>`).join("\n")}
+        </ul>
+        <h2>${escapeHtml(copy.limitTitle)}</h2>
+        <ul>
+${copy.limitItems.map((item) => `          <li>${escapeHtml(item)}</li>`).join("\n")}
+        </ul>
+        <h2 id="path">${escapeHtml(copy.pathTitle)}</h2>
+        <p>${escapeHtml(copy.pathIntro)}</p>
+        <ol>
+${copy.steps.map((step) => `          <li><strong>${escapeHtml(step.name)}</strong> — ${escapeHtml(step.text)}</li>`).join("\n")}
+        </ol>
+        <h2 id="faq">${escapeHtml(copy.faqTitle)}</h2>
+${copy.faqs
+  .map(
+    (item) => `        <section>
+          <h2>${escapeHtml(item.q)}</h2>
+          <p>${escapeHtml(item.a)}</p>
+        </section>`,
+  )
+  .join("\n")}
+        <ul>
+${linkList(copy.links)}
+        </ul>
+        <p><a href="https://wa.me/85291214157">${escapeHtml(copy.ctaTitle)}</a></p>
+${waLine()}`,
+    ),
+  };
 }
 
 function outputFile(routePath: string): string {
@@ -688,6 +759,23 @@ function assertDocument(html: string, route: RouteDocument) {
       if (!html.includes(canonicalUrl(track.href))) throw new Error(`portfolio hub missing ${track.href}`);
     }
     if (!html.includes("https://wa.me/85291214157")) throw new Error("portfolio hub missing WhatsApp");
+  }
+  if (route.path === GAOCAI_PATH || route.path === XINGQU_PATH) {
+    const copy = route.path === GAOCAI_PATH ? GAOCAI_ZH : XINGQU_ZH;
+    if (!html.includes("FAQPage") || !html.includes("BreadcrumbList") || !html.includes("WebPage")) {
+      throw new Error(`${route.path} missing FAQPage, BreadcrumbList, or WebPage`);
+    }
+    if (!html.includes(`<h1>${escapeHtml(copy.h1)}</h1>`)) throw new Error(`${route.path} H1 missing`);
+    if (!html.includes(`rel="canonical" href="${canonicalUrl(route.path)}"`)) {
+      throw new Error(`${route.path} canonical missing`);
+    }
+    for (const item of copy.faqs) {
+      if (!html.includes(item.q) || !html.includes(item.a)) throw new Error(`${route.path} FAQ drift: ${item.q}`);
+    }
+    if (!html.includes("https://wa.me/85291214157")) throw new Error(`${route.path} missing WhatsApp`);
+    if (!html.includes(canonicalUrl("/programme")) || !html.includes(canonicalUrl("/sheng-xue-zuo-pin-ji"))) {
+      throw new Error(`${route.path} missing programme or portfolio link`);
+    }
   }
   if (route.path === "/case-studies/hilary-butterfly-guide") {
     if (!html.includes("https://wa.me/85291214157")) {
@@ -770,6 +858,8 @@ function assertSources(posts: RouteDocument[]) {
     `${SITE_ORIGIN}/programme`,
     `${SITE_ORIGIN}/faq`,
     `${SITE_ORIGIN}/sheng-xue-zuo-pin-ji`,
+    `${SITE_ORIGIN}/gao-cai-tong-sheng-xue-zuo-pin-ji`,
+    `${SITE_ORIGIN}/xing-qu-chu-ban`,
     `${SITE_ORIGIN}/llms.txt`,
     `${SITE_ORIGIN}/llms-full.txt`,
   ]) {
