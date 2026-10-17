@@ -843,7 +843,7 @@ Sitemap: https://kidsmybook.com/sitemap.xml
 `;
 
 /** Public IndexNow key. The file at /{key}.txt must be this key and nothing else. */
-const INDEXNOW_KEY = "1e01eada3661348254717ba011ce21d3";
+const INDEXNOW_KEY = "aa6db42839b1103818ac56beba9b9a06";
 
 function isIndexNowKeyPath(pathname: string): boolean {
   return normalizeRoutePath(pathname) === `/${INDEXNOW_KEY}.txt`;

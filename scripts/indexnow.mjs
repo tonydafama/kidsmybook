@@ -16,7 +16,7 @@ import path from "node:path";
 const HOST = "kidsmybook.com";
 const ORIGIN = `https://${HOST}`;
 const ENDPOINT = "https://api.indexnow.org/indexnow";
-const KEY = "1e01eada3661348254717ba011ce21d3";
+const KEY = "aa6db42839b1103818ac56beba9b9a06";
 const ROOT = path.resolve(import.meta.dirname, "..");
 const KEY_FILE = path.join(ROOT, "public", `${KEY}.txt`);
 
