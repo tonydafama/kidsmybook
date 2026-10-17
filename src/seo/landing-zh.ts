@@ -1,5 +1,11 @@
 /** zh-Hant copy for the P0 organic landings. Prerender and the Traditional UI share this file. */
 
+export const BLOG_INDEX_ZH = {
+  title: "香港升學作品集・升小升中・ISBN 童書",
+  description:
+    "香港家長：升小學面試、升中 DSS／直資、國際學校作品集，同導師制 ISBN 出版點樣成為可引用嘅亮點。私人報價，唔保證取錄。",
+};
+
 export const PROGRAMME_ZH = {
   title: "小朋友出書計劃香港｜12 個月導師制 ISBN 出版｜Kidsmybook",
   description:
@@ -113,6 +119,25 @@ export const PORTFOLIO_ZH = {
   whatsappLink: "WhatsApp 講吓升小學或升中面試",
   ctaTitle: "想知呢本書適唔適合你個小朋友",
   ctaBody: "講吓年齡、而家學校類型、一個興趣，同你最想解決嘅面試問題。報價私人，網站唔公開價錢。",
+  faqTitle: "升學作品集常見問題",
+  faqs: [
+    {
+      q: "升小學面試，點解要用一本正式出版物？",
+      a: "小一自行分配、面試同叩門通常只有幾分鐘。一本小朋友參與、有 ISBN 嘅正式出版物，可以指住一頁用自己嘅說話講興趣點嚟，而唔係再厚一本獎狀複印。Kidsmybook 係出版工作室，唔保證取錄。",
+    },
+    {
+      q: "升中、DSS 同直資作品集可以點放呢本書？",
+      a: "升中同直資、DSS 面試較常問持續興趣同自述。出版物可以放喺作品集前面，作為一項做完、可以核對嘅項目。學校決定取錄。",
+    },
+    {
+      q: "國際學校 portfolio 同本地面試係咪要兩本書？",
+      a: "唔使。同一本正式出版物可以準備兩個講法：國際學校多數用英文講好奇心同項目；本地、私立同直資較常睇中文表達。唔好做成兩套互相矛盾嘅故事。",
+    },
+    {
+      q: "點樣索取升學作品集嘅私人報價？",
+      a: "WhatsApp https://wa.me/85291214157 或電郵 kidsmybook@outlook.com。講小朋友年齡、目標係升小、升中定國際學校，同一個興趣。網站唔公開價目，亦唔保證學位。",
+    },
+  ],
 };
 
 export const EXPLORE_ZH = {

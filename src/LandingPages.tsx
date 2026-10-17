@@ -292,13 +292,15 @@ export function PortfolioHubPage() {
           name: page.h1,
           description: page.lead,
           url: canonicalUrl("/sheng-xue-zuo-pin-ji"),
+          inLanguage: locale === "en" ? "en" : locale === "zh-Hans" ? "zh-Hans" : "zh-Hant",
           isPartOf: { "@type": "WebSite", name: "Kidsmybook", url: SITE_ORIGIN },
           about: ["Hong Kong school admissions portfolio", "Child achievement publishing"],
         },
+        faqPageEntity(page.faqs, `${canonicalUrl("/sheng-xue-zuo-pin-ji")}#faq`),
       ],
     });
     return () => upsertJsonLd("kidsmybook-page-ld", null);
-  }, [homeLabel, page.h1, page.lead]);
+  }, [homeLabel, locale, page]);
 
   return (
     <main className="landing">
@@ -372,6 +374,22 @@ export function PortfolioHubPage() {
         <p>
           <a href={appHref("/case-studies/hilary-butterfly-guide")}>{page.caseLink}</a>
         </p>
+      </section>
+
+      <section className="panel" id="faq" itemScope itemType="https://schema.org/FAQPage">
+        <h2>{page.faqTitle}</h2>
+        <div className="faq-list">
+          {page.faqs.map((item) => (
+            <details key={item.q} className="faq-item" open itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
+              <summary className="faq-q" itemProp="name">
+                {item.q}
+              </summary>
+              <div className="faq-a" itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
+                <div itemProp="text">{item.a}</div>
+              </div>
+            </details>
+          ))}
+        </div>
       </section>
 
       <ReadingList title={page.readingTitle} links={localizedReading(PORTFOLIO_READING_ZH, locale)} />

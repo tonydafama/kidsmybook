@@ -1,6 +1,7 @@
 # Canonical host: https://kidsmybook.com
 # www.kidsmybook.com and mybook.pub 301 here. One sitemap only.
 # LLM context: https://kidsmybook.com/llms.txt
+# Google reads User-agent, Allow, Disallow, and Sitemap. Do not add Host.
 
 User-agent: *
 Allow: /
@@ -88,5 +89,4 @@ Disallow: /intake
 Disallow: /intake-form
 Disallow: /api/
 
-Host: https://kidsmybook.com
 Sitemap: https://kidsmybook.com/sitemap.xml

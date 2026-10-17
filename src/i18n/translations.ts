@@ -17,7 +17,7 @@ import {
   XINGQU_EN,
   XINGQU_HANS,
 } from "./landing-extra";
-import { ABOUT_ZH, EXPLORE_ZH, FAQ_PAGE_ZH, GAOCAI_ZH, PORTFOLIO_ZH, PROGRAMME_ZH, XINGQU_ZH, type HubCopy } from "../seo/landing-zh";
+import { ABOUT_ZH, BLOG_INDEX_ZH, EXPLORE_ZH, FAQ_PAGE_ZH, GAOCAI_ZH, PORTFOLIO_ZH, PROGRAMME_ZH, XINGQU_ZH, type HubCopy } from "../seo/landing-zh";
 import { HOME_DESCRIPTION_ZH, HOME_FAQ, HOME_TITLE_ZH } from "../seo/meta";
 
 export type ServiceSlug =
@@ -264,8 +264,8 @@ const zhHant: Translations = {
   blog: {
     kicker: "Kidsmybook 博客",
     backToBlog: "← 返博客",
-    indexTitle: "香港升學・子女教育・真人真事出版",
-    indexDesc: "大陸家長嚟港嘅升學觀察，同埋「一本書點樣變成子女升學亮點」嘅真實經驗。",
+    indexTitle: BLOG_INDEX_ZH.title,
+    indexDesc: BLOG_INDEX_ZH.description,
   },
   hero: {
     eyebrow: "Hong Kong · Publishing · Exhibition · PR",
@@ -547,8 +547,9 @@ const zhHans: Translations = {
   blog: {
     kicker: "Kidsmybook 博客",
     backToBlog: "← 返回博客",
-    indexTitle: "香港升学・子女教育・真人真事出版",
-    indexDesc: "大陆家长来港的升学观察，以及「一本书怎样变成子女升学亮点」的真实经验。",
+    indexTitle: "香港升学作品集・升小升中・ISBN 童书",
+    indexDesc:
+      "香港家长：升小学面试、升中 DSS／直资、国际学校作品集，以及导师制 ISBN 出版怎样成为可引用的亮点。私人报价，不保证录取。",
   },
   hero: {
     ...zhHant.hero,
@@ -816,8 +817,9 @@ const en: Translations = {
   blog: {
     kicker: "Kidsmybook Blog",
     backToBlog: "← Back to Blog",
-    indexTitle: "Hong Kong Admissions · Child Education · True Publishing Stories",
-    indexDesc: "Real experiences from mainland and expat parents on how a published book becomes a standout highlight in school admissions.",
+    indexTitle: "Hong Kong school portfolios · primary, secondary, ISBN books",
+    indexDesc:
+      "For Hong Kong parents: primary interviews, DSS and direct-subsidy secondary files, international portfolios, and how a mentored ISBN book becomes a citable highlight. Private quotation. No place is guaranteed.",
   },
   hero: {
     eyebrow: "Hong Kong · Publishing · Exhibition · PR",

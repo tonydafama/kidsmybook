@@ -744,7 +744,10 @@ async function handleWhatsAppWebhook(request: Request, env: Env): Promise<Respon
   return json({ ok: true }, 200);
 }
 
-const ROBOTS_TXT = `# LLM context: https://kidsmybook.com/llms.txt
+const ROBOTS_TXT = `# Canonical host: https://kidsmybook.com
+# www.kidsmybook.com and mybook.pub 301 here. One sitemap only.
+# LLM context: https://kidsmybook.com/llms.txt
+# Google reads User-agent, Allow, Disallow, and Sitemap. Do not add Host.
 User-agent: *
 Allow: /
 Disallow: /admin
@@ -829,9 +832,24 @@ Disallow: /intake
 Disallow: /intake-form
 Disallow: /api/
 
-Host: https://kidsmybook.com
 Sitemap: https://kidsmybook.com/sitemap.xml
 `;
+
+const ROBOTS_DIRECTIVE = /^(?:user-agent|allow|disallow|sitemap)\s*:/i;
+
+/** Google robots.txt only. Host is a Yandex directive and is rejected. */
+function isGoogleRobots(text: string): boolean {
+  if (text.trimStart().startsWith("<!")) return false;
+  if (!text.includes("User-agent:") || !text.includes("User-agent: OAI-SearchBot")) return false;
+  if (!text.includes("Sitemap: https://kidsmybook.com/sitemap.xml")) return false;
+  if (text.includes("www.kidsmybook.com/sitemap.xml")) return false;
+  for (const line of text.split("\n")) {
+    const trimmed = line.trim();
+    if (!trimmed || trimmed.startsWith("#")) continue;
+    if (!ROBOTS_DIRECTIVE.test(trimmed)) return false;
+  }
+  return true;
+}
 
 const SITEMAP_XML = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -945,14 +963,7 @@ async function serveSeoAsset(request: Request, env: Env, pathname: string): Prom
   if (pathname === "/robots.txt") {
     const assetRes = await env.ASSETS.fetch(new Request(new URL("/robots.txt", request.url), { method: "GET" }));
     const text = await assetRes.text();
-    if (
-      assetRes.ok &&
-      !text.trimStart().startsWith("<!") &&
-      text.includes("User-agent:") &&
-      text.includes("Sitemap: https://kidsmybook.com/sitemap.xml") &&
-      !text.includes("www.kidsmybook.com/sitemap.xml") &&
-      text.includes("User-agent: OAI-SearchBot")
-    ) {
+    if (assetRes.ok && isGoogleRobots(text)) {
       return plainText(text, "text/plain; charset=utf-8");
     }
     return plainText(ROBOTS_TXT, "text/plain; charset=utf-8");

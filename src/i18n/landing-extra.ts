@@ -111,6 +111,25 @@ export const PORTFOLIO_HANS = {
   whatsappLink: "WhatsApp 讲讲升小学或升中面试",
   ctaTitle: "想知这本书适不适合你的小朋友",
   ctaBody: "说说年龄、现在的学校类型、一个兴趣，和你最想解决的面试问题。报价私人，网站不公开价钱。",
+  faqTitle: "升学作品集常见问题",
+  faqs: [
+    {
+      q: "升小学面试，为什么要用一本正式出版物？",
+      a: "小一自行分配、面试和叩门通常只有几分钟。一本小朋友参与、有 ISBN 的正式出版物，可以指着一页用自己的话讲兴趣从哪来，而不是再厚一本奖状复印。Kidsmybook 是出版工作室，不保证录取。",
+    },
+    {
+      q: "升中、DSS 和直资作品集可以怎样放这本书？",
+      a: "升中和直资、DSS 面试较常问持续兴趣和自述。出版物可以放在作品集前面，作为一项做完、可以核对的项目。学校决定录取。",
+    },
+    {
+      q: "国际学校 portfolio 和本地面试是不是要两本书？",
+      a: "不用。同一本正式出版物可以准备两种讲法：国际学校多数用英文讲好奇心和项目；本地、私立和直资较常看中文表达。不要做成两套互相矛盾的故事。",
+    },
+    {
+      q: "怎样索取升学作品集的私人报价？",
+      a: "WhatsApp https://wa.me/85291214157 或电邮 kidsmybook@outlook.com。讲小朋友年龄、目标是升小、升中还是国际学校，以及一个兴趣。网站不公开价目，也不保证学位。",
+    },
+  ],
 };
 
 export const EXPLORE_HANS = {
@@ -318,6 +337,25 @@ export const PORTFOLIO_EN = {
   whatsappLink: "WhatsApp about a primary or secondary interview",
   ctaTitle: "Ask whether a book fits your child",
   ctaBody: "Tell us the age, current school type, one interest, and the interview problem you want to solve. The quote stays private.",
+  faqTitle: "School portfolio questions",
+  faqs: [
+    {
+      q: "Why use a formal publication in a primary interview?",
+      a: "Discretionary interviews and door-knocking usually last a few minutes. An ISBN book the child helped make lets them point at one page and say where the interest came from, instead of another stack of certificate copies. Kidsmybook is a publishing studio and does not guarantee a place.",
+    },
+    {
+      q: "Where does the book sit in a secondary, DSS, or direct-subsidy portfolio?",
+      a: "Those interviews more often ask about a sustained interest the student can explain. Put the publication at the front as a finished project someone can check. The school decides admission.",
+    },
+    {
+      q: "Do international and local interviews need two books?",
+      a: "No. Prepare two tellings of one formal publication. International interviews often want the project in English. Local, private, and DSS interviews often look at Chinese expression. Do not invent two contradictory stories.",
+    },
+    {
+      q: "How do we ask for a private quote on a school portfolio?",
+      a: "WhatsApp https://wa.me/85291214157 or email kidsmybook@outlook.com. Share the child's age, whether the target is primary, secondary, or an international school, and one interest. The site does not publish prices, and no school place is guaranteed.",
+    },
+  ],
 };
 
 export const EXPLORE_EN = {

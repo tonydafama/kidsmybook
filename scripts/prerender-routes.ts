@@ -9,6 +9,7 @@ import path from "node:path";
 import { safeHttpsUrl, splitTrailingPunct } from "../src/seo/linkify.ts";
 import {
   ABOUT_ZH,
+  BLOG_INDEX_ZH,
   FAQ_PAGE_ZH,
   FAQ_READING_ZH,
   GAOCAI_PATH,
@@ -393,8 +394,8 @@ function serviceRoutes(): RouteDocument[] {
 function staticRoutes(posts: RouteDocument[]): RouteDocument[] {
   const blogIndex: RouteDocument = {
     path: "/blog",
-    title: "香港升學・子女教育・真人真事出版｜Kidsmybook",
-    description: "大陸家長嚟港嘅升學觀察，同埋「一本書點樣變成子女升學亮點」嘅真實經驗。",
+    title: `${BLOG_INDEX_ZH.title}｜Kidsmybook`,
+    description: BLOG_INDEX_ZH.description,
     ogType: "website",
     ogImage: ogImageForPath("/blog"),
     mode: "page",
@@ -402,8 +403,9 @@ function staticRoutes(posts: RouteDocument[]): RouteDocument[] {
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "CollectionPage",
-      name: "香港升學・子女教育・真人真事出版",
-      description: "大陸家長嚟港嘅升學觀察，同埋「一本書點樣變成子女升學亮點」嘅真實經驗。",
+      name: BLOG_INDEX_ZH.title,
+      description: BLOG_INDEX_ZH.description,
+      inLanguage: "zh-Hant",
       url: canonicalUrl("/blog"),
       isPartOf: { "@type": "WebSite", name: "Kidsmybook", url: SITE_ORIGIN },
       mainEntity: {
@@ -417,7 +419,7 @@ function staticRoutes(posts: RouteDocument[]): RouteDocument[] {
       },
     },
     snapshotHtml: pageWrap(
-      `        <h1>香港升學・子女教育・真人真事出版</h1>\n        <p>大陸家長嚟港嘅升學觀察，同埋「一本書點樣變成子女升學亮點」嘅真實經驗。</p>\n        <ul>\n${posts
+      `        <h1>${escapeHtml(BLOG_INDEX_ZH.title)}</h1>\n        <p>${escapeHtml(BLOG_INDEX_ZH.description)}</p>\n        <ul>\n${posts
         .map((post) => `          <li><a href="${canonicalUrl(post.path)}">${escapeHtml(post.title)}</a></li>`)
         .join("\n")}\n        </ul>`,
     ),
@@ -609,7 +611,9 @@ ${waLine()}`,
           name: PORTFOLIO_ZH.h1,
           description: PORTFOLIO_ZH.lead,
           url: canonicalUrl("/sheng-xue-zuo-pin-ji"),
+          inLanguage: "zh-Hant",
         },
+        faqPageEntity(PORTFOLIO_ZH.faqs, `${canonicalUrl("/sheng-xue-zuo-pin-ji")}#faq`),
       ],
     },
     snapshotHtml: pageWrap(
@@ -634,6 +638,15 @@ ${PORTFOLIO_ZH.tracks
         <p><a href="${canonicalUrl("/blog/you-zhi-yuan-zuo-pin-ji-chu-shu")}">幼稚園作品集：細路都出得書嗎？</a></p>
         <p><a href="${canonicalUrl("/case-studies/hilary-butterfly-guide")}">${escapeHtml(PORTFOLIO_ZH.caseLink)}</a></p>
         <p><a href="${canonicalUrl("/programme")}">${escapeHtml(PORTFOLIO_ZH.programmeLink)}</a></p>
+        <h2 id="faq">${escapeHtml(PORTFOLIO_ZH.faqTitle)}</h2>
+${PORTFOLIO_ZH.faqs
+  .map(
+    (item) => `        <section>
+          <h3>${escapeHtml(item.q)}</h3>
+          <p>${escapeHtml(item.a)}</p>
+        </section>`,
+  )
+  .join("\n")}
         <ul>
 ${linkList(PORTFOLIO_READING_ZH)}
         </ul>
@@ -822,6 +835,10 @@ function assertDocument(html: string, route: RouteDocument) {
     if (!html.includes("香港本地、跨境同高才通家庭")) {
       throw new Error("/sheng-xue-zuo-pin-ji body missing Hong Kong coverage");
     }
+    if (!html.includes("FAQPage")) throw new Error("/sheng-xue-zuo-pin-ji missing FAQPage");
+    for (const item of PORTFOLIO_ZH.faqs) {
+      if (!html.includes(item.q) || !html.includes(item.a)) throw new Error(`portfolio FAQ missing ${item.q}`);
+    }
   }
   if (route.path === "/about") {
     if (!html.includes(`<h1>${escapeHtml(ABOUT_ZH.h1)}</h1>`)) throw new Error("/about H1 missing");
@@ -901,7 +918,12 @@ function assertSources(posts: RouteDocument[]) {
   assertCopy(translations, "services-title", "服務｜Kidsmybook 六項兒童成就出版");
   assertCopy(translations, "case-studies-title", "個案｜Kidsmybook 兒童成就出版案例");
   assertCopy(translations, "about-page", "aboutPage: ABOUT_ZH");
-  assertCopy(translations, "blog-index", "香港升學・子女教育・真人真事出版");
+  const landing = fs.readFileSync(path.join(ROOT, "src/seo/landing-zh.ts"), "utf8");
+  assertCopy(landing, "blog-index", BLOG_INDEX_ZH.title);
+  assertCopy(landing, "blog-index", BLOG_INDEX_ZH.description);
+  if (!translations.includes("indexTitle: BLOG_INDEX_ZH.title")) {
+    throw new Error("zh-Hant blog index must use BLOG_INDEX_ZH");
+  }
 
   const blogSrc = fs.readFileSync(path.join(ROOT, "src/BlogPages.tsx"), "utf8");
   const manifest = [...blogSrc.matchAll(/slug:\s*"([^"]+)"/g)].map((match) => match[1]);
@@ -916,6 +938,14 @@ function assertSources(posts: RouteDocument[]) {
   if (sitemapLines.length !== 1 || !robots.includes("Sitemap: https://kidsmybook.com/sitemap.xml")) {
     throw new Error("robots.txt must list only https://kidsmybook.com/sitemap.xml");
   }
+  for (const line of robots.split("\n")) {
+    const trimmed = line.trim();
+    if (!trimmed || trimmed.startsWith("#")) continue;
+    if (!/^(?:User-agent|Allow|Disallow|Sitemap):/.test(trimmed)) {
+      throw new Error(`robots.txt has a non-Google directive: ${trimmed}`);
+    }
+  }
+  if (/^Host\s*:/im.test(robots)) throw new Error("robots.txt must not include Host");
   if (robots.includes("www.kidsmybook.com/sitemap.xml")) throw new Error("robots.txt still lists the www sitemap");
   for (const blocked of ["/admin", "/intake", "/intake-form", "/api/"]) {
     if (!robots.includes(`Disallow: ${blocked}`)) throw new Error(`robots.txt missing Disallow ${blocked}`);
@@ -949,6 +979,9 @@ function assertSources(posts: RouteDocument[]) {
   const worker = fs.readFileSync(path.join(ROOT, "worker/index.ts"), "utf8");
   if (!worker.includes("User-agent: OAI-SearchBot") || !worker.includes("isLlmsAlias")) {
     throw new Error("worker missing OAI-SearchBot or llms alias redirect");
+  }
+  if (!worker.includes("isGoogleRobots") || /^Host\s*:/m.test(worker)) {
+    throw new Error("worker robots fallback must reject Host and unknown directives");
   }
   for (const slug of manifest) {
     const loc = `${SITE_ORIGIN}/blog/${slug}`;
