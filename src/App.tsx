@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import { AiBookCreatorPanel } from "./AiBookCreatorPage";
-import { AboutPage, FaqPage, GaocaiHubPage, HomeExplore, PortfolioHubPage, ProgrammePage, XingquHubPage } from "./LandingPages";
+import { AboutPage, ChecklistPage, FaqPage, GaocaiHubPage, HomeExplore, PortfolioHubPage, ProgrammePage, XingquHubPage } from "./LandingPages";
 import { LanguageSwitcher } from "./components/LanguageSwitcher";
 import { useLocale } from "./i18n/LocaleContext";
 import { BlogIndexPage, BlogPostPage, POSTS, SITE_ORIGIN, getLocalizedPostMeta, upsertJsonLd } from "./BlogPages";
@@ -510,6 +510,7 @@ export default function App() {
     "/programme",
     "/faq",
     "/sheng-xue-zuo-pin-ji",
+    "/sheng-xue-zuo-pin-ji-qing-dan",
     "/gao-cai-tong-sheng-xue-zuo-pin-ji",
     "/xing-qu-chu-ban",
     "/about",
@@ -525,6 +526,7 @@ export default function App() {
       "/programme": { title: t.programmePage.title, description: t.programmePage.description },
       "/faq": { title: t.faqPage.title, description: t.faqPage.description },
       "/sheng-xue-zuo-pin-ji": { title: t.portfolioPage.title, description: t.portfolioPage.description },
+      "/sheng-xue-zuo-pin-ji-qing-dan": { title: t.checklistPage.title, description: t.checklistPage.description },
       "/gao-cai-tong-sheng-xue-zuo-pin-ji": { title: t.gaocaiPage.title, description: t.gaocaiPage.description },
       "/xing-qu-chu-ban": { title: t.xingquPage.title, description: t.xingquPage.description },
       "/about": { title: t.aboutPage.title, description: t.aboutPage.description },
@@ -640,6 +642,7 @@ export default function App() {
       {pathname === "/programme" && <ProgrammePage />}
       {pathname === "/faq" && <FaqPage />}
       {pathname === "/sheng-xue-zuo-pin-ji" && <PortfolioHubPage />}
+      {pathname === "/sheng-xue-zuo-pin-ji-qing-dan" && <ChecklistPage />}
       {pathname === "/gao-cai-tong-sheng-xue-zuo-pin-ji" && <GaocaiHubPage />}
       {pathname === "/xing-qu-chu-ban" && <XingquHubPage />}
       {pathname === "/services" && <ServicesIndexPage services={serviceItems} />}

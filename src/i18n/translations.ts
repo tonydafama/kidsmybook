@@ -8,6 +8,8 @@ import {
   FAQ_HANS,
   FAQ_PAGE_EN,
   FAQ_PAGE_HANS,
+  CHECKLIST_EN,
+  CHECKLIST_HANS,
   GAOCAI_EN,
   GAOCAI_HANS,
   PORTFOLIO_EN,
@@ -17,7 +19,7 @@ import {
   XINGQU_EN,
   XINGQU_HANS,
 } from "./landing-extra";
-import { ABOUT_ZH, BLOG_INDEX_ZH, EXPLORE_ZH, FAQ_PAGE_ZH, GAOCAI_ZH, PORTFOLIO_ZH, PROGRAMME_ZH, XINGQU_ZH, type HubCopy } from "../seo/landing-zh";
+import { ABOUT_ZH, BLOG_INDEX_ZH, CHECKLIST_ZH, EXPLORE_ZH, FAQ_PAGE_ZH, GAOCAI_ZH, PORTFOLIO_ZH, PROGRAMME_ZH, XINGQU_ZH, type HubCopy } from "../seo/landing-zh";
 import { HOME_DESCRIPTION_ZH, HOME_FAQ, HOME_TITLE_ZH } from "../seo/meta";
 
 export type ServiceSlug =
@@ -216,6 +218,7 @@ export type Translations = {
   programmePage: typeof PROGRAMME_ZH;
   faqPage: typeof FAQ_PAGE_ZH;
   portfolioPage: typeof PORTFOLIO_ZH;
+  checklistPage: typeof CHECKLIST_ZH;
   gaocaiPage: HubCopy;
   xingquPage: HubCopy;
   aboutPage: typeof ABOUT_ZH;
@@ -499,6 +502,7 @@ const zhHant: Translations = {
   programmePage: PROGRAMME_ZH,
   faqPage: FAQ_PAGE_ZH,
   portfolioPage: PORTFOLIO_ZH,
+  checklistPage: CHECKLIST_ZH,
   gaocaiPage: GAOCAI_ZH,
   xingquPage: XINGQU_ZH,
   aboutPage: ABOUT_ZH,
@@ -773,6 +777,7 @@ const zhHans: Translations = {
   programmePage: PROGRAMME_HANS,
   faqPage: FAQ_PAGE_HANS,
   portfolioPage: PORTFOLIO_HANS,
+  checklistPage: CHECKLIST_HANS,
   gaocaiPage: GAOCAI_HANS,
   xingquPage: XINGQU_HANS,
   aboutPage: ABOUT_HANS,
@@ -1053,6 +1058,7 @@ const en: Translations = {
   programmePage: PROGRAMME_EN,
   faqPage: FAQ_PAGE_EN,
   portfolioPage: PORTFOLIO_EN,
+  checklistPage: CHECKLIST_EN,
   gaocaiPage: GAOCAI_EN,
   xingquPage: XINGQU_EN,
   aboutPage: ABOUT_EN,

@@ -10,6 +10,8 @@ import { safeHttpsUrl, splitTrailingPunct } from "../src/seo/linkify.ts";
 import {
   ABOUT_ZH,
   BLOG_INDEX_ZH,
+  CHECKLIST_PATH,
+  CHECKLIST_ZH,
   FAQ_PAGE_ZH,
   FAQ_READING_ZH,
   GAOCAI_PATH,
@@ -619,6 +621,7 @@ ${waLine()}`,
     snapshotHtml: pageWrap(
       `        <h1>${escapeHtml(PORTFOLIO_ZH.h1)}</h1>
         <p>${escapeHtml(PORTFOLIO_ZH.lead)}</p>
+        <p><a href="${canonicalUrl(CHECKLIST_PATH)}">${escapeHtml(CHECKLIST_ZH.hubLink)}</a>。${escapeHtml(CHECKLIST_ZH.softCta)}</p>
         <h2>${escapeHtml(PORTFOLIO_ZH.pointsTitle)}</h2>
         <ul>
 ${PORTFOLIO_ZH.points.map((point) => `          <li>${escapeHtml(point)}</li>`).join("\n")}
@@ -709,10 +712,77 @@ ${waLine()}`,
     ),
   };
 
+  const checklistWa = `https://wa.me/85291214157?text=${encodeURIComponent(CHECKLIST_ZH.whatsappText)}`;
+  const checklist: RouteDocument = {
+    path: CHECKLIST_PATH,
+    title: CHECKLIST_ZH.title,
+    description: CHECKLIST_ZH.description,
+    ogType: "website",
+    ogImage: ogImageForPath(CHECKLIST_PATH),
+    mode: "page",
+    jsonLdId: "kidsmybook-page-ld",
+    jsonLd: {
+      "@context": "https://schema.org",
+      "@graph": [
+        breadcrumbList([
+          { name: "首頁", path: "/" },
+          { name: "升學作品集", path: "/sheng-xue-zuo-pin-ji" },
+          { name: CHECKLIST_ZH.h1, path: CHECKLIST_PATH },
+        ]),
+        {
+          "@type": "WebPage",
+          name: CHECKLIST_ZH.h1,
+          description: CHECKLIST_ZH.description,
+          url: canonicalUrl(CHECKLIST_PATH),
+          inLanguage: "zh-Hant",
+          isPartOf: { "@type": "WebSite", name: "Kidsmybook", url: SITE_ORIGIN },
+        },
+        faqPageEntity(CHECKLIST_ZH.faqs, `${canonicalUrl(CHECKLIST_PATH)}#faq`),
+      ],
+    },
+    snapshotHtml: pageWrap(
+      `        <h1>${escapeHtml(CHECKLIST_ZH.h1)}</h1>
+        <p>${escapeHtml(CHECKLIST_ZH.lead)}</p>
+        <p><strong>${escapeHtml(CHECKLIST_ZH.softCta)}</strong></p>
+        <p><a href="${checklistWa}">${escapeHtml(CHECKLIST_ZH.whatsappLabel)}</a></p>
+        <h2>${escapeHtml(CHECKLIST_ZH.docTitle)}</h2>
+        <p>${escapeHtml(CHECKLIST_ZH.docIntro)}</p>
+        <ul>
+${CHECKLIST_ZH.docs.map((item) => `          <li>${escapeHtml(item)}</li>`).join("\n")}
+        </ul>
+        <h2>${escapeHtml(CHECKLIST_ZH.appendixTitle)}</h2>
+        <p>${escapeHtml(CHECKLIST_ZH.appendix)}</p>
+        <ul>
+${linkList(CHECKLIST_ZH.appendixLinks)}
+        </ul>
+        <h2>${escapeHtml(CHECKLIST_ZH.artTitle)}</h2>
+        <p>${escapeHtml(CHECKLIST_ZH.art)}</p>
+        <ul>
+${linkList(CHECKLIST_ZH.artLinks)}
+        </ul>
+        <h2>${escapeHtml(CHECKLIST_ZH.rushTitle)}</h2>
+        <p>${escapeHtml(CHECKLIST_ZH.rush)}</p>
+        <ul>
+${linkList(CHECKLIST_ZH.rushLinks)}
+        </ul>
+        <p><a href="${canonicalUrl("/sheng-xue-zuo-pin-ji")}">升學作品集</a> · <a href="${canonicalUrl("/programme")}">${escapeHtml(CHECKLIST_ZH.programmeLink)}</a></p>
+        <h2 id="faq">${escapeHtml(CHECKLIST_ZH.faqTitle)}</h2>
+${CHECKLIST_ZH.faqs
+  .map(
+    (item) => `        <section>
+          <h3>${escapeHtml(item.q)}</h3>
+          <p>${escapeHtml(item.a)}</p>
+        </section>`,
+  )
+  .join("\n")}
+        <p><a href="${checklistWa}">${escapeHtml(CHECKLIST_ZH.whatsappLabel)}</a></p>`,
+    ),
+  };
+
   const gaocai = hubDocument(GAOCAI_ZH, GAOCAI_PATH);
   const xingqu = hubDocument(XINGQU_ZH, XINGQU_PATH);
 
-  return [home, programme, faq, portfolio, about, gaocai, xingqu, blogIndex, caseIndex, hilary];
+  return [home, programme, faq, portfolio, checklist, about, gaocai, xingqu, blogIndex, caseIndex, hilary];
 }
 
 function hubDocument(copy: HubCopy, path: string): RouteDocument {
@@ -836,9 +906,28 @@ function assertDocument(html: string, route: RouteDocument) {
       throw new Error("/sheng-xue-zuo-pin-ji body missing Hong Kong coverage");
     }
     if (!html.includes("FAQPage")) throw new Error("/sheng-xue-zuo-pin-ji missing FAQPage");
+    if (!html.includes(canonicalUrl(CHECKLIST_PATH))) throw new Error("/sheng-xue-zuo-pin-ji missing checklist link");
     for (const item of PORTFOLIO_ZH.faqs) {
       if (!html.includes(item.q) || !html.includes(item.a)) throw new Error(`portfolio FAQ missing ${item.q}`);
     }
+  }
+  if (route.path === CHECKLIST_PATH) {
+    if (!html.includes("FAQPage") || !html.includes("BreadcrumbList") || !html.includes("WebPage")) {
+      throw new Error(`${CHECKLIST_PATH} missing FAQPage, BreadcrumbList, or WebPage`);
+    }
+    if (!html.includes(`<h1>${escapeHtml(CHECKLIST_ZH.h1)}</h1>`)) throw new Error("checklist H1 missing");
+    if (!html.includes(CHECKLIST_ZH.softCta)) throw new Error("checklist missing free-list soft CTA");
+    const checklistWa = `https://wa.me/85291214157?text=${encodeURIComponent(CHECKLIST_ZH.whatsappText)}`;
+    if (!html.includes(checklistWa)) throw new Error("checklist missing prefilled WhatsApp link");
+    for (const item of CHECKLIST_ZH.faqs) {
+      if (!html.includes(item.q) || !html.includes(item.a)) throw new Error(`checklist FAQ missing ${item.q}`);
+    }
+    for (const link of [...CHECKLIST_ZH.appendixLinks, ...CHECKLIST_ZH.artLinks, ...CHECKLIST_ZH.rushLinks]) {
+      if (!html.includes(canonicalUrl(link.href))) throw new Error(`checklist missing ${link.href}`);
+    }
+  }
+  if (route.path === "/" && !html.includes(canonicalUrl(CHECKLIST_PATH))) {
+    throw new Error("homepage missing checklist link");
   }
   if (route.path === "/about") {
     if (!html.includes(`<h1>${escapeHtml(ABOUT_ZH.h1)}</h1>`)) throw new Error("/about H1 missing");
@@ -956,8 +1045,18 @@ function assertSources(posts: RouteDocument[]) {
   if (!robots.includes("User-agent: OAI-SearchBot")) {
     throw new Error("robots.txt missing OAI-SearchBot");
   }
+  if (!robots.includes("User-agent: Bingbot")) {
+    throw new Error("robots.txt missing Bingbot");
+  }
   if (!robots.includes("# LLM context: https://kidsmybook.com/llms.txt")) {
     throw new Error("robots.txt missing llms.txt comment");
+  }
+
+  const indexNowKey = "1e01eada3661348254717ba011ce21d3";
+  const indexNowFile = path.join(ROOT, "public", `${indexNowKey}.txt`);
+  const indexNowRaw = fs.readFileSync(indexNowFile, "utf8").replace(/^\uFEFF/, "");
+  if (indexNowRaw !== indexNowKey && indexNowRaw !== `${indexNowKey}\n`) {
+    throw new Error("IndexNow key file must contain only the public key");
   }
 
   const llms = fs.readFileSync(path.join(ROOT, "public/llms.txt"), "utf8");
@@ -971,12 +1070,21 @@ function assertSources(posts: RouteDocument[]) {
     ["llms-full.txt", llmsFull],
   ] as const) {
     if (!source.includes(`${SITE_ORIGIN}/about`)) throw new Error(`${label} missing /about`);
+    if (!source.includes(`${SITE_ORIGIN}/sheng-xue-zuo-pin-ji-qing-dan`)) {
+      throw new Error(`${label} missing checklist page`);
+    }
     if (!source.includes("language switcher")) throw new Error(`${label} missing language-switcher clarification`);
     if (source.includes("hreflang")) throw new Error(`${label} must not advertise hreflang`);
   }
 
   const sitemap = fs.readFileSync(path.join(ROOT, "public/sitemap.xml"), "utf8");
   const worker = fs.readFileSync(path.join(ROOT, "worker/index.ts"), "utf8");
+  if (!worker.includes(`const INDEXNOW_KEY = "${indexNowKey}"`) || !worker.includes("isIndexNowKeyPath")) {
+    throw new Error("worker must serve the IndexNow key as text/plain and must not fall through to the SPA");
+  }
+  if (!worker.includes("User-agent: Bingbot")) {
+    throw new Error("worker robots fallback missing Bingbot");
+  }
   if (!worker.includes("User-agent: OAI-SearchBot") || !worker.includes("isLlmsAlias")) {
     throw new Error("worker missing OAI-SearchBot or llms alias redirect");
   }
@@ -994,6 +1102,7 @@ function assertSources(posts: RouteDocument[]) {
     `${SITE_ORIGIN}/faq`,
     `${SITE_ORIGIN}/about`,
     `${SITE_ORIGIN}/sheng-xue-zuo-pin-ji`,
+    `${SITE_ORIGIN}/sheng-xue-zuo-pin-ji-qing-dan`,
     `${SITE_ORIGIN}/gao-cai-tong-sheng-xue-zuo-pin-ji`,
     `${SITE_ORIGIN}/xing-qu-chu-ban`,
     `${SITE_ORIGIN}/llms.txt`,

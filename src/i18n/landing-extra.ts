@@ -831,3 +831,138 @@ export const ABOUT_EN = {
   faqLink: "FAQ",
   portfolioLink: "School portfolio",
 };
+
+export const CHECKLIST_HANS = {
+  title: "升学作品集准备清单｜升小、升中文件怎样收｜Kidsmybook",
+  description:
+    "免费升学作品集准备清单：升小、升中要带什么文件，证书班和补习作品放附页，美术作品集和 ISBN 出版书怎样分。清单免费；完整计划私人 WhatsApp 报价。不保证录取。",
+  eyebrow: "免费清单 · 香港",
+  h1: "升学作品集准备清单",
+  lead: "面试前不用再猜「带什么」。这页是一份可以核对的文件清单：升小学、升中／DSS／直资、国际学校作品集，哪些放前面、哪些放附页。清单免费。完整出版计划私人报价，网站不公开价目。",
+  softCta: "清单免费；完整计划私人 WhatsApp 报价。",
+  whatsappLabel: "WhatsApp：想要升學作品集準備清單",
+  whatsappText: "想要升學作品集準備清單",
+  docTitle: "升小／升中作品集要准备什么",
+  docIntro:
+    "升小学面试通常只有几分钟；升中、DSS 和直资较常问持续兴趣和自述。同一份清单先核对手上有什么，再按目标学校决定哪样放第一页。Kidsmybook 是出版工作室，不保证录取。",
+  docs: [
+    "现在和目标学校类型：本地、私立、直资、DSS 还是国际学校，以及年级",
+    "一件讲得出口的兴趣：怎么开始、做过什么、做了多久，小朋友自己怎么讲",
+    "已经有的成品：画、文章、比赛、学校功课、兴趣班习作——选讲得清的，不要全交",
+    "证书、奖状、成绩表：有就带，但不要当作品集主体",
+    "面试日期和家长联络方式（如果学校已经通知）",
+    "如果已经有正式出版物：书、ISBN、发布会或展览纪录",
+  ],
+  appendixTitle: "证书班／补习作品放附页",
+  appendix: "证书班和补习习作可以证明上过课，但多数同班都有一份差不多的。放在附页，不要放第一页。前面留一件小朋友自己讲得出、做得完的事。",
+  appendixLinks: [
+    { href: "/blog/zheng-shu-ban-vs-isbn-chu-ban", label: "证书班 vs ISBN 正式出版：面试作品集怎样看" },
+    { href: "/blog/bu-xi-zuo-pin-vs-chu-ban-zuo-pin-ji", label: "补习作品 vs 出版作品集：面试官看到什么" },
+  ],
+  artTitle: "美术作品集 vs ISBN 出版书",
+  art: "画簿、素描和美术班作品集证明技法和练习。有 ISBN、小朋友参与的出版书是另一件做完、可以翻开讲的正式出版物。学校如果指定要交原作或画作选辑，画作仍然要交；书不取代那份指定作品。",
+  artLinks: [
+    { href: "/blog/mei-shu-zuo-pin-ji-vs-isbn-chu-ban", label: "美术作品集 vs ISBN 出版作品集：香港升学什么时候用哪样" },
+  ],
+  rushTitle: "时间不够怎么办",
+  rush: "如果面试或叩门只剩几天、几星期，12 个月出版计划赶不及。先用这份清单收窄现在手上的文件，选一件小朋友讲得出的作品。出书适合下一个有大约一年时间的申请周期。",
+  rushLinks: [
+    { href: "/blog/zuo-pin-ji-m-gau-lin-shi-gan", label: "作品集不够看、临时赶怎么办：叩门和面试季时间表" },
+    { href: "/blog/dian-yang-zheng-liang-sheng-xue-zuo-pin-ji", label: "怎样做好升学作品集：香港家长实用清单" },
+  ],
+  hubLink: "免费升学作品集准备清单",
+  programmeLink: "了解 12 个月出书计划",
+  cardTitle: "准备清单",
+  cardBlurb: "升小、升中文件核对。清单免费；完整计划私人报价。",
+  faqTitle: "准备清单常见问题",
+  faqs: [
+    {
+      q: "这份升学作品集准备清单收不收费？",
+      a: "清单免费。想做完整 12 个月导师制出版计划，报价私人，WhatsApp 先讲范围。网站不公开价目，也不保证学位。",
+    },
+    {
+      q: "升小学和升中是不是同一份文件？",
+      a: "不是。升小面试通常只有几分钟，要一件讲得完的事。升中、DSS 和直资较常问持续兴趣和自述。同一份清单可以先核对，再按目标学校选哪样放前面。",
+    },
+    {
+      q: "证书班和补习作品应该放哪里？",
+      a: "放附页。面试官已经见过很多张差不多的证书。前面留小朋友自己讲得出的作品。",
+    },
+    {
+      q: "画作作品集和 ISBN 出版书可不可以一起用？",
+      a: "可以。学校指定要交画，画仍然要交。有 ISBN 的出版书是另一件可以引用的正式出版物，不取代指定画作。Kidsmybook 不保证录取。",
+    },
+    {
+      q: "面试就快到，还可以出书吗？",
+      a: "如果只剩几天，12 个月计划赶不及。先用这份清单收窄现在手上的文件。出书适合下一个有大约一年的申请周期。",
+    },
+  ],
+};
+
+export const CHECKLIST_EN = {
+  title: "School portfolio checklist | Primary and secondary documents | Kidsmybook",
+  description:
+    "A free Hong Kong school-portfolio checklist: which documents to bring for primary and secondary interviews, where certificate-class and tutoring work sits, and how an art portfolio differs from an ISBN book. The checklist is free. A full programme is quoted privately on WhatsApp. No school place is guaranteed.",
+  eyebrow: "Free checklist · Hong Kong",
+  h1: "School portfolio preparation checklist",
+  lead: "Stop guessing what to bring. This page is a document checklist for primary, secondary, DSS, direct-subsidy, and international-school portfolios: what goes first, and what stays in an appendix. The checklist is free. A full publishing programme is quoted privately. Prices are not listed on the site.",
+  softCta: "The checklist is free. A full programme is quoted privately on WhatsApp.",
+  whatsappLabel: "WhatsApp: 想要升學作品集準備清單",
+  whatsappText: "想要升學作品集準備清單",
+  docTitle: "What a primary or secondary portfolio should include",
+  docIntro:
+    "A primary interview often lasts a few minutes. Secondary, DSS, and direct-subsidy interviews more often ask about a sustained interest the child can explain. Use one checklist to see what you already have, then choose what belongs on the first page. Kidsmybook is a publishing studio and does not guarantee a place.",
+  docs: [
+    "Current and target school type — local, private, DSS, direct subsidy, or international — and the year",
+    "One interest the child can explain: how it started, what they did, how long, in their own words",
+    "Finished pieces you already have: drawings, writing, competitions, school work, class exercises — choose what they can talk about",
+    "Certificates, awards, and reports: bring them, but do not make them the portfolio",
+    "Interview date and a parent contact, if the school has already written",
+    "If there is already a formal publication: the book, the ISBN, and any launch or exhibition record",
+  ],
+  appendixTitle: "Certificate classes and tutoring work go in the appendix",
+  appendix:
+    "A certificate class or tutoring exercise can show the child attended. Most classmates have something similar. Put it in the appendix, not on page one. Keep the front for one piece the child finished and can explain.",
+  appendixLinks: [
+    { href: "/blog/zheng-shu-ban-vs-isbn-chu-ban", label: "Certificate class vs formal ISBN publication" },
+    { href: "/blog/bu-xi-zuo-pin-vs-chu-ban-zuo-pin-ji", label: "Tutoring work vs a published portfolio" },
+  ],
+  artTitle: "Art portfolio vs an ISBN book",
+  art: "A sketchbook or art-class portfolio shows technique and practice. An ISBN book the child helped make is a finished publication they can open and explain. If a school asks for original drawings, those drawings still have to be handed in. The book does not replace that requirement.",
+  artLinks: [
+    { href: "/blog/mei-shu-zuo-pin-ji-vs-isbn-chu-ban", label: "Art portfolio vs an ISBN book for Hong Kong admissions" },
+  ],
+  rushTitle: "When there is not enough time",
+  rush: "If the interview or door-knocking round is only days or weeks away, a 12-month publishing programme cannot be finished in time. Use this checklist to narrow the file you already have, and pick one piece the child can talk about. A book fits the next cycle that has about a year.",
+  rushLinks: [
+    { href: "/blog/zuo-pin-ji-m-gau-lin-shi-gan", label: "When the portfolio feels thin and the interview is soon" },
+    { href: "/blog/dian-yang-zheng-liang-sheng-xue-zuo-pin-ji", label: "How to order a stronger Hong Kong admissions portfolio" },
+  ],
+  hubLink: "Free school portfolio checklist",
+  programmeLink: "See the 12-month author programme",
+  cardTitle: "Checklist",
+  cardBlurb: "Primary and secondary documents. The checklist is free; a full programme is quoted privately.",
+  faqTitle: "Checklist questions",
+  faqs: [
+    {
+      q: "Does this school portfolio checklist cost anything?",
+      a: "The checklist is free. A full 12-month mentored publishing programme is quoted privately on WhatsApp. The site does not publish a price list, and it does not guarantee a school place.",
+    },
+    {
+      q: "Is the primary file the same as the secondary file?",
+      a: "No. A primary interview usually lasts a few minutes and needs one story the child can finish. Secondary, DSS, and direct-subsidy interviews more often ask about a sustained interest. Use the same checklist, then choose what goes first for that school.",
+    },
+    {
+      q: "Where should certificate-class and tutoring work go?",
+      a: "In the appendix. Interviewers have already seen many similar certificates. Keep the front for work the child can explain.",
+    },
+    {
+      q: "Can an art portfolio and an ISBN book be used together?",
+      a: "Yes. If the school asks for drawings, hand in the drawings. An ISBN book is a separate citable publication. It does not replace required artwork. Kidsmybook does not guarantee a place.",
+    },
+    {
+      q: "The interview is soon. Can we still publish a book?",
+      a: "If only a few days remain, the 12-month programme cannot be finished in time. Narrow the file you already have with this checklist. A book fits the next cycle that has about a year.",
+    },
+  ],
+};

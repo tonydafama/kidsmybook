@@ -832,8 +832,46 @@ Disallow: /intake
 Disallow: /intake-form
 Disallow: /api/
 
+User-agent: Bingbot
+Allow: /
+Disallow: /admin
+Disallow: /intake
+Disallow: /intake-form
+Disallow: /api/
+
 Sitemap: https://kidsmybook.com/sitemap.xml
 `;
+
+/** Public IndexNow key. The file at /{key}.txt must be this key and nothing else. */
+const INDEXNOW_KEY = "1e01eada3661348254717ba011ce21d3";
+
+function isIndexNowKeyPath(pathname: string): boolean {
+  return normalizeRoutePath(pathname) === `/${INDEXNOW_KEY}.txt`;
+}
+
+/** text/plain key file. Never the SPA index.html shell. */
+async function serveIndexNowKey(request: Request, env: Env): Promise<Response> {
+  try {
+    const assetRes = await env.ASSETS.fetch(
+      new Request(new URL(`/${INDEXNOW_KEY}.txt`, request.url), { method: "GET" }),
+    );
+    const contentType = (assetRes.headers.get("content-type") || "").toLowerCase();
+    const text = (await assetRes.text()).replace(/^\uFEFF/, "").trim();
+    const assetIsHtml = contentType.includes("text/html") || text.startsWith("<!");
+    if (!assetRes.ok || assetIsHtml || text !== INDEXNOW_KEY) {
+      console.log("indexnow-key", "asset was not the plain key; serving the public key");
+    }
+  } catch (err) {
+    console.log("indexnow-key", `asset fetch failed: ${String(err)}`);
+  }
+  const headers = new Headers();
+  headers.set("content-type", "text/plain; charset=utf-8");
+  headers.set("cache-control", "public, max-age=300");
+  headers.set("x-content-type-options", "nosniff");
+  if (request.method === "HEAD") return new Response(null, { status: 200, headers });
+  if (request.method !== "GET") return new Response("Method not allowed", { status: 405, headers });
+  return new Response(INDEXNOW_KEY, { status: 200, headers });
+}
 
 const ROBOTS_DIRECTIVE = /^(?:user-agent|allow|disallow|sitemap)\s*:/i;
 
@@ -858,6 +896,7 @@ const SITEMAP_XML = `<?xml version="1.0" encoding="UTF-8"?>
   <url><loc>https://kidsmybook.com/faq</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kidsmybook.com/about</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://kidsmybook.com/sheng-xue-zuo-pin-ji</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kidsmybook.com/sheng-xue-zuo-pin-ji-qing-dan</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kidsmybook.com/gao-cai-tong-sheng-xue-zuo-pin-ji</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kidsmybook.com/xing-qu-chu-ban</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kidsmybook.com/blog</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
@@ -981,6 +1020,7 @@ async function serveSeoAsset(request: Request, env: Env, pathname: string): Prom
       mapText.includes("https://kidsmybook.com/programme") &&
       mapText.includes("https://kidsmybook.com/faq") &&
       mapText.includes("https://kidsmybook.com/sheng-xue-zuo-pin-ji") &&
+      mapText.includes("https://kidsmybook.com/sheng-xue-zuo-pin-ji-qing-dan") &&
       mapText.includes("https://kidsmybook.com/gao-cai-tong-sheng-xue-zuo-pin-ji") &&
       mapText.includes("https://kidsmybook.com/xing-qu-chu-ban") &&
       mapText.includes("https://kidsmybook.com/about") &&
@@ -1167,6 +1207,10 @@ export default {
     // Alternate llms names must not fall through to the SPA homepage (HTML 200).
     if (isLlmsAlias(url.pathname)) {
       return Response.redirect("https://kidsmybook.com/llms.txt", 301);
+    }
+
+    if (isIndexNowKeyPath(url.pathname)) {
+      return serveIndexNowKey(request, env);
     }
 
     if (

@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { getLocalizedPostMeta, upsertJsonLd, SITE_ORIGIN } from "./BlogPages";
 import { useLocale } from "./i18n/LocaleContext";
 import type { Locale } from "./i18n/locale";
-import { FAQ_READING_ZH, GAOCAI_PATH, PORTFOLIO_READING_ZH, READING_ZH, XINGQU_PATH, type HubCopy } from "./seo/landing-zh";
+import { CHECKLIST_PATH, FAQ_READING_ZH, GAOCAI_PATH, PORTFOLIO_READING_ZH, READING_ZH, XINGQU_PATH, type HubCopy } from "./seo/landing-zh";
 import { ORGANIZATION_SAME_AS, breadcrumbList, canonicalUrl, faqPageEntity } from "./seo/meta";
 
 const WHATSAPP_NUMBER = import.meta.env.VITE_WHATSAPP_NUMBER || "85291214157";
@@ -274,6 +274,123 @@ export function FaqPage() {
   );
 }
 
+function ChecklistLinkList({ links }: { links: { href: string; label: string }[] }) {
+  return (
+    <ul className="privacy-list">
+      {links.map((link) => (
+        <li key={link.href}>
+          <a href={appHref(link.href)}>{link.label}</a>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+export function ChecklistPage() {
+  const { t, locale } = useLocale();
+  const page = t.checklistPage;
+  const homeLabel = homeLabelFor(locale);
+
+  useEffect(() => {
+    upsertJsonLd("kidsmybook-page-ld", {
+      "@context": "https://schema.org",
+      "@graph": [
+        breadcrumbList([
+          { name: homeLabel, path: "/" },
+          { name: t.nav.portfolio, path: "/sheng-xue-zuo-pin-ji" },
+          { name: page.h1, path: CHECKLIST_PATH },
+        ]),
+        {
+          "@type": "WebPage",
+          name: page.h1,
+          description: page.description,
+          url: canonicalUrl(CHECKLIST_PATH),
+          inLanguage: locale === "en" ? "en" : locale === "zh-Hans" ? "zh-Hans" : "zh-Hant",
+          isPartOf: { "@type": "WebSite", name: "Kidsmybook", url: SITE_ORIGIN },
+        },
+        faqPageEntity(page.faqs, `${canonicalUrl(CHECKLIST_PATH)}#faq`),
+      ],
+    });
+    return () => upsertJsonLd("kidsmybook-page-ld", null);
+  }, [homeLabel, locale, page, t.nav.portfolio]);
+
+  return (
+    <main className="landing">
+      <section className="panel">
+        <Breadcrumb
+          items={[
+            { href: appHref("/"), label: homeLabel },
+            { href: appHref("/sheng-xue-zuo-pin-ji"), label: t.nav.portfolio },
+            { href: appHref(CHECKLIST_PATH), label: page.h1 },
+          ]}
+        />
+        <p className="eyebrow">{page.eyebrow}</p>
+        <h1>{page.h1}</h1>
+        <p className="lead">{page.lead}</p>
+        <p>
+          <strong>{page.softCta}</strong>
+        </p>
+        <div className="cta-row">
+          <a className="btn primary btn-lg" href={whatsappHref(page.whatsappText)} target="_blank" rel="noreferrer">
+            {page.whatsappLabel}
+          </a>
+        </div>
+      </section>
+
+      <section className="panel">
+        <h2>{page.docTitle}</h2>
+        <p>{page.docIntro}</p>
+        <ul className="privacy-list">
+          {page.docs.map((item) => (
+            <li key={item}>{item}</li>
+          ))}
+        </ul>
+      </section>
+
+      <section className="panel">
+        <h2>{page.appendixTitle}</h2>
+        <p>{page.appendix}</p>
+        <ChecklistLinkList links={page.appendixLinks} />
+      </section>
+
+      <section className="panel">
+        <h2>{page.artTitle}</h2>
+        <p>{page.art}</p>
+        <ChecklistLinkList links={page.artLinks} />
+      </section>
+
+      <section className="panel">
+        <h2>{page.rushTitle}</h2>
+        <p>{page.rush}</p>
+        <ChecklistLinkList links={page.rushLinks} />
+        <p>
+          <a href={appHref("/programme")}>{page.programmeLink}</a>
+          {" · "}
+          <a href={appHref("/sheng-xue-zuo-pin-ji")}>{t.nav.portfolio}</a>
+        </p>
+      </section>
+
+      <section className="panel" id="faq" itemScope itemType="https://schema.org/FAQPage">
+        <h2>{page.faqTitle}</h2>
+        <div className="faq-list">
+          {page.faqs.map((item) => (
+            <details key={item.q} className="faq-item" open itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
+              <summary className="faq-q" itemProp="name">
+                {item.q}
+              </summary>
+              <div className="faq-a" itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
+                <div itemProp="text">{item.a}</div>
+              </div>
+            </details>
+          ))}
+        </div>
+      </section>
+
+      <QuoteCta title={page.softCta} body={page.lead} whatsappLabel={page.whatsappLabel} whatsappText={page.whatsappText} />
+    </main>
+  );
+}
+
 export function PortfolioHubPage() {
   const { t, locale } = useLocale();
   const page = t.portfolioPage;
@@ -314,9 +431,17 @@ export function PortfolioHubPage() {
         <p className="eyebrow">{page.eyebrow}</p>
         <h1>{page.h1}</h1>
         <p className="lead">{page.lead}</p>
+        <p>
+          <a href={appHref(CHECKLIST_PATH)}>{t.checklistPage.hubLink}</a>
+          {" · "}
+          {t.checklistPage.softCta}
+        </p>
         <div className="cta-row">
           <a className="btn primary" href={whatsappHref(t.whatsapp.home)} target="_blank" rel="noreferrer">
             {t.hero.bookConsult}
+          </a>
+          <a className="btn ghost" href={appHref(CHECKLIST_PATH)}>
+            {t.checklistPage.cardTitle}
           </a>
           <a className="btn ghost" href={appHref("/programme")}>
             {page.programmeLink}
@@ -616,6 +741,12 @@ export function HomeExplore() {
           <div className="service-card-body">
             <h4>{t.explore.portfolio}</h4>
             <p>{t.explore.portfolioBlurb}</p>
+          </div>
+        </a>
+        <a className="service-card link-card" href={appHref(CHECKLIST_PATH)}>
+          <div className="service-card-body">
+            <h4>{t.checklistPage.cardTitle}</h4>
+            <p>{t.checklistPage.cardBlurb}</p>
           </div>
         </a>
         <a className="service-card link-card" href={appHref(GAOCAI_PATH)}>
