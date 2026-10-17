@@ -18,6 +18,20 @@ interface PostMeta {
 
 const POSTS: PostMeta[] = [
   {
+    slug: "gao-cai-tong-di-yi-nian-shi-jian-xian",
+    title: "高才通家庭第一年升學作品集時間線",
+    excerpt: "高才通同新來港家庭：第 1 至 12 個月點樣排一本 ISBN 童書。仲有大約一年先開始出版路徑；面試只剩幾日趕唔切。私人報價，唔保證取錄。",
+    date: "2026-10-17",
+    readMin: 7,
+  },
+  {
+    slug: "guo-ji-xue-xiao-mian-shi-isbn-portfolio",
+    title: "國際學校面試 portfolio：點樣用一本 ISBN 書講",
+    excerpt: "國際學校英文面試：用一本小朋友參與、有 ISBN 嘅書講一件興趣。四句講法，唔好背兩套故事。私人報價，唔保證取錄。",
+    date: "2026-10-17",
+    readMin: 6,
+  },
+  {
     slug: "mian-shi-ban-vs-isbn-chu-ban",
     title: "升小面試班 vs ISBN 出版作品集：香港家長點樣揀",
     excerpt: "升小面試班練當場表現；ISBN 出版作品集係 12 個月導師制做出嚟、可以帶去面試嘅書。Kidsmybook 唔係短期面試班。臨近面試趕唔切一本書。私人報價，唔保證取錄。",

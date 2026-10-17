@@ -941,6 +941,8 @@ const SITEMAP_XML = `<?xml version="1.0" encoding="UTF-8"?>
   <url><loc>https://kidsmybook.com/blog/dian-yang-zheng-liang-sheng-xue-zuo-pin-ji</loc><lastmod>2026-10-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kidsmybook.com/blog/zuo-pin-ji-m-gau-lin-shi-gan</loc><lastmod>2026-10-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kidsmybook.com/blog/mian-shi-ban-vs-isbn-chu-ban</loc><lastmod>2026-10-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kidsmybook.com/blog/gao-cai-tong-di-yi-nian-shi-jian-xian</loc><lastmod>2026-10-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kidsmybook.com/blog/guo-ji-xue-xiao-mian-shi-isbn-portfolio</loc><lastmod>2026-10-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 </urlset>
 `;
 
@@ -1029,6 +1031,8 @@ async function serveSeoAsset(request: Request, env: Env, pathname: string): Prom
       mapText.includes("https://kidsmybook.com/sheng-xiao-xue-mian-shi-zuo-pin-ji") &&
       mapText.includes("https://kidsmybook.com/sheng-zhong-dss-zuo-pin-ji") &&
       mapText.includes("https://kidsmybook.com/blog/mian-shi-ban-vs-isbn-chu-ban") &&
+      mapText.includes("https://kidsmybook.com/blog/gao-cai-tong-di-yi-nian-shi-jian-xian") &&
+      mapText.includes("https://kidsmybook.com/blog/guo-ji-xue-xiao-mian-shi-isbn-portfolio") &&
       mapText.includes("https://kidsmybook.com/about") &&
       mapText.includes("https://kidsmybook.com/llms-full.txt")
     ) {
