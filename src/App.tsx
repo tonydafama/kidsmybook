@@ -3,6 +3,8 @@ import { AiBookCreatorPanel } from "./AiBookCreatorPage";
 import { AboutPage, ChecklistPage, FaqPage, GaocaiHubPage, HomeExplore, PortfolioHubPage, ProgrammePage, ShengxiaoHubPage, ShengzhongHubPage, XingquHubPage } from "./LandingPages";
 import { LanguageSwitcher } from "./components/LanguageSwitcher";
 import { useLocale } from "./i18n/LocaleContext";
+import { getCoverEnquiry, postPreviewLead, subscribeCoverEnquiry, type CoverEnquiry } from "./lib/coverEnquiry";
+import { pageWhatsappText } from "./lib/whatsappIntent";
 import { BlogIndexPage, BlogPostPage, POSTS, SITE_ORIGIN, getLocalizedPostMeta, upsertJsonLd } from "./BlogPages";
 import { ogImageForPath } from "./seo/meta";
 import {
@@ -124,13 +126,15 @@ function HomePage({ services }: { services: ServiceItem[] }) {
             <a className="btn primary" href={whatsapp} target="_blank" rel="noreferrer">
               {t.hero.bookConsult}
             </a>
-            <a className="btn ghost" href={appHref("/intake-form")} rel="noreferrer">
-              {t.nav.intake ?? "升學諮詢表"}
-            </a>
             <a className="btn ghost" href={appHref("/#ai-book-lab")}>
               {t.hero.generateCover}
             </a>
           </div>
+          <p className="hero-secondary-links">
+            <a href={appHref("/intake-form")} rel="noreferrer">
+              {t.nav.intake ?? "升學諮詢"}
+            </a>
+          </p>
         </div>
         <div className="hero-visual hero-visual--glass">
           <div className="hero-visual-shine" aria-hidden />
@@ -499,9 +503,19 @@ function usePathname() {
 export default function App() {
   const { t, locale } = useLocale();
   const pathname = usePathname();
+  const [coverEnquiry, setCoverEnquiryState] = useState<CoverEnquiry | null>(() => getCoverEnquiry());
+  useEffect(() => subscribeCoverEnquiry(() => setCoverEnquiryState(getCoverEnquiry())), []);
   const serviceItems = useMemo(() => buildServiceItems(t), [t]);
   const currentService = serviceItems.find((item) => pathname === `/services/${item.slug}`);
-  const whatsappFloating = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(t.whatsapp.floating)}`;
+  const blogTitle = pathname.startsWith("/blog/")
+    ? getLocalizedPostMeta(pathname.slice("/blog/".length), locale).title
+    : "";
+  const coverOnHome = pathname === "/" || pathname === "/ai-book" ? coverEnquiry : null;
+  const floatingText = coverOnHome?.text || pageWhatsappText(pathname, t, blogTitle);
+  const whatsappFloating = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(floatingText)}`;
+  const trackFloatingEnquiry = () => {
+    if (coverOnHome) postPreviewLead(coverOnHome, true);
+  };
   const knownPaths = [
     "/",
     "/ai-book",
@@ -636,7 +650,7 @@ export default function App() {
           <a href={appHref("/intake-form")} rel="noreferrer">
             {t.nav.intake ?? "升學諮詢"}
           </a>
-          <a href={whatsappFloating} target="_blank" rel="noreferrer">
+          <a href={whatsappFloating} target="_blank" rel="noreferrer" onClick={trackFloatingEnquiry}>
             {t.nav.whatsapp}
           </a>
         </div>
@@ -679,7 +693,7 @@ export default function App() {
           <a href={appHref("/blog/mian-shi-ban-vs-isbn-chu-ban")}>
             {locale === "en" ? "Interview class vs ISBN" : locale === "zh-Hans" ? "面试班 vs ISBN" : "面試班 vs ISBN"}
           </a>
-          <a href={whatsappFloating} target="_blank" rel="noreferrer">
+          <a href={whatsappFloating} target="_blank" rel="noreferrer" onClick={trackFloatingEnquiry}>
             WhatsApp +852 9121 4157
           </a>
           <a href="mailto:kidsmybook@outlook.com">kidsmybook@outlook.com</a>
@@ -688,7 +702,7 @@ export default function App() {
         <p>{t.footer.privacy}</p>
       </footer>
 
-      <a className="floating-wa" href={whatsappFloating} target="_blank" rel="noreferrer" aria-label={t.nav.whatsapp}>
+      <a className="floating-wa" href={whatsappFloating} target="_blank" rel="noreferrer" aria-label={t.nav.whatsapp} onClick={trackFloatingEnquiry}>
         {t.nav.whatsapp}
       </a>
     </div>

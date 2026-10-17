@@ -43,6 +43,7 @@ export const PROGRAMME_HANS = {
   portfolioLink: "升学作品集怎样用一本书",
   ctaTitle: "私人报价，先了解再谈范围",
   ctaBody: "网站不公开价目。WhatsApp 或电邮说说小朋友年龄、兴趣和目标学校，我们再私人报价。",
+  whatsappText: "想了解 12 个月导师制小朋友出书计划",
 };
 
 export const FAQ_PAGE_HANS = {
@@ -53,6 +54,7 @@ export const FAQ_PAGE_HANS = {
   lead: "以下是家长最常问的问题。收费一律私人报价，网站不放价目表。",
   ctaTitle: "没看到你的情况？",
   ctaBody: "WhatsApp 或电邮讲小朋友年龄、现在／目标学校，以及最想解决的作品集问题。我们先了解，再私人报价。",
+  whatsappText: "想了解小朋友出书、ISBN 和升学作品集",
   programmeLink: "看 12 个月出书计划",
   portfolioLink: "看升学作品集说明",
   readingTitle: "延伸阅读",
@@ -115,6 +117,7 @@ export const PORTFOLIO_HANS = {
     },
   ],
   whatsappLink: "WhatsApp 讲讲升小学或升中面试",
+  whatsappText: "想了解升学作品集怎样用一本 ISBN 童书，升小学或升中面试",
   ctaTitle: "想知这本书适不适合你的小朋友",
   ctaBody: "说说年龄、现在的学校类型、一个兴趣，和你最想解决的面试问题。报价私人，网站不公开价钱。",
   faqTitle: "升学作品集常见问题",
@@ -287,6 +290,7 @@ export const PROGRAMME_EN = {
   portfolioLink: "How a book works in a school portfolio",
   ctaTitle: "Private quotation after we understand the child",
   ctaBody: "Prices are not listed on the site. WhatsApp or email the child's age, interest, and target school, and we will quote privately.",
+  whatsappText: "We want to know about the 12-month mentored children's publishing programme",
 };
 
 export const FAQ_PAGE_EN = {
@@ -298,6 +302,7 @@ export const FAQ_PAGE_EN = {
   lead: "Questions parents ask most. Every fee is quoted privately. There is no price list on this site.",
   ctaTitle: "Not seeing your situation?",
   ctaBody: "WhatsApp or email the child's age, current or target school, and the portfolio problem you want to solve. We listen first, then quote privately.",
+  whatsappText: "We want to know about children's publishing, ISBN, and school portfolios",
   programmeLink: "See the 12-month author programme",
   portfolioLink: "See the school portfolio page",
   readingTitle: "Further reading",
@@ -363,6 +368,7 @@ export const PORTFOLIO_EN = {
     },
   ],
   whatsappLink: "WhatsApp about a primary or secondary interview",
+  whatsappText: "We want to know how a school portfolio can use an ISBN children's book for a primary or secondary interview",
   ctaTitle: "Ask whether a book fits your child",
   ctaBody: "Tell us the age, current school type, one interest, and the interview problem you want to solve. The quote stays private.",
   faqTitle: "School portfolio questions",
