@@ -15,9 +15,12 @@
       ],
       "contactPoint": {
         "@type": "ContactPoint",
-        "contactType": "Sales",
+        "contactType": "customer support",
+        "email": "kidsmybook@outlook.com",
+        "telephone": "+852-9121-4157",
         "url": "https://wa.me/85291214157",
-        "areaServed": "Hong Kong"
+        "areaServed": "Hong Kong",
+        "availableLanguage": ["zh-Hant", "zh-Hans", "en"]
       }
     },
     {
