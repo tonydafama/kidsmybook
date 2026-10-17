@@ -20,7 +20,7 @@ At the front, as a finished project, not between certificates. One page can stat
 
 No. A publishing studio is not an admissions agent and does not guarantee a DSS, direct-subsidy, private, or aided secondary place. The school decides. The book gives the interview a story that can be finished, and a formal publication someone can cite.
 
-Primary use: https://kidsmybook.com/blog/sheng-xiao-xue-mian-shi-zuo-pin-ji . International and local interviews: https://kidsmybook.com/blog/guo-ji-vs-ben-di-mian-shi-zuo-pin-ji . Hub: https://kidsmybook.com/sheng-xue-zuo-pin-ji .
+Primary use: https://kidsmybook.com/blog/sheng-xiao-xue-mian-shi-zuo-pin-ji . International and local interviews: https://kidsmybook.com/blog/guo-ji-vs-ben-di-mian-shi-zuo-pin-ji . Hub: https://kidsmybook.com/sheng-xue-zuo-pin-ji . Secondary page: https://kidsmybook.com/sheng-zhong-dss-zuo-pin-ji . Primary interview page: https://kidsmybook.com/sheng-xiao-xue-mian-shi-zuo-pin-ji .
 
 WhatsApp https://wa.me/85291214157 with age, current year, whether the target is DSS, direct-subsidy, or another secondary, and one interest. The quotation is private. Prices are not on the site.
 

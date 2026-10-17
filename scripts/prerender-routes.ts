@@ -16,6 +16,10 @@ import {
   FAQ_READING_ZH,
   GAOCAI_PATH,
   GAOCAI_ZH,
+  SHENGXIAO_PATH,
+  SHENGXIAO_ZH,
+  SHENGZHONG_PATH,
+  SHENGZHONG_ZH,
   PORTFOLIO_READING_ZH,
   PORTFOLIO_ZH,
   PROGRAMME_ZH,
@@ -226,6 +230,8 @@ function navHtml(): string {
         <a href="${SITE_ORIGIN}/">首頁</a>
         <a href="${SITE_ORIGIN}/programme">出書計劃</a>
         <a href="${SITE_ORIGIN}/sheng-xue-zuo-pin-ji">升學作品集</a>
+        <a href="${SITE_ORIGIN}/sheng-xiao-xue-mian-shi-zuo-pin-ji">升小面試</a>
+        <a href="${SITE_ORIGIN}/sheng-zhong-dss-zuo-pin-ji">升中作品集</a>
         <a href="${SITE_ORIGIN}/gao-cai-tong-sheng-xue-zuo-pin-ji">高才通作品集</a>
         <a href="${SITE_ORIGIN}/xing-qu-chu-ban">興趣出版</a>
         <a href="${SITE_ORIGIN}/faq">常見問題</a>
@@ -765,6 +771,10 @@ ${linkList(CHECKLIST_ZH.artLinks)}
         <ul>
 ${linkList(CHECKLIST_ZH.rushLinks)}
         </ul>
+        <h2>${escapeHtml(CHECKLIST_ZH.stageTitle)}</h2>
+        <ul>
+${linkList(CHECKLIST_ZH.stageLinks)}
+        </ul>
         <p><a href="${canonicalUrl("/sheng-xue-zuo-pin-ji")}">升學作品集</a> · <a href="${canonicalUrl("/programme")}">${escapeHtml(CHECKLIST_ZH.programmeLink)}</a></p>
         <h2 id="faq">${escapeHtml(CHECKLIST_ZH.faqTitle)}</h2>
 ${CHECKLIST_ZH.faqs
@@ -781,11 +791,41 @@ ${CHECKLIST_ZH.faqs
 
   const gaocai = hubDocument(GAOCAI_ZH, GAOCAI_PATH);
   const xingqu = hubDocument(XINGQU_ZH, XINGQU_PATH);
+  const shengxiao = hubDocument(SHENGXIAO_ZH, SHENGXIAO_PATH);
+  const shengzhong = hubDocument(SHENGZHONG_ZH, SHENGZHONG_PATH);
 
-  return [home, programme, faq, portfolio, checklist, about, gaocai, xingqu, blogIndex, caseIndex, hilary];
+  return [home, programme, faq, portfolio, checklist, about, gaocai, xingqu, shengxiao, shengzhong, blogIndex, caseIndex, hilary];
 }
 
 function hubDocument(copy: HubCopy, path: string): RouteDocument {
+  const crumbs = [{ name: "首頁", path: "/" }];
+  if (copy.parent) crumbs.push({ name: copy.parent.label, path: copy.parent.href });
+  crumbs.push({ name: copy.crumb, path });
+  const graph: object[] = [
+    breadcrumbList(crumbs),
+    {
+      "@type": "WebPage",
+      name: copy.h1,
+      description: copy.description,
+      url: canonicalUrl(path),
+      isPartOf: { "@type": "WebSite", name: "Kidsmybook", url: SITE_ORIGIN },
+    },
+    faqPageEntity(copy.faqs, `${canonicalUrl(path)}#faq`),
+  ];
+  if (copy.howTo) {
+    graph.push({
+      "@type": "HowTo",
+      name: copy.pathTitle,
+      description: copy.pathIntro,
+      step: copy.steps.map((step, index) => ({
+        "@type": "HowToStep",
+        position: index + 1,
+        name: step.name,
+        text: step.text,
+        url: `${canonicalUrl(path)}#path`,
+      })),
+    });
+  }
   return {
     path,
     title: copy.title,
@@ -796,20 +836,7 @@ function hubDocument(copy: HubCopy, path: string): RouteDocument {
     jsonLdId: "kidsmybook-page-ld",
     jsonLd: {
       "@context": "https://schema.org",
-      "@graph": [
-        breadcrumbList([
-          { name: "首頁", path: "/" },
-          { name: copy.crumb, path },
-        ]),
-        {
-          "@type": "WebPage",
-          name: copy.h1,
-          description: copy.description,
-          url: canonicalUrl(path),
-          isPartOf: { "@type": "WebSite", name: "Kidsmybook", url: SITE_ORIGIN },
-        },
-        faqPageEntity(copy.faqs, `${canonicalUrl(path)}#faq`),
-      ],
+      "@graph": graph,
     },
     snapshotHtml: pageWrap(
       `        <h1>${escapeHtml(copy.h1)}</h1>
@@ -922,7 +949,7 @@ function assertDocument(html: string, route: RouteDocument) {
     for (const item of CHECKLIST_ZH.faqs) {
       if (!html.includes(item.q) || !html.includes(item.a)) throw new Error(`checklist FAQ missing ${item.q}`);
     }
-    for (const link of [...CHECKLIST_ZH.appendixLinks, ...CHECKLIST_ZH.artLinks, ...CHECKLIST_ZH.rushLinks]) {
+    for (const link of [...CHECKLIST_ZH.appendixLinks, ...CHECKLIST_ZH.artLinks, ...CHECKLIST_ZH.rushLinks, ...CHECKLIST_ZH.stageLinks]) {
       if (!html.includes(canonicalUrl(link.href))) throw new Error(`checklist missing ${link.href}`);
     }
   }
@@ -950,6 +977,25 @@ function assertDocument(html: string, route: RouteDocument) {
     if (!html.includes("<h1>兒童成就出版個案</h1>")) throw new Error("/case-studies H1 is not Traditional Chinese");
     if (!html.includes("https://wa.me/85291214157")) throw new Error("/case-studies index missing WhatsApp");
     if (html.includes("Case Studies｜")) throw new Error("/case-studies title still English-led");
+  }
+  if (route.path === SHENGXIAO_PATH || route.path === SHENGZHONG_PATH) {
+    const copy = route.path === SHENGXIAO_PATH ? SHENGXIAO_ZH : SHENGZHONG_ZH;
+    if (!html.includes("FAQPage") || !html.includes("BreadcrumbList") || !html.includes("WebPage") || !html.includes("HowTo")) {
+      throw new Error(`${route.path} missing FAQPage, BreadcrumbList, WebPage, or HowTo`);
+    }
+    if (!html.includes(`<h1>${escapeHtml(copy.h1)}</h1>`)) throw new Error(`${route.path} H1 missing`);
+    for (const item of copy.faqs) {
+      if (!html.includes(item.q) || !html.includes(item.a)) throw new Error(`${route.path} FAQ drift: ${item.q}`);
+    }
+    if (!html.includes("https://wa.me/85291214157")) throw new Error(`${route.path} missing WhatsApp`);
+    if (!html.includes(canonicalUrl("/programme")) || !html.includes(canonicalUrl("/sheng-xue-zuo-pin-ji")) || !html.includes(canonicalUrl(CHECKLIST_PATH))) {
+      throw new Error(`${route.path} missing programme, portfolio, or checklist link`);
+    }
+    const cross = route.path === SHENGXIAO_PATH ? SHENGZHONG_PATH : SHENGXIAO_PATH;
+    if (!html.includes(canonicalUrl(cross))) throw new Error(`${route.path} missing cross-hub ${cross}`);
+    if (route.path === SHENGZHONG_PATH && !html.includes(canonicalUrl(GAOCAI_PATH))) {
+      throw new Error(`${route.path} missing high-talent hub`);
+    }
   }
   if (route.path === GAOCAI_PATH || route.path === XINGQU_PATH) {
     const copy = route.path === GAOCAI_PATH ? GAOCAI_ZH : XINGQU_ZH;
@@ -1105,6 +1151,8 @@ function assertSources(posts: RouteDocument[]) {
     `${SITE_ORIGIN}/sheng-xue-zuo-pin-ji-qing-dan`,
     `${SITE_ORIGIN}/gao-cai-tong-sheng-xue-zuo-pin-ji`,
     `${SITE_ORIGIN}/xing-qu-chu-ban`,
+    `${SITE_ORIGIN}/sheng-xiao-xue-mian-shi-zuo-pin-ji`,
+    `${SITE_ORIGIN}/sheng-zhong-dss-zuo-pin-ji`,
     `${SITE_ORIGIN}/llms.txt`,
     `${SITE_ORIGIN}/llms-full.txt`,
   ]) {

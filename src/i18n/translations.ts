@@ -12,6 +12,10 @@ import {
   CHECKLIST_HANS,
   GAOCAI_EN,
   GAOCAI_HANS,
+  SHENGXIAO_EN,
+  SHENGXIAO_HANS,
+  SHENGZHONG_EN,
+  SHENGZHONG_HANS,
   PORTFOLIO_EN,
   PORTFOLIO_HANS,
   PROGRAMME_EN,
@@ -19,7 +23,7 @@ import {
   XINGQU_EN,
   XINGQU_HANS,
 } from "./landing-extra";
-import { ABOUT_ZH, BLOG_INDEX_ZH, CHECKLIST_ZH, EXPLORE_ZH, FAQ_PAGE_ZH, GAOCAI_ZH, PORTFOLIO_ZH, PROGRAMME_ZH, XINGQU_ZH, type HubCopy } from "../seo/landing-zh";
+import { ABOUT_ZH, BLOG_INDEX_ZH, CHECKLIST_ZH, EXPLORE_ZH, FAQ_PAGE_ZH, GAOCAI_ZH, PORTFOLIO_ZH, PROGRAMME_ZH, SHENGXIAO_ZH, SHENGZHONG_ZH, XINGQU_ZH, type HubCopy } from "../seo/landing-zh";
 import { HOME_DESCRIPTION_ZH, HOME_FAQ, HOME_TITLE_ZH } from "../seo/meta";
 
 export type ServiceSlug =
@@ -221,6 +225,8 @@ export type Translations = {
   checklistPage: typeof CHECKLIST_ZH;
   gaocaiPage: HubCopy;
   xingquPage: HubCopy;
+  shengxiaoPage: HubCopy;
+  shengzhongPage: HubCopy;
   aboutPage: typeof ABOUT_ZH;
   seo: {
     homeTitle: string;
@@ -505,6 +511,8 @@ const zhHant: Translations = {
   checklistPage: CHECKLIST_ZH,
   gaocaiPage: GAOCAI_ZH,
   xingquPage: XINGQU_ZH,
+  shengxiaoPage: SHENGXIAO_ZH,
+  shengzhongPage: SHENGZHONG_ZH,
   aboutPage: ABOUT_ZH,
   seo: {
     homeTitle: HOME_TITLE_ZH,
@@ -553,7 +561,7 @@ const zhHans: Translations = {
     backToBlog: "← 返回博客",
     indexTitle: "香港升学作品集・升小升中・ISBN 童书",
     indexDesc:
-      "香港家长：升小学面试、升中 DSS／直资、国际学校作品集，以及导师制 ISBN 出版怎样成为可引用的亮点。私人报价，不保证录取。",
+      "香港家长：升小学面试、升小面试班和 ISBN 出版作品集、升中 DSS／直资 portfolio，以及导师制 ISBN 出版怎样成为可引用的亮点。私人报价，不保证录取。",
   },
   hero: {
     ...zhHant.hero,
@@ -780,6 +788,8 @@ const zhHans: Translations = {
   checklistPage: CHECKLIST_HANS,
   gaocaiPage: GAOCAI_HANS,
   xingquPage: XINGQU_HANS,
+  shengxiaoPage: SHENGXIAO_HANS,
+  shengzhongPage: SHENGZHONG_HANS,
   aboutPage: ABOUT_HANS,
   seo: {
     homeTitle: "Kidsmybook｜儿童成就出版｜小朋友出书・ISBN・升学作品集",
@@ -824,7 +834,7 @@ const en: Translations = {
     backToBlog: "← Back to Blog",
     indexTitle: "Hong Kong school portfolios · primary, secondary, ISBN books",
     indexDesc:
-      "For Hong Kong parents: primary interviews, DSS and direct-subsidy secondary files, international portfolios, and how a mentored ISBN book becomes a citable highlight. Private quotation. No place is guaranteed.",
+      "For Hong Kong parents: primary interviews, a primary interview class versus an ISBN portfolio, DSS and direct-subsidy secondary files, and how a mentored ISBN book becomes a citable highlight. Private quotation. No place is guaranteed.",
   },
   hero: {
     eyebrow: "Hong Kong · Publishing · Exhibition · PR",
@@ -1061,6 +1071,8 @@ const en: Translations = {
   checklistPage: CHECKLIST_EN,
   gaocaiPage: GAOCAI_EN,
   xingquPage: XINGQU_EN,
+  shengxiaoPage: SHENGXIAO_EN,
+  shengzhongPage: SHENGZHONG_EN,
   aboutPage: ABOUT_EN,
   seo: {
     homeTitle: "Kidsmybook | Child author programme Hong Kong",

@@ -3,7 +3,7 @@
 export const BLOG_INDEX_ZH = {
   title: "香港升學作品集・升小升中・ISBN 童書",
   description:
-    "香港家長：升小學面試、升中 DSS／直資、國際學校作品集，同導師制 ISBN 出版點樣成為可引用嘅亮點。私人報價，唔保證取錄。",
+    "香港家長：升小學面試、升小面試班同 ISBN 出版作品集、升中 DSS／直資 portfolio，同導師制 ISBN 出版點樣成為可引用嘅亮點。私人報價，唔保證取錄。",
 };
 
 export const PROGRAMME_ZH = {
@@ -95,19 +95,19 @@ export const PORTFOLIO_ZH = {
   programmeLink: "了解 12 個月出書計劃",
   tracksTitle: "升小學、升中、國際學校",
   tracksIntro:
-    "同一本由小朋友參與嘅正式出版物，喺唔同面試嘅用法唔同。下面三篇講清楚點帶、點講。第四篇係文件本身點整：畫作、證書同時間唔夠嘅時候點揀。Kidsmybook 係出版工作室，唔保證取錄。",
+    "同一本由小朋友參與嘅正式出版物，喺唔同面試嘅用法唔同。升小學面試同叩門、升中／DSS／直資，各有一頁講清楚點帶、點講。國際學校同本地學校嘅講法見文章。最後一篇係文件本身點整：畫作、證書同時間唔夠嘅時候點揀。Kidsmybook 係出版工作室，唔係短期面試班，唔保證取錄。",
   tracks: [
     {
       title: "升小學面試作品集",
-      body: "小一自行分配、面試同叩門，校長通常只有幾分鐘。重點係小朋友可以指住一頁，用自己嘅說話講興趣點嚟、做過咩，而唔係再厚一本獎狀複印。",
-      href: "/blog/sheng-xiao-xue-mian-shi-zuo-pin-ji",
-      link: "升小學面試作品集：一本書點樣用",
+      body: "小一自行分配、面試同叩門，校長通常只有幾分鐘。重點係小朋友可以指住一頁，用自己嘅說話講興趣點嚟、做過咩，而唔係再厚一本獎狀複印。呢頁亦講清楚：Kidsmybook 係導師制出版，唔係幾堂升小面試班。",
+      href: "/sheng-xiao-xue-mian-shi-zuo-pin-ji",
+      link: "升小面試作品集：叩門同小一面試",
     },
     {
       title: "升中、DSS 同直資",
       body: "升中同直資、DSS 面試更常問持續興趣同自述。出版物可以放喺作品集前面，作為一項做完、可以核對嘅項目，而唔係再多一張同班一樣嘅證書。",
-      href: "/blog/sheng-zhong-dss-portfolio-chu-ban",
-      link: "升中面試、DSS 同直資：作品集點樣放一本出版物",
+      href: "/sheng-zhong-dss-zuo-pin-ji",
+      link: "升中／DSS／直資作品集",
     },
     {
       title: "國際學校 vs 本地學校",
@@ -129,11 +129,11 @@ export const PORTFOLIO_ZH = {
   faqs: [
     {
       q: "升小學面試，點解要用一本正式出版物？",
-      a: "小一自行分配、面試同叩門通常只有幾分鐘。一本小朋友參與、有 ISBN 嘅正式出版物，可以指住一頁用自己嘅說話講興趣點嚟，而唔係再厚一本獎狀複印。Kidsmybook 係出版工作室，唔保證取錄。",
+      a: "小一自行分配、面試同叩門通常只有幾分鐘。一本小朋友參與、有 ISBN 嘅正式出版物，可以指住一頁用自己嘅說話講興趣點嚟，而唔係再厚一本獎狀複印。Kidsmybook 係出版工作室，唔係短期升小面試班，唔保證取錄。詳見 https://kidsmybook.com/sheng-xiao-xue-mian-shi-zuo-pin-ji 。",
     },
     {
       q: "升中、DSS 同直資作品集可以點放呢本書？",
-      a: "升中同直資、DSS 面試較常問持續興趣同自述。出版物可以放喺作品集前面，作為一項做完、可以核對嘅項目。學校決定取錄。",
+      a: "升中同直資、DSS 面試較常問持續興趣同自述。出版物可以放喺作品集前面，作為一項做完、可以核對嘅項目。學校決定取錄。詳見 https://kidsmybook.com/sheng-zhong-dss-zuo-pin-ji 。",
     },
     {
       q: "國際學校 portfolio 同本地面試係咪要兩本書？",
@@ -198,6 +198,12 @@ export const CHECKLIST_ZH = {
     { href: "/blog/zuo-pin-ji-m-gau-lin-shi-gan", label: "作品集唔夠睇、臨時趕點算：叩門同面試季時間表" },
     { href: "/blog/dian-yang-zheng-liang-sheng-xue-zuo-pin-ji", label: "點樣整靚升學作品集：香港家長實用清單" },
   ],
+  stageTitle: "升小面試同升中作品集",
+  stageLinks: [
+    { href: "/sheng-xiao-xue-mian-shi-zuo-pin-ji", label: "升小面試作品集：叩門同小一面試" },
+    { href: "/sheng-zhong-dss-zuo-pin-ji", label: "升中／DSS／直資作品集" },
+    { href: "/blog/mian-shi-ban-vs-isbn-chu-ban", label: "升小面試班 vs ISBN 出版作品集" },
+  ],
   hubLink: "免費升學作品集準備清單",
   programmeLink: "了解 12 個月出書計劃",
   cardTitle: "準備清單",
@@ -243,6 +249,9 @@ export const EXPLORE_ZH = {
 };
 
 export const READING_ZH: { href: string; label: string }[] = [
+  { href: "/sheng-xiao-xue-mian-shi-zuo-pin-ji", label: "升小面試作品集：叩門同小一面試" },
+  { href: "/sheng-zhong-dss-zuo-pin-ji", label: "升中／DSS／直資作品集" },
+  { href: "/blog/mian-shi-ban-vs-isbn-chu-ban", label: "升小面試班 vs ISBN 出版作品集" },
   { href: "/sheng-xue-zuo-pin-ji-qing-dan", label: "升學作品集準備清單（免費）" },
   { href: "/blog/mei-shu-zuo-pin-ji-vs-isbn-chu-ban", label: "美術作品集 vs ISBN 出版作品集：香港升學幾時用邊樣" },
   { href: "/blog/dian-yang-zheng-liang-sheng-xue-zuo-pin-ji", label: "點樣整靚升學作品集：香港家長實用清單" },
@@ -263,6 +272,9 @@ export const READING_ZH: { href: string; label: string }[] = [
 ];
 
 export const PORTFOLIO_READING_ZH: { href: string; label: string }[] = [
+  { href: "/sheng-xiao-xue-mian-shi-zuo-pin-ji", label: "升小面試作品集：叩門同小一面試" },
+  { href: "/sheng-zhong-dss-zuo-pin-ji", label: "升中／DSS／直資作品集" },
+  { href: "/blog/mian-shi-ban-vs-isbn-chu-ban", label: "升小面試班 vs ISBN 出版作品集" },
   { href: "/sheng-xue-zuo-pin-ji-qing-dan", label: "升學作品集準備清單（免費）" },
   { href: "/blog/mei-shu-zuo-pin-ji-vs-isbn-chu-ban", label: "美術作品集 vs ISBN 出版作品集：香港升學幾時用邊樣" },
   { href: "/blog/dian-yang-zheng-liang-sheng-xue-zuo-pin-ji", label: "點樣整靚升學作品集：香港家長實用清單" },
@@ -309,6 +321,9 @@ export const ABOUT_ZH = {
 };
 
 export const FAQ_READING_ZH: { href: string; label: string }[] = [
+  { href: "/sheng-xiao-xue-mian-shi-zuo-pin-ji", label: "升小面試作品集" },
+  { href: "/sheng-zhong-dss-zuo-pin-ji", label: "升中／DSS／直資作品集" },
+  { href: "/blog/mian-shi-ban-vs-isbn-chu-ban", label: "升小面試班 vs ISBN 出版作品集" },
   { href: "/blog/mei-shu-zuo-pin-ji-vs-isbn-chu-ban", label: "美術作品集 vs ISBN 出版作品集" },
   { href: "/blog/dian-yang-zheng-liang-sheng-xue-zuo-pin-ji", label: "點樣整靚升學作品集" },
   { href: "/blog/zuo-pin-ji-m-gau-lin-shi-gan", label: "作品集唔夠睇、臨時趕點算" },
@@ -346,10 +361,14 @@ export type HubCopy = {
   cardTitle: string;
   cardBlurb: string;
   crumb: string;
+  parent?: HubLink;
+  howTo?: boolean;
 };
 
 export const GAOCAI_PATH = "/gao-cai-tong-sheng-xue-zuo-pin-ji";
 export const XINGQU_PATH = "/xing-qu-chu-ban";
+export const SHENGXIAO_PATH = "/sheng-xiao-xue-mian-shi-zuo-pin-ji";
+export const SHENGZHONG_PATH = "/sheng-zhong-dss-zuo-pin-ji";
 
 export const GAOCAI_ZH: HubCopy = {
   title: "高才通升學作品集｜新來港家庭用 ISBN 童書做證明物｜Kidsmybook",
@@ -414,8 +433,12 @@ export const GAOCAI_ZH: HubCopy = {
     { href: "/xing-qu-chu-ban", label: "由興趣走到 ISBN 童書" },
     { href: "/blog/top-talent-pass-first-year-portfolio", label: "高才通來港第一年作品集" },
     { href: "/blog/gtp-family-child-book-portfolio", label: "高才通家庭：一本書同證書堆" },
+    { href: "/sheng-xiao-xue-mian-shi-zuo-pin-ji", label: "升小面試作品集" },
+    { href: "/sheng-zhong-dss-zuo-pin-ji", label: "升中／DSS／直資作品集" },
+    { href: "/sheng-xue-zuo-pin-ji-qing-dan", label: "升學作品集準備清單（免費）" },
     { href: "/blog/sheng-xiao-xue-mian-shi-zuo-pin-ji", label: "升小學面試作品集：一本書點樣用" },
     { href: "/blog/sheng-zhong-dss-portfolio-chu-ban", label: "升中、DSS 同直資作品集" },
+    { href: "/blog/mian-shi-ban-vs-isbn-chu-ban", label: "升小面試班 vs ISBN 出版作品集" },
   ],
   ctaTitle: "先講家庭情況，再私人報價",
   ctaBody: "網站唔公開價目，亦唔保證學位。WhatsApp 講年齡、目標學校類型同一個興趣。",
@@ -489,6 +512,8 @@ export const XINGQU_ZH: HubCopy = {
     { href: "/blog/xing-qu-bian-chu-ban", label: "興趣點樣變成一本正式出版嘅書" },
     { href: "/blog/zheng-shu-ban-vs-isbn-chu-ban", label: "證書班 vs ISBN 正式出版" },
     { href: "/blog/portfolio-vs-extracurriculars-hk-admissions", label: "實體書出版 vs 傳統興趣班" },
+    { href: "/sheng-xiao-xue-mian-shi-zuo-pin-ji", label: "升小面試作品集" },
+    { href: "/sheng-zhong-dss-zuo-pin-ji", label: "升中／DSS／直資作品集" },
   ],
   ctaTitle: "講一件興趣，再私人報價",
   ctaBody: "網站唔公開價目，亦唔保證學位。WhatsApp 講年齡、興趣同目標學校類型。",
@@ -496,4 +521,157 @@ export const XINGQU_ZH: HubCopy = {
   cardTitle: "興趣出版",
   cardBlurb: "高爾夫、鋼琴、馬術等持續興趣，走到導師制 ISBN 童書。",
   crumb: "興趣出版",
+};
+
+export const SHENGXIAO_ZH: HubCopy = {
+  title: "升小面試作品集｜小一自行分配、叩門同面試｜Kidsmybook",
+  description:
+    "升小學面試、叩門同 portfolio：用有 ISBN、小朋友參與嘅正式出版物做記得住嘅一頁。Kidsmybook 係 12 個月導師制出版，唔係短期升小面試班。私人報價，唔保證取錄。",
+  eyebrow: "升小面試 · 叩門 · 香港",
+  h1: "升小面試作品集：叩門同小一面試點樣用一本正式出版物",
+  lead: "小一自行分配、面試同統一派位之後嘅叩門，通常只有幾分鐘。作品集唔係愈厚愈好。一本由小朋友參與、可有大學教授審閱、有 ISBN 嘅正式出版物，係面試官可以翻開、小朋友可以指住一頁講嘅一項成果。搜「升小面試」「面試班」或 portfolio 嘅家長，可以先分清：短期面試班練當場表現；Kidsmybook 做嘅係可以帶去面試嘅出版作品集。",
+  notLabel: "呢頁唔係",
+  notBody:
+    "唔係幾堂升小面試班，唔係模擬面試稿班，亦唔係保證入到任何小學。Kidsmybook 係出版工作室，冇學校合作，唔代表任何學校收生。臨近面試只剩幾日或幾星期，12 個月出版計劃趕唔切。",
+  listTitle: "升小面試同叩門，呢本書做咩",
+  listItems: [
+    "幾分鐘裡面有一頁可以打開：興趣點嚟、做過咩、改過邊度",
+    "作品集前面係一件做完嘅出版物，而唔係再厚一本獎狀複印",
+    "叩門同面試用同一本實物，唔使臨時砌兩套故事",
+    "中文、英文或雙語，視乎目標小學語境，諮詢時先定",
+  ],
+  limitTitle: "書同面試班各做各樣",
+  limitItems: [
+    "面試班可以練禮貌、答題同當場表現；書唔代替嗰幾堂",
+    "書證明一段做完嘅興趣同出版安排，唔係學科成績，亦唔係收生承諾",
+    "如果面試就快到，先收窄而家手上嘅文件；出書適合下一個大約有一年嘅周期",
+    "公開具名個案只有 Hilary（出版時八歲，蝴蝶圖鑑）。呢個係出版例子，唔係入學結果",
+  ],
+  pathTitle: "由興趣到可以帶去升小面試嘅書",
+  pathIntro: "四步接到 12 個月出書計劃同免費準備清單。中途可以先 WhatsApp 問適唔適合，報價仍然私人。",
+  steps: [
+    { name: "講年齡同目標", text: "諮詢時講小朋友年齡、而家或目標係本地、私立、直資定國際小學，同埋一件會自己翻開嚟做嘅興趣。" },
+    { name: "導師制完成一本書", text: "大約 12 個月：創作、可有大學教授審閱、親子排版，保留小朋友自己嘅聲音。深度按年齡，唔會叫細路寫大人作文。" },
+    { name: "ISBN 同正式出版", text: "按香港公共圖書館書刊註冊組公開做法處理書號同出版安排。Kidsmybook 唔係該組。" },
+    { name: "放進升小作品集", text: "面試或叩門當日只打開一頁。證書放後面。文件核對見免費準備清單。" },
+  ],
+  faqTitle: "升小面試作品集常見問題",
+  faqs: [
+    {
+      q: "升小面試作品集，點解唔係再厚一本獎狀？",
+      a: "自行分配、面試同叩門通常只有幾分鐘。校長未必由第一頁獎狀睇到最後。一本小朋友參與、有 ISBN 嘅書，可以指住一頁用自己嘅說話講。Kidsmybook 唔保證取錄。",
+    },
+    {
+      q: "Kidsmybook 係咪升小面試班？",
+      a: "唔係。面試班多數係短期課堂，練禮貌、常見問題同模擬面試。Kidsmybook 係 12 個月導師制出版，成果係一本可以帶去面試嘅正式出版物。兩樣可以並存，但唔係同一種服務。比較見 https://kidsmybook.com/blog/mian-shi-ban-vs-isbn-chu-ban 。",
+    },
+    {
+      q: "叩門只剩幾日，仲可唔可以出書？",
+      a: "唔可以趕完 12 個月計劃。先用準備清單收窄而家嘅文件，揀一件小朋友講得出嘅作品。出書適合下一個大約有一年時間嘅申請周期。網站唔公開價目。",
+    },
+    {
+      q: "升中、DSS 同直資係咪用同一頁？",
+      a: "唔係。升小重點係幾分鐘講完一件事。升中同直資、DSS 較常問持續興趣同自述。見 https://kidsmybook.com/sheng-zhong-dss-zuo-pin-ji 。高才通或新來港家庭另見 https://kidsmybook.com/gao-cai-tong-sheng-xue-zuo-pin-ji 。",
+    },
+    {
+      q: "點樣索取升小作品集嘅私人報價？",
+      a: "WhatsApp https://wa.me/85291214157 或電郵 kidsmybook@outlook.com。講年齡、目標小學類型同一個興趣。網站唔公開價目，亦唔保證學位。",
+    },
+  ],
+  readingTitle: "升小面試、清單同相關頁",
+  links: [
+    { href: "/sheng-xue-zuo-pin-ji-qing-dan", label: "升學作品集準備清單（免費）" },
+    { href: "/programme", label: "12 個月小朋友出書計劃" },
+    { href: "/sheng-xue-zuo-pin-ji", label: "升學作品集總頁" },
+    { href: "/sheng-zhong-dss-zuo-pin-ji", label: "升中／DSS／直資作品集" },
+    { href: "/gao-cai-tong-sheng-xue-zuo-pin-ji", label: "高才通／新來港證明物" },
+    { href: "/blog/mian-shi-ban-vs-isbn-chu-ban", label: "升小面試班 vs ISBN 出版作品集" },
+    { href: "/blog/sheng-xiao-xue-mian-shi-zuo-pin-ji", label: "升小學面試作品集：一本書點樣用" },
+    { href: "/blog/primary-school-door-knocking-portfolio-prep", label: "小學叩門 Portfolio 準備" },
+    { href: "/blog/zuo-pin-ji-m-gau-lin-shi-gan", label: "作品集唔夠睇、臨時趕點算" },
+  ],
+  ctaTitle: "先講升小面試時間，再私人報價",
+  ctaBody: "網站唔公開價目，亦唔保證學位。WhatsApp 講年齡、目標小學類型、面試或叩門大約幾時，同一個興趣。",
+  whatsappText: "想了解升小面試／叩門作品集，同 12 個月 ISBN 出版係咪適合",
+  cardTitle: "升小面試作品集",
+  cardBlurb: "叩門同小一面試：ISBN 童書做記得住嘅一頁。唔係面試班，唔保證學位。",
+  crumb: "升小面試作品集",
+  parent: { href: "/sheng-xue-zuo-pin-ji", label: "升學作品集" },
+  howTo: true,
+};
+
+export const SHENGZHONG_ZH: HubCopy = {
+  title: "升中 DSS／直資作品集｜持續興趣同 ISBN 出版｜Kidsmybook",
+  description:
+    "升中、DSS 同直資 portfolio：將一本小朋友參與、有 ISBN 嘅正式出版物放喺作品集前面，作為講得完嘅持續興趣。私人報價。Kidsmybook 唔代表任何學校，唔保證取錄。",
+  eyebrow: "升中 · DSS · 直資 · 香港",
+  h1: "升中、DSS 同直資作品集：點樣放一本正式出版物",
+  lead: "升中同直資、DSS 面試，較少再聽一次小學嗰疊證書。較常問嘅係持續興趣、自述，同埋遇到困難點改。一本做完、可以翻開嚟講嘅出版物，可以放喺作品集前面，作為一項可以核對嘅項目。Kidsmybook 係導師制出版工作室，用 portfolio 呢個英文都係指呢份升學作品集，唔係短期面試班。",
+  notLabel: "誠實界限",
+  notBody:
+    "Kidsmybook 唔代表任何直資、DSS、私立或官津中學，冇學校合作，亦唔保證取錄。書唔代替成績表、推薦信或學校指定表格。最終取錄由學校決定。",
+  listTitle: "升中作品集前面可以放咩",
+  listItems: [
+    "一件做完嘅興趣：起點、過程、修改，小朋友自己講得出",
+    "正式出版物：題目、小朋友做過嘅部分、可有大學教授審閱、出版安排",
+    "面試時準備打開嘅一頁，而唔係十個週末班各一張證書",
+    "同一本書可以再準備升小或國際學校嘅講法，但唔好做成兩套矛盾故事",
+  ],
+  limitTitle: "呢本書唔做到嘅事",
+  limitItems: [
+    "唔保證直資、DSS 或其他中學取錄",
+    "唔係學校合作名單，亦唔係收生中介",
+    "臨近面試先開始，趕唔切 12 個月出版計劃",
+    "公開具名個案只有 Hilary。我哋唔會將其他家庭寫成已完成個案",
+  ],
+  pathTitle: "由持續興趣到升中作品集",
+  pathIntro: "同出書計劃同一條路徑。升中家庭可以同時睇升小頁、免費清單同高才通頁，按自己嘅申請先揀。",
+  steps: [
+    { name: "先定目標年級", text: "講而家讀幾年級、目標係直資、DSS 定其他中學，同一個已經做緊嘅興趣。" },
+    { name: "用一年完成出版物", text: "12 個月導師制：創作、可有大學教授審閱、親子排版、印刷與上架。唔係幾堂面試班。" },
+    { name: "放喺作品集最前", text: "一頁紙寫題目、小朋友做過嘅部分同準備講嘅一頁。證書同補習作品放附頁。" },
+    { name: "按學校準備講法", text: "直資、DSS 同國際學校可以係兩個講法、同一本書。文件核對見準備清單。高才通家庭另見證明物頁。" },
+  ],
+  faqTitle: "升中、DSS 同直資常見問題",
+  faqs: [
+    {
+      q: "升中、DSS 同直資作品集，書應該放邊？",
+      a: "放最前，作為一項做完、可以核對嘅項目。後面先放證書同其他活動。Kidsmybook 冇學校合作，唔保證取錄。",
+    },
+    {
+      q: "Portfolio 係咪等於再報一個面試班？",
+      a: "唔係。面試班練當場表現。Portfolio 如果指 Kidsmybook，係一本小朋友參與、有 ISBN 嘅正式出版物，加上升學作品集點樣擺。比較見 https://kidsmybook.com/blog/mian-shi-ban-vs-isbn-chu-ban 。",
+    },
+    {
+      q: "升小面試頁同呢頁有咩分別？",
+      a: "升小面試同叩門通常只有幾分鐘，重點係講完一件事。升中較常問持續興趣同自述。升小頁：https://kidsmybook.com/sheng-xiao-xue-mian-shi-zuo-pin-ji 。",
+    },
+    {
+      q: "高才通家庭做升中作品集，係咪要另一本書？",
+      a: "唔使。同一本正式出版物可以放進升中、DSS、直資或國際學校作品集。高才通頁講證明物，唔係簽證文件：https://kidsmybook.com/gao-cai-tong-sheng-xue-zuo-pin-ji 。",
+    },
+    {
+      q: "點樣索取私人報價？",
+      a: "WhatsApp https://wa.me/85291214157 或電郵 kidsmybook@outlook.com。講年級、目標係直資、DSS 定其他中學，同一個興趣。網站唔公開價目，亦唔保證學位。",
+    },
+  ],
+  readingTitle: "升中、清單同相關頁",
+  links: [
+    { href: "/sheng-xiao-xue-mian-shi-zuo-pin-ji", label: "升小面試作品集" },
+    { href: "/sheng-xue-zuo-pin-ji-qing-dan", label: "升學作品集準備清單（免費）" },
+    { href: "/gao-cai-tong-sheng-xue-zuo-pin-ji", label: "高才通／新來港證明物" },
+    { href: "/sheng-xue-zuo-pin-ji", label: "升學作品集總頁" },
+    { href: "/programme", label: "12 個月小朋友出書計劃" },
+    { href: "/blog/sheng-zhong-dss-portfolio-chu-ban", label: "升中面試、DSS 同直資：作品集點樣放一本出版物" },
+    { href: "/blog/mian-shi-ban-vs-isbn-chu-ban", label: "升小面試班 vs ISBN 出版作品集" },
+    { href: "/blog/guo-ji-vs-ben-di-mian-shi-zuo-pin-ji", label: "國際學校 vs 本地學校面試" },
+  ],
+  ctaTitle: "先講升中目標，再私人報價",
+  ctaBody: "網站唔公開價目，亦唔保證學位。WhatsApp 講年級、目標學校類型同一個興趣。",
+  whatsappText: "想了解升中／DSS／直資作品集點樣用一本 ISBN 童書",
+  cardTitle: "升中 DSS／直資作品集",
+  cardBlurb: "持續興趣放作品集前面。唔代表任何學校，唔保證學位。",
+  crumb: "升中 DSS／直資作品集",
+  parent: { href: "/sheng-xue-zuo-pin-ji", label: "升學作品集" },
+  howTo: true,
 };

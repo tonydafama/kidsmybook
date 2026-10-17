@@ -34,7 +34,7 @@ The named public case is Hilary: age 8 at publication, a bilingual butterfly gui
 
 ## How do you tell if it fits?
 
-Share the child's age, whether the target is a local, private, DSS, or international primary, and one interest. The quotation is private. Prices are not on the site. Secondary and DSS use is different: https://kidsmybook.com/blog/sheng-zhong-dss-portfolio-chu-ban . International and local interviews: https://kidsmybook.com/blog/guo-ji-vs-ben-di-mian-shi-zuo-pin-ji . Hub: https://kidsmybook.com/sheng-xue-zuo-pin-ji .
+Share the child's age, whether the target is a local, private, DSS, or international primary, and one interest. The quotation is private. Prices are not on the site. Secondary and DSS use is different: https://kidsmybook.com/blog/sheng-zhong-dss-portfolio-chu-ban . International and local interviews: https://kidsmybook.com/blog/guo-ji-vs-ben-di-mian-shi-zuo-pin-ji . Hub: https://kidsmybook.com/sheng-xue-zuo-pin-ji . Primary interview page: https://kidsmybook.com/sheng-xiao-xue-mian-shi-zuo-pin-ji . Interview class versus ISBN publishing: https://kidsmybook.com/blog/mian-shi-ban-vs-isbn-chu-ban .
 
 WhatsApp https://wa.me/85291214157 or email kidsmybook@outlook.com .
 
