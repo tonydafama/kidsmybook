@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { getLocalizedPostMeta, upsertJsonLd, SITE_ORIGIN } from "./BlogPages";
 import { useLocale } from "./i18n/LocaleContext";
 import type { Locale } from "./i18n/locale";
-import { CHECKLIST_PATH, FAQ_READING_ZH, GAOCAI_PATH, PORTFOLIO_READING_ZH, READING_ZH, XINGQU_PATH, type HubCopy } from "./seo/landing-zh";
+import { CHECKLIST_PATH, FAQ_READING_ZH, GAOCAI_PATH, PORTFOLIO_READING_ZH, READING_ZH, SHENGXIAO_PATH, SHENGZHONG_PATH, XINGQU_PATH, type HubCopy } from "./seo/landing-zh";
 import { ORGANIZATION_SAME_AS, breadcrumbList, canonicalUrl, faqPageEntity } from "./seo/meta";
 
 const WHATSAPP_NUMBER = import.meta.env.VITE_WHATSAPP_NUMBER || "85291214157";
@@ -363,6 +363,8 @@ export function ChecklistPage() {
         <h2>{page.rushTitle}</h2>
         <p>{page.rush}</p>
         <ChecklistLinkList links={page.rushLinks} />
+        <h2>{page.stageTitle}</h2>
+        <ChecklistLinkList links={page.stageLinks} />
         <p>
           <a href={appHref("/programme")}>{page.programmeLink}</a>
           {" · "}
@@ -528,22 +530,37 @@ export function HubLandingPage({ path, page }: { path: string; page: HubCopy }) 
   const homeLabel = homeLabelFor(locale);
 
   useEffect(() => {
+    const crumbs = [{ name: homeLabel, path: "/" }];
+    if (page.parent) crumbs.push({ name: page.parent.label, path: page.parent.href });
+    crumbs.push({ name: page.crumb, path });
+    const graph: object[] = [
+      breadcrumbList(crumbs),
+      {
+        "@type": "WebPage",
+        name: page.h1,
+        description: page.description,
+        url: canonicalUrl(path),
+        isPartOf: { "@type": "WebSite", name: "Kidsmybook", url: SITE_ORIGIN },
+      },
+      faqPageEntity(page.faqs, `${canonicalUrl(path)}#faq`),
+    ];
+    if (page.howTo) {
+      graph.push({
+        "@type": "HowTo",
+        name: page.pathTitle,
+        description: page.pathIntro,
+        step: page.steps.map((step, index) => ({
+          "@type": "HowToStep",
+          position: index + 1,
+          name: step.name,
+          text: step.text,
+          url: `${canonicalUrl(path)}#path`,
+        })),
+      });
+    }
     upsertJsonLd("kidsmybook-page-ld", {
       "@context": "https://schema.org",
-      "@graph": [
-        breadcrumbList([
-          { name: homeLabel, path: "/" },
-          { name: page.crumb, path },
-        ]),
-        {
-          "@type": "WebPage",
-          name: page.h1,
-          description: page.description,
-          url: canonicalUrl(path),
-          isPartOf: { "@type": "WebSite", name: "Kidsmybook", url: SITE_ORIGIN },
-        },
-        faqPageEntity(page.faqs, `${canonicalUrl(path)}#faq`),
-      ],
+      "@graph": graph,
     });
     return () => upsertJsonLd("kidsmybook-page-ld", null);
   }, [homeLabel, page, path]);
@@ -554,6 +571,7 @@ export function HubLandingPage({ path, page }: { path: string; page: HubCopy }) 
         <Breadcrumb
           items={[
             { href: appHref("/"), label: homeLabel },
+            ...(page.parent ? [{ href: appHref(page.parent.href), label: page.parent.label }] : []),
             { href: appHref(path), label: page.crumb },
           ]}
         />
@@ -632,6 +650,16 @@ export function GaocaiHubPage() {
 export function XingquHubPage() {
   const { t } = useLocale();
   return <HubLandingPage path={XINGQU_PATH} page={t.xingquPage} />;
+}
+
+export function ShengxiaoHubPage() {
+  const { t } = useLocale();
+  return <HubLandingPage path={SHENGXIAO_PATH} page={t.shengxiaoPage} />;
+}
+
+export function ShengzhongHubPage() {
+  const { t } = useLocale();
+  return <HubLandingPage path={SHENGZHONG_PATH} page={t.shengzhongPage} />;
 }
 
 export function AboutPage() {
@@ -747,6 +775,18 @@ export function HomeExplore() {
           <div className="service-card-body">
             <h4>{t.checklistPage.cardTitle}</h4>
             <p>{t.checklistPage.cardBlurb}</p>
+          </div>
+        </a>
+        <a className="service-card link-card" href={appHref(SHENGXIAO_PATH)}>
+          <div className="service-card-body">
+            <h4>{t.shengxiaoPage.cardTitle}</h4>
+            <p>{t.shengxiaoPage.cardBlurb}</p>
+          </div>
+        </a>
+        <a className="service-card link-card" href={appHref(SHENGZHONG_PATH)}>
+          <div className="service-card-body">
+            <h4>{t.shengzhongPage.cardTitle}</h4>
+            <p>{t.shengzhongPage.cardBlurb}</p>
           </div>
         </a>
         <a className="service-card link-card" href={appHref(GAOCAI_PATH)}>

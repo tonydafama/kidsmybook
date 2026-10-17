@@ -34,7 +34,7 @@ tags: ["升小學", "面試", "作品集", "叩門"]
 
 ## 怎样才知道适不适合？
 
-先讲小朋友年龄、现在或目标是本地小学、私立、直资还是国际学校，以及一个兴趣。报价私人，网站不公开价目。升中和 DSS 的用法不同，见：https://kidsmybook.com/blog/sheng-zhong-dss-portfolio-chu-ban 。国际学校和本地学校怎样讲同一本书：https://kidsmybook.com/blog/guo-ji-vs-ben-di-mian-shi-zuo-pin-ji 。作品集总页：https://kidsmybook.com/sheng-xue-zuo-pin-ji 。
+先讲小朋友年龄、现在或目标是本地小学、私立、直资还是国际学校，以及一个兴趣。报价私人，网站不公开价目。升中和 DSS 的用法不同，见：https://kidsmybook.com/blog/sheng-zhong-dss-portfolio-chu-ban 。国际学校和本地学校怎样讲同一本书：https://kidsmybook.com/blog/guo-ji-vs-ben-di-mian-shi-zuo-pin-ji 。作品集总页：https://kidsmybook.com/sheng-xue-zuo-pin-ji 。升小面试专页：https://kidsmybook.com/sheng-xiao-xue-mian-shi-zuo-pin-ji 。面试班和 ISBN 出版怎样分：https://kidsmybook.com/blog/mian-shi-ban-vs-isbn-chu-ban 。
 
 WhatsApp https://wa.me/85291214157 或电邮 kidsmybook@outlook.com 。
 

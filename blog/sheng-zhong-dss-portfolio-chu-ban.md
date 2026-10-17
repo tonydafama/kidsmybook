@@ -20,7 +20,7 @@ tags: ["升中", "DSS", "直資", "作品集"]
 
 唔可以。出版工作室唔係升學中介，唔保證直資、DSS、私立或官津中學嘅取錄。學校先決定。書嘅作用係畀面試一個講得完嘅故事，同埋一件可以引用嘅正式出版物。
 
-升小學嘅用法見：https://kidsmybook.com/blog/sheng-xiao-xue-mian-shi-zuo-pin-ji 。國際學校同本地學校點樣講同一本書：https://kidsmybook.com/blog/guo-ji-vs-ben-di-mian-shi-zuo-pin-ji 。總頁：https://kidsmybook.com/sheng-xue-zuo-pin-ji 。
+升小學嘅用法見：https://kidsmybook.com/blog/sheng-xiao-xue-mian-shi-zuo-pin-ji 。國際學校同本地學校點樣講同一本書：https://kidsmybook.com/blog/guo-ji-vs-ben-di-mian-shi-zuo-pin-ji 。總頁：https://kidsmybook.com/sheng-xue-zuo-pin-ji 。升中專頁：https://kidsmybook.com/sheng-zhong-dss-zuo-pin-ji 。升小面試專頁：https://kidsmybook.com/sheng-xiao-xue-mian-shi-zuo-pin-ji 。
 
 WhatsApp https://wa.me/85291214157 ，講年齡、而家讀幾年級、目標係直資、DSS 定其他中學，同一個興趣。報價私人，網站唔公開價目。
 

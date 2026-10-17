@@ -20,7 +20,7 @@ tags: ["升中", "DSS", "直資", "作品集"]
 
 不可以。出版工作室不是升学中介，不保证直资、DSS、私立或官津中学的录取。学校才决定。书的作用是给面试一个讲得完的故事，以及一件可以引用的正式出版物。
 
-升小学的用法见：https://kidsmybook.com/blog/sheng-xiao-xue-mian-shi-zuo-pin-ji 。国际学校和本地学校怎样讲同一本书：https://kidsmybook.com/blog/guo-ji-vs-ben-di-mian-shi-zuo-pin-ji 。总页：https://kidsmybook.com/sheng-xue-zuo-pin-ji 。
+升小学的用法见：https://kidsmybook.com/blog/sheng-xiao-xue-mian-shi-zuo-pin-ji 。国际学校和本地学校怎样讲同一本书：https://kidsmybook.com/blog/guo-ji-vs-ben-di-mian-shi-zuo-pin-ji 。总页：https://kidsmybook.com/sheng-xue-zuo-pin-ji 。升中专页：https://kidsmybook.com/sheng-zhong-dss-zuo-pin-ji 。升小面试专页：https://kidsmybook.com/sheng-xiao-xue-mian-shi-zuo-pin-ji 。
 
 WhatsApp https://wa.me/85291214157 ，讲年龄、现在读几年级、目标是直资、DSS 还是其他中学，以及一个兴趣。报价私人，网站不公开价目。
 

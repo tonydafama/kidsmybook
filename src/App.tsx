@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import { AiBookCreatorPanel } from "./AiBookCreatorPage";
-import { AboutPage, ChecklistPage, FaqPage, GaocaiHubPage, HomeExplore, PortfolioHubPage, ProgrammePage, XingquHubPage } from "./LandingPages";
+import { AboutPage, ChecklistPage, FaqPage, GaocaiHubPage, HomeExplore, PortfolioHubPage, ProgrammePage, ShengxiaoHubPage, ShengzhongHubPage, XingquHubPage } from "./LandingPages";
 import { LanguageSwitcher } from "./components/LanguageSwitcher";
 import { useLocale } from "./i18n/LocaleContext";
 import { BlogIndexPage, BlogPostPage, POSTS, SITE_ORIGIN, getLocalizedPostMeta, upsertJsonLd } from "./BlogPages";
@@ -513,6 +513,8 @@ export default function App() {
     "/sheng-xue-zuo-pin-ji-qing-dan",
     "/gao-cai-tong-sheng-xue-zuo-pin-ji",
     "/xing-qu-chu-ban",
+    "/sheng-xiao-xue-mian-shi-zuo-pin-ji",
+    "/sheng-zhong-dss-zuo-pin-ji",
     "/about",
     "/case-studies",
     "/case-studies/hilary-butterfly-guide",
@@ -529,6 +531,8 @@ export default function App() {
       "/sheng-xue-zuo-pin-ji-qing-dan": { title: t.checklistPage.title, description: t.checklistPage.description },
       "/gao-cai-tong-sheng-xue-zuo-pin-ji": { title: t.gaocaiPage.title, description: t.gaocaiPage.description },
       "/xing-qu-chu-ban": { title: t.xingquPage.title, description: t.xingquPage.description },
+      "/sheng-xiao-xue-mian-shi-zuo-pin-ji": { title: t.shengxiaoPage.title, description: t.shengxiaoPage.description },
+      "/sheng-zhong-dss-zuo-pin-ji": { title: t.shengzhongPage.title, description: t.shengzhongPage.description },
       "/about": { title: t.aboutPage.title, description: t.aboutPage.description },
       "/services": { title: t.seo.servicesTitle, description: t.seo.servicesDesc },
       "/case-studies": { title: t.seo.caseStudiesTitle, description: t.seo.caseStudiesDesc },
@@ -645,6 +649,8 @@ export default function App() {
       {pathname === "/sheng-xue-zuo-pin-ji-qing-dan" && <ChecklistPage />}
       {pathname === "/gao-cai-tong-sheng-xue-zuo-pin-ji" && <GaocaiHubPage />}
       {pathname === "/xing-qu-chu-ban" && <XingquHubPage />}
+      {pathname === "/sheng-xiao-xue-mian-shi-zuo-pin-ji" && <ShengxiaoHubPage />}
+      {pathname === "/sheng-zhong-dss-zuo-pin-ji" && <ShengzhongHubPage />}
       {pathname === "/services" && <ServicesIndexPage services={serviceItems} />}
       {currentService && <ServiceDetailPage item={currentService} />}
       {pathname === "/about" && <AboutPage />}
@@ -668,6 +674,11 @@ export default function App() {
         <p>{t.footer.studio}</p>
         <p className="site-footer__links">
           <a href={appHref("/about")}>{t.footer.about}</a>
+          <a href={appHref("/sheng-xiao-xue-mian-shi-zuo-pin-ji")}>{t.shengxiaoPage.crumb}</a>
+          <a href={appHref("/sheng-zhong-dss-zuo-pin-ji")}>{t.shengzhongPage.crumb}</a>
+          <a href={appHref("/blog/mian-shi-ban-vs-isbn-chu-ban")}>
+            {locale === "en" ? "Interview class vs ISBN" : locale === "zh-Hans" ? "面试班 vs ISBN" : "面試班 vs ISBN"}
+          </a>
           <a href={whatsappFloating} target="_blank" rel="noreferrer">
             WhatsApp +852 9121 4157
           </a>

@@ -18,6 +18,13 @@ interface PostMeta {
 
 const POSTS: PostMeta[] = [
   {
+    slug: "mian-shi-ban-vs-isbn-chu-ban",
+    title: "升小面試班 vs ISBN 出版作品集：香港家長點樣揀",
+    excerpt: "升小面試班練當場表現；ISBN 出版作品集係 12 個月導師制做出嚟、可以帶去面試嘅書。Kidsmybook 唔係短期面試班。臨近面試趕唔切一本書。私人報價，唔保證取錄。",
+    date: "2026-10-17",
+    readMin: 6,
+  },
+  {
     slug: "mei-shu-zuo-pin-ji-vs-isbn-chu-ban",
     title: "美術作品集 vs ISBN 出版作品集：香港升學幾時用邊樣",
     excerpt: "畫簿、素描同美術班作品集，同有 ISBN、小朋友參與嘅出版作品集，唔係同一種證據。幾時交畫作已經夠，幾時一本書幫到面試。私人報價，唔保證取錄。",
