@@ -402,7 +402,9 @@ function BlogIndexPage() {
     upsertJsonLd("kidsmybook-blog-index-ld", {
       "@context": "https://schema.org",
       "@type": "CollectionPage",
-      name: "Kidsmybook Blog — Hong Kong school admissions & child publishing",
+      name: t.blog.indexTitle,
+      description: t.blog.indexDesc,
+      inLanguage: locale === "en" ? "en" : locale === "zh-Hans" ? "zh-Hans" : "zh-Hant",
       url: `${SITE_ORIGIN}/blog`,
       isPartOf: { "@type": "WebSite", name: "Kidsmybook", url: SITE_ORIGIN },
       about: [
@@ -421,7 +423,7 @@ function BlogIndexPage() {
       },
     });
     return () => upsertJsonLd("kidsmybook-blog-index-ld", null);
-  }, [sorted]);
+  }, [sorted, locale, t.blog.indexDesc, t.blog.indexTitle]);
 
   return (
     <main>
