@@ -18,6 +18,27 @@ interface PostMeta {
 
 const POSTS: PostMeta[] = [
   {
+    slug: "mei-shu-zuo-pin-ji-vs-isbn-chu-ban",
+    title: "美術作品集 vs ISBN 出版作品集：香港升學幾時用邊樣",
+    excerpt: "畫簿、素描同美術班作品集，同有 ISBN、小朋友參與嘅出版作品集，唔係同一種證據。幾時交畫作已經夠，幾時一本書幫到面試。私人報價，唔保證取錄。",
+    date: "2026-10-17",
+    readMin: 6,
+  },
+  {
+    slug: "dian-yang-zheng-liang-sheng-xue-zuo-pin-ji",
+    title: "點樣整靚升學作品集：香港家長實用清單",
+    excerpt: "作品集薄、只有證書，或者臨近面試先整理：用一份清單決定放咩喺前面。證書班、補習作品同 ISBN 出版各自證明咩。私人報價，唔保證取錄。",
+    date: "2026-10-17",
+    readMin: 6,
+  },
+  {
+    slug: "zuo-pin-ji-m-gau-lin-shi-gan",
+    title: "作品集唔夠睇、臨時趕點算：叩門同面試季時間表",
+    excerpt: "面試或叩門只剩幾日或幾星期，12 個月出版計劃趕唔切。而家可以收窄文件；出書適合下一個大約有一年嘅申請周期。私人報價，唔保證取錄。",
+    date: "2026-10-17",
+    readMin: 5,
+  },
+  {
     slug: "zheng-shu-ban-vs-isbn-chu-ban",
     title: "證書班 vs ISBN 正式出版：面試作品集點樣睇",
     excerpt: "證書班交一張等級紙；ISBN 正式出版交一本小朋友參與、可以翻開講嘅書。兩樣可以並存，但唔係同一種證據。私人報價，唔保證取錄。",

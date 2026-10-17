@@ -87,7 +87,7 @@ export const PORTFOLIO_HANS = {
   programmeLink: "了解 12 个月出书计划",
   tracksTitle: "升小学、升中、国际学校",
   tracksIntro:
-    "同一本由小朋友参与的正式出版物，在不同面试的用法不同。下面三篇讲清楚怎样带、怎样讲，以及和已有的叩门、直资、国际学校文章怎样一起看。Kidsmybook 是出版工作室，不保证录取。",
+    "同一本由小朋友参与的正式出版物，在不同面试的用法不同。下面三篇讲清楚怎样带、怎样讲。第四篇是文件本身怎样整理：画作、证书和时间不够的时候怎样选。Kidsmybook 是出版工作室，不保证录取。",
   tracks: [
     {
       title: "升小学面试作品集",
@@ -106,6 +106,12 @@ export const PORTFOLIO_HANS = {
       body: "国际学校面试多数用英文讲好奇心和项目；本地、私立和直资较常看中文表达和家庭怎样支持。同一本书可以准备两种讲法，不要做成两套故事。",
       href: "/blog/guo-ji-vs-ben-di-mian-shi-zuo-pin-ji",
       link: "国际学校 vs 本地学校面试：出版作品集有什么分别",
+    },
+    {
+      title: "作品集怎样整理、时间不够",
+      body: "画作作品集、证书堆和临时赶工是三个不同问题。清单讲什么时候交画已经够、什么时候用一本出版作品集做分别，以及面试只剩几天时 12 个月计划赶不及。",
+      href: "/blog/dian-yang-zheng-liang-sheng-xue-zuo-pin-ji",
+      link: "怎样做好升学作品集：香港家长实用清单",
     },
   ],
   whatsappLink: "WhatsApp 讲讲升小学或升中面试",
@@ -128,6 +134,14 @@ export const PORTFOLIO_HANS = {
     {
       q: "怎样索取升学作品集的私人报价？",
       a: "WhatsApp https://wa.me/85291214157 或电邮 kidsmybook@outlook.com。讲小朋友年龄、目标是升小、升中还是国际学校，以及一个兴趣。网站不公开价目，也不保证学位。",
+    },
+    {
+      q: "美术作品集和 ISBN 出版作品集有什么分别？",
+      a: "画簿、素描和美术班作品集证明技法和练习。有 ISBN、小朋友参与的出版作品集是一件做完、可以翻开讲的正式出版物。学校如果指定要交原作或画作选辑，画作仍然要交；书不取代那份指定作品。Kidsmybook 不保证录取。详见 https://kidsmybook.com/blog/mei-shu-zuo-pin-ji-vs-isbn-chu-ban 。",
+    },
+    {
+      q: "作品集不够看、面试快到了，还可以出书吗？",
+      a: "如果只剩几天或几星期，12 个月出版计划赶不及。先收窄现在的文件，选一件小朋友讲得出的作品。出书适合下一个大约有一年时间的申请周期。报价私人，网站不公开价目。详见 https://kidsmybook.com/blog/zuo-pin-ji-m-gau-lin-shi-gan 。",
     },
   ],
 };
@@ -215,6 +229,14 @@ export const FAQ_HANS: { q: string; a: string }[] = [
   {
     q: "资优／特别兴趣的小朋友适不适合？",
     a: "适合。很多家庭不想只靠跳级或再堆班，而想用一本专题式出版展现深度。出版过程本身也是项目式学习（研究、表达、修改、完成），对资优和有持续兴趣的小朋友都很有价值。",
+  },
+  {
+    q: "美术作品集和 ISBN 出版作品集有什么分别？",
+    a: "画簿、素描和美术班作品集证明技法和练习。有 ISBN、小朋友参与的出版作品集是一件做完、可以翻开讲的正式出版物。学校如果指定要交原作或画作选辑，画作仍然要交；书不取代那份指定作品。Kidsmybook 不保证录取。详见 https://kidsmybook.com/blog/mei-shu-zuo-pin-ji-vs-isbn-chu-ban 。",
+  },
+  {
+    q: "作品集不够看、面试快到了，还可以出书吗？",
+    a: "如果只剩几天或几星期，12 个月出版计划赶不及。先收窄现在的文件，选一件小朋友讲得出的作品。出书适合下一个大约有一年时间的申请周期。报价私人，网站不公开价目。详见 https://kidsmybook.com/blog/zuo-pin-ji-m-gau-lin-shi-gan 。",
   },
   {
     q: "实体书店上架是必须的吗？是什么意思？",
@@ -313,7 +335,7 @@ export const PORTFOLIO_EN = {
   programmeLink: "See the 12-month author programme",
   tracksTitle: "Primary, secondary, and international",
   tracksIntro:
-    "The same child-made publication is used differently in each interview. These three articles explain what to bring and how to tell it, next to the existing door-knocking, DSS, and international-school posts. Kidsmybook is a publishing studio and does not guarantee a place.",
+    "The same child-made publication is used differently in each interview. The first three articles explain what to bring and how to tell it. The fourth is how to order the file when drawings, certificates, or time are the problem. Kidsmybook is a publishing studio and does not guarantee a place.",
   tracks: [
     {
       title: "Primary interview portfolio",
@@ -332,6 +354,12 @@ export const PORTFOLIO_EN = {
       body: "International interviews often want the project in English. Local, private, and DSS interviews often look at Chinese expression and how the family supported the work. Prepare two tellings of one book, not two stories.",
       href: "/blog/guo-ji-vs-ben-di-mian-shi-zuo-pin-ji",
       link: "International vs local school interviews: how a published portfolio differs",
+    },
+    {
+      title: "Ordering the file when time is short",
+      body: "Drawings, a certificate stack, and a last-minute scramble are three different problems. The checklist says when drawings are enough, when a published book is the different piece, and why a 12-month programme cannot finish in a few days.",
+      href: "/blog/dian-yang-zheng-liang-sheng-xue-zuo-pin-ji",
+      link: "How to make a stronger Hong Kong admissions portfolio",
     },
   ],
   whatsappLink: "WhatsApp about a primary or secondary interview",
@@ -354,6 +382,14 @@ export const PORTFOLIO_EN = {
     {
       q: "How do we ask for a private quote on a school portfolio?",
       a: "WhatsApp https://wa.me/85291214157 or email kidsmybook@outlook.com. Share the child's age, whether the target is primary, secondary, or an international school, and one interest. The site does not publish prices, and no school place is guaranteed.",
+    },
+    {
+      q: "What is the difference between an art portfolio and an ISBN book?",
+      a: "A sketchbook or art-class selection shows technique and practice. An ISBN book the child helped make is a finished publication someone can open and cite. If the school asks for original drawings, those drawings still have to be submitted. The book does not replace them. Kidsmybook does not guarantee a place. See https://kidsmybook.com/blog/mei-shu-zuo-pin-ji-vs-isbn-chu-ban .",
+    },
+    {
+      q: "The portfolio feels thin and the interview is soon. Can we still publish?",
+      a: "A few days or weeks is not enough for the 12-month programme. Narrow the file you already have and choose one piece the child can explain. A book fits the next cycle that still has about a year. The quotation stays private and is not listed on the site. See https://kidsmybook.com/blog/zuo-pin-ji-m-gau-lin-shi-gan .",
     },
   ],
 };
@@ -441,6 +477,14 @@ export const FAQ_EN: { q: string; a: string }[] = [
   {
     q: "Does this suit a gifted child or a strong special interest?",
     a: "Yes. Many families want more than grade-skipping or another class. A themed publication shows depth. The process is project-based learning — research, expression, revision, and finishing — which suits gifted children and children with a sustained interest. This is a private mentored pathway, not a government gifted class.",
+  },
+  {
+    q: "What is the difference between an art portfolio and an ISBN book?",
+    a: "A sketchbook or art-class selection shows technique and practice. An ISBN book the child helped make is a finished publication someone can open and cite. If the school asks for original drawings, those drawings still have to be submitted. The book does not replace them. Kidsmybook does not guarantee a place. See https://kidsmybook.com/blog/mei-shu-zuo-pin-ji-vs-isbn-chu-ban .",
+  },
+  {
+    q: "The portfolio feels thin and the interview is soon. Can we still publish?",
+    a: "A few days or weeks is not enough for the 12-month programme. Narrow the file you already have and choose one piece the child can explain. A book fits the next cycle that still has about a year. The quotation stays private and is not listed on the site. See https://kidsmybook.com/blog/zuo-pin-ji-m-gau-lin-shi-gan .",
   },
   {
     q: "Is a physical bookstore listing required? What does it mean?",
