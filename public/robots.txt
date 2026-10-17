@@ -89,4 +89,11 @@ Disallow: /intake
 Disallow: /intake-form
 Disallow: /api/
 
+User-agent: Bingbot
+Allow: /
+Disallow: /admin
+Disallow: /intake
+Disallow: /intake-form
+Disallow: /api/
+
 Sitemap: https://kidsmybook.com/sitemap.xml

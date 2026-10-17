@@ -154,6 +154,79 @@ export const PORTFOLIO_ZH = {
   ],
 };
 
+export const CHECKLIST_PATH = "/sheng-xue-zuo-pin-ji-qing-dan";
+
+/** Prefilled WhatsApp text. Keep this exact phrase on every locale button. */
+export const CHECKLIST_WHATSAPP_TEXT = "想要升學作品集準備清單";
+
+export const CHECKLIST_ZH = {
+  title: "升學作品集準備清單｜升小、升中文件點樣收｜Kidsmybook",
+  description:
+    "免費升學作品集準備清單：升小、升中要帶咩文件，證書班同補習作品放附頁，美術作品集同 ISBN 出版書點分。清單免費；完整計劃私人 WhatsApp 報價。唔保證取錄。",
+  eyebrow: "免費清單 · 香港",
+  h1: "升學作品集準備清單",
+  lead: "面試前唔使再估「帶咩」。呢頁係一份可以核對嘅文件清單：升小學、升中／DSS／直資、國際學校作品集，邊啲放前面、邊啲放附頁。清單免費。完整出版計劃私人報價，網站唔公開價目。",
+  softCta: "清單免費；完整計劃私人 WhatsApp 報價。",
+  whatsappLabel: "WhatsApp：想要升學作品集準備清單",
+  whatsappText: CHECKLIST_WHATSAPP_TEXT,
+  docTitle: "升小／升中作品集要準備咩",
+  docIntro:
+    "升小學面試通常只有幾分鐘；升中、DSS 同直資較常問持續興趣同自述。同一份清單先核對手上有咩，再按目標學校決定邊樣放第一頁。Kidsmybook 係出版工作室，唔保證取錄。",
+  docs: [
+    "而家同目標學校類型：本地、私立、直資、DSS 定國際學校，同一年級",
+    "一件講得出口嘅興趣：點開始、做過咩、做咗幾耐，小朋友自己點講",
+    "已經有嘅成品：畫、文章、比賽、學校功課、興趣班習作——揀得講嘅，唔好全交",
+    "證書、獎狀、成績表：有就帶，但唔好當作品集主體",
+    "面試日期同家長聯絡方式（如果學校已經通知）",
+    "如果已經有正式出版物：書、ISBN、發布會或展覽紀錄",
+  ],
+  appendixTitle: "證書班／補習作品放附頁",
+  appendix:
+    "證書班同補習習作可以證明上過堂，但多數同班都有一份差唔多嘅。放喺附頁，唔好放第一頁。前面留一件小朋友自己講得出、做得完嘅事。",
+  appendixLinks: [
+    { href: "/blog/zheng-shu-ban-vs-isbn-chu-ban", label: "證書班 vs ISBN 正式出版：面試作品集點樣睇" },
+    { href: "/blog/bu-xi-zuo-pin-vs-chu-ban-zuo-pin-ji", label: "補習作品 vs 出版作品集：面試官睇到咩" },
+  ],
+  artTitle: "美術作品集 vs ISBN 出版書",
+  art: "畫簿、素描同美術班作品集證明技法同練習。有 ISBN、小朋友參與嘅出版書係另一件做完、可以翻開講嘅正式出版物。學校如果指定要交原作或畫作選輯，畫作仍然要交；書唔取代嗰份指定作品。",
+  artLinks: [
+    { href: "/blog/mei-shu-zuo-pin-ji-vs-isbn-chu-ban", label: "美術作品集 vs ISBN 出版作品集：香港升學幾時用邊樣" },
+  ],
+  rushTitle: "唔夠時間點算",
+  rush: "如果面試或叩門只剩幾日、幾星期，12 個月出版計劃趕唔切。先用呢份清單收窄而家手上嘅文件，揀一件小朋友講得出嘅作品。出書適合下一個有大約一年時間嘅申請周期。",
+  rushLinks: [
+    { href: "/blog/zuo-pin-ji-m-gau-lin-shi-gan", label: "作品集唔夠睇、臨時趕點算：叩門同面試季時間表" },
+    { href: "/blog/dian-yang-zheng-liang-sheng-xue-zuo-pin-ji", label: "點樣整靚升學作品集：香港家長實用清單" },
+  ],
+  hubLink: "免費升學作品集準備清單",
+  programmeLink: "了解 12 個月出書計劃",
+  cardTitle: "準備清單",
+  cardBlurb: "升小、升中文件核對。清單免費；完整計劃私人報價。",
+  faqTitle: "準備清單常見問題",
+  faqs: [
+    {
+      q: "呢份升學作品集準備清單收唔收費？",
+      a: "清單免費。想做完整 12 個月導師制出版計劃，報價私人，WhatsApp 先講範圍。網站唔公開價目，亦唔保證學位。",
+    },
+    {
+      q: "升小學同升中係咪同一份文件？",
+      a: "唔係。升小面試通常只有幾分鐘，要一件講得完嘅事。升中、DSS 同直資較常問持續興趣同自述。同一份清單可以先核對，再按目標學校揀邊樣放前面。",
+    },
+    {
+      q: "證書班同補習作品應該放邊？",
+      a: "放附頁。面試官已經見過好多張差唔多嘅證書。前面留小朋友自己講得出嘅作品。",
+    },
+    {
+      q: "畫作作品集同 ISBN 出版書可唔可以一齊用？",
+      a: "可以。學校指定要交畫，畫仍然要交。有 ISBN 嘅出版書係另一件可以引用嘅正式出版物，唔取代指定畫作。Kidsmybook 唔保證取錄。",
+    },
+    {
+      q: "面試就快到，仲可唔可以出書？",
+      a: "如果只剩幾日，12 個月計劃趕唔切。先用呢份清單收窄而家手上嘅文件。出書適合下一個有大約一年嘅申請周期。",
+    },
+  ],
+};
+
 export const EXPLORE_ZH = {
   kicker: "開始了解",
   title: "小朋友出書、作品集、常見問題",
@@ -170,6 +243,7 @@ export const EXPLORE_ZH = {
 };
 
 export const READING_ZH: { href: string; label: string }[] = [
+  { href: "/sheng-xue-zuo-pin-ji-qing-dan", label: "升學作品集準備清單（免費）" },
   { href: "/blog/mei-shu-zuo-pin-ji-vs-isbn-chu-ban", label: "美術作品集 vs ISBN 出版作品集：香港升學幾時用邊樣" },
   { href: "/blog/dian-yang-zheng-liang-sheng-xue-zuo-pin-ji", label: "點樣整靚升學作品集：香港家長實用清單" },
   { href: "/blog/zuo-pin-ji-m-gau-lin-shi-gan", label: "作品集唔夠睇、臨時趕點算：叩門同面試季時間表" },
@@ -189,6 +263,7 @@ export const READING_ZH: { href: string; label: string }[] = [
 ];
 
 export const PORTFOLIO_READING_ZH: { href: string; label: string }[] = [
+  { href: "/sheng-xue-zuo-pin-ji-qing-dan", label: "升學作品集準備清單（免費）" },
   { href: "/blog/mei-shu-zuo-pin-ji-vs-isbn-chu-ban", label: "美術作品集 vs ISBN 出版作品集：香港升學幾時用邊樣" },
   { href: "/blog/dian-yang-zheng-liang-sheng-xue-zuo-pin-ji", label: "點樣整靚升學作品集：香港家長實用清單" },
   { href: "/blog/zuo-pin-ji-m-gau-lin-shi-gan", label: "作品集唔夠睇、臨時趕點算：叩門同面試季時間表" },
