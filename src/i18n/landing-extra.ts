@@ -549,6 +549,10 @@ export const GAOCAI_HANS: HubCopy = {
       a: "证明一段做完的兴趣和小朋友的参与，包括可有教授审阅和 ISBN 出版安排。它不是学科成绩，也不是公开考试分数。",
     },
     {
+      q: "高才通第一年，什么时候才开始 ISBN 出版？",
+      a: "如果下一个面试或申请还有大约一年，可以由第 1 个月开始 12 个月导师制。如果只剩几天或几星期，计划赶不及，先用准备清单收窄现在的文件。时间线见 https://kidsmybook.com/blog/gao-cai-tong-di-yi-nian-shi-jian-xian 。",
+    },
+    {
       q: "怎样索取私人报价？",
       a: "WhatsApp https://wa.me/85291214157 或电邮 kidsmybook@outlook.com。讲小朋友年龄、目标是升小、升中还是国际学校，以及一个兴趣。网站不公开价目。",
     },
@@ -559,6 +563,8 @@ export const GAOCAI_HANS: HubCopy = {
     { href: "/sheng-xue-zuo-pin-ji", label: "升学作品集总页" },
     { href: "/faq", label: "常见问题" },
     { href: "/xing-qu-chu-ban", label: "由兴趣走到 ISBN 童书" },
+    { href: "/blog/gao-cai-tong-di-yi-nian-shi-jian-xian", label: "高才通家庭第一年升学作品集时间线" },
+    { href: "/blog/guo-ji-xue-xiao-mian-shi-isbn-portfolio", label: "国际学校面试：怎样用一本 ISBN 书讲" },
     { href: "/blog/top-talent-pass-first-year-portfolio", label: "高才通来港第一年作品集" },
     { href: "/blog/gtp-family-child-book-portfolio", label: "高才通家庭：一本书和证书堆" },
     { href: "/sheng-xiao-xue-mian-shi-zuo-pin-ji", label: "升小面试作品集" },
@@ -702,6 +708,10 @@ export const GAOCAI_EN: HubCopy = {
       a: "It shows a finished interest and the child's participation, including professor review when it fits and ISBN publishing arrangements. It is not a subject score and not a public exam result.",
     },
     {
+      q: "When should a Top Talent Pass family start the ISBN path in year one?",
+      a: "If the next interview or application is still about a year away, start the 12-month mentored programme in month 1. A few days or weeks cannot finish it. Narrow the current file with the checklist first. Timeline: https://kidsmybook.com/blog/gao-cai-tong-di-yi-nian-shi-jian-xian .",
+    },
+    {
       q: "How do we ask for a private quotation?",
       a: "WhatsApp https://wa.me/85291214157 or email kidsmybook@outlook.com. Share the child's age, whether the target is primary, secondary, or an international school, and one interest. Prices are not on the site.",
     },
@@ -712,6 +722,8 @@ export const GAOCAI_EN: HubCopy = {
     { href: "/sheng-xue-zuo-pin-ji", label: "School portfolio hub" },
     { href: "/faq", label: "FAQ" },
     { href: "/xing-qu-chu-ban", label: "From an interest to an ISBN children's book" },
+    { href: "/blog/gao-cai-tong-di-yi-nian-shi-jian-xian", label: "Top Talent Pass year-one portfolio timeline" },
+    { href: "/blog/guo-ji-xue-xiao-mian-shi-isbn-portfolio", label: "International-school interview: tell one ISBN book" },
     { href: "/blog/top-talent-pass-first-year-portfolio", label: "Top Talent Pass first-year portfolio" },
     { href: "/blog/gtp-family-child-book-portfolio", label: "GTP families: one book and a certificate stack" },
     { href: "/sheng-xiao-xue-mian-shi-zuo-pin-ji", label: "Primary interview portfolio" },
