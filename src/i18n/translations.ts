@@ -105,7 +105,7 @@ export type Translations = {
     personality: string;
     personalityPlaceholder: string;
     personalityChips: string[];
-    waHandshakeMessage: (name: string, url: string) => string;
+    waHandshakeMessage: (name: string, topic: string, url: string) => string;
     generateBtn: string;
     generating: string;
     generatePhase: string;
@@ -116,6 +116,7 @@ export type Translations = {
     backHome: string;
     successTitle: string;
     successDesc: string;
+    stickyHint: string;
     getLinkBtn: string;
     previewReady: string;
     previewSent: string;
@@ -244,6 +245,8 @@ export type Translations = {
     home: string;
     service: (title: string) => string;
     floating: string;
+    blog: string;
+    blogPost: (title: string) => string;
     caseStudy: string;
   };
   footer: {
@@ -300,8 +303,12 @@ const zhHant: Translations = {
     personality: "孩子特質 / 性格（選填）",
     personalityPlaceholder: "例如：好奇專注、喜愛探索、觀察細膩",
     personalityChips: ["好奇心強", "觀察力敏銳", "富有創意", "邏輯清晰", "充滿熱情", "善於表達"],
-    waHandshakeMessage: (name, url) =>
-      `你好！我剛剛為 ${name} 生成了專著封面，想索取 3D 預覽連結與高清圖檔！\n\n預覽連結參考：${url}`,
+    waHandshakeMessage: (name, topic, url) => {
+      const who = name ? `${name} 嘅題材` : "呢個題材";
+      const subject = topic ? `${who}「${topic}」` : who;
+      const link = url ? `\n封面預覽：${url}` : "";
+      return `你好，我想問顧問：${subject}適唔適合出書。請私人報價。${link}`;
+    },
     generateBtn: "生成 3D 專屬封面",
     generating: "正在繪製學者級封面…",
     generatePhase: "正在繪製專業學者級封面…",
@@ -310,9 +317,10 @@ const zhHant: Translations = {
     dragHintIdle: "生成後在此預覽 3D 學術專著",
     dragHintReady: "拖曳可旋轉 · 查看封底學者評語與書脊",
     backHome: "← 返回首頁",
-    successTitle: "🎉 你的專屬 3D 專著預覽已生成！",
-    successDesc: "請點擊下方按鈕，透過 WhatsApp 獲取完整的 3D 預覽連結與高清封面圖，並與我們的出版顧問進行免費諮詢。",
-    getLinkBtn: "📲 透過 WhatsApp 獲取預覽連結",
+    successTitle: "封面已經生成",
+    successDesc: "預覽就喺右邊。下一步問顧問：呢個題材適唔適合出一本 ISBN 童書。報價私人，網站唔公開價目。",
+    stickyHint: "問顧問呢個題材適唔適合出書",
+    getLinkBtn: "WhatsApp 問顧問：呢個題材適唔適合出書",
     previewReady: "專著預覽已備妥",
     previewSent: "專著預覽已交給顧問發送",
     previewSendCopy: "我們會把連結發到",
@@ -530,7 +538,9 @@ const zhHant: Translations = {
   whatsapp: {
     home: "你好，我想預約 Kidsmybook 兒童成就出版私人諮詢。",
     service: (title) => `你好，我想了解 ${title} 服務。`,
-    floating: "Hi, I'd like premium child achievement publishing details.",
+    floating: "你好，我想了解 Kidsmybook 導師制 ISBN 童書，請私人報價。",
+    blog: "想了解 Kidsmybook 兒童出版計劃",
+    blogPost: (title) => `想了解 Kidsmybook 兒童出版計劃：${title}`,
     caseStudy: "Start your child's publishing journey",
   },
   footer: {
@@ -587,8 +597,12 @@ const zhHans: Translations = {
     personality: "孩子特质 / 性格（选填）",
     personalityPlaceholder: "例如：好奇专注、喜爱探索、观察细腻",
     personalityChips: ["好奇心强", "观察力敏锐", "富有创意", "逻辑清晰", "充满热情", "善于表达"],
-    waHandshakeMessage: (name, url) =>
-      `你好！我刚刚为 ${name} 生成了专著封面，想索取 3D 预览链接与高清图档！\n\n预览链接参考：${url}`,
+    waHandshakeMessage: (name, topic, url) => {
+      const who = name ? `${name} 的题材` : "这个题材";
+      const subject = topic ? `${who}「${topic}」` : who;
+      const link = url ? `\n封面预览：${url}` : "";
+      return `你好，我想问顾问：${subject}适不适合出书。请私人报价。${link}`;
+    },
     generateBtn: "生成 3D 专属封面",
     generating: "正在绘制学者级封面…",
     generatePhase: "正在绘制专业学者级封面…",
@@ -597,9 +611,10 @@ const zhHans: Translations = {
     dragHintIdle: "生成后在此预览 3D 学术专著",
     dragHintReady: "拖曳可旋转 · 查看封底学者评语与书脊",
     backHome: "← 返回首页",
-    successTitle: "🎉 你的专属 3D 专著预览已生成！",
-    successDesc: "请点击下方按钮，透过 WhatsApp 获取完整的 3D 预览链接与高清封面图，并与我们的出版顾问进行免费咨询。",
-    getLinkBtn: "📲 透过 WhatsApp 获取预览链接",
+    successTitle: "封面已经生成",
+    successDesc: "预览就在右边。下一步问顾问：这个题材适不适合出一本 ISBN 童书。报价私人，网站不公开价目。",
+    stickyHint: "问顾问这个题材适不适合出书",
+    getLinkBtn: "WhatsApp 问顾问：这个题材适不适合出书",
     previewReady: "专著预览已备妥",
     previewSent: "专著预览已交给顾问发送",
     previewSendCopy: "我们会把链接发到",
@@ -808,7 +823,9 @@ const zhHans: Translations = {
   whatsapp: {
     home: "你好，我想预约 Kidsmybook 儿童成就出版私人咨询。",
     service: (title) => `你好，我想了解 ${title} 服务。`,
-    floating: "Hi, I'd like premium child achievement publishing details.",
+    floating: "你好，我想了解 Kidsmybook 导师制 ISBN 童书，请私人报价。",
+    blog: "想了解 Kidsmybook 儿童出版计划",
+    blogPost: (title) => `想了解 Kidsmybook 儿童出版计划：${title}`,
     caseStudy: "Start your child's publishing journey",
   },
 };
@@ -860,8 +877,12 @@ const en: Translations = {
     personality: "Traits / personality (optional)",
     personalityPlaceholder: "e.g. curious, focused, observant",
     personalityChips: ["Curious", "Observant", "Creative", "Logical", "Passionate", "Expressive"],
-    waHandshakeMessage: (name, url) =>
-      `Hi! I just generated a cover for ${name}, please send me the 3D preview link and high-res image!\n\nPreview link reference: ${url}`,
+    waHandshakeMessage: (name, topic, url) => {
+      const who = name ? `${name}'s topic` : "this topic";
+      const subject = topic ? `${who} "${topic}"` : who;
+      const link = url ? `\nCover preview: ${url}` : "";
+      return `Hi, I'd like to ask an advisor whether ${subject} is a fit for a mentored ISBN children's book. Please quote privately.${link}`;
+    },
     generateBtn: "Generate 3D Cover",
     generating: "Rendering scholar-grade cover…",
     generatePhase: "Rendering professional scholar-grade cover…",
@@ -870,9 +891,10 @@ const en: Translations = {
     dragHintIdle: "Your 3D academic monograph preview appears here after generation",
     dragHintReady: "Drag to rotate · View back-cover blurb and spine",
     backHome: "← Back to home",
-    successTitle: "🎉 Your custom 3D monograph preview is ready!",
-    successDesc: "Click the button below to get the full 3D preview link and high-res cover image via WhatsApp, and enjoy a free consultation with our publishing advisors.",
-    getLinkBtn: "📲 Get Preview Link via WhatsApp",
+    successTitle: "Cover ready",
+    successDesc: "The preview is on the right. Next, ask an advisor whether this topic fits an ISBN children's book. Quotes stay private.",
+    stickyHint: "Ask whether this topic fits a book",
+    getLinkBtn: "WhatsApp an advisor: does this topic fit a book?",
     previewReady: "Monograph preview ready",
     previewSent: "Preview handed to consultant for delivery",
     previewSendCopy: "We will send the link to",
@@ -1090,7 +1112,9 @@ const en: Translations = {
   whatsapp: {
     home: "Hi, I'd like to book a private Kidsmybook child achievement publishing consultation.",
     service: (title) => `Hi, I'd like to learn more about ${title}.`,
-    floating: "Hi, I'd like premium child achievement publishing details.",
+    floating: "Hi, I'd like details on Kidsmybook mentored ISBN children's publishing. Please quote privately.",
+    blog: "I'd like to know about the Kidsmybook children's publishing programme",
+    blogPost: (title) => `I'd like to know about the Kidsmybook children's publishing programme: ${title}`,
     caseStudy: "Start your child's publishing journey",
   },
   footer: {

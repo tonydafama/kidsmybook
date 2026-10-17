@@ -2,6 +2,7 @@ import { useEffect, useMemo, useRef, useState, type CSSProperties } from "react"
 import { useLocale } from "./i18n/LocaleContext";
 import { AGE_RANGE_KEYS, type AgeRangeKey } from "./i18n/translations";
 import { buildPolishedBackBlurb, deriveBookTopic, getScholarlyProfile, INITIAL_DEFAULT_PROFILE } from "./lib/bookCover";
+import { getCoverEnquiry, postPreviewLead, setCoverEnquiry } from "./lib/coverEnquiry";
 import { generateBookCoverPair } from "./lib/monica";
 
 const APP_BASE = import.meta.env.BASE_URL;
@@ -251,22 +252,6 @@ export function AiBookCreatorPanel({ showBackLink = true, releaseTag }: AiBookCr
     return () => window.clearTimeout(timeout);
   }, [previewReady]);
 
-  const buildConsultSummary = (name: string, ageLine: string) => {
-    const profile = getScholarlyProfile(interests, name);
-    const ageLabel = ageLine ? t.aiLab.ageRanges[ageLine as AgeRangeKey] ?? ageLine : "";
-    const bits = [
-      t.aiLab.consultSummaryHeader,
-      `${t.aiLab.consultChild}：${name}`,
-      `${t.aiLab.consultTopic}：${interests.trim() || "自然科學"}`,
-      `${t.aiLab.consultTitle}：${profile.scholarlyTitleZh}`,
-      `${t.aiLab.consultProfessor}：${profile.professorName}`,
-      ageLabel && `${t.aiLab.consultAge}：${ageLabel}`,
-      personality.trim() && `${t.aiLab.consultPersonality}：${personality.trim()}`,
-      t.aiLab.consultSendNote,
-    ].filter(Boolean);
-    return bits.join("\n");
-  };
-
   const buildPreviewQuery = (
     name: string,
     ageLine: string,
@@ -338,29 +323,24 @@ export function AiBookCreatorPanel({ showBackLink = true, releaseTag }: AiBookCr
     };
   };
 
-  const notifyStudioToSendPreview = async (
+  const notifyStudioToSendPreview = (
     previewUrl: string,
     name: string,
     ageLine: string,
     imageUrls?: { front: string; back: string }
   ) => {
-    try {
-      await fetch("/api/preview-lead", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          name,
-          age: ageLine,
-          topic: interests.trim(),
-          personality: personality.trim(),
-          previewUrl,
-          frontImg: imageUrls?.front?.startsWith("http") ? imageUrls.front : "",
-          backImg: imageUrls?.back?.startsWith("http") ? imageUrls.back : "",
-        }),
-      });
-    } catch {
-      // Ignore errors for background tracking
-    }
+    postPreviewLead(
+      {
+        name,
+        age: ageLine,
+        topic: interests.trim(),
+        personality: personality.trim(),
+        previewUrl,
+        frontImg: imageUrls?.front?.startsWith("http") ? imageUrls.front : "",
+        backImg: imageUrls?.back?.startsWith("http") ? imageUrls.back : "",
+      },
+      false,
+    );
   };
 
   const generatePreview = async () => {
@@ -487,13 +467,9 @@ export function AiBookCreatorPanel({ showBackLink = true, releaseTag }: AiBookCr
         applySvgCovers(name, theme, profile);
       }
       setPreviewReady(true);
+      setStep("ready");
     }
   }, []);
-
-  const consultSummary = useMemo(() => {
-    if (!previewReady || !childName.trim()) return "";
-    return buildConsultSummary(childName.trim(), age.trim());
-  }, [previewReady, childName, age, interests, personality, t]);
 
   const previewShareUrl = useMemo(() => {
     if (!previewReady || !childName.trim()) return "";
@@ -505,11 +481,44 @@ export function AiBookCreatorPanel({ showBackLink = true, releaseTag }: AiBookCr
     return `${window.location.origin}${window.location.pathname}?${query}#ai-book-lab`;
   }, [previewReady, childName, age, interests, personality, coverSource, covers]);
 
-  const studioNotifyUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
-    previewShareUrl
-      ? `${consultSummary}\n\n${t.aiLab.previewLinkInMessage}：${previewShareUrl}`
-      : consultSummary
-  )}`;
+  useEffect(() => {
+    if (step !== "ready" || !childName.trim() || !previewShareUrl) {
+      setCoverEnquiry(null);
+      return;
+    }
+    setCoverEnquiry({
+      text: t.aiLab.waHandshakeMessage(childName.trim(), interests.trim(), previewShareUrl),
+      name: childName.trim(),
+      age: age.trim(),
+      topic: interests.trim(),
+      personality: personality.trim(),
+      previewUrl: previewShareUrl,
+      frontImg: coverSource === "ai" && covers.front.startsWith("http") ? covers.front : "",
+      backImg: coverSource === "ai" && covers.back.startsWith("http") ? covers.back : "",
+    });
+  }, [step, childName, age, interests, personality, previewShareUrl, coverSource, covers, t]);
+
+  useEffect(() => () => setCoverEnquiry(null), []);
+
+  const openCoverWhatsapp = () => {
+    const name = childName.trim();
+    const topic = interests.trim();
+    const text = t.aiLab.waHandshakeMessage(name, topic, previewShareUrl);
+    const lead = getCoverEnquiry();
+    postPreviewLead(
+      lead ?? {
+        name,
+        age: age.trim(),
+        topic,
+        personality: personality.trim(),
+        previewUrl: previewShareUrl,
+        frontImg: coverSource === "ai" && covers.front.startsWith("http") ? covers.front : "",
+        backImg: coverSource === "ai" && covers.back.startsWith("http") ? covers.back : "",
+      },
+      true,
+    );
+    window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`, "_blank", "noopener,noreferrer");
+  };
 
   const copyShareLink = async () => {
     if (!previewShareUrl) return;
@@ -606,19 +615,13 @@ export function AiBookCreatorPanel({ showBackLink = true, releaseTag }: AiBookCr
             <div className="ai-cta-card ai-cta-card--ready">
               <h4>{t.aiLab.successTitle}</h4>
               <p className="ai-cta-copy">{t.aiLab.successDesc}</p>
-              <button 
-                type="button" 
-                className="btn primary wa-btn" 
-                onClick={() => {
-                  const text = t.aiLab.waHandshakeMessage(childName.trim(), previewShareUrl);
-                  window.open(
-                    `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`,
-                    "_blank",
-                    "noopener,noreferrer"
-                  );
-                }}
-              >
-                {t.aiLab.getLinkBtn}
+              <div className="ai-cta-row">
+                <button type="button" className="btn primary wa-btn ai-cta-primary" onClick={openCoverWhatsapp}>
+                  {t.aiLab.getLinkBtn}
+                </button>
+              </div>
+              <button type="button" className="btn ghost ai-share-copy-btn" onClick={() => void copyShareLink()}>
+                {shareCopied === "link" ? t.aiLab.copiedLink : t.aiLab.copyLink}
               </button>
             </div>
           )}
@@ -716,6 +719,15 @@ export function AiBookCreatorPanel({ showBackLink = true, releaseTag }: AiBookCr
           <p className="meta ai-drag-hint">{previewReady ? t.aiLab.dragHintReady : t.aiLab.dragHintIdle}</p>
         </div>
       </div>
+
+      {step === "ready" ? (
+        <div className="ai-ready-wa-sticky" role="region" aria-label={t.aiLab.stickyHint}>
+          <p>{t.aiLab.stickyHint}</p>
+          <button type="button" className="btn primary wa-btn" onClick={openCoverWhatsapp}>
+            {t.aiLab.getLinkBtn}
+          </button>
+        </div>
+      ) : null}
 
       {showBackLink ? (
         <p className="meta ai-page-back">

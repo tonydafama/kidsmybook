@@ -416,7 +416,7 @@ export function upsertJsonLd(id: string, data: Record<string, unknown> | null) {
 
 function BlogIndexPage() {
   const { t, locale } = useLocale();
-  const whatsapp = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent("想了解 Kidsmybook 兒童出版計劃")}`;
+  const whatsapp = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(t.whatsapp.blog)}`;
   const sorted = useMemo(() => {
     return [...POSTS]
       .sort((a, b) => b.date.localeCompare(a.date))
@@ -491,7 +491,9 @@ function BlogPostPage({ slug }: { slug: string }) {
     if (!raw) return [] as MdBlock[];
     return parseMarkdownBlocks(raw);
   }, [slug, locale]);
-  const whatsapp = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent("想了解 Kidsmybook 兒童出版計劃")}`;
+  const whatsapp = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
+    localized.title ? t.whatsapp.blogPost(localized.title) : t.whatsapp.blog,
+  )}`;
   const pageUrl = `${SITE_ORIGIN}/blog/${slug}`;
   const inLanguage = locale === "en" ? "en" : locale === "zh-Hans" ? "zh-Hans" : "zh-Hant";
 

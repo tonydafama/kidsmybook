@@ -140,7 +140,7 @@ export function ProgrammePage() {
         <p className="lead">{page.lead}</p>
         <p>{page.notLabel}：{page.notBody}</p>
         <div className="cta-row">
-          <a className="btn primary" href={whatsappHref(t.whatsapp.home)} target="_blank" rel="noreferrer">
+          <a className="btn primary" href={whatsappHref(page.whatsappText)} target="_blank" rel="noreferrer">
             {t.hero.bookConsult}
           </a>
           <a className="btn ghost" href={appHref("/faq")}>
@@ -169,6 +169,8 @@ export function ProgrammePage() {
           ))}
         </ol>
       </section>
+
+      <QuoteCta title={page.ctaTitle} body={page.ctaBody} whatsappLabel={t.hero.bookConsult} whatsappText={page.whatsappText} />
 
       <section className="panel">
         <h2>{page.vsClassTitle}</h2>
@@ -199,7 +201,7 @@ export function ProgrammePage() {
       </section>
 
       <ReadingList title={page.readingTitle} links={localizedReading(READING_ZH, locale)} />
-      <QuoteCta title={page.ctaTitle} body={page.ctaBody} whatsappLabel={t.hero.bookConsult} />
+      <QuoteCta title={page.ctaTitle} body={page.ctaBody} whatsappLabel={t.hero.bookConsult} whatsappText={page.whatsappText} />
     </main>
   );
 }
@@ -240,6 +242,11 @@ export function FaqPage() {
           {" · "}
           <a href={appHref("/sheng-xue-zuo-pin-ji")}>{page.portfolioLink}</a>
         </p>
+        <div className="cta-row">
+          <a className="btn primary" href={whatsappHref(page.whatsappText)} target="_blank" rel="noreferrer">
+            {t.hero.bookConsult}
+          </a>
+        </div>
       </section>
 
       <section className="panel" id="faq" itemScope itemType="https://schema.org/FAQPage">
@@ -269,7 +276,7 @@ export function FaqPage() {
       </section>
 
       <ReadingList title={page.readingTitle} links={localizedReading(FAQ_READING_ZH, locale)} />
-      <QuoteCta title={page.ctaTitle} body={page.ctaBody} whatsappLabel={t.hero.bookConsult} />
+      <QuoteCta title={page.ctaTitle} body={page.ctaBody} whatsappLabel={t.hero.bookConsult} whatsappText={page.whatsappText} />
     </main>
   );
 }
@@ -439,7 +446,7 @@ export function PortfolioHubPage() {
           {t.checklistPage.softCta}
         </p>
         <div className="cta-row">
-          <a className="btn primary" href={whatsappHref(t.whatsapp.home)} target="_blank" rel="noreferrer">
+          <a className="btn primary" href={whatsappHref(page.whatsappText)} target="_blank" rel="noreferrer">
             {t.hero.bookConsult}
           </a>
           <a className="btn ghost" href={appHref(CHECKLIST_PATH)}>
@@ -473,7 +480,7 @@ export function PortfolioHubPage() {
           </div>
         ))}
         <p>
-          <a className="btn primary" href={whatsappHref(t.whatsapp.home)} target="_blank" rel="noreferrer">
+          <a className="btn primary" href={whatsappHref(page.whatsappText)} target="_blank" rel="noreferrer">
             {page.whatsappLink}
           </a>
         </p>
@@ -520,7 +527,7 @@ export function PortfolioHubPage() {
       </section>
 
       <ReadingList title={page.readingTitle} links={localizedReading(PORTFOLIO_READING_ZH, locale)} />
-      <QuoteCta title={page.ctaTitle} body={page.ctaBody} whatsappLabel={t.hero.bookConsult} />
+      <QuoteCta title={page.ctaTitle} body={page.ctaBody} whatsappLabel={t.hero.bookConsult} whatsappText={page.whatsappText} />
     </main>
   );
 }
@@ -619,6 +626,8 @@ export function HubLandingPage({ path, page }: { path: string; page: HubCopy }) 
           ))}
         </ol>
       </section>
+
+      <QuoteCta title={page.ctaTitle} body={page.ctaBody} whatsappLabel={t.hero.bookConsult} whatsappText={page.whatsappText} />
 
       <section className="panel" id="faq" itemScope itemType="https://schema.org/FAQPage">
         <h2>{page.faqTitle}</h2>

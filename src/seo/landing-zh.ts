@@ -49,6 +49,7 @@ export const PROGRAMME_ZH = {
   portfolioLink: "升學作品集點樣用一本書",
   ctaTitle: "私人報價，先了解再講範圍",
   ctaBody: "網站唔公開價目。WhatsApp 或電郵講吓小朋友年齡、興趣同目標學校，我哋先私人報價。",
+  whatsappText: "想了解 12 個月導師制小朋友出書計劃",
 };
 
 export const FAQ_PAGE_ZH = {
@@ -59,6 +60,7 @@ export const FAQ_PAGE_ZH = {
   lead: "以下係家長最常問嘅問題。收費一律私人報價，網站唔放價目表。",
   ctaTitle: "未睇到你個情況？",
   ctaBody: "WhatsApp 或電郵講小朋友年齡、而家／目標學校，同埋最想解決嘅作品集問題。我哋先了解，再私人報價。",
+  whatsappText: "想了解小朋友出書、ISBN 同升學作品集",
   programmeLink: "睇 12 個月出書計劃",
   portfolioLink: "睇升學作品集說明",
   readingTitle: "延伸閱讀",
@@ -123,6 +125,7 @@ export const PORTFOLIO_ZH = {
     },
   ],
   whatsappLink: "WhatsApp 講吓升小學或升中面試",
+  whatsappText: "想了解升學作品集點樣用一本 ISBN 童書，升小學或升中面試",
   ctaTitle: "想知呢本書適唔適合你個小朋友",
   ctaBody: "講吓年齡、而家學校類型、一個興趣，同你最想解決嘅面試問題。報價私人，網站唔公開價錢。",
   faqTitle: "升學作品集常見問題",
