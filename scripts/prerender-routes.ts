@@ -1052,7 +1052,7 @@ function assertSources(posts: RouteDocument[]) {
     throw new Error("robots.txt missing llms.txt comment");
   }
 
-  const indexNowKey = "1e01eada3661348254717ba011ce21d3";
+  const indexNowKey = "aa6db42839b1103818ac56beba9b9a06";
   const indexNowFile = path.join(ROOT, "public", `${indexNowKey}.txt`);
   const indexNowRaw = fs.readFileSync(indexNowFile, "utf8").replace(/^\uFEFF/, "");
   if (indexNowRaw !== indexNowKey && indexNowRaw !== `${indexNowKey}\n`) {
