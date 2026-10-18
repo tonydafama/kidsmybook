@@ -898,6 +898,7 @@ const SITEMAP_XML = `<?xml version="1.0" encoding="UTF-8"?>
   <url><loc>https://kidsmybook.com/sheng-xue-zuo-pin-ji</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kidsmybook.com/sheng-xue-zuo-pin-ji-qing-dan</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kidsmybook.com/gao-cai-tong-sheng-xue-zuo-pin-ji</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kidsmybook.com/tong-shu-shu-dian-shang-jia</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://kidsmybook.com/xing-qu-chu-ban</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kidsmybook.com/sheng-xiao-xue-mian-shi-zuo-pin-ji</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kidsmybook.com/sheng-zhong-dss-zuo-pin-ji</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
@@ -914,7 +915,7 @@ const SITEMAP_XML = `<?xml version="1.0" encoding="UTF-8"?>
   <url><loc>https://kidsmybook.com/blog/xing-qu-bian-chu-ban</loc><lastmod>2026-09-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kidsmybook.com/blog/zheng-shu-pi-juan</loc><lastmod>2026-09-06</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kidsmybook.com/blog/jiao-shou-chu-ban-shuo-fu-li</loc><lastmod>2026-09-08</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://kidsmybook.com/blog/san-lian-shang-jia-yi-yi</loc><lastmod>2026-09-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kidsmybook.com/blog/san-lian-shang-jia-yi-yi</loc><lastmod>2026-10-18</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kidsmybook.com/blog/portfolio-book-4-skills</loc><lastmod>2026-09-12</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kidsmybook.com/blog/gaocaitong-mom-burnout</loc><lastmod>2026-09-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kidsmybook.com/blog/school-ranking-myth</loc><lastmod>2026-09-16</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
@@ -943,6 +944,8 @@ const SITEMAP_XML = `<?xml version="1.0" encoding="UTF-8"?>
   <url><loc>https://kidsmybook.com/blog/mian-shi-ban-vs-isbn-chu-ban</loc><lastmod>2026-10-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kidsmybook.com/blog/gao-cai-tong-di-yi-nian-shi-jian-xian</loc><lastmod>2026-10-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kidsmybook.com/blog/guo-ji-xue-xiao-mian-shi-isbn-portfolio</loc><lastmod>2026-10-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kidsmybook.com/blog/isbn-bu-deng-yu-shu-dian-shang-jia</loc><lastmod>2026-10-18</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kidsmybook.com/blog/zi-fei-pod-vs-dao-shi-zhi-shang-jia</loc><lastmod>2026-10-18</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 </urlset>
 `;
 

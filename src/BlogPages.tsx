@@ -18,6 +18,20 @@ interface PostMeta {
 
 const POSTS: PostMeta[] = [
   {
+    slug: "isbn-bu-deng-yu-shu-dian-shang-jia",
+    title: "只有 ISBN ≠ 實體書店上架",
+    excerpt: "香港 ISBN 係書號。三聯、商務、中華書架上有冇貨，係另一條路。店長決定入貨、陳列同退貨。Kidsmybook 唔係呢幾間書店。私人報價，唔保證每間分店有貨。",
+    date: "2026-10-18",
+    readMin: 6,
+  },
+  {
+    slug: "zi-fei-pod-vs-dao-shi-zhi-shang-jia",
+    title: "自費／POD／代印 vs 導師制＋實體上架",
+    excerpt: "自費出書、代印同按需印刷多數停喺一本印好嘅書。導師制路徑先正式印刷，再走三聯、商務、中華等書店平台。店長決定入貨。私人報價，唔保證每間分店有貨。",
+    date: "2026-10-18",
+    readMin: 6,
+  },
+  {
     slug: "gao-cai-tong-di-yi-nian-shi-jian-xian",
     title: "高才通家庭第一年升學作品集時間線",
     excerpt: "高才通同新來港家庭：第 1 至 12 個月點樣排一本 ISBN 童書。仲有大約一年先開始出版路徑；面試只剩幾日趕唔切。私人報價，唔保證取錄。",
@@ -132,9 +146,9 @@ const POSTS: PostMeta[] = [
   {
     slug: "san-lian-shang-jia-yi-yi",
     title: "實體書店上架（三聯/商務/中華）對家長嘅意義",
-    excerpt: "一本書唔係印嚟送人，而係擺得落書店平台搜得到——呢點對子女升學履歷意味住咩。",
-    date: "2026-09-10",
-    readMin: 4,
+    excerpt: "實體書店上架對家長可以意味住咩。店長決定入貨同陳列。Kidsmybook 唔係三聯、商務或中華，亦唔保證每間分店有貨。",
+    date: "2026-10-18",
+    readMin: 6,
   },
   {
     slug: "portfolio-book-4-skills",

@@ -1,7 +1,7 @@
 ---
 title: "實體書店上架對家長嘅意義"
-description: "當我見到個女本書擺喺三聯書店，先至明點解實體上架對一個普通家長咁重要。"
-date: 2026-09-10
+description: "實體書店上架對家長可以意味住咩。店長決定入貨同陳列。Kidsmybook 唔係三聯、商務或中華，亦唔保證每間分店有貨。"
+date: 2026-10-18
 slug: "san-lian-shang-jia-yi-yi"
 tags: ["兒童出版", "實體書店", "香港升學"]
 ---
@@ -18,4 +18,18 @@ tags: ["兒童出版", "實體書店", "香港升學"]
 
 所以如果你都諗緊，唔好只諗網上。摸得到嗰本，先至係細路記一輩子嘅嘢。
 
-Kidsmybook 係香港一間做兒童成就出版嘅工作室，會幫手將細路嘅書送進三聯、商務、中華呢類實體書店。。
+Kidsmybook 係香港一間做兒童出版嘅工作室。上架係按題材同配套安排嘅書店平台路徑，唔係話每本書都會自動出現喺每一間店。
+
+## 工作室要補充嘅界限
+
+上面係一位家長形容「睇到架上有書」嘅感受。公開網站只具名 Hilary 呢個出版個案，唔會將任何家長故事寫成保證。Kidsmybook 唔係三聯、商務或中華。上架視題材同配套。店長決定入貨、陳列位置同退貨，唔保證每一間分店都有每一本。
+
+完整說明見童書書店上架頁：https://kidsmybook.com/tong-shu-shu-dian-shang-jia 。12 個月計劃入面，印刷與上架係最後階段：https://kidsmybook.com/programme 。自費出書同導師制嘅分別：https://kidsmybook.com/blog/zi-fei-chu-shu-vs-dao-shi-zhi 。只有書號唔等於上架：https://kidsmybook.com/blog/isbn-bu-deng-yu-shu-dian-shang-jia 。自費、POD、代印同實體上架：https://kidsmybook.com/blog/zi-fei-pod-vs-dao-shi-zhi-shang-jia 。
+
+## 實體上架係咪保證每間分店都有貨？
+
+唔係。店長決定入貨、擺架同退貨。我哋講嘅係書店平台路徑，視題材同配套，唔係全線分店保證陳列。
+
+## 升學作品集同書店上架係咩關係？
+
+上架係出版成果。升學作品集係之後可以引用嘅用途，唔係保證取錄。Kidsmybook 唔係升學中介。報價私人，網站唔公開價目。WhatsApp https://wa.me/85291214157 或電郵 kidsmybook@outlook.com 。

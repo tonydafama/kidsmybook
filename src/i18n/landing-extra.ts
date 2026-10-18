@@ -1,14 +1,15 @@
 import type { HubCopy } from "../seo/landing-zh";
 
 export const PROGRAMME_HANS = {
-  title: "小朋友出书计划香港｜12 个月导师制 ISBN 出版｜Kidsmybook",
+  title: "小朋友出书计划香港｜正式印刷和实体书店上架｜Kidsmybook",
   description:
-    "香港儿童成就出版：12 个月一对一导师制，把兴趣变成有 ISBN 的正式出版物，可有大学教授审阅，并配套升学作品集。私人报价，WhatsApp 咨询。",
-  eyebrow: "Author Programme · 香港",
-  h1: "小朋友出书计划：12 个月，由兴趣到 ISBN",
-  lead: "Kidsmybook 是香港儿童成就出版工作室。我们用导师制，把小朋友真正的兴趣和生活故事，做成有 ISBN 的正式出版物；过程可有大学教授审阅，完成后再按需要配发布会、展览、媒体和升学作品集。",
+    "香港儿童出书：12 个月导师制，正式印刷，再走三联、商务、中华等实体书店平台路径。升学作品集是之后可以引用的成果。私人报价。不保证每间分店有货，也不保证录取。",
+  eyebrow: "儿童出书 · 实体书店上架 · 香港",
+  h1: "小朋友出书计划：正式印刷，再走上实体书店上架",
+  lead: "Kidsmybook 是香港儿童出版工作室。12 个月导师制先把小朋友的兴趣做成正式印刷的书，再按题材和配套安排实体书店平台上架路径（三联、商务、中华等）。Kidsmybook 不是这几间书店。店长决定进货、陈列和退货。升学作品集是完成之后可以引用的第二层用途，不是计划的第一句，也不保证录取。",
+  shelfLink: "童书书店上架：三联、商务、中华路径",
   notLabel: "这个计划不是",
-  notBody: "不是 DIY 礼物书、不是周末故事班、不是保证入学配对。",
+  notBody: "不是只申请一个 ISBN、不是 DIY 礼物书、不是保证每间分店有货，也不是保证入学配对。",
   whoTitle: "适合哪些家庭",
   whoItems: [
     "小朋友大约 3 至 18 岁，有一件持续感兴趣的事",
@@ -23,14 +24,14 @@ export const PROGRAMME_HANS = {
     { name: "专属课程", text: "第 2–5 个月：专业导师和大学教授带领定制课程，由真实兴趣出发创作。" },
     { name: "出版研讨／教授审阅", text: "第 6–7 个月：出版研讨，大学教授审阅，提升学术和教育价值。" },
     { name: "亲子排版", text: "第 8–10 个月：家长和小朋友一起做版面和设计，保留小朋友自己的声音。" },
-    { name: "印刷与上架", text: "第 12 个月：正式印刷，并在实体书店平台上架，作为升学履历亮点。" },
+    { name: "印刷与上架", text: "第 12 个月：正式印刷，再按题材和配套走实体书店平台上架路径（三联、商务、中华等）。店长决定进货和陈列。升学作品集是之后可以引用的成果。" },
   ],
   vsClassTitle: "和普通兴趣班有什么分别？",
   vsClass:
     "兴趣班多数换来一张证书；我们做的是 12 个月导师制出版：由真实兴趣出发，经创作、教授审阅、正式 ISBN 出版，再可配发布会、展览、媒体和升学作品集。成果是一本面试官记得住、可以引用的正式出版物，不是再多一张一样的证书。",
   vsDiyTitle: "和自己找印刷店／自费出书有什么分别？",
   vsDiy:
-    "自费印刷通常只是一本纪念册，不一定有导师带领、学术审阅、ISBN 注册流程和书店上架路径。Kidsmybook 是导师制出版计划，重点是小朋友亲身参与、教授审阅、正式出版和升学可用的作品集包装——不是 DIY 模板或纯代印。",
+    "自费印刷、代印和按需印刷通常只是一本印好的书。ISBN 是书号，不等于三联、商务或中华书架上有货。Kidsmybook 是导师制出版：小朋友亲身参与、可有教授审阅、正式印刷，再谈实体书店平台上架。店长决定进货。升学作品集是之后的用途。",
   singleTitle: "可以只做其中一项吗？",
   single:
     "可以。Author Programme 可以全案，也可以单项咨询 Book Launch、Exhibition、Media & PR、Live Streaming、Portfolio Package。适合已经有成品、想加强曝光或升学包装的家庭。",
@@ -151,12 +152,12 @@ export const PORTFOLIO_HANS = {
 
 export const EXPLORE_HANS = {
   kicker: "开始了解",
-  title: "小朋友出书、作品集、常见问题",
-  intro: "高意图问题有独立页面：计划怎么走、升学作品集怎么用一本书、高才通证明物、兴趣出版，以及 ISBN、收费方式等问答。",
+  title: "儿童出书、实体书店上架、作品集",
+  intro: "先看正式印刷和书店平台上架。ISBN 不等于书架有货。升学作品集是之后可以引用的用途。",
   programme: "小朋友出书计划",
-  programmeBlurb: "12 个月导师制，由兴趣到 ISBN 正式出版。",
+  programmeBlurb: "12 个月导师制：正式印刷，再走实体书店上架路径。",
   faq: "常见问题",
-  faqBlurb: "ISBN、书店上架、幼儿园、高才通、私人报价。",
+  faqBlurb: "书店上架、ISBN、幼儿园、高才通、私人报价。",
   portfolio: "升学作品集",
   portfolioBlurb: "升小学、升中 DSS／直资，和国际学校面试：用一本正式出版物做亮点。",
   caseLabel: "Hilary 个案",
@@ -167,7 +168,7 @@ export const EXPLORE_HANS = {
 export const FAQ_HANS: { q: string; a: string }[] = [
   {
     q: "Kidsmybook 是什么？",
-    a: "香港儿童成就出版工作室。我们用 12 个月导师制出版计划，把孩子真正的兴趣和生活故事，做成有 ISBN 的正式出版物，并由大学教授参与审阅，再配发布会、展览、媒体和升学 Portfolio。",
+    a: "香港儿童出版工作室。我们用 12 个月导师制，把小朋友真正的兴趣做成正式印刷的书，并走实体书店平台上架路径（三联、商务、中华等安排视题材和配套）。过程可有大学教授审阅。升学作品集是之后可以引用的成果。Kidsmybook 不是这几间书店，也不保证每间分店有货。",
   },
   {
     q: "适合几岁？",
@@ -179,7 +180,7 @@ export const FAQ_HANS: { q: string; a: string }[] = [
   },
   {
     q: "书可不可以在实体书店上架？",
-    a: "可以。完成的书是正式出版物，家庭拿得到实体书，也会在实体书店平台上架，作为升学履历亮点。",
+    a: "计划目标是正式印刷，再走实体书店平台上架路径（例如三联、商务、中华等安排，视题材和配套）。Kidsmybook 不是三联、商务或中华。店长决定进货、陈列和退货，不保证每间分店都有。ISBN 本身也不等于书架上架。详见 https://kidsmybook.com/tong-shu-shu-dian-shang-jia 。",
   },
   {
     q: "Kidsmybook 怎样帮小朋友考入香港好学校？",
@@ -243,19 +244,20 @@ export const FAQ_HANS: { q: string; a: string }[] = [
   },
   {
     q: "实体书店上架是必须的吗？是什么意思？",
-    a: "计划目标包括正式印刷，并在实体书店平台上架路径（例如三联／商务／中华等渠道相关安排，视题材和出版配套）。对家长来说，重点是「看得见、搜得到」的正式出版成果，升学履历更好引用——详情在咨询时按个案说明。",
+    a: "上架是出版路径的一部分，不是有 ISBN 就自动上架。正式印刷之后，先按题材和配套安排三联、商务、中华等平台。店长决定进货、陈列和退货，不保证每间分店都有。升学作品集可以引用这份成果，但是第二层用途。详见 https://kidsmybook.com/tong-shu-shu-dian-shang-jia 。",
   },
 ];
 
 export const PROGRAMME_EN = {
-  title: "Child author programme Hong Kong | 12-month mentored ISBN publishing | Kidsmybook",
+  title: "Child author programme Hong Kong | print and bookstore listing | Kidsmybook",
   description:
-    "Hong Kong child-achievement publishing: a 12-month 1-to-1 mentored programme that turns an interest into a formally published ISBN book, with university professor review available, plus an admissions portfolio. Quoted privately. WhatsApp consultation.",
-  eyebrow: "Author Programme · Hong Kong",
-  h1: "Child author programme: 12 months from interest to ISBN",
-  lead: "Kidsmybook is a Hong Kong child-achievement publishing studio. Mentors turn a child's real interest and life story into a formally published ISBN book. University professors can join the review. Launch, exhibition, media, and an admissions portfolio are added when the family needs them.",
+    "Hong Kong children's publishing: 12 mentored months, a formal print run, then a Joint Publishing, Commercial Press, or Chung Hwa platform path. An admissions portfolio is a later use. Private quotation. No branch is guaranteed to stock the title, and no school place is guaranteed.",
+  eyebrow: "Children's books · bookstore shelves · Hong Kong",
+  h1: "Child author programme: print the book, then a real bookstore path",
+  lead: "Kidsmybook is a Hong Kong children's publishing studio. Twelve mentored months turn an interest into a formally printed book, then a bookstore-platform listing path (Joint Publishing, Commercial Press, Chung Hwa, depending on the title and package). Kidsmybook is not those bookstores. Store managers decide stock, placement, and returns. An admissions portfolio is a second use after the book exists. It is not the first sentence of the plan, and no school place is guaranteed.",
+  shelfLink: "Bookstore listing: Joint Publishing, Commercial Press, Chung Hwa",
   notLabel: "What this is not",
-  notBody: "Not a DIY gift book, not a weekend story class, and not a guaranteed school place.",
+  notBody: "Not an ISBN number on its own, not a DIY gift book, not a promise that every branch will stock the title, and not a guaranteed school place.",
   whoTitle: "Who it is for",
   whoItems: [
     "Children about 3 to 18 with one interest they keep returning to",
@@ -270,14 +272,14 @@ export const PROGRAMME_EN = {
     { name: "Dedicated classes", text: "Months 2–5: tutors and university professors run classes built from the real interest." },
     { name: "Publishing seminar and review", text: "Months 6–7: a publishing seminar and university professor review." },
     { name: "Parent-child layout", text: "Months 8–10: parent and child shape the layout while keeping the child's voice." },
-    { name: "Print and listing", text: "Month 12: formal print and listing on physical bookstore platforms." },
+    { name: "Print and listing", text: "Month 12: a formal print run, then a bookstore-platform listing path (Joint Publishing, Commercial Press, Chung Hwa, depending on the title and package). Store managers decide stock and placement. An admissions portfolio is a later use." },
   ],
   vsClassTitle: "How is this different from an interest class?",
   vsClass:
     "An interest class usually ends with another certificate. This is a 12-month mentored publication: a real interest, creation, professor review, a formal ISBN book, then launch, exhibition, media, and an admissions portfolio if you want them. The result is a citable book an interviewer can remember.",
   vsDiyTitle: "How is this different from a print shop or DIY self-publishing?",
   vsDiy:
-    "A self-funded print run is often a keepsake. It may not include mentoring, academic review, ISBN registration, or a bookstore path. Kidsmybook is mentor-led publishing: the child takes part, professors may review, and the family gets a formal publication that can be packaged for admissions — not a DIY template or print-only job.",
+    "A self-funded print, a print-shop job, or print-on-demand usually stops at a finished copy. An ISBN is a number, not a Joint Publishing, Commercial Press, or Chung Hwa shelf. Kidsmybook is mentor-led publishing: the child takes part, professors may review, the book is printed, then a bookstore-platform path is arranged. Store managers decide stock. An admissions portfolio comes after that.",
   singleTitle: "Can we book only one part?",
   single:
     "Yes. The Author Programme can be the full year, or a single consultation for Book Launch, Exhibition, Media & PR, Live Streaming, or Portfolio Package. That suits families who already have a finished work.",
@@ -402,12 +404,12 @@ export const PORTFOLIO_EN = {
 
 export const EXPLORE_EN = {
   kicker: "Start here",
-  title: "Author programme, portfolio, and FAQ",
-  intro: "High-intent questions have their own pages: how the year runs, how a book works in admissions, Top Talent Pass proof, an interest-to-ISBN path, and answers on ISBN and private quotes.",
+  title: "Children's books, bookstore shelves, and portfolios",
+  intro: "Start with a formal print run and a bookstore-platform listing path. An ISBN is not a shelf. An admissions portfolio is a later use.",
   programme: "Child author programme",
-  programmeBlurb: "12 mentored months, from an interest to a formal ISBN book.",
+  programmeBlurb: "12 mentored months: print the book, then a bookstore listing path.",
   faq: "FAQ",
-  faqBlurb: "ISBN, bookstore listing, kindergarten, Top Talent Pass, private quotes.",
+  faqBlurb: "Bookstore listing, ISBN, kindergarten, Top Talent Pass, private quotes.",
   portfolio: "School portfolio",
   portfolioBlurb: "Primary, DSS secondary, and international interviews: one formal publication as the highlight.",
   caseLabel: "Hilary case",
@@ -418,7 +420,7 @@ export const EXPLORE_EN = {
 export const FAQ_EN: { q: string; a: string }[] = [
   {
     q: "What is Kidsmybook?",
-    a: "Kidsmybook is a Hong Kong studio running a 12-month mentored publishing programme. We turn a child's real interest and life story into a formally published, ISBN-registered book with university professors involved, then add launch, exhibition, media, and portfolio services for school admissions.",
+    a: "A Hong Kong children's publishing studio. A 12-month mentored programme turns a child's real interest into a formally printed book and a physical bookstore listing path (Joint Publishing, Commercial Press, or Chung Hwa arrangements, depending on the title and package). University professors may join the review. An admissions portfolio is a later use. Kidsmybook is not those bookstores, and no branch is guaranteed to stock every title.",
   },
   {
     q: "What age is Kidsmybook for?",
@@ -430,7 +432,7 @@ export const FAQ_EN: { q: string; a: string }[] = [
   },
   {
     q: "Can the published book be listed in a bookstore?",
-    a: "Yes. Published outcomes are formal publications the family can hold and are listed on physical bookstore platforms as a highlight for the child's admissions portfolio.",
+    a: "The aim is a formal print run, then a bookstore-platform listing path (for example Joint Publishing, Commercial Press, or Chung Hwa, depending on the title and package). Kidsmybook is not those bookstores. Store managers decide stock, placement, and returns. An ISBN is not a shelf. See https://kidsmybook.com/tong-shu-shu-dian-shang-jia .",
   },
   {
     q: "How does Kidsmybook help with Hong Kong school admissions?",
@@ -494,7 +496,7 @@ export const FAQ_EN: { q: string; a: string }[] = [
   },
   {
     q: "Is a physical bookstore listing required? What does it mean?",
-    a: "The programme aims for a formal print run and a listing path on physical bookstore platforms (for example Joint Publishing, Commercial Press, or Chung Hwa arrangements, depending on the title and package). For parents, the point is a formal publication that can be seen and cited. Details are explained per case in consultation.",
+    a: "Listing is part of the publishing path. An ISBN does not put a book on a shelf by itself. After the formal print run, Joint Publishing, Commercial Press, or Chung Hwa arrangements depend on the title and package. Store managers decide stock, placement, and returns. An admissions portfolio can cite the result later. See https://kidsmybook.com/tong-shu-shu-dian-shang-jia .",
   },
 ];
 
@@ -1312,5 +1314,161 @@ export const SHENGZHONG_EN: HubCopy = {
   cardBlurb: "A sustained interest at the front of the file. No school is represented. No place is guaranteed.",
   crumb: "Secondary DSS portfolio",
   parent: { href: "/sheng-xue-zuo-pin-ji", label: "School portfolio" },
+  howTo: true,
+};
+
+export const SHUDIAN_HANS: HubCopy = {
+  title: "童书书店上架｜小朋友书三联／商务／中华上架｜Kidsmybook",
+  description:
+    "香港儿童出版实体上架：正式印刷，再走三联、商务、中华等书店平台路径。ISBN 不等于书架有货。店长决定进货、陈列和退货，不保证每间分店都有。私人报价，WhatsApp。",
+  eyebrow: "童书书店上架 · 香港",
+  h1: "童书书店上架：小朋友的书怎样走上三联、商务、中华路径",
+  lead: "Kidsmybook 做的是儿童出书：先正式印刷，再按题材和配套安排实体书店平台上架路径，例如三联、商务、中华。这条路和「申请到一个 ISBN」不是同一件事。市面上书号、自助印刷、按需印刷很常见；真正放到实体书店平台、等店长决定进货的童书，少得多。",
+  notLabel: "诚实界限",
+  notBody:
+    "Kidsmybook 不是三联书店、不是商务印书馆，也不是中华书局。上架是出版安排和书店平台路径，视题材和配套而定。店长决定进货、陈列位置和退货，不保证每一间分店都有每一本。也不保证学校录取。",
+  listTitle: "实体上架路径包括什么",
+  listItems: [
+    "正式印刷：一本拿得到、翻得开的实体童书，不止一个电子档",
+    "书店平台上架安排：按题材和配套，走三联、商务、中华等相关路径",
+    "家长可以讲「有出版、有上架路径」，而不是只得一个书号",
+    "升学作品集可以引用这份成果，但作品集是之后的用途，不是整个计划的第一句",
+  ],
+  limitTitle: "ISBN、DIY、POD 通常停在哪里",
+  limitItems: [
+    "ISBN 是书号。有书号不等于三联、商务或中华书架上有货",
+    "印刷店、自费出书、按需印刷（POD）多数交到印刷本，分销和实体上架往往很弱，或者根本没有",
+    "自己上传到某个网店，和实体书店平台上架是两条路",
+    "店长有权不进货、改陈列，或者退货；网站不会写全线分店保证有售",
+  ],
+  pathTitle: "和 12 个月计划怎样接上",
+  pathIntro: "上架不是第一步。前面还有导师带领创作、可有大学教授审阅、亲子排版。印刷与上架是计划最后阶段。阶段细节见出书计划。",
+  steps: [
+    { name: "创作和审阅", text: "第 2–7 个月：导师带领，可有大学教授审阅。书先要是小朋友自己的作品。" },
+    { name: "排版", text: "第 8–10 个月：家长和小朋友一起做版面，才适合正式印刷。" },
+    { name: "正式印刷", text: "第 12 个月：印成实体书。印刷完成仍然不等于书店有货。" },
+    { name: "书店平台上架", text: "按题材和配套，安排三联、商务、中华等平台路径。进货、陈列和退货由店方决定。" },
+  ],
+  faqTitle: "童书书店上架常见问题",
+  faqs: [
+    {
+      q: "有 ISBN 是不是就等于实体书店上架？",
+      a: "不是。ISBN 是书号。实体书店上架是另一条路径：正式印刷之后，才谈三联、商务、中华等平台安排。自助申请 ISBN、印刷店和 POD 很多时候停在印好或者网上有售。详见 https://kidsmybook.com/blog/isbn-bu-deng-yu-shu-dian-shang-jia 。",
+    },
+    {
+      q: "Kidsmybook 是不是三联、商务或者中华？",
+      a: "不是。Kidsmybook 是香港儿童出版工作室。三联、商务、中华是实体书店平台。上架是按题材和配套做的安排。",
+    },
+    {
+      q: "可不可以保证每间分店都有货？",
+      a: "不可以。店长决定进货、摆在哪个架、卖多久、退不退货。我们讲的是平台上架路径，不是全港每间分店保证陈列。",
+    },
+    {
+      q: "自费出书、代印和 POD 有没有实体上架？",
+      a: "多数没有，或者只有很弱的分销。自费、代印和按需印刷可以交出一本实体书，但不等于走进三联、商务、中华的上架安排。对照见 https://kidsmybook.com/blog/zi-fei-pod-vs-dao-shi-zhi-shang-jia 。",
+    },
+    {
+      q: "上架和升学作品集是什么关系？",
+      a: "实体上架是出版成果本身。升学作品集是之后可以引用的第二层用途。Kidsmybook 不是升学中介，不保证学位。公开具名个案只有 Hilary。",
+    },
+    {
+      q: "怎样索取私人报价？",
+      a: "WhatsApp https://wa.me/85291214157 或电邮 kidsmybook@outlook.com。讲小朋友年龄和一个兴趣。网站不公开价目，也不保证书架位置或学校录取。计划阶段见 https://kidsmybook.com/programme 。",
+    },
+  ],
+  readingTitle: "相关阅读",
+  links: [
+    { href: "/programme", label: "12 个月出书计划：印刷与上架阶段" },
+    { href: "/blog/san-lian-shang-jia-yi-yi", label: "实体书店上架对家长的意义" },
+    { href: "/blog/zi-fei-chu-shu-vs-dao-shi-zhi", label: "自费出书 vs 导师制出版" },
+    { href: "/blog/isbn-bu-deng-yu-shu-dian-shang-jia", label: "只有 ISBN ≠ 实体书店上架" },
+    { href: "/blog/zi-fei-pod-vs-dao-shi-zhi-shang-jia", label: "自费／POD／代印 vs 导师制＋实体上架" },
+    { href: "/blog/isbn-tong-shu-jia-zhang-zhi-nan", label: "香港 ISBN 童书：家长要知的 7 件事" },
+    { href: "/case-studies/hilary-butterfly-guide", label: "公开个案：Hilary" },
+  ],
+  ctaTitle: "想知这个题材走不走到书店平台",
+  ctaBody: "私人报价。WhatsApp 或电邮讲小朋友年龄和一个兴趣。网站不公开价目，也不保证每间分店有货或学校录取。",
+  whatsappText: "想了解小朋友出书和实体书店上架（三联／商务／中华路径）",
+  cardTitle: "童书书店上架",
+  cardBlurb: "正式印刷，再走三联、商务、中华平台路径。ISBN 不等于书架有货。",
+  crumb: "童书书店上架",
+  howTo: true,
+};
+
+export const SHUDIAN_EN: HubCopy = {
+  title: "Children's books on Hong Kong shelves | Joint Publishing, Commercial Press, Chung Hwa | Kidsmybook",
+  description:
+    "Hong Kong children's publishing: a formal print run, then a bookstore-platform listing path such as Joint Publishing, Commercial Press, or Chung Hwa. An ISBN is not a shelf. Store managers decide stock, placement, and returns. No branch is guaranteed. Private quotation via WhatsApp.",
+  eyebrow: "Bookstore listing · Hong Kong",
+  h1: "Getting a child's book onto a Joint Publishing, Commercial Press, or Chung Hwa path",
+  lead: "Kidsmybook publishes children's books: print them properly, then arrange a physical bookstore listing path — Joint Publishing, Commercial Press, Chung Hwa — according to the title and package. That is not the same as receiving an ISBN. Book numbers, print shops, and print-on-demand are common. A children's title that actually reaches a bookstore platform, where a manager decides whether to stock it, is much rarer.",
+  notLabel: "The honest limit",
+  notBody:
+    "Kidsmybook is not Joint Publishing, Commercial Press, or Chung Hwa Book. Listing is a publishing arrangement and a platform path, and it depends on the title and package. Store managers decide stock, placement, and returns. Not every branch stocks every title. No school place is guaranteed.",
+  listTitle: "What the shelf path includes",
+  listItems: [
+    "A formal print run: a physical children's book someone can hold, not only a file",
+    "A bookstore-platform arrangement, such as Joint Publishing, Commercial Press, or Chung Hwa, depending on the title and package",
+    "A result a parent can describe as published and listed, not only numbered",
+    "An admissions portfolio can cite the book later. The portfolio is not the first sentence of the plan",
+  ],
+  limitTitle: "Where ISBN, DIY, and POD usually stop",
+  limitItems: [
+    "An ISBN is a book number. It does not mean Joint Publishing, Commercial Press, or Chung Hwa has the title in stock",
+    "A print shop, self-publishing, or print-on-demand usually delivers a printed copy. Distribution and a real shelf are often weak, or absent",
+    "Uploading to an online shop is a different path from a physical bookstore platform",
+    "A manager can decline the title, move it, or return it. This site does not promise every branch",
+  ],
+  pathTitle: "How this joins the 12-month plan",
+  pathIntro: "Listing is not step one. Mentored creation, a possible university-professor review, and parent-child layout come first. Print and listing are the last phase. See the programme page for the phases.",
+  steps: [
+    { name: "Create and review", text: "Months 2–7: mentors lead. A university professor may review. The book has to be the child's own work first." },
+    { name: "Layout", text: "Months 8–10: parent and child shape the pages before a formal print run." },
+    { name: "Formal print", text: "Month 12: the book is printed. A printed copy is still not a bookstore shelf." },
+    { name: "Bookstore platform", text: "A Joint Publishing, Commercial Press, or Chung Hwa path is arranged for the title and package. The store decides stock, placement, and returns." },
+  ],
+  faqTitle: "Bookstore-listing questions",
+  faqs: [
+    {
+      q: "Does an ISBN mean the book is on a bookstore shelf?",
+      a: "No. An ISBN identifies a version. A shelf listing is a later path, after a formal print run, into arrangements such as Joint Publishing, Commercial Press, or Chung Hwa. DIY ISBN applications, print shops, and print-on-demand often stop at a printed copy or an online listing. See https://kidsmybook.com/blog/isbn-bu-deng-yu-shu-dian-shang-jia .",
+    },
+    {
+      q: "Is Kidsmybook Joint Publishing, Commercial Press, or Chung Hwa?",
+      a: "No. Kidsmybook is a Hong Kong children's publishing studio. Those names are bookstore platforms. Listing is an arrangement for a title and a package, not a claim that the studio is the bookstore.",
+    },
+    {
+      q: "Can you guarantee every branch will stock the book?",
+      a: "No. Store managers decide whether to order, where to place the book, how long it stays, and whether to return it. We describe a platform path, not a promise that every branch displays every title.",
+    },
+    {
+      q: "Do self-publishing, print-for-hire, and POD include a shelf?",
+      a: "Usually no, or only weak distribution. They can produce a physical book without a Joint Publishing, Commercial Press, or Chung Hwa listing arrangement. See https://kidsmybook.com/blog/zi-fei-pod-vs-dao-shi-zhi-shang-jia .",
+    },
+    {
+      q: "How does a shelf listing relate to an admissions portfolio?",
+      a: "The listing is the publishing result. A portfolio is a second use: an interviewer can see and hear a real book. Kidsmybook is not an admissions agent and does not guarantee a place. The only named public case is Hilary.",
+    },
+    {
+      q: "How do we ask for a private quotation?",
+      a: "WhatsApp https://wa.me/85291214157 or email kidsmybook@outlook.com. Share the child's age and one interest. Prices are not on the site. No shelf position and no school place are guaranteed. Phases: https://kidsmybook.com/programme .",
+    },
+  ],
+  readingTitle: "Related reading",
+  links: [
+    { href: "/programme", label: "12-month programme: print and listing" },
+    { href: "/blog/san-lian-shang-jia-yi-yi", label: "What a bookstore shelf means to a parent" },
+    { href: "/blog/zi-fei-chu-shu-vs-dao-shi-zhi", label: "DIY self-publishing vs mentor-led publishing" },
+    { href: "/blog/isbn-bu-deng-yu-shu-dian-shang-jia", label: "An ISBN is not a bookstore shelf" },
+    { href: "/blog/zi-fei-pod-vs-dao-shi-zhi-shang-jia", label: "Self-publishing, POD, and print-for-hire vs a shelf path" },
+    { href: "/blog/isbn-tong-shu-jia-zhang-zhi-nan", label: "Hong Kong ISBN: seven things parents should know" },
+    { href: "/case-studies/hilary-butterfly-guide", label: "Public case: Hilary" },
+  ],
+  ctaTitle: "Ask whether this topic can reach a bookstore platform",
+  ctaBody: "Private quotation only. WhatsApp or email the child's age and one interest. The site lists no prices, and it does not guarantee a branch or a school place.",
+  whatsappText: "We want to ask about a child's book and a Hong Kong bookstore listing path",
+  cardTitle: "Bookstore listing",
+  cardBlurb: "Formal print, then a Joint Publishing, Commercial Press, or Chung Hwa path. An ISBN is not a shelf.",
+  crumb: "Bookstore listing",
   howTo: true,
 };

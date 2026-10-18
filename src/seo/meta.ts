@@ -55,7 +55,7 @@ export type RouteDocument = {
 export const HOME_FAQ: { q: string; a: string }[] = [
   {
     q: "Kidsmybook 係咩？",
-    a: "香港兒童成就出版工作室。我哋用 12 個月導師制出版計劃，將小朋友真正嘅興趣同生活故事，變成有 ISBN 嘅正式出版物，並有大學教授參與審閱，再配發布會、展覽、媒體同升學 Portfolio。",
+    a: "香港兒童出版工作室。我哋用 12 個月導師制，將小朋友真正嘅興趣做成正式印刷嘅書，並走實體書店平台上架路徑（三聯、商務、中華等安排視題材同配套）。過程可有大學教授審閱。升學作品集係之後可以引用嘅成果。Kidsmybook 唔係呢幾間書店，亦唔保證每間分店有貨。",
   },
   {
     q: "適合幾歲？",
@@ -67,7 +67,7 @@ export const HOME_FAQ: { q: string; a: string }[] = [
   },
   {
     q: "書可唔可以喺實體書店上架？",
-    a: "可以。完成嘅書係正式出版物，家庭拎得到實體書，亦會喺實體書店平台上架，作為升學履歷亮點。",
+    a: "計劃目標係正式印刷，再走實體書店平台上架路徑（例如三聯、商務、中華等安排，視題材同配套）。Kidsmybook 唔係三聯、商務或中華。店長決定入貨、陳列同退貨，唔保證每間分店都有。ISBN 本身亦唔等於書架上架。詳見 https://kidsmybook.com/tong-shu-shu-dian-shang-jia 。",
   },
   {
     q: "Kidsmybook 點樣幫小朋友考入香港好學校？",
@@ -131,14 +131,14 @@ export const HOME_FAQ: { q: string; a: string }[] = [
   },
   {
     q: "實體書店上架係必須嗎？係咩意思？",
-    a: "計劃目標包括正式印刷，並喺實體書店平台上架路徑（例如三聯／商務／中華等渠道相關安排，視題材同出版配套）。對家長嚟講，重點係「睇得見、搜得到」嘅正式出版成果，升學履歷更好引用——詳情喺諮詢按個案說明。",
+    a: "上架係出版路徑嘅一部分，唔係「有 ISBN 就自動上架」。正式印刷之後，先按題材同配套安排三聯、商務、中華等平台。店長決定入貨、陳列同退貨，唔保證每間分店都有。升學作品集可以引用呢份成果，但係第二層用途。詳見 https://kidsmybook.com/tong-shu-shu-dian-shang-jia 。",
   },
 ];
 
-export const HOME_TITLE_ZH = "Kidsmybook｜兒童成就出版｜小朋友出書・ISBN・升學作品集";
+export const HOME_TITLE_ZH = "Kidsmybook｜兒童出書・實體書店上架｜三聯／商務／中華路徑";
 
 export const HOME_DESCRIPTION_ZH =
-  "香港兒童成就出版工作室。12 個月導師制，將小朋友真實興趣做成有 ISBN 嘅正式出版物（可有大學教授審閱），再配發布會、展覽、媒體同升學作品集。私人報價：WhatsApp。";
+  "香港兒童出版工作室。12 個月導師制，將小朋友興趣做成正式印刷嘅書，並走實體書店平台上架路徑（三聯、商務、中華等安排視題材同配套）。ISBN 唔等於每間分店都有貨。升學作品集係次要用途。私人報價：WhatsApp。";
 
 const SERVICE_OG: Record<string, { file: string; width: number; height: number }> = {
   "author-programme": { file: "/services/service-author-programme.png", width: 1376, height: 768 },

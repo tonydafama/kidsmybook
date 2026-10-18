@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import { AiBookCreatorPanel } from "./AiBookCreatorPage";
-import { AboutPage, ChecklistPage, FaqPage, GaocaiHubPage, HomeExplore, PortfolioHubPage, ProgrammePage, ShengxiaoHubPage, ShengzhongHubPage, XingquHubPage } from "./LandingPages";
+import { AboutPage, ChecklistPage, FaqPage, GaocaiHubPage, HomeExplore, PortfolioHubPage, ProgrammePage, ShengxiaoHubPage, ShengzhongHubPage, ShudianHubPage, XingquHubPage } from "./LandingPages";
 import { LanguageSwitcher } from "./components/LanguageSwitcher";
 import { useLocale } from "./i18n/LocaleContext";
 import { getCoverEnquiry, postPreviewLead, subscribeCoverEnquiry, type CoverEnquiry } from "./lib/coverEnquiry";
@@ -527,6 +527,7 @@ export default function App() {
     "/sheng-xue-zuo-pin-ji-qing-dan",
     "/gao-cai-tong-sheng-xue-zuo-pin-ji",
     "/xing-qu-chu-ban",
+    "/tong-shu-shu-dian-shang-jia",
     "/sheng-xiao-xue-mian-shi-zuo-pin-ji",
     "/sheng-zhong-dss-zuo-pin-ji",
     "/about",
@@ -545,6 +546,7 @@ export default function App() {
       "/sheng-xue-zuo-pin-ji-qing-dan": { title: t.checklistPage.title, description: t.checklistPage.description },
       "/gao-cai-tong-sheng-xue-zuo-pin-ji": { title: t.gaocaiPage.title, description: t.gaocaiPage.description },
       "/xing-qu-chu-ban": { title: t.xingquPage.title, description: t.xingquPage.description },
+      "/tong-shu-shu-dian-shang-jia": { title: t.shudianPage.title, description: t.shudianPage.description },
       "/sheng-xiao-xue-mian-shi-zuo-pin-ji": { title: t.shengxiaoPage.title, description: t.shengxiaoPage.description },
       "/sheng-zhong-dss-zuo-pin-ji": { title: t.shengzhongPage.title, description: t.shengzhongPage.description },
       "/about": { title: t.aboutPage.title, description: t.aboutPage.description },
@@ -640,6 +642,7 @@ export default function App() {
         <div className="nav-links">
           <LanguageSwitcher />
           <a href={appHref("/programme")}>{t.nav.programme}</a>
+          <a href={appHref("/tong-shu-shu-dian-shang-jia")}>{t.shudianPage.crumb}</a>
           <a href={appHref("/sheng-xue-zuo-pin-ji")}>{t.nav.portfolio}</a>
           <a href={appHref("/faq")}>{t.nav.faq}</a>
           <a href={appHref("/#ai-book-lab")}>{t.nav.aiBook}</a>
@@ -663,6 +666,7 @@ export default function App() {
       {pathname === "/sheng-xue-zuo-pin-ji-qing-dan" && <ChecklistPage />}
       {pathname === "/gao-cai-tong-sheng-xue-zuo-pin-ji" && <GaocaiHubPage />}
       {pathname === "/xing-qu-chu-ban" && <XingquHubPage />}
+      {pathname === "/tong-shu-shu-dian-shang-jia" && <ShudianHubPage />}
       {pathname === "/sheng-xiao-xue-mian-shi-zuo-pin-ji" && <ShengxiaoHubPage />}
       {pathname === "/sheng-zhong-dss-zuo-pin-ji" && <ShengzhongHubPage />}
       {pathname === "/services" && <ServicesIndexPage services={serviceItems} />}
@@ -688,6 +692,7 @@ export default function App() {
         <p>{t.footer.studio}</p>
         <p className="site-footer__links">
           <a href={appHref("/about")}>{t.footer.about}</a>
+          <a href={appHref("/tong-shu-shu-dian-shang-jia")}>{t.shudianPage.crumb}</a>
           <a href={appHref("/sheng-xiao-xue-mian-shi-zuo-pin-ji")}>{t.shengxiaoPage.crumb}</a>
           <a href={appHref("/sheng-zhong-dss-zuo-pin-ji")}>{t.shengzhongPage.crumb}</a>
           <a href={appHref("/blog/mian-shi-ban-vs-isbn-chu-ban")}>

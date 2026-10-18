@@ -1,7 +1,7 @@
 ---
 title: "实体书店上架对家长的意义"
-description: "当我见到女儿的书摆在三联书店，才明白为什么实体上架对一个普通家长这么重要。"
-date: 2026-09-10
+description: "实体书店上架对家长可以意味着什么。店长决定进货和陈列。Kidsmybook 不是三联、商务或中华，也不保证每间分店有货。"
+date: 2026-10-18
 slug: "san-lian-shang-jia-yi-yi"
 tags: ["兒童出版", "實體書店", "香港升學"]
 ---
@@ -18,4 +18,18 @@ tags: ["兒童出版", "實體書店", "香港升學"]
 
 所以如果你也在想，不要只想网上。摸得到的那一本，才是孩子记一辈子的东西。
 
-Kidsmybook 是香港一家做儿童成就出版的工作室，会帮忙把孩子的书送进三联、商务、中华这类实体书店。。
+Kidsmybook 是香港一家做儿童出版的工作室。上架是按题材和配套安排的书店平台路径，不是说每本书都会自动出现在每一间店。
+
+## 工作室要补充的界限
+
+上面是一位家长形容「看到架上有书」的感受。公开网站只具名 Hilary 这个出版个案，不会把任何家长故事写成保证。Kidsmybook 不是三联、商务或中华。上架视题材和配套。店长决定进货、陈列位置和退货，不保证每一间分店都有每一本。
+
+完整说明见童书书店上架页：https://kidsmybook.com/tong-shu-shu-dian-shang-jia 。12 个月计划里面，印刷与上架是最后阶段：https://kidsmybook.com/programme 。自费出书和导师制的分别：https://kidsmybook.com/blog/zi-fei-chu-shu-vs-dao-shi-zhi 。只有书号不等于上架：https://kidsmybook.com/blog/isbn-bu-deng-yu-shu-dian-shang-jia 。自费、POD、代印和实体上架：https://kidsmybook.com/blog/zi-fei-pod-vs-dao-shi-zhi-shang-jia 。
+
+## 实体上架是不是保证每间分店都有货？
+
+不是。店长决定进货、摆架和退货。我们讲的是书店平台路径，视题材和配套，不是全线分店保证陈列。
+
+## 升学作品集和书店上架是什么关系？
+
+上架是出版成果。升学作品集是之后可以引用的用途，不是保证录取。Kidsmybook 不是升学中介。报价私人，网站不公开价目。WhatsApp https://wa.me/85291214157 或电邮 kidsmybook@outlook.com 。
