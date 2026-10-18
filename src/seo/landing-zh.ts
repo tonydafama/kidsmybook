@@ -7,14 +7,15 @@ export const BLOG_INDEX_ZH = {
 };
 
 export const PROGRAMME_ZH = {
-  title: "小朋友出書計劃香港｜12 個月導師制 ISBN 出版｜Kidsmybook",
+  title: "小朋友出書計劃香港｜正式印刷同實體書店上架｜Kidsmybook",
   description:
-    "香港兒童成就出版：12 個月 1 對 1 導師制，將興趣變成有 ISBN 嘅正式出版物，可有大學教授審閱，並配套升學作品集。私人報價，WhatsApp 諮詢。",
-  eyebrow: "Author Programme · 香港",
-  h1: "小朋友出書計劃：12 個月，由興趣到 ISBN",
-  lead: "Kidsmybook 係香港兒童成就出版工作室。我哋用導師制，將小朋友真正嘅興趣同生活故事，做成有 ISBN 嘅正式出版物；過程可有大學教授審閱，完成後再按需要配發布會、展覽、媒體同升學作品集。",
+    "香港兒童出書：12 個月導師制，正式印刷，再走三聯、商務、中華等實體書店平台路徑。升學作品集係之後可以引用嘅成果。私人報價。唔保證每間分店有貨，亦唔保證取錄。",
+  eyebrow: "兒童出書 · 實體書店上架 · 香港",
+  h1: "小朋友出書計劃：正式印刷，再走上實體書店上架",
+  lead: "Kidsmybook 係香港兒童出版工作室。12 個月導師制先將小朋友嘅興趣做成正式印刷嘅書，再按題材同配套安排實體書店平台上架路徑（三聯、商務、中華等）。Kidsmybook 唔係呢幾間書店。店長決定入貨、陳列同退貨。升學作品集係完成之後可以引用嘅第二層用途，唔係計劃嘅第一句，亦唔保證取錄。",
+  shelfLink: "童書書店上架：三聯、商務、中華路徑",
   notLabel: "呢個計劃唔係",
-  notBody: "唔係 DIY 禮物書、唔係週末故事班、唔係保證入學派對。",
+  notBody: "唔係淨係申請一個 ISBN、唔係 DIY 禮物書、唔係保證每間分店有貨，亦唔係保證入學派對。",
   whoTitle: "適合邊啲家庭",
   whoItems: [
     "小朋友大約 3 至 18 歲，有一件持續感興趣嘅事",
@@ -29,14 +30,14 @@ export const PROGRAMME_ZH = {
     { name: "專屬課程", text: "第 2–5 個月：專業導師同大學教授帶領度身課程，由真實興趣出發創作。" },
     { name: "出版研討／教授審閱", text: "第 6–7 個月：出版研討，大學教授審閱，提升學術同教育價值。" },
     { name: "親子排版", text: "第 8–10 個月：家長同小朋友一齊做版面同設計，保留小朋友自己嘅聲音。" },
-    { name: "印刷與上架", text: "第 12 個月：正式印刷，並喺實體書店平台上架，作為升學履歷亮點。" },
+    { name: "印刷與上架", text: "第 12 個月：正式印刷，再按題材同配套走實體書店平台上架路徑（三聯、商務、中華等）。店長決定入貨同陳列。升學作品集係之後可以引用嘅成果。" },
   ],
   vsClassTitle: "同普通興趣班有咩分別？",
   vsClass:
     "興趣班多數換一張證書；我哋做嘅係 12 個月導師制出版：由真實興趣出發，經創作、教授審閱、正式 ISBN 出版，再可配發布會、展覽、媒體同升學作品集。成果係一本面試官記得住、可以引用嘅正式出版物，唔係再多一張一樣嘅證書。",
   vsDiyTitle: "同自己搵印刷店／自費出書有咩分別？",
   vsDiy:
-    "自費印刷通常得本紀念冊，唔一定有導師帶領、學術審閱、ISBN 註冊流程同書店上架路徑。Kidsmybook 係導師制出版計劃，重點係小朋友親身參與、教授審閱、正式出版同升學可用嘅作品集包裝——唔係 DIY 模板或者純代印。",
+    "自費印刷、代印同按需印刷通常得本印好嘅書。ISBN 係書號，唔等於三聯、商務或中華書架上有貨。Kidsmybook 係導師制出版：小朋友親身參與、可有教授審閱、正式印刷，再談實體書店平台上架。店長決定入貨。升學作品集係之後嘅用途。",
   singleTitle: "可唔可以只做其中一項？",
   single:
     "可以。Author Programme 可以全案，亦可以單項諮詢 Book Launch、Exhibition、Media & PR、Live Streaming、Portfolio Package。適合已經有成品、想加強曝光或升學包裝嘅家庭。",
@@ -238,12 +239,12 @@ export const CHECKLIST_ZH = {
 
 export const EXPLORE_ZH = {
   kicker: "開始了解",
-  title: "小朋友出書、作品集、常見問題",
-  intro: "高意圖問題有獨立頁面：計劃點跑、升學作品集點用一本書、高才通證明物、興趣出版，同 ISBN、收費方式等問答。",
+  title: "兒童出書、實體書店上架、作品集",
+  intro: "先睇正式印刷同書店平台上架。ISBN 唔等於書架有貨。升學作品集係之後可以引用嘅用途。",
   programme: "小朋友出書計劃",
-  programmeBlurb: "12 個月導師制，由興趣到 ISBN 正式出版。",
+  programmeBlurb: "12 個月導師制：正式印刷，再走實體書店上架路徑。",
   faq: "常見問題",
-  faqBlurb: "ISBN、書店上架、幼稚園、高才通、私人報價。",
+  faqBlurb: "書店上架、ISBN、幼稚園、高才通、私人報價。",
   portfolio: "升學作品集",
   portfolioBlurb: "升小學、升中 DSS／直資，同國際學校面試：用一本正式出版物做亮點。",
   caseLabel: "Hilary 個案",
@@ -252,6 +253,9 @@ export const EXPLORE_ZH = {
 };
 
 export const READING_ZH: { href: string; label: string }[] = [
+  { href: "/tong-shu-shu-dian-shang-jia", label: "童書書店上架：三聯、商務、中華路徑" },
+  { href: "/blog/isbn-bu-deng-yu-shu-dian-shang-jia", label: "只有 ISBN ≠ 實體書店上架" },
+  { href: "/blog/zi-fei-pod-vs-dao-shi-zhi-shang-jia", label: "自費／POD／代印 vs 導師制＋實體上架" },
   { href: "/sheng-xiao-xue-mian-shi-zuo-pin-ji", label: "升小面試作品集：叩門同小一面試" },
   { href: "/sheng-zhong-dss-zuo-pin-ji", label: "升中／DSS／直資作品集" },
   { href: "/blog/mian-shi-ban-vs-isbn-chu-ban", label: "升小面試班 vs ISBN 出版作品集" },
@@ -328,6 +332,8 @@ export const ABOUT_ZH = {
 };
 
 export const FAQ_READING_ZH: { href: string; label: string }[] = [
+  { href: "/tong-shu-shu-dian-shang-jia", label: "童書書店上架：三聯、商務、中華路徑" },
+  { href: "/blog/isbn-bu-deng-yu-shu-dian-shang-jia", label: "只有 ISBN ≠ 實體書店上架" },
   { href: "/sheng-xiao-xue-mian-shi-zuo-pin-ji", label: "升小面試作品集" },
   { href: "/sheng-zhong-dss-zuo-pin-ji", label: "升中／DSS／直資作品集" },
   { href: "/blog/mian-shi-ban-vs-isbn-chu-ban", label: "升小面試班 vs ISBN 出版作品集" },
@@ -374,6 +380,7 @@ export type HubCopy = {
 
 export const GAOCAI_PATH = "/gao-cai-tong-sheng-xue-zuo-pin-ji";
 export const XINGQU_PATH = "/xing-qu-chu-ban";
+export const SHUDIAN_PATH = "/tong-shu-shu-dian-shang-jia";
 export const SHENGXIAO_PATH = "/sheng-xiao-xue-mian-shi-zuo-pin-ji";
 export const SHENGZHONG_PATH = "/sheng-zhong-dss-zuo-pin-ji";
 
@@ -686,5 +693,83 @@ export const SHENGZHONG_ZH: HubCopy = {
   cardBlurb: "持續興趣放作品集前面。唔代表任何學校，唔保證學位。",
   crumb: "升中 DSS／直資作品集",
   parent: { href: "/sheng-xue-zuo-pin-ji", label: "升學作品集" },
+  howTo: true,
+};
+
+export const SHUDIAN_ZH: HubCopy = {
+  title: "童書書店上架｜小朋友書三聯／商務／中華上架｜Kidsmybook",
+  description:
+    "香港兒童出版實體上架：正式印刷，再走三聯、商務、中華等書店平台路徑。ISBN 不等於書架有貨。店長決定入貨、陳列同退貨，唔保證每間分店都有。私人報價，WhatsApp。",
+  eyebrow: "童書書店上架 · 香港",
+  h1: "童書書店上架：小朋友書點樣走上三聯、商務、中華路徑",
+  lead: "Kidsmybook 做嘅係兒童出書：先正式印刷，再按題材同配套安排實體書店平台上架路徑，例如三聯、商務、中華。呢條路同「申請到一個 ISBN」唔係同一件事。市面上書號、自助印刷、按需印刷好常見；真正放到實體書店平台、等店長決定入貨嘅童書，少得多。",
+  notLabel: "誠實界限",
+  notBody:
+    "Kidsmybook 唔係三聯書店、唔係商務印書館、亦唔係中華書局。上架係出版安排同書店平台路徑，視題材同配套而定。店長決定入貨、陳列位置同退貨，唔保證每一間分店都有每一本。亦唔保證學校取錄。",
+  listTitle: "實體上架路徑包括咩",
+  listItems: [
+    "正式印刷：一本拎得到、翻得開嘅實體童書，唔止一個電子檔",
+    "書店平台上架安排：按題材同配套，走三聯、商務、中華等相關路徑",
+    "家長可以講「有出版、有上架路徑」，而唔係只得一個書號",
+    "升學作品集可以引用呢份成果，但作品集係之後嘅用途，唔係成個計劃嘅第一句",
+  ],
+  limitTitle: "ISBN、DIY、POD 通常停喺邊",
+  limitItems: [
+    "ISBN 係書號。有書號唔等於三聯、商務或中華書架上有貨",
+    "印刷店、自費出書、按需印刷（POD）多數交到印刷本，分銷同實體上架往往好弱，或者根本冇",
+    "自己上傳到某個網店，同實體書店平台上架係兩條路",
+    "店長有權唔入貨、改陳列、或者退貨；網站唔會寫全線分店保證有售",
+  ],
+  pathTitle: "同 12 個月計劃點樣接上",
+  pathIntro: "上架唔係第一步。前面仲有導師帶領創作、可有大學教授審閱、親子排版。印刷與上架係計劃最後階段。階段細節見作出書計劃。",
+  steps: [
+    { name: "創作同審閱", text: "第 2–7 個月：導師帶領，可有大學教授審閱。書先要係小朋友自己嘅作品。" },
+    { name: "排版", text: "第 8–10 個月：親子一齊做版面，先至適合正式印刷。" },
+    { name: "正式印刷", text: "第 12 個月：印成實體書。印刷完成仍然唔等於書店有貨。" },
+    { name: "書店平台上架", text: "按題材同配套，安排三聯、商務、中華等平台路徑。入貨、陳列同退貨由店方決定。" },
+  ],
+  faqTitle: "童書書店上架常見問題",
+  faqs: [
+    {
+      q: "有 ISBN 係咪就等於實體書店上架？",
+      a: "唔係。ISBN 係書號，方便識別同註冊。實體書店上架係另一條路徑：正式印刷之後，先至談三聯、商務、中華等平台安排。自助申請 ISBN、印刷店同 POD 好多時停喺印好或者網上有售。詳見 https://kidsmybook.com/blog/isbn-bu-deng-yu-shu-dian-shang-jia 。",
+    },
+    {
+      q: "Kidsmybook 係咪三聯、商務或者中華？",
+      a: "唔係。Kidsmybook 係香港兒童出版工作室。三聯、商務、中華係實體書店平台。上架係按題材同配套做嘅安排，唔係話工作室就係嗰幾間書店。",
+    },
+    {
+      q: "可唔可以保證每間分店都有貨？",
+      a: "唔可以。店長決定入貨、擺喺邊個架、賣幾耐、退唔退貨。我哋講嘅係平台上架路徑，唔係全港每間分店保證陳列。",
+    },
+    {
+      q: "自費出書、代印同 POD 有冇實體上架？",
+      a: "多數冇，或者只有好弱嘅分銷。自費、代印同按需印刷可以交出一本實體書，但唔等於走進三聯、商務、中華嘅上架安排。對照見 https://kidsmybook.com/blog/zi-fei-pod-vs-dao-shi-zhi-shang-jia 。",
+    },
+    {
+      q: "上架同升學作品集係咩關係？",
+      a: "實體上架係出版成果本身。升學作品集係之後可以引用嘅第二層用途：面試時有一本睇得見、講得出嘅書。Kidsmybook 唔係升學中介，唔保證學位。公開具名個案只有 Hilary。",
+    },
+    {
+      q: "點樣索取私人報價？",
+      a: "WhatsApp https://wa.me/85291214157 或電郵 kidsmybook@outlook.com。講小朋友年齡同一個興趣。網站唔公開價目，亦唔保證書架位置或學校取錄。計劃階段見 https://kidsmybook.com/programme 。",
+    },
+  ],
+  readingTitle: "相關閱讀",
+  links: [
+    { href: "/programme", label: "12 個月出書計劃：印刷與上架階段" },
+    { href: "/blog/san-lian-shang-jia-yi-yi", label: "實體書店上架對家長嘅意義" },
+    { href: "/blog/zi-fei-chu-shu-vs-dao-shi-zhi", label: "自費出書 vs 導師制出版" },
+    { href: "/blog/isbn-bu-deng-yu-shu-dian-shang-jia", label: "只有 ISBN ≠ 實體書店上架" },
+    { href: "/blog/zi-fei-pod-vs-dao-shi-zhi-shang-jia", label: "自費／POD／代印 vs 導師制＋實體上架" },
+    { href: "/blog/isbn-tong-shu-jia-zhang-zhi-nan", label: "香港 ISBN 童書：家長要知嘅 7 件事" },
+    { href: "/case-studies/hilary-butterfly-guide", label: "公開個案：Hilary" },
+  ],
+  ctaTitle: "想知呢個題材行唔行到書店平台",
+  ctaBody: "私人報價。WhatsApp 或電郵講小朋友年齡同一個興趣。網站唔公開價目，亦唔保證每間分店有貨或學校取錄。",
+  whatsappText: "想了解小朋友出書同實體書店上架（三聯／商務／中華路徑）",
+  cardTitle: "童書書店上架",
+  cardBlurb: "正式印刷，再走三聯、商務、中華平台路徑。ISBN 唔等於書架有貨。",
+  crumb: "童書書店上架",
   howTo: true,
 };

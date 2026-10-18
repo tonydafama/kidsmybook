@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { getLocalizedPostMeta, upsertJsonLd, SITE_ORIGIN } from "./BlogPages";
 import { useLocale } from "./i18n/LocaleContext";
 import type { Locale } from "./i18n/locale";
-import { CHECKLIST_PATH, FAQ_READING_ZH, GAOCAI_PATH, PORTFOLIO_READING_ZH, READING_ZH, SHENGXIAO_PATH, SHENGZHONG_PATH, XINGQU_PATH, type HubCopy } from "./seo/landing-zh";
+import { CHECKLIST_PATH, FAQ_READING_ZH, GAOCAI_PATH, PORTFOLIO_READING_ZH, READING_ZH, SHENGXIAO_PATH, SHENGZHONG_PATH, SHUDIAN_PATH, XINGQU_PATH, type HubCopy } from "./seo/landing-zh";
 import { ORGANIZATION_SAME_AS, breadcrumbList, canonicalUrl, faqPageEntity } from "./seo/meta";
 
 const WHATSAPP_NUMBER = import.meta.env.VITE_WHATSAPP_NUMBER || "85291214157";
@@ -138,6 +138,9 @@ export function ProgrammePage() {
         <p className="eyebrow">{page.eyebrow}</p>
         <h1>{page.h1}</h1>
         <p className="lead">{page.lead}</p>
+        <p>
+          <a href={appHref(`${SHUDIAN_PATH}#path`)}>{page.shelfLink}</a>
+        </p>
         <p>{page.notLabel}：{page.notBody}</p>
         <div className="cta-row">
           <a className="btn primary" href={whatsappHref(page.whatsappText)} target="_blank" rel="noreferrer">
@@ -661,6 +664,11 @@ export function XingquHubPage() {
   return <HubLandingPage path={XINGQU_PATH} page={t.xingquPage} />;
 }
 
+export function ShudianHubPage() {
+  const { t } = useLocale();
+  return <HubLandingPage path={SHUDIAN_PATH} page={t.shudianPage} />;
+}
+
 export function ShengxiaoHubPage() {
   const { t } = useLocale();
   return <HubLandingPage path={SHENGXIAO_PATH} page={t.shengxiaoPage} />;
@@ -768,6 +776,12 @@ export function HomeExplore() {
       </div>
       <p>{t.explore.intro}</p>
       <div className="service-grid">
+        <a className="service-card link-card" href={appHref(SHUDIAN_PATH)}>
+          <div className="service-card-body">
+            <h4>{t.shudianPage.cardTitle}</h4>
+            <p>{t.shudianPage.cardBlurb}</p>
+          </div>
+        </a>
         <a className="service-card link-card" href={appHref("/programme")}>
           <div className="service-card-body">
             <h4>{t.explore.programme}</h4>

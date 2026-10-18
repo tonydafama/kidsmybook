@@ -6,6 +6,7 @@ export function pageWhatsappText(pathname: string, t: Translations, blogTitle?: 
   if (pathname === "/sheng-xue-zuo-pin-ji-qing-dan") return t.checklistPage.whatsappText;
   if (pathname === "/gao-cai-tong-sheng-xue-zuo-pin-ji") return t.gaocaiPage.whatsappText;
   if (pathname === "/xing-qu-chu-ban") return t.xingquPage.whatsappText;
+  if (pathname === "/tong-shu-shu-dian-shang-jia") return t.shudianPage.whatsappText;
   if (pathname === "/sheng-xiao-xue-mian-shi-zuo-pin-ji") return t.shengxiaoPage.whatsappText;
   if (pathname === "/sheng-zhong-dss-zuo-pin-ji") return t.shengzhongPage.whatsappText;
   if (pathname === "/programme") return t.programmePage.whatsappText;

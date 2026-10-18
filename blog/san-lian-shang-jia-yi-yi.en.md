@@ -1,7 +1,7 @@
 ---
 title: "What a place on a real bookstore shelf means to a parent"
-description: "I only understood why physical placement matters when I saw my daughter’s book on the shelf at Joint Publishing."
-date: 2026-09-10
+description: "What a physical bookstore shelf can mean to a parent. Managers decide stock and placement. Kidsmybook is not Joint Publishing, Commercial Press, or Chung Hwa, and no branch is guaranteed."
+date: 2026-10-18
 slug: "san-lian-shang-jia-yi-yi"
 tags: ["兒童出版", "實體書店", "香港升學"]
 ---
@@ -18,4 +18,18 @@ For parents like me there is another layer. Hong Kong admissions cares about a c
 
 So if you are thinking about this, do not only think online. The copy you can hold is what a child remembers for life.
 
-Kidsmybook is a Hong Kong studio for children’s achievement publishing. They help get a child’s book into shops like Joint Publishing, Commercial Press, and Chung Hwa. 
+Kidsmybook is a Hong Kong children's publishing studio. A listing is a bookstore-platform path for a title and a package. It does not mean every copy appears in every shop.
+
+## What the studio needs to add
+
+The paragraphs above are one parent's description of seeing a book on a shelf. The public site names only Hilary as a publishing case. A parent story is not a guarantee. Kidsmybook is not Joint Publishing, Commercial Press, or Chung Hwa. Listing depends on the title and package. Store managers decide stock, placement, and returns. Not every branch stocks every title.
+
+The hub is https://kidsmybook.com/tong-shu-shu-dian-shang-jia . Print and listing are the last phase of the 12-month plan: https://kidsmybook.com/programme . DIY versus mentoring: https://kidsmybook.com/blog/zi-fei-chu-shu-vs-dao-shi-zhi . A book number is not a shelf: https://kidsmybook.com/blog/isbn-bu-deng-yu-shu-dian-shang-jia . Self-publishing, POD, and print-for-hire versus a shelf path: https://kidsmybook.com/blog/zi-fei-pod-vs-dao-shi-zhi-shang-jia .
+
+## Does a listing guarantee every branch?
+
+No. Managers decide orders, placement, and returns. The path depends on the title and package. It is not a promise that every branch displays the book.
+
+## How does a shelf relate to an admissions portfolio?
+
+The shelf is the publishing result. A portfolio is a later use, not a guaranteed school place. Kidsmybook is not an admissions agent. The quotation is private and is not listed on the site. WhatsApp https://wa.me/85291214157 or email kidsmybook@outlook.com . 
