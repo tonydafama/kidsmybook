@@ -181,8 +181,8 @@ export function ProgrammePage() {
         <h2>{page.vsDiyTitle}</h2>
         <p>{page.vsDiy}</p>
         <p>
-          <a href={appHref("/blog/zi-fei-chu-shu-vs-dao-shi-zhi")}>
-            {localizedReading([{ href: "/blog/zi-fei-chu-shu-vs-dao-shi-zhi", label: "自費出書 vs 導師制出版" }], locale)[0].label}
+          <a href={appHref("/blog/self-publishing-vs-mentored-publishing")}>
+            {localizedReading([{ href: "/blog/self-publishing-vs-mentored-publishing", label: "自費出書 vs 導師制出版" }], locale)[0].label}
           </a>
         </p>
         <h2>{page.singleTitle}</h2>
@@ -196,7 +196,7 @@ export function ProgrammePage() {
           <a href={appHref("/case-studies/hilary-butterfly-guide")}>{page.caseLink}</a>
         </p>
         <p>
-          <a href={appHref("/sheng-xue-zuo-pin-ji")}>{page.portfolioLink}</a>
+          <a href={appHref("/admissions-portfolio")}>{page.portfolioLink}</a>
         </p>
         <p>
           <a href={appHref("/faq")}>{page.faqLink}</a>
@@ -243,7 +243,7 @@ export function FaqPage() {
         <p>
           <a href={appHref("/programme")}>{page.programmeLink}</a>
           {" · "}
-          <a href={appHref("/sheng-xue-zuo-pin-ji")}>{page.portfolioLink}</a>
+          <a href={appHref("/admissions-portfolio")}>{page.portfolioLink}</a>
         </p>
         <div className="cta-row">
           <a className="btn primary" href={whatsappHref(page.whatsappText)} target="_blank" rel="noreferrer">
@@ -307,7 +307,7 @@ export function ChecklistPage() {
       "@graph": [
         breadcrumbList([
           { name: homeLabel, path: "/" },
-          { name: t.nav.portfolio, path: "/sheng-xue-zuo-pin-ji" },
+          { name: t.nav.portfolio, path: "/admissions-portfolio" },
           { name: page.h1, path: CHECKLIST_PATH },
         ]),
         {
@@ -330,7 +330,7 @@ export function ChecklistPage() {
         <Breadcrumb
           items={[
             { href: appHref("/"), label: homeLabel },
-            { href: appHref("/sheng-xue-zuo-pin-ji"), label: t.nav.portfolio },
+            { href: appHref("/admissions-portfolio"), label: t.nav.portfolio },
             { href: appHref(CHECKLIST_PATH), label: page.h1 },
           ]}
         />
@@ -378,7 +378,7 @@ export function ChecklistPage() {
         <p>
           <a href={appHref("/programme")}>{page.programmeLink}</a>
           {" · "}
-          <a href={appHref("/sheng-xue-zuo-pin-ji")}>{t.nav.portfolio}</a>
+          <a href={appHref("/admissions-portfolio")}>{t.nav.portfolio}</a>
         </p>
       </section>
 
@@ -414,18 +414,18 @@ export function PortfolioHubPage() {
       "@graph": [
         breadcrumbList([
           { name: homeLabel, path: "/" },
-          { name: page.h1, path: "/sheng-xue-zuo-pin-ji" },
+          { name: page.h1, path: "/admissions-portfolio" },
         ]),
         {
           "@type": "WebPage",
           name: page.h1,
           description: page.lead,
-          url: canonicalUrl("/sheng-xue-zuo-pin-ji"),
+          url: canonicalUrl("/admissions-portfolio"),
           inLanguage: locale === "en" ? "en" : locale === "zh-Hans" ? "zh-Hans" : "zh-Hant",
           isPartOf: { "@type": "WebSite", name: "Kidsmybook", url: SITE_ORIGIN },
           about: ["Hong Kong school admissions portfolio", "Child achievement publishing"],
         },
-        faqPageEntity(page.faqs, `${canonicalUrl("/sheng-xue-zuo-pin-ji")}#faq`),
+        faqPageEntity(page.faqs, `${canonicalUrl("/admissions-portfolio")}#faq`),
       ],
     });
     return () => upsertJsonLd("kidsmybook-page-ld", null);
@@ -437,7 +437,7 @@ export function PortfolioHubPage() {
         <Breadcrumb
           items={[
             { href: appHref("/"), label: homeLabel },
-            { href: appHref("/sheng-xue-zuo-pin-ji"), label: t.nav.portfolio },
+            { href: appHref("/admissions-portfolio"), label: t.nav.portfolio },
           ]}
         />
         <p className="eyebrow">{page.eyebrow}</p>
@@ -499,8 +499,8 @@ export function PortfolioHubPage() {
           ))}
         </ul>
         <p>
-          <a href={appHref("/blog/you-zhi-yuan-zuo-pin-ji-chu-shu")}>
-            {localizedReading([{ href: "/blog/you-zhi-yuan-zuo-pin-ji-chu-shu", label: "幼稚園作品集：細路都出得書嗎？" }], locale)[0].label}
+          <a href={appHref("/blog/kindergarten-portfolio-book")}>
+            {localizedReading([{ href: "/blog/kindergarten-portfolio-book", label: "幼稚園作品集：細路都出得書嗎？" }], locale)[0].label}
           </a>
         </p>
       </section>
@@ -749,7 +749,7 @@ export function AboutPage() {
         <p>
           <a href={appHref("/programme")}>{page.programmeLink}</a>
           {" · "}
-          <a href={appHref("/sheng-xue-zuo-pin-ji")}>{page.portfolioLink}</a>
+          <a href={appHref("/admissions-portfolio")}>{page.portfolioLink}</a>
           {" · "}
           <a href={appHref("/faq")}>{page.faqLink}</a>
         </p>
@@ -788,7 +788,7 @@ export function HomeExplore() {
             <p>{t.explore.programmeBlurb}</p>
           </div>
         </a>
-        <a className="service-card link-card" href={appHref("/sheng-xue-zuo-pin-ji")}>
+        <a className="service-card link-card" href={appHref("/admissions-portfolio")}>
           <div className="service-card-body">
             <h4>{t.explore.portfolio}</h4>
             <p>{t.explore.portfolioBlurb}</p>

@@ -282,7 +282,7 @@ function ServicesIndexPage({ services }: { services: ServiceItem[] }) {
         <p>
           <a href={appHref("/programme")}>{t.nav.programme}</a>
           {" · "}
-          <a href={appHref("/sheng-xue-zuo-pin-ji")}>{t.nav.portfolio}</a>
+          <a href={appHref("/admissions-portfolio")}>{t.nav.portfolio}</a>
           {" · "}
           <a href={appHref("/faq")}>{t.nav.faq}</a>
         </p>
@@ -339,7 +339,7 @@ function ServiceDetailPage({ item }: { item: ServiceItem }) {
             </a>
           )}
           {item.slug === "portfolio-package" && (
-            <a className="btn ghost" href={appHref("/sheng-xue-zuo-pin-ji")}>
+            <a className="btn ghost" href={appHref("/admissions-portfolio")}>
               {t.nav.portfolio}
             </a>
           )}
@@ -523,13 +523,13 @@ export default function App() {
     "/blog",
     "/programme",
     "/faq",
-    "/sheng-xue-zuo-pin-ji",
-    "/sheng-xue-zuo-pin-ji-qing-dan",
-    "/gao-cai-tong-sheng-xue-zuo-pin-ji",
-    "/xing-qu-chu-ban",
-    "/tong-shu-shu-dian-shang-jia",
-    "/sheng-xiao-xue-mian-shi-zuo-pin-ji",
-    "/sheng-zhong-dss-zuo-pin-ji",
+    "/admissions-portfolio",
+    "/admissions-portfolio-checklist",
+    "/top-talent-pass-admissions-portfolio",
+    "/interest-to-published-book",
+    "/kids-book-bookstore-listing",
+    "/primary-one-interview-portfolio",
+    "/secondary-dss-admissions-portfolio",
     "/about",
     "/case-studies",
     "/case-studies/hilary-butterfly-guide",
@@ -542,13 +542,13 @@ export default function App() {
       "/": { title: t.seo.homeTitle, description: t.seo.homeDesc },
       "/programme": { title: t.programmePage.title, description: t.programmePage.description },
       "/faq": { title: t.faqPage.title, description: t.faqPage.description },
-      "/sheng-xue-zuo-pin-ji": { title: t.portfolioPage.title, description: t.portfolioPage.description },
-      "/sheng-xue-zuo-pin-ji-qing-dan": { title: t.checklistPage.title, description: t.checklistPage.description },
-      "/gao-cai-tong-sheng-xue-zuo-pin-ji": { title: t.gaocaiPage.title, description: t.gaocaiPage.description },
-      "/xing-qu-chu-ban": { title: t.xingquPage.title, description: t.xingquPage.description },
-      "/tong-shu-shu-dian-shang-jia": { title: t.shudianPage.title, description: t.shudianPage.description },
-      "/sheng-xiao-xue-mian-shi-zuo-pin-ji": { title: t.shengxiaoPage.title, description: t.shengxiaoPage.description },
-      "/sheng-zhong-dss-zuo-pin-ji": { title: t.shengzhongPage.title, description: t.shengzhongPage.description },
+      "/admissions-portfolio": { title: t.portfolioPage.title, description: t.portfolioPage.description },
+      "/admissions-portfolio-checklist": { title: t.checklistPage.title, description: t.checklistPage.description },
+      "/top-talent-pass-admissions-portfolio": { title: t.gaocaiPage.title, description: t.gaocaiPage.description },
+      "/interest-to-published-book": { title: t.xingquPage.title, description: t.xingquPage.description },
+      "/kids-book-bookstore-listing": { title: t.shudianPage.title, description: t.shudianPage.description },
+      "/primary-one-interview-portfolio": { title: t.shengxiaoPage.title, description: t.shengxiaoPage.description },
+      "/secondary-dss-admissions-portfolio": { title: t.shengzhongPage.title, description: t.shengzhongPage.description },
       "/about": { title: t.aboutPage.title, description: t.aboutPage.description },
       "/services": { title: t.seo.servicesTitle, description: t.seo.servicesDesc },
       "/case-studies": { title: t.seo.caseStudiesTitle, description: t.seo.caseStudiesDesc },
@@ -642,8 +642,8 @@ export default function App() {
         <div className="nav-links">
           <LanguageSwitcher />
           <a href={appHref("/programme")}>{t.nav.programme}</a>
-          <a href={appHref("/tong-shu-shu-dian-shang-jia")}>{t.shudianPage.crumb}</a>
-          <a href={appHref("/sheng-xue-zuo-pin-ji")}>{t.nav.portfolio}</a>
+          <a href={appHref("/kids-book-bookstore-listing")}>{t.shudianPage.crumb}</a>
+          <a href={appHref("/admissions-portfolio")}>{t.nav.portfolio}</a>
           <a href={appHref("/faq")}>{t.nav.faq}</a>
           <a href={appHref("/#ai-book-lab")}>{t.nav.aiBook}</a>
           <a href={appHref("/services")}>{t.nav.services}</a>
@@ -662,13 +662,13 @@ export default function App() {
       {isHome && <HomePage services={serviceItems} />}
       {pathname === "/programme" && <ProgrammePage />}
       {pathname === "/faq" && <FaqPage />}
-      {pathname === "/sheng-xue-zuo-pin-ji" && <PortfolioHubPage />}
-      {pathname === "/sheng-xue-zuo-pin-ji-qing-dan" && <ChecklistPage />}
-      {pathname === "/gao-cai-tong-sheng-xue-zuo-pin-ji" && <GaocaiHubPage />}
-      {pathname === "/xing-qu-chu-ban" && <XingquHubPage />}
-      {pathname === "/tong-shu-shu-dian-shang-jia" && <ShudianHubPage />}
-      {pathname === "/sheng-xiao-xue-mian-shi-zuo-pin-ji" && <ShengxiaoHubPage />}
-      {pathname === "/sheng-zhong-dss-zuo-pin-ji" && <ShengzhongHubPage />}
+      {pathname === "/admissions-portfolio" && <PortfolioHubPage />}
+      {pathname === "/admissions-portfolio-checklist" && <ChecklistPage />}
+      {pathname === "/top-talent-pass-admissions-portfolio" && <GaocaiHubPage />}
+      {pathname === "/interest-to-published-book" && <XingquHubPage />}
+      {pathname === "/kids-book-bookstore-listing" && <ShudianHubPage />}
+      {pathname === "/primary-one-interview-portfolio" && <ShengxiaoHubPage />}
+      {pathname === "/secondary-dss-admissions-portfolio" && <ShengzhongHubPage />}
       {pathname === "/services" && <ServicesIndexPage services={serviceItems} />}
       {currentService && <ServiceDetailPage item={currentService} />}
       {pathname === "/about" && <AboutPage />}
@@ -692,10 +692,10 @@ export default function App() {
         <p>{t.footer.studio}</p>
         <p className="site-footer__links">
           <a href={appHref("/about")}>{t.footer.about}</a>
-          <a href={appHref("/tong-shu-shu-dian-shang-jia")}>{t.shudianPage.crumb}</a>
-          <a href={appHref("/sheng-xiao-xue-mian-shi-zuo-pin-ji")}>{t.shengxiaoPage.crumb}</a>
-          <a href={appHref("/sheng-zhong-dss-zuo-pin-ji")}>{t.shengzhongPage.crumb}</a>
-          <a href={appHref("/blog/mian-shi-ban-vs-isbn-chu-ban")}>
+          <a href={appHref("/kids-book-bookstore-listing")}>{t.shudianPage.crumb}</a>
+          <a href={appHref("/primary-one-interview-portfolio")}>{t.shengxiaoPage.crumb}</a>
+          <a href={appHref("/secondary-dss-admissions-portfolio")}>{t.shengzhongPage.crumb}</a>
+          <a href={appHref("/blog/interview-class-vs-isbn-published-book")}>
             {locale === "en" ? "Interview class vs ISBN" : locale === "zh-Hans" ? "面试班 vs ISBN" : "面試班 vs ISBN"}
           </a>
           <a href={whatsappFloating} target="_blank" rel="noreferrer" onClick={trackFloatingEnquiry}>

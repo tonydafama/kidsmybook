@@ -103,25 +103,25 @@ export const PORTFOLIO_ZH = {
     {
       title: "升小學面試作品集",
       body: "小一自行分配、面試同叩門，校長通常只有幾分鐘。重點係小朋友可以指住一頁，用自己嘅說話講興趣點嚟、做過咩，而唔係再厚一本獎狀複印。呢頁亦講清楚：Kidsmybook 係導師制出版，唔係幾堂升小面試班。",
-      href: "/sheng-xiao-xue-mian-shi-zuo-pin-ji",
+      href: "/primary-one-interview-portfolio",
       link: "升小面試作品集：叩門同小一面試",
     },
     {
       title: "升中、DSS 同直資",
       body: "升中同直資、DSS 面試更常問持續興趣同自述。出版物可以放喺作品集前面，作為一項做完、可以核對嘅項目，而唔係再多一張同班一樣嘅證書。",
-      href: "/sheng-zhong-dss-zuo-pin-ji",
+      href: "/secondary-dss-admissions-portfolio",
       link: "升中／DSS／直資作品集",
     },
     {
       title: "國際學校 vs 本地學校",
       body: "國際學校面試多數用英文講好奇心同項目；本地、私立同直資較常睇中文表達同家庭點樣支持。同一本書可以準備兩個講法，唔好做成兩套故事。",
-      href: "/blog/guo-ji-vs-ben-di-mian-shi-zuo-pin-ji",
+      href: "/blog/international-vs-local-school-interview-portfolio",
       link: "國際學校 vs 本地學校面試：出版作品集有咩分別",
     },
     {
       title: "作品集點整、時間唔夠",
       body: "畫作作品集、證書堆同臨時趕工係三個唔同問題。清單講幾時交畫已經夠、幾時用一本出版作品集做分別，同埋面試只剩幾日嗰陣 12 個月計劃趕唔切。",
-      href: "/blog/dian-yang-zheng-liang-sheng-xue-zuo-pin-ji",
+      href: "/blog/how-to-build-an-admissions-portfolio",
       link: "點樣整靚升學作品集：香港家長實用清單",
     },
   ],
@@ -133,11 +133,11 @@ export const PORTFOLIO_ZH = {
   faqs: [
     {
       q: "升小學面試，點解要用一本正式出版物？",
-      a: "小一自行分配、面試同叩門通常只有幾分鐘。一本小朋友參與、有 ISBN 嘅正式出版物，可以指住一頁用自己嘅說話講興趣點嚟，而唔係再厚一本獎狀複印。Kidsmybook 係出版工作室，唔係短期升小面試班，唔保證取錄。詳見 https://kidsmybook.com/sheng-xiao-xue-mian-shi-zuo-pin-ji 。",
+      a: "小一自行分配、面試同叩門通常只有幾分鐘。一本小朋友參與、有 ISBN 嘅正式出版物，可以指住一頁用自己嘅說話講興趣點嚟，而唔係再厚一本獎狀複印。Kidsmybook 係出版工作室，唔係短期升小面試班，唔保證取錄。詳見 https://kidsmybook.com/primary-one-interview-portfolio 。",
     },
     {
       q: "升中、DSS 同直資作品集可以點放呢本書？",
-      a: "升中同直資、DSS 面試較常問持續興趣同自述。出版物可以放喺作品集前面，作為一項做完、可以核對嘅項目。學校決定取錄。詳見 https://kidsmybook.com/sheng-zhong-dss-zuo-pin-ji 。",
+      a: "升中同直資、DSS 面試較常問持續興趣同自述。出版物可以放喺作品集前面，作為一項做完、可以核對嘅項目。學校決定取錄。詳見 https://kidsmybook.com/secondary-dss-admissions-portfolio 。",
     },
     {
       q: "國際學校 portfolio 同本地面試係咪要兩本書？",
@@ -149,16 +149,16 @@ export const PORTFOLIO_ZH = {
     },
     {
       q: "美術作品集同 ISBN 出版作品集有咩分別？",
-      a: "畫簿、素描同美術班作品集證明技法同練習。有 ISBN、小朋友參與嘅出版作品集係一件做完、可以翻開講嘅正式出版物。學校如果指定要交原作或畫作選輯，畫作仍然要交；書唔取代嗰份指定作品。Kidsmybook 唔保證取錄。詳見 https://kidsmybook.com/blog/mei-shu-zuo-pin-ji-vs-isbn-chu-ban 。",
+      a: "畫簿、素描同美術班作品集證明技法同練習。有 ISBN、小朋友參與嘅出版作品集係一件做完、可以翻開講嘅正式出版物。學校如果指定要交原作或畫作選輯，畫作仍然要交；書唔取代嗰份指定作品。Kidsmybook 唔保證取錄。詳見 https://kidsmybook.com/blog/art-portfolio-vs-isbn-published-book 。",
     },
     {
       q: "作品集唔夠睇、面試就快到，仲可唔可以出書？",
-      a: "如果只剩幾日或幾星期，12 個月出版計劃趕唔切。先收窄而家嘅文件，揀一件小朋友講得出嘅作品。出書適合下一個有大約一年時間嘅申請周期。報價私人，網站唔公開價目。詳見 https://kidsmybook.com/blog/zuo-pin-ji-m-gau-lin-shi-gan 。",
+      a: "如果只剩幾日或幾星期，12 個月出版計劃趕唔切。先收窄而家嘅文件，揀一件小朋友講得出嘅作品。出書適合下一個有大約一年時間嘅申請周期。報價私人，網站唔公開價目。詳見 https://kidsmybook.com/blog/portfolio-not-ready-before-interview 。",
     },
   ],
 };
 
-export const CHECKLIST_PATH = "/sheng-xue-zuo-pin-ji-qing-dan";
+export const CHECKLIST_PATH = "/admissions-portfolio-checklist";
 
 /** Prefilled WhatsApp text. Keep this exact phrase on every locale button. */
 export const CHECKLIST_WHATSAPP_TEXT = "想要升學作品集準備清單";
@@ -188,25 +188,25 @@ export const CHECKLIST_ZH = {
   appendix:
     "證書班同補習習作可以證明上過堂，但多數同班都有一份差唔多嘅。放喺附頁，唔好放第一頁。前面留一件小朋友自己講得出、做得完嘅事。",
   appendixLinks: [
-    { href: "/blog/zheng-shu-ban-vs-isbn-chu-ban", label: "證書班 vs ISBN 正式出版：面試作品集點樣睇" },
-    { href: "/blog/bu-xi-zuo-pin-vs-chu-ban-zuo-pin-ji", label: "補習作品 vs 出版作品集：面試官睇到咩" },
+    { href: "/blog/certificate-course-vs-isbn-publishing", label: "證書班 vs ISBN 正式出版：面試作品集點樣睇" },
+    { href: "/blog/tutoring-work-vs-published-portfolio", label: "補習作品 vs 出版作品集：面試官睇到咩" },
   ],
   artTitle: "美術作品集 vs ISBN 出版書",
   art: "畫簿、素描同美術班作品集證明技法同練習。有 ISBN、小朋友參與嘅出版書係另一件做完、可以翻開講嘅正式出版物。學校如果指定要交原作或畫作選輯，畫作仍然要交；書唔取代嗰份指定作品。",
   artLinks: [
-    { href: "/blog/mei-shu-zuo-pin-ji-vs-isbn-chu-ban", label: "美術作品集 vs ISBN 出版作品集：香港升學幾時用邊樣" },
+    { href: "/blog/art-portfolio-vs-isbn-published-book", label: "美術作品集 vs ISBN 出版作品集：香港升學幾時用邊樣" },
   ],
   rushTitle: "唔夠時間點算",
   rush: "如果面試或叩門只剩幾日、幾星期，12 個月出版計劃趕唔切。先用呢份清單收窄而家手上嘅文件，揀一件小朋友講得出嘅作品。出書適合下一個有大約一年時間嘅申請周期。",
   rushLinks: [
-    { href: "/blog/zuo-pin-ji-m-gau-lin-shi-gan", label: "作品集唔夠睇、臨時趕點算：叩門同面試季時間表" },
-    { href: "/blog/dian-yang-zheng-liang-sheng-xue-zuo-pin-ji", label: "點樣整靚升學作品集：香港家長實用清單" },
+    { href: "/blog/portfolio-not-ready-before-interview", label: "作品集唔夠睇、臨時趕點算：叩門同面試季時間表" },
+    { href: "/blog/how-to-build-an-admissions-portfolio", label: "點樣整靚升學作品集：香港家長實用清單" },
   ],
   stageTitle: "升小面試同升中作品集",
   stageLinks: [
-    { href: "/sheng-xiao-xue-mian-shi-zuo-pin-ji", label: "升小面試作品集：叩門同小一面試" },
-    { href: "/sheng-zhong-dss-zuo-pin-ji", label: "升中／DSS／直資作品集" },
-    { href: "/blog/mian-shi-ban-vs-isbn-chu-ban", label: "升小面試班 vs ISBN 出版作品集" },
+    { href: "/primary-one-interview-portfolio", label: "升小面試作品集：叩門同小一面試" },
+    { href: "/secondary-dss-admissions-portfolio", label: "升中／DSS／直資作品集" },
+    { href: "/blog/interview-class-vs-isbn-published-book", label: "升小面試班 vs ISBN 出版作品集" },
   ],
   hubLink: "免費升學作品集準備清單",
   programmeLink: "了解 12 個月出書計劃",
@@ -253,55 +253,55 @@ export const EXPLORE_ZH = {
 };
 
 export const READING_ZH: { href: string; label: string }[] = [
-  { href: "/tong-shu-shu-dian-shang-jia", label: "童書書店上架：三聯、商務、中華路徑" },
-  { href: "/blog/isbn-bu-deng-yu-shu-dian-shang-jia", label: "只有 ISBN ≠ 實體書店上架" },
-  { href: "/blog/zi-fei-pod-vs-dao-shi-zhi-shang-jia", label: "自費／POD／代印 vs 導師制＋實體上架" },
-  { href: "/sheng-xiao-xue-mian-shi-zuo-pin-ji", label: "升小面試作品集：叩門同小一面試" },
-  { href: "/sheng-zhong-dss-zuo-pin-ji", label: "升中／DSS／直資作品集" },
-  { href: "/blog/mian-shi-ban-vs-isbn-chu-ban", label: "升小面試班 vs ISBN 出版作品集" },
-  { href: "/sheng-xue-zuo-pin-ji-qing-dan", label: "升學作品集準備清單（免費）" },
-  { href: "/blog/mei-shu-zuo-pin-ji-vs-isbn-chu-ban", label: "美術作品集 vs ISBN 出版作品集：香港升學幾時用邊樣" },
-  { href: "/blog/dian-yang-zheng-liang-sheng-xue-zuo-pin-ji", label: "點樣整靚升學作品集：香港家長實用清單" },
-  { href: "/blog/zuo-pin-ji-m-gau-lin-shi-gan", label: "作品集唔夠睇、臨時趕點算：叩門同面試季時間表" },
-  { href: "/gao-cai-tong-sheng-xue-zuo-pin-ji", label: "高才通／新來港：ISBN 童書作為升學證明物" },
-  { href: "/blog/gao-cai-tong-di-yi-nian-shi-jian-xian", label: "高才通家庭第一年升學作品集時間線" },
-  { href: "/blog/guo-ji-xue-xiao-mian-shi-isbn-portfolio", label: "國際學校面試 portfolio：點樣用一本 ISBN 書講" },
-  { href: "/xing-qu-chu-ban", label: "興趣出版：高爾夫、鋼琴、馬術到 ISBN 童書" },
-  { href: "/blog/sheng-xiao-xue-mian-shi-zuo-pin-ji", label: "升小學面試作品集：一本書點樣用" },
-  { href: "/blog/sheng-zhong-dss-portfolio-chu-ban", label: "升中面試、DSS 同直資：作品集點樣放一本出版物" },
-  { href: "/blog/guo-ji-vs-ben-di-mian-shi-zuo-pin-ji", label: "國際學校 vs 本地學校面試：出版作品集有咩分別" },
-  { href: "/blog/zi-fei-chu-shu-vs-dao-shi-zhi", label: "自費出書 vs 導師制出版：邊樣先幫到香港升學面試？" },
-  { href: "/blog/isbn-tong-shu-jia-zhang-zhi-nan", label: "香港 ISBN 童書：家長要知嘅 7 件事" },
-  { href: "/blog/you-zhi-yuan-zuo-pin-ji-chu-shu", label: "幼稚園作品集：細路都出得書嗎？" },
+  { href: "/kids-book-bookstore-listing", label: "童書書店上架：三聯、商務、中華路徑" },
+  { href: "/blog/isbn-is-not-bookstore-listing", label: "只有 ISBN ≠ 實體書店上架" },
+  { href: "/blog/self-publish-pod-vs-mentored-bookstore-listing", label: "自費／POD／代印 vs 導師制＋實體上架" },
+  { href: "/primary-one-interview-portfolio", label: "升小面試作品集：叩門同小一面試" },
+  { href: "/secondary-dss-admissions-portfolio", label: "升中／DSS／直資作品集" },
+  { href: "/blog/interview-class-vs-isbn-published-book", label: "升小面試班 vs ISBN 出版作品集" },
+  { href: "/admissions-portfolio-checklist", label: "升學作品集準備清單（免費）" },
+  { href: "/blog/art-portfolio-vs-isbn-published-book", label: "美術作品集 vs ISBN 出版作品集：香港升學幾時用邊樣" },
+  { href: "/blog/how-to-build-an-admissions-portfolio", label: "點樣整靚升學作品集：香港家長實用清單" },
+  { href: "/blog/portfolio-not-ready-before-interview", label: "作品集唔夠睇、臨時趕點算：叩門同面試季時間表" },
+  { href: "/top-talent-pass-admissions-portfolio", label: "高才通／新來港：ISBN 童書作為升學證明物" },
+  { href: "/blog/top-talent-pass-family-first-year-timeline", label: "高才通家庭第一年升學作品集時間線" },
+  { href: "/blog/international-school-interview-with-isbn-book", label: "國際學校面試 portfolio：點樣用一本 ISBN 書講" },
+  { href: "/interest-to-published-book", label: "興趣出版：高爾夫、鋼琴、馬術到 ISBN 童書" },
+  { href: "/blog/primary-interview-how-to-use-a-book", label: "升小學面試作品集：一本書點樣用" },
+  { href: "/blog/secondary-dss-interview-published-book", label: "升中面試、DSS 同直資：作品集點樣放一本出版物" },
+  { href: "/blog/international-vs-local-school-interview-portfolio", label: "國際學校 vs 本地學校面試：出版作品集有咩分別" },
+  { href: "/blog/self-publishing-vs-mentored-publishing", label: "自費出書 vs 導師制出版：邊樣先幫到香港升學面試？" },
+  { href: "/blog/hong-kong-isbn-childrens-book-guide", label: "香港 ISBN 童書：家長要知嘅 7 件事" },
+  { href: "/blog/kindergarten-portfolio-book", label: "幼稚園作品集：細路都出得書嗎？" },
   { href: "/blog/kids-publishing-a-book-hk-isbn", label: "小朋友出書香港：從興趣到 ISBN" },
   { href: "/blog/international-school-interview-portfolio-highlight", label: "國際學校面試履歷亮點" },
   { href: "/blog/university-professor-child-work-review", label: "大學教授點樣參與兒童作品審閱" },
-  { href: "/blog/san-lian-shang-jia-yi-yi", label: "實體書店上架對家長嘅意義" },
+  { href: "/blog/bookstore-shelf-listing-for-parents", label: "實體書店上架對家長嘅意義" },
   { href: "/blog/gifted-child-development-program-hk", label: "資優小朋友：除咗跳級仲可以點展示" },
 ];
 
 export const PORTFOLIO_READING_ZH: { href: string; label: string }[] = [
-  { href: "/sheng-xiao-xue-mian-shi-zuo-pin-ji", label: "升小面試作品集：叩門同小一面試" },
-  { href: "/sheng-zhong-dss-zuo-pin-ji", label: "升中／DSS／直資作品集" },
-  { href: "/blog/mian-shi-ban-vs-isbn-chu-ban", label: "升小面試班 vs ISBN 出版作品集" },
-  { href: "/sheng-xue-zuo-pin-ji-qing-dan", label: "升學作品集準備清單（免費）" },
-  { href: "/blog/mei-shu-zuo-pin-ji-vs-isbn-chu-ban", label: "美術作品集 vs ISBN 出版作品集：香港升學幾時用邊樣" },
-  { href: "/blog/dian-yang-zheng-liang-sheng-xue-zuo-pin-ji", label: "點樣整靚升學作品集：香港家長實用清單" },
-  { href: "/blog/zuo-pin-ji-m-gau-lin-shi-gan", label: "作品集唔夠睇、臨時趕點算：叩門同面試季時間表" },
-  { href: "/gao-cai-tong-sheng-xue-zuo-pin-ji", label: "高才通／新來港：ISBN 童書作為升學證明物" },
-  { href: "/blog/gao-cai-tong-di-yi-nian-shi-jian-xian", label: "高才通家庭第一年升學作品集時間線" },
-  { href: "/blog/guo-ji-xue-xiao-mian-shi-isbn-portfolio", label: "國際學校面試 portfolio：點樣用一本 ISBN 書講" },
-  { href: "/xing-qu-chu-ban", label: "興趣出版：由持續興趣到 ISBN 童書" },
-  { href: "/blog/zheng-shu-ban-vs-isbn-chu-ban", label: "證書班 vs ISBN 正式出版：面試作品集點樣睇" },
-  { href: "/blog/bu-xi-zuo-pin-vs-chu-ban-zuo-pin-ji", label: "補習作品 vs 出版作品集：面試官睇到咩" },
-  { href: "/blog/ben-di-xiao-xue-mian-shi-vs-guo-ji-portfolio", label: "本地小學面試文件 vs 國際學校 portfolio：同一本書點樣交" },
-  { href: "/blog/sheng-xiao-xue-mian-shi-zuo-pin-ji", label: "升小學面試作品集：一本書點樣用" },
-  { href: "/blog/sheng-zhong-dss-portfolio-chu-ban", label: "升中面試、DSS 同直資：作品集點樣放一本出版物" },
-  { href: "/blog/guo-ji-vs-ben-di-mian-shi-zuo-pin-ji", label: "國際學校 vs 本地學校面試：出版作品集有咩分別" },
-  { href: "/blog/you-zhi-yuan-zuo-pin-ji-chu-shu", label: "幼稚園作品集：細路都出得書嗎？" },
-  { href: "/blog/zi-fei-chu-shu-vs-dao-shi-zhi", label: "自費出書 vs 導師制出版" },
+  { href: "/primary-one-interview-portfolio", label: "升小面試作品集：叩門同小一面試" },
+  { href: "/secondary-dss-admissions-portfolio", label: "升中／DSS／直資作品集" },
+  { href: "/blog/interview-class-vs-isbn-published-book", label: "升小面試班 vs ISBN 出版作品集" },
+  { href: "/admissions-portfolio-checklist", label: "升學作品集準備清單（免費）" },
+  { href: "/blog/art-portfolio-vs-isbn-published-book", label: "美術作品集 vs ISBN 出版作品集：香港升學幾時用邊樣" },
+  { href: "/blog/how-to-build-an-admissions-portfolio", label: "點樣整靚升學作品集：香港家長實用清單" },
+  { href: "/blog/portfolio-not-ready-before-interview", label: "作品集唔夠睇、臨時趕點算：叩門同面試季時間表" },
+  { href: "/top-talent-pass-admissions-portfolio", label: "高才通／新來港：ISBN 童書作為升學證明物" },
+  { href: "/blog/top-talent-pass-family-first-year-timeline", label: "高才通家庭第一年升學作品集時間線" },
+  { href: "/blog/international-school-interview-with-isbn-book", label: "國際學校面試 portfolio：點樣用一本 ISBN 書講" },
+  { href: "/interest-to-published-book", label: "興趣出版：由持續興趣到 ISBN 童書" },
+  { href: "/blog/certificate-course-vs-isbn-publishing", label: "證書班 vs ISBN 正式出版：面試作品集點樣睇" },
+  { href: "/blog/tutoring-work-vs-published-portfolio", label: "補習作品 vs 出版作品集：面試官睇到咩" },
+  { href: "/blog/local-primary-interview-vs-international-portfolio", label: "本地小學面試文件 vs 國際學校 portfolio：同一本書點樣交" },
+  { href: "/blog/primary-interview-how-to-use-a-book", label: "升小學面試作品集：一本書點樣用" },
+  { href: "/blog/secondary-dss-interview-published-book", label: "升中面試、DSS 同直資：作品集點樣放一本出版物" },
+  { href: "/blog/international-vs-local-school-interview-portfolio", label: "國際學校 vs 本地學校面試：出版作品集有咩分別" },
+  { href: "/blog/kindergarten-portfolio-book", label: "幼稚園作品集：細路都出得書嗎？" },
+  { href: "/blog/self-publishing-vs-mentored-publishing", label: "自費出書 vs 導師制出版" },
   { href: "/blog/portfolio-vs-extracurriculars-hk-admissions", label: "實體書出版 vs 傳統興趣班" },
-  { href: "/blog/zheng-shu-pi-juan", label: "點解證書堆砌會令面試官疲倦" },
+  { href: "/blog/why-certificate-stacks-bore-interviewers", label: "點解證書堆砌會令面試官疲倦" },
   { href: "/blog/portfolio-book-4-skills", label: "點解一本書會係履歷最強嘅一張牌" },
   { href: "/blog/primary-school-door-knocking-portfolio-prep", label: "小學叩門 Portfolio 準備" },
   { href: "/blog/international-school-interview-portfolio-highlight", label: "國際學校面試履歷亮點" },
@@ -332,17 +332,17 @@ export const ABOUT_ZH = {
 };
 
 export const FAQ_READING_ZH: { href: string; label: string }[] = [
-  { href: "/tong-shu-shu-dian-shang-jia", label: "童書書店上架：三聯、商務、中華路徑" },
-  { href: "/blog/isbn-bu-deng-yu-shu-dian-shang-jia", label: "只有 ISBN ≠ 實體書店上架" },
-  { href: "/sheng-xiao-xue-mian-shi-zuo-pin-ji", label: "升小面試作品集" },
-  { href: "/sheng-zhong-dss-zuo-pin-ji", label: "升中／DSS／直資作品集" },
-  { href: "/blog/mian-shi-ban-vs-isbn-chu-ban", label: "升小面試班 vs ISBN 出版作品集" },
-  { href: "/blog/mei-shu-zuo-pin-ji-vs-isbn-chu-ban", label: "美術作品集 vs ISBN 出版作品集" },
-  { href: "/blog/dian-yang-zheng-liang-sheng-xue-zuo-pin-ji", label: "點樣整靚升學作品集" },
-  { href: "/blog/zuo-pin-ji-m-gau-lin-shi-gan", label: "作品集唔夠睇、臨時趕點算" },
-  { href: "/blog/isbn-tong-shu-jia-zhang-zhi-nan", label: "香港 ISBN 童書：家長要知嘅 7 件事" },
-  { href: "/blog/zi-fei-chu-shu-vs-dao-shi-zhi", label: "自費出書 vs 導師制出版" },
-  { href: "/blog/you-zhi-yuan-zuo-pin-ji-chu-shu", label: "幼稚園／K1–K3 作品集用一本書" },
+  { href: "/kids-book-bookstore-listing", label: "童書書店上架：三聯、商務、中華路徑" },
+  { href: "/blog/isbn-is-not-bookstore-listing", label: "只有 ISBN ≠ 實體書店上架" },
+  { href: "/primary-one-interview-portfolio", label: "升小面試作品集" },
+  { href: "/secondary-dss-admissions-portfolio", label: "升中／DSS／直資作品集" },
+  { href: "/blog/interview-class-vs-isbn-published-book", label: "升小面試班 vs ISBN 出版作品集" },
+  { href: "/blog/art-portfolio-vs-isbn-published-book", label: "美術作品集 vs ISBN 出版作品集" },
+  { href: "/blog/how-to-build-an-admissions-portfolio", label: "點樣整靚升學作品集" },
+  { href: "/blog/portfolio-not-ready-before-interview", label: "作品集唔夠睇、臨時趕點算" },
+  { href: "/blog/hong-kong-isbn-childrens-book-guide", label: "香港 ISBN 童書：家長要知嘅 7 件事" },
+  { href: "/blog/self-publishing-vs-mentored-publishing", label: "自費出書 vs 導師制出版" },
+  { href: "/blog/kindergarten-portfolio-book", label: "幼稚園／K1–K3 作品集用一本書" },
 ];
 
 export type HubLink = { href: string; label: string };
@@ -378,11 +378,11 @@ export type HubCopy = {
   howTo?: boolean;
 };
 
-export const GAOCAI_PATH = "/gao-cai-tong-sheng-xue-zuo-pin-ji";
-export const XINGQU_PATH = "/xing-qu-chu-ban";
-export const SHUDIAN_PATH = "/tong-shu-shu-dian-shang-jia";
-export const SHENGXIAO_PATH = "/sheng-xiao-xue-mian-shi-zuo-pin-ji";
-export const SHENGZHONG_PATH = "/sheng-zhong-dss-zuo-pin-ji";
+export const GAOCAI_PATH = "/top-talent-pass-admissions-portfolio";
+export const XINGQU_PATH = "/interest-to-published-book";
+export const SHUDIAN_PATH = "/kids-book-bookstore-listing";
+export const SHENGXIAO_PATH = "/primary-one-interview-portfolio";
+export const SHENGZHONG_PATH = "/secondary-dss-admissions-portfolio";
 
 export const GAOCAI_ZH: HubCopy = {
   title: "高才通升學作品集｜新來港家庭用 ISBN 童書做證明物｜Kidsmybook",
@@ -436,7 +436,7 @@ export const GAOCAI_ZH: HubCopy = {
     },
     {
       q: "高才通第一年，幾時先開始 ISBN 出版？",
-      a: "如果下一個面試或申請仲有大約一年，可以由第 1 個月開始 12 個月導師制。如果只剩幾日或幾星期，計劃趕唔切，先用準備清單收窄而家嘅文件。時間線見 https://kidsmybook.com/blog/gao-cai-tong-di-yi-nian-shi-jian-xian 。",
+      a: "如果下一個面試或申請仲有大約一年，可以由第 1 個月開始 12 個月導師制。如果只剩幾日或幾星期，計劃趕唔切，先用準備清單收窄而家嘅文件。時間線見 https://kidsmybook.com/blog/top-talent-pass-family-first-year-timeline 。",
     },
     {
       q: "點樣索取私人報價？",
@@ -446,19 +446,19 @@ export const GAOCAI_ZH: HubCopy = {
   readingTitle: "高才通同升學作品集延伸閱讀",
   links: [
     { href: "/programme", label: "12 個月小朋友出書計劃" },
-    { href: "/sheng-xue-zuo-pin-ji", label: "升學作品集總頁" },
+    { href: "/admissions-portfolio", label: "升學作品集總頁" },
     { href: "/faq", label: "常見問題" },
-    { href: "/xing-qu-chu-ban", label: "由興趣走到 ISBN 童書" },
-    { href: "/blog/gao-cai-tong-di-yi-nian-shi-jian-xian", label: "高才通家庭第一年升學作品集時間線" },
-    { href: "/blog/guo-ji-xue-xiao-mian-shi-isbn-portfolio", label: "國際學校面試：點樣用一本 ISBN 書講" },
+    { href: "/interest-to-published-book", label: "由興趣走到 ISBN 童書" },
+    { href: "/blog/top-talent-pass-family-first-year-timeline", label: "高才通家庭第一年升學作品集時間線" },
+    { href: "/blog/international-school-interview-with-isbn-book", label: "國際學校面試：點樣用一本 ISBN 書講" },
     { href: "/blog/top-talent-pass-first-year-portfolio", label: "高才通來港第一年作品集" },
     { href: "/blog/gtp-family-child-book-portfolio", label: "高才通家庭：一本書同證書堆" },
-    { href: "/sheng-xiao-xue-mian-shi-zuo-pin-ji", label: "升小面試作品集" },
-    { href: "/sheng-zhong-dss-zuo-pin-ji", label: "升中／DSS／直資作品集" },
-    { href: "/sheng-xue-zuo-pin-ji-qing-dan", label: "升學作品集準備清單（免費）" },
-    { href: "/blog/sheng-xiao-xue-mian-shi-zuo-pin-ji", label: "升小學面試作品集：一本書點樣用" },
-    { href: "/blog/sheng-zhong-dss-portfolio-chu-ban", label: "升中、DSS 同直資作品集" },
-    { href: "/blog/mian-shi-ban-vs-isbn-chu-ban", label: "升小面試班 vs ISBN 出版作品集" },
+    { href: "/primary-one-interview-portfolio", label: "升小面試作品集" },
+    { href: "/secondary-dss-admissions-portfolio", label: "升中／DSS／直資作品集" },
+    { href: "/admissions-portfolio-checklist", label: "升學作品集準備清單（免費）" },
+    { href: "/blog/primary-interview-how-to-use-a-book", label: "升小學面試作品集：一本書點樣用" },
+    { href: "/blog/secondary-dss-interview-published-book", label: "升中、DSS 同直資作品集" },
+    { href: "/blog/interview-class-vs-isbn-published-book", label: "升小面試班 vs ISBN 出版作品集" },
   ],
   ctaTitle: "先講家庭情況，再私人報價",
   ctaBody: "網站唔公開價目，亦唔保證學位。WhatsApp 講年齡、目標學校類型同一個興趣。",
@@ -526,14 +526,14 @@ export const XINGQU_ZH: HubCopy = {
   readingTitle: "興趣、計劃同作品集",
   links: [
     { href: "/programme", label: "12 個月小朋友出書計劃" },
-    { href: "/sheng-xue-zuo-pin-ji", label: "升學作品集總頁" },
+    { href: "/admissions-portfolio", label: "升學作品集總頁" },
     { href: "/faq", label: "常見問題" },
-    { href: "/gao-cai-tong-sheng-xue-zuo-pin-ji", label: "高才通／新來港證明物" },
-    { href: "/blog/xing-qu-bian-chu-ban", label: "興趣點樣變成一本正式出版嘅書" },
-    { href: "/blog/zheng-shu-ban-vs-isbn-chu-ban", label: "證書班 vs ISBN 正式出版" },
+    { href: "/top-talent-pass-admissions-portfolio", label: "高才通／新來港證明物" },
+    { href: "/blog/child-hobby-into-published-book", label: "興趣點樣變成一本正式出版嘅書" },
+    { href: "/blog/certificate-course-vs-isbn-publishing", label: "證書班 vs ISBN 正式出版" },
     { href: "/blog/portfolio-vs-extracurriculars-hk-admissions", label: "實體書出版 vs 傳統興趣班" },
-    { href: "/sheng-xiao-xue-mian-shi-zuo-pin-ji", label: "升小面試作品集" },
-    { href: "/sheng-zhong-dss-zuo-pin-ji", label: "升中／DSS／直資作品集" },
+    { href: "/primary-one-interview-portfolio", label: "升小面試作品集" },
+    { href: "/secondary-dss-admissions-portfolio", label: "升中／DSS／直資作品集" },
   ],
   ctaTitle: "講一件興趣，再私人報價",
   ctaBody: "網站唔公開價目，亦唔保證學位。WhatsApp 講年齡、興趣同目標學校類型。",
@@ -583,7 +583,7 @@ export const SHENGXIAO_ZH: HubCopy = {
     },
     {
       q: "Kidsmybook 係咪升小面試班？",
-      a: "唔係。面試班多數係短期課堂，練禮貌、常見問題同模擬面試。Kidsmybook 係 12 個月導師制出版，成果係一本可以帶去面試嘅正式出版物。兩樣可以並存，但唔係同一種服務。比較見 https://kidsmybook.com/blog/mian-shi-ban-vs-isbn-chu-ban 。",
+      a: "唔係。面試班多數係短期課堂，練禮貌、常見問題同模擬面試。Kidsmybook 係 12 個月導師制出版，成果係一本可以帶去面試嘅正式出版物。兩樣可以並存，但唔係同一種服務。比較見 https://kidsmybook.com/blog/interview-class-vs-isbn-published-book 。",
     },
     {
       q: "叩門只剩幾日，仲可唔可以出書？",
@@ -591,7 +591,7 @@ export const SHENGXIAO_ZH: HubCopy = {
     },
     {
       q: "升中、DSS 同直資係咪用同一頁？",
-      a: "唔係。升小重點係幾分鐘講完一件事。升中同直資、DSS 較常問持續興趣同自述。見 https://kidsmybook.com/sheng-zhong-dss-zuo-pin-ji 。高才通或新來港家庭另見 https://kidsmybook.com/gao-cai-tong-sheng-xue-zuo-pin-ji 。",
+      a: "唔係。升小重點係幾分鐘講完一件事。升中同直資、DSS 較常問持續興趣同自述。見 https://kidsmybook.com/secondary-dss-admissions-portfolio 。高才通或新來港家庭另見 https://kidsmybook.com/top-talent-pass-admissions-portfolio 。",
     },
     {
       q: "點樣索取升小作品集嘅私人報價？",
@@ -600,15 +600,15 @@ export const SHENGXIAO_ZH: HubCopy = {
   ],
   readingTitle: "升小面試、清單同相關頁",
   links: [
-    { href: "/sheng-xue-zuo-pin-ji-qing-dan", label: "升學作品集準備清單（免費）" },
+    { href: "/admissions-portfolio-checklist", label: "升學作品集準備清單（免費）" },
     { href: "/programme", label: "12 個月小朋友出書計劃" },
-    { href: "/sheng-xue-zuo-pin-ji", label: "升學作品集總頁" },
-    { href: "/sheng-zhong-dss-zuo-pin-ji", label: "升中／DSS／直資作品集" },
-    { href: "/gao-cai-tong-sheng-xue-zuo-pin-ji", label: "高才通／新來港證明物" },
-    { href: "/blog/mian-shi-ban-vs-isbn-chu-ban", label: "升小面試班 vs ISBN 出版作品集" },
-    { href: "/blog/sheng-xiao-xue-mian-shi-zuo-pin-ji", label: "升小學面試作品集：一本書點樣用" },
+    { href: "/admissions-portfolio", label: "升學作品集總頁" },
+    { href: "/secondary-dss-admissions-portfolio", label: "升中／DSS／直資作品集" },
+    { href: "/top-talent-pass-admissions-portfolio", label: "高才通／新來港證明物" },
+    { href: "/blog/interview-class-vs-isbn-published-book", label: "升小面試班 vs ISBN 出版作品集" },
+    { href: "/blog/primary-interview-how-to-use-a-book", label: "升小學面試作品集：一本書點樣用" },
     { href: "/blog/primary-school-door-knocking-portfolio-prep", label: "小學叩門 Portfolio 準備" },
-    { href: "/blog/zuo-pin-ji-m-gau-lin-shi-gan", label: "作品集唔夠睇、臨時趕點算" },
+    { href: "/blog/portfolio-not-ready-before-interview", label: "作品集唔夠睇、臨時趕點算" },
   ],
   ctaTitle: "先講升小面試時間，再私人報價",
   ctaBody: "網站唔公開價目，亦唔保證學位。WhatsApp 講年齡、目標小學類型、面試或叩門大約幾時，同一個興趣。",
@@ -616,7 +616,7 @@ export const SHENGXIAO_ZH: HubCopy = {
   cardTitle: "升小面試作品集",
   cardBlurb: "叩門同小一面試：ISBN 童書做記得住嘅一頁。唔係面試班，唔保證學位。",
   crumb: "升小面試作品集",
-  parent: { href: "/sheng-xue-zuo-pin-ji", label: "升學作品集" },
+  parent: { href: "/admissions-portfolio", label: "升學作品集" },
   howTo: true,
 };
 
@@ -660,15 +660,15 @@ export const SHENGZHONG_ZH: HubCopy = {
     },
     {
       q: "Portfolio 係咪等於再報一個面試班？",
-      a: "唔係。面試班練當場表現。Portfolio 如果指 Kidsmybook，係一本小朋友參與、有 ISBN 嘅正式出版物，加上升學作品集點樣擺。比較見 https://kidsmybook.com/blog/mian-shi-ban-vs-isbn-chu-ban 。",
+      a: "唔係。面試班練當場表現。Portfolio 如果指 Kidsmybook，係一本小朋友參與、有 ISBN 嘅正式出版物，加上升學作品集點樣擺。比較見 https://kidsmybook.com/blog/interview-class-vs-isbn-published-book 。",
     },
     {
       q: "升小面試頁同呢頁有咩分別？",
-      a: "升小面試同叩門通常只有幾分鐘，重點係講完一件事。升中較常問持續興趣同自述。升小頁：https://kidsmybook.com/sheng-xiao-xue-mian-shi-zuo-pin-ji 。",
+      a: "升小面試同叩門通常只有幾分鐘，重點係講完一件事。升中較常問持續興趣同自述。升小頁：https://kidsmybook.com/primary-one-interview-portfolio 。",
     },
     {
       q: "高才通家庭做升中作品集，係咪要另一本書？",
-      a: "唔使。同一本正式出版物可以放進升中、DSS、直資或國際學校作品集。高才通頁講證明物，唔係簽證文件：https://kidsmybook.com/gao-cai-tong-sheng-xue-zuo-pin-ji 。",
+      a: "唔使。同一本正式出版物可以放進升中、DSS、直資或國際學校作品集。高才通頁講證明物，唔係簽證文件：https://kidsmybook.com/top-talent-pass-admissions-portfolio 。",
     },
     {
       q: "點樣索取私人報價？",
@@ -677,14 +677,14 @@ export const SHENGZHONG_ZH: HubCopy = {
   ],
   readingTitle: "升中、清單同相關頁",
   links: [
-    { href: "/sheng-xiao-xue-mian-shi-zuo-pin-ji", label: "升小面試作品集" },
-    { href: "/sheng-xue-zuo-pin-ji-qing-dan", label: "升學作品集準備清單（免費）" },
-    { href: "/gao-cai-tong-sheng-xue-zuo-pin-ji", label: "高才通／新來港證明物" },
-    { href: "/sheng-xue-zuo-pin-ji", label: "升學作品集總頁" },
+    { href: "/primary-one-interview-portfolio", label: "升小面試作品集" },
+    { href: "/admissions-portfolio-checklist", label: "升學作品集準備清單（免費）" },
+    { href: "/top-talent-pass-admissions-portfolio", label: "高才通／新來港證明物" },
+    { href: "/admissions-portfolio", label: "升學作品集總頁" },
     { href: "/programme", label: "12 個月小朋友出書計劃" },
-    { href: "/blog/sheng-zhong-dss-portfolio-chu-ban", label: "升中面試、DSS 同直資：作品集點樣放一本出版物" },
-    { href: "/blog/mian-shi-ban-vs-isbn-chu-ban", label: "升小面試班 vs ISBN 出版作品集" },
-    { href: "/blog/guo-ji-vs-ben-di-mian-shi-zuo-pin-ji", label: "國際學校 vs 本地學校面試" },
+    { href: "/blog/secondary-dss-interview-published-book", label: "升中面試、DSS 同直資：作品集點樣放一本出版物" },
+    { href: "/blog/interview-class-vs-isbn-published-book", label: "升小面試班 vs ISBN 出版作品集" },
+    { href: "/blog/international-vs-local-school-interview-portfolio", label: "國際學校 vs 本地學校面試" },
   ],
   ctaTitle: "先講升中目標，再私人報價",
   ctaBody: "網站唔公開價目，亦唔保證學位。WhatsApp 講年級、目標學校類型同一個興趣。",
@@ -692,7 +692,7 @@ export const SHENGZHONG_ZH: HubCopy = {
   cardTitle: "升中 DSS／直資作品集",
   cardBlurb: "持續興趣放作品集前面。唔代表任何學校，唔保證學位。",
   crumb: "升中 DSS／直資作品集",
-  parent: { href: "/sheng-xue-zuo-pin-ji", label: "升學作品集" },
+  parent: { href: "/admissions-portfolio", label: "升學作品集" },
   howTo: true,
 };
 
@@ -732,7 +732,7 @@ export const SHUDIAN_ZH: HubCopy = {
   faqs: [
     {
       q: "有 ISBN 係咪就等於實體書店上架？",
-      a: "唔係。ISBN 係書號，方便識別同註冊。實體書店上架係另一條路徑：正式印刷之後，先至談三聯、商務、中華等平台安排。自助申請 ISBN、印刷店同 POD 好多時停喺印好或者網上有售。詳見 https://kidsmybook.com/blog/isbn-bu-deng-yu-shu-dian-shang-jia 。",
+      a: "唔係。ISBN 係書號，方便識別同註冊。實體書店上架係另一條路徑：正式印刷之後，先至談三聯、商務、中華等平台安排。自助申請 ISBN、印刷店同 POD 好多時停喺印好或者網上有售。詳見 https://kidsmybook.com/blog/isbn-is-not-bookstore-listing 。",
     },
     {
       q: "Kidsmybook 係咪三聯、商務或者中華？",
@@ -744,7 +744,7 @@ export const SHUDIAN_ZH: HubCopy = {
     },
     {
       q: "自費出書、代印同 POD 有冇實體上架？",
-      a: "多數冇，或者只有好弱嘅分銷。自費、代印同按需印刷可以交出一本實體書，但唔等於走進三聯、商務、中華嘅上架安排。對照見 https://kidsmybook.com/blog/zi-fei-pod-vs-dao-shi-zhi-shang-jia 。",
+      a: "多數冇，或者只有好弱嘅分銷。自費、代印同按需印刷可以交出一本實體書，但唔等於走進三聯、商務、中華嘅上架安排。對照見 https://kidsmybook.com/blog/self-publish-pod-vs-mentored-bookstore-listing 。",
     },
     {
       q: "上架同升學作品集係咩關係？",
@@ -758,11 +758,11 @@ export const SHUDIAN_ZH: HubCopy = {
   readingTitle: "相關閱讀",
   links: [
     { href: "/programme", label: "12 個月出書計劃：印刷與上架階段" },
-    { href: "/blog/san-lian-shang-jia-yi-yi", label: "實體書店上架對家長嘅意義" },
-    { href: "/blog/zi-fei-chu-shu-vs-dao-shi-zhi", label: "自費出書 vs 導師制出版" },
-    { href: "/blog/isbn-bu-deng-yu-shu-dian-shang-jia", label: "只有 ISBN ≠ 實體書店上架" },
-    { href: "/blog/zi-fei-pod-vs-dao-shi-zhi-shang-jia", label: "自費／POD／代印 vs 導師制＋實體上架" },
-    { href: "/blog/isbn-tong-shu-jia-zhang-zhi-nan", label: "香港 ISBN 童書：家長要知嘅 7 件事" },
+    { href: "/blog/bookstore-shelf-listing-for-parents", label: "實體書店上架對家長嘅意義" },
+    { href: "/blog/self-publishing-vs-mentored-publishing", label: "自費出書 vs 導師制出版" },
+    { href: "/blog/isbn-is-not-bookstore-listing", label: "只有 ISBN ≠ 實體書店上架" },
+    { href: "/blog/self-publish-pod-vs-mentored-bookstore-listing", label: "自費／POD／代印 vs 導師制＋實體上架" },
+    { href: "/blog/hong-kong-isbn-childrens-book-guide", label: "香港 ISBN 童書：家長要知嘅 7 件事" },
     { href: "/case-studies/hilary-butterfly-guide", label: "公開個案：Hilary" },
   ],
   ctaTitle: "想知呢個題材行唔行到書店平台",

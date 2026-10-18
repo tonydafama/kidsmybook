@@ -95,25 +95,25 @@ export const PORTFOLIO_HANS = {
     {
       title: "升小学面试作品集",
       body: "小一自行分配、面试和叩门，校长通常只有几分钟。重点是小朋友可以指着一页，用自己的话讲兴趣从哪来、做过什么，而不是再厚一本奖状复印。这页也讲清楚：Kidsmybook 是导师制出版，不是几堂升小面试班。",
-      href: "/sheng-xiao-xue-mian-shi-zuo-pin-ji",
+      href: "/primary-one-interview-portfolio",
       link: "升小面试作品集：叩门和小一面试",
     },
     {
       title: "升中、DSS 和直资",
       body: "升中和直资、DSS 面试更常问持续兴趣和自述。出版物可以放在作品集前面，作为一项做完、可以核对的项目，而不是再多一张和别人一样的证书。",
-      href: "/sheng-zhong-dss-zuo-pin-ji",
+      href: "/secondary-dss-admissions-portfolio",
       link: "升中／DSS／直资作品集",
     },
     {
       title: "国际学校 vs 本地学校",
       body: "国际学校面试多数用英文讲好奇心和项目；本地、私立和直资较常看中文表达和家庭怎样支持。同一本书可以准备两种讲法，不要做成两套故事。",
-      href: "/blog/guo-ji-vs-ben-di-mian-shi-zuo-pin-ji",
+      href: "/blog/international-vs-local-school-interview-portfolio",
       link: "国际学校 vs 本地学校面试：出版作品集有什么分别",
     },
     {
       title: "作品集怎样整理、时间不够",
       body: "画作作品集、证书堆和临时赶工是三个不同问题。清单讲什么时候交画已经够、什么时候用一本出版作品集做分别，以及面试只剩几天时 12 个月计划赶不及。",
-      href: "/blog/dian-yang-zheng-liang-sheng-xue-zuo-pin-ji",
+      href: "/blog/how-to-build-an-admissions-portfolio",
       link: "怎样做好升学作品集：香港家长实用清单",
     },
   ],
@@ -125,11 +125,11 @@ export const PORTFOLIO_HANS = {
   faqs: [
     {
       q: "升小学面试，为什么要用一本正式出版物？",
-      a: "小一自行分配、面试和叩门通常只有几分钟。一本小朋友参与、有 ISBN 的正式出版物，可以指着一页用自己的话讲兴趣从哪来，而不是再厚一本奖状复印。Kidsmybook 是出版工作室，不是短期升小面试班，不保证录取。详见 https://kidsmybook.com/sheng-xiao-xue-mian-shi-zuo-pin-ji 。",
+      a: "小一自行分配、面试和叩门通常只有几分钟。一本小朋友参与、有 ISBN 的正式出版物，可以指着一页用自己的话讲兴趣从哪来，而不是再厚一本奖状复印。Kidsmybook 是出版工作室，不是短期升小面试班，不保证录取。详见 https://kidsmybook.com/primary-one-interview-portfolio 。",
     },
     {
       q: "升中、DSS 和直资作品集可以怎样放这本书？",
-      a: "升中和直资、DSS 面试较常问持续兴趣和自述。出版物可以放在作品集前面，作为一项做完、可以核对的项目。学校决定录取。详见 https://kidsmybook.com/sheng-zhong-dss-zuo-pin-ji 。",
+      a: "升中和直资、DSS 面试较常问持续兴趣和自述。出版物可以放在作品集前面，作为一项做完、可以核对的项目。学校决定录取。详见 https://kidsmybook.com/secondary-dss-admissions-portfolio 。",
     },
     {
       q: "国际学校 portfolio 和本地面试是不是要两本书？",
@@ -141,11 +141,11 @@ export const PORTFOLIO_HANS = {
     },
     {
       q: "美术作品集和 ISBN 出版作品集有什么分别？",
-      a: "画簿、素描和美术班作品集证明技法和练习。有 ISBN、小朋友参与的出版作品集是一件做完、可以翻开讲的正式出版物。学校如果指定要交原作或画作选辑，画作仍然要交；书不取代那份指定作品。Kidsmybook 不保证录取。详见 https://kidsmybook.com/blog/mei-shu-zuo-pin-ji-vs-isbn-chu-ban 。",
+      a: "画簿、素描和美术班作品集证明技法和练习。有 ISBN、小朋友参与的出版作品集是一件做完、可以翻开讲的正式出版物。学校如果指定要交原作或画作选辑，画作仍然要交；书不取代那份指定作品。Kidsmybook 不保证录取。详见 https://kidsmybook.com/blog/art-portfolio-vs-isbn-published-book 。",
     },
     {
       q: "作品集不够看、面试快到了，还可以出书吗？",
-      a: "如果只剩几天或几星期，12 个月出版计划赶不及。先收窄现在的文件，选一件小朋友讲得出的作品。出书适合下一个大约有一年时间的申请周期。报价私人，网站不公开价目。详见 https://kidsmybook.com/blog/zuo-pin-ji-m-gau-lin-shi-gan 。",
+      a: "如果只剩几天或几星期，12 个月出版计划赶不及。先收窄现在的文件，选一件小朋友讲得出的作品。出书适合下一个大约有一年时间的申请周期。报价私人，网站不公开价目。详见 https://kidsmybook.com/blog/portfolio-not-ready-before-interview 。",
     },
   ],
 };
@@ -180,7 +180,7 @@ export const FAQ_HANS: { q: string; a: string }[] = [
   },
   {
     q: "书可不可以在实体书店上架？",
-    a: "计划目标是正式印刷，再走实体书店平台上架路径（例如三联、商务、中华等安排，视题材和配套）。Kidsmybook 不是三联、商务或中华。店长决定进货、陈列和退货，不保证每间分店都有。ISBN 本身也不等于书架上架。详见 https://kidsmybook.com/tong-shu-shu-dian-shang-jia 。",
+    a: "计划目标是正式印刷，再走实体书店平台上架路径（例如三联、商务、中华等安排，视题材和配套）。Kidsmybook 不是三联、商务或中华。店长决定进货、陈列和退货，不保证每间分店都有。ISBN 本身也不等于书架上架。详见 https://kidsmybook.com/kids-book-bookstore-listing 。",
   },
   {
     q: "Kidsmybook 怎样帮小朋友考入香港好学校？",
@@ -236,15 +236,15 @@ export const FAQ_HANS: { q: string; a: string }[] = [
   },
   {
     q: "美术作品集和 ISBN 出版作品集有什么分别？",
-    a: "画簿、素描和美术班作品集证明技法和练习。有 ISBN、小朋友参与的出版作品集是一件做完、可以翻开讲的正式出版物。学校如果指定要交原作或画作选辑，画作仍然要交；书不取代那份指定作品。Kidsmybook 不保证录取。详见 https://kidsmybook.com/blog/mei-shu-zuo-pin-ji-vs-isbn-chu-ban 。",
+    a: "画簿、素描和美术班作品集证明技法和练习。有 ISBN、小朋友参与的出版作品集是一件做完、可以翻开讲的正式出版物。学校如果指定要交原作或画作选辑，画作仍然要交；书不取代那份指定作品。Kidsmybook 不保证录取。详见 https://kidsmybook.com/blog/art-portfolio-vs-isbn-published-book 。",
   },
   {
     q: "作品集不够看、面试快到了，还可以出书吗？",
-    a: "如果只剩几天或几星期，12 个月出版计划赶不及。先收窄现在的文件，选一件小朋友讲得出的作品。出书适合下一个大约有一年时间的申请周期。报价私人，网站不公开价目。详见 https://kidsmybook.com/blog/zuo-pin-ji-m-gau-lin-shi-gan 。",
+    a: "如果只剩几天或几星期，12 个月出版计划赶不及。先收窄现在的文件，选一件小朋友讲得出的作品。出书适合下一个大约有一年时间的申请周期。报价私人，网站不公开价目。详见 https://kidsmybook.com/blog/portfolio-not-ready-before-interview 。",
   },
   {
     q: "实体书店上架是必须的吗？是什么意思？",
-    a: "上架是出版路径的一部分，不是有 ISBN 就自动上架。正式印刷之后，先按题材和配套安排三联、商务、中华等平台。店长决定进货、陈列和退货，不保证每间分店都有。升学作品集可以引用这份成果，但是第二层用途。详见 https://kidsmybook.com/tong-shu-shu-dian-shang-jia 。",
+    a: "上架是出版路径的一部分，不是有 ISBN 就自动上架。正式印刷之后，先按题材和配套安排三联、商务、中华等平台。店长决定进货、陈列和退货，不保证每间分店都有。升学作品集可以引用这份成果，但是第二层用途。详见 https://kidsmybook.com/kids-book-bookstore-listing 。",
   },
 ];
 
@@ -347,25 +347,25 @@ export const PORTFOLIO_EN = {
     {
       title: "Primary interview portfolio",
       body: "Discretionary interviews and door-knocking give a principal only a few minutes. The child should point at one page and say where the interest came from, not hand over another stack of certificate copies. This page also says plainly that Kidsmybook is mentored publishing, not a short primary interview class.",
-      href: "/sheng-xiao-xue-mian-shi-zuo-pin-ji",
+      href: "/primary-one-interview-portfolio",
       link: "Primary interview portfolio: door-knocking and P1 interviews",
     },
     {
       title: "Secondary, DSS, and direct subsidy",
       body: "Secondary, DSS, and direct-subsidy interviews more often ask about a sustained interest the student can explain. Put the publication at the front as a finished, citable project.",
-      href: "/sheng-zhong-dss-zuo-pin-ji",
+      href: "/secondary-dss-admissions-portfolio",
       link: "Secondary, DSS, and direct-subsidy portfolio",
     },
     {
       title: "International vs local",
       body: "International interviews often want the project in English. Local, private, and DSS interviews often look at Chinese expression and how the family supported the work. Prepare two tellings of one book, not two stories.",
-      href: "/blog/guo-ji-vs-ben-di-mian-shi-zuo-pin-ji",
+      href: "/blog/international-vs-local-school-interview-portfolio",
       link: "International vs local school interviews: how a published portfolio differs",
     },
     {
       title: "Ordering the file when time is short",
       body: "Drawings, a certificate stack, and a last-minute scramble are three different problems. The checklist says when drawings are enough, when a published book is the different piece, and why a 12-month programme cannot finish in a few days.",
-      href: "/blog/dian-yang-zheng-liang-sheng-xue-zuo-pin-ji",
+      href: "/blog/how-to-build-an-admissions-portfolio",
       link: "How to make a stronger Hong Kong admissions portfolio",
     },
   ],
@@ -377,11 +377,11 @@ export const PORTFOLIO_EN = {
   faqs: [
     {
       q: "Why use a formal publication in a primary interview?",
-      a: "Discretionary interviews and door-knocking usually last a few minutes. An ISBN book the child helped make lets them point at one page and say where the interest came from, instead of another stack of certificate copies. Kidsmybook is a publishing studio, not a short primary interview class, and does not guarantee a place. See https://kidsmybook.com/sheng-xiao-xue-mian-shi-zuo-pin-ji .",
+      a: "Discretionary interviews and door-knocking usually last a few minutes. An ISBN book the child helped make lets them point at one page and say where the interest came from, instead of another stack of certificate copies. Kidsmybook is a publishing studio, not a short primary interview class, and does not guarantee a place. See https://kidsmybook.com/primary-one-interview-portfolio .",
     },
     {
       q: "Where does the book sit in a secondary, DSS, or direct-subsidy portfolio?",
-      a: "Those interviews more often ask about a sustained interest the student can explain. Put the publication at the front as a finished project someone can check. The school decides admission. See https://kidsmybook.com/sheng-zhong-dss-zuo-pin-ji .",
+      a: "Those interviews more often ask about a sustained interest the student can explain. Put the publication at the front as a finished project someone can check. The school decides admission. See https://kidsmybook.com/secondary-dss-admissions-portfolio .",
     },
     {
       q: "Do international and local interviews need two books?",
@@ -393,11 +393,11 @@ export const PORTFOLIO_EN = {
     },
     {
       q: "What is the difference between an art portfolio and an ISBN book?",
-      a: "A sketchbook or art-class selection shows technique and practice. An ISBN book the child helped make is a finished publication someone can open and cite. If the school asks for original drawings, those drawings still have to be submitted. The book does not replace them. Kidsmybook does not guarantee a place. See https://kidsmybook.com/blog/mei-shu-zuo-pin-ji-vs-isbn-chu-ban .",
+      a: "A sketchbook or art-class selection shows technique and practice. An ISBN book the child helped make is a finished publication someone can open and cite. If the school asks for original drawings, those drawings still have to be submitted. The book does not replace them. Kidsmybook does not guarantee a place. See https://kidsmybook.com/blog/art-portfolio-vs-isbn-published-book .",
     },
     {
       q: "The portfolio feels thin and the interview is soon. Can we still publish?",
-      a: "A few days or weeks is not enough for the 12-month programme. Narrow the file you already have and choose one piece the child can explain. A book fits the next cycle that still has about a year. The quotation stays private and is not listed on the site. See https://kidsmybook.com/blog/zuo-pin-ji-m-gau-lin-shi-gan .",
+      a: "A few days or weeks is not enough for the 12-month programme. Narrow the file you already have and choose one piece the child can explain. A book fits the next cycle that still has about a year. The quotation stays private and is not listed on the site. See https://kidsmybook.com/blog/portfolio-not-ready-before-interview .",
     },
   ],
 };
@@ -432,7 +432,7 @@ export const FAQ_EN: { q: string; a: string }[] = [
   },
   {
     q: "Can the published book be listed in a bookstore?",
-    a: "The aim is a formal print run, then a bookstore-platform listing path (for example Joint Publishing, Commercial Press, or Chung Hwa, depending on the title and package). Kidsmybook is not those bookstores. Store managers decide stock, placement, and returns. An ISBN is not a shelf. See https://kidsmybook.com/tong-shu-shu-dian-shang-jia .",
+    a: "The aim is a formal print run, then a bookstore-platform listing path (for example Joint Publishing, Commercial Press, or Chung Hwa, depending on the title and package). Kidsmybook is not those bookstores. Store managers decide stock, placement, and returns. An ISBN is not a shelf. See https://kidsmybook.com/kids-book-bookstore-listing .",
   },
   {
     q: "How does Kidsmybook help with Hong Kong school admissions?",
@@ -488,15 +488,15 @@ export const FAQ_EN: { q: string; a: string }[] = [
   },
   {
     q: "What is the difference between an art portfolio and an ISBN book?",
-    a: "A sketchbook or art-class selection shows technique and practice. An ISBN book the child helped make is a finished publication someone can open and cite. If the school asks for original drawings, those drawings still have to be submitted. The book does not replace them. Kidsmybook does not guarantee a place. See https://kidsmybook.com/blog/mei-shu-zuo-pin-ji-vs-isbn-chu-ban .",
+    a: "A sketchbook or art-class selection shows technique and practice. An ISBN book the child helped make is a finished publication someone can open and cite. If the school asks for original drawings, those drawings still have to be submitted. The book does not replace them. Kidsmybook does not guarantee a place. See https://kidsmybook.com/blog/art-portfolio-vs-isbn-published-book .",
   },
   {
     q: "The portfolio feels thin and the interview is soon. Can we still publish?",
-    a: "A few days or weeks is not enough for the 12-month programme. Narrow the file you already have and choose one piece the child can explain. A book fits the next cycle that still has about a year. The quotation stays private and is not listed on the site. See https://kidsmybook.com/blog/zuo-pin-ji-m-gau-lin-shi-gan .",
+    a: "A few days or weeks is not enough for the 12-month programme. Narrow the file you already have and choose one piece the child can explain. A book fits the next cycle that still has about a year. The quotation stays private and is not listed on the site. See https://kidsmybook.com/blog/portfolio-not-ready-before-interview .",
   },
   {
     q: "Is a physical bookstore listing required? What does it mean?",
-    a: "Listing is part of the publishing path. An ISBN does not put a book on a shelf by itself. After the formal print run, Joint Publishing, Commercial Press, or Chung Hwa arrangements depend on the title and package. Store managers decide stock, placement, and returns. An admissions portfolio can cite the result later. See https://kidsmybook.com/tong-shu-shu-dian-shang-jia .",
+    a: "Listing is part of the publishing path. An ISBN does not put a book on a shelf by itself. After the formal print run, Joint Publishing, Commercial Press, or Chung Hwa arrangements depend on the title and package. Store managers decide stock, placement, and returns. An admissions portfolio can cite the result later. See https://kidsmybook.com/kids-book-bookstore-listing .",
   },
 ];
 
@@ -552,7 +552,7 @@ export const GAOCAI_HANS: HubCopy = {
     },
     {
       q: "高才通第一年，什么时候才开始 ISBN 出版？",
-      a: "如果下一个面试或申请还有大约一年，可以由第 1 个月开始 12 个月导师制。如果只剩几天或几星期，计划赶不及，先用准备清单收窄现在的文件。时间线见 https://kidsmybook.com/blog/gao-cai-tong-di-yi-nian-shi-jian-xian 。",
+      a: "如果下一个面试或申请还有大约一年，可以由第 1 个月开始 12 个月导师制。如果只剩几天或几星期，计划赶不及，先用准备清单收窄现在的文件。时间线见 https://kidsmybook.com/blog/top-talent-pass-family-first-year-timeline 。",
     },
     {
       q: "怎样索取私人报价？",
@@ -562,19 +562,19 @@ export const GAOCAI_HANS: HubCopy = {
   readingTitle: "高才通和升学作品集延伸阅读",
   links: [
     { href: "/programme", label: "12 个月小朋友出书计划" },
-    { href: "/sheng-xue-zuo-pin-ji", label: "升学作品集总页" },
+    { href: "/admissions-portfolio", label: "升学作品集总页" },
     { href: "/faq", label: "常见问题" },
-    { href: "/xing-qu-chu-ban", label: "由兴趣走到 ISBN 童书" },
-    { href: "/blog/gao-cai-tong-di-yi-nian-shi-jian-xian", label: "高才通家庭第一年升学作品集时间线" },
-    { href: "/blog/guo-ji-xue-xiao-mian-shi-isbn-portfolio", label: "国际学校面试：怎样用一本 ISBN 书讲" },
+    { href: "/interest-to-published-book", label: "由兴趣走到 ISBN 童书" },
+    { href: "/blog/top-talent-pass-family-first-year-timeline", label: "高才通家庭第一年升学作品集时间线" },
+    { href: "/blog/international-school-interview-with-isbn-book", label: "国际学校面试：怎样用一本 ISBN 书讲" },
     { href: "/blog/top-talent-pass-first-year-portfolio", label: "高才通来港第一年作品集" },
     { href: "/blog/gtp-family-child-book-portfolio", label: "高才通家庭：一本书和证书堆" },
-    { href: "/sheng-xiao-xue-mian-shi-zuo-pin-ji", label: "升小面试作品集" },
-    { href: "/sheng-zhong-dss-zuo-pin-ji", label: "升中／DSS／直资作品集" },
-    { href: "/sheng-xue-zuo-pin-ji-qing-dan", label: "升学作品集准备清单（免费）" },
-    { href: "/blog/sheng-xiao-xue-mian-shi-zuo-pin-ji", label: "升小学面试作品集：一本书怎样用" },
-    { href: "/blog/sheng-zhong-dss-portfolio-chu-ban", label: "升中、DSS 和直资作品集" },
-    { href: "/blog/mian-shi-ban-vs-isbn-chu-ban", label: "升小面试班 vs ISBN 出版作品集" },
+    { href: "/primary-one-interview-portfolio", label: "升小面试作品集" },
+    { href: "/secondary-dss-admissions-portfolio", label: "升中／DSS／直资作品集" },
+    { href: "/admissions-portfolio-checklist", label: "升学作品集准备清单（免费）" },
+    { href: "/blog/primary-interview-how-to-use-a-book", label: "升小学面试作品集：一本书怎样用" },
+    { href: "/blog/secondary-dss-interview-published-book", label: "升中、DSS 和直资作品集" },
+    { href: "/blog/interview-class-vs-isbn-published-book", label: "升小面试班 vs ISBN 出版作品集" },
   ],
   ctaTitle: "先讲家庭情况，再私人报价",
   ctaBody: "网站不公开价目，也不保证学位。WhatsApp 讲年龄、目标学校类型和一个兴趣。",
@@ -642,14 +642,14 @@ export const XINGQU_HANS: HubCopy = {
   readingTitle: "兴趣、计划和作品集",
   links: [
     { href: "/programme", label: "12 个月小朋友出书计划" },
-    { href: "/sheng-xue-zuo-pin-ji", label: "升学作品集总页" },
+    { href: "/admissions-portfolio", label: "升学作品集总页" },
     { href: "/faq", label: "常见问题" },
-    { href: "/gao-cai-tong-sheng-xue-zuo-pin-ji", label: "高才通／新来港证明物" },
-    { href: "/blog/xing-qu-bian-chu-ban", label: "兴趣怎样变成一本正式出版的书" },
-    { href: "/blog/zheng-shu-ban-vs-isbn-chu-ban", label: "证书班 vs ISBN 正式出版" },
+    { href: "/top-talent-pass-admissions-portfolio", label: "高才通／新来港证明物" },
+    { href: "/blog/child-hobby-into-published-book", label: "兴趣怎样变成一本正式出版的书" },
+    { href: "/blog/certificate-course-vs-isbn-publishing", label: "证书班 vs ISBN 正式出版" },
     { href: "/blog/portfolio-vs-extracurriculars-hk-admissions", label: "实体书出版 vs 传统兴趣班" },
-    { href: "/sheng-xiao-xue-mian-shi-zuo-pin-ji", label: "升小面试作品集" },
-    { href: "/sheng-zhong-dss-zuo-pin-ji", label: "升中／DSS／直资作品集" },
+    { href: "/primary-one-interview-portfolio", label: "升小面试作品集" },
+    { href: "/secondary-dss-admissions-portfolio", label: "升中／DSS／直资作品集" },
   ],
   ctaTitle: "讲一件兴趣，再私人报价",
   ctaBody: "网站不公开价目，也不保证学位。WhatsApp 讲年龄、兴趣和目标学校类型。",
@@ -711,7 +711,7 @@ export const GAOCAI_EN: HubCopy = {
     },
     {
       q: "When should a Top Talent Pass family start the ISBN path in year one?",
-      a: "If the next interview or application is still about a year away, start the 12-month mentored programme in month 1. A few days or weeks cannot finish it. Narrow the current file with the checklist first. Timeline: https://kidsmybook.com/blog/gao-cai-tong-di-yi-nian-shi-jian-xian .",
+      a: "If the next interview or application is still about a year away, start the 12-month mentored programme in month 1. A few days or weeks cannot finish it. Narrow the current file with the checklist first. Timeline: https://kidsmybook.com/blog/top-talent-pass-family-first-year-timeline .",
     },
     {
       q: "How do we ask for a private quotation?",
@@ -721,19 +721,19 @@ export const GAOCAI_EN: HubCopy = {
   readingTitle: "Further reading",
   links: [
     { href: "/programme", label: "12-month child author programme" },
-    { href: "/sheng-xue-zuo-pin-ji", label: "School portfolio hub" },
+    { href: "/admissions-portfolio", label: "School portfolio hub" },
     { href: "/faq", label: "FAQ" },
-    { href: "/xing-qu-chu-ban", label: "From an interest to an ISBN children's book" },
-    { href: "/blog/gao-cai-tong-di-yi-nian-shi-jian-xian", label: "Top Talent Pass year-one portfolio timeline" },
-    { href: "/blog/guo-ji-xue-xiao-mian-shi-isbn-portfolio", label: "International-school interview: tell one ISBN book" },
+    { href: "/interest-to-published-book", label: "From an interest to an ISBN children's book" },
+    { href: "/blog/top-talent-pass-family-first-year-timeline", label: "Top Talent Pass year-one portfolio timeline" },
+    { href: "/blog/international-school-interview-with-isbn-book", label: "International-school interview: tell one ISBN book" },
     { href: "/blog/top-talent-pass-first-year-portfolio", label: "Top Talent Pass first-year portfolio" },
     { href: "/blog/gtp-family-child-book-portfolio", label: "GTP families: one book and a certificate stack" },
-    { href: "/sheng-xiao-xue-mian-shi-zuo-pin-ji", label: "Primary interview portfolio" },
-    { href: "/sheng-zhong-dss-zuo-pin-ji", label: "Secondary, DSS, and direct-subsidy portfolio" },
-    { href: "/sheng-xue-zuo-pin-ji-qing-dan", label: "Free school portfolio checklist" },
-    { href: "/blog/sheng-xiao-xue-mian-shi-zuo-pin-ji", label: "Primary interview portfolio: how to use one book" },
-    { href: "/blog/sheng-zhong-dss-portfolio-chu-ban", label: "Secondary, DSS, and direct-subsidy portfolios" },
-    { href: "/blog/mian-shi-ban-vs-isbn-chu-ban", label: "Primary interview class vs an ISBN portfolio" },
+    { href: "/primary-one-interview-portfolio", label: "Primary interview portfolio" },
+    { href: "/secondary-dss-admissions-portfolio", label: "Secondary, DSS, and direct-subsidy portfolio" },
+    { href: "/admissions-portfolio-checklist", label: "Free school portfolio checklist" },
+    { href: "/blog/primary-interview-how-to-use-a-book", label: "Primary interview portfolio: how to use one book" },
+    { href: "/blog/secondary-dss-interview-published-book", label: "Secondary, DSS, and direct-subsidy portfolios" },
+    { href: "/blog/interview-class-vs-isbn-published-book", label: "Primary interview class vs an ISBN portfolio" },
   ],
   ctaTitle: "Tell us the family situation, then we quote privately",
   ctaBody: "Prices are not on the site, and no place is guaranteed. WhatsApp the age, target school type, and one interest.",
@@ -801,14 +801,14 @@ export const XINGQU_EN: HubCopy = {
   readingTitle: "Interest, programme, and portfolio",
   links: [
     { href: "/programme", label: "12-month child author programme" },
-    { href: "/sheng-xue-zuo-pin-ji", label: "School portfolio hub" },
+    { href: "/admissions-portfolio", label: "School portfolio hub" },
     { href: "/faq", label: "FAQ" },
-    { href: "/gao-cai-tong-sheng-xue-zuo-pin-ji", label: "Top Talent Pass proof object" },
-    { href: "/blog/xing-qu-bian-chu-ban", label: "How an interest becomes a published book" },
-    { href: "/blog/zheng-shu-ban-vs-isbn-chu-ban", label: "Certificate class vs formal ISBN publication" },
+    { href: "/top-talent-pass-admissions-portfolio", label: "Top Talent Pass proof object" },
+    { href: "/blog/child-hobby-into-published-book", label: "How an interest becomes a published book" },
+    { href: "/blog/certificate-course-vs-isbn-publishing", label: "Certificate class vs formal ISBN publication" },
     { href: "/blog/portfolio-vs-extracurriculars-hk-admissions", label: "A published book vs traditional classes" },
-    { href: "/sheng-xiao-xue-mian-shi-zuo-pin-ji", label: "Primary interview portfolio" },
-    { href: "/sheng-zhong-dss-zuo-pin-ji", label: "Secondary, DSS, and direct-subsidy portfolio" },
+    { href: "/primary-one-interview-portfolio", label: "Primary interview portfolio" },
+    { href: "/secondary-dss-admissions-portfolio", label: "Secondary, DSS, and direct-subsidy portfolio" },
   ],
   ctaTitle: "Name one interest, then we quote privately",
   ctaBody: "Prices are not on the site, and no place is guaranteed. WhatsApp the age, the interest, and the target school type.",
@@ -888,25 +888,25 @@ export const CHECKLIST_HANS = {
   appendixTitle: "证书班／补习作品放附页",
   appendix: "证书班和补习习作可以证明上过课，但多数同班都有一份差不多的。放在附页，不要放第一页。前面留一件小朋友自己讲得出、做得完的事。",
   appendixLinks: [
-    { href: "/blog/zheng-shu-ban-vs-isbn-chu-ban", label: "证书班 vs ISBN 正式出版：面试作品集怎样看" },
-    { href: "/blog/bu-xi-zuo-pin-vs-chu-ban-zuo-pin-ji", label: "补习作品 vs 出版作品集：面试官看到什么" },
+    { href: "/blog/certificate-course-vs-isbn-publishing", label: "证书班 vs ISBN 正式出版：面试作品集怎样看" },
+    { href: "/blog/tutoring-work-vs-published-portfolio", label: "补习作品 vs 出版作品集：面试官看到什么" },
   ],
   artTitle: "美术作品集 vs ISBN 出版书",
   art: "画簿、素描和美术班作品集证明技法和练习。有 ISBN、小朋友参与的出版书是另一件做完、可以翻开讲的正式出版物。学校如果指定要交原作或画作选辑，画作仍然要交；书不取代那份指定作品。",
   artLinks: [
-    { href: "/blog/mei-shu-zuo-pin-ji-vs-isbn-chu-ban", label: "美术作品集 vs ISBN 出版作品集：香港升学什么时候用哪样" },
+    { href: "/blog/art-portfolio-vs-isbn-published-book", label: "美术作品集 vs ISBN 出版作品集：香港升学什么时候用哪样" },
   ],
   rushTitle: "时间不够怎么办",
   rush: "如果面试或叩门只剩几天、几星期，12 个月出版计划赶不及。先用这份清单收窄现在手上的文件，选一件小朋友讲得出的作品。出书适合下一个有大约一年时间的申请周期。",
   rushLinks: [
-    { href: "/blog/zuo-pin-ji-m-gau-lin-shi-gan", label: "作品集不够看、临时赶怎么办：叩门和面试季时间表" },
-    { href: "/blog/dian-yang-zheng-liang-sheng-xue-zuo-pin-ji", label: "怎样做好升学作品集：香港家长实用清单" },
+    { href: "/blog/portfolio-not-ready-before-interview", label: "作品集不够看、临时赶怎么办：叩门和面试季时间表" },
+    { href: "/blog/how-to-build-an-admissions-portfolio", label: "怎样做好升学作品集：香港家长实用清单" },
   ],
   stageTitle: "升小面试和升中作品集",
   stageLinks: [
-    { href: "/sheng-xiao-xue-mian-shi-zuo-pin-ji", label: "升小面试作品集：叩门和小一面试" },
-    { href: "/sheng-zhong-dss-zuo-pin-ji", label: "升中／DSS／直资作品集" },
-    { href: "/blog/mian-shi-ban-vs-isbn-chu-ban", label: "升小面试班 vs ISBN 出版作品集" },
+    { href: "/primary-one-interview-portfolio", label: "升小面试作品集：叩门和小一面试" },
+    { href: "/secondary-dss-admissions-portfolio", label: "升中／DSS／直资作品集" },
+    { href: "/blog/interview-class-vs-isbn-published-book", label: "升小面试班 vs ISBN 出版作品集" },
   ],
   hubLink: "免费升学作品集准备清单",
   programmeLink: "了解 12 个月出书计划",
@@ -962,25 +962,25 @@ export const CHECKLIST_EN = {
   appendix:
     "A certificate class or tutoring exercise can show the child attended. Most classmates have something similar. Put it in the appendix, not on page one. Keep the front for one piece the child finished and can explain.",
   appendixLinks: [
-    { href: "/blog/zheng-shu-ban-vs-isbn-chu-ban", label: "Certificate class vs formal ISBN publication" },
-    { href: "/blog/bu-xi-zuo-pin-vs-chu-ban-zuo-pin-ji", label: "Tutoring work vs a published portfolio" },
+    { href: "/blog/certificate-course-vs-isbn-publishing", label: "Certificate class vs formal ISBN publication" },
+    { href: "/blog/tutoring-work-vs-published-portfolio", label: "Tutoring work vs a published portfolio" },
   ],
   artTitle: "Art portfolio vs an ISBN book",
   art: "A sketchbook or art-class portfolio shows technique and practice. An ISBN book the child helped make is a finished publication they can open and explain. If a school asks for original drawings, those drawings still have to be handed in. The book does not replace that requirement.",
   artLinks: [
-    { href: "/blog/mei-shu-zuo-pin-ji-vs-isbn-chu-ban", label: "Art portfolio vs an ISBN book for Hong Kong admissions" },
+    { href: "/blog/art-portfolio-vs-isbn-published-book", label: "Art portfolio vs an ISBN book for Hong Kong admissions" },
   ],
   rushTitle: "When there is not enough time",
   rush: "If the interview or door-knocking round is only days or weeks away, a 12-month publishing programme cannot be finished in time. Use this checklist to narrow the file you already have, and pick one piece the child can talk about. A book fits the next cycle that has about a year.",
   rushLinks: [
-    { href: "/blog/zuo-pin-ji-m-gau-lin-shi-gan", label: "When the portfolio feels thin and the interview is soon" },
-    { href: "/blog/dian-yang-zheng-liang-sheng-xue-zuo-pin-ji", label: "How to order a stronger Hong Kong admissions portfolio" },
+    { href: "/blog/portfolio-not-ready-before-interview", label: "When the portfolio feels thin and the interview is soon" },
+    { href: "/blog/how-to-build-an-admissions-portfolio", label: "How to order a stronger Hong Kong admissions portfolio" },
   ],
   stageTitle: "Primary interview and secondary portfolio pages",
   stageLinks: [
-    { href: "/sheng-xiao-xue-mian-shi-zuo-pin-ji", label: "Primary interview portfolio" },
-    { href: "/sheng-zhong-dss-zuo-pin-ji", label: "Secondary, DSS, and direct-subsidy portfolio" },
-    { href: "/blog/mian-shi-ban-vs-isbn-chu-ban", label: "Primary interview class vs an ISBN portfolio" },
+    { href: "/primary-one-interview-portfolio", label: "Primary interview portfolio" },
+    { href: "/secondary-dss-admissions-portfolio", label: "Secondary, DSS, and direct-subsidy portfolio" },
+    { href: "/blog/interview-class-vs-isbn-published-book", label: "Primary interview class vs an ISBN portfolio" },
   ],
   hubLink: "Free school portfolio checklist",
   programmeLink: "See the 12-month author programme",
@@ -1051,7 +1051,7 @@ export const SHENGXIAO_HANS: HubCopy = {
     },
     {
       q: "Kidsmybook 是不是升小面试班？",
-      a: "不是。面试班多数是短期课堂，练礼貌、常见问题和模拟面试。Kidsmybook 是 12 个月导师制出版，成果是一本可以带去面试的正式出版物。两样可以并存，但不是同一种服务。比较见 https://kidsmybook.com/blog/mian-shi-ban-vs-isbn-chu-ban 。",
+      a: "不是。面试班多数是短期课堂，练礼貌、常见问题和模拟面试。Kidsmybook 是 12 个月导师制出版，成果是一本可以带去面试的正式出版物。两样可以并存，但不是同一种服务。比较见 https://kidsmybook.com/blog/interview-class-vs-isbn-published-book 。",
     },
     {
       q: "叩门只剩几天，还可以出书吗？",
@@ -1059,7 +1059,7 @@ export const SHENGXIAO_HANS: HubCopy = {
     },
     {
       q: "升中、DSS 和直资是不是用同一页？",
-      a: "不是。升小重点是几分钟讲完一件事。升中和直资、DSS 较常问持续兴趣和自述。见 https://kidsmybook.com/sheng-zhong-dss-zuo-pin-ji 。高才通或新来港家庭另见 https://kidsmybook.com/gao-cai-tong-sheng-xue-zuo-pin-ji 。",
+      a: "不是。升小重点是几分钟讲完一件事。升中和直资、DSS 较常问持续兴趣和自述。见 https://kidsmybook.com/secondary-dss-admissions-portfolio 。高才通或新来港家庭另见 https://kidsmybook.com/top-talent-pass-admissions-portfolio 。",
     },
     {
       q: "怎样索取升小作品集的私人报价？",
@@ -1068,15 +1068,15 @@ export const SHENGXIAO_HANS: HubCopy = {
   ],
   readingTitle: "升小面试、清单和相关页",
   links: [
-    { href: "/sheng-xue-zuo-pin-ji-qing-dan", label: "升学作品集准备清单（免费）" },
+    { href: "/admissions-portfolio-checklist", label: "升学作品集准备清单（免费）" },
     { href: "/programme", label: "12 个月小朋友出书计划" },
-    { href: "/sheng-xue-zuo-pin-ji", label: "升学作品集总页" },
-    { href: "/sheng-zhong-dss-zuo-pin-ji", label: "升中／DSS／直资作品集" },
-    { href: "/gao-cai-tong-sheng-xue-zuo-pin-ji", label: "高才通／新来港证明物" },
-    { href: "/blog/mian-shi-ban-vs-isbn-chu-ban", label: "升小面试班 vs ISBN 出版作品集" },
-    { href: "/blog/sheng-xiao-xue-mian-shi-zuo-pin-ji", label: "升小学面试作品集：一本书怎样用" },
+    { href: "/admissions-portfolio", label: "升学作品集总页" },
+    { href: "/secondary-dss-admissions-portfolio", label: "升中／DSS／直资作品集" },
+    { href: "/top-talent-pass-admissions-portfolio", label: "高才通／新来港证明物" },
+    { href: "/blog/interview-class-vs-isbn-published-book", label: "升小面试班 vs ISBN 出版作品集" },
+    { href: "/blog/primary-interview-how-to-use-a-book", label: "升小学面试作品集：一本书怎样用" },
     { href: "/blog/primary-school-door-knocking-portfolio-prep", label: "小学叩门 Portfolio 准备" },
-    { href: "/blog/zuo-pin-ji-m-gau-lin-shi-gan", label: "作品集不够看、临时赶怎么办" },
+    { href: "/blog/portfolio-not-ready-before-interview", label: "作品集不够看、临时赶怎么办" },
   ],
   ctaTitle: "先讲升小面试时间，再私人报价",
   ctaBody: "网站不公开价目，也不保证学位。WhatsApp 讲年龄、目标小学类型、面试或叩门大约什么时候，以及一个兴趣。",
@@ -1084,7 +1084,7 @@ export const SHENGXIAO_HANS: HubCopy = {
   cardTitle: "升小面试作品集",
   cardBlurb: "叩门和小一面试：ISBN 童书做记得住的一页。不是面试班，不保证学位。",
   crumb: "升小面试作品集",
-  parent: { href: "/sheng-xue-zuo-pin-ji", label: "升学作品集" },
+  parent: { href: "/admissions-portfolio", label: "升学作品集" },
   howTo: true,
 };
 
@@ -1128,15 +1128,15 @@ export const SHENGZHONG_HANS: HubCopy = {
     },
     {
       q: "Portfolio 是不是等于再报一个面试班？",
-      a: "不是。面试班练当场表现。Portfolio 如果指 Kidsmybook，是一本小朋友参与、有 ISBN 的正式出版物，加上升学作品集怎样摆。比较见 https://kidsmybook.com/blog/mian-shi-ban-vs-isbn-chu-ban 。",
+      a: "不是。面试班练当场表现。Portfolio 如果指 Kidsmybook，是一本小朋友参与、有 ISBN 的正式出版物，加上升学作品集怎样摆。比较见 https://kidsmybook.com/blog/interview-class-vs-isbn-published-book 。",
     },
     {
       q: "升小面试页和这页有什么分别？",
-      a: "升小面试和叩门通常只有几分钟，重点是讲完一件事。升中较常问持续兴趣和自述。升小页：https://kidsmybook.com/sheng-xiao-xue-mian-shi-zuo-pin-ji 。",
+      a: "升小面试和叩门通常只有几分钟，重点是讲完一件事。升中较常问持续兴趣和自述。升小页：https://kidsmybook.com/primary-one-interview-portfolio 。",
     },
     {
       q: "高才通家庭做升中作品集，是不是要另一本书？",
-      a: "不用。同一本正式出版物可以放进升中、DSS、直资或国际学校作品集。高才通页讲证明物，不是签证文件：https://kidsmybook.com/gao-cai-tong-sheng-xue-zuo-pin-ji 。",
+      a: "不用。同一本正式出版物可以放进升中、DSS、直资或国际学校作品集。高才通页讲证明物，不是签证文件：https://kidsmybook.com/top-talent-pass-admissions-portfolio 。",
     },
     {
       q: "怎样索取私人报价？",
@@ -1145,14 +1145,14 @@ export const SHENGZHONG_HANS: HubCopy = {
   ],
   readingTitle: "升中、清单和相关页",
   links: [
-    { href: "/sheng-xiao-xue-mian-shi-zuo-pin-ji", label: "升小面试作品集" },
-    { href: "/sheng-xue-zuo-pin-ji-qing-dan", label: "升学作品集准备清单（免费）" },
-    { href: "/gao-cai-tong-sheng-xue-zuo-pin-ji", label: "高才通／新来港证明物" },
-    { href: "/sheng-xue-zuo-pin-ji", label: "升学作品集总页" },
+    { href: "/primary-one-interview-portfolio", label: "升小面试作品集" },
+    { href: "/admissions-portfolio-checklist", label: "升学作品集准备清单（免费）" },
+    { href: "/top-talent-pass-admissions-portfolio", label: "高才通／新来港证明物" },
+    { href: "/admissions-portfolio", label: "升学作品集总页" },
     { href: "/programme", label: "12 个月小朋友出书计划" },
-    { href: "/blog/sheng-zhong-dss-portfolio-chu-ban", label: "升中面试、DSS 和直资：作品集怎样放一本出版物" },
-    { href: "/blog/mian-shi-ban-vs-isbn-chu-ban", label: "升小面试班 vs ISBN 出版作品集" },
-    { href: "/blog/guo-ji-vs-ben-di-mian-shi-zuo-pin-ji", label: "国际学校 vs 本地学校面试" },
+    { href: "/blog/secondary-dss-interview-published-book", label: "升中面试、DSS 和直资：作品集怎样放一本出版物" },
+    { href: "/blog/interview-class-vs-isbn-published-book", label: "升小面试班 vs ISBN 出版作品集" },
+    { href: "/blog/international-vs-local-school-interview-portfolio", label: "国际学校 vs 本地学校面试" },
   ],
   ctaTitle: "先讲升中目标，再私人报价",
   ctaBody: "网站不公开价目，也不保证学位。WhatsApp 讲年级、目标学校类型和一个兴趣。",
@@ -1160,7 +1160,7 @@ export const SHENGZHONG_HANS: HubCopy = {
   cardTitle: "升中 DSS／直资作品集",
   cardBlurb: "持续兴趣放作品集前面。不代表任何学校，不保证学位。",
   crumb: "升中 DSS／直资作品集",
-  parent: { href: "/sheng-xue-zuo-pin-ji", label: "升学作品集" },
+  parent: { href: "/admissions-portfolio", label: "升学作品集" },
   howTo: true,
 };
 
@@ -1204,7 +1204,7 @@ export const SHENGXIAO_EN: HubCopy = {
     },
     {
       q: "Is Kidsmybook a primary interview class?",
-      a: "No. An interview class is usually a short course in manners, common questions, and mock interviews. Kidsmybook is 12-month mentored publishing. The outcome is a formal publication you can carry in. The two can sit together. They are not the same service. Comparison: https://kidsmybook.com/blog/mian-shi-ban-vs-isbn-chu-ban .",
+      a: "No. An interview class is usually a short course in manners, common questions, and mock interviews. Kidsmybook is 12-month mentored publishing. The outcome is a formal publication you can carry in. The two can sit together. They are not the same service. Comparison: https://kidsmybook.com/blog/interview-class-vs-isbn-published-book .",
     },
     {
       q: "Door-knocking is in a few days. Can we still publish?",
@@ -1212,7 +1212,7 @@ export const SHENGXIAO_EN: HubCopy = {
     },
     {
       q: "Is the secondary, DSS, and direct-subsidy page the same?",
-      a: "No. A primary interview needs one story finished in a few minutes. Secondary, DSS, and direct-subsidy interviews more often ask about a sustained interest. See https://kidsmybook.com/sheng-zhong-dss-zuo-pin-ji . Top Talent Pass and newly arrived families: https://kidsmybook.com/gao-cai-tong-sheng-xue-zuo-pin-ji .",
+      a: "No. A primary interview needs one story finished in a few minutes. Secondary, DSS, and direct-subsidy interviews more often ask about a sustained interest. See https://kidsmybook.com/secondary-dss-admissions-portfolio . Top Talent Pass and newly arrived families: https://kidsmybook.com/top-talent-pass-admissions-portfolio .",
     },
     {
       q: "How do we ask for a private quote?",
@@ -1221,15 +1221,15 @@ export const SHENGXIAO_EN: HubCopy = {
   ],
   readingTitle: "Primary interviews, the checklist, and related pages",
   links: [
-    { href: "/sheng-xue-zuo-pin-ji-qing-dan", label: "Free school portfolio checklist" },
+    { href: "/admissions-portfolio-checklist", label: "Free school portfolio checklist" },
     { href: "/programme", label: "12-month child author programme" },
-    { href: "/sheng-xue-zuo-pin-ji", label: "School portfolio hub" },
-    { href: "/sheng-zhong-dss-zuo-pin-ji", label: "Secondary, DSS, and direct-subsidy portfolio" },
-    { href: "/gao-cai-tong-sheng-xue-zuo-pin-ji", label: "Top Talent Pass proof object" },
-    { href: "/blog/mian-shi-ban-vs-isbn-chu-ban", label: "Primary interview class vs an ISBN portfolio" },
-    { href: "/blog/sheng-xiao-xue-mian-shi-zuo-pin-ji", label: "Primary interview portfolio: how to use one book" },
+    { href: "/admissions-portfolio", label: "School portfolio hub" },
+    { href: "/secondary-dss-admissions-portfolio", label: "Secondary, DSS, and direct-subsidy portfolio" },
+    { href: "/top-talent-pass-admissions-portfolio", label: "Top Talent Pass proof object" },
+    { href: "/blog/interview-class-vs-isbn-published-book", label: "Primary interview class vs an ISBN portfolio" },
+    { href: "/blog/primary-interview-how-to-use-a-book", label: "Primary interview portfolio: how to use one book" },
     { href: "/blog/primary-school-door-knocking-portfolio-prep", label: "Primary door-knocking portfolio prep" },
-    { href: "/blog/zuo-pin-ji-m-gau-lin-shi-gan", label: "When the portfolio feels thin and the interview is soon" },
+    { href: "/blog/portfolio-not-ready-before-interview", label: "When the portfolio feels thin and the interview is soon" },
   ],
   ctaTitle: "Tell us the primary interview timing, then we quote privately",
   ctaBody: "Prices are not on the site, and no place is guaranteed. WhatsApp the age, the target primary type, roughly when the interview or door-knocking round is, and one interest.",
@@ -1237,7 +1237,7 @@ export const SHENGXIAO_EN: HubCopy = {
   cardTitle: "Primary interview portfolio",
   cardBlurb: "Door-knocking and P1 interviews: an ISBN book as one memorable page. Not an interview class. No place is guaranteed.",
   crumb: "Primary interview portfolio",
-  parent: { href: "/sheng-xue-zuo-pin-ji", label: "School portfolio" },
+  parent: { href: "/admissions-portfolio", label: "School portfolio" },
   howTo: true,
 };
 
@@ -1281,15 +1281,15 @@ export const SHENGZHONG_EN: HubCopy = {
     },
     {
       q: "Is a portfolio the same as booking another interview class?",
-      a: "No. An interview class practises the room. A Kidsmybook portfolio is an ISBN book the child helped make, plus how that book is placed in the admissions file. Comparison: https://kidsmybook.com/blog/mian-shi-ban-vs-isbn-chu-ban .",
+      a: "No. An interview class practises the room. A Kidsmybook portfolio is an ISBN book the child helped make, plus how that book is placed in the admissions file. Comparison: https://kidsmybook.com/blog/interview-class-vs-isbn-published-book .",
     },
     {
       q: "How is the primary interview page different?",
-      a: "A primary interview or door-knocking round usually lasts a few minutes and needs one story finished. Secondary interviews more often ask about a sustained interest. Primary page: https://kidsmybook.com/sheng-xiao-xue-mian-shi-zuo-pin-ji .",
+      a: "A primary interview or door-knocking round usually lasts a few minutes and needs one story finished. Secondary interviews more often ask about a sustained interest. Primary page: https://kidsmybook.com/primary-one-interview-portfolio .",
     },
     {
       q: "Does a Top Talent Pass family need a second book for secondary?",
-      a: "No. The same formal publication can go into a secondary, DSS, direct-subsidy, or international-school portfolio. The Top Talent Pass page is about a proof object, not a visa paper: https://kidsmybook.com/gao-cai-tong-sheng-xue-zuo-pin-ji .",
+      a: "No. The same formal publication can go into a secondary, DSS, direct-subsidy, or international-school portfolio. The Top Talent Pass page is about a proof object, not a visa paper: https://kidsmybook.com/top-talent-pass-admissions-portfolio .",
     },
     {
       q: "How do we ask for a private quotation?",
@@ -1298,14 +1298,14 @@ export const SHENGZHONG_EN: HubCopy = {
   ],
   readingTitle: "Secondary, the checklist, and related pages",
   links: [
-    { href: "/sheng-xiao-xue-mian-shi-zuo-pin-ji", label: "Primary interview portfolio" },
-    { href: "/sheng-xue-zuo-pin-ji-qing-dan", label: "Free school portfolio checklist" },
-    { href: "/gao-cai-tong-sheng-xue-zuo-pin-ji", label: "Top Talent Pass proof object" },
-    { href: "/sheng-xue-zuo-pin-ji", label: "School portfolio hub" },
+    { href: "/primary-one-interview-portfolio", label: "Primary interview portfolio" },
+    { href: "/admissions-portfolio-checklist", label: "Free school portfolio checklist" },
+    { href: "/top-talent-pass-admissions-portfolio", label: "Top Talent Pass proof object" },
+    { href: "/admissions-portfolio", label: "School portfolio hub" },
     { href: "/programme", label: "12-month child author programme" },
-    { href: "/blog/sheng-zhong-dss-portfolio-chu-ban", label: "Secondary, DSS, and direct-subsidy interviews" },
-    { href: "/blog/mian-shi-ban-vs-isbn-chu-ban", label: "Primary interview class vs an ISBN portfolio" },
-    { href: "/blog/guo-ji-vs-ben-di-mian-shi-zuo-pin-ji", label: "International vs local school interviews" },
+    { href: "/blog/secondary-dss-interview-published-book", label: "Secondary, DSS, and direct-subsidy interviews" },
+    { href: "/blog/interview-class-vs-isbn-published-book", label: "Primary interview class vs an ISBN portfolio" },
+    { href: "/blog/international-vs-local-school-interview-portfolio", label: "International vs local school interviews" },
   ],
   ctaTitle: "Name the secondary target, then we quote privately",
   ctaBody: "Prices are not on the site, and no place is guaranteed. WhatsApp the year, the target school type, and one interest.",
@@ -1313,7 +1313,7 @@ export const SHENGZHONG_EN: HubCopy = {
   cardTitle: "Secondary DSS portfolio",
   cardBlurb: "A sustained interest at the front of the file. No school is represented. No place is guaranteed.",
   crumb: "Secondary DSS portfolio",
-  parent: { href: "/sheng-xue-zuo-pin-ji", label: "School portfolio" },
+  parent: { href: "/admissions-portfolio", label: "School portfolio" },
   howTo: true,
 };
 
@@ -1353,7 +1353,7 @@ export const SHUDIAN_HANS: HubCopy = {
   faqs: [
     {
       q: "有 ISBN 是不是就等于实体书店上架？",
-      a: "不是。ISBN 是书号。实体书店上架是另一条路径：正式印刷之后，才谈三联、商务、中华等平台安排。自助申请 ISBN、印刷店和 POD 很多时候停在印好或者网上有售。详见 https://kidsmybook.com/blog/isbn-bu-deng-yu-shu-dian-shang-jia 。",
+      a: "不是。ISBN 是书号。实体书店上架是另一条路径：正式印刷之后，才谈三联、商务、中华等平台安排。自助申请 ISBN、印刷店和 POD 很多时候停在印好或者网上有售。详见 https://kidsmybook.com/blog/isbn-is-not-bookstore-listing 。",
     },
     {
       q: "Kidsmybook 是不是三联、商务或者中华？",
@@ -1365,7 +1365,7 @@ export const SHUDIAN_HANS: HubCopy = {
     },
     {
       q: "自费出书、代印和 POD 有没有实体上架？",
-      a: "多数没有，或者只有很弱的分销。自费、代印和按需印刷可以交出一本实体书，但不等于走进三联、商务、中华的上架安排。对照见 https://kidsmybook.com/blog/zi-fei-pod-vs-dao-shi-zhi-shang-jia 。",
+      a: "多数没有，或者只有很弱的分销。自费、代印和按需印刷可以交出一本实体书，但不等于走进三联、商务、中华的上架安排。对照见 https://kidsmybook.com/blog/self-publish-pod-vs-mentored-bookstore-listing 。",
     },
     {
       q: "上架和升学作品集是什么关系？",
@@ -1379,11 +1379,11 @@ export const SHUDIAN_HANS: HubCopy = {
   readingTitle: "相关阅读",
   links: [
     { href: "/programme", label: "12 个月出书计划：印刷与上架阶段" },
-    { href: "/blog/san-lian-shang-jia-yi-yi", label: "实体书店上架对家长的意义" },
-    { href: "/blog/zi-fei-chu-shu-vs-dao-shi-zhi", label: "自费出书 vs 导师制出版" },
-    { href: "/blog/isbn-bu-deng-yu-shu-dian-shang-jia", label: "只有 ISBN ≠ 实体书店上架" },
-    { href: "/blog/zi-fei-pod-vs-dao-shi-zhi-shang-jia", label: "自费／POD／代印 vs 导师制＋实体上架" },
-    { href: "/blog/isbn-tong-shu-jia-zhang-zhi-nan", label: "香港 ISBN 童书：家长要知的 7 件事" },
+    { href: "/blog/bookstore-shelf-listing-for-parents", label: "实体书店上架对家长的意义" },
+    { href: "/blog/self-publishing-vs-mentored-publishing", label: "自费出书 vs 导师制出版" },
+    { href: "/blog/isbn-is-not-bookstore-listing", label: "只有 ISBN ≠ 实体书店上架" },
+    { href: "/blog/self-publish-pod-vs-mentored-bookstore-listing", label: "自费／POD／代印 vs 导师制＋实体上架" },
+    { href: "/blog/hong-kong-isbn-childrens-book-guide", label: "香港 ISBN 童书：家长要知的 7 件事" },
     { href: "/case-studies/hilary-butterfly-guide", label: "公开个案：Hilary" },
   ],
   ctaTitle: "想知这个题材走不走到书店平台",
@@ -1431,7 +1431,7 @@ export const SHUDIAN_EN: HubCopy = {
   faqs: [
     {
       q: "Does an ISBN mean the book is on a bookstore shelf?",
-      a: "No. An ISBN identifies a version. A shelf listing is a later path, after a formal print run, into arrangements such as Joint Publishing, Commercial Press, or Chung Hwa. DIY ISBN applications, print shops, and print-on-demand often stop at a printed copy or an online listing. See https://kidsmybook.com/blog/isbn-bu-deng-yu-shu-dian-shang-jia .",
+      a: "No. An ISBN identifies a version. A shelf listing is a later path, after a formal print run, into arrangements such as Joint Publishing, Commercial Press, or Chung Hwa. DIY ISBN applications, print shops, and print-on-demand often stop at a printed copy or an online listing. See https://kidsmybook.com/blog/isbn-is-not-bookstore-listing .",
     },
     {
       q: "Is Kidsmybook Joint Publishing, Commercial Press, or Chung Hwa?",
@@ -1443,7 +1443,7 @@ export const SHUDIAN_EN: HubCopy = {
     },
     {
       q: "Do self-publishing, print-for-hire, and POD include a shelf?",
-      a: "Usually no, or only weak distribution. They can produce a physical book without a Joint Publishing, Commercial Press, or Chung Hwa listing arrangement. See https://kidsmybook.com/blog/zi-fei-pod-vs-dao-shi-zhi-shang-jia .",
+      a: "Usually no, or only weak distribution. They can produce a physical book without a Joint Publishing, Commercial Press, or Chung Hwa listing arrangement. See https://kidsmybook.com/blog/self-publish-pod-vs-mentored-bookstore-listing .",
     },
     {
       q: "How does a shelf listing relate to an admissions portfolio?",
@@ -1457,11 +1457,11 @@ export const SHUDIAN_EN: HubCopy = {
   readingTitle: "Related reading",
   links: [
     { href: "/programme", label: "12-month programme: print and listing" },
-    { href: "/blog/san-lian-shang-jia-yi-yi", label: "What a bookstore shelf means to a parent" },
-    { href: "/blog/zi-fei-chu-shu-vs-dao-shi-zhi", label: "DIY self-publishing vs mentor-led publishing" },
-    { href: "/blog/isbn-bu-deng-yu-shu-dian-shang-jia", label: "An ISBN is not a bookstore shelf" },
-    { href: "/blog/zi-fei-pod-vs-dao-shi-zhi-shang-jia", label: "Self-publishing, POD, and print-for-hire vs a shelf path" },
-    { href: "/blog/isbn-tong-shu-jia-zhang-zhi-nan", label: "Hong Kong ISBN: seven things parents should know" },
+    { href: "/blog/bookstore-shelf-listing-for-parents", label: "What a bookstore shelf means to a parent" },
+    { href: "/blog/self-publishing-vs-mentored-publishing", label: "DIY self-publishing vs mentor-led publishing" },
+    { href: "/blog/isbn-is-not-bookstore-listing", label: "An ISBN is not a bookstore shelf" },
+    { href: "/blog/self-publish-pod-vs-mentored-bookstore-listing", label: "Self-publishing, POD, and print-for-hire vs a shelf path" },
+    { href: "/blog/hong-kong-isbn-childrens-book-guide", label: "Hong Kong ISBN: seven things parents should know" },
     { href: "/case-studies/hilary-butterfly-guide", label: "Public case: Hilary" },
   ],
   ctaTitle: "Ask whether this topic can reach a bookstore platform",

@@ -43,6 +43,7 @@ import {
   faqPageEntity,
   ogImageForPath,
 } from "../src/seo/meta.ts";
+import { PINYIN_SLUG_REDIRECTS } from "../src/seo/slug-redirects.ts";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
 const DIST = path.join(ROOT, "dist");
@@ -231,12 +232,12 @@ function navHtml(): string {
   return `      <nav>
         <a href="${SITE_ORIGIN}/">首頁</a>
         <a href="${SITE_ORIGIN}/programme">出書計劃</a>
-        <a href="${SITE_ORIGIN}/sheng-xue-zuo-pin-ji">升學作品集</a>
-        <a href="${SITE_ORIGIN}/sheng-xiao-xue-mian-shi-zuo-pin-ji">升小面試</a>
-        <a href="${SITE_ORIGIN}/sheng-zhong-dss-zuo-pin-ji">升中作品集</a>
-        <a href="${SITE_ORIGIN}/gao-cai-tong-sheng-xue-zuo-pin-ji">高才通作品集</a>
-        <a href="${SITE_ORIGIN}/tong-shu-shu-dian-shang-jia">童書書店上架</a>
-        <a href="${SITE_ORIGIN}/xing-qu-chu-ban">興趣出版</a>
+        <a href="${SITE_ORIGIN}/admissions-portfolio">升學作品集</a>
+        <a href="${SITE_ORIGIN}/primary-one-interview-portfolio">升小面試</a>
+        <a href="${SITE_ORIGIN}/secondary-dss-admissions-portfolio">升中作品集</a>
+        <a href="${SITE_ORIGIN}/top-talent-pass-admissions-portfolio">高才通作品集</a>
+        <a href="${SITE_ORIGIN}/kids-book-bookstore-listing">童書書店上架</a>
+        <a href="${SITE_ORIGIN}/interest-to-published-book">興趣出版</a>
         <a href="${SITE_ORIGIN}/faq">常見問題</a>
         <a href="${SITE_ORIGIN}/services">服務</a>
         <a href="${SITE_ORIGIN}/blog">文章</a>
@@ -505,7 +506,7 @@ function staticRoutes(posts: RouteDocument[]): RouteDocument[] {
         <ul>
           <li><a href="${canonicalUrl("/programme")}">小朋友出書計劃</a></li>
           <li><a href="${canonicalUrl("/faq")}">常見問題</a></li>
-          <li><a href="${canonicalUrl("/sheng-xue-zuo-pin-ji")}">升學作品集</a></li>
+          <li><a href="${canonicalUrl("/admissions-portfolio")}">升學作品集</a></li>
           <li><a href="${canonicalUrl("/case-studies/hilary-butterfly-guide")}">Hilary 個案</a></li>
 ${linkList(READING_ZH)}
         </ul>
@@ -557,11 +558,11 @@ ${PROGRAMME_ZH.phases.map((phase) => `          <li><strong>${escapeHtml(phase.n
         <p>${escapeHtml(PROGRAMME_ZH.vsClass)}</p>
         <h2>${escapeHtml(PROGRAMME_ZH.vsDiyTitle)}</h2>
         <p>${escapeHtml(PROGRAMME_ZH.vsDiy)}</p>
-        <p><a href="${canonicalUrl("/tong-shu-shu-dian-shang-jia")}">${escapeHtml(PROGRAMME_ZH.shelfLink)}</a></p>
-        <p><a href="${canonicalUrl("/blog/zi-fei-chu-shu-vs-dao-shi-zhi")}">自費出書 vs 導師制出版：邊樣先幫到香港升學面試？</a></p>
-        <p><a href="${canonicalUrl("/blog/zi-fei-pod-vs-dao-shi-zhi-shang-jia")}">自費／POD／代印 vs 導師制＋實體上架</a></p>
+        <p><a href="${canonicalUrl("/kids-book-bookstore-listing")}">${escapeHtml(PROGRAMME_ZH.shelfLink)}</a></p>
+        <p><a href="${canonicalUrl("/blog/self-publishing-vs-mentored-publishing")}">自費出書 vs 導師制出版：邊樣先幫到香港升學面試？</a></p>
+        <p><a href="${canonicalUrl("/blog/self-publish-pod-vs-mentored-bookstore-listing")}">自費／POD／代印 vs 導師制＋實體上架</a></p>
         <p><a href="${canonicalUrl("/case-studies/hilary-butterfly-guide")}">${escapeHtml(PROGRAMME_ZH.caseLink)}</a></p>
-        <p><a href="${canonicalUrl("/sheng-xue-zuo-pin-ji")}">${escapeHtml(PROGRAMME_ZH.portfolioLink)}</a></p>
+        <p><a href="${canonicalUrl("/admissions-portfolio")}">${escapeHtml(PROGRAMME_ZH.portfolioLink)}</a></p>
         <p><a href="${canonicalUrl("/faq")}">${escapeHtml(PROGRAMME_ZH.faqLink)}</a></p>
         <ul>
 ${linkList(READING_ZH)}
@@ -605,11 +606,11 @@ ${waLine()}`,
   };
 
   const portfolio: RouteDocument = {
-    path: "/sheng-xue-zuo-pin-ji",
+    path: "/admissions-portfolio",
     title: PORTFOLIO_ZH.title,
     description: PORTFOLIO_ZH.description,
     ogType: "website",
-    ogImage: ogImageForPath("/sheng-xue-zuo-pin-ji"),
+    ogImage: ogImageForPath("/admissions-portfolio"),
     mode: "page",
     jsonLdId: "kidsmybook-page-ld",
     jsonLd: {
@@ -617,16 +618,16 @@ ${waLine()}`,
       "@graph": [
         breadcrumbList([
           { name: "首頁", path: "/" },
-          { name: "升學作品集", path: "/sheng-xue-zuo-pin-ji" },
+          { name: "升學作品集", path: "/admissions-portfolio" },
         ]),
         {
           "@type": "WebPage",
           name: PORTFOLIO_ZH.h1,
           description: PORTFOLIO_ZH.lead,
-          url: canonicalUrl("/sheng-xue-zuo-pin-ji"),
+          url: canonicalUrl("/admissions-portfolio"),
           inLanguage: "zh-Hant",
         },
-        faqPageEntity(PORTFOLIO_ZH.faqs, `${canonicalUrl("/sheng-xue-zuo-pin-ji")}#faq`),
+        faqPageEntity(PORTFOLIO_ZH.faqs, `${canonicalUrl("/admissions-portfolio")}#faq`),
       ],
     },
     snapshotHtml: pageWrap(
@@ -649,7 +650,7 @@ ${PORTFOLIO_ZH.tracks
         <p><a href="https://wa.me/85291214157">${escapeHtml(PORTFOLIO_ZH.whatsappLink)}</a></p>
         <h2>${escapeHtml(PORTFOLIO_ZH.limitTitle)}</h2>
         <p>${escapeHtml(PORTFOLIO_ZH.limit)}</p>
-        <p><a href="${canonicalUrl("/blog/you-zhi-yuan-zuo-pin-ji-chu-shu")}">幼稚園作品集：細路都出得書嗎？</a></p>
+        <p><a href="${canonicalUrl("/blog/kindergarten-portfolio-book")}">幼稚園作品集：細路都出得書嗎？</a></p>
         <p><a href="${canonicalUrl("/case-studies/hilary-butterfly-guide")}">${escapeHtml(PORTFOLIO_ZH.caseLink)}</a></p>
         <p><a href="${canonicalUrl("/programme")}">${escapeHtml(PORTFOLIO_ZH.programmeLink)}</a></p>
         <h2 id="faq">${escapeHtml(PORTFOLIO_ZH.faqTitle)}</h2>
@@ -737,7 +738,7 @@ ${waLine()}`,
       "@graph": [
         breadcrumbList([
           { name: "首頁", path: "/" },
-          { name: "升學作品集", path: "/sheng-xue-zuo-pin-ji" },
+          { name: "升學作品集", path: "/admissions-portfolio" },
           { name: CHECKLIST_ZH.h1, path: CHECKLIST_PATH },
         ]),
         {
@@ -780,7 +781,7 @@ ${linkList(CHECKLIST_ZH.rushLinks)}
         <ul>
 ${linkList(CHECKLIST_ZH.stageLinks)}
         </ul>
-        <p><a href="${canonicalUrl("/sheng-xue-zuo-pin-ji")}">升學作品集</a> · <a href="${canonicalUrl("/programme")}">${escapeHtml(CHECKLIST_ZH.programmeLink)}</a></p>
+        <p><a href="${canonicalUrl("/admissions-portfolio")}">升學作品集</a> · <a href="${canonicalUrl("/programme")}">${escapeHtml(CHECKLIST_ZH.programmeLink)}</a></p>
         <h2 id="faq">${escapeHtml(CHECKLIST_ZH.faqTitle)}</h2>
 ${CHECKLIST_ZH.faqs
   .map(
@@ -928,18 +929,18 @@ function assertDocument(html: string, route: RouteDocument) {
       if (!html.includes(item.q) || !html.includes(item.a)) throw new Error(`/faq missing ${item.q}`);
     }
   }
-  if (route.path === "/sheng-xue-zuo-pin-ji") {
-    if (!html.includes("BreadcrumbList")) throw new Error("/sheng-xue-zuo-pin-ji missing BreadcrumbList");
+  if (route.path === "/admissions-portfolio") {
+    if (!html.includes("BreadcrumbList")) throw new Error("/admissions-portfolio missing BreadcrumbList");
     if (!html.includes(`<h1>${escapeHtml(PORTFOLIO_ZH.h1)}</h1>`)) throw new Error("portfolio H1 missing");
     for (const track of PORTFOLIO_ZH.tracks) {
       if (!html.includes(canonicalUrl(track.href))) throw new Error(`portfolio hub missing ${track.href}`);
     }
     if (!html.includes("https://wa.me/85291214157")) throw new Error("portfolio hub missing WhatsApp");
     if (!html.includes("香港本地、跨境同高才通家庭")) {
-      throw new Error("/sheng-xue-zuo-pin-ji body missing Hong Kong coverage");
+      throw new Error("/admissions-portfolio body missing Hong Kong coverage");
     }
-    if (!html.includes("FAQPage")) throw new Error("/sheng-xue-zuo-pin-ji missing FAQPage");
-    if (!html.includes(canonicalUrl(CHECKLIST_PATH))) throw new Error("/sheng-xue-zuo-pin-ji missing checklist link");
+    if (!html.includes("FAQPage")) throw new Error("/admissions-portfolio missing FAQPage");
+    if (!html.includes(canonicalUrl(CHECKLIST_PATH))) throw new Error("/admissions-portfolio missing checklist link");
     for (const item of PORTFOLIO_ZH.faqs) {
       if (!html.includes(item.q) || !html.includes(item.a)) throw new Error(`portfolio FAQ missing ${item.q}`);
     }
@@ -994,7 +995,7 @@ function assertDocument(html: string, route: RouteDocument) {
       if (!html.includes(item.q) || !html.includes(item.a)) throw new Error(`${route.path} FAQ drift: ${item.q}`);
     }
     if (!html.includes("https://wa.me/85291214157")) throw new Error(`${route.path} missing WhatsApp`);
-    if (!html.includes(canonicalUrl("/programme")) || !html.includes(canonicalUrl("/sheng-xue-zuo-pin-ji")) || !html.includes(canonicalUrl(CHECKLIST_PATH))) {
+    if (!html.includes(canonicalUrl("/programme")) || !html.includes(canonicalUrl("/admissions-portfolio")) || !html.includes(canonicalUrl(CHECKLIST_PATH))) {
       throw new Error(`${route.path} missing programme, portfolio, or checklist link`);
     }
     const cross = route.path === SHENGXIAO_PATH ? SHENGZHONG_PATH : SHENGXIAO_PATH;
@@ -1019,7 +1020,7 @@ function assertDocument(html: string, route: RouteDocument) {
     if (!html.includes(canonicalUrl("/programme"))) {
       throw new Error(`${route.path} missing programme link`);
     }
-    if (route.path !== SHUDIAN_PATH && !html.includes(canonicalUrl("/sheng-xue-zuo-pin-ji"))) {
+    if (route.path !== SHUDIAN_PATH && !html.includes(canonicalUrl("/admissions-portfolio"))) {
       throw new Error(`${route.path} missing portfolio link`);
     }
   }
@@ -1028,10 +1029,10 @@ function assertDocument(html: string, route: RouteDocument) {
     if (!html.includes("店長決定入貨")) throw new Error(`${SHUDIAN_PATH} missing stock honesty`);
     if (!html.includes("唔係三聯書店")) throw new Error(`${SHUDIAN_PATH} must not claim to be Joint Publishing`);
     for (const href of [
-      "/blog/san-lian-shang-jia-yi-yi",
-      "/blog/zi-fei-chu-shu-vs-dao-shi-zhi",
-      "/blog/isbn-bu-deng-yu-shu-dian-shang-jia",
-      "/blog/zi-fei-pod-vs-dao-shi-zhi-shang-jia",
+      "/blog/bookstore-shelf-listing-for-parents",
+      "/blog/self-publishing-vs-mentored-publishing",
+      "/blog/isbn-is-not-bookstore-listing",
+      "/blog/self-publish-pod-vs-mentored-bookstore-listing",
       "/programme",
     ]) {
       if (!html.includes(canonicalUrl(href))) throw new Error(`${SHUDIAN_PATH} missing ${href}`);
@@ -1057,6 +1058,50 @@ function assertDocument(html: string, route: RouteDocument) {
   }
   if (route.mode === "page" && html.includes('"@type": "Course"')) {
     throw new Error(`${route.path} still includes the homepage Course schema`);
+  }
+}
+
+function assertNoRetiredPinyin(sitemap: string, worker: string, llms: string, llmsFull: string) {
+  const targets = new Set<string>();
+  for (const [oldPath, newPath] of Object.entries(PINYIN_SLUG_REDIRECTS)) {
+    if (!oldPath.startsWith("/") || !newPath.startsWith("/") || oldPath === newPath) {
+      throw new Error(`bad pinyin redirect ${oldPath} → ${newPath}`);
+    }
+    if (targets.has(newPath)) throw new Error(`duplicate English slug ${newPath}`);
+    targets.add(newPath);
+    const oldLoc = `${SITE_ORIGIN}${oldPath}`;
+    if (sitemap.includes(oldLoc) || worker.includes(oldLoc) || llms.includes(oldLoc) || llmsFull.includes(oldLoc)) {
+      throw new Error(`retired pinyin URL still published: ${oldLoc}`);
+    }
+    if (!sitemap.includes(`<loc>${SITE_ORIGIN}${newPath}</loc>`) || !worker.includes(`<loc>${SITE_ORIGIN}${newPath}</loc>`)) {
+      throw new Error(`sitemap missing English URL ${newPath}`);
+    }
+  }
+  if (!worker.includes("englishSlugRedirect")) {
+    throw new Error("worker missing pinyin slug redirect");
+  }
+  const skip = new Set(["node_modules", "dist", ".git"]);
+  const allow = path.join(ROOT, "src/seo/slug-redirects.ts");
+  const hits: string[] = [];
+  const walk = (dir: string) => {
+    for (const ent of fs.readdirSync(dir, { withFileTypes: true })) {
+      if (skip.has(ent.name)) continue;
+      const full = path.join(dir, ent.name);
+      if (ent.isDirectory()) {
+        walk(full);
+        continue;
+      }
+      if (full === allow) continue;
+      if (!/\.(ts|tsx|js|mjs|md|txt|xml|html|json)$/.test(ent.name)) continue;
+      const text = fs.readFileSync(full, "utf8");
+      for (const oldPath of Object.keys(PINYIN_SLUG_REDIRECTS)) {
+        if (text.includes(oldPath)) hits.push(`${path.relative(ROOT, full)}: ${oldPath}`);
+      }
+    }
+  };
+  for (const rel of ["src", "public", "blog", "worker", "scripts"]) walk(path.join(ROOT, rel));
+  if (hits.length) {
+    throw new Error(`retired pinyin paths remain:\n${hits.slice(0, 30).join("\n")}`);
   }
 }
 
@@ -1146,7 +1191,7 @@ function assertSources(posts: RouteDocument[]) {
     ["llms-full.txt", llmsFull],
   ] as const) {
     if (!source.includes(`${SITE_ORIGIN}/about`)) throw new Error(`${label} missing /about`);
-    if (!source.includes(`${SITE_ORIGIN}/sheng-xue-zuo-pin-ji-qing-dan`)) {
+    if (!source.includes(`${SITE_ORIGIN}/admissions-portfolio-checklist`)) {
       throw new Error(`${label} missing checklist page`);
     }
     if (!source.includes("language switcher")) throw new Error(`${label} missing language-switcher clarification`);
@@ -1173,17 +1218,19 @@ function assertSources(posts: RouteDocument[]) {
       throw new Error(`sitemap missing ${loc}`);
     }
   }
+  assertNoRetiredPinyin(sitemap, worker, llms, llmsFull);
+
   for (const loc of [
     `${SITE_ORIGIN}/programme`,
     `${SITE_ORIGIN}/faq`,
     `${SITE_ORIGIN}/about`,
-    `${SITE_ORIGIN}/sheng-xue-zuo-pin-ji`,
-    `${SITE_ORIGIN}/sheng-xue-zuo-pin-ji-qing-dan`,
-    `${SITE_ORIGIN}/gao-cai-tong-sheng-xue-zuo-pin-ji`,
-    `${SITE_ORIGIN}/xing-qu-chu-ban`,
-    `${SITE_ORIGIN}/tong-shu-shu-dian-shang-jia`,
-    `${SITE_ORIGIN}/sheng-xiao-xue-mian-shi-zuo-pin-ji`,
-    `${SITE_ORIGIN}/sheng-zhong-dss-zuo-pin-ji`,
+    `${SITE_ORIGIN}/admissions-portfolio`,
+    `${SITE_ORIGIN}/admissions-portfolio-checklist`,
+    `${SITE_ORIGIN}/top-talent-pass-admissions-portfolio`,
+    `${SITE_ORIGIN}/interest-to-published-book`,
+    `${SITE_ORIGIN}/kids-book-bookstore-listing`,
+    `${SITE_ORIGIN}/primary-one-interview-portfolio`,
+    `${SITE_ORIGIN}/secondary-dss-admissions-portfolio`,
     `${SITE_ORIGIN}/llms.txt`,
     `${SITE_ORIGIN}/llms-full.txt`,
   ]) {
@@ -1276,10 +1323,10 @@ function main() {
     fs.writeFileSync(file, html);
   }
 
-  const sample = fs.readFileSync(path.join(DIST, "blog/xing-qu-bian-chu-ban/index.html"), "utf8");
+  const sample = fs.readFileSync(path.join(DIST, "blog/child-hobby-into-published-book/index.html"), "utf8");
   const title = sample.match(/<title>([^<]*)<\/title>/)?.[1];
   const canonical = sample.match(/rel="canonical" href="([^"]+)"/)?.[1];
-  if (canonical !== `${SITE_ORIGIN}/blog/xing-qu-bian-chu-ban`) {
+  if (canonical !== `${SITE_ORIGIN}/blog/child-hobby-into-published-book`) {
     throw new Error(`sample canonical was ${canonical}`);
   }
   if (!title || title.startsWith("Kidsmybook｜兒童成就出版<") || title === "Kidsmybook｜兒童成就出版") {

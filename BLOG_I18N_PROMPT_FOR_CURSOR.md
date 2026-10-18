@@ -19,13 +19,13 @@ Kidsmybook 個 React + Vite + Cloudflare Worker 網站，blog 喺 `src/BlogPages
 1. hk-international-school-book-mainland-parents
 2. gtp-family-child-book-portfolio
 3. talent-admission-book-advantage
-4. gaocaitong-yisheng-xue-you-shi
-5. xing-qu-bian-chu-ban
-6. zheng-shu-pi-juan
-7. jiao-shou-chu-ban-shuo-fu-li
-8. san-lian-shang-jia-yi-yi
+4. top-talent-pass-child-book-advantage
+5. child-hobby-into-published-book
+6. why-certificate-stacks-bore-interviewers
+7. professor-involvement-in-childrens-publishing
+8. bookstore-shelf-listing-for-parents
 9. portfolio-book-4-skills
-10. gaocaitong-mom-burnout
+10. top-talent-pass-parent-burnout
 11. school-ranking-myth
 
 ## 每篇要做

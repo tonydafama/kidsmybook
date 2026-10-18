@@ -1,4 +1,5 @@
 import { markerComment, normalizeRoutePath, prerenderAssetPath } from "../src/seo/meta";
+import { englishSlugRedirect } from "../src/seo/slug-redirects";
 
 export interface Env {
   ASSETS: Fetcher;
@@ -895,13 +896,13 @@ const SITEMAP_XML = `<?xml version="1.0" encoding="UTF-8"?>
   <url><loc>https://kidsmybook.com/programme</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://kidsmybook.com/faq</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kidsmybook.com/about</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://kidsmybook.com/sheng-xue-zuo-pin-ji</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://kidsmybook.com/sheng-xue-zuo-pin-ji-qing-dan</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://kidsmybook.com/gao-cai-tong-sheng-xue-zuo-pin-ji</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://kidsmybook.com/tong-shu-shu-dian-shang-jia</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://kidsmybook.com/xing-qu-chu-ban</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://kidsmybook.com/sheng-xiao-xue-mian-shi-zuo-pin-ji</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://kidsmybook.com/sheng-zhong-dss-zuo-pin-ji</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kidsmybook.com/admissions-portfolio</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kidsmybook.com/admissions-portfolio-checklist</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kidsmybook.com/top-talent-pass-admissions-portfolio</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kidsmybook.com/kids-book-bookstore-listing</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://kidsmybook.com/interest-to-published-book</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kidsmybook.com/primary-one-interview-portfolio</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kidsmybook.com/secondary-dss-admissions-portfolio</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kidsmybook.com/blog</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://kidsmybook.com/services</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kidsmybook.com/case-studies</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -911,13 +912,13 @@ const SITEMAP_XML = `<?xml version="1.0" encoding="UTF-8"?>
   <url><loc>https://kidsmybook.com/blog/hk-international-school-book-mainland-parents</loc><lastmod>2026-09-05</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kidsmybook.com/blog/gtp-family-child-book-portfolio</loc><lastmod>2026-09-05</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kidsmybook.com/blog/talent-admission-book-advantage</loc><lastmod>2026-09-06</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://kidsmybook.com/blog/gaocaitong-yisheng-xue-you-shi</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://kidsmybook.com/blog/xing-qu-bian-chu-ban</loc><lastmod>2026-09-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://kidsmybook.com/blog/zheng-shu-pi-juan</loc><lastmod>2026-09-06</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://kidsmybook.com/blog/jiao-shou-chu-ban-shuo-fu-li</loc><lastmod>2026-09-08</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://kidsmybook.com/blog/san-lian-shang-jia-yi-yi</loc><lastmod>2026-10-18</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kidsmybook.com/blog/top-talent-pass-child-book-advantage</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kidsmybook.com/blog/child-hobby-into-published-book</loc><lastmod>2026-09-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kidsmybook.com/blog/why-certificate-stacks-bore-interviewers</loc><lastmod>2026-09-06</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kidsmybook.com/blog/professor-involvement-in-childrens-publishing</loc><lastmod>2026-09-08</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kidsmybook.com/blog/bookstore-shelf-listing-for-parents</loc><lastmod>2026-10-18</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kidsmybook.com/blog/portfolio-book-4-skills</loc><lastmod>2026-09-12</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://kidsmybook.com/blog/gaocaitong-mom-burnout</loc><lastmod>2026-09-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kidsmybook.com/blog/top-talent-pass-parent-burnout</loc><lastmod>2026-09-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kidsmybook.com/blog/school-ranking-myth</loc><lastmod>2026-09-16</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kidsmybook.com/blog/portfolio-vs-extracurriculars-hk-admissions</loc><lastmod>2026-09-18</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kidsmybook.com/blog/top-talent-pass-first-year-portfolio</loc><lastmod>2026-09-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
@@ -929,23 +930,23 @@ const SITEMAP_XML = `<?xml version="1.0" encoding="UTF-8"?>
   <url><loc>https://kidsmybook.com/blog/university-professor-child-work-review</loc><lastmod>2026-10-02</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kidsmybook.com/blog/children-project-based-learning-hk</loc><lastmod>2026-10-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kidsmybook.com/blog/gifted-child-development-program-hk</loc><lastmod>2026-10-06</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://kidsmybook.com/blog/zi-fei-chu-shu-vs-dao-shi-zhi</loc><lastmod>2026-10-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://kidsmybook.com/blog/you-zhi-yuan-zuo-pin-ji-chu-shu</loc><lastmod>2026-10-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://kidsmybook.com/blog/isbn-tong-shu-jia-zhang-zhi-nan</loc><lastmod>2026-10-16</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://kidsmybook.com/blog/sheng-xiao-xue-mian-shi-zuo-pin-ji</loc><lastmod>2026-10-16</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://kidsmybook.com/blog/sheng-zhong-dss-portfolio-chu-ban</loc><lastmod>2026-10-16</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://kidsmybook.com/blog/guo-ji-vs-ben-di-mian-shi-zuo-pin-ji</loc><lastmod>2026-10-16</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://kidsmybook.com/blog/zheng-shu-ban-vs-isbn-chu-ban</loc><lastmod>2026-10-16</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://kidsmybook.com/blog/bu-xi-zuo-pin-vs-chu-ban-zuo-pin-ji</loc><lastmod>2026-10-16</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://kidsmybook.com/blog/ben-di-xiao-xue-mian-shi-vs-guo-ji-portfolio</loc><lastmod>2026-10-16</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://kidsmybook.com/blog/mei-shu-zuo-pin-ji-vs-isbn-chu-ban</loc><lastmod>2026-10-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://kidsmybook.com/blog/dian-yang-zheng-liang-sheng-xue-zuo-pin-ji</loc><lastmod>2026-10-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://kidsmybook.com/blog/zuo-pin-ji-m-gau-lin-shi-gan</loc><lastmod>2026-10-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://kidsmybook.com/blog/mian-shi-ban-vs-isbn-chu-ban</loc><lastmod>2026-10-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://kidsmybook.com/blog/gao-cai-tong-di-yi-nian-shi-jian-xian</loc><lastmod>2026-10-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://kidsmybook.com/blog/guo-ji-xue-xiao-mian-shi-isbn-portfolio</loc><lastmod>2026-10-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://kidsmybook.com/blog/isbn-bu-deng-yu-shu-dian-shang-jia</loc><lastmod>2026-10-18</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://kidsmybook.com/blog/zi-fei-pod-vs-dao-shi-zhi-shang-jia</loc><lastmod>2026-10-18</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kidsmybook.com/blog/self-publishing-vs-mentored-publishing</loc><lastmod>2026-10-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kidsmybook.com/blog/kindergarten-portfolio-book</loc><lastmod>2026-10-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kidsmybook.com/blog/hong-kong-isbn-childrens-book-guide</loc><lastmod>2026-10-16</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kidsmybook.com/blog/primary-interview-how-to-use-a-book</loc><lastmod>2026-10-16</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kidsmybook.com/blog/secondary-dss-interview-published-book</loc><lastmod>2026-10-16</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kidsmybook.com/blog/international-vs-local-school-interview-portfolio</loc><lastmod>2026-10-16</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kidsmybook.com/blog/certificate-course-vs-isbn-publishing</loc><lastmod>2026-10-16</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kidsmybook.com/blog/tutoring-work-vs-published-portfolio</loc><lastmod>2026-10-16</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kidsmybook.com/blog/local-primary-interview-vs-international-portfolio</loc><lastmod>2026-10-16</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kidsmybook.com/blog/art-portfolio-vs-isbn-published-book</loc><lastmod>2026-10-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kidsmybook.com/blog/how-to-build-an-admissions-portfolio</loc><lastmod>2026-10-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kidsmybook.com/blog/portfolio-not-ready-before-interview</loc><lastmod>2026-10-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kidsmybook.com/blog/interview-class-vs-isbn-published-book</loc><lastmod>2026-10-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kidsmybook.com/blog/top-talent-pass-family-first-year-timeline</loc><lastmod>2026-10-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kidsmybook.com/blog/international-school-interview-with-isbn-book</loc><lastmod>2026-10-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kidsmybook.com/blog/isbn-is-not-bookstore-listing</loc><lastmod>2026-10-18</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kidsmybook.com/blog/self-publish-pod-vs-mentored-bookstore-listing</loc><lastmod>2026-10-18</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 </urlset>
 `;
 
@@ -985,7 +986,7 @@ const NOT_FOUND_HTML = `<!doctype html>
 <main>
 <h1>找不到頁面</h1>
 <p>呢個網址未有獨立頁面。</p>
-<p><a href="https://kidsmybook.com/">首頁</a> · <a href="https://kidsmybook.com/programme">小朋友出書計劃</a> · <a href="https://kidsmybook.com/faq">常見問題</a> · <a href="https://kidsmybook.com/sheng-xue-zuo-pin-ji">升學作品集</a> · <a href="https://kidsmybook.com/sheng-xiao-xue-mian-shi-zuo-pin-ji">升小面試作品集</a> · <a href="https://kidsmybook.com/sheng-zhong-dss-zuo-pin-ji">升中作品集</a></p>
+<p><a href="https://kidsmybook.com/">首頁</a> · <a href="https://kidsmybook.com/programme">小朋友出書計劃</a> · <a href="https://kidsmybook.com/faq">常見問題</a> · <a href="https://kidsmybook.com/admissions-portfolio">升學作品集</a> · <a href="https://kidsmybook.com/primary-one-interview-portfolio">升小面試作品集</a> · <a href="https://kidsmybook.com/secondary-dss-admissions-portfolio">升中作品集</a></p>
 </main>
 </body>
 </html>`;
@@ -1027,15 +1028,15 @@ async function serveSeoAsset(request: Request, env: Env, pathname: string): Prom
       mapText.includes("<urlset") &&
       mapText.includes("https://kidsmybook.com/programme") &&
       mapText.includes("https://kidsmybook.com/faq") &&
-      mapText.includes("https://kidsmybook.com/sheng-xue-zuo-pin-ji") &&
-      mapText.includes("https://kidsmybook.com/sheng-xue-zuo-pin-ji-qing-dan") &&
-      mapText.includes("https://kidsmybook.com/gao-cai-tong-sheng-xue-zuo-pin-ji") &&
-      mapText.includes("https://kidsmybook.com/xing-qu-chu-ban") &&
-      mapText.includes("https://kidsmybook.com/sheng-xiao-xue-mian-shi-zuo-pin-ji") &&
-      mapText.includes("https://kidsmybook.com/sheng-zhong-dss-zuo-pin-ji") &&
-      mapText.includes("https://kidsmybook.com/blog/mian-shi-ban-vs-isbn-chu-ban") &&
-      mapText.includes("https://kidsmybook.com/blog/gao-cai-tong-di-yi-nian-shi-jian-xian") &&
-      mapText.includes("https://kidsmybook.com/blog/guo-ji-xue-xiao-mian-shi-isbn-portfolio") &&
+      mapText.includes("https://kidsmybook.com/admissions-portfolio") &&
+      mapText.includes("https://kidsmybook.com/admissions-portfolio-checklist") &&
+      mapText.includes("https://kidsmybook.com/top-talent-pass-admissions-portfolio") &&
+      mapText.includes("https://kidsmybook.com/interest-to-published-book") &&
+      mapText.includes("https://kidsmybook.com/primary-one-interview-portfolio") &&
+      mapText.includes("https://kidsmybook.com/secondary-dss-admissions-portfolio") &&
+      mapText.includes("https://kidsmybook.com/blog/interview-class-vs-isbn-published-book") &&
+      mapText.includes("https://kidsmybook.com/blog/top-talent-pass-family-first-year-timeline") &&
+      mapText.includes("https://kidsmybook.com/blog/international-school-interview-with-isbn-book") &&
       mapText.includes("https://kidsmybook.com/about") &&
       mapText.includes("https://kidsmybook.com/llms-full.txt")
     ) {
@@ -1154,13 +1155,16 @@ export default {
   async fetch(request: Request, env: Env): Promise<Response> {
     const url = new URL(request.url);
 
-    // Canonical host first so www / mybook.pub never get a second entity.
-    if (
+    // Canonical host, then retired pinyin slugs. www / mybook.pub and old paths
+    // land on one English URL so IndexNow and bookmarks do not split.
+    const slugTarget = englishSlugRedirect(url.pathname);
+    const offHost =
       url.hostname === "www.kidsmybook.com" ||
       url.hostname === "mybook.pub" ||
-      url.hostname === "www.mybook.pub"
-    ) {
-      return Response.redirect(`https://kidsmybook.com${url.pathname}${url.search}`, 301);
+      url.hostname === "www.mybook.pub";
+    if (offHost || slugTarget) {
+      const path = slugTarget ?? url.pathname;
+      return Response.redirect(`https://kidsmybook.com${path}${url.search}`, 301);
     }
 
     if (url.pathname === "/api/seo-health") {
