@@ -67,7 +67,7 @@ export const HOME_FAQ: { q: string; a: string }[] = [
   },
   {
     q: "書可唔可以喺實體書店上架？",
-    a: "計劃目標係正式印刷，再走實體書店平台上架路徑（例如三聯、商務、中華等安排，視題材同配套）。Kidsmybook 唔係三聯、商務或中華。店長決定入貨、陳列同退貨，唔保證每間分店都有。ISBN 本身亦唔等於書架上架。詳見 https://kidsmybook.com/tong-shu-shu-dian-shang-jia 。",
+    a: "計劃目標係正式印刷，再走實體書店平台上架路徑（例如三聯、商務、中華等安排，視題材同配套）。Kidsmybook 唔係三聯、商務或中華。店長決定入貨、陳列同退貨，唔保證每間分店都有。ISBN 本身亦唔等於書架上架。詳見 https://kidsmybook.com/kids-book-bookstore-listing 。",
   },
   {
     q: "Kidsmybook 點樣幫小朋友考入香港好學校？",
@@ -123,15 +123,15 @@ export const HOME_FAQ: { q: string; a: string }[] = [
   },
   {
     q: "美術作品集同 ISBN 出版作品集有咩分別？",
-    a: "畫簿、素描同美術班作品集證明技法同練習。有 ISBN、小朋友參與嘅出版作品集係一件做完、可以翻開講嘅正式出版物。學校如果指定要交原作或畫作選輯，畫作仍然要交；書唔取代嗰份指定作品。Kidsmybook 唔保證取錄。詳見 https://kidsmybook.com/blog/mei-shu-zuo-pin-ji-vs-isbn-chu-ban 。",
+    a: "畫簿、素描同美術班作品集證明技法同練習。有 ISBN、小朋友參與嘅出版作品集係一件做完、可以翻開講嘅正式出版物。學校如果指定要交原作或畫作選輯，畫作仍然要交；書唔取代嗰份指定作品。Kidsmybook 唔保證取錄。詳見 https://kidsmybook.com/blog/art-portfolio-vs-isbn-published-book 。",
   },
   {
     q: "作品集唔夠睇、面試就快到，仲可唔可以出書？",
-    a: "如果只剩幾日或幾星期，12 個月出版計劃趕唔切。先收窄而家嘅文件，揀一件小朋友講得出嘅作品。出書適合下一個有大約一年時間嘅申請周期。報價私人，網站唔公開價目。詳見 https://kidsmybook.com/blog/zuo-pin-ji-m-gau-lin-shi-gan 。",
+    a: "如果只剩幾日或幾星期，12 個月出版計劃趕唔切。先收窄而家嘅文件，揀一件小朋友講得出嘅作品。出書適合下一個有大約一年時間嘅申請周期。報價私人，網站唔公開價目。詳見 https://kidsmybook.com/blog/portfolio-not-ready-before-interview 。",
   },
   {
     q: "實體書店上架係必須嗎？係咩意思？",
-    a: "上架係出版路徑嘅一部分，唔係「有 ISBN 就自動上架」。正式印刷之後，先按題材同配套安排三聯、商務、中華等平台。店長決定入貨、陳列同退貨，唔保證每間分店都有。升學作品集可以引用呢份成果，但係第二層用途。詳見 https://kidsmybook.com/tong-shu-shu-dian-shang-jia 。",
+    a: "上架係出版路徑嘅一部分，唔係「有 ISBN 就自動上架」。正式印刷之後，先按題材同配套安排三聯、商務、中華等平台。店長決定入貨、陳列同退貨，唔保證每間分店都有。升學作品集可以引用呢份成果，但係第二層用途。詳見 https://kidsmybook.com/kids-book-bookstore-listing 。",
   },
 ];
 

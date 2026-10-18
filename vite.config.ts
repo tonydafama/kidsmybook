@@ -2,8 +2,9 @@ import fs from "node:fs";
 import path from "node:path";
 import { defineConfig, loadEnv, type Plugin } from "vite";
 import react from "@vitejs/plugin-react";
-import type { IncomingMessage } from "node:http";
+import type { IncomingMessage, ServerResponse } from "node:http";
 import { prerenderAssetPath } from "./src/seo/meta";
+import { englishSlugRedirect } from "./src/seo/slug-redirects";
 
 const MONICA_FLUX_URL = "https://openapi.monica.im/v1/image/gen/flux";
 
@@ -36,6 +37,32 @@ async function fluxImage(prompt: string, apiKey: string): Promise<string> {
   const url = data.data?.[0]?.url;
   if (!url) throw new Error("Monica returned no image URL");
   return url;
+}
+
+/** Same 301 map the Worker uses, so preview and dev do not serve retired pinyin URLs. */
+function pinyinSlugRedirectPlugin(): Plugin {
+  return {
+    name: "pinyin-slug-redirect",
+    configureServer(server) {
+      server.middlewares.use(redirectRetiredSlug);
+    },
+    configurePreviewServer(server) {
+      server.middlewares.use(redirectRetiredSlug);
+    },
+  };
+}
+
+function redirectRetiredSlug(req: IncomingMessage, res: ServerResponse, next: () => void) {
+  if (!req.url) return next();
+  const q = req.url.indexOf("?");
+  const pathname = q === -1 ? req.url : req.url.slice(0, q);
+  const target = englishSlugRedirect(pathname);
+  if (!target) return next();
+  const search = q === -1 ? "" : req.url.slice(q);
+  res.statusCode = 301;
+  res.setHeader("Location", `${target}${search}`);
+  res.setHeader("Cache-Control", "public, max-age=300");
+  res.end();
 }
 
 /** Serve build-time route HTML from dist/ during `vite preview` (before the SPA fallback). */
@@ -140,7 +167,7 @@ export default defineConfig(({ mode }) => {
   const monicaKey = env.MONICA_API_KEY || env.VITE_MONICA_API_KEY || "";
 
   return {
-    plugins: [react(), coverApiDevPlugin(monicaKey), prerenderPreviewPlugin()],
+    plugins: [react(), coverApiDevPlugin(monicaKey), pinyinSlugRedirectPlugin(), prerenderPreviewPlugin()],
     base: "/",
   };
 });

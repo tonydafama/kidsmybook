@@ -66,7 +66,7 @@ if (!urlList.length) {
   console.error("sitemap has no public URLs to submit");
   process.exit(1);
 }
-if (!urlList.includes(`${ORIGIN}/sheng-xue-zuo-pin-ji-qing-dan`)) {
+if (!urlList.includes(`${ORIGIN}/admissions-portfolio-checklist`)) {
   console.error("sitemap is missing the checklist page");
   process.exit(1);
 }

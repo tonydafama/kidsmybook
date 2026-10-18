@@ -27,12 +27,12 @@ In-depth guides on Hong Kong school admissions, portfolio building, and the publ
 - [Why School Rankings Miss the Point: What HK Admissions Officers Actually Want](https://kidsmybook.com/blog/school-ranking-myth)
 - [Portfolio vs Extracurriculars: What Actually Moves the Needle in HK Admissions](https://kidsmybook.com/blog/portfolio-vs-extracurriculars-hk-admissions)
 - [How Mainland Parents Navigate Hong Kong International School Admissions](https://kidsmybook.com/blog/mainland-parents-hk-international-schools-prep)
-- [The Certificate Fatigue Problem: Why HK Interviewers Are Tired](https://kidsmybook.com/blog/zheng-shu-pi-juan)
+- [The Certificate Fatigue Problem: Why HK Interviewers Are Tired](https://kidsmybook.com/blog/why-certificate-stacks-bore-interviewers)
 - [Project-Based Learning as a Portfolio Strategy](https://kidsmybook.com/blog/children-project-based-learning-hk)
-- [Getting a Book into HK Bookstores: What It Actually Takes](https://kidsmybook.com/blog/san-lian-shang-jia-yi-yi)
+- [Getting a Book into HK Bookstores: What It Actually Takes](https://kidsmybook.com/blog/bookstore-shelf-listing-for-parents)
 - [University Professor Co-Authorship: How It Works](https://kidsmybook.com/blog/university-professor-child-work-review)
-- [GTP Parent Burnout: The Enrolment Trap to Avoid](https://kidsmybook.com/blog/gaocaitong-mom-burnout)
-- [From Interest to Published Book: The Full Journey](https://kidsmybook.com/blog/xing-qu-bian-chu-ban)
+- [GTP Parent Burnout: The Enrolment Trap to Avoid](https://kidsmybook.com/blog/top-talent-pass-parent-burnout)
+- [From Interest to Published Book: The Full Journey](https://kidsmybook.com/blog/child-hobby-into-published-book)
 
 → [See all 21 articles on kidsmybook.com/blog](https://kidsmybook.com/blog)
 
