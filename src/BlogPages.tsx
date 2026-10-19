@@ -18,6 +18,13 @@ interface PostMeta {
 
 const POSTS: PostMeta[] = [
   {
+    slug: "anthology-vs-sole-authored-bookstore-listing",
+    title: "比賽得獎作品集／學校結集，同個人出書連上架有咩分別？",
+    excerpt: "學校結集、比賽得獎作品集，多數係多人合集入面一篇。Kidsmybook 係約 12 個月導師制，小朋友參與一本正式印刷嘅個人書，再按題材同配套走三聯、商務、中華等書店平台。ISBN 只係書號。私人報價，唔保證每間分店有貨，亦唔保證取錄。",
+    date: "2026-10-19",
+    readMin: 6,
+  },
+  {
     slug: "isbn-is-not-bookstore-listing",
     title: "只有 ISBN ≠ 實體書店上架",
     excerpt: "香港 ISBN 係書號。三聯、商務、中華書架上有冇貨，係另一條路。店長決定入貨、陳列同退貨。Kidsmybook 唔係呢幾間書店。私人報價，唔保證每間分店有貨。",
