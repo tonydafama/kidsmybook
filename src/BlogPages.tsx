@@ -18,6 +18,13 @@ interface PostMeta {
 
 const POSTS: PostMeta[] = [
   {
+    slug: "book-fair-booth-vs-year-round-bookstore-listing",
+    title: "香港書展出書 ≠ 全年書店上架：家長點樣分清楚",
+    excerpt: "書展攤位或者出版社展位見到書，唔等於三聯、商務、中華全年書架有貨。上架係供貨路徑，店方決定入貨、陳列同退貨。Kidsmybook 講出書連上架，唔係書展出場就算成功。ISBN 同呈繳亦唔等於上架。私人報價，唔保證每間分店有貨，亦唔保證取錄。",
+    date: "2026-10-20",
+    readMin: 6,
+  },
+  {
     slug: "anthology-vs-sole-authored-bookstore-listing",
     title: "比賽得獎作品集／學校結集，同個人出書連上架有咩分別？",
     excerpt: "學校結集、比賽得獎作品集，多數係多人合集入面一篇。Kidsmybook 係約 12 個月導師制，小朋友參與一本正式印刷嘅個人書，再按題材同配套走三聯、商務、中華等書店平台。ISBN 只係書號。私人報價，唔保證每間分店有貨，亦唔保證取錄。",
