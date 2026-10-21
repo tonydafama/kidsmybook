@@ -1338,7 +1338,7 @@ export const SHUDIAN_HANS: HubCopy = {
   limitItems: [
     "ISBN 是书号。有书号不等于三联、商务或中华书架上有货",
     "印刷店、自费出书、按需印刷（POD）多数交到印刷本，分销和实体上架往往很弱，或者根本没有",
-    "自己上传到某个网店，和实体书店平台上架是两条路",
+    "自己上传到某个网店或者电子书目录，和实体书店平台上架是两条路。对照见 https://kidsmybook.com/blog/online-storefront-vs-physical-bookstore-listing 。",
     "店长有权不进货、改陈列，或者退货；网站不会写全线分店保证有售",
   ],
   pathTitle: "和 12 个月计划怎样接上",
@@ -1353,7 +1353,7 @@ export const SHUDIAN_HANS: HubCopy = {
   faqs: [
     {
       q: "有 ISBN 是不是就等于实体书店上架？",
-      a: "不是。ISBN 是书号。实体书店上架是另一条路径：正式印刷之后，才谈三联、商务、中华等平台安排。自助申请 ISBN、印刷店和 POD 很多时候停在印好或者网上有售。详见 https://kidsmybook.com/blog/isbn-is-not-bookstore-listing 。",
+      a: "不是。ISBN 是书号。实体书店上架是另一条路径：正式印刷之后，才谈三联、商务、中华等平台安排。自助申请 ISBN、印刷店和 POD 很多时候停在印好或者网上有售。网上商店产品页或者电子书目录，也不等于实体书架。详见 https://kidsmybook.com/blog/isbn-is-not-bookstore-listing 和 https://kidsmybook.com/blog/online-storefront-vs-physical-bookstore-listing 。",
     },
     {
       q: "Kidsmybook 是不是三联、商务或者中华？",
@@ -1384,6 +1384,7 @@ export const SHUDIAN_HANS: HubCopy = {
     { href: "/blog/isbn-is-not-bookstore-listing", label: "只有 ISBN ≠ 实体书店上架" },
     { href: "/blog/self-publish-pod-vs-mentored-bookstore-listing", label: "自费／POD／代印 vs 导师制＋实体上架" },
     { href: "/blog/anthology-vs-sole-authored-bookstore-listing", label: "比赛合集 vs 个人出书连上架" },
+    { href: "/blog/online-storefront-vs-physical-bookstore-listing", label: "网上书店／电子书上架 ≠ 三联商务中华书架" },
     { href: "/blog/book-fair-booth-vs-year-round-bookstore-listing", label: "香港书展出书 ≠ 全年书店上架" },
     { href: "/blog/hong-kong-isbn-childrens-book-guide", label: "香港 ISBN 童书：家长要知的 7 件事" },
     { href: "/case-studies/hilary-butterfly-guide", label: "公开个案：Hilary" },
@@ -1418,7 +1419,7 @@ export const SHUDIAN_EN: HubCopy = {
   limitItems: [
     "An ISBN is a book number. It does not mean Joint Publishing, Commercial Press, or Chung Hwa has the title in stock",
     "A print shop, self-publishing, or print-on-demand usually delivers a printed copy. Distribution and a real shelf are often weak, or absent",
-    "Uploading to an online shop is a different path from a physical bookstore platform",
+    "Uploading to an online shop or an ebook catalog is a different path from a physical bookstore platform. See https://kidsmybook.com/blog/online-storefront-vs-physical-bookstore-listing .",
     "A manager can decline the title, move it, or return it. This site does not promise every branch",
   ],
   pathTitle: "How this joins the 12-month plan",
@@ -1433,7 +1434,7 @@ export const SHUDIAN_EN: HubCopy = {
   faqs: [
     {
       q: "Does an ISBN mean the book is on a bookstore shelf?",
-      a: "No. An ISBN identifies a version. A shelf listing is a later path, after a formal print run, into arrangements such as Joint Publishing, Commercial Press, or Chung Hwa. DIY ISBN applications, print shops, and print-on-demand often stop at a printed copy or an online listing. See https://kidsmybook.com/blog/isbn-is-not-bookstore-listing .",
+      a: "No. An ISBN identifies a version. A shelf listing is a later path, after a formal print run, into arrangements such as Joint Publishing, Commercial Press, or Chung Hwa. DIY ISBN applications, print shops, and print-on-demand often stop at a printed copy or an online listing. A product page or an ebook catalog is not a physical shelf. See https://kidsmybook.com/blog/isbn-is-not-bookstore-listing and https://kidsmybook.com/blog/online-storefront-vs-physical-bookstore-listing .",
     },
     {
       q: "Is Kidsmybook Joint Publishing, Commercial Press, or Chung Hwa?",
@@ -1464,6 +1465,7 @@ export const SHUDIAN_EN: HubCopy = {
     { href: "/blog/isbn-is-not-bookstore-listing", label: "An ISBN is not a bookstore shelf" },
     { href: "/blog/self-publish-pod-vs-mentored-bookstore-listing", label: "Self-publishing, POD, and print-for-hire vs a shelf path" },
     { href: "/blog/anthology-vs-sole-authored-bookstore-listing", label: "Contest anthology vs a sole-authored book with a listing path" },
+    { href: "/blog/online-storefront-vs-physical-bookstore-listing", label: "Online storefront or ebook listing vs a physical bookstore shelf" },
     { href: "/blog/book-fair-booth-vs-year-round-bookstore-listing", label: "Book Fair booth vs a year-round bookstore listing" },
     { href: "/blog/hong-kong-isbn-childrens-book-guide", label: "Hong Kong ISBN: seven things parents should know" },
     { href: "/case-studies/hilary-butterfly-guide", label: "Public case: Hilary" },

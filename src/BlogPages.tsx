@@ -18,6 +18,13 @@ interface PostMeta {
 
 const POSTS: PostMeta[] = [
   {
+    slug: "online-storefront-vs-physical-bookstore-listing",
+    title: "網上書店／電子書上架 ≠ 三聯商務中華書架：家長點分清楚",
+    excerpt: "Amazon、HKTVmall、POD 網店或者電子書目錄寫「有售」，唔等於三聯、商務、中華書架有貨。實體上架係發行之後店方入貨、陳列同退貨。Kidsmybook 第一句係出書連實體上架。ISBN 唔等於上架。私人報價，唔保證每間分店有貨，亦唔保證取錄。",
+    date: "2026-10-21",
+    readMin: 7,
+  },
+  {
     slug: "book-fair-booth-vs-year-round-bookstore-listing",
     title: "香港書展出書 ≠ 全年書店上架：家長點樣分清楚",
     excerpt: "書展攤位或者出版社展位見到書，唔等於三聯、商務、中華全年書架有貨。上架係供貨路徑，店方決定入貨、陳列同退貨。Kidsmybook 講出書連上架，唔係書展出場就算成功。ISBN 同呈繳亦唔等於上架。私人報價，唔保證每間分店有貨，亦唔保證取錄。",

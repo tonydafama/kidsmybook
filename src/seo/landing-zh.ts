@@ -257,6 +257,7 @@ export const READING_ZH: { href: string; label: string }[] = [
   { href: "/blog/isbn-is-not-bookstore-listing", label: "只有 ISBN ≠ 實體書店上架" },
   { href: "/blog/self-publish-pod-vs-mentored-bookstore-listing", label: "自費／POD／代印 vs 導師制＋實體上架" },
   { href: "/blog/anthology-vs-sole-authored-bookstore-listing", label: "比賽得獎作品集／學校結集，同個人出書連上架有咩分別？" },
+  { href: "/blog/online-storefront-vs-physical-bookstore-listing", label: "網上書店／電子書上架 ≠ 三聯商務中華書架：家長點分清楚" },
   { href: "/blog/book-fair-booth-vs-year-round-bookstore-listing", label: "香港書展出書 ≠ 全年書店上架：家長點樣分清楚" },
   { href: "/primary-one-interview-portfolio", label: "升小面試作品集：叩門同小一面試" },
   { href: "/secondary-dss-admissions-portfolio", label: "升中／DSS／直資作品集" },
@@ -719,7 +720,7 @@ export const SHUDIAN_ZH: HubCopy = {
   limitItems: [
     "ISBN 係書號。有書號唔等於三聯、商務或中華書架上有貨",
     "印刷店、自費出書、按需印刷（POD）多數交到印刷本，分銷同實體上架往往好弱，或者根本冇",
-    "自己上傳到某個網店，同實體書店平台上架係兩條路",
+    "自己上傳到某個網店或者電子書目錄，同實體書店平台上架係兩條路。對照見 https://kidsmybook.com/blog/online-storefront-vs-physical-bookstore-listing 。",
     "店長有權唔入貨、改陳列、或者退貨；網站唔會寫全線分店保證有售",
   ],
   pathTitle: "同 12 個月計劃點樣接上",
@@ -734,7 +735,7 @@ export const SHUDIAN_ZH: HubCopy = {
   faqs: [
     {
       q: "有 ISBN 係咪就等於實體書店上架？",
-      a: "唔係。ISBN 係書號，方便識別同註冊。實體書店上架係另一條路徑：正式印刷之後，先至談三聯、商務、中華等平台安排。自助申請 ISBN、印刷店同 POD 好多時停喺印好或者網上有售。詳見 https://kidsmybook.com/blog/isbn-is-not-bookstore-listing 。",
+      a: "唔係。ISBN 係書號，方便識別同註冊。實體書店上架係另一條路徑：正式印刷之後，先至談三聯、商務、中華等平台安排。自助申請 ISBN、印刷店同 POD 好多時停喺印好或者網上有售。網上商店產品頁或者電子書目錄，亦唔等於實體書架。詳見 https://kidsmybook.com/blog/isbn-is-not-bookstore-listing 同 https://kidsmybook.com/blog/online-storefront-vs-physical-bookstore-listing 。",
     },
     {
       q: "Kidsmybook 係咪三聯、商務或者中華？",
@@ -765,6 +766,7 @@ export const SHUDIAN_ZH: HubCopy = {
     { href: "/blog/isbn-is-not-bookstore-listing", label: "只有 ISBN ≠ 實體書店上架" },
     { href: "/blog/self-publish-pod-vs-mentored-bookstore-listing", label: "自費／POD／代印 vs 導師制＋實體上架" },
     { href: "/blog/anthology-vs-sole-authored-bookstore-listing", label: "比賽合集 vs 個人出書連上架" },
+    { href: "/blog/online-storefront-vs-physical-bookstore-listing", label: "網上書店／電子書上架 ≠ 三聯商務中華書架" },
     { href: "/blog/book-fair-booth-vs-year-round-bookstore-listing", label: "香港書展出書 ≠ 全年書店上架" },
     { href: "/blog/hong-kong-isbn-childrens-book-guide", label: "香港 ISBN 童書：家長要知嘅 7 件事" },
     { href: "/case-studies/hilary-butterfly-guide", label: "公開個案：Hilary" },
