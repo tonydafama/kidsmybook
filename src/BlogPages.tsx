@@ -18,6 +18,13 @@ interface PostMeta {
 
 const POSTS: PostMeta[] = [
   {
+    slug: "when-to-start-child-book-before-primary-interview",
+    title: "升小面試前幾耐開始出書？K2／K3 時間表（出書連實體書店上架）",
+    excerpt: "直資同私立小學首輪常見由 K2 後期開始，較密嘅一段多在 K3 上學期。想要正式印刷同實體書店上架路徑，而唔止一份電子稿，要預留大約 12 個月。K2 初開始，先較貼近 K3 上學期高峰。面試只剩幾日就唔好硬趕。私人報價，唔保證每間分店有貨，亦唔保證取錄。",
+    date: "2026-10-22",
+    readMin: 7,
+  },
+  {
     slug: "online-storefront-vs-physical-bookstore-listing",
     title: "網上書店／電子書上架 ≠ 三聯商務中華書架：家長點分清楚",
     excerpt: "Amazon、HKTVmall、POD 網店或者電子書目錄有售，唔等於三聯、商務、中華書架有貨。網上商品頁同電子書係另外兩種「上架」。實體上架係發行商供貨，店方決定入貨、陳列同退貨。Kidsmybook 講出書連實體上架。ISBN 唔等於書店上架。私人報價，唔保證每間分店有貨，亦唔保證取錄。",
