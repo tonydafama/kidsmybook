@@ -12,7 +12,8 @@
     "preview": "vite preview",
     "test:email-ingest": "node scripts/test-email-ingest.mjs",
     "test:deadline-reminder": "node scripts/test-deadline-reminder.mjs",
-    "test:notify-dispatch": "node scripts/test-notify-dispatch.mjs"
+    "test:notify-dispatch": "node scripts/test-notify-dispatch.mjs",
+    "test:whatsapp-analytics": "node --experimental-strip-types scripts/test-whatsapp-analytics.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.49.8",
