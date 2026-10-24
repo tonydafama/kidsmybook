@@ -18,6 +18,13 @@ interface PostMeta {
 
 const POSTS: PostMeta[] = [
   {
+    slug: "physical-bookstore-listing-for-hk-school-interview",
+    title: "出書連實體書店上架：升小、升中同國際學校面試可以點講？",
+    excerpt: "Kidsmybook 第一句係出書連實體書店上架：正式印刷之後，按題材同配套走三聯、商務、中華等書店平台。店方決定入貨、陳列同退貨。升學面試係第二層用途：同一條上架路徑，可以幫升小、升中同國際學校嘅對話多一句核得到嘅話，而唔係只報一個 ISBN。私人報價，唔保證每間分店有貨，亦唔保證取錄。",
+    date: "2026-10-24",
+    readMin: 7,
+  },
+  {
     slug: "when-to-start-child-book-before-secondary-interview",
     title: "升中面試前幾耐開始出書？小四／小五時間表（出書連實體書店上架）",
     excerpt: "部分直資、DSS 同私立中學由小五已經有簡介或申請，較密嘅面試多在小六上學期。想要正式印刷同實體書店上架路徑，而唔止一份電子稿，要預留大約 12 個月。小四初開始，先較貼近小五後期同小六上學期。小五先開始係趕。小六只剩幾日就唔好硬趕。書唔代替成績表同證書。私人報價，唔保證每間分店有貨，亦唔保證取錄。",
