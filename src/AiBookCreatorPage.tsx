@@ -2,6 +2,7 @@ import { useEffect, useMemo, useRef, useState, type CSSProperties } from "react"
 import { useLocale } from "./i18n/LocaleContext";
 import { AGE_RANGE_KEYS, type AgeRangeKey } from "./i18n/translations";
 import { buildPolishedBackBlurb, deriveBookTopic, getScholarlyProfile, INITIAL_DEFAULT_PROFILE } from "./lib/bookCover";
+import { trackWhatsappClick } from "./lib/analytics";
 import { getCoverEnquiry, postPreviewLead, setCoverEnquiry } from "./lib/coverEnquiry";
 import { generateBookCoverPair } from "./lib/monica";
 
@@ -500,10 +501,11 @@ export function AiBookCreatorPanel({ showBackLink = true, releaseTag }: AiBookCr
 
   useEffect(() => () => setCoverEnquiry(null), []);
 
-  const openCoverWhatsapp = () => {
+  const openCoverWhatsapp = (ctaLocation: string) => {
     const name = childName.trim();
     const topic = interests.trim();
     const text = t.aiLab.waHandshakeMessage(name, topic, previewShareUrl);
+    const href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
     const lead = getCoverEnquiry();
     postPreviewLead(
       lead ?? {
@@ -517,7 +519,8 @@ export function AiBookCreatorPanel({ showBackLink = true, releaseTag }: AiBookCr
       },
       true,
     );
-    window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`, "_blank", "noopener,noreferrer");
+    trackWhatsappClick(href, ctaLocation);
+    window.open(href, "_blank", "noopener,noreferrer");
   };
 
   const copyShareLink = async () => {
@@ -616,7 +619,7 @@ export function AiBookCreatorPanel({ showBackLink = true, releaseTag }: AiBookCr
               <h4>{t.aiLab.successTitle}</h4>
               <p className="ai-cta-copy">{t.aiLab.successDesc}</p>
               <div className="ai-cta-row">
-                <button type="button" className="btn primary wa-btn ai-cta-primary" onClick={openCoverWhatsapp}>
+                <button type="button" className="btn primary wa-btn ai-cta-primary" onClick={() => openCoverWhatsapp("ai_book")}>
                   {t.aiLab.getLinkBtn}
                 </button>
               </div>
@@ -723,7 +726,7 @@ export function AiBookCreatorPanel({ showBackLink = true, releaseTag }: AiBookCr
       {step === "ready" ? (
         <div className="ai-ready-wa-sticky" role="region" aria-label={t.aiLab.stickyHint}>
           <p>{t.aiLab.stickyHint}</p>
-          <button type="button" className="btn primary wa-btn" onClick={openCoverWhatsapp}>
+          <button type="button" className="btn primary wa-btn" onClick={() => openCoverWhatsapp("ai_book_sticky")}>
             {t.aiLab.getLinkBtn}
           </button>
         </div>
