@@ -254,6 +254,7 @@ export const EXPLORE_ZH = {
 
 export const READING_ZH: { href: string; label: string }[] = [
   { href: "/kids-book-bookstore-listing", label: "童書書店上架：三聯、商務、中華路徑" },
+  { href: "/blog/physical-bookstore-listing-for-hk-school-interview", label: "出書連實體書店上架：升小、升中同國際學校面試可以點講？" },
   { href: "/blog/isbn-is-not-bookstore-listing", label: "只有 ISBN ≠ 實體書店上架" },
   { href: "/blog/self-publish-pod-vs-mentored-bookstore-listing", label: "自費／POD／代印 vs 導師制＋實體上架" },
   { href: "/blog/anthology-vs-sole-authored-bookstore-listing", label: "比賽得獎作品集／學校結集，同個人出書連上架有咩分別？" },
@@ -614,6 +615,7 @@ export const SHENGXIAO_ZH: HubCopy = {
     { href: "/blog/primary-interview-how-to-use-a-book", label: "升小學面試作品集：一本書點樣用" },
     { href: "/blog/primary-school-door-knocking-portfolio-prep", label: "小學叩門 Portfolio 準備" },
     { href: "/blog/when-to-start-child-book-before-primary-interview", label: "升小面試前幾耐開始出書？K2／K3 時間表" },
+    { href: "/blog/physical-bookstore-listing-for-hk-school-interview", label: "出書連實體書店上架：升小、升中同國際學校面試可以點講？" },
     { href: "/blog/portfolio-not-ready-before-interview", label: "作品集唔夠睇、臨時趕點算" },
   ],
   ctaTitle: "先講升小面試時間，再私人報價",
@@ -690,6 +692,7 @@ export const SHENGZHONG_ZH: HubCopy = {
     { href: "/programme", label: "12 個月小朋友出書計劃" },
     { href: "/blog/secondary-dss-interview-published-book", label: "升中面試、DSS 同直資：作品集點樣放一本出版物" },
     { href: "/blog/when-to-start-child-book-before-secondary-interview", label: "升中面試前幾耐開始出書？小四／小五時間表" },
+    { href: "/blog/physical-bookstore-listing-for-hk-school-interview", label: "出書連實體書店上架：升小、升中同國際學校面試可以點講？" },
     { href: "/blog/interview-class-vs-isbn-published-book", label: "升小面試班 vs ISBN 出版作品集" },
     { href: "/blog/international-vs-local-school-interview-portfolio", label: "國際學校 vs 本地學校面試" },
   ],
@@ -772,6 +775,7 @@ export const SHUDIAN_ZH: HubCopy = {
     { href: "/blog/anthology-vs-sole-authored-bookstore-listing", label: "比賽合集 vs 個人出書連上架" },
     { href: "/blog/book-fair-booth-vs-year-round-bookstore-listing", label: "香港書展出書 ≠ 全年書店上架" },
     { href: "/blog/online-storefront-vs-physical-bookstore-listing", label: "網上書店／電子書上架 ≠ 三聯商務中華書架" },
+    { href: "/blog/physical-bookstore-listing-for-hk-school-interview", label: "出書連實體書店上架：升小、升中同國際學校面試可以點講？" },
     { href: "/blog/when-to-start-child-book-before-primary-interview", label: "升小面試前幾耐開始出書？K2／K3 時間表" },
     { href: "/blog/when-to-start-child-book-before-secondary-interview", label: "升中面試前幾耐開始出書？小四／小五時間表" },
     { href: "/blog/hong-kong-isbn-childrens-book-guide", label: "香港 ISBN 童書：家長要知嘅 7 件事" },
