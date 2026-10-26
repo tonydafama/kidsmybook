@@ -26,6 +26,7 @@ import {
   SHUDIAN_HANS,
 } from "./landing-extra";
 import { ABOUT_ZH, BLOG_INDEX_ZH, CHECKLIST_ZH, EXPLORE_ZH, FAQ_PAGE_ZH, GAOCAI_ZH, PORTFOLIO_ZH, PROGRAMME_ZH, SHENGXIAO_ZH, SHENGZHONG_ZH, SHUDIAN_ZH, XINGQU_ZH, type HubCopy } from "../seo/landing-zh";
+import { WA_QUOTE_EN, WA_QUOTE_HANS, WA_QUOTE_ZH } from "../lib/contact";
 import { HOME_DESCRIPTION_ZH, HOME_FAQ, HOME_TITLE_ZH } from "../seo/meta";
 
 export type ServiceSlug =
@@ -82,6 +83,7 @@ export type Translations = {
     backToBlog: string;
     indexTitle: string;
     indexDesc: string;
+    askQuote: string;
   };
   hero: {
     eyebrow: string;
@@ -281,6 +283,7 @@ const zhHant: Translations = {
     backToBlog: "← 返博客",
     indexTitle: BLOG_INDEX_ZH.title,
     indexDesc: BLOG_INDEX_ZH.description,
+    askQuote: BLOG_INDEX_ZH.askQuote,
   },
   hero: {
     eyebrow: "香港 · 兒童出書 · 實體書店上架",
@@ -540,10 +543,10 @@ const zhHant: Translations = {
     serviceDetailDesc: (desc, detail) => `${desc} ${detail}`,
   },
   whatsapp: {
-    home: "你好，我想了解小朋友出書同實體書店上架，請私人報價。",
+    home: WA_QUOTE_ZH,
     service: (title) => `你好，我想了解 ${title} 服務。`,
-    floating: "你好，我想了解小朋友出書同實體書店上架，請私人報價。",
-    blog: "想了解 Kidsmybook 兒童出版計劃",
+    floating: WA_QUOTE_ZH,
+    blog: WA_QUOTE_ZH,
     blogPost: (title) => `想了解 Kidsmybook 兒童出版計劃：${title}`,
     caseStudy: "Start your child's publishing journey",
   },
@@ -576,6 +579,7 @@ const zhHans: Translations = {
     indexTitle: "香港升学作品集・升小升中・ISBN 童书",
     indexDesc:
       "香港家长：升小学面试、升小面试班和 ISBN 出版作品集、升中 DSS／直资 portfolio，以及导师制 ISBN 出版怎样成为可引用的亮点。私人报价，不保证录取。",
+    askQuote: "WhatsApp 问价",
   },
   hero: {
     ...zhHant.hero,
@@ -826,10 +830,10 @@ const zhHans: Translations = {
     serviceDetailDesc: (desc, detail) => `${desc} ${detail}`,
   },
   whatsapp: {
-    home: "你好，我想了解小朋友出书和实体书店上架，请私人报价。",
+    home: WA_QUOTE_HANS,
     service: (title) => `你好，我想了解 ${title} 服务。`,
-    floating: "你好，我想了解小朋友出书和实体书店上架，请私人报价。",
-    blog: "想了解 Kidsmybook 儿童出版计划",
+    floating: WA_QUOTE_HANS,
+    blog: WA_QUOTE_HANS,
     blogPost: (title) => `想了解 Kidsmybook 儿童出版计划：${title}`,
     caseStudy: "Start your child's publishing journey",
   },
@@ -857,6 +861,7 @@ const en: Translations = {
     indexTitle: "Hong Kong school portfolios · primary, secondary, ISBN books",
     indexDesc:
       "For Hong Kong parents: primary interviews, a primary interview class versus an ISBN portfolio, DSS and direct-subsidy secondary files, and how a mentored ISBN book becomes a citable highlight. Private quotation. No place is guaranteed.",
+    askQuote: "WhatsApp for a quote",
   },
   hero: {
     eyebrow: "Hong Kong · Children's books · Bookstore shelves",
@@ -1116,10 +1121,10 @@ const en: Translations = {
     serviceDetailDesc: (desc, detail) => `${desc} ${detail}`,
   },
   whatsapp: {
-    home: "Hi, I'd like to book a private Kidsmybook child achievement publishing consultation.",
+    home: WA_QUOTE_EN,
     service: (title) => `Hi, I'd like to learn more about ${title}.`,
-    floating: "Hi, I'd like to ask about a child's book and a Hong Kong bookstore listing path. Please quote privately.",
-    blog: "I'd like to know about the Kidsmybook children's publishing programme",
+    floating: WA_QUOTE_EN,
+    blog: WA_QUOTE_EN,
     blogPost: (title) => `I'd like to know about the Kidsmybook children's publishing programme: ${title}`,
     caseStudy: "Start your child's publishing journey",
   },

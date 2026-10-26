@@ -1,7 +1,9 @@
 import { useEffect } from "react";
 import { getLocalizedPostMeta, upsertJsonLd, SITE_ORIGIN } from "./BlogPages";
+import { LinkedText } from "./components/LinkedText";
 import { useLocale } from "./i18n/LocaleContext";
 import type { Locale } from "./i18n/locale";
+import { STUDIO_EMAIL, STUDIO_TEL_DISPLAY, STUDIO_TEL_HREF, whatsappHref as buildWhatsappHref } from "./lib/contact";
 import { CHECKLIST_PATH, FAQ_READING_ZH, GAOCAI_PATH, PORTFOLIO_READING_ZH, READING_ZH, SHENGXIAO_PATH, SHENGZHONG_PATH, SHUDIAN_PATH, XINGQU_PATH, type HubCopy } from "./seo/landing-zh";
 import { ORGANIZATION_SAME_AS, breadcrumbList, canonicalUrl, faqPageEntity } from "./seo/meta";
 
@@ -15,7 +17,7 @@ function appHref(path: string): string {
 }
 
 function whatsappHref(text: string): string {
-  return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
+  return buildWhatsappHref(text, WHATSAPP_NUMBER);
 }
 
 function homeLabelFor(locale: Locale): string {
@@ -57,11 +59,13 @@ function QuoteCta({
   body,
   whatsappLabel,
   whatsappText,
+  ctaLocation,
 }: {
   title: string;
   body: string;
   whatsappLabel: string;
   whatsappText?: string;
+  ctaLocation?: string;
 }) {
   const { t } = useLocale();
   return (
@@ -69,11 +73,17 @@ function QuoteCta({
       <h2>{title}</h2>
       <p>{body}</p>
       <div className="cta-row">
-        <a className="btn primary" href={whatsappHref(whatsappText || t.whatsapp.home)} target="_blank" rel="noreferrer">
+        <a
+          className="btn primary"
+          href={whatsappHref(whatsappText || t.whatsapp.home)}
+          target="_blank"
+          rel="noreferrer"
+          {...(ctaLocation ? { "data-cta-location": ctaLocation } : {})}
+        >
           {whatsappLabel}
         </a>
-        <a className="btn ghost" href="mailto:kidsmybook@outlook.com">
-          kidsmybook@outlook.com
+        <a className="btn ghost" href={`mailto:${STUDIO_EMAIL}`}>
+          {STUDIO_EMAIL}
         </a>
       </div>
     </section>
@@ -143,8 +153,14 @@ export function ProgrammePage() {
         </p>
         <p>{page.notLabel}：{page.notBody}</p>
         <div className="cta-row">
-          <a className="btn primary" href={whatsappHref(page.whatsappText)} target="_blank" rel="noreferrer">
-            {t.hero.bookConsult}
+          <a
+            className="btn primary"
+            href={whatsappHref(page.whatsappText)}
+            target="_blank"
+            rel="noreferrer"
+            data-cta-location="programme_intro"
+          >
+            {page.whatsappLabel}
           </a>
           <a className="btn ghost" href={appHref("/faq")}>
             {t.nav.faq}
@@ -173,7 +189,13 @@ export function ProgrammePage() {
         </ol>
       </section>
 
-      <QuoteCta title={page.ctaTitle} body={page.ctaBody} whatsappLabel={t.hero.bookConsult} whatsappText={page.whatsappText} />
+      <QuoteCta
+        title={page.ctaTitle}
+        body={page.ctaBody}
+        whatsappLabel={page.whatsappLabel}
+        whatsappText={page.whatsappText}
+        ctaLocation="phases"
+      />
 
       <section className="panel">
         <h2>{page.vsClassTitle}</h2>
@@ -204,7 +226,13 @@ export function ProgrammePage() {
       </section>
 
       <ReadingList title={page.readingTitle} links={localizedReading(READING_ZH, locale)} />
-      <QuoteCta title={page.ctaTitle} body={page.ctaBody} whatsappLabel={t.hero.bookConsult} whatsappText={page.whatsappText} />
+      <QuoteCta
+        title={page.ctaTitle}
+        body={page.ctaBody}
+        whatsappLabel={page.whatsappLabel}
+        whatsappText={page.whatsappText}
+        ctaLocation="programme_end"
+      />
     </main>
   );
 }
@@ -270,7 +298,9 @@ export function FaqPage() {
                   {item.q}
                 </summary>
                 <div className="faq-a" itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
-                  <div itemProp="text">{item.a}</div>
+                  <div itemProp="text">
+                    <LinkedText text={item.a} />
+                  </div>
                 </div>
               </details>
             );
@@ -391,7 +421,9 @@ export function ChecklistPage() {
                 {item.q}
               </summary>
               <div className="faq-a" itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
-                <div itemProp="text">{item.a}</div>
+                <div itemProp="text">
+                  <LinkedText text={item.a} />
+                </div>
               </div>
             </details>
           ))}
@@ -522,7 +554,9 @@ export function PortfolioHubPage() {
                 {item.q}
               </summary>
               <div className="faq-a" itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
-                <div itemProp="text">{item.a}</div>
+                <div itemProp="text">
+                  <LinkedText text={item.a} />
+                </div>
               </div>
             </details>
           ))}
@@ -641,7 +675,9 @@ export function HubLandingPage({ path, page }: { path: string; page: HubCopy }) 
                 {item.q}
               </summary>
               <div className="faq-a" itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
-                <div itemProp="text">{item.a}</div>
+                <div itemProp="text">
+                  <LinkedText text={item.a} />
+                </div>
               </div>
             </details>
           ))}
@@ -735,8 +771,11 @@ export function AboutPage() {
           <a className="btn primary" href={whatsappHref(t.whatsapp.home)} target="_blank" rel="noreferrer">
             {t.hero.bookConsult}
           </a>
-          <a className="btn ghost" href="mailto:kidsmybook@outlook.com">
-            kidsmybook@outlook.com
+          <a className="btn ghost" href={`mailto:${STUDIO_EMAIL}`}>
+            {STUDIO_EMAIL}
+          </a>
+          <a className="btn ghost" href={STUDIO_TEL_HREF}>
+            {STUDIO_TEL_DISPLAY}
           </a>
         </div>
       </section>

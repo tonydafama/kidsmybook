@@ -1,3 +1,4 @@
+import { WA_QUOTE_EN, WA_QUOTE_HANS } from "../lib/contact";
 import type { HubCopy } from "../seo/landing-zh";
 
 export const PROGRAMME_HANS = {
@@ -44,7 +45,8 @@ export const PROGRAMME_HANS = {
   portfolioLink: "升学作品集怎样用一本书",
   ctaTitle: "私人报价，先了解再谈范围",
   ctaBody: "网站不公开价目。WhatsApp 或电邮说说小朋友年龄、兴趣和目标学校，我们再私人报价。",
-  whatsappText: "想了解 12 个月导师制小朋友出书计划",
+  whatsappLabel: "WhatsApp 讲年龄＋兴趣",
+  whatsappText: WA_QUOTE_HANS,
 };
 
 export const FAQ_PAGE_HANS = {
@@ -292,7 +294,8 @@ export const PROGRAMME_EN = {
   portfolioLink: "How a book works in a school portfolio",
   ctaTitle: "Private quotation after we understand the child",
   ctaBody: "Prices are not listed on the site. WhatsApp or email the child's age, interest, and target school, and we will quote privately.",
-  whatsappText: "We want to know about the 12-month mentored children's publishing programme",
+  whatsappLabel: "WhatsApp age and interest",
+  whatsappText: WA_QUOTE_EN,
 };
 
 export const FAQ_PAGE_EN = {

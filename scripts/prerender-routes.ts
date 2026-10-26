@@ -6,7 +6,14 @@
  */
 import fs from "node:fs";
 import path from "node:path";
-import { safeHttpsUrl, splitTrailingPunct } from "../src/seo/linkify.ts";
+import {
+  STUDIO_EMAIL,
+  STUDIO_TEL_DISPLAY,
+  STUDIO_TEL_HREF,
+  WA_QUOTE_ZH,
+  linkifyHtml,
+  whatsappHref,
+} from "../src/seo/linkify.ts";
 import {
   ABOUT_ZH,
   BLOG_INDEX_ZH,
@@ -119,29 +126,26 @@ const SERVICES: ServiceCopy[] = [
 ];
 
 function inline(text: string): string {
-  const re = /(https:\/\/[^\s<>"']+|\*\*[^*]+\*\*|\*[^*]+\*|`[^`]+`)/g;
+  const re =
+    /(https:\/\/[^\s<>"']+|[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}|(?:\+?852[\s-]?)?9121[\s-]?4157|\*\*[^*]+\*\*|\*[^*]+\*|`[^`]+`)/g;
   let last = 0;
   let out = "";
   let match: RegExpExecArray | null;
   while ((match = re.exec(text)) !== null) {
     if (match.index > last) out += escapeHtml(text.slice(last, match.index));
     const token = match[0];
-    if (token.startsWith("https://")) {
-      const { href, rest } = splitTrailingPunct(token);
-      const safe = safeHttpsUrl(href);
-      out += safe ? `<a href="${escapeHtml(safe)}">${escapeHtml(safe)}</a>` : escapeHtml(href);
-      if (rest) out += escapeHtml(rest);
-    } else if (token.startsWith("**")) {
-      out += `<strong>${escapeHtml(token.slice(2, -2))}</strong>`;
-    } else if (token.startsWith("`")) {
-      out += `<code>${escapeHtml(token.slice(1, -1))}</code>`;
-    } else {
-      out += `<em>${escapeHtml(token.slice(1, -1))}</em>`;
-    }
+    if (token.startsWith("**")) out += `<strong>${escapeHtml(token.slice(2, -2))}</strong>`;
+    else if (token.startsWith("`")) out += `<code>${escapeHtml(token.slice(1, -1))}</code>`;
+    else if (token.startsWith("*")) out += `<em>${escapeHtml(token.slice(1, -1))}</em>`;
+    else out += linkifyHtml(token);
     last = match.index + token.length;
   }
   if (last < text.length) out += escapeHtml(text.slice(last));
   return out;
+}
+
+function quoteWa(): string {
+  return whatsappHref(WA_QUOTE_ZH);
 }
 
 function parseFrontMatter(md: string): { title: string; description: string; date: string; body: string } {
@@ -243,6 +247,9 @@ function navHtml(): string {
         <a href="${SITE_ORIGIN}/blog">文章</a>
         <a href="${SITE_ORIGIN}/case-studies">個案</a>
         <a href="${SITE_ORIGIN}/about">關於我們</a>
+        <a href="${quoteWa()}">WhatsApp 問價</a>
+        <a href="${STUDIO_TEL_HREF}">${STUDIO_TEL_DISPLAY}</a>
+        <a href="mailto:${STUDIO_EMAIL}">${STUDIO_EMAIL}</a>
       </nav>`;
 }
 
@@ -253,7 +260,7 @@ function linkList(links: { href: string; label: string }[]): string {
 }
 
 function waLine(): string {
-  return `        <p>私人報價。<a href="https://wa.me/85291214157">WhatsApp</a> · <a href="mailto:kidsmybook@outlook.com">kidsmybook@outlook.com</a></p>`;
+  return `        <p>私人報價。<a href="${quoteWa()}">WhatsApp 問價</a> · <a href="${STUDIO_TEL_HREF}">${STUDIO_TEL_DISPLAY}</a> · <a href="mailto:${STUDIO_EMAIL}">${STUDIO_EMAIL}</a></p>`;
 }
 
 function pageWrap(inner: string): string {
@@ -332,7 +339,7 @@ function loadBlogPosts(): RouteDocument[] {
       jsonLdId: "kidsmybook-blog-post-ld",
       jsonLd,
       snapshotHtml: pageWrap(
-        `        <article>\n          <h1>${inline(headline)}</h1>\n          <p><time datetime="${date}">${date}</time></p>\n${blocksToHtml(blocks)}\n          <p><a href="https://wa.me/85291214157">WhatsApp 私人報價</a> · <a href="${canonicalUrl("/programme")}">小朋友出書計劃</a></p>\n        </article>`,
+        `        <article>\n          <h1>${inline(headline)}</h1>\n          <p><time datetime="${date}">${date}</time></p>\n${blocksToHtml(blocks)}\n          <p><a href="${quoteWa()}">WhatsApp 私人報價</a> · <a href="${canonicalUrl("/programme")}">小朋友出書計劃</a></p>\n        </article>`,
       ),
     };
   });
@@ -395,7 +402,7 @@ function serviceRoutes(): RouteDocument[] {
         areaServed: "Hong Kong",
       },
       snapshotHtml: pageWrap(
-        `        <h1>${escapeHtml(item.title)}</h1>\n        <p>${escapeHtml(item.desc)}</p>\n        <p>${escapeHtml(item.detail)}</p>\n        <p>私人報價。WhatsApp +852 9121 4157。</p>`,
+        `        <h1>${escapeHtml(item.title)}</h1>\n        <p>${escapeHtml(item.desc)}</p>\n        <p>${escapeHtml(item.detail)}</p>\n${waLine()}`,
       ),
     };
   });
@@ -431,9 +438,9 @@ function staticRoutes(posts: RouteDocument[]): RouteDocument[] {
       },
     },
     snapshotHtml: pageWrap(
-      `        <h1>${escapeHtml(BLOG_INDEX_ZH.title)}</h1>\n        <p>${escapeHtml(BLOG_INDEX_ZH.description)}</p>\n        <ul>\n${posts
+      `        <h1>${escapeHtml(BLOG_INDEX_ZH.title)}</h1>\n        <p>${escapeHtml(BLOG_INDEX_ZH.description)}</p>\n        <p><a href="${quoteWa()}">${escapeHtml(BLOG_INDEX_ZH.askQuote)}</a></p>\n        <ul>\n${posts
         .map((post) => `          <li><a href="${canonicalUrl(post.path)}">${escapeHtml(post.title)}</a></li>`)
-        .join("\n")}\n        </ul>`,
+        .join("\n")}\n        </ul>\n        <p><a href="${quoteWa()}">${escapeHtml(BLOG_INDEX_ZH.askQuote)}</a> · <a href="mailto:${STUDIO_EMAIL}">${STUDIO_EMAIL}</a></p>`,
     ),
   };
 
@@ -488,7 +495,7 @@ function staticRoutes(posts: RouteDocument[]): RouteDocument[] {
       publisher: orgRef(),
     },
     snapshotHtml: pageWrap(
-      `        <article>\n          <h1>Hilary《蝴蝶雙語圖鑑》</h1>\n          <p>Age at publication: 8 · Duration: 1 year</p>\n          <p>孩子由日常觀察蝴蝶出發，逐步建立研究習慣，完成圖像與文字內容，最終成功出版並公開發表。</p>\n          <p>過程中克服了資料整理與口語表達挑戰，學會用作品向世界分享自己的興趣與成長。</p>\n          <p>這是目前公開具名的個案：Hilary，出版時八歲，約一年完成。成品是中英雙語圖鑑，其後有新書發布會、媒體公關與活動直播；線上觀看 3,569 次。家庭可以將這份成果放進升學檔案。</p>\n          <p><a href="https://wa.me/85291214157">WhatsApp 私人報價</a></p>\n        </article>`,
+      `        <article>\n          <h1>Hilary《蝴蝶雙語圖鑑》</h1>\n          <p>Age at publication: 8 · Duration: 1 year</p>\n          <p>孩子由日常觀察蝴蝶出發，逐步建立研究習慣，完成圖像與文字內容，最終成功出版並公開發表。</p>\n          <p>過程中克服了資料整理與口語表達挑戰，學會用作品向世界分享自己的興趣與成長。</p>\n          <p>這是目前公開具名的個案：Hilary，出版時八歲，約一年完成。成品是中英雙語圖鑑，其後有新書發布會、媒體公關與活動直播；線上觀看 3,569 次。家庭可以將這份成果放進升學檔案。</p>\n          <p><a href="${quoteWa()}">WhatsApp 私人報價</a></p>\n        </article>`,
     ),
   };
 
@@ -503,6 +510,7 @@ function staticRoutes(posts: RouteDocument[]): RouteDocument[] {
     snapshotHtml: pageWrap(
       `        <h1>小朋友出書，走上實體書店上架</h1>
         <p>${escapeHtml(HOME_DESCRIPTION_ZH)}</p>
+        <p><a href="${quoteWa()}">WhatsApp 問價</a> · <a href="${STUDIO_TEL_HREF}">${STUDIO_TEL_DISPLAY}</a> · <a href="mailto:${STUDIO_EMAIL}">${STUDIO_EMAIL}</a></p>
         <ul>
           <li><a href="${canonicalUrl("/programme")}">小朋友出書計劃</a></li>
           <li><a href="${canonicalUrl("/faq")}">常見問題</a></li>
@@ -511,7 +519,7 @@ function staticRoutes(posts: RouteDocument[]): RouteDocument[] {
 ${linkList(READING_ZH)}
         </ul>
         <section id="faq">
-${HOME_FAQ.map((item) => `          <h2>${escapeHtml(item.q)}</h2>\n          <p>${escapeHtml(item.a)}</p>`).join("\n")}
+${HOME_FAQ.map((item) => `          <h2>${escapeHtml(item.q)}</h2>\n          <p>${linkifyHtml(item.a)}</p>`).join("\n")}
         </section>`,
     ),
   };
@@ -549,11 +557,13 @@ ${HOME_FAQ.map((item) => `          <h2>${escapeHtml(item.q)}</h2>\n          <p
     snapshotHtml: pageWrap(
       `        <h1>${escapeHtml(PROGRAMME_ZH.h1)}</h1>
         <p>${escapeHtml(PROGRAMME_ZH.lead)}</p>
+        <p><a href="${quoteWa()}">${escapeHtml(PROGRAMME_ZH.whatsappLabel)}</a></p>
         <p>${escapeHtml(PROGRAMME_ZH.notBody)}</p>
         <h2>${escapeHtml(PROGRAMME_ZH.phasesTitle)}</h2>
         <ol>
 ${PROGRAMME_ZH.phases.map((phase) => `          <li><strong>${escapeHtml(phase.name)}</strong> — ${escapeHtml(phase.text)}</li>`).join("\n")}
         </ol>
+        <p><a href="${quoteWa()}">${escapeHtml(PROGRAMME_ZH.whatsappLabel)}</a></p>
         <h2>${escapeHtml(PROGRAMME_ZH.vsClassTitle)}</h2>
         <p>${escapeHtml(PROGRAMME_ZH.vsClass)}</p>
         <h2>${escapeHtml(PROGRAMME_ZH.vsDiyTitle)}</h2>
@@ -599,7 +609,7 @@ ${linkList(FAQ_READING_ZH)}
         </ul>
 ${HOME_FAQ.map((item) => {
   const id = item.q.includes("申請 ISBN") ? ' id="isbn"' : "";
-  return `        <section${id}>\n          <h2>${escapeHtml(item.q)}</h2>\n          <p>${escapeHtml(item.a)}</p>\n        </section>`;
+  return `        <section${id}>\n          <h2>${escapeHtml(item.q)}</h2>\n          <p>${linkifyHtml(item.a)}</p>\n        </section>`;
 }).join("\n")}
 ${waLine()}`,
     ),
@@ -647,7 +657,7 @@ ${PORTFOLIO_ZH.tracks
         <p><a href="${canonicalUrl(track.href)}">${escapeHtml(track.link)}</a></p>`,
   )
   .join("\n")}
-        <p><a href="https://wa.me/85291214157">${escapeHtml(PORTFOLIO_ZH.whatsappLink)}</a></p>
+        <p><a href="${quoteWa()}">${escapeHtml(PORTFOLIO_ZH.whatsappLink)}</a></p>
         <h2>${escapeHtml(PORTFOLIO_ZH.limitTitle)}</h2>
         <p>${escapeHtml(PORTFOLIO_ZH.limit)}</p>
         <p><a href="${canonicalUrl("/blog/kindergarten-portfolio-book")}">幼稚園作品集：細路都出得書嗎？</a></p>
@@ -658,7 +668,7 @@ ${PORTFOLIO_ZH.faqs
   .map(
     (item) => `        <section>
           <h3>${escapeHtml(item.q)}</h3>
-          <p>${escapeHtml(item.a)}</p>
+          <p>${linkifyHtml(item.a)}</p>
         </section>`,
   )
   .join("\n")}
@@ -787,7 +797,7 @@ ${CHECKLIST_ZH.faqs
   .map(
     (item) => `        <section>
           <h3>${escapeHtml(item.q)}</h3>
-          <p>${escapeHtml(item.a)}</p>
+          <p>${linkifyHtml(item.a)}</p>
         </section>`,
   )
   .join("\n")}
@@ -867,14 +877,14 @@ ${copy.faqs
   .map(
     (item) => `        <section>
           <h2>${escapeHtml(item.q)}</h2>
-          <p>${escapeHtml(item.a)}</p>
+          <p>${linkifyHtml(item.a)}</p>
         </section>`,
   )
   .join("\n")}
         <ul>
 ${linkList(copy.links)}
         </ul>
-        <p><a href="https://wa.me/85291214157">${escapeHtml(copy.ctaTitle)}</a></p>
+        <p><a href="${quoteWa()}">${escapeHtml(copy.ctaTitle)}</a></p>
 ${waLine()}`,
     ),
   };
@@ -914,12 +924,37 @@ function assertDocument(html: string, route: RouteDocument) {
     for (const item of HOME_FAQ) {
       if (!html.includes(item.q)) throw new Error(`homepage FAQ missing question: ${item.q}`);
     }
+    const prefilled = `https://wa.me/85291214157?text=${encodeURIComponent(WA_QUOTE_ZH)}`;
+    if (!html.includes(prefilled)) throw new Error("homepage missing prefilled WhatsApp enquiry link");
+    if (!html.includes('href="tel:+85291214157"')) throw new Error("homepage missing tel link");
+    if (!html.includes('href="mailto:kidsmybook@outlook.com"')) throw new Error("homepage missing mailto");
+    if (html.includes('"availableLanguage": ["zh-Hant", "zh-Hans", "en"]')) {
+      throw new Error("homepage schema must not claim English or Simplified as a separate site locale");
+    }
+    if (html.includes('"inLanguage": ["zh-Hant", "en", "zh-Hans"]')) {
+      throw new Error("homepage Course schema must not claim an English programme page");
+    }
+    if (!html.includes('"availableLanguage": ["zh-Hant"]')) {
+      throw new Error("homepage contact language should be zh-Hant");
+    }
+    const faqHtml = html.split('id="faq"')[1] || "";
+    if (!faqHtml.includes("<a href=\"https://wa.me/85291214157?text=")) {
+      throw new Error("homepage FAQ WhatsApp URLs are still plain text");
+    }
   }
   if (route.path === "/programme") {
     if (!html.includes("HowTo") || !html.includes("BreadcrumbList")) {
       throw new Error("/programme missing HowTo or BreadcrumbList");
     }
     if (!html.includes(`<h1>${escapeHtml(PROGRAMME_ZH.h1)}</h1>`)) throw new Error("/programme H1 missing");
+    const programmeCtas = html.split(PROGRAMME_ZH.whatsappLabel).length - 1;
+    if (programmeCtas < 2) throw new Error("/programme needs a WhatsApp CTA under the title and after the five phases");
+    if (PROGRAMME_ZH.whatsappText !== WA_QUOTE_ZH) {
+      throw new Error("/programme WhatsApp prefill drifted from WA_QUOTE_ZH");
+    }
+  }
+  if (route.path === "/blog" && !html.includes(BLOG_INDEX_ZH.askQuote)) {
+    throw new Error("/blog index missing WhatsApp quote CTA");
   }
   if (route.path === "/faq") {
     if (!html.includes("FAQPage") || !html.includes("BreadcrumbList")) {
@@ -1211,6 +1246,12 @@ function assertSources(posts: RouteDocument[]) {
   }
   if (!worker.includes("isGoogleRobots") || /^Host\s*:/m.test(worker)) {
     throw new Error("worker robots fallback must reject Host and unknown directives");
+  }
+  if (!worker.includes("改用 WhatsApp 問價") || !worker.includes("INTAKE_WA")) {
+    throw new Error("intake form missing the WhatsApp escape hatch");
+  }
+  if (!worker.includes("tel:+85291214157") && !worker.includes("STUDIO_TEL_HREF")) {
+    throw new Error("intake form missing a telephone link");
   }
   for (const slug of manifest) {
     const loc = `${SITE_ORIGIN}/blog/${slug}`;

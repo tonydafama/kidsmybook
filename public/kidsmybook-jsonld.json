@@ -20,7 +20,7 @@
         "telephone": "+852-9121-4157",
         "url": "https://wa.me/85291214157",
         "areaServed": "Hong Kong",
-        "availableLanguage": ["zh-Hant", "zh-Hans", "en"]
+        "availableLanguage": ["zh-Hant"]
       }
     },
     {
@@ -29,7 +29,7 @@
       "name": "Kidsmybook 12-Month Child Achievement Publishing Programme",
       "provider": { "@id": "https://kidsmybook.com/#organization" },
       "description": "A 12-month professional publishing plan for children. Real-life-story adaptation co-created with the child; university professors join the review to raise academic and educational value. The finished book is printed and listed on physical bookstore platforms as a highlight for school admissions.",
-      "inLanguage": ["zh-Hant", "en", "zh-Hans"],
+      "inLanguage": "zh-Hant",
       "audience": {
         "@type": "PeopleAudience",
         "suggestedMinAge": 3,

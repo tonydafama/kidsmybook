@@ -2718,6 +2718,12 @@ select:focus {
   line-height: 1.6;
 }
 
+.faq-a a {
+  color: #e6d3ae;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 /* Social Share */
 .social-share {
   margin: 32px 0 24px;
