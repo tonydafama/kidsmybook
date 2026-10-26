@@ -1,3 +1,4 @@
+import { STUDIO_EMAIL, STUDIO_TEL_DISPLAY, STUDIO_TEL_HREF, WA_QUOTE_ZH, whatsappHref } from "../src/seo/linkify";
 import { markerComment, normalizeRoutePath, prerenderAssetPath } from "../src/seo/meta";
 import { englishSlugRedirect } from "../src/seo/slug-redirects";
 
@@ -522,12 +523,32 @@ async function sendIntakeWhatsApp(rec: Record<string, unknown>, env: Env): Promi
   }
 }
 
-const INTAKE_FORM_HTML = `<!DOCTYPE html>
+const INTAKE_WA = whatsappHref(WA_QUOTE_ZH);
+
+export const INTAKE_FORM_HTML = `<!DOCTYPE html>
 <html lang="zh-HK">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Kidsmybook 升學資產諮詢表</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NMY5CHHLX2"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-NMY5CHHLX2', { anonymize_ip: true });
+document.addEventListener('click', function (event) {
+  var node = event.target;
+  var el = node && node.closest ? node.closest('a[href]') : null;
+  if (!el || !el.href || el.href.indexOf('wa.me') === -1) return;
+  gtag('event', 'whatsapp_click', {
+    link_url: el.href.split('?')[0].split('#')[0].slice(0, 100),
+    page_path: '/intake-form',
+    cta_location: (el.getAttribute('data-cta-location') || 'intake').slice(0, 100),
+    transport_type: 'beacon'
+  });
+}, true);
+</script>
 <style>
   body { margin: 0; font-family: Outfit, "PingFang HK", "Noto Sans TC", sans-serif; color: #d7d1c7; background: radial-gradient(90% 50% at 10% -10%, rgba(115,81,184,.22), transparent 55%), linear-gradient(180deg, #060606, #0f0f11); }
   main { max-width: 640px; margin: 0 auto; padding: 2.2rem 1.2rem 3rem; }
@@ -540,7 +561,9 @@ const INTAKE_FORM_HTML = `<!DOCTYPE html>
   .note, .privacy { font-size: .9rem; color: #9d9587; line-height: 1.55; }
   details { margin-top: 1.4rem; border-top: 1px solid rgba(200,168,116,.2); padding-top: .8rem; }
   summary { cursor: pointer; color: #c8a874; font-weight: 600; }
-  .succ { background: rgba(200,168,116,.12); padding: 1rem; border-radius: 12px; margin-top: 1rem; display: none; color: #f6f3ee; }
+  .succ, .err { background: rgba(200,168,116,.12); padding: 1rem; border-radius: 12px; margin-top: 1rem; display: none; color: #f6f3ee; }
+  .escape { margin: .8rem 0 0; }
+  a.wa-escape { display: inline-block; margin: .35rem .5rem .35rem 0; background: #c8a874; color: #1a140c; font-weight: 700; text-decoration: none; padding: .75rem 1.1rem; border-radius: 999px; }
 </style>
 </head>
 <body>
@@ -570,11 +593,19 @@ const INTAKE_FORM_HTML = `<!DOCTYPE html>
     <textarea name="remark" rows="3" placeholder="想了解出版、發布會，或其他問題"></textarea>
   </details>
 
-  <p class="privacy">你提交的資料只用於 Kidsmybook 回覆這次諮詢（個人資料（私隱）條例）。未經同意，不會公開小朋友的姓名或學校。如需刪除，請 WhatsApp +852 9121 4157 或電郵 kidsmybook@outlook.com。</p>
+  <p class="privacy">你提交的資料只用於 Kidsmybook 回覆這次諮詢（個人資料（私隱）條例）。未經同意，不會公開小朋友的姓名或學校。如需刪除，請 <a href="${INTAKE_WA}">WhatsApp</a> <a href="${STUDIO_TEL_HREF}">${STUDIO_TEL_DISPLAY}</a> 或電郵 <a href="mailto:${STUDIO_EMAIL}">${STUDIO_EMAIL}</a>。</p>
+  <p class="escape"><a class="wa-escape" data-cta-location="intake" href="${INTAKE_WA}">改用 WhatsApp 問價</a> <a href="mailto:${STUDIO_EMAIL}">${STUDIO_EMAIL}</a></p>
   <button type="submit">提交諮詢</button>
 </form>
 
-<div class="succ" id="succ">已收到。顧問會用 WhatsApp 回覆你，私人報價。</div>
+<div class="succ" id="succ">
+  <p>已收到。顧問會用 WhatsApp 回覆你，私人報價。</p>
+  <p class="escape"><a class="wa-escape" data-cta-location="intake_success" href="${INTAKE_WA}">改用 WhatsApp 問價</a> <a href="mailto:${STUDIO_EMAIL}">${STUDIO_EMAIL}</a></p>
+</div>
+<div class="err" id="err">
+  <p>提交未成功。可以改用 WhatsApp 問價，或電郵我們。</p>
+  <p class="escape"><a class="wa-escape" data-cta-location="intake_error" href="${INTAKE_WA}">改用 WhatsApp 問價</a> <a href="mailto:${STUDIO_EMAIL}">${STUDIO_EMAIL}</a></p>
+</div>
 </main>
 
 <script>
@@ -592,13 +623,14 @@ document.getElementById('f').addEventListener('submit', async function(e){
     var r = await res.json();
     if (r.ok) {
       document.getElementById('succ').style.display = 'block';
+      document.getElementById('err').style.display = 'none';
       document.getElementById('f').style.display = 'none';
     } else {
-      alert('提交失敗：' + (r.error || '未知錯誤'));
+      document.getElementById('err').style.display = 'block';
       btn.disabled = false; btn.textContent = '提交諮詢';
     }
   } catch (err) {
-    alert('網絡錯誤，請稍後再試或聯絡 WhatsApp 85291214157');
+    document.getElementById('err').style.display = 'block';
     btn.disabled = false; btn.textContent = '提交諮詢';
   }
 });
@@ -1099,7 +1131,7 @@ async function sendIntakeAckEmail(rec: Record<string, unknown>, env: Env): Promi
         subject: "Kidsmybook 已收到你的諮詢",
         html: `<p>你好${rec.parent ? ` ${rec.parent}` : ""}，</p>
 <p>我哋已收到 <strong>${student}</strong> 嘅出版諮詢。顧問會喺辦公時間內用 WhatsApp 或電郵回覆你，唔使重複提交。</p>
-<p>如要即時聯絡：<a href="https://wa.me/85291214157">WhatsApp @kidsmybook</a></p>
+<p>如要即時聯絡：<a href="${INTAKE_WA}">WhatsApp 問價</a> · <a href="mailto:${STUDIO_EMAIL}">${STUDIO_EMAIL}</a></p>
 <p>Kidsmybook<br>https://kidsmybook.com</p>`,
       }),
     });

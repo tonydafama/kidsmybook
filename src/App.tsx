@@ -2,7 +2,9 @@ import { useEffect, useMemo, useState } from "react";
 import { AiBookCreatorPanel } from "./AiBookCreatorPage";
 import { AboutPage, ChecklistPage, FaqPage, GaocaiHubPage, HomeExplore, PortfolioHubPage, ProgrammePage, ShengxiaoHubPage, ShengzhongHubPage, ShudianHubPage, XingquHubPage } from "./LandingPages";
 import { LanguageSwitcher } from "./components/LanguageSwitcher";
+import { LinkedText } from "./components/LinkedText";
 import { useLocale } from "./i18n/LocaleContext";
+import { STUDIO_EMAIL, STUDIO_TEL_DISPLAY, STUDIO_TEL_HREF, whatsappHref } from "./lib/contact";
 import { getCoverEnquiry, postPreviewLead, subscribeCoverEnquiry, type CoverEnquiry } from "./lib/coverEnquiry";
 import { pageWhatsappText } from "./lib/whatsappIntent";
 import { BlogIndexPage, BlogPostPage, POSTS, SITE_ORIGIN, getLocalizedPostMeta, upsertJsonLd } from "./BlogPages";
@@ -29,6 +31,10 @@ type ServiceItem = {
 
 const WHATSAPP_NUMBER = import.meta.env.VITE_WHATSAPP_NUMBER || "85291214157";
 const APP_BASE = import.meta.env.BASE_URL;
+
+function waLink(text: string): string {
+  return whatsappHref(text, WHATSAPP_NUMBER);
+}
 
 function appHref(path: string): string {
   if (!path || path === "/") return APP_BASE;
@@ -98,7 +104,7 @@ function JourneyPathSection() {
 
 function HomePage({ services }: { services: ServiceItem[] }) {
   const { t } = useLocale();
-  const whatsapp = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(t.whatsapp.home)}`;
+  const whatsapp = waLink(t.whatsapp.home);
 
   useEffect(() => {
     upsertJsonLd("kidsmybook-faq-ld", {
@@ -261,7 +267,9 @@ function HomePage({ services }: { services: ServiceItem[] }) {
               >
                 <summary className="faq-q" itemProp="name">{item.q}</summary>
                 <div className="faq-a" itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
-                  <div itemProp="text">{item.a}</div>
+                  <div itemProp="text">
+                    <LinkedText text={item.a} />
+                  </div>
                 </div>
               </details>
             ))}
@@ -308,7 +316,7 @@ function ServicesIndexPage({ services }: { services: ServiceItem[] }) {
 
 function ServiceDetailPage({ item }: { item: ServiceItem }) {
   const { t } = useLocale();
-  const whatsapp = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(t.whatsapp.service(item.title))}`;
+  const whatsapp = waLink(t.whatsapp.service(item.title));
   return (
     <main>
       <section className="panel">
@@ -356,7 +364,7 @@ function CaseStudyPage() {
   const { t } = useLocale();
   const [privacyMode, setPrivacyMode] = useState(false);
   const childName = privacyMode ? t.caseStudy.privacyName : t.caseStudy.realName;
-  const whatsapp = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(t.whatsapp.caseStudy)}`;
+  const whatsapp = waLink(t.whatsapp.caseStudy);
 
   useEffect(() => {
     upsertJsonLd("kidsmybook-case-study-ld", {
@@ -452,7 +460,7 @@ function CaseStudyPage() {
 
 function CaseStudiesIndex() {
   const { t } = useLocale();
-  const whatsapp = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(t.whatsapp.caseStudy)}`;
+  const whatsapp = waLink(t.whatsapp.caseStudy);
   return (
     <main>
       <section className="panel">
@@ -512,7 +520,7 @@ export default function App() {
     : "";
   const coverOnHome = pathname === "/" || pathname === "/ai-book" ? coverEnquiry : null;
   const floatingText = coverOnHome?.text || pageWhatsappText(pathname, t, blogTitle);
-  const whatsappFloating = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(floatingText)}`;
+  const whatsappFloating = waLink(floatingText);
   const trackFloatingEnquiry = () => {
     if (coverOnHome) postPreviewLead(coverOnHome, true);
   };
@@ -699,9 +707,10 @@ export default function App() {
             {locale === "en" ? "Interview class vs ISBN" : locale === "zh-Hans" ? "面试班 vs ISBN" : "面試班 vs ISBN"}
           </a>
           <a href={whatsappFloating} target="_blank" rel="noreferrer" onClick={trackFloatingEnquiry}>
-            WhatsApp +852 9121 4157
+            {t.nav.whatsapp}
           </a>
-          <a href="mailto:kidsmybook@outlook.com">kidsmybook@outlook.com</a>
+          <a href={STUDIO_TEL_HREF}>{STUDIO_TEL_DISPLAY}</a>
+          <a href={`mailto:${STUDIO_EMAIL}`}>{STUDIO_EMAIL}</a>
         </p>
         <p>{t.footer.quote}</p>
         <p>{t.footer.privacy}</p>

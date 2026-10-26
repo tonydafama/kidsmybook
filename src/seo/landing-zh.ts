@@ -1,9 +1,10 @@
-/** zh-Hant copy for the P0 organic landings. Prerender and the Traditional UI share this file. */
+/** zh-Hant copy for the P0 organic landings. Prerender and the Traditional UI share this file. Programme whatsappText must match WA_QUOTE_ZH in src/seo/linkify.ts. */
 
 export const BLOG_INDEX_ZH = {
   title: "香港升學作品集・升小升中・ISBN 童書",
   description:
     "香港家長：升小學面試、升小面試班同 ISBN 出版作品集、升中 DSS／直資 portfolio，同導師制 ISBN 出版點樣成為可引用嘅亮點。私人報價，唔保證取錄。",
+  askQuote: "WhatsApp 問價",
 };
 
 export const PROGRAMME_ZH = {
@@ -50,7 +51,8 @@ export const PROGRAMME_ZH = {
   portfolioLink: "升學作品集點樣用一本書",
   ctaTitle: "私人報價，先了解再講範圍",
   ctaBody: "網站唔公開價目。WhatsApp 或電郵講吓小朋友年齡、興趣同目標學校，我哋先私人報價。",
-  whatsappText: "想了解 12 個月導師制小朋友出書計劃",
+  whatsappLabel: "WhatsApp 講年齡＋興趣",
+  whatsappText: "你好，想問小朋友出書計劃報價。年齡：＿＿；興趣：＿＿",
 };
 
 export const FAQ_PAGE_ZH = {

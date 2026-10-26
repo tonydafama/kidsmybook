@@ -1,6 +1,6 @@
 import { useEffect, useMemo, type ReactNode } from "react";
 import { useLocale } from "./i18n/LocaleContext";
-import { safeHttpsUrl, splitTrailingPunct } from "./seo/linkify";
+import { STUDIO_EMAIL, linkifySegments, whatsappHref } from "./lib/contact";
 import { DEFAULT_OG } from "./seo/meta";
 
 export const SITE_ORIGIN = "https://kidsmybook.com";
@@ -343,6 +343,10 @@ function appHref(path: string): string {
 
 const WHATSAPP_NUMBER = import.meta.env.VITE_WHATSAPP_NUMBER || "85291214157";
 
+function waLink(text: string): string {
+  return whatsappHref(text, WHATSAPP_NUMBER);
+}
+
 const BLOG_MODULES = import.meta.glob("../blog/*.md", {
   query: "?raw",
   import: "default",
@@ -393,33 +397,32 @@ function getLocalizedPostMeta(slug: string, locale: string): Pick<PostMeta, "tit
   };
 }
 
-function inlineFormat(text: string): ReactNode {
-  // light markdown: https links, **bold**, *italic*, `code`
+function inlineFormat(text: string, whatsappText: string): ReactNode {
+  // light markdown: https links, emails, studio phone, **bold**, *italic*, `code`
   const parts: ReactNode[] = [];
-  const re = /(https:\/\/[^\s<>"']+|\*\*[^*]+\*\*|\*[^*]+\*|`[^`]+`)/g;
+  const re =
+    /(https:\/\/[^\s<>"']+|[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}|(?:\+?852[\s-]?)?9121[\s-]?4157|\*\*[^*]+\*\*|\*[^*]+\*|`[^`]+`)/g;
   let last = 0;
   let m: RegExpExecArray | null;
   let key = 0;
   while ((m = re.exec(text)) !== null) {
     if (m.index > last) parts.push(text.slice(last, m.index));
     const token = m[0];
-    if (token.startsWith("https://")) {
-      const { href, rest } = splitTrailingPunct(token);
-      const safe = safeHttpsUrl(href);
-      if (safe) {
-        const external = !safe.includes("://kidsmybook.com") && !safe.includes("://www.kidsmybook.com");
-        parts.push(
-          <a key={key++} href={safe} {...(external ? { target: "_blank", rel: "noreferrer" } : {})}>
-            {safe}
-          </a>,
-        );
-      } else {
-        parts.push(href);
-      }
-      if (rest) parts.push(rest);
-    } else if (token.startsWith("**")) parts.push(<strong key={key++}>{token.slice(2, -2)}</strong>);
+    if (token.startsWith("**")) parts.push(<strong key={key++}>{token.slice(2, -2)}</strong>);
+    else if (token.startsWith("`")) parts.push(<code key={key++}>{token.slice(1, -1)}</code>);
     else if (token.startsWith("*")) parts.push(<em key={key++}>{token.slice(1, -1)}</em>);
-    else parts.push(<code key={key++}>{token.slice(1, -1)}</code>);
+    else {
+      for (const part of linkifySegments(token, whatsappText)) {
+        if (part.type === "text") parts.push(part.text);
+        else {
+          parts.push(
+            <a key={key++} href={part.href} {...(part.external ? { target: "_blank", rel: "noreferrer" } : {})}>
+              {part.text}
+            </a>,
+          );
+        }
+      }
+    }
     last = m.index + token.length;
   }
   if (last < text.length) parts.push(text.slice(last));
@@ -493,7 +496,7 @@ export function upsertJsonLd(id: string, data: Record<string, unknown> | null) {
 
 function BlogIndexPage() {
   const { t, locale } = useLocale();
-  const whatsapp = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(t.whatsapp.blog)}`;
+  const whatsapp = waLink(t.whatsapp.blog);
   const sorted = useMemo(() => {
     return [...POSTS]
       .sort((a, b) => b.date.localeCompare(a.date))
@@ -536,6 +539,11 @@ function BlogIndexPage() {
         <span className="section-kicker">{t.blog.kicker}</span>
         <h1>{t.blog.indexTitle}</h1>
         <p className="meta">{t.blog.indexDesc}</p>
+        <div className="cta-row">
+          <a className="btn primary" href={whatsapp} target="_blank" rel="noreferrer" data-cta-location="blog_index">
+            {t.blog.askQuote}
+          </a>
+        </div>
         <div className="service-grid">
           {sorted.map((p) => (
             <a key={p.slug} className="service-card link-card" href={appHref(`/blog/${p.slug}`)}>
@@ -549,9 +557,16 @@ function BlogIndexPage() {
             </a>
           ))}
         </div>
+      </section>
+      <section className="panel final-cta">
+        <h2>{t.blog.askQuote}</h2>
+        <p>{t.footer.quote}</p>
         <div className="cta-row">
-          <a className="btn ghost" href={whatsapp} target="_blank" rel="noreferrer">
-            {t.nav.whatsapp}
+          <a className="btn primary" href={whatsapp} target="_blank" rel="noreferrer" data-cta-location="blog_index">
+            {t.blog.askQuote}
+          </a>
+          <a className="btn ghost" href={`mailto:${STUDIO_EMAIL}`}>
+            {STUDIO_EMAIL}
           </a>
         </div>
       </section>
@@ -568,9 +583,7 @@ function BlogPostPage({ slug }: { slug: string }) {
     if (!raw) return [] as MdBlock[];
     return parseMarkdownBlocks(raw);
   }, [slug, locale]);
-  const whatsapp = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
-    localized.title ? t.whatsapp.blogPost(localized.title) : t.whatsapp.blog,
-  )}`;
+  const whatsapp = waLink(localized.title ? t.whatsapp.blogPost(localized.title) : t.whatsapp.blog);
   const pageUrl = `${SITE_ORIGIN}/blog/${slug}`;
   const inLanguage = locale === "en" ? "en" : locale === "zh-Hans" ? "zh-Hans" : "zh-Hant";
 
@@ -658,23 +671,23 @@ function BlogPostPage({ slug }: { slug: string }) {
         <div className="blog-post__body" itemProp="articleBody">
           {blocks.length === 0 && <p>_文章內容暫時未能載入。_</p>}
           {blocks.map((b, i) => {
-            if (b.kind === "h2") return <h2 key={i}>{inlineFormat(b.text)}</h2>;
-            if (b.kind === "h3") return <h3 key={i}>{inlineFormat(b.text)}</h3>;
-            if (b.kind === "quote") return <blockquote key={i}>{inlineFormat(b.text)}</blockquote>;
+            if (b.kind === "h2") return <h2 key={i}>{inlineFormat(b.text, t.whatsapp.blog)}</h2>;
+            if (b.kind === "h3") return <h3 key={i}>{inlineFormat(b.text, t.whatsapp.blog)}</h3>;
+            if (b.kind === "quote") return <blockquote key={i}>{inlineFormat(b.text, t.whatsapp.blog)}</blockquote>;
             if (b.kind === "ul")
               return (
                 <ul key={i}>
                   {b.items.map((item, j) => (
-                    <li key={j}>{inlineFormat(item)}</li>
+                    <li key={j}>{inlineFormat(item, t.whatsapp.blog)}</li>
                   ))}
                 </ul>
               );
-            return <p key={i}>{inlineFormat(b.text)}</p>;
+            return <p key={i}>{inlineFormat(b.text, t.whatsapp.blog)}</p>;
           })}
         </div>
         <div className="social-share">
           <span className="social-share-label">Share:</span>
-          <a href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(localized.title + " " + pageUrl)}`} target="_blank" rel="noreferrer" className="share-btn share-wa">WhatsApp</a>
+          <a href={waLink(`${localized.title} ${pageUrl}`)} target="_blank" rel="noreferrer" className="share-btn share-wa">WhatsApp</a>
           <a href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(pageUrl)}`} target="_blank" rel="noreferrer" className="share-btn share-fb">Facebook</a>
           <a href={`https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(pageUrl)}&title=${encodeURIComponent(localized.title)}`} target="_blank" rel="noreferrer" className="share-btn share-in">LinkedIn</a>
         </div>
