@@ -18,6 +18,13 @@ interface PostMeta {
 
 const POSTS: PostMeta[] = [
   {
+    slug: "poa-discretionary-vs-knocking-published-book",
+    title: "官津小一自行分配唔使作品集：邊啲場面先要帶正式出版物",
+    excerpt: "Kidsmybook 第一句係出書連實體書店上架：導師制正式印刷之後，按題材同配套走香港實體書店。升學作品集係第二層用途。官津小一自行分配按教育局公開說明，家長唔使準備作品集，學校亦唔可以就已學課程知識做測驗或面試。直資、私立同國際學校如果收薄文件或者當日容許帶實物，先至係帶一本正式出版物、指住一頁講嘅場面。叩門唔係自行分配。私人報價，唔保證每間分店有貨，亦唔保證取錄。",
+    date: "2026-10-28",
+    readMin: 8,
+  },
+  {
     slug: "clear-book-personal-learning-file-published-book",
     title: "升中 Clear Book／個人學習檔案：點樣放一本正式出版物",
     excerpt: "Kidsmybook 第一句係出書連實體書店上架：導師制正式印刷之後，按題材同配套走香港實體書店。升中 Clear Book 同個人學習檔案係第二層用途。成績表、證書同自述仍然要交，書唔取代呢三樣。放最前一頁 A4：書名、小朋友做過咩、ISBN，可加一句實體書店上架路徑。唔好將成本書影印入 Clear Book。面試當日帶實體書，指住一頁講。時間緊就等下一個申請周期，唔好趕一本弱書。私人報價，唔保證每間分店有貨，亦唔保證取錄。",
