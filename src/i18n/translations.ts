@@ -287,7 +287,7 @@ const zhHant: Translations = {
   },
   hero: {
     eyebrow: "香港 · 兒童出書 · 實體書店上架",
-    lead: "12 個月導師制：正式印刷，再按題材走三聯、商務、中華等書店平台路徑。升學作品集係之後可以引用嘅成果。",
+    lead: "12 個月導師制：正式印刷，再按題材走香港實體書店上架／發行路徑。升學作品集係之後可以引用嘅成果。",
     generateCover: "生成封面",
     bookConsult: "預約諮詢",
     featuredAlt: "Hilary 新書發布會",
@@ -583,7 +583,7 @@ const zhHans: Translations = {
   },
   hero: {
     ...zhHant.hero,
-    lead: "12 个月导师制：正式印刷，再按题材走三联、商务、中华等书店平台路径。升学作品集是之后可以引用的成果。",
+    lead: "12 个月导师制：正式印刷，再按题材走香港实体书店上架／发行路径。升学作品集是之后可以引用的成果。",
     generateCover: "生成封面",
     bookConsult: "预约咨询",
     featuredAlt: "Hilary 新书发布会",
@@ -816,9 +816,9 @@ const zhHans: Translations = {
   shudianPage: SHUDIAN_HANS,
   aboutPage: ABOUT_HANS,
   seo: {
-    homeTitle: "Kidsmybook｜儿童出书・实体书店上架｜三联／商务／中华路径",
+    homeTitle: "Kidsmybook｜儿童出书・实体书店上架｜香港实体书店上架／发行路径",
     homeDesc:
-      "香港儿童出版工作室。12 个月导师制，把小朋友的兴趣做成正式印刷的书，并走实体书店平台上架路径（三联、商务、中华等安排视题材和配套）。ISBN 不等于每间分店都有货。升学作品集是次要用途。私人报价：WhatsApp。",
+      "香港儿童出版工作室。12 个月导师制，把小朋友的兴趣做成正式印刷的书，并走香港实体书店上架／发行路径（视题材和配套）。ISBN 不等于每间分店都有货。升学作品集是次要用途。私人报价：WhatsApp。",
     servicesTitle: "服务｜Kidsmybook 六项儿童成就出版",
     servicesDesc:
       "出版计划、新书发布会、展览、媒体公关、直播和升学作品集，可全案或单项咨询。私人报价，WhatsApp。Author Programme、Book Launch、Exhibition、Media & PR、Live Streaming、Portfolio Package。",
@@ -865,7 +865,7 @@ const en: Translations = {
   },
   hero: {
     eyebrow: "Hong Kong · Children's books · Bookstore shelves",
-    lead: "Twelve mentored months: a formal print run, then a listing path on bookstore platforms such as Joint Publishing, Commercial Press, and Chung Hwa. An admissions portfolio is the later use.",
+    lead: "Twelve mentored months: a formal print run, then a Hong Kong physical bookstore listing / distribution path. An admissions portfolio is the later use.",
     generateCover: "Generate cover",
     bookConsult: "Book a consultation",
     featuredAlt: "Hilary book launch",
@@ -1110,7 +1110,7 @@ const en: Translations = {
   seo: {
     homeTitle: "Kidsmybook | Children's books on Hong Kong bookstore shelves",
     homeDesc:
-      "Hong Kong children's publishing studio. A 12-month mentored programme prints a child's book and arranges a bookstore-platform listing path (Joint Publishing, Commercial Press, Chung Hwa, depending on the title). An ISBN is not a shelf. An admissions portfolio is secondary. Quoted privately via WhatsApp.",
+      "Hong Kong children's publishing studio. A 12-month mentored programme prints a child's book and arranges a Hong Kong physical bookstore listing / distribution path, depending on the title. An ISBN is not a shelf. An admissions portfolio is secondary. Quoted privately via WhatsApp.",
     servicesTitle: "Services | Kidsmybook six achievement programmes",
     servicesDesc: "Author Programme, Book Launch, Exhibition, Media & PR, Live Streaming, Portfolio Package.",
     caseStudiesTitle: "Case Studies | Kidsmybook",

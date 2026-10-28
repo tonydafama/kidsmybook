@@ -1,12 +1,12 @@
 # Kidsmybook — Hong Kong's Child-Authored Book Publishing Programme
 
-**[kidsmybook.com](https://kidsmybook.com)** helps Hong Kong families — especially Top Talent Pass, Quality Migrant, and high-achieving local families — turn a child's genuine interest into a **professor-reviewed, physically published book** placed in major Hong Kong bookstores (三聯、商務、中華).
+**[kidsmybook.com](https://kidsmybook.com)** helps Hong Kong families — especially Top Talent Pass, Quality Migrant, and high-achieving local families — turn a child's genuine interest into a **professor-reviewed, physically published book** placed in major Hong Kong bookstores (香港實體書店).
 
 ## Why a Published Book for School Admissions?
 
 Hong Kong's top international and Direct Subsidy Scheme schools receive hundreds of near-identical portfolios: piano grades, swimming certificates, maths competition trophies. A **child-authored book with university professor endorsement** is the one portfolio item that cannot be faked or mass-produced.
 
-- 📚 Physical book placed in San Lian, Commercial Press, Chung Hwa bookstores
+- 📚 Physical book placed on a Hong Kong physical bookstore listing / distribution path
 - 🎓 Co-reviewed by university professors — independent academic credibility
 - 🏫 Designed as a Primary 1 / international school admissions asset
 - 🌏 Trilingual support (Traditional Chinese, Simplified Chinese, English)

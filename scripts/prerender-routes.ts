@@ -8,8 +8,6 @@ import fs from "node:fs";
 import path from "node:path";
 import {
   STUDIO_EMAIL,
-  STUDIO_TEL_DISPLAY,
-  STUDIO_TEL_HREF,
   WA_QUOTE_ZH,
   linkifyHtml,
   whatsappHref,
@@ -127,7 +125,7 @@ const SERVICES: ServiceCopy[] = [
 
 function inline(text: string): string {
   const re =
-    /(https:\/\/[^\s<>"']+|[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}|(?:\+?852[\s-]?)?9121[\s-]?4157|\*\*[^*]+\*\*|\*[^*]+\*|`[^`]+`)/g;
+    /(https:\/\/[^\s<>"']+|[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}|\*\*[^*]+\*\*|\*[^*]+\*|`[^`]+`)/g;
   let last = 0;
   let out = "";
   let match: RegExpExecArray | null;
@@ -247,8 +245,7 @@ function navHtml(): string {
         <a href="${SITE_ORIGIN}/blog">文章</a>
         <a href="${SITE_ORIGIN}/case-studies">個案</a>
         <a href="${SITE_ORIGIN}/about">關於我們</a>
-        <a href="${quoteWa()}">WhatsApp 問價</a>
-        <a href="${STUDIO_TEL_HREF}">${STUDIO_TEL_DISPLAY}</a>
+        <a href="${quoteWa()}">WhatsApp @kidsmybook</a>
         <a href="mailto:${STUDIO_EMAIL}">${STUDIO_EMAIL}</a>
       </nav>`;
 }
@@ -260,7 +257,7 @@ function linkList(links: { href: string; label: string }[]): string {
 }
 
 function waLine(): string {
-  return `        <p>私人報價。<a href="${quoteWa()}">WhatsApp 問價</a> · <a href="${STUDIO_TEL_HREF}">${STUDIO_TEL_DISPLAY}</a> · <a href="mailto:${STUDIO_EMAIL}">${STUDIO_EMAIL}</a></p>`;
+  return `        <p>私人報價。<a href="${quoteWa()}">WhatsApp @kidsmybook</a> · <a href="mailto:${STUDIO_EMAIL}">${STUDIO_EMAIL}</a></p>`;
 }
 
 function pageWrap(inner: string): string {
@@ -510,7 +507,7 @@ function staticRoutes(posts: RouteDocument[]): RouteDocument[] {
     snapshotHtml: pageWrap(
       `        <h1>小朋友出書，走上實體書店上架</h1>
         <p>${escapeHtml(HOME_DESCRIPTION_ZH)}</p>
-        <p><a href="${quoteWa()}">WhatsApp 問價</a> · <a href="${STUDIO_TEL_HREF}">${STUDIO_TEL_DISPLAY}</a> · <a href="mailto:${STUDIO_EMAIL}">${STUDIO_EMAIL}</a></p>
+        <p><a href="${quoteWa()}">WhatsApp @kidsmybook</a> · <a href="mailto:${STUDIO_EMAIL}">${STUDIO_EMAIL}</a></p>
         <ul>
           <li><a href="${canonicalUrl("/programme")}">小朋友出書計劃</a></li>
           <li><a href="${canonicalUrl("/faq")}">常見問題</a></li>
@@ -710,7 +707,6 @@ ${waLine()}`,
             alternateName: "兒童成就出版",
             url: SITE_ORIGIN,
             email: "kidsmybook@outlook.com",
-            telephone: "+852-9121-4157",
             description: ABOUT_ZH.lead,
             areaServed: "Hong Kong",
             sameAs: [...ORGANIZATION_SAME_AS],
@@ -895,7 +891,18 @@ function outputFile(routePath: string): string {
   return path.join(DIST, routePath.slice(1), "index.html");
 }
 
+function assertNoChainOrStudioPhone(html: string, routePath: string) {
+  if (/三聯|商務印書館|中華書局|Joint Publishing|Commercial Press|Chung Hwa|San Lian|三联|商务印书馆|中华书局/.test(html)) {
+    throw new Error(`${routePath} names a bookstore chain`);
+  }
+  const stripped = html.replace(/https?:\\?\/\\?\/wa\.me\\?\/85291214157[^"'\\\s<]*/g, "");
+  if (/tel:\s*\+?852|9121[\s-]?4157|\+852[\s-]*9121/.test(stripped)) {
+    throw new Error(`${routePath} shows a studio phone number`);
+  }
+}
+
 function assertDocument(html: string, route: RouteDocument) {
+  assertNoChainOrStudioPhone(html, route.path);
   const canonical = canonicalUrl(route.path);
   if (!html.includes(`<title>${escapeHtml(route.title)}</title>`)) {
     throw new Error(`${route.path} title missing`);
@@ -926,7 +933,8 @@ function assertDocument(html: string, route: RouteDocument) {
     }
     const prefilled = `https://wa.me/85291214157?text=${encodeURIComponent(WA_QUOTE_ZH)}`;
     if (!html.includes(prefilled)) throw new Error("homepage missing prefilled WhatsApp enquiry link");
-    if (!html.includes('href="tel:+85291214157"')) throw new Error("homepage missing tel link");
+    if (html.includes('href="tel:')) throw new Error("homepage must not show a tel link");
+    if (!html.includes("WhatsApp @kidsmybook")) throw new Error("homepage missing WhatsApp @kidsmybook");
     if (!html.includes('href="mailto:kidsmybook@outlook.com"')) throw new Error("homepage missing mailto");
     if (html.includes('"availableLanguage": ["zh-Hant", "zh-Hans", "en"]')) {
       throw new Error("homepage schema must not claim English or Simplified as a separate site locale");
@@ -1062,7 +1070,10 @@ function assertDocument(html: string, route: RouteDocument) {
   if (route.path === SHUDIAN_PATH) {
     if (!html.includes("HowTo")) throw new Error(`${SHUDIAN_PATH} missing HowTo`);
     if (!html.includes("店長決定入貨")) throw new Error(`${SHUDIAN_PATH} missing stock honesty`);
-    if (!html.includes("唔係三聯書店")) throw new Error(`${SHUDIAN_PATH} must not claim to be Joint Publishing`);
+    if (!html.includes("唔係書店連鎖")) throw new Error(`${SHUDIAN_PATH} must say the studio is not a bookstore chain`);
+    if (/三聯|商務印書館|中華書局|Joint Publishing|Commercial Press|Chung Hwa/.test(html)) {
+      throw new Error(`${SHUDIAN_PATH} must not name a bookstore chain`);
+    }
     for (const href of [
       "/blog/bookstore-shelf-listing-for-parents",
       "/blog/self-publishing-vs-mentored-publishing",
@@ -1250,8 +1261,11 @@ function assertSources(posts: RouteDocument[]) {
   if (!worker.includes("改用 WhatsApp 問價") || !worker.includes("INTAKE_WA")) {
     throw new Error("intake form missing the WhatsApp escape hatch");
   }
-  if (!worker.includes("tel:+85291214157") && !worker.includes("STUDIO_TEL_HREF")) {
-    throw new Error("intake form missing a telephone link");
+  if (worker.includes("tel:+852") || worker.includes("STUDIO_TEL_HREF") || worker.includes("STUDIO_TEL_DISPLAY")) {
+    throw new Error("intake form must not publish a telephone link");
+  }
+  if (!worker.includes("WhatsApp @kidsmybook")) {
+    throw new Error("intake form missing WhatsApp @kidsmybook");
   }
   for (const slug of manifest) {
     const loc = `${SITE_ORIGIN}/blog/${slug}`;

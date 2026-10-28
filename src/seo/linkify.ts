@@ -6,8 +6,8 @@
 
 export const STUDIO_WHATSAPP_NUMBER = "85291214157";
 export const STUDIO_EMAIL = "kidsmybook@outlook.com";
-export const STUDIO_TEL_HREF = "tel:+85291214157";
-export const STUDIO_TEL_DISPLAY = "+852 9121 4157";
+/** Visible label for wa.me anchors. The href keeps the number for whatsapp_click. */
+export const WHATSAPP_LABEL = "@kidsmybook";
 
 /** Primary enquiry prefill. Age and interest blanks, no price. */
 export const WA_QUOTE_ZH = "你好，想問小朋友出書計劃報價。年齡：＿＿；興趣：＿＿";
@@ -24,7 +24,7 @@ const ALLOWED_HOSTS = new Set([
 ]);
 
 const TOKEN_RE =
-  /(https:\/\/[^\s<>"']+|[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}|(?:\+?852[\s-]?)?9121[\s-]?4157)/gi;
+  /(https:\/\/[^\s<>"']+|[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,})/gi;
 
 export type TextPart =
   | { type: "text"; text: string }
@@ -95,7 +95,8 @@ function decorateHttps(raw: string, whatsappText: string): TextPart[] {
     target = whatsappHref(whatsappText, digits);
   }
   const external = host !== "kidsmybook.com" && host !== "www.kidsmybook.com";
-  parts.push({ type: "link", text: href, href: target, external });
+  const linkText = host === "wa.me" ? WHATSAPP_LABEL : href;
+  parts.push({ type: "link", text: linkText, href: target, external });
   if (rest) parts.push({ type: "text", text: rest });
   return parts;
 }
@@ -111,9 +112,6 @@ function linkToken(token: string, whatsappText: string): TextPart[] {
   }
   if (token.includes("@")) {
     return [{ type: "link", text: token, href: `mailto:${token}`, external: false }];
-  }
-  if (/9121/.test(token) && /4157/.test(token)) {
-    return [{ type: "link", text: token, href: STUDIO_TEL_HREF, external: false }];
   }
   return [{ type: "text", text: token }];
 }

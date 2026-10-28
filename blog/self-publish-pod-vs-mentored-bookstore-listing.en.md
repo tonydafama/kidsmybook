@@ -1,6 +1,6 @@
 ---
 title: "Self-publishing, POD, and print-for-hire vs a mentored shelf path"
-description: "Self-publishing, print-for-hire, and print-on-demand usually stop at a printed copy. The mentored path prints the book, then arranges a Joint Publishing, Commercial Press, or Chung Hwa platform. Managers decide stock. Private quotation. No branch is guaranteed."
+description: "Self-publishing, print-for-hire, and print-on-demand usually stop at a printed copy. The mentored path prints the book, then arranges a Hong Kong physical bookstore listing / distribution path. Managers decide stock. Private quotation. No branch is guaranteed."
 date: 2026-10-18
 slug: "self-publish-pod-vs-mentored-bookstore-listing"
 tags: ["self-publishing", "POD", "bookstore", "Hong Kong"]
@@ -10,7 +10,7 @@ Hong Kong parents who want a child to publish often meet three shortcuts: a prin
 
 ## What self-publishing, print-for-hire, and POD usually deliver
 
-A self-funded book is often a family manuscript sent to a printer. Print-for-hire means someone else runs the press; the content and the distribution still depend on the file you hand over. Print-on-demand prints when someone orders, so stock risk is low, and distribution often stops at an online shop or copies the author carries. These paths can be right for a keepsake. They usually do not include a mentor walking the child through a finished book, or an arrangement onto Joint Publishing, Commercial Press, or Chung Hwa.
+A self-funded book is often a family manuscript sent to a printer. Print-for-hire means someone else runs the press; the content and the distribution still depend on the file you hand over. Print-on-demand prints when someone orders, so stock risk is low, and distribution often stops at an online shop or copies the author carries. These paths can be right for a keepsake. They usually do not include a mentor walking the child through a finished book, or an arrangement onto Hong Kong physical bookstores.
 
 ## What mentoring adds is not another certificate
 
@@ -18,7 +18,7 @@ Kidsmybook is a 12-month mentored plan, not a DIY template and not print-only. T
 
 ## Why a shelf is a separate threshold
 
-Printing and listing are separated by shop decisions. Joint Publishing, Commercial Press, and Chung Hwa are bookstore platforms. Kidsmybook is not those bookstores. Listing depends on the title and package. Managers decide stock, placement, and returns. No branch is guaranteed. "I have an ISBN", "I printed a hundred copies", and "this title reached a bookstore platform" are three different sentences. The hub is https://kidsmybook.com/kids-book-bookstore-listing . The number itself: https://kidsmybook.com/blog/isbn-is-not-bookstore-listing .
+Printing and listing are separated by shop decisions. Physical bookstores are independent shops. Kidsmybook is not a bookstore chain. Listing depends on the title and package. Managers decide stock, placement, and returns. No branch is guaranteed. "I have an ISBN", "I printed a hundred copies", and "this title reached a bookstore platform" are three different sentences. The hub is https://kidsmybook.com/kids-book-bookstore-listing . The number itself: https://kidsmybook.com/blog/isbn-is-not-bookstore-listing .
 
 ## Where an admissions portfolio sits
 
@@ -26,7 +26,7 @@ A portfolio is a second use after the book exists: an interviewer can see and he
 
 ## Can self-publishing or POD count as a bookstore shelf?
 
-No. A printed copy, or a print-on-demand link, is not a Joint Publishing, Commercial Press, or Chung Hwa arrangement. If the goal is a family keepsake, self-publishing and POD can be simple. If the goal is a formal print run and a bookstore platform, ask about the listing path, not only the book number.
+No. A printed copy, or a print-on-demand link, is not a Hong Kong physical bookstore listing / distribution path. If the goal is a family keepsake, self-publishing and POD can be simple. If the goal is a formal print run and a bookstore platform, ask about the listing path, not only the book number.
 
 ## How do we start?
 

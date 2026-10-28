@@ -2,7 +2,7 @@ import { Fragment } from "react";
 import { useLocale } from "../i18n/LocaleContext";
 import { WA_QUOTE_EN, WA_QUOTE_HANS, WA_QUOTE_ZH, linkifySegments } from "../lib/contact";
 
-/** Renders FAQ and other prose so wa.me, email, and the studio phone are real anchors. */
+/** Renders FAQ and other prose so wa.me and email are real anchors. wa.me labels read @kidsmybook. */
 export function LinkedText({ text, whatsappText }: { text: string; whatsappText?: string }) {
   const { locale } = useLocale();
   const prefill =

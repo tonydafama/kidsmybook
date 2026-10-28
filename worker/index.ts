@@ -1,4 +1,4 @@
-import { STUDIO_EMAIL, STUDIO_TEL_DISPLAY, STUDIO_TEL_HREF, WA_QUOTE_ZH, whatsappHref } from "../src/seo/linkify";
+import { STUDIO_EMAIL, WA_QUOTE_ZH, whatsappHref } from "../src/seo/linkify";
 import { markerComment, normalizeRoutePath, prerenderAssetPath } from "../src/seo/meta";
 import { englishSlugRedirect } from "../src/seo/slug-redirects";
 
@@ -593,7 +593,7 @@ document.addEventListener('click', function (event) {
     <textarea name="remark" rows="3" placeholder="想了解出版、發布會，或其他問題"></textarea>
   </details>
 
-  <p class="privacy">你提交的資料只用於 Kidsmybook 回覆這次諮詢（個人資料（私隱）條例）。未經同意，不會公開小朋友的姓名或學校。如需刪除，請 <a href="${INTAKE_WA}">WhatsApp</a> <a href="${STUDIO_TEL_HREF}">${STUDIO_TEL_DISPLAY}</a> 或電郵 <a href="mailto:${STUDIO_EMAIL}">${STUDIO_EMAIL}</a>。</p>
+  <p class="privacy">你提交的資料只用於 Kidsmybook 回覆這次諮詢（個人資料（私隱）條例）。未經同意，不會公開小朋友的姓名或學校。如需刪除，請 <a href="${INTAKE_WA}">WhatsApp @kidsmybook</a> 或電郵 <a href="mailto:${STUDIO_EMAIL}">${STUDIO_EMAIL}</a>。</p>
   <p class="escape"><a class="wa-escape" data-cta-location="intake" href="${INTAKE_WA}">改用 WhatsApp 問價</a> <a href="mailto:${STUDIO_EMAIL}">${STUDIO_EMAIL}</a></p>
   <button type="submit">提交諮詢</button>
 </form>

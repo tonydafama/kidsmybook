@@ -3,7 +3,7 @@ import { getLocalizedPostMeta, upsertJsonLd, SITE_ORIGIN } from "./BlogPages";
 import { LinkedText } from "./components/LinkedText";
 import { useLocale } from "./i18n/LocaleContext";
 import type { Locale } from "./i18n/locale";
-import { STUDIO_EMAIL, STUDIO_TEL_DISPLAY, STUDIO_TEL_HREF, whatsappHref as buildWhatsappHref } from "./lib/contact";
+import { STUDIO_EMAIL, whatsappHref as buildWhatsappHref } from "./lib/contact";
 import { CHECKLIST_PATH, FAQ_READING_ZH, GAOCAI_PATH, PORTFOLIO_READING_ZH, READING_ZH, SHENGXIAO_PATH, SHENGZHONG_PATH, SHUDIAN_PATH, XINGQU_PATH, type HubCopy } from "./seo/landing-zh";
 import { ORGANIZATION_SAME_AS, breadcrumbList, canonicalUrl, faqPageEntity } from "./seo/meta";
 
@@ -744,7 +744,6 @@ export function AboutPage() {
             alternateName: "兒童成就出版",
             url: SITE_ORIGIN,
             email: "kidsmybook@outlook.com",
-            telephone: "+852-9121-4157",
             description: page.lead,
             areaServed: "Hong Kong",
             sameAs: [...ORGANIZATION_SAME_AS],
@@ -773,9 +772,6 @@ export function AboutPage() {
           </a>
           <a className="btn ghost" href={`mailto:${STUDIO_EMAIL}`}>
             {STUDIO_EMAIL}
-          </a>
-          <a className="btn ghost" href={STUDIO_TEL_HREF}>
-            {STUDIO_TEL_DISPLAY}
           </a>
         </div>
       </section>

@@ -29,7 +29,7 @@ Kidsmybook's publishing programme includes **review and recommendation by univer
 The birth of a book requires a child to actively observe, think, and create. This sends a strong message to the interviewer: this child is not passively receiving spoon-fed education, but possesses the ability for self-driven learning.
 
 ### 3. The Impact of Physical Bookstore Listing
-When you place a physical book with an ISBN, perhaps even listed in Joint Publishing or Commercial Press, on the interview table, its visual impact and persuasiveness are unmatched by any A4 printed portfolio.
+When you place a physical book with an ISBN, perhaps even listed in Hong Kong physical bookstores, on the interview table, its visual impact and persuasiveness are unmatched by any A4 printed portfolio.
 
 ## Advice for Top Talent Pass Parents
 

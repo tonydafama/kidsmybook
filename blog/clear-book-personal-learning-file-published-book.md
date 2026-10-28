@@ -1,20 +1,20 @@
 ---
 title: "升中 Clear Book／個人學習檔案：點樣放一本正式出版物"
-description: "Kidsmybook 第一句係出書連實體書店上架：導師制正式印刷之後，按題材同配套走三聯、商務、中華等書店平台。升中 Clear Book 同個人學習檔案係第二層用途。成績表、證書同自述仍然要交，書唔取代呢三樣。放最前一頁 A4：書名、小朋友做過咩、ISBN，可加一句實體書店上架路徑。唔好將成本書影印入 Clear Book。面試當日帶實體書，指住一頁講。時間緊就等下一個申請周期，唔好趕一本弱書。私人報價，唔保證每間分店有貨，亦唔保證取錄。"
+description: "Kidsmybook 第一句係出書連實體書店上架：導師制正式印刷之後，按題材同配套走香港實體書店。升中 Clear Book 同個人學習檔案係第二層用途。成績表、證書同自述仍然要交，書唔取代呢三樣。放最前一頁 A4：書名、小朋友做過咩、ISBN，可加一句實體書店上架路徑。唔好將成本書影印入 Clear Book。面試當日帶實體書，指住一頁講。時間緊就等下一個申請周期，唔好趕一本弱書。私人報價，唔保證每間分店有貨，亦唔保證取錄。"
 date: "2026-10-27"
 slug: "clear-book-personal-learning-file-published-book"
 tags: ["升中", "Clear Book", "個人學習檔案", "實體書店", "ISBN"]
 ---
 
-家長搜「升中 Clear Book」或者「個人學習檔案」，下一句好多時係「將成績表、證書同自述夾齊，再將成本書影印入透明文件夾」。呢篇唔由文件夾開始。Kidsmybook 對外第一句係出書連實體書店上架：小朋友參與，約 12 個月導師制，先正式印刷，再按題材同配套，走三聯、商務、中華這一類實體書店平台嘅供貨路徑。升中作品集、Clear Book 同個人學習檔案可以引用呢份成果，但係第二層用途，唔係計劃嘅第一句，亦唔係學位。
+家長搜「升中 Clear Book」或者「個人學習檔案」，下一句好多時係「將成績表、證書同自述夾齊，再將成本書影印入透明文件夾」。呢篇唔由文件夾開始。Kidsmybook 對外第一句係出書連實體書店上架：小朋友參與，約 12 個月導師制，先正式印刷，再按題材同配套，走香港實體書店嘅供貨路徑。升中作品集、Clear Book 同個人學習檔案可以引用呢份成果，但係第二層用途，唔係計劃嘅第一句，亦唔係學位。
 
 Clear Book 喺呢篇係指家長帶去升中、直資或 DSS 面試、可以逐頁翻開嘅透明展示文件夾。個人學習檔案係學校或者家長用來放成績表、證書同自述嘅同一類文件。實際叫法、收唔收、頁數同可唔可以帶實物，一律以該校最新指引為準。下面先講條出版路上架本身係咩，再講呢個文件夾前面，一本正式出版物應該點放。
 
 ## 出書連實體書店上架，同升中 Clear Book 係咩關係？
 
-關係係：書先係一件做完嘅出版成果，Clear Book 同個人學習檔案先至決定點樣引用佢。條路唔係申請到一個書號就完。前面係約 12 個月導師制：諮詢、導師帶領創作、可有大學教授審閱、親子排版，然後先正式印刷。印刷完成，先至談實體書店上架。上架係發行商供貨：書去到三聯、商務、中華等平台之後，書店買手同店長決定入唔入貨、擺喺邊、賣幾耐、退唔退。Kidsmybook 唔係呢幾間書店。上架視題材同配套，唔係每本書自動出現喺每一間分店。平台說明：https://kidsmybook.com/kids-book-bookstore-listing 。階段：https://kidsmybook.com/programme 。
+關係係：書先係一件做完嘅出版成果，Clear Book 同個人學習檔案先至決定點樣引用佢。條路唔係申請到一個書號就完。前面係約 12 個月導師制：諮詢、導師帶領創作、可有大學教授審閱、親子排版，然後先正式印刷。印刷完成，先至談實體書店上架。上架係發行商供貨：書去到香港實體書店之後，書店買手同店長決定入唔入貨、擺喺邊、賣幾耐、退唔退。Kidsmybook 唔係書店連鎖。上架視題材同配套，唔係每本書自動出現喺每一間分店。平台說明：https://kidsmybook.com/kids-book-bookstore-listing 。階段：https://kidsmybook.com/programme 。
 
-所以文件夾上面可以引用嘅一句，係「有正式印刷，再有實體書店上架路徑」。唔係「我哋就係三聯、商務或者中華」，亦唔係「保證每間分店今日有貨」。店方決定入貨、陳列同退貨。ISBN 只係書號，唔等於書架：https://kidsmybook.com/blog/isbn-is-not-bookstore-listing 。面試場面點講同一條路徑：https://kidsmybook.com/blog/physical-bookstore-listing-for-hk-school-interview 。升中頁：https://kidsmybook.com/secondary-dss-admissions-portfolio 。
+所以文件夾上面可以引用嘅一句，係「有正式印刷，再有實體書店上架路徑」。唔係「我哋就係某間書店」，亦唔係「保證每間分店今日有貨」。店方決定入貨、陳列同退貨。ISBN 只係書號，唔等於書架：https://kidsmybook.com/blog/isbn-is-not-bookstore-listing 。面試場面點講同一條路徑：https://kidsmybook.com/blog/physical-bookstore-listing-for-hk-school-interview 。升中頁：https://kidsmybook.com/secondary-dss-admissions-portfolio 。
 
 ## 個人學習檔案通常要成績表、證書同自述，書可唔可以取代？
 
