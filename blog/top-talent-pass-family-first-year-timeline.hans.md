@@ -35,6 +35,6 @@ ISBN 和出版安排是整个 12 个月计划的一部分，不是面试前一�
 
 ## 怎样 WhatsApp 问第一年时间线和私人报价？
 
-网站不公开价目，也不保证录取。WhatsApp https://wa.me/85291214157?text=想了解高才通家庭第一年升学作品集时间线，请私人报价 或电邮 kidsmybook@outlook.com 。讲年龄、目标学校类型、面试大约什么时候，以及一个兴趣。如果时间只剩几天，我们会直接讲 12 个月计划赶不及。
+网站不公开价目，也不保证录取。WhatsApp @kidsmybook 或电邮 kidsmybook@outlook.com 。讲年龄、目标学校类型、面试大约什么时候，以及一个兴趣。如果时间只剩几天，我们会直接讲 12 个月计划赶不及。
 
-> 私人报价。WhatsApp https://wa.me/85291214157?text=想了解高才通家庭第一年升学作品集时间线，请私人报价 · 不保证录取 · https://kidsmybook.com/top-talent-pass-admissions-portfolio
+> 私人报价。WhatsApp @kidsmybook · 不保证录取 · https://kidsmybook.com/top-talent-pass-admissions-portfolio

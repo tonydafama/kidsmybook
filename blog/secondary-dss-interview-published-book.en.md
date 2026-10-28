@@ -22,6 +22,6 @@ No. A publishing studio is not an admissions agent and does not guarantee a DSS,
 
 Primary use: https://kidsmybook.com/blog/primary-interview-how-to-use-a-book . International and local interviews: https://kidsmybook.com/blog/international-vs-local-school-interview-portfolio . Hub: https://kidsmybook.com/admissions-portfolio . Secondary page: https://kidsmybook.com/secondary-dss-admissions-portfolio . Primary interview page: https://kidsmybook.com/primary-one-interview-portfolio .
 
-WhatsApp https://wa.me/85291214157 with age, current year, whether the target is DSS, direct-subsidy, or another secondary, and one interest. The quotation is private. Prices are not on the site.
+WhatsApp @kidsmybook with age, current year, whether the target is DSS, direct-subsidy, or another secondary, and one interest. The quotation is private. Prices are not on the site.
 
-> Private quotation. WhatsApp https://wa.me/85291214157 · no place is guaranteed · https://kidsmybook.com/admissions-portfolio
+> Private quotation. WhatsApp @kidsmybook · no place is guaranteed · https://kidsmybook.com/admissions-portfolio

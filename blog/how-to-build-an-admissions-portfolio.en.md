@@ -39,6 +39,6 @@ You can narrow the file you already have and choose one existing piece the child
 
 ## How do families ask for a private quotation?
 
-Prices are not on the site, and no place is guaranteed. WhatsApp https://wa.me/85291214157 or email kidsmybook@outlook.com . Share the age, the target school type, and the thinnest part of the file. Programme: https://kidsmybook.com/programme . FAQ: https://kidsmybook.com/faq .
+Prices are not on the site, and no place is guaranteed. WhatsApp @kidsmybook or email kidsmybook@outlook.com . Share the age, the target school type, and the thinnest part of the file. Programme: https://kidsmybook.com/programme . FAQ: https://kidsmybook.com/faq .
 
-> Private quotation. WhatsApp https://wa.me/85291214157 · no place is guaranteed · https://kidsmybook.com/admissions-portfolio
+> Private quotation. WhatsApp @kidsmybook · no place is guaranteed · https://kidsmybook.com/admissions-portfolio

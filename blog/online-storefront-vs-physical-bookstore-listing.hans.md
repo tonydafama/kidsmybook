@@ -30,6 +30,6 @@ tags: ["网上书店", "电子书", "实体书店", "香港"]
 
 ## 怎样私人报价？
 
-WhatsApp https://wa.me/85291214157 或电邮 kidsmybook@outlook.com ，讲小朋友年龄，以及一个想做完的兴趣。如果已经听过「网上有售」，可以讲清楚现在手上是网店商品页、电子书目录，还是想问香港实体书店上架／发行路径。
+WhatsApp @kidsmybook 或电邮 kidsmybook@outlook.com ，讲小朋友年龄，以及一个想做完的兴趣。如果已经听过「网上有售」，可以讲清楚现在手上是网店商品页、电子书目录，还是想问香港实体书店上架／发行路径。
 
-> 私人报价。WhatsApp https://wa.me/85291214157 · kidsmybook@outlook.com · 出书连上架：https://kidsmybook.com/kids-book-bookstore-listing
+> 私人报价。WhatsApp @kidsmybook · kidsmybook@outlook.com · 出书连上架：https://kidsmybook.com/kids-book-bookstore-listing

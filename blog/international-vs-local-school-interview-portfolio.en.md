@@ -22,6 +22,6 @@ Yes, and they should. The story is where the interest came from, what was observ
 
 That difference does not guarantee an international or local place. Kidsmybook is not an admissions agent. Primary use: https://kidsmybook.com/blog/primary-interview-how-to-use-a-book . Secondary, DSS, and direct subsidy: https://kidsmybook.com/blog/secondary-dss-interview-published-book . Hub: https://kidsmybook.com/admissions-portfolio .
 
-WhatsApp https://wa.me/85291214157 and say which school types you are considering together. The quotation is private. Prices are not on the site.
+WhatsApp @kidsmybook and say which school types you are considering together. The quotation is private. Prices are not on the site.
 
-> Private quotation. WhatsApp https://wa.me/85291214157 · no place is guaranteed · https://kidsmybook.com/admissions-portfolio
+> Private quotation. WhatsApp @kidsmybook · no place is guaranteed · https://kidsmybook.com/admissions-portfolio

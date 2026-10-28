@@ -30,6 +30,6 @@ Secondary, DSS, and direct-subsidy interviews more often ask about a sustained i
 
 ## How do we ask for a private quote on WhatsApp?
 
-Prices are not on the site, and no place is guaranteed. WhatsApp https://wa.me/85291214157 or email kidsmybook@outlook.com with age, whether the target is primary, secondary, or an international school, roughly when the interview is, and one interest. If only a few days remain, we will say the 12-month plan cannot be finished in time.
+Prices are not on the site, and no place is guaranteed. WhatsApp @kidsmybook or email kidsmybook@outlook.com with age, whether the target is primary, secondary, or an international school, roughly when the interview is, and one interest. If only a few days remain, we will say the 12-month plan cannot be finished in time.
 
-> Private quotation. WhatsApp https://wa.me/85291214157 · not an interview class · no place is guaranteed · https://kidsmybook.com/primary-one-interview-portfolio
+> Private quotation. WhatsApp @kidsmybook · not an interview class · no place is guaranteed · https://kidsmybook.com/primary-one-interview-portfolio

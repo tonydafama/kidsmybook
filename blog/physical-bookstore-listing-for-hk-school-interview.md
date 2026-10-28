@@ -42,6 +42,6 @@ ISBN 同書架係兩件事，呢篇唔再重講成篇對照：https://kidsmybook
 
 ## 點樣私人報價？
 
-網站唔公開價目，亦唔保證書架位置或學校取錄。報價之前可以先講三樣：小朋友年齡同而家讀邊個階段、目標係升小、升中定國際學校、同一個會自己翻開嚟做嘅興趣。如果已經有人話「有 ISBN 就等於書店有貨」，可以一併講，我哋會先分開書號、印刷本同實體上架路徑。WhatsApp https://wa.me/85291214157 或電郵 kidsmybook@outlook.com 。
+網站唔公開價目，亦唔保證書架位置或學校取錄。報價之前可以先講三樣：小朋友年齡同而家讀邊個階段、目標係升小、升中定國際學校、同一個會自己翻開嚟做嘅興趣。如果已經有人話「有 ISBN 就等於書店有貨」，可以一併講，我哋會先分開書號、印刷本同實體上架路徑。WhatsApp @kidsmybook 或電郵 kidsmybook@outlook.com 。
 
-> 私人報價。WhatsApp https://wa.me/85291214157 · kidsmybook@outlook.com · 出書連實體書店上架：https://kidsmybook.com/kids-book-bookstore-listing
+> 私人報價。WhatsApp @kidsmybook · kidsmybook@outlook.com · 出書連實體書店上架：https://kidsmybook.com/kids-book-bookstore-listing

@@ -39,6 +39,6 @@ tags: ["升小面试", "K2", "K3", "实体书店", "时间表"]
 
 ## 怎样私人报价？
 
-网站不公开价目，也不保证书架位置或学校录取。报价之前可以先分清三句：现在要的是面试班操练、一份电子稿，还是正式印刷加实体书店上架路径；ISBN 只是书号，不等于实体书店已经进货；店方决定进货、陈列和退货，不保证每间分店有货。WhatsApp https://wa.me/85291214157 或电邮 kidsmybook@outlook.com 。讲小朋友现在读 K1、K2 还是 K3、目标小学大约什么时候见、以及一个兴趣。如果时间只剩几天，我们会直接讲 12 个月计划赶不及。为什么 ISBN 不等于上架：https://kidsmybook.com/blog/isbn-is-not-bookstore-listing 。自费、代印和按需印刷多数停在哪里：https://kidsmybook.com/blog/self-publish-pod-vs-mentored-bookstore-listing 。书展和全年上架：https://kidsmybook.com/blog/book-fair-booth-vs-year-round-bookstore-listing 。网上有售和实体架：https://kidsmybook.com/blog/online-storefront-vs-physical-bookstore-listing 。实体上架对家长可以意味什么：https://kidsmybook.com/blog/bookstore-shelf-listing-for-parents 。
+网站不公开价目，也不保证书架位置或学校录取。报价之前可以先分清三句：现在要的是面试班操练、一份电子稿，还是正式印刷加实体书店上架路径；ISBN 只是书号，不等于实体书店已经进货；店方决定进货、陈列和退货，不保证每间分店有货。WhatsApp @kidsmybook 或电邮 kidsmybook@outlook.com 。讲小朋友现在读 K1、K2 还是 K3、目标小学大约什么时候见、以及一个兴趣。如果时间只剩几天，我们会直接讲 12 个月计划赶不及。为什么 ISBN 不等于上架：https://kidsmybook.com/blog/isbn-is-not-bookstore-listing 。自费、代印和按需印刷多数停在哪里：https://kidsmybook.com/blog/self-publish-pod-vs-mentored-bookstore-listing 。书展和全年上架：https://kidsmybook.com/blog/book-fair-booth-vs-year-round-bookstore-listing 。网上有售和实体架：https://kidsmybook.com/blog/online-storefront-vs-physical-bookstore-listing 。实体上架对家长可以意味什么：https://kidsmybook.com/blog/bookstore-shelf-listing-for-parents 。
 
-> 私人报价。WhatsApp https://wa.me/85291214157 · kidsmybook@outlook.com · 出书连实体书店上架：https://kidsmybook.com/kids-book-bookstore-listing
+> 私人报价。WhatsApp @kidsmybook · kidsmybook@outlook.com · 出书连实体书店上架：https://kidsmybook.com/kids-book-bookstore-listing

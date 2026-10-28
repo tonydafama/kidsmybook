@@ -38,4 +38,4 @@ tags: ["ISBN", "书刊注册", "童书", "香港"]
 
 不等于。书号令一本书更容易被识别、订购和引用，面试作品集也比较容易讲成「正式出版物」，而不是只是一本纪念册。但书号本身不证明内容深度，也不保证任何学校录取。Kidsmybook 在 12 个月计划里面，会按正式出版要求处理书号和出版相关安排，家庭不用自己从零摸索；教授审阅、小朋友参与和作品集包装才是升学叙事的主体。想先看计划：https://kidsmybook.com/programme 。常见问题：https://kidsmybook.com/faq 。
 
-> 私人报价。WhatsApp https://wa.me/85291214157 · kidsmybook@outlook.com 。本文只供家长理解公开资料，申请细节以香港公共图书馆书刊注册组最新公布为准。
+> 私人报价。WhatsApp @kidsmybook · kidsmybook@outlook.com 。本文只供家长理解公开资料，申请细节以香港公共图书馆书刊注册组最新公布为准。

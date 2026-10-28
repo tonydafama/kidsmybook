@@ -35,6 +35,6 @@ ISBN 同出版安排係成個 12 個月計劃嘅一部分，唔係面試前一�
 
 ## 點樣 WhatsApp 問第一年時間線同私人報價？
 
-網站唔公開價目，亦唔保證取錄。WhatsApp https://wa.me/85291214157?text=想了解高才通家庭第一年升學作品集時間線，請私人報價 或電郵 kidsmybook@outlook.com 。講年齡、目標學校類型、面試大約幾時，同一個興趣。如果時間只剩幾日，我哋會直接講 12 個月計劃趕唔切。
+網站唔公開價目，亦唔保證取錄。WhatsApp @kidsmybook 或電郵 kidsmybook@outlook.com 。講年齡、目標學校類型、面試大約幾時，同一個興趣。如果時間只剩幾日，我哋會直接講 12 個月計劃趕唔切。
 
-> 私人報價。WhatsApp https://wa.me/85291214157?text=想了解高才通家庭第一年升學作品集時間線，請私人報價 · 唔保證取錄 · https://kidsmybook.com/top-talent-pass-admissions-portfolio
+> 私人報價。WhatsApp @kidsmybook · 唔保證取錄 · https://kidsmybook.com/top-talent-pass-admissions-portfolio

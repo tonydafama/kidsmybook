@@ -39,6 +39,6 @@ tags: ["升中面試", "小四", "小五", "實體書店", "時間表"]
 
 ## 點樣私人報價？
 
-網站唔公開價目，亦唔保證書架位置或學校取錄。報價之前可以先分清三句：而家要嘅係面試班操練、一份電子稿，定係正式印刷加實體書店上架路徑；ISBN 只係書號，唔等於實體書店已經入貨；店方決定入貨、陳列同退貨，唔保證每間分店有貨。書亦唔代替成績表同證書。WhatsApp https://wa.me/85291214157 或電郵 kidsmybook@outlook.com 。講小朋友而家讀小三、小四、小五定小六、目標中學大約幾時見、同一個興趣。如果時間只剩幾日，我哋會直接講 12 個月計劃趕唔切。點解 ISBN 唔等於上架：https://kidsmybook.com/blog/isbn-is-not-bookstore-listing 。自費、代印同按需印刷多數停喺邊：https://kidsmybook.com/blog/self-publish-pod-vs-mentored-bookstore-listing 。書展同全年上架：https://kidsmybook.com/blog/book-fair-booth-vs-year-round-bookstore-listing 。網上有售同實體架：https://kidsmybook.com/blog/online-storefront-vs-physical-bookstore-listing 。實體上架對家長可以意味住咩：https://kidsmybook.com/blog/bookstore-shelf-listing-for-parents 。
+網站唔公開價目，亦唔保證書架位置或學校取錄。報價之前可以先分清三句：而家要嘅係面試班操練、一份電子稿，定係正式印刷加實體書店上架路徑；ISBN 只係書號，唔等於實體書店已經入貨；店方決定入貨、陳列同退貨，唔保證每間分店有貨。書亦唔代替成績表同證書。WhatsApp @kidsmybook 或電郵 kidsmybook@outlook.com 。講小朋友而家讀小三、小四、小五定小六、目標中學大約幾時見、同一個興趣。如果時間只剩幾日，我哋會直接講 12 個月計劃趕唔切。點解 ISBN 唔等於上架：https://kidsmybook.com/blog/isbn-is-not-bookstore-listing 。自費、代印同按需印刷多數停喺邊：https://kidsmybook.com/blog/self-publish-pod-vs-mentored-bookstore-listing 。書展同全年上架：https://kidsmybook.com/blog/book-fair-booth-vs-year-round-bookstore-listing 。網上有售同實體架：https://kidsmybook.com/blog/online-storefront-vs-physical-bookstore-listing 。實體上架對家長可以意味住咩：https://kidsmybook.com/blog/bookstore-shelf-listing-for-parents 。
 
-> 私人報價。WhatsApp https://wa.me/85291214157 · kidsmybook@outlook.com · 出書連實體書店上架：https://kidsmybook.com/kids-book-bookstore-listing
+> 私人報價。WhatsApp @kidsmybook · kidsmybook@outlook.com · 出書連實體書店上架：https://kidsmybook.com/kids-book-bookstore-listing

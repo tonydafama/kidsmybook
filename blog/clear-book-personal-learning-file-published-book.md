@@ -49,6 +49,6 @@ Clear Book 喺呢篇係指家長帶去升中、直資或 DSS 面試、可以逐�
 
 ## 點樣私人報價？
 
-網站唔公開價目，亦唔保證書架位置或學校取錄。報價之前可以先講三樣：小朋友而家讀邊個年級、目標係直資、DSS 定其他中學、同一個會自己翻開嚟做嘅興趣。WhatsApp https://wa.me/85291214157 或電郵 kidsmybook@outlook.com 。
+網站唔公開價目，亦唔保證書架位置或學校取錄。報價之前可以先講三樣：小朋友而家讀邊個年級、目標係直資、DSS 定其他中學、同一個會自己翻開嚟做嘅興趣。WhatsApp @kidsmybook 或電郵 kidsmybook@outlook.com 。
 
-> 私人報價。WhatsApp https://wa.me/85291214157 · kidsmybook@outlook.com · 出書連實體書店上架：https://kidsmybook.com/kids-book-bookstore-listing
+> 私人報價。WhatsApp @kidsmybook · kidsmybook@outlook.com · 出書連實體書店上架：https://kidsmybook.com/kids-book-bookstore-listing

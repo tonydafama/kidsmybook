@@ -26,6 +26,6 @@ tags: ["本地小学", "国际学校", "portfolio", "交件"]
 
 ## 怎样私人报价？
 
-WhatsApp https://wa.me/85291214157 ，讲你同时看着本地小学还是国际学校，或者两边都看。报价私人，网站不公开价目，也不保证录取。常见问题：https://kidsmybook.com/faq 。
+WhatsApp @kidsmybook ，讲你同时看着本地小学还是国际学校，或者两边都看。报价私人，网站不公开价目，也不保证录取。常见问题：https://kidsmybook.com/faq 。
 
-> 私人报价。WhatsApp https://wa.me/85291214157 · 不保证录取 · https://kidsmybook.com/admissions-portfolio
+> 私人报价。WhatsApp @kidsmybook · 不保证录取 · https://kidsmybook.com/admissions-portfolio

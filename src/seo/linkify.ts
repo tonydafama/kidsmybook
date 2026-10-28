@@ -24,7 +24,7 @@ const ALLOWED_HOSTS = new Set([
 ]);
 
 const TOKEN_RE =
-  /(https:\/\/[^\s<>"']+|[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,})/gi;
+  /(https:\/\/[^\s<>"']+|@kidsmybook\b|[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,})/gi;
 
 export type TextPart =
   | { type: "text"; text: string }
@@ -109,6 +109,9 @@ function linkToken(token: string, whatsappText: string): TextPart[] {
       return [...parts.slice(0, -1), ...linkifySegments(tail.text, whatsappText)];
     }
     return parts;
+  }
+  if (/^@kidsmybook$/i.test(token)) {
+    return [{ type: "link", text: WHATSAPP_LABEL, href: whatsappHref(whatsappText), external: true }];
   }
   if (token.includes("@")) {
     return [{ type: "link", text: token, href: `mailto:${token}`, external: false }];

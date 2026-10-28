@@ -22,6 +22,6 @@ tags: ["升中", "DSS", "直資", "作品集"]
 
 升小學嘅用法見：https://kidsmybook.com/blog/primary-interview-how-to-use-a-book 。國際學校同本地學校點樣講同一本書：https://kidsmybook.com/blog/international-vs-local-school-interview-portfolio 。總頁：https://kidsmybook.com/admissions-portfolio 。升中專頁：https://kidsmybook.com/secondary-dss-admissions-portfolio 。升小面試專頁：https://kidsmybook.com/primary-one-interview-portfolio 。
 
-WhatsApp https://wa.me/85291214157 ，講年齡、而家讀幾年級、目標係直資、DSS 定其他中學，同一個興趣。報價私人，網站唔公開價目。
+WhatsApp @kidsmybook ，講年齡、而家讀幾年級、目標係直資、DSS 定其他中學，同一個興趣。報價私人，網站唔公開價目。
 
-> 私人報價。WhatsApp https://wa.me/85291214157 · 唔保證取錄 · https://kidsmybook.com/admissions-portfolio
+> 私人報價。WhatsApp @kidsmybook · 唔保證取錄 · https://kidsmybook.com/admissions-portfolio

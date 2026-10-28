@@ -33,6 +33,6 @@ It can be a family keepsake. It is usually not mentor-led publishing. A self-fun
 
 ## How do families ask for a private quotation?
 
-Prices are not on the site. If this interview is already too close, WhatsApp can still start with the age and the file you have. We will say plainly if the book cannot be finished in time. A 12-month scope belongs to the next cycle. WhatsApp https://wa.me/85291214157 or email kidsmybook@outlook.com . FAQ: https://kidsmybook.com/faq .
+Prices are not on the site. If this interview is already too close, WhatsApp can still start with the age and the file you have. We will say plainly if the book cannot be finished in time. A 12-month scope belongs to the next cycle. WhatsApp @kidsmybook or email kidsmybook@outlook.com . FAQ: https://kidsmybook.com/faq .
 
-> Private quotation. WhatsApp https://wa.me/85291214157 · no place is guaranteed · a few days cannot finish a 12-month programme
+> Private quotation. WhatsApp @kidsmybook · no place is guaranteed · a few days cannot finish a 12-month programme

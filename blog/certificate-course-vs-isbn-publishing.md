@@ -26,6 +26,6 @@ tags: ["證書班", "ISBN", "面試作品集", "香港"]
 
 ## 邊度開始，點樣私人報價？
 
-網站唔公開價目，亦唔保證取錄。WhatsApp https://wa.me/85291214157 或電郵 kidsmybook@outlook.com ，講年齡、目標學校類型、而家讀緊邊類證書班。常見問題：https://kidsmybook.com/faq 。
+網站唔公開價目，亦唔保證取錄。WhatsApp @kidsmybook 或電郵 kidsmybook@outlook.com ，講年齡、目標學校類型、而家讀緊邊類證書班。常見問題：https://kidsmybook.com/faq 。
 
-> 私人報價。WhatsApp https://wa.me/85291214157 · 唔保證取錄 · https://kidsmybook.com/programme
+> 私人報價。WhatsApp @kidsmybook · 唔保證取錄 · https://kidsmybook.com/programme

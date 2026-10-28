@@ -34,6 +34,6 @@ Kidsmybook 是 12 个月导师制：咨询、创作、可有大学教授审阅�
 
 ## 怎样开始？
 
-网站不公开价目。WhatsApp https://wa.me/85291214157 或电邮 kidsmybook@outlook.com ，讲小朋友年龄和一个兴趣。
+网站不公开价目。WhatsApp @kidsmybook 或电邮 kidsmybook@outlook.com ，讲小朋友年龄和一个兴趣。
 
-> 私人报价。WhatsApp https://wa.me/85291214157 · kidsmybook@outlook.com · 书店上架说明：https://kidsmybook.com/kids-book-bookstore-listing
+> 私人报价。WhatsApp @kidsmybook · kidsmybook@outlook.com · 书店上架说明：https://kidsmybook.com/kids-book-bookstore-listing

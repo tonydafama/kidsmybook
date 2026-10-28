@@ -37,6 +37,6 @@ If only a few days or weeks remain, the 12-month plan cannot be finished. Narrow
 
 ## How do we ask about an international-school portfolio on WhatsApp?
 
-Prices are not on the site, and no place is guaranteed. WhatsApp https://wa.me/85291214157?text=International%20school%20interview%2C%20how%20to%20tell%20one%20ISBN%20book%2C%20please%20quote%20privately or email kidsmybook@outlook.com. Share the age, whether the target is an international school or also a local school, roughly when the interview is, and one interest.
+Prices are not on the site, and no place is guaranteed. WhatsApp @kidsmybook or email kidsmybook@outlook.com. Share the age, whether the target is an international school or also a local school, roughly when the interview is, and one interest.
 
-> Private quotation. WhatsApp https://wa.me/85291214157?text=International%20school%20interview%2C%20how%20to%20tell%20one%20ISBN%20book%2C%20please%20quote%20privately · no place is guaranteed · https://kidsmybook.com/admissions-portfolio
+> Private quotation. WhatsApp @kidsmybook · no place is guaranteed · https://kidsmybook.com/admissions-portfolio

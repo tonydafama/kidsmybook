@@ -22,6 +22,6 @@ tags: ["國際學校", "本地學校", "面試", "作品集"]
 
 呢個分別唔等於保證入到國際學校或本地學校。Kidsmybook 唔係升學中介。升小學用法：https://kidsmybook.com/blog/primary-interview-how-to-use-a-book 。升中、DSS 同直資：https://kidsmybook.com/blog/secondary-dss-interview-published-book 。總頁：https://kidsmybook.com/admissions-portfolio 。
 
-WhatsApp https://wa.me/85291214157 ，講你同時睇緊邊類學校。報價私人，網站唔公開價目。
+WhatsApp @kidsmybook ，講你同時睇緊邊類學校。報價私人，網站唔公開價目。
 
-> 私人報價。WhatsApp https://wa.me/85291214157 · 唔保證取錄 · https://kidsmybook.com/admissions-portfolio
+> 私人報價。WhatsApp @kidsmybook · 唔保證取錄 · https://kidsmybook.com/admissions-portfolio

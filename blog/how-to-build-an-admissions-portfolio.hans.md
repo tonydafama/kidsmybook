@@ -39,6 +39,6 @@ tags: ["升学作品集", "清单", "ISBN", "香港"]
 
 ## 怎样私人报价？
 
-网站不公开价目，也不保证录取。WhatsApp https://wa.me/85291214157 或电邮 kidsmybook@outlook.com ，讲年龄、目标学校类型、现在作品集最薄的一点。计划：https://kidsmybook.com/programme 。常见问题：https://kidsmybook.com/faq 。
+网站不公开价目，也不保证录取。WhatsApp @kidsmybook 或电邮 kidsmybook@outlook.com ，讲年龄、目标学校类型、现在作品集最薄的一点。计划：https://kidsmybook.com/programme 。常见问题：https://kidsmybook.com/faq 。
 
-> 私人报价。WhatsApp https://wa.me/85291214157 · 不保证录取 · https://kidsmybook.com/admissions-portfolio
+> 私人报价。WhatsApp @kidsmybook · 不保证录取 · https://kidsmybook.com/admissions-portfolio

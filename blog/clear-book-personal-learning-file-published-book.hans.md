@@ -49,6 +49,6 @@ Clear Book 在这篇是指家长带去升中、直资或 DSS 面试、可以逐�
 
 ## 怎样私人报价？
 
-网站不公开价目，也不保证书架位置或学校录取。报价之前可以先讲三样：小朋友现在读哪个年级、目标是直资、DSS 还是其他中学、以及一个会自己翻开来做的兴趣。WhatsApp https://wa.me/85291214157 或电邮 kidsmybook@outlook.com 。
+网站不公开价目，也不保证书架位置或学校录取。报价之前可以先讲三样：小朋友现在读哪个年级、目标是直资、DSS 还是其他中学、以及一个会自己翻开来做的兴趣。WhatsApp @kidsmybook 或电邮 kidsmybook@outlook.com 。
 
-> 私人报价。WhatsApp https://wa.me/85291214157 · kidsmybook@outlook.com · 出书连实体书店上架：https://kidsmybook.com/kids-book-bookstore-listing
+> 私人报价。WhatsApp @kidsmybook · kidsmybook@outlook.com · 出书连实体书店上架：https://kidsmybook.com/kids-book-bookstore-listing

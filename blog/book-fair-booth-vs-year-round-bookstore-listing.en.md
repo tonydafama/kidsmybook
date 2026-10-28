@@ -30,6 +30,6 @@ No. Listing is a path and an arrangement. It depends on the title and the packag
 
 ## How do families ask for a private quotation?
 
-Prices are not on the site. WhatsApp https://wa.me/85291214157 or email kidsmybook@outlook.com . Share the child’s age and one interest they want to finish. If someone has already said “published at the book fair”, say whether that means a stall appearance, a book number, or a question about a year-round bookstore platform.
+Prices are not on the site. WhatsApp @kidsmybook or email kidsmybook@outlook.com . Share the child’s age and one interest they want to finish. If someone has already said “published at the book fair”, say whether that means a stall appearance, a book number, or a question about a year-round bookstore platform.
 
-> Private quotation. WhatsApp https://wa.me/85291214157 · kidsmybook@outlook.com · publishing and a listing path: https://kidsmybook.com/kids-book-bookstore-listing
+> Private quotation. WhatsApp @kidsmybook · kidsmybook@outlook.com · publishing and a listing path: https://kidsmybook.com/kids-book-bookstore-listing

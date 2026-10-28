@@ -37,6 +37,6 @@ tags: ["国际学校", "面试", "portfolio", "ISBN"]
 
 ## 怎样 WhatsApp 问国际学校作品集和私人报价？
 
-网站不公开价目，也不保证学位。WhatsApp https://wa.me/85291214157?text=想了解国际学校面试怎样用一本ISBN书讲，请私人报价 或电邮 kidsmybook@outlook.com 。讲年龄、目标是国际学校还是同时申请本地、面试大约什么时候，以及一个兴趣。
+网站不公开价目，也不保证学位。WhatsApp @kidsmybook 或电邮 kidsmybook@outlook.com 。讲年龄、目标是国际学校还是同时申请本地、面试大约什么时候，以及一个兴趣。
 
-> 私人报价。WhatsApp https://wa.me/85291214157?text=想了解国际学校面试怎样用一本ISBN书讲，请私人报价 · 不保证录取 · https://kidsmybook.com/admissions-portfolio
+> 私人报价。WhatsApp @kidsmybook · 不保证录取 · https://kidsmybook.com/admissions-portfolio

@@ -32,4 +32,4 @@ No. Managers decide orders, placement, and returns. The path depends on the titl
 
 ## How does a shelf relate to an admissions portfolio?
 
-The shelf is the publishing result. A portfolio is a later use, not a guaranteed school place. Kidsmybook is not an admissions agent. The quotation is private and is not listed on the site. WhatsApp https://wa.me/85291214157 or email kidsmybook@outlook.com . 
+The shelf is the publishing result. A portfolio is a later use, not a guaranteed school place. Kidsmybook is not an admissions agent. The quotation is private and is not listed on the site. WhatsApp @kidsmybook or email kidsmybook@outlook.com . 

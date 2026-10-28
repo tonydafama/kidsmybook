@@ -34,6 +34,6 @@ tags: ["美术作品集", "ISBN", "升学作品集", "香港"]
 
 ## 怎样私人报价？
 
-网站不公开价目。WhatsApp https://wa.me/85291214157 或电邮 kidsmybook@outlook.com ，讲年龄、现在有没有画班或画簿、目标是升小、升中还是国际学校。如果面试只剩几天，先看时间表：https://kidsmybook.com/blog/portfolio-not-ready-before-interview 。计划：https://kidsmybook.com/programme 。
+网站不公开价目。WhatsApp @kidsmybook 或电邮 kidsmybook@outlook.com ，讲年龄、现在有没有画班或画簿、目标是升小、升中还是国际学校。如果面试只剩几天，先看时间表：https://kidsmybook.com/blog/portfolio-not-ready-before-interview 。计划：https://kidsmybook.com/programme 。
 
-> 私人报价。WhatsApp https://wa.me/85291214157 · 不保证录取 · https://kidsmybook.com/admissions-portfolio
+> 私人报价。WhatsApp @kidsmybook · 不保证录取 · https://kidsmybook.com/admissions-portfolio

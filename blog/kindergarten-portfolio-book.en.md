@@ -30,6 +30,6 @@ It may not fit if the interest is still unsteady, the child resists as soon as i
 
 ## How do you start a first conversation?
 
-The quotation stays private. Prices are not on the site. WhatsApp https://wa.me/85291214157 or email kidsmybook@outlook.com with K1, K2, or K3, one interest, and the portfolio problem you want to solve. Programme: https://kidsmybook.com/programme . Portfolio page: https://kidsmybook.com/admissions-portfolio .
+The quotation stays private. Prices are not on the site. WhatsApp @kidsmybook or email kidsmybook@outlook.com with K1, K2, or K3, one interest, and the portfolio problem you want to solve. Programme: https://kidsmybook.com/programme . Portfolio page: https://kidsmybook.com/admissions-portfolio .
 
-> Private quotation. WhatsApp https://wa.me/85291214157 · kidsmybook@outlook.com · https://kidsmybook.com/programme
+> Private quotation. WhatsApp @kidsmybook · kidsmybook@outlook.com · https://kidsmybook.com/programme
