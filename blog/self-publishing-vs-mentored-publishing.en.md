@@ -26,6 +26,6 @@ If the only goal is a private souvenir, a print shop can be enough. If the goal 
 
 ## How do families start?
 
-Prices are not listed on the site. The full scope is quoted privately from the child’s topic and package. Read the programme at https://kidsmybook.com/programme , or message WhatsApp https://wa.me/85291214157 or kidsmybook@outlook.com with age, current or target school, and one interest.
+Prices are not listed on the site. The full scope is quoted privately from the child’s topic and package. Read the programme at https://kidsmybook.com/programme , or message WhatsApp @kidsmybook or kidsmybook@outlook.com with age, current or target school, and one interest.
 
-> Private quotation only. WhatsApp https://wa.me/85291214157 · kidsmybook@outlook.com · Programme: https://kidsmybook.com/programme
+> Private quotation only. WhatsApp @kidsmybook · kidsmybook@outlook.com · Programme: https://kidsmybook.com/programme

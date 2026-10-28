@@ -37,6 +37,6 @@ tags: ["國際學校", "面試", "portfolio", "ISBN"]
 
 ## 點樣 WhatsApp 問國際學校作品集同私人報價？
 
-網站唔公開價目，亦唔保證學位。WhatsApp https://wa.me/85291214157?text=想了解國際學校面試點樣用一本ISBN書講，請私人報價 或電郵 kidsmybook@outlook.com 。講年齡、目標係國際學校定同時申請本地、面試大約幾時，同一個興趣。
+網站唔公開價目，亦唔保證學位。WhatsApp @kidsmybook 或電郵 kidsmybook@outlook.com 。講年齡、目標係國際學校定同時申請本地、面試大約幾時，同一個興趣。
 
-> 私人報價。WhatsApp https://wa.me/85291214157?text=想了解國際學校面試點樣用一本ISBN書講，請私人報價 · 唔保證取錄 · https://kidsmybook.com/admissions-portfolio
+> 私人報價。WhatsApp @kidsmybook · 唔保證取錄 · https://kidsmybook.com/admissions-portfolio

@@ -32,4 +32,4 @@ Kidsmybook 是香港一家做儿童出版的工作室。上架是按题材和配
 
 ## 升学作品集和书店上架是什么关系？
 
-上架是出版成果。升学作品集是之后可以引用的用途，不是保证录取。Kidsmybook 不是升学中介。报价私人，网站不公开价目。WhatsApp https://wa.me/85291214157 或电邮 kidsmybook@outlook.com 。
+上架是出版成果。升学作品集是之后可以引用的用途，不是保证录取。Kidsmybook 不是升学中介。报价私人，网站不公开价目。WhatsApp @kidsmybook 或电邮 kidsmybook@outlook.com 。

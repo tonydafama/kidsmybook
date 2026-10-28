@@ -30,6 +30,6 @@ tags: ["香港书展", "实体书店", "童书上架", "香港"]
 
 ## 怎样私人报价？
 
-网站不公开价目。WhatsApp https://wa.me/85291214157 或电邮 kidsmybook@outlook.com ，讲小朋友年龄，以及一个想做完的兴趣。如果已经听过「书展出书」，可以讲清楚现在手上是展位露面、书号，还是想问全年书店平台路径。
+网站不公开价目。WhatsApp @kidsmybook 或电邮 kidsmybook@outlook.com ，讲小朋友年龄，以及一个想做完的兴趣。如果已经听过「书展出书」，可以讲清楚现在手上是展位露面、书号，还是想问全年书店平台路径。
 
-> 私人报价。WhatsApp https://wa.me/85291214157 · kidsmybook@outlook.com · 出书连上架：https://kidsmybook.com/kids-book-bookstore-listing
+> 私人报价。WhatsApp @kidsmybook · kidsmybook@outlook.com · 出书连上架：https://kidsmybook.com/kids-book-bookstore-listing

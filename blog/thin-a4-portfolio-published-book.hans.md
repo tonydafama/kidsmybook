@@ -51,6 +51,6 @@ tags: ["作品集", "A4", "升学面试", "实体书店", "ISBN"]
 
 ## 怎样私人报价？
 
-网站不公开价目，也不保证书架位置或学校录取。报价之前可以先讲三样：小朋友年龄和现在读哪个阶段、目标学校收多少页或者收不收作品集、以及一个会自己翻开来做的兴趣。WhatsApp https://wa.me/85291214157 或电邮 kidsmybook@outlook.com 。
+网站不公开价目，也不保证书架位置或学校录取。报价之前可以先讲三样：小朋友年龄和现在读哪个阶段、目标学校收多少页或者收不收作品集、以及一个会自己翻开来做的兴趣。WhatsApp @kidsmybook 或电邮 kidsmybook@outlook.com 。
 
-> 私人报价。WhatsApp https://wa.me/85291214157 · kidsmybook@outlook.com · 出书连实体书店上架：https://kidsmybook.com/kids-book-bookstore-listing
+> 私人报价。WhatsApp @kidsmybook · kidsmybook@outlook.com · 出书连实体书店上架：https://kidsmybook.com/kids-book-bookstore-listing

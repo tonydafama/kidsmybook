@@ -125,7 +125,7 @@ const SERVICES: ServiceCopy[] = [
 
 function inline(text: string): string {
   const re =
-    /(https:\/\/[^\s<>"']+|[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}|\*\*[^*]+\*\*|\*[^*]+\*|`[^`]+`)/g;
+    /(https:\/\/[^\s<>"']+|@kidsmybook|[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}|\*\*[^*]+\*\*|\*[^*]+\*|`[^`]+`)/g;
   let last = 0;
   let out = "";
   let match: RegExpExecArray | null;
@@ -891,6 +891,15 @@ function outputFile(routePath: string): string {
   return path.join(DIST, routePath.slice(1), "index.html");
 }
 
+function assertNoPrintedWaDigits(html: string, routePath: string) {
+  const stripped = html
+    .replace(/href="https:\/\/wa\.me\/85291214157[^"]*"/g, 'href=""')
+    .replace(/"https:\/\/wa\.me\/85291214157"/g, '""');
+  if (/wa\.me\/852|91214157/.test(stripped)) {
+    throw new Error(`${routePath} prints WhatsApp digits outside an href`);
+  }
+}
+
 function assertNoChainOrStudioPhone(html: string, routePath: string) {
   if (/三聯|商務印書館|中華書局|Joint Publishing|Commercial Press|Chung Hwa|San Lian|三联|商务印书馆|中华书局/.test(html)) {
     throw new Error(`${routePath} names a bookstore chain`);
@@ -903,6 +912,7 @@ function assertNoChainOrStudioPhone(html: string, routePath: string) {
 
 function assertDocument(html: string, route: RouteDocument) {
   assertNoChainOrStudioPhone(html, route.path);
+  assertNoPrintedWaDigits(html, route.path);
   const canonical = canonicalUrl(route.path);
   if (!html.includes(`<title>${escapeHtml(route.title)}</title>`)) {
     throw new Error(`${route.path} title missing`);
@@ -1242,6 +1252,9 @@ function assertSources(posts: RouteDocument[]) {
     }
     if (!source.includes("language switcher")) throw new Error(`${label} missing language-switcher clarification`);
     if (source.includes("hreflang")) throw new Error(`${label} must not advertise hreflang`);
+    if (/wa\.me\/852|91214157/.test(source)) {
+      throw new Error(`${label} prints a WhatsApp number; say WhatsApp @kidsmybook`);
+    }
   }
 
   const sitemap = fs.readFileSync(path.join(ROOT, "public/sitemap.xml"), "utf8");

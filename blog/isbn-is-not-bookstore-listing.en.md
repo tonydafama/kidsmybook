@@ -34,6 +34,6 @@ No. Listing is a path and an arrangement. It depends on the title and package. M
 
 ## How do we start?
 
-The site does not publish prices. WhatsApp https://wa.me/85291214157 or email kidsmybook@outlook.com with the child's age and one interest.
+The site does not publish prices. WhatsApp @kidsmybook or email kidsmybook@outlook.com with the child's age and one interest.
 
-> Private quotation. WhatsApp https://wa.me/85291214157 · kidsmybook@outlook.com · Bookstore path: https://kidsmybook.com/kids-book-bookstore-listing
+> Private quotation. WhatsApp @kidsmybook · kidsmybook@outlook.com · Bookstore path: https://kidsmybook.com/kids-book-bookstore-listing

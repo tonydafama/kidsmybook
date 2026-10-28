@@ -30,6 +30,6 @@ Kidsmybook 的计划大约由 3 岁起到 18 岁，以兴趣带动。幼儿园�
 
 ## 怎样做初步了解？
 
-报价仍然私人，网站不公开价目。WhatsApp https://wa.me/85291214157 或电邮 kidsmybook@outlook.com ，讲小朋友读 K1、K2 还是 K3、一个兴趣，和你最想作品集解决的问题。计划全貌：https://kidsmybook.com/programme 。升学作品集页：https://kidsmybook.com/admissions-portfolio 。
+报价仍然私人，网站不公开价目。WhatsApp @kidsmybook 或电邮 kidsmybook@outlook.com ，讲小朋友读 K1、K2 还是 K3、一个兴趣，和你最想作品集解决的问题。计划全貌：https://kidsmybook.com/programme 。升学作品集页：https://kidsmybook.com/admissions-portfolio 。
 
-> 私人报价。WhatsApp https://wa.me/85291214157 · kidsmybook@outlook.com · https://kidsmybook.com/programme
+> 私人报价。WhatsApp @kidsmybook · kidsmybook@outlook.com · https://kidsmybook.com/programme

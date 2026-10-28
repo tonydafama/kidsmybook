@@ -34,6 +34,6 @@ No. Kidsmybook is a publishing studio, not an admissions agent. There is no scho
 
 ## How do families ask for a private quotation?
 
-Prices are not on the site. WhatsApp https://wa.me/85291214157 or email kidsmybook@outlook.com . Share the age, whether there is already an art class or a sketchbook, and whether the target is primary, secondary, or an international school. If the interview is only days away, read the timeline first: https://kidsmybook.com/blog/portfolio-not-ready-before-interview . Programme: https://kidsmybook.com/programme .
+Prices are not on the site. WhatsApp @kidsmybook or email kidsmybook@outlook.com . Share the age, whether there is already an art class or a sketchbook, and whether the target is primary, secondary, or an international school. If the interview is only days away, read the timeline first: https://kidsmybook.com/blog/portfolio-not-ready-before-interview . Programme: https://kidsmybook.com/programme .
 
-> Private quotation. WhatsApp https://wa.me/85291214157 · no place is guaranteed · https://kidsmybook.com/admissions-portfolio
+> Private quotation. WhatsApp @kidsmybook · no place is guaranteed · https://kidsmybook.com/admissions-portfolio

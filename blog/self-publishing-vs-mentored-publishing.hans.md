@@ -26,6 +26,6 @@ Kidsmybook 是 12 个月导师制出版计划，不是 DIY 模板，也不是纯
 
 ## 怎样开始？
 
-网站不公开价目。完整方案按小朋友题材和配套私人报价。可以先看小朋友出书计划 https://kidsmybook.com/programme ，或者 WhatsApp https://wa.me/85291214157 、电邮 kidsmybook@outlook.com ，讲年龄、现在或目标学校，以及一个兴趣。
+网站不公开价目。完整方案按小朋友题材和配套私人报价。可以先看小朋友出书计划 https://kidsmybook.com/programme ，或者 WhatsApp @kidsmybook 、电邮 kidsmybook@outlook.com ，讲年龄、现在或目标学校，以及一个兴趣。
 
-> 私人报价，网站不放价目。WhatsApp https://wa.me/85291214157 · kidsmybook@outlook.com · 计划说明：https://kidsmybook.com/programme
+> 私人报价，网站不放价目。WhatsApp @kidsmybook · kidsmybook@outlook.com · 计划说明：https://kidsmybook.com/programme

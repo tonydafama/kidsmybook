@@ -33,6 +33,6 @@ tags: ["叩门", "面试", "作品集", "时间表"]
 
 ## 怎样私人报价？
 
-网站不公开价目。如果这次面试已经太近，WhatsApp 仍然可以先讲年龄和现有文件，我们会讲明赶不及。如果下一个周期才开始，才谈 12 个月范围。WhatsApp https://wa.me/85291214157 或电邮 kidsmybook@outlook.com 。常见问题：https://kidsmybook.com/faq 。
+网站不公开价目。如果这次面试已经太近，WhatsApp 仍然可以先讲年龄和现有文件，我们会讲明赶不及。如果下一个周期才开始，才谈 12 个月范围。WhatsApp @kidsmybook 或电邮 kidsmybook@outlook.com 。常见问题：https://kidsmybook.com/faq 。
 
-> 私人报价。WhatsApp https://wa.me/85291214157 · 不保证录取 · 几天赶不及 12 个月计划
+> 私人报价。WhatsApp @kidsmybook · 不保证录取 · 几天赶不及 12 个月计划

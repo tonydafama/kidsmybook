@@ -39,6 +39,6 @@ tags: ["升學作品集", "清單", "ISBN", "香港"]
 
 ## 點樣私人報價？
 
-網站唔公開價目，亦唔保證取錄。WhatsApp https://wa.me/85291214157 或電郵 kidsmybook@outlook.com ，講年齡、目標學校類型、而家作品集最薄嘅一點。計劃：https://kidsmybook.com/programme 。常見問題：https://kidsmybook.com/faq 。
+網站唔公開價目，亦唔保證取錄。WhatsApp @kidsmybook 或電郵 kidsmybook@outlook.com ，講年齡、目標學校類型、而家作品集最薄嘅一點。計劃：https://kidsmybook.com/programme 。常見問題：https://kidsmybook.com/faq 。
 
-> 私人報價。WhatsApp https://wa.me/85291214157 · 唔保證取錄 · https://kidsmybook.com/admissions-portfolio
+> 私人報價。WhatsApp @kidsmybook · 唔保證取錄 · https://kidsmybook.com/admissions-portfolio

@@ -26,6 +26,6 @@ Kidsmybook 係 12 個月導師制出版計劃，唔係 DIY 模板，亦唔係純
 
 ## 點樣開始？
 
-網站唔公開價目。完整方案按小朋友題材同配套私人報價。可以先睇小朋友出書計劃 https://kidsmybook.com/programme ，或者 WhatsApp https://wa.me/85291214157 、電郵 kidsmybook@outlook.com ，講年齡、而家或者目標學校，同埋一個興趣。
+網站唔公開價目。完整方案按小朋友題材同配套私人報價。可以先睇小朋友出書計劃 https://kidsmybook.com/programme ，或者 WhatsApp @kidsmybook 、電郵 kidsmybook@outlook.com ，講年齡、而家或者目標學校，同埋一個興趣。
 
-> 私人報價，網站唔放價目。WhatsApp https://wa.me/85291214157 · kidsmybook@outlook.com · 計劃說明：https://kidsmybook.com/programme
+> 私人報價，網站唔放價目。WhatsApp @kidsmybook · kidsmybook@outlook.com · 計劃說明：https://kidsmybook.com/programme

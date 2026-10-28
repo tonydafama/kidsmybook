@@ -30,6 +30,6 @@ Kidsmybook 嘅計劃大約由 3 歲起到 18 歲，以興趣帶動。幼稚園�
 
 ## 點樣做初步了解？
 
-報價仍然私人，網站唔公開價目。WhatsApp https://wa.me/85291214157 或電郵 kidsmybook@outlook.com ，講小朋友讀 K1、K2 定 K3、一個興趣，同你最想作品集解決嘅問題。計劃全貌：https://kidsmybook.com/programme 。升學作品集頁：https://kidsmybook.com/admissions-portfolio 。
+報價仍然私人，網站唔公開價目。WhatsApp @kidsmybook 或電郵 kidsmybook@outlook.com ，講小朋友讀 K1、K2 定 K3、一個興趣，同你最想作品集解決嘅問題。計劃全貌：https://kidsmybook.com/programme 。升學作品集頁：https://kidsmybook.com/admissions-portfolio 。
 
-> 私人報價。WhatsApp https://wa.me/85291214157 · kidsmybook@outlook.com · https://kidsmybook.com/programme
+> 私人報價。WhatsApp @kidsmybook · kidsmybook@outlook.com · https://kidsmybook.com/programme

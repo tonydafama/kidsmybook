@@ -36,6 +36,6 @@ tags: ["升小學", "面試", "作品集", "叩門"]
 
 先讲小朋友年龄、现在或目标是本地小学、私立、直资还是国际学校，以及一个兴趣。报价私人，网站不公开价目。升中和 DSS 的用法不同，见：https://kidsmybook.com/blog/secondary-dss-interview-published-book 。国际学校和本地学校怎样讲同一本书：https://kidsmybook.com/blog/international-vs-local-school-interview-portfolio 。作品集总页：https://kidsmybook.com/admissions-portfolio 。升小面试专页：https://kidsmybook.com/primary-one-interview-portfolio 。面试班和 ISBN 出版怎样分：https://kidsmybook.com/blog/interview-class-vs-isbn-published-book 。
 
-WhatsApp https://wa.me/85291214157 或电邮 kidsmybook@outlook.com 。
+WhatsApp @kidsmybook 或电邮 kidsmybook@outlook.com 。
 
-> 私人报价。WhatsApp https://wa.me/85291214157 · 不保证录取 · https://kidsmybook.com/admissions-portfolio
+> 私人报价。WhatsApp @kidsmybook · 不保证录取 · https://kidsmybook.com/admissions-portfolio

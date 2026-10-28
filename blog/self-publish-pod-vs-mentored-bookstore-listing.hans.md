@@ -30,6 +30,6 @@ Kidsmybook 是 12 个月导师制，不是 DIY 模板，也不是纯代印。路
 
 ## 怎样开始？
 
-网站不公开价目。WhatsApp https://wa.me/85291214157 或电邮 kidsmybook@outlook.com ，讲小朋友年龄和一个兴趣。家长感受和界限见 https://kidsmybook.com/blog/bookstore-shelf-listing-for-parents 。
+网站不公开价目。WhatsApp @kidsmybook 或电邮 kidsmybook@outlook.com ，讲小朋友年龄和一个兴趣。家长感受和界限见 https://kidsmybook.com/blog/bookstore-shelf-listing-for-parents 。
 
-> 私人报价。WhatsApp https://wa.me/85291214157 · kidsmybook@outlook.com · 计划：https://kidsmybook.com/programme
+> 私人报价。WhatsApp @kidsmybook · kidsmybook@outlook.com · 计划：https://kidsmybook.com/programme

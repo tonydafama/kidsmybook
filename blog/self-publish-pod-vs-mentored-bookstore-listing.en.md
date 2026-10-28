@@ -30,6 +30,6 @@ No. A printed copy, or a print-on-demand link, is not a Hong Kong physical books
 
 ## How do we start?
 
-The site does not publish prices. WhatsApp https://wa.me/85291214157 or email kidsmybook@outlook.com with the child's age and one interest. A parent's view, and the limit on that view: https://kidsmybook.com/blog/bookstore-shelf-listing-for-parents .
+The site does not publish prices. WhatsApp @kidsmybook or email kidsmybook@outlook.com with the child's age and one interest. A parent's view, and the limit on that view: https://kidsmybook.com/blog/bookstore-shelf-listing-for-parents .
 
-> Private quotation. WhatsApp https://wa.me/85291214157 · kidsmybook@outlook.com · Programme: https://kidsmybook.com/programme
+> Private quotation. WhatsApp @kidsmybook · kidsmybook@outlook.com · Programme: https://kidsmybook.com/programme

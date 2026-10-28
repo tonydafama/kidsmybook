@@ -26,6 +26,6 @@ How to tell it: https://kidsmybook.com/blog/international-vs-local-school-interv
 
 ## How do families ask for a private quotation?
 
-WhatsApp https://wa.me/85291214157 and say whether you are looking at a local primary, an international school, or both. The quotation is private. Prices are not on the site, and no place is guaranteed. FAQ: https://kidsmybook.com/faq .
+WhatsApp @kidsmybook and say whether you are looking at a local primary, an international school, or both. The quotation is private. Prices are not on the site, and no place is guaranteed. FAQ: https://kidsmybook.com/faq .
 
-> Private quotation. WhatsApp https://wa.me/85291214157 · no place is guaranteed · https://kidsmybook.com/admissions-portfolio
+> Private quotation. WhatsApp @kidsmybook · no place is guaranteed · https://kidsmybook.com/admissions-portfolio

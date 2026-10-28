@@ -49,6 +49,6 @@ No. If the secondary interview is only days or weeks away, the about-12-month pl
 
 ## How do families ask for a private quotation?
 
-Prices are not on the site. No shelf position and no school place are guaranteed. Before a quotation, three details help: the child’s current year, whether the target is direct subsidy, DSS, or another secondary, and one interest the child will open and work on. WhatsApp https://wa.me/85291214157 or email kidsmybook@outlook.com .
+Prices are not on the site. No shelf position and no school place are guaranteed. Before a quotation, three details help: the child’s current year, whether the target is direct subsidy, DSS, or another secondary, and one interest the child will open and work on. WhatsApp @kidsmybook or email kidsmybook@outlook.com .
 
-> Private quotation. WhatsApp https://wa.me/85291214157 · kidsmybook@outlook.com · publishing plus a physical bookstore listing: https://kidsmybook.com/kids-book-bookstore-listing
+> Private quotation. WhatsApp @kidsmybook · kidsmybook@outlook.com · publishing plus a physical bookstore listing: https://kidsmybook.com/kids-book-bookstore-listing

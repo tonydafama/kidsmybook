@@ -38,4 +38,4 @@ tags: ["ISBN", "書刊註冊", "童書", "香港"]
 
 唔等於。書號令一本書更容易被識別、訂購同引用，面試作品集亦比較容易講成「正式出版物」，而唔係淨係一本紀念冊。但書號本身唔證明內容深度，亦唔保證任何學校取錄。Kidsmybook 喺 12 個月計劃裡面，會按正式出版要求處理書號同出版相關安排，家庭唔使自己由零摸索；教授審閱、小朋友參與同作品集包裝先係升學敘事嘅主體。想先睇計劃：https://kidsmybook.com/programme 。常見問題：https://kidsmybook.com/faq 。
 
-> 私人報價。WhatsApp https://wa.me/85291214157 · kidsmybook@outlook.com 。本文只供家長理解公開資料，申請細節以香港公共圖書館書刊註冊組最新公布為準。
+> 私人報價。WhatsApp @kidsmybook · kidsmybook@outlook.com 。本文只供家長理解公開資料，申請細節以香港公共圖書館書刊註冊組最新公布為準。

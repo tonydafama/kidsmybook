@@ -35,6 +35,6 @@ No. If only a few days or weeks remain, narrow the file you already have and kee
 
 ## How do we ask about the year-one timeline on WhatsApp?
 
-Prices are not on the site, and no place is guaranteed. WhatsApp https://wa.me/85291214157?text=Top%20Talent%20Pass%20year-one%20portfolio%20timeline%2C%20please%20quote%20privately or email kidsmybook@outlook.com. Share the age, the target school type, roughly when the interview is, and one interest. If only a few days remain, we will say the 12-month plan cannot be finished in time.
+Prices are not on the site, and no place is guaranteed. WhatsApp @kidsmybook or email kidsmybook@outlook.com. Share the age, the target school type, roughly when the interview is, and one interest. If only a few days remain, we will say the 12-month plan cannot be finished in time.
 
-> Private quotation. WhatsApp https://wa.me/85291214157?text=Top%20Talent%20Pass%20year-one%20portfolio%20timeline%2C%20please%20quote%20privately · no place is guaranteed · https://kidsmybook.com/top-talent-pass-admissions-portfolio
+> Private quotation. WhatsApp @kidsmybook · no place is guaranteed · https://kidsmybook.com/top-talent-pass-admissions-portfolio

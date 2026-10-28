@@ -30,6 +30,6 @@ tags: ["升小面试", "面试班", "ISBN", "作品集", "portfolio"]
 
 ## 怎样 WhatsApp 问私人报价？
 
-网站不公开价目，也不保证学位。WhatsApp https://wa.me/85291214157 或电邮 kidsmybook@outlook.com ，讲年龄、目标是升小、升中还是国际学校、面试大约什么时候，以及一个兴趣。如果时间只剩几天，我们会直接讲 12 个月计划赶不及。
+网站不公开价目，也不保证学位。WhatsApp @kidsmybook 或电邮 kidsmybook@outlook.com ，讲年龄、目标是升小、升中还是国际学校、面试大约什么时候，以及一个兴趣。如果时间只剩几天，我们会直接讲 12 个月计划赶不及。
 
-> 私人报价。WhatsApp https://wa.me/85291214157 · 不是面试班 · 不保证录取 · https://kidsmybook.com/primary-one-interview-portfolio
+> 私人报价。WhatsApp @kidsmybook · 不是面试班 · 不保证录取 · https://kidsmybook.com/primary-one-interview-portfolio

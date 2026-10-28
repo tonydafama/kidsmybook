@@ -83,7 +83,7 @@ export const HOME_FAQ: { q: string; a: string }[] = [
   },
   {
     q: "收費點樣計？",
-    a: "完整 12 個月方案按小朋友題材同配套私人報價，網站唔公開價目。歡迎 WhatsApp（https://wa.me/85291214157）或電郵 kidsmybook@outlook.com。",
+    a: "完整 12 個月方案按小朋友題材同配套私人報價，網站唔公開價目。歡迎 WhatsApp @kidsmybook 或電郵 kidsmybook@outlook.com。",
   },
   {
     q: "小朋友出書同普通興趣班有咩分別？",
@@ -115,7 +115,7 @@ export const HOME_FAQ: { q: string; a: string }[] = [
   },
   {
     q: "點樣開始？第一次諮詢要準備咩？",
-    a: "WhatsApp https://wa.me/85291214157 或者電郵 kidsmybook@outlook.com，簡單講：（1）小朋友年齡同階段（幼稚園／小學／中學）；（2）而家學校／目標學校類型；（3）佢最感興趣嘅一件事；（4）你最想解決嘅作品集／面試問題。我哋會先了解再私人報價，網站唔放價目表。",
+    a: "WhatsApp @kidsmybook 或者電郵 kidsmybook@outlook.com，簡單講：（1）小朋友年齡同階段（幼稚園／小學／中學）；（2）而家學校／目標學校類型；（3）佢最感興趣嘅一件事；（4）你最想解決嘅作品集／面試問題。我哋會先了解再私人報價，網站唔放價目表。",
   },
   {
     q: "資優／特別興趣嘅小朋友適唔適合？",

@@ -30,6 +30,6 @@ Kidsmybook 係 12 個月導師制，唔係 DIY 模板，亦唔係純代印。路
 
 ## 點樣開始？
 
-網站唔公開價目。WhatsApp https://wa.me/85291214157 或電郵 kidsmybook@outlook.com ，講小朋友年齡同一個興趣。家長感受同界限見 https://kidsmybook.com/blog/bookstore-shelf-listing-for-parents 。
+網站唔公開價目。WhatsApp @kidsmybook 或電郵 kidsmybook@outlook.com ，講小朋友年齡同一個興趣。家長感受同界限見 https://kidsmybook.com/blog/bookstore-shelf-listing-for-parents 。
 
-> 私人報價。WhatsApp https://wa.me/85291214157 · kidsmybook@outlook.com · 計劃：https://kidsmybook.com/programme
+> 私人報價。WhatsApp @kidsmybook · kidsmybook@outlook.com · 計劃：https://kidsmybook.com/programme

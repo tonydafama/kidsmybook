@@ -26,6 +26,6 @@ tags: ["补习", "出版作品集", "面试", "香港"]
 
 ## 怎样开始私人报价？
 
-讲小朋友年龄、现在的补习和兴趣各一件，和你最想作品集解决的问题。WhatsApp https://wa.me/85291214157 。常见问题：https://kidsmybook.com/faq 。网站不公开价目，也不保证录取。
+讲小朋友年龄、现在的补习和兴趣各一件，和你最想作品集解决的问题。WhatsApp @kidsmybook 。常见问题：https://kidsmybook.com/faq 。网站不公开价目，也不保证录取。
 
-> 私人报价。WhatsApp https://wa.me/85291214157 · 不保证录取 · https://kidsmybook.com/faq
+> 私人报价。WhatsApp @kidsmybook · 不保证录取 · https://kidsmybook.com/faq

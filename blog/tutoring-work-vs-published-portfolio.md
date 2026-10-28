@@ -26,6 +26,6 @@ tags: ["補習", "出版作品集", "面試", "香港"]
 
 ## 點樣開始私人報價？
 
-講小朋友年齡、而家補習同興趣各一件，同你最想作品集解決嘅問題。WhatsApp https://wa.me/85291214157 。常見問題：https://kidsmybook.com/faq 。網站唔公開價目，亦唔保證取錄。
+講小朋友年齡、而家補習同興趣各一件，同你最想作品集解決嘅問題。WhatsApp @kidsmybook 。常見問題：https://kidsmybook.com/faq 。網站唔公開價目，亦唔保證取錄。
 
-> 私人報價。WhatsApp https://wa.me/85291214157 · 唔保證取錄 · https://kidsmybook.com/faq
+> 私人報價。WhatsApp @kidsmybook · 唔保證取錄 · https://kidsmybook.com/faq

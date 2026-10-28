@@ -36,6 +36,6 @@ The named public case is Hilary: age 8 at publication, a bilingual butterfly gui
 
 Share the child's age, whether the target is a local, private, DSS, or international primary, and one interest. The quotation is private. Prices are not on the site. Secondary and DSS use is different: https://kidsmybook.com/blog/secondary-dss-interview-published-book . International and local interviews: https://kidsmybook.com/blog/international-vs-local-school-interview-portfolio . Hub: https://kidsmybook.com/admissions-portfolio . Primary interview page: https://kidsmybook.com/primary-one-interview-portfolio . Interview class versus ISBN publishing: https://kidsmybook.com/blog/interview-class-vs-isbn-published-book .
 
-WhatsApp https://wa.me/85291214157 or email kidsmybook@outlook.com .
+WhatsApp @kidsmybook or email kidsmybook@outlook.com .
 
-> Private quotation. WhatsApp https://wa.me/85291214157 · no place is guaranteed · https://kidsmybook.com/admissions-portfolio
+> Private quotation. WhatsApp @kidsmybook · no place is guaranteed · https://kidsmybook.com/admissions-portfolio

@@ -30,6 +30,6 @@ tags: ["升小面試", "面試班", "ISBN", "作品集", "portfolio"]
 
 ## 點樣 WhatsApp 問私人報價？
 
-網站唔公開價目，亦唔保證學位。WhatsApp https://wa.me/85291214157 或電郵 kidsmybook@outlook.com ，講年齡、目標係升小、升中定國際學校、面試大約幾時，同一個興趣。如果時間只剩幾日，我哋會直接講 12 個月計劃趕唔切。
+網站唔公開價目，亦唔保證學位。WhatsApp @kidsmybook 或電郵 kidsmybook@outlook.com ，講年齡、目標係升小、升中定國際學校、面試大約幾時，同一個興趣。如果時間只剩幾日，我哋會直接講 12 個月計劃趕唔切。
 
-> 私人報價。WhatsApp https://wa.me/85291214157 · 唔係面試班 · 唔保證取錄 · https://kidsmybook.com/primary-one-interview-portfolio
+> 私人報價。WhatsApp @kidsmybook · 唔係面試班 · 唔保證取錄 · https://kidsmybook.com/primary-one-interview-portfolio

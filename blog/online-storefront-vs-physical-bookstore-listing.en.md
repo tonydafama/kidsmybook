@@ -30,6 +30,6 @@ The portfolio is a second use, not the first sentence of the programme. An inter
 
 ## How do families ask for a private quotation?
 
-WhatsApp https://wa.me/85291214157 or email kidsmybook@outlook.com . Share the child’s age and one interest they want to finish. If someone has already said “available online”, say whether that means a product page, an ebook catalog, or a question about a physical listing path at Hong Kong physical bookstores.
+WhatsApp @kidsmybook or email kidsmybook@outlook.com . Share the child’s age and one interest they want to finish. If someone has already said “available online”, say whether that means a product page, an ebook catalog, or a question about a physical listing path at Hong Kong physical bookstores.
 
-> Private quotation. WhatsApp https://wa.me/85291214157 · kidsmybook@outlook.com · publishing and a listing path: https://kidsmybook.com/kids-book-bookstore-listing
+> Private quotation. WhatsApp @kidsmybook · kidsmybook@outlook.com · publishing and a listing path: https://kidsmybook.com/kids-book-bookstore-listing

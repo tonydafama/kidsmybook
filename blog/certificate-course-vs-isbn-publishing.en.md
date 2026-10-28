@@ -26,6 +26,6 @@ Yes, and most families will have both. Put certificates in the back, the publica
 
 ## Where do families start, and how is the quote given?
 
-Prices are not on the site, and no place is guaranteed. WhatsApp https://wa.me/85291214157 or email kidsmybook@outlook.com with age, target school type, and which certificate class is underway. FAQ: https://kidsmybook.com/faq .
+Prices are not on the site, and no place is guaranteed. WhatsApp @kidsmybook or email kidsmybook@outlook.com with age, target school type, and which certificate class is underway. FAQ: https://kidsmybook.com/faq .
 
-> Private quotation. WhatsApp https://wa.me/85291214157 · no place is guaranteed · https://kidsmybook.com/programme
+> Private quotation. WhatsApp @kidsmybook · no place is guaranteed · https://kidsmybook.com/programme

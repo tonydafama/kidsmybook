@@ -32,6 +32,6 @@ Kidsmybook 係約 12 個月導師制：諮詢、創作、可有大學教授審�
 
 ## 點樣私人報價？
 
-網站唔公開價目。WhatsApp https://wa.me/85291214157 或電郵 kidsmybook@outlook.com ，講小朋友年齡、而家有冇比賽作品或學校結集，同一個想做完嘅興趣。
+網站唔公開價目。WhatsApp @kidsmybook 或電郵 kidsmybook@outlook.com ，講小朋友年齡、而家有冇比賽作品或學校結集，同一個想做完嘅興趣。
 
-> 私人報價。WhatsApp https://wa.me/85291214157 · kidsmybook@outlook.com · 出書連上架：https://kidsmybook.com/kids-book-bookstore-listing
+> 私人報價。WhatsApp @kidsmybook · kidsmybook@outlook.com · 出書連上架：https://kidsmybook.com/kids-book-bookstore-listing

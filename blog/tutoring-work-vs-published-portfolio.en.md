@@ -26,6 +26,6 @@ Tutoring and publishing can run together. Tutoring faces school progress. The bo
 
 ## How do families ask for a private quotation?
 
-Share the child's age, one tutoring subject, one interest, and the portfolio problem you want to solve. WhatsApp https://wa.me/85291214157 . FAQ: https://kidsmybook.com/faq . Prices are not on the site, and no place is guaranteed.
+Share the child's age, one tutoring subject, one interest, and the portfolio problem you want to solve. WhatsApp @kidsmybook . FAQ: https://kidsmybook.com/faq . Prices are not on the site, and no place is guaranteed.
 
-> Private quotation. WhatsApp https://wa.me/85291214157 · no place is guaranteed · https://kidsmybook.com/faq
+> Private quotation. WhatsApp @kidsmybook · no place is guaranteed · https://kidsmybook.com/faq

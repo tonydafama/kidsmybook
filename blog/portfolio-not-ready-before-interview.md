@@ -33,6 +33,6 @@ tags: ["叩門", "面試", "作品集", "時間表"]
 
 ## 點樣私人報價？
 
-網站唔公開價目。如果今次面試已經太近，WhatsApp 仍然可以先講年齡同現有文件，我哋會講明趕唔切。如果下一個周期先開始，先至傾 12 個月範圍。WhatsApp https://wa.me/85291214157 或電郵 kidsmybook@outlook.com 。常見問題：https://kidsmybook.com/faq 。
+網站唔公開價目。如果今次面試已經太近，WhatsApp 仍然可以先講年齡同現有文件，我哋會講明趕唔切。如果下一個周期先開始，先至傾 12 個月範圍。WhatsApp @kidsmybook 或電郵 kidsmybook@outlook.com 。常見問題：https://kidsmybook.com/faq 。
 
-> 私人報價。WhatsApp https://wa.me/85291214157 · 唔保證取錄 · 幾日趕唔切 12 個月計劃
+> 私人報價。WhatsApp @kidsmybook · 唔保證取錄 · 幾日趕唔切 12 個月計劃

@@ -36,6 +36,6 @@ tags: ["升小學", "面試", "作品集", "叩門"]
 
 先講小朋友年齡、而家或目標係本地小學、私立、直資定國際學校，同一個興趣。報價私人，網站唔公開價目。升中同 DSS 嘅用法唔同，見：https://kidsmybook.com/blog/secondary-dss-interview-published-book 。國際學校同本地學校點樣講同一本書：https://kidsmybook.com/blog/international-vs-local-school-interview-portfolio 。作品集總頁：https://kidsmybook.com/admissions-portfolio 。升小面試專頁：https://kidsmybook.com/primary-one-interview-portfolio 。面試班同 ISBN 出版點樣分：https://kidsmybook.com/blog/interview-class-vs-isbn-published-book 。
 
-WhatsApp https://wa.me/85291214157 或電郵 kidsmybook@outlook.com 。
+WhatsApp @kidsmybook 或電郵 kidsmybook@outlook.com 。
 
-> 私人報價。WhatsApp https://wa.me/85291214157 · 唔保證取錄 · https://kidsmybook.com/admissions-portfolio
+> 私人報價。WhatsApp @kidsmybook · 唔保證取錄 · https://kidsmybook.com/admissions-portfolio

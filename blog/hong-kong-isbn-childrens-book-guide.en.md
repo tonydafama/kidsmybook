@@ -38,4 +38,4 @@ No. The ISBN is an identifier. Books registration is a separate step. Hong Kong 
 
 No. A number makes a book easier to identify, order, and cite, so a portfolio can describe a formal publication rather than only a keepsake. The number does not prove the depth of the work, and it does not guarantee admission. Inside the 12-month programme, Kidsmybook handles the book number and related publishing arrangements to formal-publication requirements, so a family does not have to start from zero. Professor review, the child’s own participation, and the portfolio narrative are what an interview can actually discuss. Programme: https://kidsmybook.com/programme . FAQ: https://kidsmybook.com/faq .
 
-> Private quotation. WhatsApp https://wa.me/85291214157 · kidsmybook@outlook.com . This article helps parents read public information. Application details follow the latest notice from the Books Registration Office, Hong Kong Public Libraries.
+> Private quotation. WhatsApp @kidsmybook · kidsmybook@outlook.com . This article helps parents read public information. Application details follow the latest notice from the Books Registration Office, Hong Kong Public Libraries.

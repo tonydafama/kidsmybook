@@ -26,6 +26,6 @@ tags: ["本地小學", "國際學校", "portfolio", "交件"]
 
 ## 點樣私人報價？
 
-WhatsApp https://wa.me/85291214157 ，講你同時睇緊本地小學定國際學校，或者兩邊都睇。報價私人，網站唔公開價目，亦唔保證取錄。常見問題：https://kidsmybook.com/faq 。
+WhatsApp @kidsmybook ，講你同時睇緊本地小學定國際學校，或者兩邊都睇。報價私人，網站唔公開價目，亦唔保證取錄。常見問題：https://kidsmybook.com/faq 。
 
-> 私人報價。WhatsApp https://wa.me/85291214157 · 唔保證取錄 · https://kidsmybook.com/admissions-portfolio
+> 私人報價。WhatsApp @kidsmybook · 唔保證取錄 · https://kidsmybook.com/admissions-portfolio

@@ -139,7 +139,7 @@ export const PORTFOLIO_HANS = {
     },
     {
       q: "怎样索取升学作品集的私人报价？",
-      a: "WhatsApp https://wa.me/85291214157 或电邮 kidsmybook@outlook.com。讲小朋友年龄、目标是升小、升中还是国际学校，以及一个兴趣。网站不公开价目，也不保证学位。",
+      a: "WhatsApp @kidsmybook 或电邮 kidsmybook@outlook.com。讲小朋友年龄、目标是升小、升中还是国际学校，以及一个兴趣。网站不公开价目，也不保证学位。",
     },
     {
       q: "美术作品集和 ISBN 出版作品集有什么分别？",
@@ -198,7 +198,7 @@ export const FAQ_HANS: { q: string; a: string }[] = [
   },
   {
     q: "收费怎么算？",
-    a: "完整 12 个月方案按小朋友题材和配套私人报价，网站不公开价目。欢迎 WhatsApp（https://wa.me/85291214157）或电邮 kidsmybook@outlook.com。",
+    a: "完整 12 个月方案按小朋友题材和配套私人报价，网站不公开价目。欢迎 WhatsApp @kidsmybook 或电邮 kidsmybook@outlook.com。",
   },
   {
     q: "小朋友出书和普通兴趣班有什么分别？",
@@ -230,7 +230,7 @@ export const FAQ_HANS: { q: string; a: string }[] = [
   },
   {
     q: "怎样开始？第一次咨询要准备什么？",
-    a: "WhatsApp https://wa.me/85291214157 或电邮 kidsmybook@outlook.com，简单说：（1）小朋友年龄和阶段（幼儿园／小学／中学）；（2）现在学校／目标学校类型；（3）他最感兴趣的一件事；（4）你最想解决的作品集／面试问题。我们会先了解再私人报价，网站不放价目表。",
+    a: "WhatsApp @kidsmybook 或电邮 kidsmybook@outlook.com，简单说：（1）小朋友年龄和阶段（幼儿园／小学／中学）；（2）现在学校／目标学校类型；（3）他最感兴趣的一件事；（4）你最想解决的作品集／面试问题。我们会先了解再私人报价，网站不放价目表。",
   },
   {
     q: "资优／特别兴趣的小朋友适不适合？",
@@ -392,7 +392,7 @@ export const PORTFOLIO_EN = {
     },
     {
       q: "How do we ask for a private quote on a school portfolio?",
-      a: "WhatsApp https://wa.me/85291214157 or email kidsmybook@outlook.com. Share the child's age, whether the target is primary, secondary, or an international school, and one interest. The site does not publish prices, and no school place is guaranteed.",
+      a: "WhatsApp @kidsmybook or email kidsmybook@outlook.com. Share the child's age, whether the target is primary, secondary, or an international school, and one interest. The site does not publish prices, and no school place is guaranteed.",
     },
     {
       q: "What is the difference between an art portfolio and an ISBN book?",
@@ -451,7 +451,7 @@ export const FAQ_EN: { q: string; a: string }[] = [
   },
   {
     q: "How much does it cost?",
-    a: "The complete 12-month solution is quoted privately according to the child's topic and what is included. We do not publish prices. WhatsApp https://wa.me/85291214157 or email kidsmybook@outlook.com.",
+    a: "The complete 12-month solution is quoted privately according to the child's topic and what is included. We do not publish prices. WhatsApp @kidsmybook or email kidsmybook@outlook.com.",
   },
   {
     q: "How is a published book different from a regular interest class?",
@@ -483,7 +483,7 @@ export const FAQ_EN: { q: string; a: string }[] = [
   },
   {
     q: "How do we start? What should the first consultation cover?",
-    a: "WhatsApp https://wa.me/85291214157 or email kidsmybook@outlook.com. Share: (1) age and stage (kindergarten, primary, or secondary); (2) current or target school type; (3) the one interest that holds; (4) the portfolio or interview problem you want to solve. We learn the situation, then quote privately. There is no price list on the site.",
+    a: "WhatsApp @kidsmybook or email kidsmybook@outlook.com. Share: (1) age and stage (kindergarten, primary, or secondary); (2) current or target school type; (3) the one interest that holds; (4) the portfolio or interview problem you want to solve. We learn the situation, then quote privately. There is no price list on the site.",
   },
   {
     q: "Does this suit a gifted child or a strong special interest?",
@@ -559,7 +559,7 @@ export const GAOCAI_HANS: HubCopy = {
     },
     {
       q: "怎样索取私人报价？",
-      a: "WhatsApp https://wa.me/85291214157 或电邮 kidsmybook@outlook.com。讲小朋友年龄、目标是升小、升中还是国际学校，以及一个兴趣。网站不公开价目。",
+      a: "WhatsApp @kidsmybook 或电邮 kidsmybook@outlook.com。讲小朋友年龄、目标是升小、升中还是国际学校，以及一个兴趣。网站不公开价目。",
     },
   ],
   readingTitle: "高才通和升学作品集延伸阅读",
@@ -639,7 +639,7 @@ export const XINGQU_HANS: HubCopy = {
     },
     {
       q: "怎样索取私人报价？",
-      a: "WhatsApp https://wa.me/85291214157 或电邮 kidsmybook@outlook.com。讲年龄、一件兴趣，和目标是升小、升中还是国际学校。网站不公开价目。",
+      a: "WhatsApp @kidsmybook 或电邮 kidsmybook@outlook.com。讲年龄、一件兴趣，和目标是升小、升中还是国际学校。网站不公开价目。",
     },
   ],
   readingTitle: "兴趣、计划和作品集",
@@ -718,7 +718,7 @@ export const GAOCAI_EN: HubCopy = {
     },
     {
       q: "How do we ask for a private quotation?",
-      a: "WhatsApp https://wa.me/85291214157 or email kidsmybook@outlook.com. Share the child's age, whether the target is primary, secondary, or an international school, and one interest. Prices are not on the site.",
+      a: "WhatsApp @kidsmybook or email kidsmybook@outlook.com. Share the child's age, whether the target is primary, secondary, or an international school, and one interest. Prices are not on the site.",
     },
   ],
   readingTitle: "Further reading",
@@ -798,7 +798,7 @@ export const XINGQU_EN: HubCopy = {
     },
     {
       q: "How do we ask for a private quotation?",
-      a: "WhatsApp https://wa.me/85291214157 or email kidsmybook@outlook.com. Share the age, one interest, and whether the target is primary, secondary, or an international school. Prices are not on the site.",
+      a: "WhatsApp @kidsmybook or email kidsmybook@outlook.com. Share the age, one interest, and whether the target is primary, secondary, or an international school. Prices are not on the site.",
     },
   ],
   readingTitle: "Interest, programme, and portfolio",
@@ -1066,7 +1066,7 @@ export const SHENGXIAO_HANS: HubCopy = {
     },
     {
       q: "怎样索取升小作品集的私人报价？",
-      a: "WhatsApp https://wa.me/85291214157 或电邮 kidsmybook@outlook.com。讲年龄、目标小学类型和一个兴趣。网站不公开价目，也不保证学位。",
+      a: "WhatsApp @kidsmybook 或电邮 kidsmybook@outlook.com。讲年龄、目标小学类型和一个兴趣。网站不公开价目，也不保证学位。",
     },
   ],
   readingTitle: "升小面试、清单和相关页",
@@ -1146,7 +1146,7 @@ export const SHENGZHONG_HANS: HubCopy = {
     },
     {
       q: "怎样索取私人报价？",
-      a: "WhatsApp https://wa.me/85291214157 或电邮 kidsmybook@outlook.com。讲年级、目标是直资、DSS 还是其他中学，以及一个兴趣。网站不公开价目，也不保证学位。",
+      a: "WhatsApp @kidsmybook 或电邮 kidsmybook@outlook.com。讲年级、目标是直资、DSS 还是其他中学，以及一个兴趣。网站不公开价目，也不保证学位。",
     },
   ],
   readingTitle: "升中、清单和相关页",
@@ -1226,7 +1226,7 @@ export const SHENGXIAO_EN: HubCopy = {
     },
     {
       q: "How do we ask for a private quote?",
-      a: "WhatsApp https://wa.me/85291214157 or email kidsmybook@outlook.com. Share the age, the target primary type, and one interest. The site does not publish prices, and no school place is guaranteed.",
+      a: "WhatsApp @kidsmybook or email kidsmybook@outlook.com. Share the age, the target primary type, and one interest. The site does not publish prices, and no school place is guaranteed.",
     },
   ],
   readingTitle: "Primary interviews, the checklist, and related pages",
@@ -1306,7 +1306,7 @@ export const SHENGZHONG_EN: HubCopy = {
     },
     {
       q: "How do we ask for a private quotation?",
-      a: "WhatsApp https://wa.me/85291214157 or email kidsmybook@outlook.com. Share the year, whether the target is DSS, direct subsidy, or another secondary, and one interest. Prices are not on the site, and no place is guaranteed.",
+      a: "WhatsApp @kidsmybook or email kidsmybook@outlook.com. Share the year, whether the target is DSS, direct subsidy, or another secondary, and one interest. Prices are not on the site, and no place is guaranteed.",
     },
   ],
   readingTitle: "Secondary, the checklist, and related pages",
@@ -1390,7 +1390,7 @@ export const SHUDIAN_HANS: HubCopy = {
     },
     {
       q: "怎样索取私人报价？",
-      a: "WhatsApp https://wa.me/85291214157 或电邮 kidsmybook@outlook.com。讲小朋友年龄和一个兴趣。网站不公开价目，也不保证书架位置或学校录取。计划阶段见 https://kidsmybook.com/programme 。",
+      a: "WhatsApp @kidsmybook 或电邮 kidsmybook@outlook.com。讲小朋友年龄和一个兴趣。网站不公开价目，也不保证书架位置或学校录取。计划阶段见 https://kidsmybook.com/programme 。",
     },
   ],
   readingTitle: "相关阅读",
@@ -1476,7 +1476,7 @@ export const SHUDIAN_EN: HubCopy = {
     },
     {
       q: "How do we ask for a private quotation?",
-      a: "WhatsApp https://wa.me/85291214157 or email kidsmybook@outlook.com. Share the child's age and one interest. Prices are not on the site. No shelf position and no school place are guaranteed. Phases: https://kidsmybook.com/programme .",
+      a: "WhatsApp @kidsmybook or email kidsmybook@outlook.com. Share the child's age and one interest. Prices are not on the site. No shelf position and no school place are guaranteed. Phases: https://kidsmybook.com/programme .",
     },
   ],
   readingTitle: "Related reading",

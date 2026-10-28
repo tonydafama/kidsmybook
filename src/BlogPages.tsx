@@ -408,7 +408,7 @@ function inlineFormat(text: string, whatsappText: string): ReactNode {
   // light markdown: https links, emails, **bold**, *italic*, `code`
   const parts: ReactNode[] = [];
   const re =
-    /(https:\/\/[^\s<>"']+|[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}|\*\*[^*]+\*\*|\*[^*]+\*|`[^`]+`)/g;
+    /(https:\/\/[^\s<>"']+|@kidsmybook|[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}|\*\*[^*]+\*\*|\*[^*]+\*|`[^`]+`)/g;
   let last = 0;
   let m: RegExpExecArray | null;
   let key = 0;

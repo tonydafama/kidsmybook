@@ -147,7 +147,7 @@ export const PORTFOLIO_ZH = {
     },
     {
       q: "點樣索取升學作品集嘅私人報價？",
-      a: "WhatsApp https://wa.me/85291214157 或電郵 kidsmybook@outlook.com。講小朋友年齡、目標係升小、升中定國際學校，同一個興趣。網站唔公開價目，亦唔保證學位。",
+      a: "WhatsApp @kidsmybook 或電郵 kidsmybook@outlook.com。講小朋友年齡、目標係升小、升中定國際學校，同一個興趣。網站唔公開價目，亦唔保證學位。",
     },
     {
       q: "美術作品集同 ISBN 出版作品集有咩分別？",
@@ -450,7 +450,7 @@ export const GAOCAI_ZH: HubCopy = {
     },
     {
       q: "點樣索取私人報價？",
-      a: "WhatsApp https://wa.me/85291214157 或電郵 kidsmybook@outlook.com。講小朋友年齡、目標係升小、升中定國際學校，同一個興趣。網站唔公開價目。",
+      a: "WhatsApp @kidsmybook 或電郵 kidsmybook@outlook.com。講小朋友年齡、目標係升小、升中定國際學校，同一個興趣。網站唔公開價目。",
     },
   ],
   readingTitle: "高才通同升學作品集延伸閱讀",
@@ -530,7 +530,7 @@ export const XINGQU_ZH: HubCopy = {
     },
     {
       q: "點樣索取私人報價？",
-      a: "WhatsApp https://wa.me/85291214157 或電郵 kidsmybook@outlook.com。講年齡、一件興趣，同目標係升小、升中定國際學校。網站唔公開價目。",
+      a: "WhatsApp @kidsmybook 或電郵 kidsmybook@outlook.com。講年齡、一件興趣，同目標係升小、升中定國際學校。網站唔公開價目。",
     },
   ],
   readingTitle: "興趣、計劃同作品集",
@@ -605,7 +605,7 @@ export const SHENGXIAO_ZH: HubCopy = {
     },
     {
       q: "點樣索取升小作品集嘅私人報價？",
-      a: "WhatsApp https://wa.me/85291214157 或電郵 kidsmybook@outlook.com。講年齡、目標小學類型同一個興趣。網站唔公開價目，亦唔保證學位。",
+      a: "WhatsApp @kidsmybook 或電郵 kidsmybook@outlook.com。講年齡、目標小學類型同一個興趣。網站唔公開價目，亦唔保證學位。",
     },
   ],
   readingTitle: "升小面試、清單同相關頁",
@@ -685,7 +685,7 @@ export const SHENGZHONG_ZH: HubCopy = {
     },
     {
       q: "點樣索取私人報價？",
-      a: "WhatsApp https://wa.me/85291214157 或電郵 kidsmybook@outlook.com。講年級、目標係直資、DSS 定其他中學，同一個興趣。網站唔公開價目，亦唔保證學位。",
+      a: "WhatsApp @kidsmybook 或電郵 kidsmybook@outlook.com。講年級、目標係直資、DSS 定其他中學，同一個興趣。網站唔公開價目，亦唔保證學位。",
     },
   ],
   readingTitle: "升中、清單同相關頁",
@@ -769,7 +769,7 @@ export const SHUDIAN_ZH: HubCopy = {
     },
     {
       q: "點樣索取私人報價？",
-      a: "WhatsApp https://wa.me/85291214157 或電郵 kidsmybook@outlook.com。講小朋友年齡同一個興趣。網站唔公開價目，亦唔保證書架位置或學校取錄。計劃階段見 https://kidsmybook.com/programme 。",
+      a: "WhatsApp @kidsmybook 或電郵 kidsmybook@outlook.com。講小朋友年齡同一個興趣。網站唔公開價目，亦唔保證書架位置或學校取錄。計劃階段見 https://kidsmybook.com/programme 。",
     },
   ],
   readingTitle: "相關閱讀",
