@@ -1,20 +1,20 @@
 ---
 title: "升中 Clear Book／个人学习档案：怎样放一本正式出版物"
-description: "Kidsmybook 第一句是出书连实体书店上架：导师制正式印刷之后，按题材和配套走三联、商务、中华等书店平台。升中 Clear Book 和个人学习档案是第二层用途。成绩表、证书和自述仍然要交，书不取代这三样。放最前一页 A4：书名、小朋友做过什么、ISBN，可加一句实体书店上架路径。不要把整本书影印进 Clear Book。面试当日带实体书，指着一页讲。时间紧就等下一个申请周期，不要赶一本弱书。私人报价，不保证每间分店有货，也不保证录取。"
+description: "Kidsmybook 第一句是出书连实体书店上架：导师制正式印刷之后，按题材和配套走香港实体书店。升中 Clear Book 和个人学习档案是第二层用途。成绩表、证书和自述仍然要交，书不取代这三样。放最前一页 A4：书名、小朋友做过什么、ISBN，可加一句实体书店上架路径。不要把整本书影印进 Clear Book。面试当日带实体书，指着一页讲。时间紧就等下一个申请周期，不要赶一本弱书。私人报价，不保证每间分店有货，也不保证录取。"
 date: "2026-10-27"
 slug: "clear-book-personal-learning-file-published-book"
 tags: ["升中", "Clear Book", "个人学习档案", "实体书店", "ISBN"]
 ---
 
-家长搜「升中 Clear Book」或者「个人学习档案」，下一句很多时候是「把成绩表、证书和自述夹齐，再把整本书影印进透明文件夹」。这篇不从文件夹开始。Kidsmybook 对外第一句是出书连实体书店上架：小朋友参与，约 12 个月导师制，先正式印刷，再按题材和配套，走三联、商务、中华这一类实体书店平台的供货路径。升中作品集、Clear Book 和个人学习档案可以引用这份成果，但是第二层用途，不是计划的第一句，也不是学位。
+家长搜「升中 Clear Book」或者「个人学习档案」，下一句很多时候是「把成绩表、证书和自述夹齐，再把整本书影印进透明文件夹」。这篇不从文件夹开始。Kidsmybook 对外第一句是出书连实体书店上架：小朋友参与，约 12 个月导师制，先正式印刷，再按题材和配套，走香港实体书店的供货路径。升中作品集、Clear Book 和个人学习档案可以引用这份成果，但是第二层用途，不是计划的第一句，也不是学位。
 
 Clear Book 在这篇是指家长带去升中、直资或 DSS 面试、可以逐页翻开的透明展示文件夹。个人学习档案是学校或者家长用来放成绩表、证书和自述的同一类文件。实际叫法、收不收、页数和可不可以带实物，一律以该校最新指引为准。下面先讲这条出版路上架本身是什么，再讲这个文件夹前面，一本正式出版物应该怎样放。
 
 ## 出书连实体书店上架，和升中 Clear Book 是什么关系？
 
-关系是：书先是一件做完的出版成果，Clear Book 和个人学习档案才决定怎样引用它。这条路不是申请到一个书号就结束。前面是约 12 个月导师制：咨询、导师带领创作、可有大学教授审阅、亲子排版，然后才正式印刷。印刷完成，才谈实体书店上架。上架是发行商供货：书去到三联、商务、中华等平台之后，书店买手和店长决定进不进货、摆在哪、卖多久、退不退。Kidsmybook 不是这几间书店。上架视题材和配套，不是每本书自动出现在每一间分店。平台说明：https://kidsmybook.com/kids-book-bookstore-listing 。阶段：https://kidsmybook.com/programme 。
+关系是：书先是一件做完的出版成果，Clear Book 和个人学习档案才决定怎样引用它。这条路不是申请到一个书号就结束。前面是约 12 个月导师制：咨询、导师带领创作、可有大学教授审阅、亲子排版，然后才正式印刷。印刷完成，才谈实体书店上架。上架是发行商供货：书去到香港实体书店之后，书店买手和店长决定进不进货、摆在哪、卖多久、退不退。Kidsmybook 不是书店连锁。上架视题材和配套，不是每本书自动出现在每一间分店。平台说明：https://kidsmybook.com/kids-book-bookstore-listing 。阶段：https://kidsmybook.com/programme 。
 
-所以文件夹上面可以引用的一句，是「有正式印刷，再有实体书店上架路径」。不是「我们就是三联、商务或者中华」，也不是「保证每间分店今天有货」。店方决定进货、陈列和退货。ISBN 只是书号，不等于书架：https://kidsmybook.com/blog/isbn-is-not-bookstore-listing 。面试场面怎样讲同一条路径：https://kidsmybook.com/blog/physical-bookstore-listing-for-hk-school-interview 。升中页：https://kidsmybook.com/secondary-dss-admissions-portfolio 。
+所以文件夹上面可以引用的一句，是「有正式印刷，再有实体书店上架路径」。不是「我们就是某间书店」，也不是「保证每间分店今天有货」。店方决定进货、陈列和退货。ISBN 只是书号，不等于书架：https://kidsmybook.com/blog/isbn-is-not-bookstore-listing 。面试场面怎样讲同一条路径：https://kidsmybook.com/blog/physical-bookstore-listing-for-hk-school-interview 。升中页：https://kidsmybook.com/secondary-dss-admissions-portfolio 。
 
 ## 个人学习档案通常要成绩表、证书和自述，书可不可以取代？
 

@@ -1,12 +1,12 @@
 ---
 title: "An ISBN is not a bookstore shelf"
-description: "A Hong Kong ISBN is a book number. Stock at Joint Publishing, Commercial Press, or Chung Hwa is a different path. Store managers decide orders, placement, and returns. Kidsmybook is not those bookstores. Private quotation. No branch is guaranteed."
+description: "A Hong Kong ISBN is a book number. Stock at Hong Kong physical bookstores is a different path. Store managers decide orders, placement, and returns. Kidsmybook is not a bookstore chain. Private quotation. No branch is guaranteed."
 date: 2026-10-18
 slug: "isbn-is-not-bookstore-listing"
 tags: ["ISBN", "bookstore", "Hong Kong"]
 ---
 
-When Hong Kong parents say they want a child to publish a book, some mean an ISBN. Others mean a book that can reach a physical bookstore platform. Both are called publishing. The results are far apart. Book numbers, self-printing, and print-on-demand are common, and they often stop at a number or a printed copy. A children's title that reaches a platform such as Joint Publishing, Commercial Press, or Chung Hwa, where a manager decides whether to stock it, is much rarer.
+When Hong Kong parents say they want a child to publish a book, some mean an ISBN. Others mean a book that can reach a physical bookstore platform. Both are called publishing. The results are far apart. Book numbers, self-printing, and print-on-demand are common, and they often stop at a number or a printed copy. A children's title that reaches a Hong Kong physical bookstore, where a manager decides whether to stock it, is much rarer.
 
 ## What an ISBN actually is
 
@@ -14,7 +14,7 @@ An ISBN identifies one version of a book. In Hong Kong, the Books Registration O
 
 ## Why a shelf is a different job
 
-A physical listing is a platform and a shop decision. The book has to be formally printed, then a listing path is arranged for that title and package. Joint Publishing, Commercial Press, and Chung Hwa are bookstores. Kidsmybook is not those bookstores. Managers decide whether to order, where to place the book, how long it stays, and whether to return it. This site does not say every branch is guaranteed to stock it. An online shop is not the same sentence as a branch shelf.
+A physical listing is a platform and a shop decision. The book has to be formally printed, then a listing path is arranged for that title and package. A physical bookstore is an independent shop. Kidsmybook is not a bookstore chain. Managers decide whether to order, where to place the book, how long it stays, and whether to return it. This site does not say every branch is guaranteed to stock it. An online shop is not the same sentence as a branch shelf.
 
 ## Where DIY, a print shop, and POD usually stop
 
@@ -28,9 +28,9 @@ Kidsmybook is a 12-month mentored plan: consultation, creation, a possible unive
 
 No. A number and a shelf are two different things. To see whether a topic can reach a bookstore platform, start at https://kidsmybook.com/kids-book-bookstore-listing and the print-and-listing phase at https://kidsmybook.com/programme .
 
-## Can every Joint Publishing, Commercial Press, and Chung Hwa branch be guaranteed?
+## Can every Hong Kong physical bookstore branch be guaranteed?
 
-No. Listing is a path and an arrangement. It depends on the title and package. Managers decide stock, placement, and returns. Kidsmybook is not those bookstores.
+No. Listing is a path and an arrangement. It depends on the title and package. Managers decide stock, placement, and returns. Kidsmybook is not a bookstore chain.
 
 ## How do we start?
 

@@ -16,11 +16,11 @@ tags: ["升中面试", "小四", "小五", "实体书店", "时间表"]
 
 ## 想有正式印刷和实体书店上架，小四、小五还是小六才开始？
 
-如果终点是一本正式印刷的书，再加上去三联、商务、中华等平台的实体上架路径，而不是只有一份电子稿，要预留大约 12 个月。对着常见的小六上学期高峰，以及小五已经会见面的学校，比较贴近的起点是小四初：从小四开学算起约一年，第 12 个月会落在小五开学前的暑假前后，印好的书和上架路径才有机会在小五后期、以及小六上学期之前存在。如果家庭在意的学校在小五上学期已经见，12 个月就要再早一截，大约到小三后期。小五才开始是赶：从小五开学算起约一年，第 12 个月才落在小六开学前的暑假前后，书可能刚刚印好，上架路径才开始，赶不及小五那一轮，也赶不及小六开学只剩几个星期就要见的一轮。小六才开始，而面试只剩几天或几星期，12 个月计划赶不及这一轮。电子稿、周末自印、面试班练习纸，都不是这条路的终点。平台说明：https://kidsmybook.com/kids-book-bookstore-listing 。阶段：https://kidsmybook.com/programme 。
+如果终点是一本正式印刷的书，再加上去香港实体书店上架／发行路径，而不是只有一份电子稿，要预留大约 12 个月。对着常见的小六上学期高峰，以及小五已经会见面的学校，比较贴近的起点是小四初：从小四开学算起约一年，第 12 个月会落在小五开学前的暑假前后，印好的书和上架路径才有机会在小五后期、以及小六上学期之前存在。如果家庭在意的学校在小五上学期已经见，12 个月就要再早一截，大约到小三后期。小五才开始是赶：从小五开学算起约一年，第 12 个月才落在小六开学前的暑假前后，书可能刚刚印好，上架路径才开始，赶不及小五那一轮，也赶不及小六开学只剩几个星期就要见的一轮。小六才开始，而面试只剩几天或几星期，12 个月计划赶不及这一轮。电子稿、周末自印、面试班练习纸，都不是这条路的终点。平台说明：https://kidsmybook.com/kids-book-bookstore-listing 。阶段：https://kidsmybook.com/programme 。
 
 ## 从小四初算，五个阶段怎样对着小六上学期？
 
-用「小四九月左右开始」做例子，不是承诺每一个家庭同一天印好。第 1 个月咨询，讲年龄、目标是直资、DSS、私立还是其他，以及一件小朋友会自己翻开来做的兴趣。第 2 至 5 个月导师带领创作。第 6 至 7 个月出版研讨，可有大学教授审阅；审阅是出版过程，不是学校推荐信。第 8 至 10 个月亲子排版。第 11 个月是印刷前核对，公开阶段没有把这个月写成另一个课程。第 12 个月正式印刷，并按题材和配套开始实体书店上架路径。上架是发行商供货，书店买手和店长决定进货、陈列和退货，所以第 12 个月不等于每一间分店当天已经有货，ISBN 也不等于书架有货。Kidsmybook 不是三联、商务或中华。公开具名例子 Hilary 出版时八岁，约一年完成蝴蝶图鉴；这是出版时间，不是升中面试结果，也不是录取：https://kidsmybook.com/case-studies/hilary-butterfly-guide 。
+用「小四九月左右开始」做例子，不是承诺每一个家庭同一天印好。第 1 个月咨询，讲年龄、目标是直资、DSS、私立还是其他，以及一件小朋友会自己翻开来做的兴趣。第 2 至 5 个月导师带领创作。第 6 至 7 个月出版研讨，可有大学教授审阅；审阅是出版过程，不是学校推荐信。第 8 至 10 个月亲子排版。第 11 个月是印刷前核对，公开阶段没有把这个月写成另一个课程。第 12 个月正式印刷，并按题材和配套开始实体书店上架路径。上架是发行商供货，书店买手和店长决定进货、陈列和退货，所以第 12 个月不等于每一间分店当天已经有货，ISBN 也不等于书架有货。Kidsmybook 不是某间书店。公开具名例子 Hilary 出版时八岁，约一年完成蝴蝶图鉴；这是出版时间，不是升中面试结果，也不是录取：https://kidsmybook.com/case-studies/hilary-butterfly-guide 。
 
 - 第 1 个月，约小四初：咨询，定兴趣和目标中学方向。
 - 第 2 至 5 个月：导师带领创作，留下观察和修改。
@@ -39,6 +39,6 @@ tags: ["升中面试", "小四", "小五", "实体书店", "时间表"]
 
 ## 怎样私人报价？
 
-网站不公开价目，也不保证书架位置或学校录取。报价之前可以先分清三句：现在要的是面试班操练、一份电子稿，还是正式印刷加实体书店上架路径；ISBN 只是书号，不等于三联、商务、中华已经进货；店方决定进货、陈列和退货，不保证每间分店有货。书也不代替成绩表和证书。WhatsApp https://wa.me/85291214157 或电邮 kidsmybook@outlook.com 。讲小朋友现在读小三、小四、小五还是小六、目标中学大约什么时候见、以及一个兴趣。如果时间只剩几天，我们会直接讲 12 个月计划赶不及。为什么 ISBN 不等于上架：https://kidsmybook.com/blog/isbn-is-not-bookstore-listing 。自费、代印和按需印刷多数停在哪里：https://kidsmybook.com/blog/self-publish-pod-vs-mentored-bookstore-listing 。书展和全年上架：https://kidsmybook.com/blog/book-fair-booth-vs-year-round-bookstore-listing 。网上有售和实体架：https://kidsmybook.com/blog/online-storefront-vs-physical-bookstore-listing 。实体上架对家长可以意味什么：https://kidsmybook.com/blog/bookstore-shelf-listing-for-parents 。
+网站不公开价目，也不保证书架位置或学校录取。报价之前可以先分清三句：现在要的是面试班操练、一份电子稿，还是正式印刷加实体书店上架路径；ISBN 只是书号，不等于实体书店已经进货；店方决定进货、陈列和退货，不保证每间分店有货。书也不代替成绩表和证书。WhatsApp https://wa.me/85291214157 或电邮 kidsmybook@outlook.com 。讲小朋友现在读小三、小四、小五还是小六、目标中学大约什么时候见、以及一个兴趣。如果时间只剩几天，我们会直接讲 12 个月计划赶不及。为什么 ISBN 不等于上架：https://kidsmybook.com/blog/isbn-is-not-bookstore-listing 。自费、代印和按需印刷多数停在哪里：https://kidsmybook.com/blog/self-publish-pod-vs-mentored-bookstore-listing 。书展和全年上架：https://kidsmybook.com/blog/book-fair-booth-vs-year-round-bookstore-listing 。网上有售和实体架：https://kidsmybook.com/blog/online-storefront-vs-physical-bookstore-listing 。实体上架对家长可以意味什么：https://kidsmybook.com/blog/bookstore-shelf-listing-for-parents 。
 
 > 私人报价。WhatsApp https://wa.me/85291214157 · kidsmybook@outlook.com · 出书连实体书店上架：https://kidsmybook.com/kids-book-bookstore-listing

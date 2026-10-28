@@ -20,21 +20,21 @@ const POSTS: PostMeta[] = [
   {
     slug: "clear-book-personal-learning-file-published-book",
     title: "升中 Clear Book／個人學習檔案：點樣放一本正式出版物",
-    excerpt: "Kidsmybook 第一句係出書連實體書店上架：導師制正式印刷之後，按題材同配套走三聯、商務、中華等書店平台。升中 Clear Book 同個人學習檔案係第二層用途。成績表、證書同自述仍然要交，書唔取代呢三樣。放最前一頁 A4：書名、小朋友做過咩、ISBN，可加一句實體書店上架路徑。唔好將成本書影印入 Clear Book。面試當日帶實體書，指住一頁講。時間緊就等下一個申請周期，唔好趕一本弱書。私人報價，唔保證每間分店有貨，亦唔保證取錄。",
+    excerpt: "Kidsmybook 第一句係出書連實體書店上架：導師制正式印刷之後，按題材同配套走香港實體書店。升中 Clear Book 同個人學習檔案係第二層用途。成績表、證書同自述仍然要交，書唔取代呢三樣。放最前一頁 A4：書名、小朋友做過咩、ISBN，可加一句實體書店上架路徑。唔好將成本書影印入 Clear Book。面試當日帶實體書，指住一頁講。時間緊就等下一個申請周期，唔好趕一本弱書。私人報價，唔保證每間分店有貨，亦唔保證取錄。",
     date: "2026-10-27",
     readMin: 8,
   },
   {
     slug: "thin-a4-portfolio-published-book",
     title: "學校作品集只得兩至五頁 A4：點樣放一本正式出版物",
-    excerpt: "Kidsmybook 第一句係出書連實體書店上架：導師制正式印刷之後，按題材同配套走三聯、商務、中華等書店平台。學校作品集係第二層用途。直資同私立常見只收兩至五頁 A4，有啲學校唔收作品集。唔好將成本書影印入文件夾。交一頁：書名、小朋友做過咩、ISBN，可加一句實體書店上架路徑。面試當日帶實體書，指住一頁講。上傳 PDF 同帶書係兩件事。跟學校最新指引。私人報價，唔保證每間分店有貨，亦唔保證取錄。",
+    excerpt: "Kidsmybook 第一句係出書連實體書店上架：導師制正式印刷之後，按題材同配套走香港實體書店。學校作品集係第二層用途。直資同私立常見只收兩至五頁 A4，有啲學校唔收作品集。唔好將成本書影印入文件夾。交一頁：書名、小朋友做過咩、ISBN，可加一句實體書店上架路徑。面試當日帶實體書，指住一頁講。上傳 PDF 同帶書係兩件事。跟學校最新指引。私人報價，唔保證每間分店有貨，亦唔保證取錄。",
     date: "2026-10-26",
     readMin: 7,
   },
   {
     slug: "physical-bookstore-listing-for-hk-school-interview",
     title: "出書連實體書店上架：升小、升中同國際學校面試可以點講？",
-    excerpt: "Kidsmybook 第一句係出書連實體書店上架：正式印刷之後，按題材同配套走三聯、商務、中華等書店平台。店方決定入貨、陳列同退貨。升學面試係第二層用途：同一條上架路徑，可以幫升小、升中同國際學校嘅對話多一句核得到嘅話，而唔係只報一個 ISBN。私人報價，唔保證每間分店有貨，亦唔保證取錄。",
+    excerpt: "Kidsmybook 第一句係出書連實體書店上架：正式印刷之後，按題材同配套走香港實體書店。店方決定入貨、陳列同退貨。升學面試係第二層用途：同一條上架路徑，可以幫升小、升中同國際學校嘅對話多一句核得到嘅話，而唔係只報一個 ISBN。私人報價，唔保證每間分店有貨，亦唔保證取錄。",
     date: "2026-10-24",
     readMin: 7,
   },
@@ -54,36 +54,36 @@ const POSTS: PostMeta[] = [
   },
   {
     slug: "online-storefront-vs-physical-bookstore-listing",
-    title: "網上書店／電子書上架 ≠ 三聯商務中華書架：家長點分清楚",
-    excerpt: "Amazon、HKTVmall、POD 網店或者電子書目錄有售，唔等於三聯、商務、中華書架有貨。網上商品頁同電子書係另外兩種「上架」。實體上架係發行商供貨，店方決定入貨、陳列同退貨。Kidsmybook 講出書連實體上架。ISBN 唔等於書店上架。私人報價，唔保證每間分店有貨，亦唔保證取錄。",
+    title: "網上書店／電子書上架 ≠ 實體書店書架：家長點分清楚",
+    excerpt: "Amazon、HKTVmall、POD 網店或者電子書目錄有售，唔等於實體書店書架有貨。網上商品頁同電子書係另外兩種「上架」。實體上架係發行商供貨，店方決定入貨、陳列同退貨。Kidsmybook 講出書連實體上架。ISBN 唔等於書店上架。私人報價，唔保證每間分店有貨，亦唔保證取錄。",
     date: "2026-10-21",
     readMin: 6,
   },
   {
     slug: "book-fair-booth-vs-year-round-bookstore-listing",
     title: "香港書展出書 ≠ 全年書店上架：家長點樣分清楚",
-    excerpt: "書展攤位或者出版社展位見到書，唔等於三聯、商務、中華全年書架有貨。上架係供貨路徑，店方決定入貨、陳列同退貨。Kidsmybook 講出書連上架，唔係書展出場就算成功。ISBN 同呈繳亦唔等於上架。私人報價，唔保證每間分店有貨，亦唔保證取錄。",
+    excerpt: "書展攤位或者出版社展位見到書，唔等於實體書店全年書架有貨。上架係供貨路徑，店方決定入貨、陳列同退貨。Kidsmybook 講出書連上架，唔係書展出場就算成功。ISBN 同呈繳亦唔等於上架。私人報價，唔保證每間分店有貨，亦唔保證取錄。",
     date: "2026-10-20",
     readMin: 6,
   },
   {
     slug: "anthology-vs-sole-authored-bookstore-listing",
     title: "比賽得獎作品集／學校結集，同個人出書連上架有咩分別？",
-    excerpt: "學校結集、比賽得獎作品集，多數係多人合集入面一篇。Kidsmybook 係約 12 個月導師制，小朋友參與一本正式印刷嘅個人書，再按題材同配套走三聯、商務、中華等書店平台。ISBN 只係書號。私人報價，唔保證每間分店有貨，亦唔保證取錄。",
+    excerpt: "學校結集、比賽得獎作品集，多數係多人合集入面一篇。Kidsmybook 係約 12 個月導師制，小朋友參與一本正式印刷嘅個人書，再按題材同配套走香港實體書店。ISBN 只係書號。私人報價，唔保證每間分店有貨，亦唔保證取錄。",
     date: "2026-10-19",
     readMin: 6,
   },
   {
     slug: "isbn-is-not-bookstore-listing",
     title: "只有 ISBN ≠ 實體書店上架",
-    excerpt: "香港 ISBN 係書號。三聯、商務、中華書架上有冇貨，係另一條路。店長決定入貨、陳列同退貨。Kidsmybook 唔係呢幾間書店。私人報價，唔保證每間分店有貨。",
+    excerpt: "香港 ISBN 係書號。實體書店書架上有冇貨，係另一條路。店長決定入貨、陳列同退貨。Kidsmybook 唔係書店連鎖。私人報價，唔保證每間分店有貨。",
     date: "2026-10-18",
     readMin: 6,
   },
   {
     slug: "self-publish-pod-vs-mentored-bookstore-listing",
     title: "自費／POD／代印 vs 導師制＋實體上架",
-    excerpt: "自費出書、代印同按需印刷多數停喺一本印好嘅書。導師制路徑先正式印刷，再走三聯、商務、中華等書店平台。店長決定入貨。私人報價，唔保證每間分店有貨。",
+    excerpt: "自費出書、代印同按需印刷多數停喺一本印好嘅書。導師制路徑先正式印刷，再走香港實體書店。店長決定入貨。私人報價，唔保證每間分店有貨。",
     date: "2026-10-18",
     readMin: 6,
   },
@@ -201,8 +201,8 @@ const POSTS: PostMeta[] = [
   },
   {
     slug: "bookstore-shelf-listing-for-parents",
-    title: "實體書店上架（三聯/商務/中華）對家長嘅意義",
-    excerpt: "實體書店上架對家長可以意味住咩。店長決定入貨同陳列。Kidsmybook 唔係三聯、商務或中華，亦唔保證每間分店有貨。",
+    title: "實體書店上架對家長嘅意義",
+    excerpt: "實體書店上架對家長可以意味住咩。店長決定入貨同陳列。Kidsmybook 唔係某間書店，亦唔保證每間分店有貨。",
     date: "2026-10-18",
     readMin: 6,
   },
@@ -405,10 +405,10 @@ function getLocalizedPostMeta(slug: string, locale: string): Pick<PostMeta, "tit
 }
 
 function inlineFormat(text: string, whatsappText: string): ReactNode {
-  // light markdown: https links, emails, studio phone, **bold**, *italic*, `code`
+  // light markdown: https links, emails, **bold**, *italic*, `code`
   const parts: ReactNode[] = [];
   const re =
-    /(https:\/\/[^\s<>"']+|[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}|(?:\+?852[\s-]?)?9121[\s-]?4157|\*\*[^*]+\*\*|\*[^*]+\*|`[^`]+`)/g;
+    /(https:\/\/[^\s<>"']+|[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}|\*\*[^*]+\*\*|\*[^*]+\*|`[^`]+`)/g;
   let last = 0;
   let m: RegExpExecArray | null;
   let key = 0;

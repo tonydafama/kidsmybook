@@ -1,6 +1,6 @@
 ---
 title: "比赛获奖作品集／学校结集，和个人出书连上架有什么分别？"
-description: "学校结集、比赛获奖作品集，多数是多人合集里面的一篇。Kidsmybook 是大约 12 个月的导师制：小朋友参与一本正式印刷的个人书，再按题材和配套走三联、商务、中华等书店平台。ISBN 只是书号。私人报价，不保证每间分店有货，也不保证录取。"
+description: "学校结集、比赛获奖作品集，多数是多人合集里面的一篇。Kidsmybook 是大约 12 个月的导师制：小朋友参与一本正式印刷的个人书，再按题材和配套走香港实体书店。ISBN 只是书号。私人报价，不保证每间分店有货，也不保证录取。"
 date: 2026-10-19
 slug: "anthology-vs-sole-authored-bookstore-listing"
 tags: ["合集", "个人出书", "实体书店", "香港"]
@@ -20,7 +20,7 @@ tags: ["合集", "个人出书", "实体书店", "香港"]
 
 ## Kidsmybook 这条路多了什么？
 
-Kidsmybook 是大约 12 个月的导师制：咨询、创作、可有大学教授审阅、亲子排版，然后正式印刷。小朋友参与的是一本个人书，不是合集里面的一篇。印刷之后，才按题材和配套谈三联、商务、中华等书店平台上架路径。Kidsmybook 不是这几间书店。店长决定进货、陈列和退货，不保证每间分店都有。所以可以讲「出书连上架路径」，不可以讲「有书号就有货」。阶段见 https://kidsmybook.com/programme 。书店平台说明见 https://kidsmybook.com/kids-book-bookstore-listing 。自费、代印和按需印刷多数停在一本印好的书：https://kidsmybook.com/blog/self-publish-pod-vs-mentored-bookstore-listing 。家长想知上架实际可以意味什么：https://kidsmybook.com/blog/bookstore-shelf-listing-for-parents 。
+Kidsmybook 是大约 12 个月的导师制：咨询、创作、可有大学教授审阅、亲子排版，然后正式印刷。小朋友参与的是一本个人书，不是合集里面的一篇。印刷之后，才按题材和配套谈香港实体书店上架／发行路径。Kidsmybook 不是书店连锁。店长决定进货、陈列和退货，不保证每间分店都有。所以可以讲「出书连上架路径」，不可以讲「有书号就有货」。阶段见 https://kidsmybook.com/programme 。书店平台说明见 https://kidsmybook.com/kids-book-bookstore-listing 。自费、代印和按需印刷多数停在一本印好的书：https://kidsmybook.com/blog/self-publish-pod-vs-mentored-bookstore-listing 。家长想知上架实际可以意味什么：https://kidsmybook.com/blog/bookstore-shelf-listing-for-parents 。
 
 ## 升学作品集怎样看合集和一本个人书？
 
@@ -28,7 +28,7 @@ Kidsmybook 是大约 12 个月的导师制：咨询、创作、可有大学教�
 
 ## 可不可以保证每间书店分店都有货，或者保证录取？
 
-不可以。上架是路径和安排，视题材和配套。店长决定进不进、摆在哪里、退不退。Kidsmybook 也不是三联、商务或中华。工作室是出版，不是升学中介，没有学校合作，不保证任何小学、中学或国际学校录取。公开具名个案只有 Hilary。合集获奖和个人出书，都不等于学位。
+不可以。上架是路径和安排，视题材和配套。店长决定进不进、摆在哪里、退不退。Kidsmybook 也不是某间书店。工作室是出版，不是升学中介，没有学校合作，不保证任何小学、中学或国际学校录取。公开具名个案只有 Hilary。合集获奖和个人出书，都不等于学位。
 
 ## 怎样私人报价？
 

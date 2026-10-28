@@ -4,7 +4,7 @@ import { AboutPage, ChecklistPage, FaqPage, GaocaiHubPage, HomeExplore, Portfoli
 import { LanguageSwitcher } from "./components/LanguageSwitcher";
 import { LinkedText } from "./components/LinkedText";
 import { useLocale } from "./i18n/LocaleContext";
-import { STUDIO_EMAIL, STUDIO_TEL_DISPLAY, STUDIO_TEL_HREF, whatsappHref } from "./lib/contact";
+import { STUDIO_EMAIL, whatsappHref } from "./lib/contact";
 import { getCoverEnquiry, postPreviewLead, subscribeCoverEnquiry, type CoverEnquiry } from "./lib/coverEnquiry";
 import { pageWhatsappText } from "./lib/whatsappIntent";
 import { BlogIndexPage, BlogPostPage, POSTS, SITE_ORIGIN, getLocalizedPostMeta, upsertJsonLd } from "./BlogPages";
@@ -709,7 +709,6 @@ export default function App() {
           <a href={whatsappFloating} target="_blank" rel="noreferrer" onClick={trackFloatingEnquiry}>
             {t.nav.whatsapp}
           </a>
-          <a href={STUDIO_TEL_HREF}>{STUDIO_TEL_DISPLAY}</a>
           <a href={`mailto:${STUDIO_EMAIL}`}>{STUDIO_EMAIL}</a>
         </p>
         <p>{t.footer.quote}</p>

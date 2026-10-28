@@ -15,7 +15,7 @@ But "publishing a book" sounds out of reach. How exactly is it done? It's not as
 For a book to be effective in a principal's interview, it must meet three conditions:
 1. **Formal ISBN Registration**: This signifies it is an internationally recognized formal publication, not a self-funded commemorative booklet.
 2. **Professional Academic Review**: Recommendations from university professors or field experts ensure the content's educational value.
-3. **Physical Bookstore Listing**: It must be searchable and available on platforms like Joint Publishing or Commercial Press.
+3. **Physical Bookstore Listing**: It must be searchable and available on platforms like Hong Kong physical bookstores.
 
 ## Kidsmybook's 12-Month Publishing Journey
 
