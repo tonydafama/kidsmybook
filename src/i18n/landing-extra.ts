@@ -2,12 +2,12 @@ import { WA_QUOTE_EN, WA_QUOTE_HANS } from "../lib/contact";
 import type { HubCopy } from "../seo/landing-zh";
 
 export const PROGRAMME_HANS = {
-  title: "小朋友出书计划香港｜正式印刷和实体书店上架｜Kidsmybook",
+  title: "小朋友出书计划香港｜正式出书和大学教授审阅｜Kidsmybook",
   description:
-    "香港儿童出书：12 个月导师制，正式印刷，再走香港实体书店上架／发行路径。升学作品集是之后可以引用的成果。私人报价。不保证每间分店有货，也不保证录取。",
-  eyebrow: "儿童出书 · 实体书店上架 · 香港",
-  h1: "小朋友出书计划：正式印刷，再走上实体书店上架",
-  lead: "Kidsmybook 是香港儿童出版工作室。12 个月导师制先把小朋友的兴趣做成正式印刷的书，再按题材和配套安排香港实体书店上架／发行路径。Kidsmybook 不是书店连锁。店长决定进货、陈列和退货。升学作品集是完成之后可以引用的第二层用途，不是计划的第一句，也不保证录取。",
+    "香港儿童出版：12 个月导师制，把小朋友的兴趣做成有 ISBN 的正式印刷童书，同大学教授合作审阅，再提供香港实体书店上架／发行路径。私人报价。不保证每间分店有货，也不保证录取。",
+  eyebrow: "儿童出书 · 大学教授审阅 · 香港",
+  h1: "小朋友出书计划：正式出书，同大学教授合作审阅",
+  lead: "Kidsmybook 是香港儿童出版工作室。12 个月导师制，把小朋友的兴趣做成有 ISBN 的正式印刷童书；过程同大学教授合作审阅，再提供香港实体书店上架／发行路径。私人报价。",
   shelfLink: "童书书店上架：香港实体书店上架／发行路径",
   notLabel: "这个计划不是",
   notBody: "不是只申请一个 ISBN、不是 DIY 礼物书、不是保证每间分店有货，也不是保证入学配对。",
@@ -32,7 +32,7 @@ export const PROGRAMME_HANS = {
     "兴趣班多数换来一张证书；我们做的是 12 个月导师制出版：由真实兴趣出发，经创作、教授审阅、正式 ISBN 出版，再可配发布会、展览、媒体和升学作品集。成果是一本面试官记得住、可以引用的正式出版物，不是再多一张一样的证书。",
   vsDiyTitle: "和自己找印刷店／自费出书有什么分别？",
   vsDiy:
-    "自费印刷、代印和按需印刷通常只是一本印好的书。ISBN 是书号，不等于实体书店书架上有货。Kidsmybook 是导师制出版：小朋友亲身参与、可有教授审阅、正式印刷，再谈实体书店平台上架。店长决定进货。升学作品集是之后的用途。",
+    "自费印刷、代印和按需印刷通常只是一本印好的书。ISBN 是书号，不等于实体书店书架上有货。Kidsmybook 是导师制出版：小朋友亲身参与、同大学教授合作审阅、正式印刷，再谈实体书店平台上架。店长决定进货。升学作品集是之后的用途。",
   singleTitle: "可以只做其中一项吗？",
   single:
     "可以。Author Programme 可以全案，也可以单项咨询 Book Launch、Exhibition、Media & PR、Live Streaming、Portfolio Package。适合已经有成品、想加强曝光或升学包装的家庭。",
@@ -68,7 +68,7 @@ export const PORTFOLIO_HANS = {
   description: "升小学面试、升中／DSS／直资，和国际学校 portfolio：用有 ISBN、小朋友参与的正式出版物做记得住的亮点。私人报价，不保证录取。",
   eyebrow: "School portfolio · 香港",
   h1: "香港升学作品集：升小学、升中和国际学校面试怎样用一本书",
-  lead: "香港本地、跨境和高才通家庭，都可以用这条升学作品集路径。证书堆不占优。升小学、升中／直资／DSS，和国际学校面试，每年都见到很多份相近的钢琴、游泳、奥数履历。一本由小朋友参与、可有大学教授审阅、有 ISBN 的正式出版物，是面试官记得住、可以引用的亮点。",
+  lead: "香港本地、跨境和高才通家庭，都可以用这条升学作品集路径。证书堆不占优。升小学、升中／直资／DSS，和国际学校面试，每年都见到很多份相近的钢琴、游泳、奥数履历。一本由小朋友参与、同大学教授合作审阅、有 ISBN 的正式出版物，是面试官记得住、可以引用的亮点。",
   pointsTitle: "一本书可以怎么用",
   points: [
     "面试时有一个具体故事：兴趣从哪来、做过什么研究、怎样改到可以出版",
@@ -170,7 +170,7 @@ export const EXPLORE_HANS = {
 export const FAQ_HANS: { q: string; a: string }[] = [
   {
     q: "Kidsmybook 是什么？",
-    a: "香港儿童出版工作室。我们用 12 个月导师制，把小朋友真正的兴趣做成正式印刷的书，并走香港实体书店上架／发行路径（视题材和配套）。过程可有大学教授审阅。升学作品集是之后可以引用的成果。Kidsmybook 不是书店连锁，也不保证每间分店有货。",
+    a: "香港儿童出版工作室。12 个月导师制，把小朋友的兴趣做成有 ISBN 的正式印刷童书；过程同大学教授合作审阅，再提供香港实体书店上架／发行路径。升学作品集是之后可以引用的成果。Kidsmybook 不是书店连锁，也不保证每间分店有货。",
   },
   {
     q: "适合几岁？",
@@ -251,12 +251,12 @@ export const FAQ_HANS: { q: string; a: string }[] = [
 ];
 
 export const PROGRAMME_EN = {
-  title: "Child author programme Hong Kong | print and bookstore listing | Kidsmybook",
+  title: "Child author programme Hong Kong | formal book and university professor review | Kidsmybook",
   description:
-    "Hong Kong children's publishing: 12 mentored months, a formal print run, then a Hong Kong physical bookstore listing / distribution path. An admissions portfolio is a later use. Private quotation. No branch is guaranteed to stock the title, and no school place is guaranteed.",
-  eyebrow: "Children's books · bookstore shelves · Hong Kong",
-  h1: "Child author programme: print the book, then a real bookstore path",
-  lead: "Kidsmybook is a Hong Kong children's publishing studio. Twelve mentored months turn an interest into a formally printed book, then a Hong Kong physical bookstore listing / distribution path, depending on the title and package. Kidsmybook is not a bookstore chain. Store managers decide stock, placement, and returns. An admissions portfolio is a second use after the book exists. It is not the first sentence of the plan, and no school place is guaranteed.",
+    "Hong Kong children's publishing: 12 mentored months turn a child's interest into a formally printed ISBN children's book, reviewed in collaboration with university professors, then a Hong Kong physical bookstore listing / distribution path. Private quotation. No branch is guaranteed to stock the title, and no school place is guaranteed.",
+  eyebrow: "Children's books · university professor review · Hong Kong",
+  h1: "Child author programme: publish a formal book, reviewed with university professors",
+  lead: "Kidsmybook is a Hong Kong children's publishing studio. A 12-month mentored programme turns a child's interest into a formally printed ISBN children's book. We collaborate with university professors who review the work, then offer a Hong Kong physical bookstore listing / distribution path. Private quotation.",
   shelfLink: "Hong Kong physical bookstore listing / distribution path",
   notLabel: "What this is not",
   notBody: "Not an ISBN number on its own, not a DIY gift book, not a promise that every branch will stock the title, and not a guaranteed school place.",
@@ -281,7 +281,7 @@ export const PROGRAMME_EN = {
     "An interest class usually ends with another certificate. This is a 12-month mentored publication: a real interest, creation, professor review, a formal ISBN book, then launch, exhibition, media, and an admissions portfolio if you want them. The result is a citable book an interviewer can remember.",
   vsDiyTitle: "How is this different from a print shop or DIY self-publishing?",
   vsDiy:
-    "A self-funded print, a print-shop job, or print-on-demand usually stops at a finished copy. An ISBN is a number, not a physical bookstore shelf. Kidsmybook is mentor-led publishing: the child takes part, professors may review, the book is printed, then a bookstore-platform path is arranged. Store managers decide stock. An admissions portfolio comes after that.",
+    "A self-funded print, a print-shop job, or print-on-demand usually stops at a finished copy. An ISBN is a number, not a physical bookstore shelf. Kidsmybook is mentor-led publishing: the child takes part, university professors collaborate on the review, the book is printed, then a bookstore-platform path is arranged. Store managers decide stock. An admissions portfolio comes after that.",
   singleTitle: "Can we book only one part?",
   single:
     "Yes. The Author Programme can be the full year, or a single consultation for Book Launch, Exhibition, Media & PR, Live Streaming, or Portfolio Package. That suits families who already have a finished work.",
@@ -319,7 +319,7 @@ export const PORTFOLIO_EN = {
     "Primary interviews, secondary DSS and direct-subsidy files, and international portfolios: a child-made ISBN book is a highlight someone can cite. Private quotation. No place is guaranteed.",
   eyebrow: "School portfolio · Hong Kong",
   h1: "Hong Kong school portfolio: one book for primary, secondary, and international interviews",
-  lead: "Hong Kong local families, cross-border families, and Top Talent Pass households can use this admissions-portfolio path. Stacks of certificates start to look the same. Primary, secondary, DSS, and international interviews see plenty of piano, swimming, and olympiad files. A book the child actually made — with ISBN, and university professor review when it fits — is a highlight an interviewer can cite.",
+  lead: "Hong Kong local families, cross-border families, and Top Talent Pass households can use this admissions-portfolio path. Stacks of certificates start to look the same. Primary, secondary, DSS, and international interviews see plenty of piano, swimming, and olympiad files. A book the child actually made — with an ISBN, reviewed in collaboration with university professors — is a highlight an interviewer can cite.",
   pointsTitle: "What the book is for",
   points: [
     "A concrete interview story: where the interest came from, what was researched, and how it became publishable",
@@ -423,7 +423,7 @@ export const EXPLORE_EN = {
 export const FAQ_EN: { q: string; a: string }[] = [
   {
     q: "What is Kidsmybook?",
-    a: "A Hong Kong children's publishing studio. A 12-month mentored programme turns a child's real interest into a formally printed book and a Hong Kong physical bookstore listing / distribution path, depending on the title and package. University professors may join the review. An admissions portfolio is a later use. Kidsmybook is not a bookstore chain, and no branch is guaranteed to stock every title.",
+    a: "A Hong Kong children's publishing studio. A 12-month mentored programme turns a child's interest into a formally printed ISBN children's book. We collaborate with university professors who review the work, then offer a Hong Kong physical bookstore listing / distribution path. An admissions portfolio is a later use. Kidsmybook is not a bookstore chain, and no branch is guaranteed to stock every title.",
   },
   {
     q: "What age is Kidsmybook for?",
@@ -822,17 +822,17 @@ export const XINGQU_EN: HubCopy = {
 };
 
 export const ABOUT_HANS = {
-  title: "关于我们｜香港儿童成就出版工作室｜Kidsmybook",
+  title: "关于我们｜香港儿童出版工作室｜Kidsmybook",
   description:
-    "Kidsmybook 是香港儿童成就出版工作室。12 个月导师制，将大约 3 至 18 岁小朋友的真实兴趣做成有 ISBN 的正式出版物。私人报价，WhatsApp 或电邮。不是升学中介，不保证录取。",
+    "Kidsmybook 是香港儿童出版工作室。12 个月导师制，把小朋友的兴趣做成有 ISBN 的正式印刷童书，同大学教授合作审阅。私人报价，WhatsApp 或电邮。不是升学中介，不保证录取。",
   eyebrow: "工作室 · 香港",
-  h1: "关于 Kidsmybook：香港儿童成就出版工作室",
-  lead: "Kidsmybook 是香港儿童成就出版工作室。我们用 12 个月导师制出版计划，将大约 3 至 18 岁小朋友真正的兴趣和生活故事，做成有 ISBN 的正式出版物；过程可有大学教授审阅，完成后再按需要配发布会、展览、媒体和升学作品集。",
+  h1: "关于 Kidsmybook：香港儿童出版工作室",
+  lead: "Kidsmybook 是香港儿童出版工作室。12 个月导师制，把大约 3 至 18 岁小朋友的兴趣做成有 ISBN 的正式印刷童书；过程同大学教授合作审阅，完成后再按需要配发布会、展览、媒体和升学作品集。",
   coverageTitle: "哪些家庭用得上",
   coverage: "香港本地、跨境和高才通家庭都可以用这条路径。语言可以是中文、英文或中英双语，视乎小朋友学校语境，在咨询时再定。",
   programmeTitle: "12 个月导师制，先讲重点",
   programme:
-    "大约一年：先了解兴趣和目标学校方向，再由导师带领创作，可有大学教授审阅，然后亲子排版，最后正式印刷并走上实体书店平台。阶段细节见出书计划页；这页讲工作室是谁。",
+    "大约一年：先了解兴趣和目标学校方向，再由导师带领创作，同大学教授合作审阅，然后亲子排版，最后正式印刷，并提供香港实体书店上架／发行路径。阶段细节见出书计划页；这页讲工作室是谁。",
   disclaimerTitle: "我们不是升学中介",
   disclaimer:
     "Kidsmybook 是出版工作室，不是升学中介，也不保证进入任何学校。最终录取由学校决定。一本正式出版物可以让作品集更有说服力、面试更好讲故事。",
@@ -844,18 +844,18 @@ export const ABOUT_HANS = {
 };
 
 export const ABOUT_EN = {
-  title: "About | Hong Kong child-achievement publishing studio | Kidsmybook",
+  title: "About | Hong Kong children's publishing studio | Kidsmybook",
   description:
-    "Kidsmybook is a Hong Kong child-achievement publishing studio. A 12-month mentored programme turns a real interest, for children about 3 to 18, into an ISBN book. Quoted privately by WhatsApp or email. Not an admissions agent, and no school place is guaranteed.",
+    "Kidsmybook is a Hong Kong children's publishing studio. A 12-month mentored programme turns a child's interest, for ages about 3 to 18, into a formally printed ISBN book, reviewed in collaboration with university professors. Quoted privately by WhatsApp or email. Not an admissions agent, and no school place is guaranteed.",
   eyebrow: "Studio · Hong Kong",
-  h1: "About Kidsmybook, a Hong Kong child-achievement publishing studio",
-  lead: "Kidsmybook is a Hong Kong child-achievement publishing studio. Over 12 mentored months we turn a real interest and life story, for children about 3 to 18, into a formally published ISBN book. University professor review can be part of the process, then a launch, exhibition, media, and an admissions portfolio when the family wants them.",
+  h1: "About Kidsmybook, a Hong Kong children's publishing studio",
+  lead: "Kidsmybook is a Hong Kong children's publishing studio. Over 12 mentored months we turn a real interest, for children about 3 to 18, into a formally printed ISBN children's book. We collaborate with university professors who review the work, then add a launch, exhibition, media, and an admissions portfolio when the family wants them.",
   coverageTitle: "Who it is for",
   coverage:
     "Hong Kong local families, cross-border families, and Top Talent Pass households can use this path. The book can be Chinese, English, or bilingual, chosen for the child's school context during consultation.",
   programmeTitle: "The 12-month programme, in brief",
   programme:
-    "The year starts with the child's interest and school direction, continues with mentor-led making, can include university professor review, then parent-and-child layout, and ends with a formal print run and a physical bookstore listing path. The programme page has the phases. This page says who the studio is.",
+    "The year starts with the child's interest and school direction, continues with mentor-led making and review in collaboration with university professors, then parent-and-child layout, and ends with a formal print run and a Hong Kong physical bookstore listing / distribution path. The programme page has the phases. This page says who the studio is.",
   disclaimerTitle: "Not an admissions agent",
   disclaimer:
     "Kidsmybook is a publishing studio, not an admissions agent, and does not guarantee a school place. The school decides. A formal publication can make a portfolio clearer and an interview easier to tell.",

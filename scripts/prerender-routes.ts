@@ -37,6 +37,7 @@ import {
 } from "../src/seo/landing-zh.ts";
 import {
   HOME_DESCRIPTION_ZH,
+  HOME_H1_ZH,
   HOME_FAQ,
   HOME_TITLE_ZH,
   ORGANIZATION_SAME_AS,
@@ -505,7 +506,7 @@ function staticRoutes(posts: RouteDocument[]): RouteDocument[] {
     ogImage: ogImageForPath("/"),
     mode: "home",
     snapshotHtml: pageWrap(
-      `        <h1>小朋友出書，走上實體書店上架</h1>
+      `        <h1>${escapeHtml(HOME_H1_ZH)}</h1>
         <p>${escapeHtml(HOME_DESCRIPTION_ZH)}</p>
         <p><a href="${quoteWa()}">WhatsApp @kidsmybook</a> · <a href="mailto:${STUDIO_EMAIL}">${STUDIO_EMAIL}</a></p>
         <ul>
