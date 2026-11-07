@@ -27,7 +27,7 @@ import {
 } from "./landing-extra";
 import { ABOUT_ZH, BLOG_INDEX_ZH, CHECKLIST_ZH, EXPLORE_ZH, FAQ_PAGE_ZH, GAOCAI_ZH, PORTFOLIO_ZH, PROGRAMME_ZH, SHENGXIAO_ZH, SHENGZHONG_ZH, SHUDIAN_ZH, XINGQU_ZH, type HubCopy } from "../seo/landing-zh";
 import { WA_QUOTE_EN, WA_QUOTE_HANS, WA_QUOTE_ZH } from "../lib/contact";
-import { HOME_DESCRIPTION_ZH, HOME_FAQ, HOME_TITLE_ZH } from "../seo/meta";
+import { HOME_DESCRIPTION_ZH, HOME_FAQ, HOME_H1_ZH, HOME_TITLE_ZH } from "../seo/meta";
 
 export type ServiceSlug =
   | "author-programme"
@@ -263,7 +263,7 @@ export type Translations = {
 };
 
 const zhHant: Translations = {
-  brandTitle: "小朋友出書，走上實體書店上架",
+  brandTitle: HOME_H1_ZH,
   brandEn: "Turn your child's passion into a published achievement.",
   nav: {
     main: "主選單",
@@ -286,8 +286,8 @@ const zhHant: Translations = {
     askQuote: BLOG_INDEX_ZH.askQuote,
   },
   hero: {
-    eyebrow: "香港 · 兒童出書 · 實體書店上架",
-    lead: "12 個月導師制：正式印刷，再按題材走香港實體書店上架／發行路徑。升學作品集係之後可以引用嘅成果。",
+    eyebrow: "香港兒童出版工作室",
+    lead: "12 個月導師制，將小朋友興趣做成有 ISBN 的正式印刷童書；過程同大學教授合作審閱，再提供香港實體書店上架／發行路徑。私人報價：WhatsApp @kidsmybook",
     generateCover: "生成封面",
     bookConsult: "預約諮詢",
     featuredAlt: "Hilary 新書發布會",
@@ -560,7 +560,7 @@ const zhHant: Translations = {
 
 const zhHans: Translations = {
   ...zhHant,
-  brandTitle: "小朋友出书，走上实体书店上架",
+  brandTitle: "帮小朋友正式出书，同大学教授合作审阅",
   brandEn: "Turn your child's passion into a published achievement.",
   nav: {
     ...zhHant.nav,
@@ -583,7 +583,8 @@ const zhHans: Translations = {
   },
   hero: {
     ...zhHant.hero,
-    lead: "12 个月导师制：正式印刷，再按题材走香港实体书店上架／发行路径。升学作品集是之后可以引用的成果。",
+    eyebrow: "香港儿童出版工作室",
+    lead: "12 个月导师制，把小朋友的兴趣做成有 ISBN 的正式印刷童书；过程同大学教授合作审阅，再提供香港实体书店上架／发行路径。私人报价：WhatsApp @kidsmybook",
     generateCover: "生成封面",
     bookConsult: "预约咨询",
     featuredAlt: "Hilary 新书发布会",
@@ -816,9 +817,9 @@ const zhHans: Translations = {
   shudianPage: SHUDIAN_HANS,
   aboutPage: ABOUT_HANS,
   seo: {
-    homeTitle: "Kidsmybook｜儿童出书・实体书店上架｜香港实体书店上架／发行路径",
+    homeTitle: "Kidsmybook｜帮小朋友出书・大学教授审阅｜香港儿童出版",
     homeDesc:
-      "香港儿童出版工作室。12 个月导师制，把小朋友的兴趣做成正式印刷的书，并走香港实体书店上架／发行路径（视题材和配套）。ISBN 不等于每间分店都有货。升学作品集是次要用途。私人报价：WhatsApp。",
+      "香港儿童出版工作室。12 个月导师制，把小朋友的兴趣做成有 ISBN 的正式印刷童书；过程同大学教授合作审阅，再提供香港实体书店上架／发行路径。私人报价：WhatsApp @kidsmybook",
     servicesTitle: "服务｜Kidsmybook 六项儿童成就出版",
     servicesDesc:
       "出版计划、新书发布会、展览、媒体公关、直播和升学作品集，可全案或单项咨询。私人报价，WhatsApp。Author Programme、Book Launch、Exhibition、Media & PR、Live Streaming、Portfolio Package。",
@@ -840,7 +841,7 @@ const zhHans: Translations = {
 };
 
 const en: Translations = {
-  brandTitle: "A child's book, on a real bookstore path",
+  brandTitle: "Help children publish a formal book, reviewed with university professors",
   brandEn: "Publishing, launches, exhibitions, media, and portfolios — one integrated pathway.",
   nav: {
     main: "Main menu",
@@ -864,8 +865,8 @@ const en: Translations = {
     askQuote: "WhatsApp for a quote",
   },
   hero: {
-    eyebrow: "Hong Kong · Children's books · Bookstore shelves",
-    lead: "Twelve mentored months: a formal print run, then a Hong Kong physical bookstore listing / distribution path. An admissions portfolio is the later use.",
+    eyebrow: "Hong Kong children's publishing studio",
+    lead: "A 12-month mentored programme turns a child's interest into a formally printed ISBN children's book. We collaborate with university professors who review the work, then offer a Hong Kong physical bookstore listing / distribution path. Private quotation: WhatsApp @kidsmybook",
     generateCover: "Generate cover",
     bookConsult: "Book a consultation",
     featuredAlt: "Hilary book launch",
@@ -1108,9 +1109,9 @@ const en: Translations = {
   shudianPage: SHUDIAN_EN,
   aboutPage: ABOUT_EN,
   seo: {
-    homeTitle: "Kidsmybook | Children's books on Hong Kong bookstore shelves",
+    homeTitle: "Kidsmybook | Publish a child's book, reviewed with university professors | Hong Kong",
     homeDesc:
-      "Hong Kong children's publishing studio. A 12-month mentored programme prints a child's book and arranges a Hong Kong physical bookstore listing / distribution path, depending on the title. An ISBN is not a shelf. An admissions portfolio is secondary. Quoted privately via WhatsApp.",
+      "Hong Kong children's publishing studio. A 12-month mentored programme turns a child's interest into a formally printed ISBN children's book. We collaborate with university professors who review the work, then offer a Hong Kong physical bookstore listing / distribution path. Private quotation: WhatsApp @kidsmybook",
     servicesTitle: "Services | Kidsmybook six achievement programmes",
     servicesDesc: "Author Programme, Book Launch, Exhibition, Media & PR, Live Streaming, Portfolio Package.",
     caseStudiesTitle: "Case Studies | Kidsmybook",

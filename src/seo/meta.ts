@@ -55,7 +55,7 @@ export type RouteDocument = {
 export const HOME_FAQ: { q: string; a: string }[] = [
   {
     q: "Kidsmybook 係咩？",
-    a: "香港兒童出版工作室。我哋用 12 個月導師制，將小朋友真正嘅興趣做成正式印刷嘅書，並走香港實體書店上架／發行路徑（視題材同配套）。過程可有大學教授審閱。升學作品集係之後可以引用嘅成果。Kidsmybook 唔係書店連鎖，亦唔保證每間分店有貨。",
+    a: "香港兒童出版工作室。12 個月導師制，將小朋友興趣做成有 ISBN 的正式印刷童書；過程同大學教授合作審閱，再提供香港實體書店上架／發行路徑。升學作品集係之後可以引用嘅成果。Kidsmybook 唔係書店連鎖，亦唔保證每間分店有貨。",
   },
   {
     q: "適合幾歲？",
@@ -135,10 +135,12 @@ export const HOME_FAQ: { q: string; a: string }[] = [
   },
 ];
 
-export const HOME_TITLE_ZH = "Kidsmybook｜兒童出書・實體書店上架｜香港實體書店上架／發行路徑";
+export const HOME_H1_ZH = "幫小朋友正式出書，同大學教授合作審閱";
+
+export const HOME_TITLE_ZH = "Kidsmybook｜幫小朋友出書・大學教授審閱｜香港兒童出版";
 
 export const HOME_DESCRIPTION_ZH =
-  "香港兒童出版工作室。12 個月導師制，將小朋友興趣做成正式印刷嘅書，並走香港實體書店上架／發行路徑（視題材同配套）。ISBN 唔等於每間分店都有貨。升學作品集係次要用途。私人報價：WhatsApp。";
+  "香港兒童出版工作室。12 個月導師制，將小朋友興趣做成有 ISBN 的正式印刷童書；過程同大學教授合作審閱，再提供香港實體書店上架／發行路徑。私人報價：WhatsApp @kidsmybook";
 
 const SERVICE_OG: Record<string, { file: string; width: number; height: number }> = {
   "author-programme": { file: "/services/service-author-programme.png", width: 1376, height: 768 },
