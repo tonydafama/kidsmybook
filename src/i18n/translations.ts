@@ -186,10 +186,7 @@ export type Translations = {
     generateCover: string;
   };
   caseStudy: {
-    privacyName: string;
     realName: string;
-    showName: string;
-    hideName: string;
     bookTitle: string;
     meta: string;
     overview: string;
@@ -477,10 +474,7 @@ const zhHant: Translations = {
     generateCover: "生成封面",
   },
   caseStudy: {
-    privacyName: "小作者 X",
     realName: "Hilary",
-    showName: "顯示原名",
-    hideName: "隱私模式",
     bookTitle: "《蝴蝶雙語圖鑑》",
     meta: "Age at publication: 8 · Duration: 1 year",
     overview: "Project Overview",
@@ -504,7 +498,7 @@ const zhHant: Translations = {
   caseIndex: {
     title: "兒童成就出版個案",
     hilaryTitle: "hilary-butterfly-guide",
-    hilaryDesc: "Hilary蝴蝶圖鑑案例（可切換隱私模式）",
+    hilaryDesc: "Hilary蝴蝶圖鑑案例",
     futureTitle: "[future cases]",
     futureDesc: "預留後續案例頁模板，沿用同一結構。",
   },
@@ -785,7 +779,7 @@ const zhHans: Translations = {
   caseIndex: {
     title: "儿童成就出版个案",
     hilaryTitle: "hilary-butterfly-guide",
-    hilaryDesc: "Hilary蝴蝶图鉴案例（可切换隐私模式）",
+    hilaryDesc: "Hilary蝴蝶图鉴案例",
     futureTitle: "[future cases]",
     futureDesc: "预留后续案例页模板，沿用同一结构。",
   },
@@ -1056,10 +1050,7 @@ const en: Translations = {
     generateCover: "Generate cover",
   },
   caseStudy: {
-    privacyName: "Young Author X",
     realName: "Hilary",
-    showName: "Show real name",
-    hideName: "Privacy mode",
     bookTitle: "Butterfly Bilingual Field Guide",
     meta: "Age at publication: 8 · Duration: 1 year",
     overview: "Project Overview",
@@ -1083,7 +1074,7 @@ const en: Translations = {
   caseIndex: {
     title: "Case Studies",
     hilaryTitle: "hilary-butterfly-guide",
-    hilaryDesc: "Hilary butterfly guide case (privacy mode available)",
+    hilaryDesc: "Hilary butterfly guide case",
     futureTitle: "[future cases]",
     futureDesc: "Template reserved for upcoming case studies.",
   },

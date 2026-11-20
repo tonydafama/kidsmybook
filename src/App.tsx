@@ -362,8 +362,6 @@ function ServiceDetailPage({ item }: { item: ServiceItem }) {
 
 function CaseStudyPage() {
   const { t } = useLocale();
-  const [privacyMode, setPrivacyMode] = useState(false);
-  const childName = privacyMode ? t.caseStudy.privacyName : t.caseStudy.realName;
   const whatsapp = waLink(t.whatsapp.caseStudy);
 
   useEffect(() => {
@@ -398,14 +396,9 @@ function CaseStudyPage() {
       <section className="panel">
         <p className="eyebrow">Case Study</p>
         <h2>
-          {childName} · {t.caseStudy.bookTitle}
+          {t.caseStudy.realName} · {t.caseStudy.bookTitle}
         </h2>
         <p className="meta">{t.caseStudy.meta}</p>
-        <div className="cta-row">
-          <button type="button" className="btn ghost" onClick={() => setPrivacyMode((old) => !old)}>
-            {privacyMode ? t.caseStudy.showName : t.caseStudy.hideName}
-          </button>
-        </div>
       </section>
 
       <section className="panel">
