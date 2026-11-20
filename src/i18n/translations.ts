@@ -284,7 +284,7 @@ const zhHant: Translations = {
   },
   hero: {
     eyebrow: "香港兒童出版工作室",
-    lead: "由大學教授合作指導，協助兒童正式出版 ISBN 書籍",
+    lead: "12 個月導師制，將小朋友興趣做成有 ISBN 的正式印刷童書；過程同大學教授合作審閱，再提供香港實體書店上架／發行路徑。私人報價：WhatsApp @kidsmybook",
     generateCover: "生成封面",
     bookConsult: "預約諮詢",
     featuredAlt: "Hilary 新書發布會",
@@ -554,7 +554,7 @@ const zhHant: Translations = {
 
 const zhHans: Translations = {
   ...zhHant,
-  brandTitle: "由大学教授合作指导，协助儿童正式出版 ISBN 书籍",
+  brandTitle: "帮小朋友正式出书，同大学教授合作审阅",
   brandEn: "Turn your child's passion into a published achievement.",
   nav: {
     ...zhHant.nav,
@@ -578,7 +578,7 @@ const zhHans: Translations = {
   hero: {
     ...zhHant.hero,
     eyebrow: "香港儿童出版工作室",
-    lead: "由大学教授合作指导，协助儿童正式出版 ISBN 书籍",
+    lead: "12 个月导师制，把小朋友的兴趣做成有 ISBN 的正式印刷童书；过程同大学教授合作审阅，再提供香港实体书店上架／发行路径。私人报价：WhatsApp @kidsmybook",
     generateCover: "生成封面",
     bookConsult: "预约咨询",
     featuredAlt: "Hilary 新书发布会",
@@ -811,8 +811,9 @@ const zhHans: Translations = {
   shudianPage: SHUDIAN_HANS,
   aboutPage: ABOUT_HANS,
   seo: {
-    homeTitle: "Kidsmybook｜由大学教授合作指导，协助儿童正式出版 ISBN 书籍",
-    homeDesc: "由大学教授合作指导，协助儿童正式出版 ISBN 书籍",
+    homeTitle: "Kidsmybook｜帮小朋友出书・大学教授审阅｜香港儿童出版",
+    homeDesc:
+      "香港儿童出版工作室。12 个月导师制，把小朋友的兴趣做成有 ISBN 的正式印刷童书；过程同大学教授合作审阅，再提供香港实体书店上架／发行路径。私人报价：WhatsApp @kidsmybook",
     servicesTitle: "服务｜Kidsmybook 六项儿童成就出版",
     servicesDesc:
       "出版计划、新书发布会、展览、媒体公关、直播和升学作品集，可全案或单项咨询。Author Programme、Book Launch、Exhibition、Media & PR、Live Streaming、Portfolio Package。",
@@ -834,7 +835,7 @@ const zhHans: Translations = {
 };
 
 const en: Translations = {
-  brandTitle: "Collaborative guidance from university professors, helping children formally publish an ISBN book",
+  brandTitle: "Help children publish a formal book, reviewed with university professors",
   brandEn: "Publishing, launches, exhibitions, media, and portfolios — one integrated pathway.",
   nav: {
     main: "Main menu",
@@ -859,7 +860,7 @@ const en: Translations = {
   },
   hero: {
     eyebrow: "Hong Kong children's publishing studio",
-    lead: "Collaborative guidance from university professors, helping children formally publish an ISBN book",
+    lead: "A 12-month mentored programme turns a child's interest into a formally printed ISBN children's book. We collaborate with university professors who review the work, then offer a Hong Kong physical bookstore listing / distribution path. Private quotation: WhatsApp @kidsmybook",
     generateCover: "Generate cover",
     bookConsult: "Book a consultation",
     featuredAlt: "Hilary book launch",
@@ -1099,8 +1100,9 @@ const en: Translations = {
   shudianPage: SHUDIAN_EN,
   aboutPage: ABOUT_EN,
   seo: {
-    homeTitle: "Kidsmybook | Collaborative guidance from university professors, helping children formally publish an ISBN book",
-    homeDesc: "Collaborative guidance from university professors, helping children formally publish an ISBN book",
+    homeTitle: "Kidsmybook | Publish a child's book, reviewed with university professors | Hong Kong",
+    homeDesc:
+      "Hong Kong children's publishing studio. A 12-month mentored programme turns a child's interest into a formally printed ISBN children's book. We collaborate with university professors who review the work, then offer a Hong Kong physical bookstore listing / distribution path. Private quotation: WhatsApp @kidsmybook",
     servicesTitle: "Services | Kidsmybook six achievement programmes",
     servicesDesc: "Author Programme, Book Launch, Exhibition, Media & PR, Live Streaming, Portfolio Package.",
     caseStudiesTitle: "Case Studies | Kidsmybook",

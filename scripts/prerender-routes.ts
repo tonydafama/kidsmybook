@@ -507,6 +507,7 @@ function staticRoutes(posts: RouteDocument[]): RouteDocument[] {
     mode: "home",
     snapshotHtml: pageWrap(
       `        <h1>${escapeHtml(HOME_H1_ZH)}</h1>
+        <p>${escapeHtml(HOME_DESCRIPTION_ZH)}</p>
         <p><a href="${quoteWa()}">WhatsApp @kidsmybook</a> · <a href="mailto:${STUDIO_EMAIL}">${STUDIO_EMAIL}</a></p>
         <ul>
           <li><a href="${canonicalUrl("/programme")}">小朋友出書計劃</a></li>
