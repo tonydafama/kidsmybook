@@ -2,11 +2,11 @@ import { WA_QUOTE_EN, WA_QUOTE_HANS } from "../lib/contact";
 import type { HubCopy } from "../seo/landing-zh";
 
 export const PROGRAMME_HANS = {
-  title: "小朋友出书计划香港｜协助儿童正式出版 ISBN 图书，并与大学教授合作指导｜Kidsmybook",
+  title: "小朋友出书计划香港｜由大学教授合作指导，协助儿童正式出版 ISBN 书籍｜Kidsmybook",
   description:
     "香港儿童出版：12 个月导师制，把小朋友的兴趣做成有 ISBN 的正式印刷童书，并与大学教授合作指导，再提供香港实体书店上架／发行路径。不保证每间分店有货，也不保证录取。",
   eyebrow: "儿童出书 · 大学教授指导 · 香港",
-  h1: "小朋友出书计划：协助儿童正式出版 ISBN 图书，并与大学教授合作指导",
+  h1: "小朋友出书计划：由大学教授合作指导，协助儿童正式出版 ISBN 书籍",
   lead: "Kidsmybook 是香港儿童出版工作室。12 个月导师制，把小朋友的兴趣做成有 ISBN 的正式印刷童书；并与大学教授合作指导，再提供香港实体书店上架／发行路径。",
   shelfLink: "童书书店上架：香港实体书店上架／发行路径",
   notLabel: "这个计划不是",
@@ -251,11 +251,11 @@ export const FAQ_HANS: { q: string; a: string }[] = [
 ];
 
 export const PROGRAMME_EN = {
-  title: "Child author programme Hong Kong | formally publish an ISBN book, guided with university professors | Kidsmybook",
+  title: "Child author programme Hong Kong | collaborative guidance from university professors, helping children formally publish an ISBN book | Kidsmybook",
   description:
     "Hong Kong children's publishing: 12 mentored months turn a child's interest into a formally printed ISBN children's book. We collaborate with university professors who guide the work, then offer a Hong Kong physical bookstore listing / distribution path. No branch is guaranteed to stock the title, and no school place is guaranteed.",
   eyebrow: "Children's books · university professor guidance · Hong Kong",
-  h1: "Child author programme: help children formally publish an ISBN book, and collaborate with university professors who guide the work",
+  h1: "Child author programme: collaborative guidance from university professors, helping children formally publish an ISBN book",
   lead: "Kidsmybook is a Hong Kong children's publishing studio. A 12-month mentored programme turns a child's interest into a formally printed ISBN children's book. We collaborate with university professors who guide the work, then offer a Hong Kong physical bookstore listing / distribution path.",
   shelfLink: "Hong Kong physical bookstore listing / distribution path",
   notLabel: "What this is not",
