@@ -127,7 +127,7 @@ function HomePage({ services }: { services: ServiceItem[] }) {
         <div className="hero-copy">
           <p className="eyebrow">{t.hero.eyebrow}</p>
           <h1>{t.brandTitle}</h1>
-          <p className="lead">{t.hero.lead}</p>
+          {t.hero.lead && t.hero.lead !== t.brandTitle ? <p className="lead">{t.hero.lead}</p> : null}
           <div className="cta-row hero-cta-row">
             <a className="btn primary" href={whatsapp} target="_blank" rel="noreferrer">
               {t.hero.bookConsult}

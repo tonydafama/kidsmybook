@@ -2,12 +2,12 @@ import { WA_QUOTE_EN, WA_QUOTE_HANS } from "../lib/contact";
 import type { HubCopy } from "../seo/landing-zh";
 
 export const PROGRAMME_HANS = {
-  title: "小朋友出书计划香港｜正式出书和大学教授审阅｜Kidsmybook",
+  title: "小朋友出书计划香港｜协助儿童正式出版 ISBN 图书，并与大学教授合作指导｜Kidsmybook",
   description:
-    "香港儿童出版：12 个月导师制，把小朋友的兴趣做成有 ISBN 的正式印刷童书，同大学教授合作审阅，再提供香港实体书店上架／发行路径。不保证每间分店有货，也不保证录取。",
-  eyebrow: "儿童出书 · 大学教授审阅 · 香港",
-  h1: "小朋友出书计划：正式出书，同大学教授合作审阅",
-  lead: "Kidsmybook 是香港儿童出版工作室。12 个月导师制，把小朋友的兴趣做成有 ISBN 的正式印刷童书；过程同大学教授合作审阅，再提供香港实体书店上架／发行路径。",
+    "香港儿童出版：12 个月导师制，把小朋友的兴趣做成有 ISBN 的正式印刷童书，并与大学教授合作指导，再提供香港实体书店上架／发行路径。不保证每间分店有货，也不保证录取。",
+  eyebrow: "儿童出书 · 大学教授指导 · 香港",
+  h1: "小朋友出书计划：协助儿童正式出版 ISBN 图书，并与大学教授合作指导",
+  lead: "Kidsmybook 是香港儿童出版工作室。12 个月导师制，把小朋友的兴趣做成有 ISBN 的正式印刷童书；并与大学教授合作指导，再提供香港实体书店上架／发行路径。",
   shelfLink: "童书书店上架：香港实体书店上架／发行路径",
   notLabel: "这个计划不是",
   notBody: "不是只申请一个 ISBN、不是 DIY 礼物书、不是保证每间分店有货，也不是保证入学配对。",
@@ -251,12 +251,12 @@ export const FAQ_HANS: { q: string; a: string }[] = [
 ];
 
 export const PROGRAMME_EN = {
-  title: "Child author programme Hong Kong | formal book and university professor review | Kidsmybook",
+  title: "Child author programme Hong Kong | formally publish an ISBN book, guided with university professors | Kidsmybook",
   description:
-    "Hong Kong children's publishing: 12 mentored months turn a child's interest into a formally printed ISBN children's book, reviewed in collaboration with university professors, then a Hong Kong physical bookstore listing / distribution path. No branch is guaranteed to stock the title, and no school place is guaranteed.",
-  eyebrow: "Children's books · university professor review · Hong Kong",
-  h1: "Child author programme: publish a formal book, reviewed with university professors",
-  lead: "Kidsmybook is a Hong Kong children's publishing studio. A 12-month mentored programme turns a child's interest into a formally printed ISBN children's book. We collaborate with university professors who review the work, then offer a Hong Kong physical bookstore listing / distribution path.",
+    "Hong Kong children's publishing: 12 mentored months turn a child's interest into a formally printed ISBN children's book. We collaborate with university professors who guide the work, then offer a Hong Kong physical bookstore listing / distribution path. No branch is guaranteed to stock the title, and no school place is guaranteed.",
+  eyebrow: "Children's books · university professor guidance · Hong Kong",
+  h1: "Child author programme: help children formally publish an ISBN book, and collaborate with university professors who guide the work",
+  lead: "Kidsmybook is a Hong Kong children's publishing studio. A 12-month mentored programme turns a child's interest into a formally printed ISBN children's book. We collaborate with university professors who guide the work, then offer a Hong Kong physical bookstore listing / distribution path.",
   shelfLink: "Hong Kong physical bookstore listing / distribution path",
   notLabel: "What this is not",
   notBody: "Not an ISBN number on its own, not a DIY gift book, not a promise that every branch will stock the title, and not a guaranteed school place.",

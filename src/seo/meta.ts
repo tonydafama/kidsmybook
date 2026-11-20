@@ -135,12 +135,11 @@ export const HOME_FAQ: { q: string; a: string }[] = [
   },
 ];
 
-export const HOME_H1_ZH = "幫小朋友正式出書，同大學教授合作審閱";
+export const HOME_H1_ZH = "協助兒童正式出版 ISBN 圖書，並與大學教授合作指導";
 
-export const HOME_TITLE_ZH = "Kidsmybook｜幫小朋友出書・大學教授審閱｜香港兒童出版";
+export const HOME_TITLE_ZH = "Kidsmybook｜協助兒童正式出版 ISBN 圖書，並與大學教授合作指導";
 
-export const HOME_DESCRIPTION_ZH =
-  "香港兒童出版工作室。12 個月導師制，將小朋友興趣做成有 ISBN 的正式印刷童書；過程同大學教授合作審閱，再提供香港實體書店上架／發行路徑。私人報價：WhatsApp @kidsmybook";
+export const HOME_DESCRIPTION_ZH = "協助兒童正式出版 ISBN 圖書，並與大學教授合作指導";
 
 const SERVICE_OG: Record<string, { file: string; width: number; height: number }> = {
   "author-programme": { file: "/services/service-author-programme.png", width: 1376, height: 768 },
