@@ -1,6 +1,6 @@
 ---
 title: "Government and aided Primary One discretionary places do not ask for a portfolio: which scenes call for a published book"
-description: "Kidsmybook leads with publishing plus a physical bookstore listing: a mentored formal print, then a path toward a Hong Kong physical bookstore listing / distribution path. A school file is a second use. At the Primary One Admission discretionary-places stage for government and aided schools, the Education Bureau’s public reminder is that parents do not need to prepare a portfolio, and schools must not test or interview children on knowledge they have already been taught. A thin file, or bringing a physical published book, can matter when a DSS, private, or international school asks for one or allows an object on the day. Door-knocking after central allocation is not the discretionary-places stage. Private quotation. No branch and no school place are guaranteed."
+description: "Kidsmybook leads with publishing plus a physical bookstore listing: a mentored formal print, then a path toward a Hong Kong physical bookstore listing / distribution path. A school file is a second use. At the Primary One Admission discretionary-places stage for government and aided schools, the Education Bureau’s public reminder is that parents do not need to prepare a portfolio, and schools must not test or interview children on knowledge they have already been taught. A thin file, or bringing a physical published book, can matter when a DSS, private, or international school asks for one or allows an object on the day. Door-knocking after central allocation is not the discretionary-places stage. No branch and no school place are guaranteed."
 date: "2026-10-28"
 slug: "poa-discretionary-vs-knocking-published-book"
 tags: ["discretionary places", "POA", "door-knocking", "bookstore listing", "ISBN"]
@@ -51,8 +51,8 @@ No. Kidsmybook is a publishing studio. It is not an admissions agent, it has no 
 
 If the file is only being thought of now, the 12-month plan will not finish for this round, and a physical listing path will not appear in those days either. The discretionary-places stage does not take a portfolio, so there is nothing to rush-print for that round. If a DSS, private, or international interview is only days or weeks away, do not rush a weak book into a binder either. This page will not ask a family to assemble a layout template and call it a formal publication. Publishing plus a listing fits the next cycle that still has about a year.
 
-## How do families ask for a private quotation?
+## How do families start a consultation?
 
-Prices are not on the site. No shelf position and no school place are guaranteed. Before a quotation, three details help: the child’s age and current stage, whether the target is government or aided discretionary places, a DSS, private, or international school, or door-knocking, and one interest the child will open and work on. WhatsApp @kidsmybook or email kidsmybook@outlook.com .
+Prices are not on the site. No shelf position and no school place are guaranteed. Before a consultation, three details help: the child’s age and current stage, whether the target is government or aided discretionary places, a DSS, private, or international school, or door-knocking, and one interest the child will open and work on. WhatsApp @kidsmybook or email kidsmybook@outlook.com .
 
-> Private quotation. WhatsApp @kidsmybook · kidsmybook@outlook.com · publishing plus a physical bookstore listing: https://kidsmybook.com/kids-book-bookstore-listing
+> WhatsApp @kidsmybook · kidsmybook@outlook.com · publishing plus a physical bookstore listing: https://kidsmybook.com/kids-book-bookstore-listing

@@ -1,6 +1,6 @@
 ---
 title: "An ISBN is not a bookstore shelf"
-description: "A Hong Kong ISBN is a book number. Stock at Hong Kong physical bookstores is a different path. Store managers decide orders, placement, and returns. Kidsmybook is not a bookstore chain. Private quotation. No branch is guaranteed."
+description: "A Hong Kong ISBN is a book number. Stock at Hong Kong physical bookstores is a different path. Store managers decide orders, placement, and returns. Kidsmybook is not a bookstore chain. No branch is guaranteed."
 date: 2026-10-18
 slug: "isbn-is-not-bookstore-listing"
 tags: ["ISBN", "bookstore", "Hong Kong"]
@@ -36,4 +36,4 @@ No. Listing is a path and an arrangement. It depends on the title and package. M
 
 The site does not publish prices. WhatsApp @kidsmybook or email kidsmybook@outlook.com with the child's age and one interest.
 
-> Private quotation. WhatsApp @kidsmybook · kidsmybook@outlook.com · Bookstore path: https://kidsmybook.com/kids-book-bookstore-listing
+> WhatsApp @kidsmybook · kidsmybook@outlook.com · Bookstore path: https://kidsmybook.com/kids-book-bookstore-listing

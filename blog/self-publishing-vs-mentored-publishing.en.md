@@ -1,6 +1,6 @@
 ---
 title: "DIY self-publishing vs mentor-led publishing: which helps a Hong Kong school interview?"
-description: "A self-funded print run is often a keepsake. Mentor-led publishing includes the child, professor review, ISBN arrangements, and an admissions portfolio. Private quotation only. No school place is guaranteed."
+description: "A self-funded print run is often a keepsake. Mentor-led publishing includes the child, professor review, ISBN arrangements, and an admissions portfolio. No school place is guaranteed."
 date: 2026-10-10
 slug: "self-publishing-vs-mentored-publishing"
 tags: ["self-publishing", "mentor-led publishing", "school interview", "Hong Kong"]
@@ -26,6 +26,6 @@ If the only goal is a private souvenir, a print shop can be enough. If the goal 
 
 ## How do families start?
 
-Prices are not listed on the site. The full scope is quoted privately from the child’s topic and package. Read the programme at https://kidsmybook.com/programme , or message WhatsApp @kidsmybook or kidsmybook@outlook.com with age, current or target school, and one interest.
+Prices are not listed on the site. Read the programme at https://kidsmybook.com/programme , or message WhatsApp @kidsmybook or kidsmybook@outlook.com with age, current or target school, and one interest.
 
-> Private quotation only. WhatsApp @kidsmybook · kidsmybook@outlook.com · Programme: https://kidsmybook.com/programme
+> WhatsApp @kidsmybook · kidsmybook@outlook.com · Programme: https://kidsmybook.com/programme

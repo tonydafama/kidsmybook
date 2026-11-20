@@ -1,6 +1,6 @@
 ---
 title: "自費出書 vs 導師制出版：邊樣先幫到香港升學面試？"
-description: "自費印刷多數係紀念冊。導師制出版有小朋友參與、教授審閱、ISBN 同升學作品集包裝。私人報價，網站唔公開價目，亦唔保證取錄。"
+description: "自費印刷多數係紀念冊。導師制出版有小朋友參與、教授審閱、ISBN 同升學作品集包裝。網站唔公開價目，亦唔保證取錄。"
 date: 2026-10-10
 slug: "self-publishing-vs-mentored-publishing"
 tags: ["自費出書", "導師制", "升學面試", "香港"]
@@ -26,6 +26,6 @@ Kidsmybook 係 12 個月導師制出版計劃，唔係 DIY 模板，亦唔係純
 
 ## 點樣開始？
 
-網站唔公開價目。完整方案按小朋友題材同配套私人報價。可以先睇小朋友出書計劃 https://kidsmybook.com/programme ，或者 WhatsApp @kidsmybook 、電郵 kidsmybook@outlook.com ，講年齡、而家或者目標學校，同埋一個興趣。
+網站唔公開價目。完整方案按小朋友題材同配套。可以先睇小朋友出書計劃 https://kidsmybook.com/programme，或者 WhatsApp @kidsmybook 、電郵 kidsmybook@outlook.com，講年齡、而家或者目標學校，同埋一個興趣。
 
-> 私人報價，網站唔放價目。WhatsApp @kidsmybook · kidsmybook@outlook.com · 計劃說明：https://kidsmybook.com/programme
+> 網站唔放價目。WhatsApp @kidsmybook · kidsmybook@outlook.com · 計劃說明：https://kidsmybook.com/programme

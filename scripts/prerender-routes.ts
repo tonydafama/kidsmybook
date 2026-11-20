@@ -258,7 +258,7 @@ function linkList(links: { href: string; label: string }[]): string {
 }
 
 function waLine(): string {
-  return `        <p>私人報價。<a href="${quoteWa()}">WhatsApp @kidsmybook</a> · <a href="mailto:${STUDIO_EMAIL}">${STUDIO_EMAIL}</a></p>`;
+  return `        <p><a href="${quoteWa()}">WhatsApp @kidsmybook</a> · <a href="mailto:${STUDIO_EMAIL}">${STUDIO_EMAIL}</a></p>`;
 }
 
 function pageWrap(inner: string): string {
@@ -337,7 +337,7 @@ function loadBlogPosts(): RouteDocument[] {
       jsonLdId: "kidsmybook-blog-post-ld",
       jsonLd,
       snapshotHtml: pageWrap(
-        `        <article>\n          <h1>${inline(headline)}</h1>\n          <p><time datetime="${date}">${date}</time></p>\n${blocksToHtml(blocks)}\n          <p><a href="${quoteWa()}">WhatsApp 私人報價</a> · <a href="${canonicalUrl("/programme")}">小朋友出書計劃</a></p>\n        </article>`,
+        `        <article>\n          <h1>${inline(headline)}</h1>\n          <p><time datetime="${date}">${date}</time></p>\n${blocksToHtml(blocks)}\n          <p><a href="${quoteWa()}">WhatsApp @kidsmybook</a> · <a href="${canonicalUrl("/programme")}">小朋友出書計劃</a></p>\n        </article>`,
       ),
     };
   });
@@ -348,7 +348,7 @@ function serviceRoutes(): RouteDocument[] {
     path: "/services",
     title: "服務｜Kidsmybook 六項兒童成就出版",
     description:
-      "出版計劃、新書發布會、展覽、媒體公關、直播同升學作品集，可全案或單項諮詢。私人報價，WhatsApp。Author Programme、Book Launch、Exhibition、Media & PR、Live Streaming、Portfolio Package。",
+      "出版計劃、新書發布會、展覽、媒體公關、直播同升學作品集，可全案或單項諮詢。Author Programme、Book Launch、Exhibition、Media & PR、Live Streaming、Portfolio Package。",
     ogType: "website",
     ogImage: ogImageForPath("/services"),
     mode: "page",
@@ -357,7 +357,7 @@ function serviceRoutes(): RouteDocument[] {
       "@context": "https://schema.org",
       "@type": "CollectionPage",
       name: "Kidsmybook 六項兒童成就服務",
-      description: "出版計劃、新書發布會、展覽、媒體公關、直播同升學作品集。私人報價。",
+      description: "出版計劃、新書發布會、展覽、媒體公關、直播同升學作品集。",
       url: canonicalUrl("/services"),
       isPartOf: { "@type": "WebSite", name: "Kidsmybook", url: SITE_ORIGIN },
       mainEntity: {
@@ -371,7 +371,7 @@ function serviceRoutes(): RouteDocument[] {
       },
     },
     snapshotHtml: pageWrap(
-      `        <h1>六項兒童成就服務</h1>\n        <p>六項合成一條全案，亦可單項諮詢。私人報價。</p>\n        <p>英文服務名：Author Programme、Book Launch、Exhibition、Media &amp; PR、Live Streaming、Portfolio Package。</p>\n        <ul>\n${SERVICES.map(
+      `        <h1>六項兒童成就服務</h1>\n        <p>六項合成一條全案，亦可單項諮詢。</p>\n        <p>英文服務名：Author Programme、Book Launch、Exhibition、Media &amp; PR、Live Streaming、Portfolio Package。</p>\n        <ul>\n${SERVICES.map(
         (item) =>
           `          <li><a href="${canonicalUrl(`/services/${item.slug}`)}">${escapeHtml(item.title)}</a> — ${escapeHtml(item.desc)}</li>`,
       ).join("\n")}\n        </ul>`,
@@ -445,7 +445,7 @@ function staticRoutes(posts: RouteDocument[]): RouteDocument[] {
   const caseIndex: RouteDocument = {
     path: "/case-studies",
     title: "個案｜Kidsmybook 兒童成就出版案例",
-    description: "目前公開具名個案係 Hilary《蝴蝶雙語圖鑑》：由興趣到正式出版、發布會同媒體紀錄。私人報價，WhatsApp 查詢。",
+    description: "目前公開具名個案係 Hilary《蝴蝶雙語圖鑑》：由興趣到正式出版、發布會同媒體紀錄。WhatsApp 查詢。",
     ogType: "website",
     ogImage: ogImageForPath("/case-studies"),
     mode: "page",
@@ -454,7 +454,7 @@ function staticRoutes(posts: RouteDocument[]): RouteDocument[] {
       "@context": "https://schema.org",
       "@type": "CollectionPage",
       name: "Kidsmybook 兒童成就出版個案",
-      description: "目前公開具名個案係 Hilary《蝴蝶雙語圖鑑》。私人報價。",
+      description: "目前公開具名個案係 Hilary《蝴蝶雙語圖鑑》。",
       url: canonicalUrl("/case-studies"),
       mainEntity: {
         "@type": "ItemList",
@@ -469,7 +469,7 @@ function staticRoutes(posts: RouteDocument[]): RouteDocument[] {
       },
     },
     snapshotHtml: pageWrap(
-      `        <h1>兒童成就出版個案</h1>\n        <p>目前公開具名個案係 Hilary《蝴蝶雙語圖鑑》：由興趣到正式出版、發布會同媒體紀錄。私人報價，WhatsApp 查詢。</p>\n        <p><a href="${canonicalUrl("/case-studies/hilary-butterfly-guide")}">Hilary《蝴蝶雙語圖鑑》</a></p>\n${waLine()}`,
+      `        <h1>兒童成就出版個案</h1>\n        <p>目前公開具名個案係 Hilary《蝴蝶雙語圖鑑》：由興趣到正式出版、發布會同媒體紀錄。WhatsApp 查詢。</p>\n        <p><a href="${canonicalUrl("/case-studies/hilary-butterfly-guide")}">Hilary《蝴蝶雙語圖鑑》</a></p>\n${waLine()}`,
     ),
   };
 
@@ -493,7 +493,7 @@ function staticRoutes(posts: RouteDocument[]): RouteDocument[] {
       publisher: orgRef(),
     },
     snapshotHtml: pageWrap(
-      `        <article>\n          <h1>Hilary《蝴蝶雙語圖鑑》</h1>\n          <p>Age at publication: 8 · Duration: 1 year</p>\n          <p>孩子由日常觀察蝴蝶出發，逐步建立研究習慣，完成圖像與文字內容，最終成功出版並公開發表。</p>\n          <p>過程中克服了資料整理與口語表達挑戰，學會用作品向世界分享自己的興趣與成長。</p>\n          <p>這是目前公開具名的個案：Hilary，出版時八歲，約一年完成。成品是中英雙語圖鑑，其後有新書發布會、媒體公關與活動直播；線上觀看 3,569 次。家庭可以將這份成果放進升學檔案。</p>\n          <p><a href="${quoteWa()}">WhatsApp 私人報價</a></p>\n        </article>`,
+      `        <article>\n          <h1>Hilary《蝴蝶雙語圖鑑》</h1>\n          <p>Age at publication: 8 · Duration: 1 year</p>\n          <p>孩子由日常觀察蝴蝶出發，逐步建立研究習慣，完成圖像與文字內容，最終成功出版並公開發表。</p>\n          <p>過程中克服了資料整理與口語表達挑戰，學會用作品向世界分享自己的興趣與成長。</p>\n          <p>這是目前公開具名的個案：Hilary，出版時八歲，約一年完成。成品是中英雙語圖鑑，其後有新書發布會、媒體公關與活動直播；線上觀看 3,569 次。家庭可以將這份成果放進升學檔案。</p>\n          <p><a href="${quoteWa()}">WhatsApp @kidsmybook</a></p>\n        </article>`,
     ),
   };
 
@@ -507,7 +507,6 @@ function staticRoutes(posts: RouteDocument[]): RouteDocument[] {
     mode: "home",
     snapshotHtml: pageWrap(
       `        <h1>${escapeHtml(HOME_H1_ZH)}</h1>
-        <p>${escapeHtml(HOME_DESCRIPTION_ZH)}</p>
         <p><a href="${quoteWa()}">WhatsApp @kidsmybook</a> · <a href="mailto:${STUDIO_EMAIL}">${STUDIO_EMAIL}</a></p>
         <ul>
           <li><a href="${canonicalUrl("/programme")}">小朋友出書計劃</a></li>
@@ -1272,7 +1271,7 @@ function assertSources(posts: RouteDocument[]) {
   if (!worker.includes("isGoogleRobots") || /^Host\s*:/m.test(worker)) {
     throw new Error("worker robots fallback must reject Host and unknown directives");
   }
-  if (!worker.includes("改用 WhatsApp 問價") || !worker.includes("INTAKE_WA")) {
+  if (!worker.includes("改用 WhatsApp 諮詢") || !worker.includes("INTAKE_WA")) {
     throw new Error("intake form missing the WhatsApp escape hatch");
   }
   if (worker.includes("tel:+852") || worker.includes("STUDIO_TEL_HREF") || worker.includes("STUDIO_TEL_DISPLAY")) {

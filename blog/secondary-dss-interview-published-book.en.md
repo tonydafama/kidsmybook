@@ -1,6 +1,6 @@
 ---
 title: "Secondary, DSS, and direct-subsidy interviews: where a book sits in the portfolio"
-description: "Secondary, DSS, and direct-subsidy interviews look for a sustained interest the student can explain. Put a finished publication at the front of the portfolio. Private quotation. No offer is guaranteed."
+description: "Secondary, DSS, and direct-subsidy interviews look for a sustained interest the student can explain. Put a finished publication at the front of the portfolio. No offer is guaranteed."
 date: 2026-10-16
 slug: "secondary-dss-interview-published-book"
 tags: ["升中", "DSS", "直資", "作品集"]
@@ -22,6 +22,6 @@ No. A publishing studio is not an admissions agent and does not guarantee a DSS,
 
 Primary use: https://kidsmybook.com/blog/primary-interview-how-to-use-a-book . International and local interviews: https://kidsmybook.com/blog/international-vs-local-school-interview-portfolio . Hub: https://kidsmybook.com/admissions-portfolio . Secondary page: https://kidsmybook.com/secondary-dss-admissions-portfolio . Primary interview page: https://kidsmybook.com/primary-one-interview-portfolio .
 
-WhatsApp @kidsmybook with age, current year, whether the target is DSS, direct-subsidy, or another secondary, and one interest. The quotation is private. Prices are not on the site.
+WhatsApp @kidsmybook with age, current year, whether the target is DSS, direct-subsidy, or another secondary, and one interest. Prices are not on the site.
 
-> Private quotation. WhatsApp @kidsmybook · no place is guaranteed · https://kidsmybook.com/admissions-portfolio
+> WhatsApp @kidsmybook · no place is guaranteed · https://kidsmybook.com/admissions-portfolio

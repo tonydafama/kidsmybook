@@ -284,7 +284,7 @@ const zhHant: Translations = {
   },
   hero: {
     eyebrow: "香港兒童出版工作室",
-    lead: "12 個月導師制，將小朋友興趣做成有 ISBN 的正式印刷童書；過程同大學教授合作審閱，再提供香港實體書店上架／發行路徑。私人報價：WhatsApp @kidsmybook",
+    lead: "由大學教授合作指導，協助兒童正式出版 ISBN 書籍",
     generateCover: "生成封面",
     bookConsult: "預約諮詢",
     featuredAlt: "Hilary 新書發布會",
@@ -310,7 +310,7 @@ const zhHant: Translations = {
       const who = name ? `${name} 嘅題材` : "呢個題材";
       const subject = topic ? `${who}「${topic}」` : who;
       const link = url ? `\n封面預覽：${url}` : "";
-      return `你好，我想問顧問：${subject}適唔適合出書。請私人報價。${link}`;
+      return `你好，我想問顧問：${subject}適唔適合出書。${link}`;
     },
     generateBtn: "生成 3D 專屬封面",
     generating: "正在繪製學者級封面…",
@@ -321,7 +321,7 @@ const zhHant: Translations = {
     dragHintReady: "拖曳可旋轉 · 查看封底學者評語與書脊",
     backHome: "← 返回首頁",
     successTitle: "封面已經生成",
-    successDesc: "預覽就喺右邊。下一步問顧問：呢個題材適唔適合出一本 ISBN 童書。報價私人，網站唔公開價目。",
+    successDesc: "預覽就喺右邊。下一步問顧問：呢個題材適唔適合出一本 ISBN 童書。網站唔公開價目。",
     stickyHint: "問顧問呢個題材適唔適合出書",
     getLinkBtn: "WhatsApp 問顧問：呢個題材適唔適合出書",
     previewReady: "專著預覽已備妥",
@@ -353,19 +353,19 @@ const zhHant: Translations = {
   services: {
     kicker: "服務",
     title: "我們做什麼",
-    intro: "六項合成一條全案，亦可單項諮詢。私人報價。",
-    privateQuote: "私人報價",
+    intro: "六項合成一條全案，亦可單項諮詢。",
+    privateQuote: "",
     suitableFor: "適合對象",
     process: "服務流程",
     backToServices: "返回服務",
     indexHeading: "六項兒童成就服務",
-    indexMeta: "出版計劃、新書發布會、展覽、媒體公關、直播同升學作品集。英文服務名：Author Programme、Book Launch、Exhibition、Media & PR、Live Streaming、Portfolio Package。私人報價。",
+    indexMeta: "出版計劃、新書發布會、展覽、媒體公關、直播同升學作品集。英文服務名：Author Programme、Book Launch、Exhibition、Media & PR、Live Streaming、Portfolio Package。",
     detailEyebrow: "Service Detail",
     items: {
       "author-programme": {
         title: "Author Programme",
         desc: "由興趣出發，1 對 1 指導完成正式出版成果。",
-        price: "私人報價",
+        price: "",
         detail: "包含出版指導、雙語支援、線上音頻整合與 ISBN 出版選項。",
         audience: ["孩子有明確興趣主題", "家庭希望建立長期成果", "需要雙語學習輸出"],
         process: ["Discovery 訪談", "內容創作引導", "編輯與設計", "成書與交付"],
@@ -373,7 +373,7 @@ const zhHant: Translations = {
       "book-launch": {
         title: "Book Launch Event",
         desc: "為孩子作品打造有儀式感的新書發布會。",
-        price: "私人報價",
+        price: "",
         detail: "涵蓋場地策劃、流程設計、嘉賓邀請、現場佈置與攝影紀錄。",
         audience: ["孩子準備公開發表作品", "家庭重視儀式感與社交影響", "需要完整活動執行"],
         process: ["活動定位", "流程與嘉賓規劃", "現場執行", "活動後回顧素材交付"],
@@ -381,7 +381,7 @@ const zhHant: Translations = {
       exhibition: {
         title: "Exhibition",
         desc: "讓創作被看見，從作品到空間完整呈現。",
-        price: "私人報價",
+        price: "",
         detail: "支援攝影展/插畫展、展板設計、場地協調與開幕活動規劃。",
         audience: ["孩子有系列作品", "希望成果被更多人看見", "需要展覽型履歷亮點"],
         process: ["展覽主題策展", "展板與空間設計", "場地協調", "開幕與導覽"],
@@ -389,7 +389,7 @@ const zhHant: Translations = {
       "media-pr": {
         title: "Media & PR",
         desc: "把孩子故事轉化成可被報導的內容。",
-        price: "私人報價",
+        price: "",
         detail: "包括新聞稿、媒體邀請、報導協調與線上傳播策略。",
         audience: ["希望建立外部公信力", "需要媒體曝光", "準備學校/升學作品敘事"],
         process: ["媒體角度定位", "新聞稿與素材包", "媒體邀請溝通", "報導追蹤整理"],
@@ -397,7 +397,7 @@ const zhHant: Translations = {
       "live-streaming": {
         title: "Live Streaming",
         desc: "活動當日即時直播與線上互動，擴大影響力。",
-        price: "私人報價",
+        price: "",
         detail: "提供直播導播、即時分享、互動監看與永久記錄素材。",
         audience: ["有外地親友需要線上參與", "重視活動擴散", "需要可重播紀錄"],
         process: ["直播規劃", "現場導播", "線上互動監看", "回放與剪輯交付"],
@@ -405,7 +405,7 @@ const zhHant: Translations = {
       "portfolio-package": {
         title: "Portfolio Package",
         desc: "把完整成果整理成升學可用的作品集。",
-        price: "私人報價",
+        price: "",
         detail: "整合出版、活動、媒體素材，支援多格式輸出。",
         audience: ["有升學申請需求", "需要完整成就證據", "希望統一對外展示素材"],
         process: ["素材整合", "敘事與版面編排", "多格式輸出", "申請版本微調"],
@@ -470,7 +470,7 @@ const zhHant: Translations = {
   },
   finalCta: {
     title: "開始諮詢",
-    copy: "WhatsApp（@kidsmybook）或填表預約。私人報價。",
+    copy: "WhatsApp（@kidsmybook）或填表預約。",
     generateCover: "生成封面",
   },
   caseStudy: {
@@ -528,9 +528,9 @@ const zhHant: Translations = {
     homeDesc: HOME_DESCRIPTION_ZH,
     servicesTitle: "服務｜Kidsmybook 六項兒童成就出版",
     servicesDesc:
-      "出版計劃、新書發布會、展覽、媒體公關、直播同升學作品集，可全案或單項諮詢。私人報價，WhatsApp。Author Programme、Book Launch、Exhibition、Media & PR、Live Streaming、Portfolio Package。",
+      "出版計劃、新書發布會、展覽、媒體公關、直播同升學作品集，可全案或單項諮詢。Author Programme、Book Launch、Exhibition、Media & PR、Live Streaming、Portfolio Package。",
     caseStudiesTitle: "個案｜Kidsmybook 兒童成就出版案例",
-    caseStudiesDesc: "目前公開具名個案係 Hilary《蝴蝶雙語圖鑑》：由興趣到正式出版、發布會同媒體紀錄。私人報價，WhatsApp 查詢。",
+    caseStudiesDesc: "目前公開具名個案係 Hilary《蝴蝶雙語圖鑑》：由興趣到正式出版、發布會同媒體紀錄。WhatsApp 查詢。",
     hilaryTitle: "Hilary蝴蝶圖鑑案例｜Kidsmybook",
     hilaryDesc: "8 歲孩子從興趣出發完成雙語出版，並延伸發布會、展覽與媒體曝光。",
     serviceDetailTitle: (name) => `${name}｜Kidsmybook Services`,
@@ -547,14 +547,14 @@ const zhHant: Translations = {
   footer: {
     studio: "Kidsmybook · 香港兒童成就出版工作室",
     privacy: "查詢資料只用於回覆你。未經同意，不會公開小朋友的姓名或學校。",
-    quote: "私人報價，於諮詢時提供。",
+    quote: "歡迎 WhatsApp（@kidsmybook）諮詢。",
     about: "關於我們",
   },
 };
 
 const zhHans: Translations = {
   ...zhHant,
-  brandTitle: "帮小朋友正式出书，同大学教授合作审阅",
+  brandTitle: "由大学教授合作指导，协助儿童正式出版 ISBN 书籍",
   brandEn: "Turn your child's passion into a published achievement.",
   nav: {
     ...zhHant.nav,
@@ -572,13 +572,13 @@ const zhHans: Translations = {
     backToBlog: "← 返回博客",
     indexTitle: "香港升学作品集・升小升中・ISBN 童书",
     indexDesc:
-      "香港家长：升小学面试、升小面试班和 ISBN 出版作品集、升中 DSS／直资 portfolio，以及导师制 ISBN 出版怎样成为可引用的亮点。私人报价，不保证录取。",
-    askQuote: "WhatsApp 问价",
+      "香港家长：升小学面试、升小面试班和 ISBN 出版作品集、升中 DSS／直资 portfolio，以及导师制 ISBN 出版怎样成为可引用的亮点。不保证录取。",
+    askQuote: "WhatsApp 咨询",
   },
   hero: {
     ...zhHant.hero,
     eyebrow: "香港儿童出版工作室",
-    lead: "12 个月导师制，把小朋友的兴趣做成有 ISBN 的正式印刷童书；过程同大学教授合作审阅，再提供香港实体书店上架／发行路径。私人报价：WhatsApp @kidsmybook",
+    lead: "由大学教授合作指导，协助儿童正式出版 ISBN 书籍",
     generateCover: "生成封面",
     bookConsult: "预约咨询",
     featuredAlt: "Hilary 新书发布会",
@@ -604,7 +604,7 @@ const zhHans: Translations = {
       const who = name ? `${name} 的题材` : "这个题材";
       const subject = topic ? `${who}「${topic}」` : who;
       const link = url ? `\n封面预览：${url}` : "";
-      return `你好，我想问顾问：${subject}适不适合出书。请私人报价。${link}`;
+      return `你好，我想问顾问：${subject}适不适合出书。${link}`;
     },
     generateBtn: "生成 3D 专属封面",
     generating: "正在绘制学者级封面…",
@@ -615,7 +615,7 @@ const zhHans: Translations = {
     dragHintReady: "拖曳可旋转 · 查看封底学者评语与书脊",
     backHome: "← 返回首页",
     successTitle: "封面已经生成",
-    successDesc: "预览就在右边。下一步问顾问：这个题材适不适合出一本 ISBN 童书。报价私人，网站不公开价目。",
+    successDesc: "预览就在右边。下一步问顾问：这个题材适不适合出一本 ISBN 童书。网站不公开价目。",
     stickyHint: "问顾问这个题材适不适合出书",
     getLinkBtn: "WhatsApp 问顾问：这个题材适不适合出书",
     previewReady: "专著预览已备妥",
@@ -647,18 +647,18 @@ const zhHans: Translations = {
     ...zhHant.services,
     kicker: "服务",
     title: "我们做什么",
-    intro: "六项合成一条全案，亦可单项咨询。私人报价。",
-    privateQuote: "私人报价",
+    intro: "六项合成一条全案，亦可单项咨询。",
+    privateQuote: "",
     suitableFor: "适合对象",
     process: "服务流程",
     backToServices: "返回服务",
     indexHeading: "六项儿童成就服务",
-    indexMeta: "出版计划、新书发布会、展览、媒体公关、直播和升学作品集。英文服务名：Author Programme、Book Launch、Exhibition、Media & PR、Live Streaming、Portfolio Package。私人报价。",
+    indexMeta: "出版计划、新书发布会、展览、媒体公关、直播和升学作品集。英文服务名：Author Programme、Book Launch、Exhibition、Media & PR、Live Streaming、Portfolio Package。",
     items: {
       "author-programme": {
         title: "Author Programme",
         desc: "由兴趣出发，1 对 1 指导完成正式出版成果。",
-        price: "私人报价",
+        price: "",
         detail: "包含出版指导、双语支援、线上音频整合与 ISBN 出版选项。",
         audience: ["孩子有明确兴趣主题", "家庭希望建立长期成果", "需要双语学习输出"],
         process: ["Discovery 访谈", "内容创作引导", "编辑与设计", "成书与交付"],
@@ -666,7 +666,7 @@ const zhHans: Translations = {
       "book-launch": {
         title: "Book Launch Event",
         desc: "为孩子作品打造有仪式感的新书发布会。",
-        price: "私人报价",
+        price: "",
         detail: "涵盖场地策划、流程设计、嘉宾邀请、现场布置与摄影纪录。",
         audience: ["孩子准备公开发表作品", "家庭重视仪式感与社交影响", "需要完整活动执行"],
         process: ["活动定位", "流程与嘉宾规划", "现场执行", "活动后回顾素材交付"],
@@ -674,7 +674,7 @@ const zhHans: Translations = {
       exhibition: {
         title: "Exhibition",
         desc: "让创作被看见，从作品到空间完整呈现。",
-        price: "私人报价",
+        price: "",
         detail: "支援摄影展/插画展、展板设计、场地协调与开幕活动规划。",
         audience: ["孩子有系列作品", "希望成果被更多人看见", "需要展览型履历亮点"],
         process: ["展览主题策展", "展板与空间设计", "场地协调", "开幕与导览"],
@@ -682,7 +682,7 @@ const zhHans: Translations = {
       "media-pr": {
         title: "Media & PR",
         desc: "把孩子故事转化成可被报导的内容。",
-        price: "私人报价",
+        price: "",
         detail: "包括新闻稿、媒体邀请、报导协调与线上传播策略。",
         audience: ["希望建立外部公信力", "需要媒体曝光", "准备学校/升学作品叙事"],
         process: ["媒体角度定位", "新闻稿与素材包", "媒体邀请沟通", "报导追踪整理"],
@@ -690,7 +690,7 @@ const zhHans: Translations = {
       "live-streaming": {
         title: "Live Streaming",
         desc: "活动当日即时直播与线上互动，扩大影响力。",
-        price: "私人报价",
+        price: "",
         detail: "提供直播导播、即时分享、互动监看与永久记录素材。",
         audience: ["有外地亲友需要线上参与", "重视活动扩散", "需要可重播纪录"],
         process: ["直播规划", "现场导播", "线上互动监看", "回放与剪辑交付"],
@@ -698,7 +698,7 @@ const zhHans: Translations = {
       "portfolio-package": {
         title: "Portfolio Package",
         desc: "把完整成果整理成升学可用的作品集。",
-        price: "私人报价",
+        price: "",
         detail: "整合出版、活动、媒体素材，支援多格式输出。",
         audience: ["有升学申请需求", "需要完整成就证据", "希望统一对外展示素材"],
         process: ["素材整合", "叙事与版面编排", "多格式输出", "申请版本微调"],
@@ -762,7 +762,7 @@ const zhHans: Translations = {
   },
   finalCta: {
     title: "开始咨询",
-    copy: "WhatsApp（@kidsmybook）或填表预约。私人报价。",
+    copy: "WhatsApp（@kidsmybook）或填表预约。",
     generateCover: "生成封面",
   },
   caseStudy: {
@@ -791,7 +791,7 @@ const zhHans: Translations = {
   footer: {
     studio: "Kidsmybook · 香港儿童成就出版工作室",
     privacy: "查询资料只用于回复你。未经同意，不会公开小朋友的姓名或学校。",
-    quote: "私人报价，于咨询时提供。",
+    quote: "欢迎 WhatsApp（@kidsmybook）咨询。",
     about: "关于我们",
   },
   faq: {
@@ -811,14 +811,13 @@ const zhHans: Translations = {
   shudianPage: SHUDIAN_HANS,
   aboutPage: ABOUT_HANS,
   seo: {
-    homeTitle: "Kidsmybook｜帮小朋友出书・大学教授审阅｜香港儿童出版",
-    homeDesc:
-      "香港儿童出版工作室。12 个月导师制，把小朋友的兴趣做成有 ISBN 的正式印刷童书；过程同大学教授合作审阅，再提供香港实体书店上架／发行路径。私人报价：WhatsApp @kidsmybook",
+    homeTitle: "Kidsmybook｜由大学教授合作指导，协助儿童正式出版 ISBN 书籍",
+    homeDesc: "由大学教授合作指导，协助儿童正式出版 ISBN 书籍",
     servicesTitle: "服务｜Kidsmybook 六项儿童成就出版",
     servicesDesc:
-      "出版计划、新书发布会、展览、媒体公关、直播和升学作品集，可全案或单项咨询。私人报价，WhatsApp。Author Programme、Book Launch、Exhibition、Media & PR、Live Streaming、Portfolio Package。",
+      "出版计划、新书发布会、展览、媒体公关、直播和升学作品集，可全案或单项咨询。Author Programme、Book Launch、Exhibition、Media & PR、Live Streaming、Portfolio Package。",
     caseStudiesTitle: "个案｜Kidsmybook 儿童成就出版案例",
-    caseStudiesDesc: "目前公开具名个案是 Hilary《蝴蝶双语图鉴》：由兴趣到正式出版、发布会和媒体纪录。私人报价，WhatsApp 查询。",
+    caseStudiesDesc: "目前公开具名个案是 Hilary《蝴蝶双语图鉴》：由兴趣到正式出版、发布会和媒体纪录。WhatsApp 查询。",
     hilaryTitle: "Hilary蝴蝶图鉴案例｜Kidsmybook",
     hilaryDesc: "8 岁孩子从兴趣出发完成双语出版，并延伸发布会、展览与媒体曝光。",
     serviceDetailTitle: (name) => `${name}｜Kidsmybook Services`,
@@ -835,7 +834,7 @@ const zhHans: Translations = {
 };
 
 const en: Translations = {
-  brandTitle: "Help children publish a formal book, reviewed with university professors",
+  brandTitle: "Collaborative guidance from university professors, helping children formally publish an ISBN book",
   brandEn: "Publishing, launches, exhibitions, media, and portfolios — one integrated pathway.",
   nav: {
     main: "Main menu",
@@ -855,12 +854,12 @@ const en: Translations = {
     backToBlog: "← Back to Blog",
     indexTitle: "Hong Kong school portfolios · primary, secondary, ISBN books",
     indexDesc:
-      "For Hong Kong parents: primary interviews, a primary interview class versus an ISBN portfolio, DSS and direct-subsidy secondary files, and how a mentored ISBN book becomes a citable highlight. Private quotation. No place is guaranteed.",
-    askQuote: "WhatsApp for a quote",
+      "For Hong Kong parents: primary interviews, a primary interview class versus an ISBN portfolio, DSS and direct-subsidy secondary files, and how a mentored ISBN book becomes a citable highlight. No place is guaranteed.",
+    askQuote: "WhatsApp consultation",
   },
   hero: {
     eyebrow: "Hong Kong children's publishing studio",
-    lead: "A 12-month mentored programme turns a child's interest into a formally printed ISBN children's book. We collaborate with university professors who review the work, then offer a Hong Kong physical bookstore listing / distribution path. Private quotation: WhatsApp @kidsmybook",
+    lead: "Collaborative guidance from university professors, helping children formally publish an ISBN book",
     generateCover: "Generate cover",
     bookConsult: "Book a consultation",
     featuredAlt: "Hilary book launch",
@@ -929,19 +928,19 @@ const en: Translations = {
   services: {
     kicker: "Services",
     title: "What we do",
-    intro: "Six services as one full programme, or book individually. Private quotation.",
-    privateQuote: "Private quotation",
+    intro: "Six services as one full programme, or book individually.",
+    privateQuote: "",
     suitableFor: "Who it's for",
     process: "Process",
     backToServices: "Back to Services",
     indexHeading: "Six child-achievement services",
-    indexMeta: "Author Programme, Book Launch, Exhibition, Media & PR, Live Streaming, and Portfolio Package. Full programme or a single service. Private quotation.",
+    indexMeta: "Author Programme, Book Launch, Exhibition, Media & PR, Live Streaming, and Portfolio Package. Full programme or a single service.",
     detailEyebrow: "Service Detail",
     items: {
       "author-programme": {
         title: "Author Programme",
         desc: "From interest to a formally published outcome with 1-on-1 guidance.",
-        price: "Private quotation",
+        price: "",
         detail: "Publishing guidance, bilingual support, online audio integration, and ISBN options.",
         audience: ["Child has a clear interest topic", "Family wants a long-term achievement", "Needs bilingual learning output"],
         process: ["Discovery interview", "Content co-creation", "Editing & design", "Book delivery"],
@@ -949,7 +948,7 @@ const en: Translations = {
       "book-launch": {
         title: "Book Launch Event",
         desc: "A ceremonial launch event for your child's work.",
-        price: "Private quotation",
+        price: "",
         detail: "Venue planning, run-of-show, guest invitations, staging, and photo documentation.",
         audience: ["Child ready to present publicly", "Family values ceremony & social impact", "Needs full event execution"],
         process: ["Event positioning", "Programme & guest planning", "On-site execution", "Post-event assets"],
@@ -957,7 +956,7 @@ const en: Translations = {
       exhibition: {
         title: "Exhibition",
         desc: "From artwork to space — make the work visible.",
-        price: "Private quotation",
+        price: "",
         detail: "Photo/illustration exhibitions, panel design, venue coordination, and opening events.",
         audience: ["Child has a body of work", "Wants wider visibility", "Needs exhibition-style portfolio highlight"],
         process: ["Curatorial theme", "Panel & space design", "Venue coordination", "Opening & tours"],
@@ -965,7 +964,7 @@ const en: Translations = {
       "media-pr": {
         title: "Media & PR",
         desc: "Turn your child's story into newsworthy content.",
-        price: "Private quotation",
+        price: "",
         detail: "Press releases, media invitations, coverage coordination, and digital amplification.",
         audience: ["Wants external credibility", "Needs media exposure", "Preparing school/admission narrative"],
         process: ["Media angle", "Press kit", "Outreach", "Coverage tracking"],
@@ -973,7 +972,7 @@ const en: Translations = {
       "live-streaming": {
         title: "Live Streaming",
         desc: "Live broadcast and online engagement on event day.",
-        price: "Private quotation",
+        price: "",
         detail: "Live direction, real-time sharing, chat moderation, and permanent archive assets.",
         audience: ["Remote family needs to join", "Wants reach beyond the room", "Needs replayable record"],
         process: ["Stream planning", "On-site direction", "Online moderation", "Replay & edit delivery"],
@@ -981,7 +980,7 @@ const en: Translations = {
       "portfolio-package": {
         title: "Portfolio Package",
         desc: "Package the full achievement into an admissions-ready portfolio.",
-        price: "Private quotation",
+        price: "",
         detail: "Integrates publishing, events, and media assets with multi-format export.",
         audience: ["Applying to schools", "Needs complete evidence of achievement", "Wants unified public materials"],
         process: ["Asset integration", "Narrative & layout", "Multi-format export", "Application variants"],
@@ -1046,7 +1045,7 @@ const en: Translations = {
   },
   finalCta: {
     title: "Start your consultation",
-    copy: "Message WhatsApp (@kidsmybook) or send the enquiry form. Private quotation.",
+    copy: "Message WhatsApp (@kidsmybook) or send the enquiry form.",
     generateCover: "Generate cover",
   },
   caseStudy: {
@@ -1100,9 +1099,8 @@ const en: Translations = {
   shudianPage: SHUDIAN_EN,
   aboutPage: ABOUT_EN,
   seo: {
-    homeTitle: "Kidsmybook | Publish a child's book, reviewed with university professors | Hong Kong",
-    homeDesc:
-      "Hong Kong children's publishing studio. A 12-month mentored programme turns a child's interest into a formally printed ISBN children's book. We collaborate with university professors who review the work, then offer a Hong Kong physical bookstore listing / distribution path. Private quotation: WhatsApp @kidsmybook",
+    homeTitle: "Kidsmybook | Collaborative guidance from university professors, helping children formally publish an ISBN book",
+    homeDesc: "Collaborative guidance from university professors, helping children formally publish an ISBN book",
     servicesTitle: "Services | Kidsmybook six achievement programmes",
     servicesDesc: "Author Programme, Book Launch, Exhibition, Media & PR, Live Streaming, Portfolio Package.",
     caseStudiesTitle: "Case Studies | Kidsmybook",
@@ -1123,7 +1121,7 @@ const en: Translations = {
   footer: {
     studio: "Kidsmybook · Hong Kong child-achievement publishing studio",
     privacy: "Enquiry details are used only to reply to you. A child's name or school is not published without consent.",
-    quote: "Quoted privately during consultation.",
+    quote: "WhatsApp @kidsmybook.",
     about: "About",
   },
 };

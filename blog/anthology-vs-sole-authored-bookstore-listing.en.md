@@ -1,6 +1,6 @@
 ---
 title: "Contest or school anthology vs a sole-authored kids book with a bookstore listing path"
-description: "A contest prize collection or school anthology is usually one piece inside a multi-author book. Kidsmybook is an about-12-month mentored programme: the child takes part in a formally printed book, then a title-and-package path toward a Hong Kong physical bookstore listing / distribution path. An ISBN is only a book number. Private quotation. No branch and no school place are guaranteed."
+description: "A contest prize collection or school anthology is usually one piece inside a multi-author book. Kidsmybook is an about-12-month mentored programme: the child takes part in a formally printed book, then a title-and-package path toward a Hong Kong physical bookstore listing / distribution path. An ISBN is only a book number. No branch and no school place are guaranteed."
 date: 2026-10-19
 slug: "anthology-vs-sole-authored-bookstore-listing"
 tags: ["anthology", "sole-authored book", "bookstore listing", "Hong Kong"]
@@ -30,8 +30,8 @@ The portfolio is a second use, not the first sentence of the programme. An antho
 
 No. Listing is a path and an arrangement. It depends on the title and the package. Managers decide whether to stock a title, where it sits, and whether it is returned. Kidsmybook is not a bookstore chain. The studio publishes books. It is not an admissions agent, it has no school partnership, and it does not guarantee a place at any primary, secondary, or international school. The only named public case is Hilary. Admission stays with the school, whether the file shows an anthology prize or a sole-authored book.
 
-## How do families ask for a private quotation?
+## How do families start a consultation?
 
 Prices are not on the site. WhatsApp @kidsmybook or email kidsmybook@outlook.com . Share the child’s age, whether there is already a contest piece or a school anthology, and one interest they want to finish.
 
-> Private quotation. WhatsApp @kidsmybook · kidsmybook@outlook.com · publishing and a listing path: https://kidsmybook.com/kids-book-bookstore-listing
+> WhatsApp @kidsmybook · kidsmybook@outlook.com · publishing and a listing path: https://kidsmybook.com/kids-book-bookstore-listing

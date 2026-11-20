@@ -10,10 +10,10 @@ export const STUDIO_EMAIL = "kidsmybook@outlook.com";
 export const WHATSAPP_LABEL = "@kidsmybook";
 
 /** Primary enquiry prefill. Age and interest blanks, no price. */
-export const WA_QUOTE_ZH = "你好，想問小朋友出書計劃報價。年齡：＿＿；興趣：＿＿";
-export const WA_QUOTE_HANS = "你好，想问小朋友出书计划报价。年龄：＿＿；兴趣：＿＿";
+export const WA_QUOTE_ZH = "你好，想諮詢小朋友出書計劃。年齡：＿＿；興趣：＿＿";
+export const WA_QUOTE_HANS = "你好，想咨询小朋友出书计划。年龄：＿＿；兴趣：＿＿";
 export const WA_QUOTE_EN =
-  "Hello, I'd like a private quote for the children's publishing programme. Age: __; Interest: __";
+  "Hello, I'd like to enquire about the children's publishing programme. Age: __; Interest: __";
 
 const ALLOWED_HOSTS = new Set([
   "kidsmybook.com",
@@ -30,7 +30,7 @@ export type TextPart =
   | { type: "text"; text: string }
   | { type: "link"; text: string; href: string; external: boolean };
 
-const URL_STOP = /[\s<>"'（）()。，、；：！？「」『』【】]/u;
+const URL_STOP = /[\s<>"'（）()。、；：！？「」『』【】]/u;
 
 /**
  * Separate a URL from the sentence glued to it.

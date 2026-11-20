@@ -46,7 +46,7 @@
         "@type": "Offer",
         "priceCurrency": "HKD",
         "name": "Customized Programme",
-        "description": "Full programme quotation provided on private consultation — not listed online."
+        "description": "Prices are not published on this site."
       }
     },
     {
@@ -62,7 +62,7 @@
         "@type": "Offer",
         "priceCurrency": "HKD",
         "name": "Customized Programme",
-        "description": "Full package quoted on consultation."
+        "description": "Prices are not published on this site."
       }
     },
     {
@@ -82,7 +82,7 @@
         "@type": "Offer",
         "priceCurrency": "HKD",
         "name": "Customized Programme",
-        "description": "Complete solution quoted on private consultation."
+        "description": "Prices are not published on this site."
       }
     },
     {
@@ -162,7 +162,7 @@
           "name": "How much does Kidsmybook cost?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The complete 12-month solution is quoted on private consultation — contact us to discuss your child's programme."
+            "text": "We do not publish prices. WhatsApp @kidsmybook or email kidsmybook@outlook.com."
           }
         }
       ]

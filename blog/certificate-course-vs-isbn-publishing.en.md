@@ -1,6 +1,6 @@
 ---
 title: "Certificate class vs formal ISBN publication: what a school portfolio sees"
-description: "A certificate class ends with a grade sheet. A formal ISBN book is something the child helped make and can open on one page. Both can sit in a portfolio. They are not the same evidence. Private quotation. No place is guaranteed."
+description: "A certificate class ends with a grade sheet. A formal ISBN book is something the child helped make and can open on one page. Both can sit in a portfolio. They are not the same evidence. No place is guaranteed."
 date: 2026-10-16
 slug: "certificate-course-vs-isbn-publishing"
 tags: ["certificate class", "ISBN", "school portfolio", "Hong Kong"]
@@ -28,4 +28,4 @@ Yes, and most families will have both. Put certificates in the back, the publica
 
 Prices are not on the site, and no place is guaranteed. WhatsApp @kidsmybook or email kidsmybook@outlook.com with age, target school type, and which certificate class is underway. FAQ: https://kidsmybook.com/faq .
 
-> Private quotation. WhatsApp @kidsmybook · no place is guaranteed · https://kidsmybook.com/programme
+> WhatsApp @kidsmybook · no place is guaranteed · https://kidsmybook.com/programme

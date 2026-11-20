@@ -1,6 +1,6 @@
 ---
 title: "幼儿园作品集：孩子也能出一本书吗？"
-description: "K1–K3 可以用图画、观察和口述故事做一本保留小朋友声音的书。深度由导师和家长把关。不是大人作文，也不保证入学。私人报价。"
+description: "K1–K3 可以用图画、观察和口述故事做一本保留小朋友声音的书。深度由导师和家长把关。不是大人作文，也不保证入学。"
 date: 2026-10-13
 slug: "kindergarten-portfolio-book"
 tags: ["幼儿园", "作品集", "K1", "儿童出版"]
@@ -30,6 +30,6 @@ Kidsmybook 的计划大约由 3 岁起到 18 岁，以兴趣带动。幼儿园�
 
 ## 怎样做初步了解？
 
-报价仍然私人，网站不公开价目。WhatsApp @kidsmybook 或电邮 kidsmybook@outlook.com ，讲小朋友读 K1、K2 还是 K3、一个兴趣，和你最想作品集解决的问题。计划全貌：https://kidsmybook.com/programme 。升学作品集页：https://kidsmybook.com/admissions-portfolio 。
+，网站不公开价目。WhatsApp @kidsmybook 或电邮 kidsmybook@outlook.com，讲小朋友读 K1、K2 还是 K3、一个兴趣，和你最想作品集解决的问题。计划全貌：https://kidsmybook.com/programme。升学作品集页：https://kidsmybook.com/admissions-portfolio。
 
-> 私人报价。WhatsApp @kidsmybook · kidsmybook@outlook.com · https://kidsmybook.com/programme
+> WhatsApp @kidsmybook · kidsmybook@outlook.com · https://kidsmybook.com/programme

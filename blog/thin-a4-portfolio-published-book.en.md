@@ -1,6 +1,6 @@
 ---
 title: "When a school portfolio allows only two to five A4 pages: how to place one published book"
-description: "Kidsmybook leads with publishing plus a physical bookstore listing: a mentored formal print, then a path toward a Hong Kong physical bookstore listing / distribution path. A school portfolio is a second use. DSS and private schools often allow only two to five A4 pages, and some accept no portfolio. Do not photocopy the whole book into the binder. Submit one page: the title, what the child did, the ISBN, and optionally one line on the listing path. On interview day, bring the physical book and point to one page. Uploading a PDF and bringing the book are different things. Follow the school's latest guidelines. Private quotation. No branch and no school place are guaranteed."
+description: "Kidsmybook leads with publishing plus a physical bookstore listing: a mentored formal print, then a path toward a Hong Kong physical bookstore listing / distribution path. A school portfolio is a second use. DSS and private schools often allow only two to five A4 pages, and some accept no portfolio. Do not photocopy the whole book into the binder. Submit one page: the title, what the child did, the ISBN, and optionally one line on the listing path. On interview day, bring the physical book and point to one page. Uploading a PDF and bringing the book are different things. Follow the school's latest guidelines. No branch and no school place are guaranteed."
 date: "2026-10-26"
 slug: "thin-a4-portfolio-published-book"
 tags: ["portfolio", "A4", "school interview", "bookstore listing", "ISBN"]
@@ -49,8 +49,8 @@ No. Kidsmybook is a publishing studio. It is not an admissions agent, it has no 
 
 If the interview or the door-knocking round is only days or weeks away, the 12-month plan will not finish for this round, and a physical listing path will not appear in those days either. This page will not ask a family to rush a print run now, and it will not ask them to assemble a layout template and call it a formal publication. Use one piece already in hand, and submit one page inside the school’s limit. Publishing plus a listing fits the next cycle that still has about a year. When the timing is too tight: https://kidsmybook.com/blog/portfolio-not-ready-before-interview .
 
-## How do families ask for a private quotation?
+## How do families start a consultation?
 
-Prices are not on the site. No shelf position and no school place are guaranteed. Before a quotation, three details help: the child’s age and current stage, how many pages the target school accepts or whether it accepts a portfolio at all, and one interest the child will open and work on. WhatsApp @kidsmybook or email kidsmybook@outlook.com .
+Prices are not on the site. No shelf position and no school place are guaranteed. Before a consultation, three details help: the child’s age and current stage, how many pages the target school accepts or whether it accepts a portfolio at all, and one interest the child will open and work on. WhatsApp @kidsmybook or email kidsmybook@outlook.com .
 
-> Private quotation. WhatsApp @kidsmybook · kidsmybook@outlook.com · publishing plus a physical bookstore listing: https://kidsmybook.com/kids-book-bookstore-listing
+> WhatsApp @kidsmybook · kidsmybook@outlook.com · publishing plus a physical bookstore listing: https://kidsmybook.com/kids-book-bookstore-listing

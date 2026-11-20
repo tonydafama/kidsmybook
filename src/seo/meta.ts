@@ -67,7 +67,7 @@ export const HOME_FAQ: { q: string; a: string }[] = [
   },
   {
     q: "書可唔可以喺實體書店上架？",
-    a: "計劃目標係正式印刷，再走香港實體書店上架／發行路徑（視題材同配套）。Kidsmybook 唔係某間書店。店長決定入貨、陳列同退貨，唔保證每間分店都有。ISBN 本身亦唔等於書架上架。詳見 https://kidsmybook.com/kids-book-bookstore-listing 。",
+    a: "計劃目標係正式印刷，再走香港實體書店上架／發行路徑（視題材同配套）。Kidsmybook 唔係某間書店。店長決定入貨、陳列同退貨，唔保證每間分店都有。ISBN 本身亦唔等於書架上架。詳見 https://kidsmybook.com/kids-book-bookstore-listing。",
   },
   {
     q: "Kidsmybook 點樣幫小朋友考入香港好學校？",
@@ -83,7 +83,7 @@ export const HOME_FAQ: { q: string; a: string }[] = [
   },
   {
     q: "收費點樣計？",
-    a: "完整 12 個月方案按小朋友題材同配套私人報價，網站唔公開價目。歡迎 WhatsApp @kidsmybook 或電郵 kidsmybook@outlook.com。",
+    a: "完整 12 個月方案網站唔公開價目。歡迎 WhatsApp @kidsmybook 或電郵 kidsmybook@outlook.com。",
   },
   {
     q: "小朋友出書同普通興趣班有咩分別？",
@@ -103,7 +103,7 @@ export const HOME_FAQ: { q: string; a: string }[] = [
   },
   {
     q: "幼稚園細路都合適嗎？會唔會太早？",
-    a: "大約 3 歲起都可以用興趣帶動（例如圖畫、觀察、口述故事），由導師同家長一齊把關深度同表達方式。重點係保留小朋友自己嘅聲音，而唔係叫佢寫「大人作文」。是否適合，要睇興趣穩定度同家庭目標——歡迎用 WhatsApp 做免費初步了解（報價仍然私人）。",
+    a: "大約 3 歲起都可以用興趣帶動（例如圖畫、觀察、口述故事），由導師同家長一齊把關深度同表達方式。重點係保留小朋友自己嘅聲音，而唔係叫佢寫「大人作文」。是否適合，要睇興趣穩定度同家庭目標——歡迎用 WhatsApp 做免費初步了解。",
   },
   {
     q: "可唔可以只報發布會／展覽／PR，唔報成個 12 個月？",
@@ -115,7 +115,7 @@ export const HOME_FAQ: { q: string; a: string }[] = [
   },
   {
     q: "點樣開始？第一次諮詢要準備咩？",
-    a: "WhatsApp @kidsmybook 或者電郵 kidsmybook@outlook.com，簡單講：（1）小朋友年齡同階段（幼稚園／小學／中學）；（2）而家學校／目標學校類型；（3）佢最感興趣嘅一件事；（4）你最想解決嘅作品集／面試問題。我哋會先了解再私人報價，網站唔放價目表。",
+    a: "WhatsApp @kidsmybook 或者電郵 kidsmybook@outlook.com，簡單講：（1）小朋友年齡同階段（幼稚園／小學／中學）；（2）而家學校／目標學校類型；（3）佢最感興趣嘅一件事；（4）你最想解決嘅作品集／面試問題。我哋會先了解，網站唔放價目表。",
   },
   {
     q: "資優／特別興趣嘅小朋友適唔適合？",
@@ -123,24 +123,23 @@ export const HOME_FAQ: { q: string; a: string }[] = [
   },
   {
     q: "美術作品集同 ISBN 出版作品集有咩分別？",
-    a: "畫簿、素描同美術班作品集證明技法同練習。有 ISBN、小朋友參與嘅出版作品集係一件做完、可以翻開講嘅正式出版物。學校如果指定要交原作或畫作選輯，畫作仍然要交；書唔取代嗰份指定作品。Kidsmybook 唔保證取錄。詳見 https://kidsmybook.com/blog/art-portfolio-vs-isbn-published-book 。",
+    a: "畫簿、素描同美術班作品集證明技法同練習。有 ISBN、小朋友參與嘅出版作品集係一件做完、可以翻開講嘅正式出版物。學校如果指定要交原作或畫作選輯，畫作仍然要交；書唔取代嗰份指定作品。Kidsmybook 唔保證取錄。詳見 https://kidsmybook.com/blog/art-portfolio-vs-isbn-published-book。",
   },
   {
     q: "作品集唔夠睇、面試就快到，仲可唔可以出書？",
-    a: "如果只剩幾日或幾星期，12 個月出版計劃趕唔切。先收窄而家嘅文件，揀一件小朋友講得出嘅作品。出書適合下一個有大約一年時間嘅申請周期。報價私人，網站唔公開價目。詳見 https://kidsmybook.com/blog/portfolio-not-ready-before-interview 。",
+    a: "如果只剩幾日或幾星期，12 個月出版計劃趕唔切。先收窄而家嘅文件，揀一件小朋友講得出嘅作品。出書適合下一個有大約一年時間嘅申請周期。網站唔公開價目。詳見 https://kidsmybook.com/blog/portfolio-not-ready-before-interview。",
   },
   {
     q: "實體書店上架係必須嗎？係咩意思？",
-    a: "上架係出版路徑嘅一部分，唔係「有 ISBN 就自動上架」。正式印刷之後，先按題材同配套安排香港實體書店上架／發行路徑。店長決定入貨、陳列同退貨，唔保證每間分店都有。升學作品集可以引用呢份成果，但係第二層用途。詳見 https://kidsmybook.com/kids-book-bookstore-listing 。",
+    a: "上架係出版路徑嘅一部分，唔係「有 ISBN 就自動上架」。正式印刷之後，先按題材同配套安排香港實體書店上架／發行路徑。店長決定入貨、陳列同退貨，唔保證每間分店都有。升學作品集可以引用呢份成果，但係第二層用途。詳見 https://kidsmybook.com/kids-book-bookstore-listing。",
   },
 ];
 
-export const HOME_H1_ZH = "幫小朋友正式出書，同大學教授合作審閱";
+export const HOME_H1_ZH = "由大學教授合作指導，協助兒童正式出版 ISBN 書籍";
 
-export const HOME_TITLE_ZH = "Kidsmybook｜幫小朋友出書・大學教授審閱｜香港兒童出版";
+export const HOME_TITLE_ZH = "Kidsmybook｜由大學教授合作指導，協助兒童正式出版 ISBN 書籍";
 
-export const HOME_DESCRIPTION_ZH =
-  "香港兒童出版工作室。12 個月導師制，將小朋友興趣做成有 ISBN 的正式印刷童書；過程同大學教授合作審閱，再提供香港實體書店上架／發行路徑。私人報價：WhatsApp @kidsmybook";
+export const HOME_DESCRIPTION_ZH = "由大學教授合作指導，協助兒童正式出版 ISBN 書籍";
 
 const SERVICE_OG: Record<string, { file: string; width: number; height: number }> = {
   "author-programme": { file: "/services/service-author-programme.png", width: 1376, height: 768 },

@@ -1,6 +1,6 @@
 ---
 title: "Online storefront / ebook listing ≠ physical bookstore shelves: how parents can tell them apart"
-description: "A product page on Amazon, HKTVmall, or a print-on-demand shop, or an ebook-store catalog, is not stock at Hong Kong physical bookstores. An online page and an ebook are two other meanings of listing. A physical shelf is a distributor supply path. Buyers decide stock, display, and returns. Kidsmybook’s lead is a book plus a physical listing path. An ISBN is not a shelf. Private quotation. No branch and no school place are guaranteed."
+description: "A product page on Amazon, HKTVmall, or a print-on-demand shop, or an ebook-store catalog, is not stock at Hong Kong physical bookstores. An online page and an ebook are two other meanings of listing. A physical shelf is a distributor supply path. Buyers decide stock, display, and returns. Kidsmybook’s lead is a book plus a physical listing path. An ISBN is not a shelf. No branch and no school place are guaranteed."
 date: 2026-10-21
 slug: "online-storefront-vs-physical-bookstore-listing"
 tags: ["online bookstore", "ebook", "bookstore listing", "Hong Kong"]
@@ -20,16 +20,16 @@ An online listing shows that a shop will host a product page, or that a print-on
 
 No. An ISBN identifies one version. A book number shows that a version was registered. It does not show that any bookstore has ordered the title, and it does not turn an online page into a shelf. Why an ISBN is not a bookstore shelf: https://kidsmybook.com/blog/isbn-is-not-bookstore-listing . The Kidsmybook path is about 12 months of mentoring: a formally printed book the child takes part in, then a bookstore-platform arrangement that depends on the title and the package. The measure of success is publishing plus a listing path. It is not a book number alone, and it is not an online shop alone. The stages: https://kidsmybook.com/programme .
 
-## What three checks come before a private quotation?
+## What three checks come before a consultation?
 
-Prices are not on the site. Before a quotation, a family can ask three questions. Is the offer online-only, a web shop or an ebook? Is there a Hong Kong physical bookstore listing / distribution path, or only a web-shop link? Does anyone claim that every branch is guaranteed to stock the book? The honest answer is that no branch can be guaranteed. The store decides stock, display, and returns. Ask those three, then use WhatsApp or email.
+Prices are not on the site. Before a consultation, a family can ask three questions. Is the offer online-only, a web shop or an ebook? Is there a Hong Kong physical bookstore listing / distribution path, or only a web-shop link? Does anyone claim that every branch is guaranteed to stock the book? The honest answer is that no branch can be guaranteed. The store decides stock, display, and returns. Ask those three, then use WhatsApp or email.
 
 ## How can a school portfolio cite publishing plus a physical listing?
 
 The portfolio is a second use, not the first sentence of the programme. An interviewer can hear that the child took part in a formally printed book, and that there is a physical bookstore listing path. That sentence shows one interest was finished, and that there is a book someone can open. An online product page or an ebook link is not the same as handing over a paper book on interview day, and it is not a school place. Kidsmybook publishes books. It is not an admissions agent, it has no school partnership, and it does not guarantee a place at any primary, secondary, or international school. The only named public case is Hilary. How a portfolio uses one publication: https://kidsmybook.com/admissions-portfolio .
 
-## How do families ask for a private quotation?
+## How do families start a consultation?
 
 WhatsApp @kidsmybook or email kidsmybook@outlook.com . Share the child’s age and one interest they want to finish. If someone has already said “available online”, say whether that means a product page, an ebook catalog, or a question about a physical listing path at Hong Kong physical bookstores.
 
-> Private quotation. WhatsApp @kidsmybook · kidsmybook@outlook.com · publishing and a listing path: https://kidsmybook.com/kids-book-bookstore-listing
+> WhatsApp @kidsmybook · kidsmybook@outlook.com · publishing and a listing path: https://kidsmybook.com/kids-book-bookstore-listing

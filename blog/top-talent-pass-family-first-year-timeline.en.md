@@ -1,6 +1,6 @@
 ---
 title: "Top Talent Pass year one: a school-portfolio timeline"
-description: "A month-by-month plan for Top Talent Pass and newly arrived families. Start the ISBN path when about a year remains. A last-minute interview cannot finish the book. Private quotation. No place is guaranteed."
+description: "A month-by-month plan for Top Talent Pass and newly arrived families. Start the ISBN path when about a year remains. A last-minute interview cannot finish the book. No place is guaranteed."
 date: 2026-10-17
 slug: "top-talent-pass-family-first-year-timeline"
 tags: ["Top Talent Pass", "portfolio", "ISBN", "timeline"]
@@ -37,4 +37,4 @@ No. If only a few days or weeks remain, narrow the file you already have and kee
 
 Prices are not on the site, and no place is guaranteed. WhatsApp @kidsmybook or email kidsmybook@outlook.com. Share the age, the target school type, roughly when the interview is, and one interest. If only a few days remain, we will say the 12-month plan cannot be finished in time.
 
-> Private quotation. WhatsApp @kidsmybook · no place is guaranteed · https://kidsmybook.com/top-talent-pass-admissions-portfolio
+> WhatsApp @kidsmybook · no place is guaranteed · https://kidsmybook.com/top-talent-pass-admissions-portfolio

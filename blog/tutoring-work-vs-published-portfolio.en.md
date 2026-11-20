@@ -1,6 +1,6 @@
 ---
 title: "Tutoring work vs a published portfolio: what an interviewer actually sees"
-description: "Tutoring essays, worksheets, and mock interview scripts are practice. A published portfolio is a finished ISBN book someone can cite. They do not replace each other. Private quotation. No place is guaranteed."
+description: "Tutoring essays, worksheets, and mock interview scripts are practice. A published portfolio is a finished ISBN book someone can cite. They do not replace each other. No place is guaranteed."
 date: 2026-10-16
 slug: "tutoring-work-vs-published-portfolio"
 tags: ["tutoring", "published portfolio", "interview", "Hong Kong"]
@@ -24,8 +24,8 @@ A full mentored cycle, formal publication, and a way to place the book in a prim
 
 Tutoring and publishing can run together. Tutoring faces school progress. The book faces one sustained interest. A Top Talent Pass family with many tutoring papers and few local outcomes can add one clear proof object. The book does not replace tutoring and does not guarantee a place: https://kidsmybook.com/top-talent-pass-admissions-portfolio . There is no school partnership, and Kidsmybook is not an admissions agent.
 
-## How do families ask for a private quotation?
+## How do families start a consultation?
 
 Share the child's age, one tutoring subject, one interest, and the portfolio problem you want to solve. WhatsApp @kidsmybook . FAQ: https://kidsmybook.com/faq . Prices are not on the site, and no place is guaranteed.
 
-> Private quotation. WhatsApp @kidsmybook · no place is guaranteed · https://kidsmybook.com/faq
+> WhatsApp @kidsmybook · no place is guaranteed · https://kidsmybook.com/faq

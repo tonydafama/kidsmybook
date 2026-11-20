@@ -1,6 +1,6 @@
 ---
 title: "官津小一自行分配唔使作品集：邊啲場面先要帶正式出版物"
-description: "Kidsmybook 第一句係出書連實體書店上架：導師制正式印刷之後，按題材同配套走香港實體書店。升學作品集係第二層用途。官津小一自行分配按教育局公開說明，家長唔使準備作品集，學校亦唔可以就已學課程知識做測驗或面試。直資、私立同國際學校如果收薄文件或者當日容許帶實物，先至係帶一本正式出版物、指住一頁講嘅場面。叩門唔係自行分配。私人報價，唔保證每間分店有貨，亦唔保證取錄。"
+description: "Kidsmybook 第一句係出書連實體書店上架：導師制正式印刷之後，按題材同配套走香港實體書店。升學作品集係第二層用途。官津小一自行分配按教育局公開說明，家長唔使準備作品集，學校亦唔可以就已學課程知識做測驗或面試。直資、私立同國際學校如果收薄文件或者當日容許帶實物，先至係帶一本正式出版物、指住一頁講嘅場面。叩門唔係自行分配。唔保證每間分店有貨，亦唔保證取錄。"
 date: "2026-10-28"
 slug: "poa-discretionary-vs-knocking-published-book"
 tags: ["自行分配", "官津", "叩門", "實體書店", "ISBN"]
@@ -14,19 +14,19 @@ tags: ["自行分配", "官津", "叩門", "實體書店", "ISBN"]
 
 唔使。教育局就呢個階段公開提醒家長：學校按既定程序同準則處理申請，因此家長唔使為子女準備作品集。同一套公開嘅小一入學說明亦寫明，學校唔可以就申請兒童已學嘅課程知識進行測驗或面試。申請要交嘅，係身份證明、住址證明，同埋表格上面計分項目適用時先要嘅證明。唔係一疊獎狀，亦唔係一本書。每年表格、日期同說明，以該年度教育局公布為準。
 
-所以一本正式出版物唔係官津自行分配要交嘅文件，亦唔會改計分先後。唔好將成本書影印入申請，亦唔好把「自行分配面試」當成呢個階段嘅要求。升小頁講嘅幾分鐘場面，係另外兩類：https://kidsmybook.com/primary-one-interview-portfolio 。幾分鐘裡面點用一頁：https://kidsmybook.com/blog/primary-interview-how-to-use-a-book 。
+所以一本正式出版物唔係官津自行分配要交嘅文件，亦唔會改計分先後。唔好將成本書影印入申請，亦唔好把「自行分配面試」當成呢個階段嘅要求。升小頁講嘅幾分鐘場面，係另外兩類：https://kidsmybook.com/primary-one-interview-portfolio。幾分鐘裡面點用一頁：https://kidsmybook.com/blog/primary-interview-how-to-use-a-book。
 
 ## 出書連實體書店上架，同官津自行分配係咩關係？
 
-關係係：書先係一件做完嘅出版成果。官津自行分配唔用佢做申請文件。條路唔係申請到一個書號就完。前面係約 12 個月導師制：諮詢、導師帶領創作、可有大學教授審閱、親子排版，然後先正式印刷。印刷完成，先至談實體書店上架。上架係發行商供貨：書去到香港實體書店之後，書店買手同店長決定入唔入貨、擺喺邊、賣幾耐、退唔退。Kidsmybook 唔係書店連鎖。上架視題材同配套，唔係每本書自動出現喺每一間分店。平台說明：https://kidsmybook.com/kids-book-bookstore-listing 。階段：https://kidsmybook.com/programme 。
+關係係：書先係一件做完嘅出版成果。官津自行分配唔用佢做申請文件。條路唔係申請到一個書號就完。前面係約 12 個月導師制：諮詢、導師帶領創作、可有大學教授審閱、親子排版，然後先正式印刷。印刷完成，先至談實體書店上架。上架係發行商供貨：書去到香港實體書店之後，書店買手同店長決定入唔入貨、擺喺邊、賣幾耐、退唔退。Kidsmybook 唔係書店連鎖。上架視題材同配套，唔係每本書自動出現喺每一間分店。平台說明：https://kidsmybook.com/kids-book-bookstore-listing。階段：https://kidsmybook.com/programme。
 
-之後如果有一間學校真係收文件，或者當日容許帶書，可以引用嘅一句，係「有正式印刷，再有實體書店上架路徑」。唔係「我哋就係某間書店」，亦唔係「呢本書可以換一個官津學位」。店方決定入貨、陳列同退貨。ISBN 只係書號，唔等於書架：https://kidsmybook.com/blog/isbn-is-not-bookstore-listing 。
+之後如果有一間學校真係收文件，或者當日容許帶書，可以引用嘅一句，係「有正式印刷，再有實體書店上架路徑」。唔係「我哋就係某間書店」，亦唔係「呢本書可以換一個官津學位」。店方決定入貨、陳列同退貨。ISBN 只係書號，唔等於書架：https://kidsmybook.com/blog/isbn-is-not-bookstore-listing。
 
 ## 直資、私立同國際學校，邊啲場面先要帶正式出版物？
 
-當嗰間學校收一份薄文件，或者面試當日容許帶實物。直資、私立同國際學校唔行官津嗰套計分，收生由學校自己定。有啲學校寫明收兩至五頁 A4，有啲學校當日可以帶一本書。頁數、收唔收作品集、可唔可以帶實物，一律以該校最新指引為準。頁數點放：https://kidsmybook.com/blog/thin-a4-portfolio-published-book 。面試場面點講同一條上架路徑：https://kidsmybook.com/blog/physical-bookstore-listing-for-hk-school-interview 。
+當嗰間學校收一份薄文件，或者面試當日容許帶實物。直資、私立同國際學校唔行官津嗰套計分，收生由學校自己定。有啲學校寫明收兩至五頁 A4，有啲學校當日可以帶一本書。頁數、收唔收作品集、可唔可以帶實物，一律以該校最新指引為準。頁數點放：https://kidsmybook.com/blog/thin-a4-portfolio-published-book。面試場面點講同一條上架路徑：https://kidsmybook.com/blog/physical-bookstore-listing-for-hk-school-interview。
 
-呢個場面先至交一頁 A4：書名、小朋友做過嘅部分、ISBN，同埋可選嘅一句實體書店上架路徑。其餘頁留給學校要求嘅其他文件。總頁：https://kidsmybook.com/admissions-portfolio 。清單：https://kidsmybook.com/admissions-portfolio-checklist 。
+呢個場面先至交一頁 A4：書名、小朋友做過嘅部分、ISBN，同埋可選嘅一句實體書店上架路徑。其餘頁留給學校要求嘅其他文件。總頁：https://kidsmybook.com/admissions-portfolio。清單：https://kidsmybook.com/admissions-portfolio-checklist。
 
 呢一頁可以咁寫，仍然跟該校最新表格：
 
@@ -35,13 +35,13 @@ tags: ["自行分配", "官津", "叩門", "實體書店", "ISBN"]
 - ISBN，用來識別呢一個版本
 - 可選一句：正式印刷，並按題材同配套有實體書店上架路徑；店方決定入貨、陳列同退貨
 
-唔好喺呢一頁寫分店保證，唔好寫取錄承諾，亦唔好寫價錢。面試當日如果容許帶實物，就帶嗰本書，指住一頁講，唔好由封面讀到封底。上傳 PDF 同帶書係兩件事。公開具名例子只有 Hilary，出版時八歲，約一年完成蝴蝶圖鑑；呢個係出版時間，唔係任何學校嘅面試結果：https://kidsmybook.com/case-studies/hilary-butterfly-guide 。
+唔好喺呢一頁寫分店保證，唔好寫取錄承諾，亦唔好寫價錢。面試當日如果容許帶實物，就帶嗰本書，指住一頁講，唔好由封面讀到封底。上傳 PDF 同帶書係兩件事。公開具名例子只有 Hilary，出版時八歲，約一年完成蝴蝶圖鑑；呢個係出版時間，唔係任何學校嘅面試結果：https://kidsmybook.com/case-studies/hilary-butterfly-guide。
 
 ## 統一派位之後嘅叩門，同自行分配係咪同一件事？
 
 唔係。叩門係統一派位結果出咗之後，家長上門問一間學校仲有冇位。佢唔係小一入學統籌辦法嘅自行分配階段，亦唔行嗰套計分。見唔見人、收唔收文件、當日可唔可以帶實物，由該校當刻決定。如果當日容許帶書，就用同一頁講書名、小朋友做過咩，可加一句上架路徑。如果當日唔見人，或者唔收額外文件，就唔好臨時加一本學校冇要求嘅文件夾。
 
-官津自行分配唔使作品集，唔等於之後所有場面都唔使講一本書。分別在於：自行分配唔收呢份文件；直資、私立、國際學校或者叩門，先至可能有一個短嘅講法。升小頁：https://kidsmybook.com/primary-one-interview-portfolio 。
+官津自行分配唔使作品集，唔等於之後所有場面都唔使講一本書。分別在於：自行分配唔收呢份文件；直資、私立、國際學校或者叩門，先至可能有一個短嘅講法。升小頁：https://kidsmybook.com/primary-one-interview-portfolio。
 
 ## 一本正式出版物可唔可以保證取錄？
 
@@ -51,8 +51,8 @@ tags: ["自行分配", "官津", "叩門", "實體書店", "ISBN"]
 
 如果而家先至想起交文件，12 個月計劃趕唔切呢一輪，實體上架路徑更唔會喺呢幾日內出現。官津自行分配本身唔收作品集，更加唔使為呢一關趕印。直資、私立或國際學校如果面試只剩幾日或幾星期，同樣唔好趕一本弱書塞入文件夾。呢篇唔會叫你用版面模板砌一本充當正式出版物。出書連上架適合下一個仲有大約一年嘅周期。
 
-## 點樣私人報價？
+## 點樣開始諮詢？
 
-網站唔公開價目，亦唔保證書架位置或學校取錄。報價之前可以先講三樣：小朋友年齡同而家讀邊個階段、目標係官津自行分配、直資／私立／國際學校，定係叩門、同一個會自己翻開嚟做嘅興趣。WhatsApp @kidsmybook 或電郵 kidsmybook@outlook.com 。
+網站唔公開價目，亦唔保證書架位置或學校取錄。諮詢之前可以先講三樣：小朋友年齡同而家讀邊個階段、目標係官津自行分配、直資／私立／國際學校，定係叩門、同一個會自己翻開嚟做嘅興趣。WhatsApp @kidsmybook 或電郵 kidsmybook@outlook.com。
 
-> 私人報價。WhatsApp @kidsmybook · kidsmybook@outlook.com · 出書連實體書店上架：https://kidsmybook.com/kids-book-bookstore-listing
+> WhatsApp @kidsmybook · kidsmybook@outlook.com · 出書連實體書店上架：https://kidsmybook.com/kids-book-bookstore-listing

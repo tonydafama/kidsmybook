@@ -1,6 +1,6 @@
 ---
 title: "Portfolio feels thin and the interview is soon: a realistic timeline"
-description: "A few days or weeks before an interview or door-knocking round is not enough for a 12-month publishing programme. What you can still tidy now, and when a book belongs in the next cycle. Private quotation. No place is guaranteed."
+description: "A few days or weeks before an interview or door-knocking round is not enough for a 12-month publishing programme. What you can still tidy now, and when a book belongs in the next cycle. No place is guaranteed."
 date: 2026-10-17
 slug: "portfolio-not-ready-before-interview"
 tags: ["door-knocking", "interview", "portfolio", "timeline"]
@@ -31,8 +31,8 @@ Start when the next application cycle still has about a year. The book adds one 
 
 It can be a family keepsake. It is usually not mentor-led publishing. A self-funded print run may not include a process the child finished, professor review, ISBN arrangements, or portfolio packaging. The comparison is here: https://kidsmybook.com/blog/self-publishing-vs-mentored-publishing . Kidsmybook does not say a weekend print replaces the 12-month programme, and it does not guarantee this door-knocking visit or this interview.
 
-## How do families ask for a private quotation?
+## How do families start a consultation?
 
 Prices are not on the site. If this interview is already too close, WhatsApp can still start with the age and the file you have. We will say plainly if the book cannot be finished in time. A 12-month scope belongs to the next cycle. WhatsApp @kidsmybook or email kidsmybook@outlook.com . FAQ: https://kidsmybook.com/faq .
 
-> Private quotation. WhatsApp @kidsmybook · no place is guaranteed · a few days cannot finish a 12-month programme
+> WhatsApp @kidsmybook · no place is guaranteed · a few days cannot finish a 12-month programme

@@ -1,6 +1,6 @@
 ---
 title: "Self-publishing, POD, and print-for-hire vs a mentored shelf path"
-description: "Self-publishing, print-for-hire, and print-on-demand usually stop at a printed copy. The mentored path prints the book, then arranges a Hong Kong physical bookstore listing / distribution path. Managers decide stock. Private quotation. No branch is guaranteed."
+description: "Self-publishing, print-for-hire, and print-on-demand usually stop at a printed copy. The mentored path prints the book, then arranges a Hong Kong physical bookstore listing / distribution path. Managers decide stock. No branch is guaranteed."
 date: 2026-10-18
 slug: "self-publish-pod-vs-mentored-bookstore-listing"
 tags: ["self-publishing", "POD", "bookstore", "Hong Kong"]
@@ -32,4 +32,4 @@ No. A printed copy, or a print-on-demand link, is not a Hong Kong physical books
 
 The site does not publish prices. WhatsApp @kidsmybook or email kidsmybook@outlook.com with the child's age and one interest. A parent's view, and the limit on that view: https://kidsmybook.com/blog/bookstore-shelf-listing-for-parents .
 
-> Private quotation. WhatsApp @kidsmybook · kidsmybook@outlook.com · Programme: https://kidsmybook.com/programme
+> WhatsApp @kidsmybook · kidsmybook@outlook.com · Programme: https://kidsmybook.com/programme

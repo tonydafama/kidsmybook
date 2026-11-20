@@ -1,6 +1,6 @@
 ---
 title: "自费出书 vs 导师制出版：哪一种更帮得上香港升学面试？"
-description: "自费印刷多数是纪念册。导师制出版有小朋友参与、教授审阅、ISBN 和升学作品集包装。私人报价，网站不公开价目，也不保证录取。"
+description: "自费印刷多数是纪念册。导师制出版有小朋友参与、教授审阅、ISBN 和升学作品集包装。网站不公开价目，也不保证录取。"
 date: 2026-10-10
 slug: "self-publishing-vs-mentored-publishing"
 tags: ["自费出书", "导师制", "升学面试", "香港"]
@@ -26,6 +26,6 @@ Kidsmybook 是 12 个月导师制出版计划，不是 DIY 模板，也不是纯
 
 ## 怎样开始？
 
-网站不公开价目。完整方案按小朋友题材和配套私人报价。可以先看小朋友出书计划 https://kidsmybook.com/programme ，或者 WhatsApp @kidsmybook 、电邮 kidsmybook@outlook.com ，讲年龄、现在或目标学校，以及一个兴趣。
+网站不公开价目。完整方案按小朋友题材和配套。可以先看小朋友出书计划 https://kidsmybook.com/programme，或者 WhatsApp @kidsmybook 、电邮 kidsmybook@outlook.com，讲年龄、现在或目标学校，以及一个兴趣。
 
-> 私人报价，网站不放价目。WhatsApp @kidsmybook · kidsmybook@outlook.com · 计划说明：https://kidsmybook.com/programme
+> 网站不放价目。WhatsApp @kidsmybook · kidsmybook@outlook.com · 计划说明：https://kidsmybook.com/programme

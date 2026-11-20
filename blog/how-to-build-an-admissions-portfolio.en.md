@@ -1,6 +1,6 @@
 ---
 title: "How to make a stronger Hong Kong admissions portfolio"
-description: "A thin file, a certificate stack, or a last-minute tidy-up: a checklist for what goes first. Certificate classes, tutoring work, and an ISBN book each prove something different. Private quotation. No place is guaranteed."
+description: "A thin file, a certificate stack, or a last-minute tidy-up: a checklist for what goes first. Certificate classes, tutoring work, and an ISBN book each prove something different. No place is guaranteed."
 date: 2026-10-17
 slug: "how-to-build-an-admissions-portfolio"
 tags: ["admissions portfolio", "checklist", "ISBN", "Hong Kong"]
@@ -37,8 +37,8 @@ The only named public case is Hilary, age 8 at publication, about a year on a bu
 
 You can narrow the file you already have and choose one existing piece the child can explain. You cannot finish a 12-month publishing programme in a few days. Timeline: https://kidsmybook.com/blog/portfolio-not-ready-before-interview . When a local primary file is handed in versus an international portfolio is a separate note: https://kidsmybook.com/blog/local-primary-interview-vs-international-portfolio .
 
-## How do families ask for a private quotation?
+## How do families start a consultation?
 
 Prices are not on the site, and no place is guaranteed. WhatsApp @kidsmybook or email kidsmybook@outlook.com . Share the age, the target school type, and the thinnest part of the file. Programme: https://kidsmybook.com/programme . FAQ: https://kidsmybook.com/faq .
 
-> Private quotation. WhatsApp @kidsmybook · no place is guaranteed · https://kidsmybook.com/admissions-portfolio
+> WhatsApp @kidsmybook · no place is guaranteed · https://kidsmybook.com/admissions-portfolio

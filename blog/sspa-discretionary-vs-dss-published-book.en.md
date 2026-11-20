@@ -1,6 +1,6 @@
 ---
 title: "Secondary One discretionary places are not a no-portfolio round: which secondary scenes call for a published book"
-description: "Kidsmybook leads with publishing plus a physical bookstore listing: a mentored formal print, then a Hong Kong physical bookstore listing / distribution path. A school file is a second use. Secondary School Places Allocation discretionary places can include an interview, and participating schools must not run written tests for that stage. Central allocation is a computer result from the allocation band, parental choices, and the school net. Bringing a book does not change that result. A child-involved ISBN publication can be shown or discussed in DSS, private, and international interviews, and in some discretionary-place interviews. The book is a portfolio story someone can tell. It is not a guaranteed place. Private quotation."
+description: "Kidsmybook leads with publishing plus a physical bookstore listing: a mentored formal print, then a Hong Kong physical bookstore listing / distribution path. A school file is a second use. Secondary School Places Allocation discretionary places can include an interview, and participating schools must not run written tests for that stage. Central allocation is a computer result from the allocation band, parental choices, and the school net. Bringing a book does not change that result. A child-involved ISBN publication can be shown or discussed in DSS, private, and international interviews, and in some discretionary-place interviews. The book is a portfolio story someone can tell. It is not a guaranteed place."
 date: "2026-11-06"
 slug: "sspa-discretionary-vs-dss-published-book"
 tags: ["discretionary places", "central allocation", "DSS", "ISBN", "secondary"]
@@ -53,8 +53,8 @@ No. Kidsmybook is a publishing studio. It is not an admissions agent, it has no 
 
 If the file is only being thought of now, the 12-month plan will not finish for this round, and a Hong Kong physical bookstore listing / distribution path will not appear in those days either. Central allocation does not take the book, so there is nothing to rush-print for that result. If a discretionary-place interview, or a DSS, private, or international interview, is only days or weeks away, do not rush a weak book into a binder either. Publishing plus a listing fits the next cycle that still has about a year. The timeline: https://kidsmybook.com/blog/when-to-start-child-book-before-secondary-interview .
 
-## How do families ask for a private quotation?
+## How do families start a consultation?
 
-Prices are not on the site. No shelf position and no school place are guaranteed. Before a quotation, three details help: the child’s age and current year, whether the target is discretionary places at a participating school, central allocation, or a DSS, private, or international school running its own admission, and one interest the child will open and work on. WhatsApp @kidsmybook or email kidsmybook@outlook.com .
+Prices are not on the site. No shelf position and no school place are guaranteed. Before a consultation, three details help: the child’s age and current year, whether the target is discretionary places at a participating school, central allocation, or a DSS, private, or international school running its own admission, and one interest the child will open and work on. WhatsApp @kidsmybook or email kidsmybook@outlook.com .
 
-> Private quotation. WhatsApp @kidsmybook · kidsmybook@outlook.com · publishing plus a physical bookstore listing: https://kidsmybook.com/kids-book-bookstore-listing
+> WhatsApp @kidsmybook · kidsmybook@outlook.com · publishing plus a physical bookstore listing: https://kidsmybook.com/kids-book-bookstore-listing

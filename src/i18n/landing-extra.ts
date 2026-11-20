@@ -4,10 +4,10 @@ import type { HubCopy } from "../seo/landing-zh";
 export const PROGRAMME_HANS = {
   title: "小朋友出书计划香港｜正式出书和大学教授审阅｜Kidsmybook",
   description:
-    "香港儿童出版：12 个月导师制，把小朋友的兴趣做成有 ISBN 的正式印刷童书，同大学教授合作审阅，再提供香港实体书店上架／发行路径。私人报价。不保证每间分店有货，也不保证录取。",
+    "香港儿童出版：12 个月导师制，把小朋友的兴趣做成有 ISBN 的正式印刷童书，同大学教授合作审阅，再提供香港实体书店上架／发行路径。不保证每间分店有货，也不保证录取。",
   eyebrow: "儿童出书 · 大学教授审阅 · 香港",
   h1: "小朋友出书计划：正式出书，同大学教授合作审阅",
-  lead: "Kidsmybook 是香港儿童出版工作室。12 个月导师制，把小朋友的兴趣做成有 ISBN 的正式印刷童书；过程同大学教授合作审阅，再提供香港实体书店上架／发行路径。私人报价。",
+  lead: "Kidsmybook 是香港儿童出版工作室。12 个月导师制，把小朋友的兴趣做成有 ISBN 的正式印刷童书；过程同大学教授合作审阅，再提供香港实体书店上架／发行路径。",
   shelfLink: "童书书店上架：香港实体书店上架／发行路径",
   notLabel: "这个计划不是",
   notBody: "不是只申请一个 ISBN、不是 DIY 礼物书、不是保证每间分店有货，也不是保证入学配对。",
@@ -43,20 +43,20 @@ export const PROGRAMME_HANS = {
   faqTitle: "还有问题？",
   faqLink: "看全部常见问题（ISBN、幼儿园、收费方式）",
   portfolioLink: "升学作品集怎样用一本书",
-  ctaTitle: "私人报价，先了解再谈范围",
-  ctaBody: "网站不公开价目。WhatsApp 或电邮说说小朋友年龄、兴趣和目标学校，我们再私人报价。",
+  ctaTitle: "先了解再谈范围",
+  ctaBody: "网站不公开价目。WhatsApp 或电邮说说小朋友年龄、兴趣和目标学校。",
   whatsappLabel: "WhatsApp 讲年龄＋兴趣",
   whatsappText: WA_QUOTE_HANS,
 };
 
 export const FAQ_PAGE_HANS = {
   title: "常见问题｜小朋友出书、ISBN、升学作品集｜Kidsmybook",
-  description: "解答香港小朋友出书、ISBN、书店上架、高才通家庭、收费方式（私人报价）等问题。欢迎 WhatsApp 查询。",
+  description: "解答香港小朋友出书、ISBN、书店上架、高才通家庭、收费方式等问题。欢迎 WhatsApp 查询。",
   eyebrow: "FAQ",
   h1: "常见问题：小朋友出书、ISBN、升学作品集",
-  lead: "以下是家长最常问的问题。收费一律私人报价，网站不放价目表。",
+  lead: "以下是家长最常问的问题。网站不放价目表。",
   ctaTitle: "没看到你的情况？",
-  ctaBody: "WhatsApp 或电邮讲小朋友年龄、现在／目标学校，以及最想解决的作品集问题。我们先了解，再私人报价。",
+  ctaBody: "WhatsApp 或电邮讲小朋友年龄、现在／目标学校，以及最想解决的作品集问题。我们先了解。",
   whatsappText: "想了解小朋友出书、ISBN 和升学作品集",
   programmeLink: "看 12 个月出书计划",
   portfolioLink: "看升学作品集说明",
@@ -65,7 +65,7 @@ export const FAQ_PAGE_HANS = {
 
 export const PORTFOLIO_HANS = {
   title: "升学作品集｜升小学、升中 DSS／直资和国际学校面试｜Kidsmybook",
-  description: "升小学面试、升中／DSS／直资，和国际学校 portfolio：用有 ISBN、小朋友参与的正式出版物做记得住的亮点。私人报价，不保证录取。",
+  description: "升小学面试、升中／DSS／直资，和国际学校 portfolio：用有 ISBN、小朋友参与的正式出版物做记得住的亮点。不保证录取。",
   eyebrow: "School portfolio · 香港",
   h1: "香港升学作品集：升小学、升中和国际学校面试怎样用一本书",
   lead: "香港本地、跨境和高才通家庭，都可以用这条升学作品集路径。证书堆不占优。升小学、升中／直资／DSS，和国际学校面试，每年都见到很多份相近的钢琴、游泳、奥数履历。一本由小朋友参与、同大学教授合作审阅、有 ISBN 的正式出版物，是面试官记得住、可以引用的亮点。",
@@ -122,32 +122,32 @@ export const PORTFOLIO_HANS = {
   whatsappLink: "WhatsApp 讲讲升小学或升中面试",
   whatsappText: "想了解升学作品集怎样用一本 ISBN 童书，升小学或升中面试",
   ctaTitle: "想知这本书适不适合你的小朋友",
-  ctaBody: "说说年龄、现在的学校类型、一个兴趣，和你最想解决的面试问题。报价私人，网站不公开价钱。",
+  ctaBody: "说说年龄、现在的学校类型、一个兴趣，和你最想解决的面试问题。网站不公开价钱。",
   faqTitle: "升学作品集常见问题",
   faqs: [
     {
       q: "升小学面试，为什么要用一本正式出版物？",
-      a: "小一自行分配、面试和叩门通常只有几分钟。一本小朋友参与、有 ISBN 的正式出版物，可以指着一页用自己的话讲兴趣从哪来，而不是再厚一本奖状复印。Kidsmybook 是出版工作室，不是短期升小面试班，不保证录取。详见 https://kidsmybook.com/primary-one-interview-portfolio 。",
+      a: "小一自行分配、面试和叩门通常只有几分钟。一本小朋友参与、有 ISBN 的正式出版物，可以指着一页用自己的话讲兴趣从哪来，而不是再厚一本奖状复印。Kidsmybook 是出版工作室，不是短期升小面试班，不保证录取。详见 https://kidsmybook.com/primary-one-interview-portfolio。",
     },
     {
       q: "升中、DSS 和直资作品集可以怎样放这本书？",
-      a: "升中和直资、DSS 面试较常问持续兴趣和自述。出版物可以放在作品集前面，作为一项做完、可以核对的项目。学校决定录取。详见 https://kidsmybook.com/secondary-dss-admissions-portfolio 。",
+      a: "升中和直资、DSS 面试较常问持续兴趣和自述。出版物可以放在作品集前面，作为一项做完、可以核对的项目。学校决定录取。详见 https://kidsmybook.com/secondary-dss-admissions-portfolio。",
     },
     {
       q: "国际学校 portfolio 和本地面试是不是要两本书？",
       a: "不用。同一本正式出版物可以准备两种讲法：国际学校多数用英文讲好奇心和项目；本地、私立和直资较常看中文表达。不要做成两套互相矛盾的故事。",
     },
     {
-      q: "怎样索取升学作品集的私人报价？",
+      q: "怎样开始升学作品集咨询？",
       a: "WhatsApp @kidsmybook 或电邮 kidsmybook@outlook.com。讲小朋友年龄、目标是升小、升中还是国际学校，以及一个兴趣。网站不公开价目，也不保证学位。",
     },
     {
       q: "美术作品集和 ISBN 出版作品集有什么分别？",
-      a: "画簿、素描和美术班作品集证明技法和练习。有 ISBN、小朋友参与的出版作品集是一件做完、可以翻开讲的正式出版物。学校如果指定要交原作或画作选辑，画作仍然要交；书不取代那份指定作品。Kidsmybook 不保证录取。详见 https://kidsmybook.com/blog/art-portfolio-vs-isbn-published-book 。",
+      a: "画簿、素描和美术班作品集证明技法和练习。有 ISBN、小朋友参与的出版作品集是一件做完、可以翻开讲的正式出版物。学校如果指定要交原作或画作选辑，画作仍然要交；书不取代那份指定作品。Kidsmybook 不保证录取。详见 https://kidsmybook.com/blog/art-portfolio-vs-isbn-published-book。",
     },
     {
       q: "作品集不够看、面试快到了，还可以出书吗？",
-      a: "如果只剩几天或几星期，12 个月出版计划赶不及。先收窄现在的文件，选一件小朋友讲得出的作品。出书适合下一个大约有一年时间的申请周期。报价私人，网站不公开价目。详见 https://kidsmybook.com/blog/portfolio-not-ready-before-interview 。",
+      a: "如果只剩几天或几星期，12 个月出版计划赶不及。先收窄现在的文件，选一件小朋友讲得出的作品。出书适合下一个大约有一年时间的申请周期。网站不公开价目。详见 https://kidsmybook.com/blog/portfolio-not-ready-before-interview。",
     },
   ],
 };
@@ -159,7 +159,7 @@ export const EXPLORE_HANS = {
   programme: "小朋友出书计划",
   programmeBlurb: "12 个月导师制：正式印刷，再走实体书店上架路径。",
   faq: "常见问题",
-  faqBlurb: "书店上架、ISBN、幼儿园、高才通、私人报价。",
+  faqBlurb: "书店上架、ISBN、幼儿园、高才通。",
   portfolio: "升学作品集",
   portfolioBlurb: "升小学、升中 DSS／直资，和国际学校面试：用一本正式出版物做亮点。",
   caseLabel: "Hilary 个案",
@@ -182,7 +182,7 @@ export const FAQ_HANS: { q: string; a: string }[] = [
   },
   {
     q: "书可不可以在实体书店上架？",
-    a: "计划目标是正式印刷，再走香港实体书店上架／发行路径（视题材和配套）。Kidsmybook 不是某间书店。店长决定进货、陈列和退货，不保证每间分店都有。ISBN 本身也不等于书架上架。详见 https://kidsmybook.com/kids-book-bookstore-listing 。",
+    a: "计划目标是正式印刷，再走香港实体书店上架／发行路径（视题材和配套）。Kidsmybook 不是某间书店。店长决定进货、陈列和退货，不保证每间分店都有。ISBN 本身也不等于书架上架。详见 https://kidsmybook.com/kids-book-bookstore-listing。",
   },
   {
     q: "Kidsmybook 怎样帮小朋友考入香港好学校？",
@@ -198,7 +198,7 @@ export const FAQ_HANS: { q: string; a: string }[] = [
   },
   {
     q: "收费怎么算？",
-    a: "完整 12 个月方案按小朋友题材和配套私人报价，网站不公开价目。欢迎 WhatsApp @kidsmybook 或电邮 kidsmybook@outlook.com。",
+    a: "完整 12 个月方案网站不公开价目。欢迎 WhatsApp @kidsmybook 或电邮 kidsmybook@outlook.com。",
   },
   {
     q: "小朋友出书和普通兴趣班有什么分别？",
@@ -218,7 +218,7 @@ export const FAQ_HANS: { q: string; a: string }[] = [
   },
   {
     q: "幼儿园的孩子合适吗？会不会太早？",
-    a: "大约 3 岁起都可以用兴趣带动（例如图画、观察、口述故事），由导师和家长一起把关深度和表达方式。重点是保留小朋友自己的声音，而不是叫他写「大人作文」。是否适合，要看兴趣稳定度和家庭目标——欢迎用 WhatsApp 做免费初步了解（报价仍然私人）。",
+    a: "大约 3 岁起都可以用兴趣带动（例如图画、观察、口述故事），由导师和家长一起把关深度和表达方式。重点是保留小朋友自己的声音，而不是叫他写「大人作文」。是否适合，要看兴趣稳定度和家庭目标——欢迎用 WhatsApp 做免费初步了解。",
   },
   {
     q: "可以只报发布会／展览／PR，不报整个 12 个月吗？",
@@ -230,7 +230,7 @@ export const FAQ_HANS: { q: string; a: string }[] = [
   },
   {
     q: "怎样开始？第一次咨询要准备什么？",
-    a: "WhatsApp @kidsmybook 或电邮 kidsmybook@outlook.com，简单说：（1）小朋友年龄和阶段（幼儿园／小学／中学）；（2）现在学校／目标学校类型；（3）他最感兴趣的一件事；（4）你最想解决的作品集／面试问题。我们会先了解再私人报价，网站不放价目表。",
+    a: "WhatsApp @kidsmybook 或电邮 kidsmybook@outlook.com，简单说：（1）小朋友年龄和阶段（幼儿园／小学／中学）；（2）现在学校／目标学校类型；（3）他最感兴趣的一件事；（4）你最想解决的作品集／面试问题。我们会先了解，网站不放价目表。",
   },
   {
     q: "资优／特别兴趣的小朋友适不适合？",
@@ -238,25 +238,25 @@ export const FAQ_HANS: { q: string; a: string }[] = [
   },
   {
     q: "美术作品集和 ISBN 出版作品集有什么分别？",
-    a: "画簿、素描和美术班作品集证明技法和练习。有 ISBN、小朋友参与的出版作品集是一件做完、可以翻开讲的正式出版物。学校如果指定要交原作或画作选辑，画作仍然要交；书不取代那份指定作品。Kidsmybook 不保证录取。详见 https://kidsmybook.com/blog/art-portfolio-vs-isbn-published-book 。",
+    a: "画簿、素描和美术班作品集证明技法和练习。有 ISBN、小朋友参与的出版作品集是一件做完、可以翻开讲的正式出版物。学校如果指定要交原作或画作选辑，画作仍然要交；书不取代那份指定作品。Kidsmybook 不保证录取。详见 https://kidsmybook.com/blog/art-portfolio-vs-isbn-published-book。",
   },
   {
     q: "作品集不够看、面试快到了，还可以出书吗？",
-    a: "如果只剩几天或几星期，12 个月出版计划赶不及。先收窄现在的文件，选一件小朋友讲得出的作品。出书适合下一个大约有一年时间的申请周期。报价私人，网站不公开价目。详见 https://kidsmybook.com/blog/portfolio-not-ready-before-interview 。",
+    a: "如果只剩几天或几星期，12 个月出版计划赶不及。先收窄现在的文件，选一件小朋友讲得出的作品。出书适合下一个大约有一年时间的申请周期。网站不公开价目。详见 https://kidsmybook.com/blog/portfolio-not-ready-before-interview。",
   },
   {
     q: "实体书店上架是必须的吗？是什么意思？",
-    a: "上架是出版路径的一部分，不是有 ISBN 就自动上架。正式印刷之后，先按题材和配套安排香港实体书店上架／发行路径。店长决定进货、陈列和退货，不保证每间分店都有。升学作品集可以引用这份成果，但是第二层用途。详见 https://kidsmybook.com/kids-book-bookstore-listing 。",
+    a: "上架是出版路径的一部分，不是有 ISBN 就自动上架。正式印刷之后，先按题材和配套安排香港实体书店上架／发行路径。店长决定进货、陈列和退货，不保证每间分店都有。升学作品集可以引用这份成果，但是第二层用途。详见 https://kidsmybook.com/kids-book-bookstore-listing。",
   },
 ];
 
 export const PROGRAMME_EN = {
   title: "Child author programme Hong Kong | formal book and university professor review | Kidsmybook",
   description:
-    "Hong Kong children's publishing: 12 mentored months turn a child's interest into a formally printed ISBN children's book, reviewed in collaboration with university professors, then a Hong Kong physical bookstore listing / distribution path. Private quotation. No branch is guaranteed to stock the title, and no school place is guaranteed.",
+    "Hong Kong children's publishing: 12 mentored months turn a child's interest into a formally printed ISBN children's book, reviewed in collaboration with university professors, then a Hong Kong physical bookstore listing / distribution path. No branch is guaranteed to stock the title, and no school place is guaranteed.",
   eyebrow: "Children's books · university professor review · Hong Kong",
   h1: "Child author programme: publish a formal book, reviewed with university professors",
-  lead: "Kidsmybook is a Hong Kong children's publishing studio. A 12-month mentored programme turns a child's interest into a formally printed ISBN children's book. We collaborate with university professors who review the work, then offer a Hong Kong physical bookstore listing / distribution path. Private quotation.",
+  lead: "Kidsmybook is a Hong Kong children's publishing studio. A 12-month mentored programme turns a child's interest into a formally printed ISBN children's book. We collaborate with university professors who review the work, then offer a Hong Kong physical bookstore listing / distribution path.",
   shelfLink: "Hong Kong physical bookstore listing / distribution path",
   notLabel: "What this is not",
   notBody: "Not an ISBN number on its own, not a DIY gift book, not a promise that every branch will stock the title, and not a guaranteed school place.",
@@ -292,7 +292,7 @@ export const PROGRAMME_EN = {
   faqTitle: "Still deciding?",
   faqLink: "Read the FAQ (ISBN, kindergarten, how quotes work)",
   portfolioLink: "How a book works in a school portfolio",
-  ctaTitle: "Private quotation after we understand the child",
+  ctaTitle: "After we understand the child",
   ctaBody: "Prices are not listed on the site. WhatsApp or email the child's age, interest, and target school, and we will quote privately.",
   whatsappLabel: "WhatsApp age and interest",
   whatsappText: WA_QUOTE_EN,
@@ -301,10 +301,10 @@ export const PROGRAMME_EN = {
 export const FAQ_PAGE_EN = {
   title: "FAQ | Kids publishing, ISBN, and school portfolios | Kidsmybook",
   description:
-    "Answers on publishing a child's book in Hong Kong, ISBN, bookstore listing, Top Talent Pass families, and how fees work (private quotation only). WhatsApp welcome.",
+    "Answers on publishing a child's book in Hong Kong, ISBN, bookstore listing, Top Talent Pass families, and how fees work. WhatsApp welcome.",
   eyebrow: "FAQ",
   h1: "FAQ: kids' books, ISBN, and school portfolios",
-  lead: "Questions parents ask most. Every fee is quoted privately. There is no price list on this site.",
+  lead: "Questions parents ask most. There is no price list on this site.",
   ctaTitle: "Not seeing your situation?",
   ctaBody: "WhatsApp or email the child's age, current or target school, and the portfolio problem you want to solve. We listen first, then quote privately.",
   whatsappText: "We want to know about children's publishing, ISBN, and school portfolios",
@@ -316,7 +316,7 @@ export const FAQ_PAGE_EN = {
 export const PORTFOLIO_EN = {
   title: "School portfolio | Primary, DSS secondary, and international interviews | Kidsmybook",
   description:
-    "Primary interviews, secondary DSS and direct-subsidy files, and international portfolios: a child-made ISBN book is a highlight someone can cite. Private quotation. No place is guaranteed.",
+    "Primary interviews, secondary DSS and direct-subsidy files, and international portfolios: a child-made ISBN book is a highlight someone can cite. No place is guaranteed.",
   eyebrow: "School portfolio · Hong Kong",
   h1: "Hong Kong school portfolio: one book for primary, secondary, and international interviews",
   lead: "Hong Kong local families, cross-border families, and Top Talent Pass households can use this admissions-portfolio path. Stacks of certificates start to look the same. Primary, secondary, DSS, and international interviews see plenty of piano, swimming, and olympiad files. A book the child actually made — with an ISBN, reviewed in collaboration with university professors — is a highlight an interviewer can cite.",
@@ -391,7 +391,7 @@ export const PORTFOLIO_EN = {
       a: "No. Prepare two tellings of one formal publication. International interviews often want the project in English. Local, private, and DSS interviews often look at Chinese expression. Do not invent two contradictory stories.",
     },
     {
-      q: "How do we ask for a private quote on a school portfolio?",
+      q: "How do we start a consultation on a school portfolio?",
       a: "WhatsApp @kidsmybook or email kidsmybook@outlook.com. Share the child's age, whether the target is primary, secondary, or an international school, and one interest. The site does not publish prices, and no school place is guaranteed.",
     },
     {
@@ -400,7 +400,7 @@ export const PORTFOLIO_EN = {
     },
     {
       q: "The portfolio feels thin and the interview is soon. Can we still publish?",
-      a: "A few days or weeks is not enough for the 12-month programme. Narrow the file you already have and choose one piece the child can explain. A book fits the next cycle that still has about a year. The quotation stays private and is not listed on the site. See https://kidsmybook.com/blog/portfolio-not-ready-before-interview .",
+      a: "A few days or weeks is not enough for the 12-month programme. Narrow the file you already have and choose one piece the child can explain. A book fits the next cycle that still has about a year. Prices are not listed on the site. See https://kidsmybook.com/blog/portfolio-not-ready-before-interview .",
     },
   ],
 };
@@ -412,7 +412,7 @@ export const EXPLORE_EN = {
   programme: "Child author programme",
   programmeBlurb: "12 mentored months: print the book, then a bookstore listing path.",
   faq: "FAQ",
-  faqBlurb: "Bookstore listing, ISBN, kindergarten, Top Talent Pass, private quotes.",
+  faqBlurb: "Bookstore listing, ISBN, kindergarten, Top Talent Pass.",
   portfolio: "School portfolio",
   portfolioBlurb: "Primary, DSS secondary, and international interviews: one formal publication as the highlight.",
   caseLabel: "Hilary case",
@@ -451,7 +451,7 @@ export const FAQ_EN: { q: string; a: string }[] = [
   },
   {
     q: "How much does it cost?",
-    a: "The complete 12-month solution is quoted privately according to the child's topic and what is included. We do not publish prices. WhatsApp @kidsmybook or email kidsmybook@outlook.com.",
+    a: "We do not publish prices. WhatsApp @kidsmybook or email kidsmybook@outlook.com.",
   },
   {
     q: "How is a published book different from a regular interest class?",
@@ -495,7 +495,7 @@ export const FAQ_EN: { q: string; a: string }[] = [
   },
   {
     q: "The portfolio feels thin and the interview is soon. Can we still publish?",
-    a: "A few days or weeks is not enough for the 12-month programme. Narrow the file you already have and choose one piece the child can explain. A book fits the next cycle that still has about a year. The quotation stays private and is not listed on the site. See https://kidsmybook.com/blog/portfolio-not-ready-before-interview .",
+    a: "A few days or weeks is not enough for the 12-month programme. Narrow the file you already have and choose one piece the child can explain. A book fits the next cycle that still has about a year. Prices are not listed on the site. See https://kidsmybook.com/blog/portfolio-not-ready-before-interview .",
   },
   {
     q: "Is a physical bookstore listing required? What does it mean?",
@@ -506,7 +506,7 @@ export const FAQ_EN: { q: string; a: string }[] = [
 export const GAOCAI_HANS: HubCopy = {
   title: "高才通升学作品集｜新来港家庭用 ISBN 童书做证明物｜Kidsmybook",
   description:
-    "高才通和新来港家庭：一本小朋友参与、有 ISBN 的正式出版物，可以放进香港升小学、升中或国际学校作品集，作为讲得清楚、可以引用的证明物。Kidsmybook 不是升学中介，不保证学位。私人报价。",
+    "高才通和新来港家庭：一本小朋友参与、有 ISBN 的正式出版物，可以放进香港升小学、升中或国际学校作品集，作为讲得清楚、可以引用的证明物。Kidsmybook 不是升学中介，不保证学位。",
   eyebrow: "高才通 · 新来港 · 香港",
   h1: "高才通和新来港家庭：升学作品集怎样用一本 ISBN 童书做证明物",
   lead: "刚以高才通或其他途径来港的家庭，作品集往往还没有本地学校纪录。一本由小朋友参与、可有大学教授审阅、有 ISBN 的正式出版物，是一件可以带去面试、可以引用的证明物：证明一段持续兴趣、小朋友做过的工序，以及一份做完的出版成果。",
@@ -555,10 +555,10 @@ export const GAOCAI_HANS: HubCopy = {
     },
     {
       q: "高才通第一年，什么时候才开始 ISBN 出版？",
-      a: "如果下一个面试或申请还有大约一年，可以由第 1 个月开始 12 个月导师制。如果只剩几天或几星期，计划赶不及，先用准备清单收窄现在的文件。时间线见 https://kidsmybook.com/blog/top-talent-pass-family-first-year-timeline 。",
+      a: "如果下一个面试或申请还有大约一年，可以由第 1 个月开始 12 个月导师制。如果只剩几天或几星期，计划赶不及，先用准备清单收窄现在的文件。时间线见 https://kidsmybook.com/blog/top-talent-pass-family-first-year-timeline。",
     },
     {
-      q: "怎样索取私人报价？",
+      q: "怎样开始咨询？",
       a: "WhatsApp @kidsmybook 或电邮 kidsmybook@outlook.com。讲小朋友年龄、目标是升小、升中还是国际学校，以及一个兴趣。网站不公开价目。",
     },
   ],
@@ -579,7 +579,7 @@ export const GAOCAI_HANS: HubCopy = {
     { href: "/blog/secondary-dss-interview-published-book", label: "升中、DSS 和直资作品集" },
     { href: "/blog/interview-class-vs-isbn-published-book", label: "升小面试班 vs ISBN 出版作品集" },
   ],
-  ctaTitle: "先讲家庭情况，再私人报价",
+  ctaTitle: "先讲家庭情况，再咨询",
   ctaBody: "网站不公开价目，也不保证学位。WhatsApp 讲年龄、目标学校类型和一个兴趣。",
   whatsappText: "想了解高才通／新来港家庭怎样用一本 ISBN 童书做升学作品集证明物",
   cardTitle: "高才通升学作品集",
@@ -590,7 +590,7 @@ export const GAOCAI_HANS: HubCopy = {
 export const XINGQU_HANS: HubCopy = {
   title: "兴趣出版｜高尔夫、钢琴、马术到导师制 ISBN 童书｜Kidsmybook",
   description:
-    "已经有高尔夫、钢琴、马术或其他持续兴趣？可以把练习里小朋友真正留意到的事，做成导师制 ISBN 童书，再放进升学作品集。不必停班。私人报价，不保证学位。",
+    "已经有高尔夫、钢琴、马术或其他持续兴趣？可以把练习里小朋友真正留意到的事，做成导师制 ISBN 童书，再放进升学作品集。不必停班。不保证学位。",
   eyebrow: "兴趣 → 出版 · 香港",
   h1: "兴趣出版：高尔夫、钢琴、马术怎样走到一本导师制 ISBN 童书",
   lead: "兴趣班已经买到练习时间。面试作品集还差一件讲得明白的成果：小朋友在高尔夫、钢琴、马术或其他兴趣里留意过什么、做过什么、改过什么。Kidsmybook 用 12 个月导师制，把这段兴趣做成有 ISBN 的正式出版物，再按需要放进升学作品集。",
@@ -612,7 +612,7 @@ export const XINGQU_HANS: HubCopy = {
     "录取由学校决定。公开具名出版个案只有 Hilary",
   ],
   pathTitle: "由兴趣班到可以带去面试的书",
-  pathIntro: "四步接到出书计划和升学作品集。中途可以先 WhatsApp 问适不适合，报价仍然私人。",
+  pathIntro: "四步接到出书计划和升学作品集。中途可以先 WhatsApp 问适不适合。",
   steps: [
     { name: "留下一件兴趣", text: "选一件小朋友会自己回去做的事。运动、乐器、动物、城市观察都可以，不限高尔夫、钢琴或马术。" },
     { name: "导师制写成书", text: "计划页讲五个阶段：咨询、专属课程、出版研讨和可有大学教授审阅、亲子排版、印刷与上架。" },
@@ -638,7 +638,7 @@ export const XINGQU_HANS: HubCopy = {
       a: "先看 12 个月出书计划，完成后才放进升学作品集。Kidsmybook 不保证学位，也没有学校合作。",
     },
     {
-      q: "怎样索取私人报价？",
+      q: "怎样开始咨询？",
       a: "WhatsApp @kidsmybook 或电邮 kidsmybook@outlook.com。讲年龄、一件兴趣，和目标是升小、升中还是国际学校。网站不公开价目。",
     },
   ],
@@ -654,7 +654,7 @@ export const XINGQU_HANS: HubCopy = {
     { href: "/primary-one-interview-portfolio", label: "升小面试作品集" },
     { href: "/secondary-dss-admissions-portfolio", label: "升中／DSS／直资作品集" },
   ],
-  ctaTitle: "讲一件兴趣，再私人报价",
+  ctaTitle: "讲一件兴趣，再咨询",
   ctaBody: "网站不公开价目，也不保证学位。WhatsApp 讲年龄、兴趣和目标学校类型。",
   whatsappText: "想了解由兴趣（例如高尔夫、钢琴或马术）走到导师制 ISBN 童书和升学作品集",
   cardTitle: "兴趣出版",
@@ -665,7 +665,7 @@ export const XINGQU_HANS: HubCopy = {
 export const GAOCAI_EN: HubCopy = {
   title: "Top Talent Pass school portfolio | An ISBN children's book as proof | Kidsmybook",
   description:
-    "Top Talent Pass and newly arrived families: a child-made ISBN book can sit in a Hong Kong primary, secondary, or international-school portfolio as something an interviewer can cite. Kidsmybook is not an admissions agent and does not guarantee a place. Private quotation.",
+    "Top Talent Pass and newly arrived families: a child-made ISBN book can sit in a Hong Kong primary, secondary, or international-school portfolio as something an interviewer can cite. Kidsmybook is not an admissions agent and does not guarantee a place.",
   eyebrow: "Top Talent Pass · newly arrived · Hong Kong",
   h1: "Top Talent Pass and newly arrived families: an ISBN children's book as portfolio proof",
   lead: "Families who have just arrived often have no local school file yet. A formally published ISBN book the child took part in — with university professor review when it fits — is an object you can carry into an interview and cite: a sustained interest, the steps the child actually did, and a finished publication.",
@@ -717,7 +717,7 @@ export const GAOCAI_EN: HubCopy = {
       a: "If the next interview or application is still about a year away, start the 12-month mentored programme in month 1. A few days or weeks cannot finish it. Narrow the current file with the checklist first. Timeline: https://kidsmybook.com/blog/top-talent-pass-family-first-year-timeline .",
     },
     {
-      q: "How do we ask for a private quotation?",
+      q: "How do we start a consultation?",
       a: "WhatsApp @kidsmybook or email kidsmybook@outlook.com. Share the child's age, whether the target is primary, secondary, or an international school, and one interest. Prices are not on the site.",
     },
   ],
@@ -749,7 +749,7 @@ export const GAOCAI_EN: HubCopy = {
 export const XINGQU_EN: HubCopy = {
   title: "Interest to ISBN | Golf, piano, and riding into a mentored children's book | Kidsmybook",
   description:
-    "Already in golf, piano, riding, or another sustained interest? Turn what the child actually notices into a mentored ISBN book, then a school portfolio. You do not have to quit the class. Private quotation. No place is guaranteed.",
+    "Already in golf, piano, riding, or another sustained interest? Turn what the child actually notices into a mentored ISBN book, then a school portfolio. You do not have to quit the class. No place is guaranteed.",
   eyebrow: "Interest → publication · Hong Kong",
   h1: "From an interest to a book: golf, piano, and riding on a mentored ISBN path",
   lead: "The class already buys practice time. A school portfolio still needs one outcome the child can explain: what they noticed, did, and changed in golf, piano, riding, or another interest. Kidsmybook uses a 12-month mentored programme to make that interest a formally published ISBN book, then places it in a portfolio when the family needs it.",
@@ -771,7 +771,7 @@ export const XINGQU_EN: HubCopy = {
     "The school decides admission. The only named published case is Hilary",
   ],
   pathTitle: "From the class to a book you can carry in",
-  pathIntro: "Four steps connect the author programme and the school portfolio. A WhatsApp note can test fit first. The quotation stays private.",
+  pathIntro: "Four steps connect the author programme and the school portfolio. A WhatsApp note can test fit first.",
   steps: [
     { name: "Keep one interest", text: "Choose something the child returns to. Sport, an instrument, animals, or city observation all work. Golf, piano, and riding are examples, not a list of finished books." },
     { name: "Write it with a mentor", text: "The programme page sets five phases: consultation, classes, a publishing seminar with university professor review when it fits, parent-child layout, then print and listing." },
@@ -797,7 +797,7 @@ export const XINGQU_EN: HubCopy = {
       a: "Start with the 12-month author programme. Place the finished book in the school portfolio afterwards. Kidsmybook does not guarantee a place and has no school partnership.",
     },
     {
-      q: "How do we ask for a private quotation?",
+      q: "How do we start a consultation?",
       a: "WhatsApp @kidsmybook or email kidsmybook@outlook.com. Share the age, one interest, and whether the target is primary, secondary, or an international school. Prices are not on the site.",
     },
   ],
@@ -824,7 +824,7 @@ export const XINGQU_EN: HubCopy = {
 export const ABOUT_HANS = {
   title: "关于我们｜香港儿童出版工作室｜Kidsmybook",
   description:
-    "Kidsmybook 是香港儿童出版工作室。12 个月导师制，把小朋友的兴趣做成有 ISBN 的正式印刷童书，同大学教授合作审阅。私人报价，WhatsApp 或电邮。不是升学中介，不保证录取。",
+    "Kidsmybook 是香港儿童出版工作室。12 个月导师制，把小朋友的兴趣做成有 ISBN 的正式印刷童书，同大学教授合作审阅。WhatsApp 或电邮。不是升学中介，不保证录取。",
   eyebrow: "工作室 · 香港",
   h1: "关于 Kidsmybook：香港儿童出版工作室",
   lead: "Kidsmybook 是香港儿童出版工作室。12 个月导师制，把大约 3 至 18 岁小朋友的兴趣做成有 ISBN 的正式印刷童书；过程同大学教授合作审阅，完成后再按需要配发布会、展览、媒体和升学作品集。",
@@ -836,8 +836,8 @@ export const ABOUT_HANS = {
   disclaimerTitle: "我们不是升学中介",
   disclaimer:
     "Kidsmybook 是出版工作室，不是升学中介，也不保证进入任何学校。最终录取由学校决定。一本正式出版物可以让作品集更有说服力、面试更好讲故事。",
-  contactTitle: "联络和报价",
-  contact: "报价私人，网站不公开价目。WhatsApp 或电邮讲小朋友年龄、一个兴趣，和目标学校类型就可以。",
+  contactTitle: "联络",
+  contact: "网站不公开价目。WhatsApp 或电邮讲小朋友年龄、一个兴趣，和目标学校类型就可以。",
   programmeLink: "看 12 个月出书计划",
   faqLink: "常见问题",
   portfolioLink: "升学作品集",
@@ -846,7 +846,7 @@ export const ABOUT_HANS = {
 export const ABOUT_EN = {
   title: "About | Hong Kong children's publishing studio | Kidsmybook",
   description:
-    "Kidsmybook is a Hong Kong children's publishing studio. A 12-month mentored programme turns a child's interest, for ages about 3 to 18, into a formally printed ISBN book, reviewed in collaboration with university professors. Quoted privately by WhatsApp or email. Not an admissions agent, and no school place is guaranteed.",
+    "Kidsmybook is a Hong Kong children's publishing studio. A 12-month mentored programme turns a child's interest, for ages about 3 to 18, into a formally printed ISBN book, reviewed in collaboration with university professors. Not an admissions agent, and no school place is guaranteed.",
   eyebrow: "Studio · Hong Kong",
   h1: "About Kidsmybook, a Hong Kong children's publishing studio",
   lead: "Kidsmybook is a Hong Kong children's publishing studio. Over 12 mentored months we turn a real interest, for children about 3 to 18, into a formally printed ISBN children's book. We collaborate with university professors who review the work, then add a launch, exhibition, media, and an admissions portfolio when the family wants them.",
@@ -859,7 +859,7 @@ export const ABOUT_EN = {
   disclaimerTitle: "Not an admissions agent",
   disclaimer:
     "Kidsmybook is a publishing studio, not an admissions agent, and does not guarantee a school place. The school decides. A formal publication can make a portfolio clearer and an interview easier to tell.",
-  contactTitle: "Contact and quotation",
+  contactTitle: "Contact",
   contact:
     "Quotations are private. Prices are not listed on the website. WhatsApp or email the child's age, one interest, and the target school type.",
   programmeLink: "See the 12-month author programme",
@@ -870,11 +870,11 @@ export const ABOUT_EN = {
 export const CHECKLIST_HANS = {
   title: "升学作品集准备清单｜升小、升中文件怎样收｜Kidsmybook",
   description:
-    "免费升学作品集准备清单：升小、升中要带什么文件，证书班和补习作品放附页，美术作品集和 ISBN 出版书怎样分。清单免费；完整计划私人 WhatsApp 报价。不保证录取。",
+    "免费升学作品集准备清单：升小、升中要带什么文件，证书班和补习作品放附页，美术作品集和 ISBN 出版书怎样分。清单免费。不保证录取。",
   eyebrow: "免费清单 · 香港",
   h1: "升学作品集准备清单",
-  lead: "面试前不用再猜「带什么」。这页是一份可以核对的文件清单：升小学、升中／DSS／直资、国际学校作品集，哪些放前面、哪些放附页。清单免费。完整出版计划私人报价，网站不公开价目。",
-  softCta: "清单免费；完整计划私人 WhatsApp 报价。",
+  lead: "面试前不用再猜「带什么」。这页是一份可以核对的文件清单：升小学、升中／DSS／直资、国际学校作品集，哪些放前面、哪些放附页。清单免费。完整出版计划，网站不公开价目。",
+  softCta: "清单免费。",
   whatsappLabel: "WhatsApp：想要升學作品集準備清單",
   whatsappText: "想要升學作品集準備清單",
   docTitle: "升小／升中作品集要准备什么",
@@ -914,12 +914,12 @@ export const CHECKLIST_HANS = {
   hubLink: "免费升学作品集准备清单",
   programmeLink: "了解 12 个月出书计划",
   cardTitle: "准备清单",
-  cardBlurb: "升小、升中文件核对。清单免费；完整计划私人报价。",
+  cardBlurb: "升小、升中文件核对。清单免费；完整计划。",
   faqTitle: "准备清单常见问题",
   faqs: [
     {
       q: "这份升学作品集准备清单收不收费？",
-      a: "清单免费。想做完整 12 个月导师制出版计划，报价私人，WhatsApp 先讲范围。网站不公开价目，也不保证学位。",
+      a: "清单免费。想做完整 12 个月导师制出版计划，WhatsApp 先讲范围。网站不公开价目，也不保证学位。",
     },
     {
       q: "升小学和升中是不是同一份文件？",
@@ -943,11 +943,11 @@ export const CHECKLIST_HANS = {
 export const CHECKLIST_EN = {
   title: "School portfolio checklist | Primary and secondary documents | Kidsmybook",
   description:
-    "A free Hong Kong school-portfolio checklist: which documents to bring for primary and secondary interviews, where certificate-class and tutoring work sits, and how an art portfolio differs from an ISBN book. The checklist is free. A full programme is quoted privately on WhatsApp. No school place is guaranteed.",
+    "A free Hong Kong school-portfolio checklist: which documents to bring for primary and secondary interviews, where certificate-class and tutoring work sits, and how an art portfolio differs from an ISBN book. The checklist is free. No school place is guaranteed.",
   eyebrow: "Free checklist · Hong Kong",
   h1: "School portfolio preparation checklist",
-  lead: "Stop guessing what to bring. This page is a document checklist for primary, secondary, DSS, direct-subsidy, and international-school portfolios: what goes first, and what stays in an appendix. The checklist is free. A full publishing programme is quoted privately. Prices are not listed on the site.",
-  softCta: "The checklist is free. A full programme is quoted privately on WhatsApp.",
+  lead: "Stop guessing what to bring. This page is a document checklist for primary, secondary, DSS, direct-subsidy, and international-school portfolios: what goes first, and what stays in an appendix. The checklist is free. Prices are not listed on the site.",
+  softCta: "The checklist is free.",
   whatsappLabel: "WhatsApp: 想要升學作品集準備清單",
   whatsappText: "想要升學作品集準備清單",
   docTitle: "What a primary or secondary portfolio should include",
@@ -988,12 +988,12 @@ export const CHECKLIST_EN = {
   hubLink: "Free school portfolio checklist",
   programmeLink: "See the 12-month author programme",
   cardTitle: "Checklist",
-  cardBlurb: "Primary and secondary documents. The checklist is free; a full programme is quoted privately.",
+  cardBlurb: "Primary and secondary documents. The checklist is free.",
   faqTitle: "Checklist questions",
   faqs: [
     {
       q: "Does this school portfolio checklist cost anything?",
-      a: "The checklist is free. A full 12-month mentored publishing programme is quoted privately on WhatsApp. The site does not publish a price list, and it does not guarantee a school place.",
+      a: "The checklist is free. The site does not publish a price list, and it does not guarantee a school place.",
     },
     {
       q: "Is the primary file the same as the secondary file?",
@@ -1017,7 +1017,7 @@ export const CHECKLIST_EN = {
 export const SHENGXIAO_HANS: HubCopy = {
   title: "升小面试作品集｜小一自行分配、叩门和面试｜Kidsmybook",
   description:
-    "升小学面试、叩门和 portfolio：用有 ISBN、小朋友参与的正式出版物做记得住的一页。Kidsmybook 是 12 个月导师制出版，不是短期升小面试班。私人报价，不保证录取。",
+    "升小学面试、叩门和 portfolio：用有 ISBN、小朋友参与的正式出版物做记得住的一页。Kidsmybook 是 12 个月导师制出版，不是短期升小面试班。不保证录取。",
   eyebrow: "升小面试 · 叩门 · 香港",
   h1: "升小面试作品集：叩门和小一面试怎样用一本正式出版物",
   lead: "小一自行分配、面试和统一派位之后的叩门，通常只有几分钟。作品集不是越厚越好。一本由小朋友参与、可有大学教授审阅、有 ISBN 的正式出版物，是面试官可以翻开、小朋友可以指着一页讲的一项成果。搜索「升小面试」「面试班」或 portfolio 的家长，可以先分清：短期面试班练当场表现；Kidsmybook 做的是可以带去面试的出版作品集。",
@@ -1039,7 +1039,7 @@ export const SHENGXIAO_HANS: HubCopy = {
     "公开具名个案只有 Hilary（出版时八岁，蝴蝶图鉴）。这是出版例子，不是入学结果",
   ],
   pathTitle: "由兴趣到可以带去升小面试的书",
-  pathIntro: "四步接到 12 个月出书计划和免费准备清单。中途可以先 WhatsApp 问适不适合，报价仍然私人。",
+  pathIntro: "四步接到 12 个月出书计划和免费准备清单。中途可以先 WhatsApp 问适不适合。",
   steps: [
     { name: "讲年龄和目标", text: "咨询时讲小朋友年龄、现在或目标是本地、私立、直资还是国际小学，以及一件会自己翻开来做的兴趣。" },
     { name: "导师制完成一本书", text: "大约 12 个月：创作、可有大学教授审阅、亲子排版，保留小朋友自己的声音。深度按年龄，不会叫孩子写大人作文。" },
@@ -1054,7 +1054,7 @@ export const SHENGXIAO_HANS: HubCopy = {
     },
     {
       q: "Kidsmybook 是不是升小面试班？",
-      a: "不是。面试班多数是短期课堂，练礼貌、常见问题和模拟面试。Kidsmybook 是 12 个月导师制出版，成果是一本可以带去面试的正式出版物。两样可以并存，但不是同一种服务。比较见 https://kidsmybook.com/blog/interview-class-vs-isbn-published-book 。",
+      a: "不是。面试班多数是短期课堂，练礼貌、常见问题和模拟面试。Kidsmybook 是 12 个月导师制出版，成果是一本可以带去面试的正式出版物。两样可以并存，但不是同一种服务。比较见 https://kidsmybook.com/blog/interview-class-vs-isbn-published-book。",
     },
     {
       q: "叩门只剩几天，还可以出书吗？",
@@ -1062,10 +1062,10 @@ export const SHENGXIAO_HANS: HubCopy = {
     },
     {
       q: "升中、DSS 和直资是不是用同一页？",
-      a: "不是。升小重点是几分钟讲完一件事。升中和直资、DSS 较常问持续兴趣和自述。见 https://kidsmybook.com/secondary-dss-admissions-portfolio 。高才通或新来港家庭另见 https://kidsmybook.com/top-talent-pass-admissions-portfolio 。",
+      a: "不是。升小重点是几分钟讲完一件事。升中和直资、DSS 较常问持续兴趣和自述。见 https://kidsmybook.com/secondary-dss-admissions-portfolio。高才通或新来港家庭另见 https://kidsmybook.com/top-talent-pass-admissions-portfolio。",
     },
     {
-      q: "怎样索取升小作品集的私人报价？",
+      q: "怎样开始升小作品集咨询？",
       a: "WhatsApp @kidsmybook 或电邮 kidsmybook@outlook.com。讲年龄、目标小学类型和一个兴趣。网站不公开价目，也不保证学位。",
     },
   ],
@@ -1086,7 +1086,7 @@ export const SHENGXIAO_HANS: HubCopy = {
     { href: "/blog/sspa-discretionary-vs-dss-published-book", label: "中一自行分配不等于不用作品集：哪些升中场面才要带正式出版物" },
     { href: "/blog/portfolio-not-ready-before-interview", label: "作品集不够看、临时赶怎么办" },
   ],
-  ctaTitle: "先讲升小面试时间，再私人报价",
+  ctaTitle: "先讲升小面试时间，再咨询",
   ctaBody: "网站不公开价目，也不保证学位。WhatsApp 讲年龄、目标小学类型、面试或叩门大约什么时候，以及一个兴趣。",
   whatsappText: "想了解升小面试／叩门作品集，和 12 个月 ISBN 出版是否适合",
   cardTitle: "升小面试作品集",
@@ -1099,7 +1099,7 @@ export const SHENGXIAO_HANS: HubCopy = {
 export const SHENGZHONG_HANS: HubCopy = {
   title: "升中 DSS／直资作品集｜持续兴趣和 ISBN 出版｜Kidsmybook",
   description:
-    "升中、DSS 和直资 portfolio：把一本小朋友参与、有 ISBN 的正式出版物放在作品集前面，作为讲得完的持续兴趣。私人报价。Kidsmybook 不代表任何学校，不保证录取。",
+    "升中、DSS 和直资 portfolio：把一本小朋友参与、有 ISBN 的正式出版物放在作品集前面，作为讲得完的持续兴趣。Kidsmybook 不代表任何学校，不保证录取。",
   eyebrow: "升中 · DSS · 直资 · 香港",
   h1: "升中、DSS 和直资作品集：怎样放一本正式出版物",
   lead: "升中和直资、DSS 面试，较少再听一次小学那叠证书。较常问的是持续兴趣、自述，以及遇到困难怎样改。一本做完、可以翻开来讲的出版物，可以放在作品集前面，作为一项可以核对的项目。Kidsmybook 是导师制出版工作室，用 portfolio 这个英文也是指这份升学作品集，不是短期面试班。",
@@ -1136,18 +1136,18 @@ export const SHENGZHONG_HANS: HubCopy = {
     },
     {
       q: "Portfolio 是不是等于再报一个面试班？",
-      a: "不是。面试班练当场表现。Portfolio 如果指 Kidsmybook，是一本小朋友参与、有 ISBN 的正式出版物，加上升学作品集怎样摆。比较见 https://kidsmybook.com/blog/interview-class-vs-isbn-published-book 。",
+      a: "不是。面试班练当场表现。Portfolio 如果指 Kidsmybook，是一本小朋友参与、有 ISBN 的正式出版物，加上升学作品集怎样摆。比较见 https://kidsmybook.com/blog/interview-class-vs-isbn-published-book。",
     },
     {
       q: "升小面试页和这页有什么分别？",
-      a: "升小面试和叩门通常只有几分钟，重点是讲完一件事。升中较常问持续兴趣和自述。升小页：https://kidsmybook.com/primary-one-interview-portfolio 。",
+      a: "升小面试和叩门通常只有几分钟，重点是讲完一件事。升中较常问持续兴趣和自述。升小页：https://kidsmybook.com/primary-one-interview-portfolio。",
     },
     {
       q: "高才通家庭做升中作品集，是不是要另一本书？",
-      a: "不用。同一本正式出版物可以放进升中、DSS、直资或国际学校作品集。高才通页讲证明物，不是签证文件：https://kidsmybook.com/top-talent-pass-admissions-portfolio 。",
+      a: "不用。同一本正式出版物可以放进升中、DSS、直资或国际学校作品集。高才通页讲证明物，不是签证文件：https://kidsmybook.com/top-talent-pass-admissions-portfolio。",
     },
     {
-      q: "怎样索取私人报价？",
+      q: "怎样开始咨询？",
       a: "WhatsApp @kidsmybook 或电邮 kidsmybook@outlook.com。讲年级、目标是直资、DSS 还是其他中学，以及一个兴趣。网站不公开价目，也不保证学位。",
     },
   ],
@@ -1168,7 +1168,7 @@ export const SHENGZHONG_HANS: HubCopy = {
     { href: "/blog/interview-class-vs-isbn-published-book", label: "升小面试班 vs ISBN 出版作品集" },
     { href: "/blog/international-vs-local-school-interview-portfolio", label: "国际学校 vs 本地学校面试" },
   ],
-  ctaTitle: "先讲升中目标，再私人报价",
+  ctaTitle: "先讲升中目标，再咨询",
   ctaBody: "网站不公开价目，也不保证学位。WhatsApp 讲年级、目标学校类型和一个兴趣。",
   whatsappText: "想了解升中／DSS／直资作品集怎样用一本 ISBN 童书",
   cardTitle: "升中 DSS／直资作品集",
@@ -1181,7 +1181,7 @@ export const SHENGZHONG_HANS: HubCopy = {
 export const SHENGXIAO_EN: HubCopy = {
   title: "Primary interview portfolio | Discretionary places and door-knocking | Kidsmybook",
   description:
-    "Hong Kong primary interviews, door-knocking, and portfolios: an ISBN book the child helped make is one page someone can remember. Kidsmybook is a 12-month mentored publishing path, not a short interview class. Private quotation. No place is guaranteed.",
+    "Hong Kong primary interviews, door-knocking, and portfolios: an ISBN book the child helped make is one page someone can remember. Kidsmybook is a 12-month mentored publishing path, not a short interview class. No place is guaranteed.",
   eyebrow: "Primary interview · door-knocking · Hong Kong",
   h1: "Primary interview portfolio: one published book for door-knocking and P1 interviews",
   lead: "Discretionary-place interviews and door-knocking after central allocation usually last a few minutes. A thicker file is not a better file. A formal ISBN book the child helped make — with university professor review when it fits — is one finished piece an interviewer can open and a child can point to. Parents searching for a primary interview, an interview class, or a portfolio can separate two jobs: a short class practises the room; Kidsmybook makes a publication you can carry in.",
@@ -1203,7 +1203,7 @@ export const SHENGXIAO_EN: HubCopy = {
     "The only named public case is Hilary (age 8, butterfly guide). That is a publishing example, not an admissions result",
   ],
   pathTitle: "From an interest to a book you can carry into a primary interview",
-  pathIntro: "Four steps connect the 12-month author programme and the free checklist. A WhatsApp note can test fit first. The quotation stays private.",
+  pathIntro: "Four steps connect the 12-month author programme and the free checklist. A WhatsApp note can test fit first.",
   steps: [
     { name: "Name the age and the target", text: "In consultation, share the age, whether the target is a local, private, DSS, or international primary, and one interest the child returns to." },
     { name: "Finish one book with a mentor", text: "About 12 months: making the work, university professor review when it fits, and parent-child layout, in the child's own voice. Depth follows age." },
@@ -1229,7 +1229,7 @@ export const SHENGXIAO_EN: HubCopy = {
       a: "No. A primary interview needs one story finished in a few minutes. Secondary, DSS, and direct-subsidy interviews more often ask about a sustained interest. See https://kidsmybook.com/secondary-dss-admissions-portfolio . Top Talent Pass and newly arrived families: https://kidsmybook.com/top-talent-pass-admissions-portfolio .",
     },
     {
-      q: "How do we ask for a private quote?",
+      q: "How do we start a consultation?",
       a: "WhatsApp @kidsmybook or email kidsmybook@outlook.com. Share the age, the target primary type, and one interest. The site does not publish prices, and no school place is guaranteed.",
     },
   ],
@@ -1263,7 +1263,7 @@ export const SHENGXIAO_EN: HubCopy = {
 export const SHENGZHONG_EN: HubCopy = {
   title: "Secondary DSS and direct-subsidy portfolio | A sustained interest as an ISBN book | Kidsmybook",
   description:
-    "Hong Kong secondary, DSS, and direct-subsidy portfolios: put an ISBN book the child helped make at the front, as a sustained interest they can explain. Private quotation. Kidsmybook does not represent any school and does not guarantee a place.",
+    "Hong Kong secondary, DSS, and direct-subsidy portfolios: put an ISBN book the child helped make at the front, as a sustained interest they can explain. Kidsmybook does not represent any school and does not guarantee a place.",
   eyebrow: "Secondary · DSS · direct subsidy · Hong Kong",
   h1: "Secondary, DSS, and direct-subsidy portfolios: where a published book sits",
   lead: "Secondary, DSS, and direct-subsidy interviews rarely need the primary certificate stack read out again. They more often ask about a sustained interest, a short account in the student's own words, and what changed when something was hard. A finished publication can sit at the front of the portfolio as one project someone can check. Kidsmybook is a mentored publishing studio. When parents say portfolio, this page means that admissions file, not a short interview class.",
@@ -1311,7 +1311,7 @@ export const SHENGZHONG_EN: HubCopy = {
       a: "No. The same formal publication can go into a secondary, DSS, direct-subsidy, or international-school portfolio. The Top Talent Pass page is about a proof object, not a visa paper: https://kidsmybook.com/top-talent-pass-admissions-portfolio .",
     },
     {
-      q: "How do we ask for a private quotation?",
+      q: "How do we start a consultation?",
       a: "WhatsApp @kidsmybook or email kidsmybook@outlook.com. Share the year, whether the target is DSS, direct subsidy, or another secondary, and one interest. Prices are not on the site, and no place is guaranteed.",
     },
   ],
@@ -1345,7 +1345,7 @@ export const SHENGZHONG_EN: HubCopy = {
 export const SHUDIAN_HANS: HubCopy = {
   title: "童书书店上架｜小朋友书香港实体书店上架｜Kidsmybook",
   description:
-    "香港儿童出版实体上架：正式印刷，再走香港实体书店上架／发行路径。ISBN 不等于书架有货。店长决定进货、陈列和退货，不保证每间分店都有。私人报价，WhatsApp。",
+    "香港儿童出版实体上架：正式印刷，再走香港实体书店上架／发行路径。ISBN 不等于书架有货。店长决定进货、陈列和退货，不保证每间分店都有。",
   eyebrow: "童书书店上架 · 香港",
   h1: "童书书店上架：小朋友的书怎样走上香港实体书店上架／发行路径",
   lead: "Kidsmybook 做的是儿童出书：先正式印刷，再按题材和配套安排香港实体书店上架／发行路径。这条路和「申请到一个 ISBN」不是同一件事。市面上书号、自助印刷、按需印刷很常见；真正放到实体书店平台、等店长决定进货的童书，少得多。",
@@ -1378,7 +1378,7 @@ export const SHUDIAN_HANS: HubCopy = {
   faqs: [
     {
       q: "有 ISBN 是不是就等于实体书店上架？",
-      a: "不是。ISBN 是书号。实体书店上架是另一条路径：正式印刷之后，才谈香港实体书店上架安排。自助申请 ISBN、印刷店和 POD 很多时候停在印好或者网上有售。详见 https://kidsmybook.com/blog/isbn-is-not-bookstore-listing 。",
+      a: "不是。ISBN 是书号。实体书店上架是另一条路径：正式印刷之后，才谈香港实体书店上架安排。自助申请 ISBN、印刷店和 POD 很多时候停在印好或者网上有售。详见 https://kidsmybook.com/blog/isbn-is-not-bookstore-listing。",
     },
     {
       q: "Kidsmybook 是不是某间书店？",
@@ -1390,15 +1390,15 @@ export const SHUDIAN_HANS: HubCopy = {
     },
     {
       q: "自费出书、代印和 POD 有没有实体上架？",
-      a: "多数没有，或者只有很弱的分销。自费、代印和按需印刷可以交出一本实体书，但不等于走进香港实体书店上架安排。对照见 https://kidsmybook.com/blog/self-publish-pod-vs-mentored-bookstore-listing 。",
+      a: "多数没有，或者只有很弱的分销。自费、代印和按需印刷可以交出一本实体书，但不等于走进香港实体书店上架安排。对照见 https://kidsmybook.com/blog/self-publish-pod-vs-mentored-bookstore-listing。",
     },
     {
       q: "上架和升学作品集是什么关系？",
       a: "实体上架是出版成果本身。升学作品集是之后可以引用的第二层用途。Kidsmybook 不是升学中介，不保证学位。公开具名个案只有 Hilary。",
     },
     {
-      q: "怎样索取私人报价？",
-      a: "WhatsApp @kidsmybook 或电邮 kidsmybook@outlook.com。讲小朋友年龄和一个兴趣。网站不公开价目，也不保证书架位置或学校录取。计划阶段见 https://kidsmybook.com/programme 。",
+      q: "怎样开始咨询？",
+      a: "WhatsApp @kidsmybook 或电邮 kidsmybook@outlook.com。讲小朋友年龄和一个兴趣。网站不公开价目，也不保证书架位置或学校录取。计划阶段见 https://kidsmybook.com/programme。",
     },
   ],
   readingTitle: "相关阅读",
@@ -1422,7 +1422,7 @@ export const SHUDIAN_HANS: HubCopy = {
     { href: "/case-studies/hilary-butterfly-guide", label: "公开个案：Hilary" },
   ],
   ctaTitle: "想知这个题材走不走到书店平台",
-  ctaBody: "私人报价。WhatsApp 或电邮讲小朋友年龄和一个兴趣。网站不公开价目，也不保证每间分店有货或学校录取。",
+  ctaBody: "WhatsApp 或电邮讲小朋友年龄和一个兴趣。网站不公开价目，也不保证每间分店有货或学校录取。",
   whatsappText: "想了解小朋友出书和香港实体书店上架／发行路径",
   cardTitle: "童书书店上架",
   cardBlurb: "正式印刷，再走香港实体书店上架／发行路径。ISBN 不等于书架有货。",
@@ -1433,7 +1433,7 @@ export const SHUDIAN_HANS: HubCopy = {
 export const SHUDIAN_EN: HubCopy = {
   title: "Children's books on Hong Kong shelves | Hong Kong physical bookstore listing | Kidsmybook",
   description:
-    "Hong Kong children's publishing: a formal print run, then a Hong Kong physical bookstore listing / distribution path. An ISBN is not a shelf. Store managers decide stock, placement, and returns. No branch is guaranteed. Private quotation via WhatsApp.",
+    "Hong Kong children's publishing: a formal print run, then a Hong Kong physical bookstore listing / distribution path. An ISBN is not a shelf. Store managers decide stock, placement, and returns. No branch is guaranteed. ",
   eyebrow: "Bookstore listing · Hong Kong",
   h1: "Getting a child's book onto a Hong Kong physical bookstore listing / distribution path",
   lead: "Kidsmybook publishes children's books: print them properly, then arrange a Hong Kong physical bookstore listing / distribution path according to the title and package. That is not the same as receiving an ISBN. Book numbers, print shops, and print-on-demand are common. A children's title that actually reaches a bookstore platform, where a manager decides whether to stock it, is much rarer.",
@@ -1485,7 +1485,7 @@ export const SHUDIAN_EN: HubCopy = {
       a: "The listing is the publishing result. A portfolio is a second use: an interviewer can see and hear a real book. Kidsmybook is not an admissions agent and does not guarantee a place. The only named public case is Hilary.",
     },
     {
-      q: "How do we ask for a private quotation?",
+      q: "How do we start a consultation?",
       a: "WhatsApp @kidsmybook or email kidsmybook@outlook.com. Share the child's age and one interest. Prices are not on the site. No shelf position and no school place are guaranteed. Phases: https://kidsmybook.com/programme .",
     },
   ],
@@ -1510,7 +1510,7 @@ export const SHUDIAN_EN: HubCopy = {
     { href: "/case-studies/hilary-butterfly-guide", label: "Public case: Hilary" },
   ],
   ctaTitle: "Ask whether this topic can reach a bookstore platform",
-  ctaBody: "Private quotation only. WhatsApp or email the child's age and one interest. The site lists no prices, and it does not guarantee a branch or a school place.",
+  ctaBody: " WhatsApp or email the child's age and one interest. The site lists no prices, and it does not guarantee a branch or a school place.",
   whatsappText: "We want to ask about a child's book and a Hong Kong bookstore listing path",
   cardTitle: "Bookstore listing",
   cardBlurb: "Formal print, then a Hong Kong physical bookstore listing / distribution path. An ISBN is not a shelf.",

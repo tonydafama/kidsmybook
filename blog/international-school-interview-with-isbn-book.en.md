@@ -1,6 +1,6 @@
 ---
 title: "International-school interview: tell one ISBN book"
-description: "An English international-school interview can use one child-made ISBN book. Four sentences, one story. Do not memorise two contradictory scripts. Private quotation. No place is guaranteed."
+description: "An English international-school interview can use one child-made ISBN book. Four sentences, one story. Do not memorise two contradictory scripts. No place is guaranteed."
 date: 2026-10-17
 slug: "international-school-interview-with-isbn-book"
 tags: ["international school", "interview", "portfolio", "ISBN"]
@@ -39,4 +39,4 @@ If only a few days or weeks remain, the 12-month plan cannot be finished. Narrow
 
 Prices are not on the site, and no place is guaranteed. WhatsApp @kidsmybook or email kidsmybook@outlook.com. Share the age, whether the target is an international school or also a local school, roughly when the interview is, and one interest.
 
-> Private quotation. WhatsApp @kidsmybook · no place is guaranteed · https://kidsmybook.com/admissions-portfolio
+> WhatsApp @kidsmybook · no place is guaranteed · https://kidsmybook.com/admissions-portfolio

@@ -569,7 +569,7 @@ document.addEventListener('click', function (event) {
 <body>
 <main>
 <h1>Kidsmybook 升學資產諮詢</h1>
-<p class="note">第一次聯絡只需三項。顧問會用 WhatsApp 回覆，私人報價。</p>
+<p class="note">第一次聯絡只需三項。顧問會用 WhatsApp 回覆。</p>
 
 <form id="f">
   <label>家長姓名</label>
@@ -594,17 +594,17 @@ document.addEventListener('click', function (event) {
   </details>
 
   <p class="privacy">你提交的資料只用於 Kidsmybook 回覆這次諮詢（個人資料（私隱）條例）。未經同意，不會公開小朋友的姓名或學校。如需刪除，請 <a href="${INTAKE_WA}">WhatsApp @kidsmybook</a> 或電郵 <a href="mailto:${STUDIO_EMAIL}">${STUDIO_EMAIL}</a>。</p>
-  <p class="escape"><a class="wa-escape" data-cta-location="intake" href="${INTAKE_WA}">改用 WhatsApp 問價</a> <a href="mailto:${STUDIO_EMAIL}">${STUDIO_EMAIL}</a></p>
+  <p class="escape"><a class="wa-escape" data-cta-location="intake" href="${INTAKE_WA}">改用 WhatsApp 諮詢</a> <a href="mailto:${STUDIO_EMAIL}">${STUDIO_EMAIL}</a></p>
   <button type="submit">提交諮詢</button>
 </form>
 
 <div class="succ" id="succ">
-  <p>已收到。顧問會用 WhatsApp 回覆你，私人報價。</p>
-  <p class="escape"><a class="wa-escape" data-cta-location="intake_success" href="${INTAKE_WA}">改用 WhatsApp 問價</a> <a href="mailto:${STUDIO_EMAIL}">${STUDIO_EMAIL}</a></p>
+  <p>已收到。顧問會用 WhatsApp 回覆你。</p>
+  <p class="escape"><a class="wa-escape" data-cta-location="intake_success" href="${INTAKE_WA}">改用 WhatsApp 諮詢</a> <a href="mailto:${STUDIO_EMAIL}">${STUDIO_EMAIL}</a></p>
 </div>
 <div class="err" id="err">
-  <p>提交未成功。可以改用 WhatsApp 問價，或電郵我們。</p>
-  <p class="escape"><a class="wa-escape" data-cta-location="intake_error" href="${INTAKE_WA}">改用 WhatsApp 問價</a> <a href="mailto:${STUDIO_EMAIL}">${STUDIO_EMAIL}</a></p>
+  <p>提交未成功。可以改用 WhatsApp 諮詢，或電郵我們。</p>
+  <p class="escape"><a class="wa-escape" data-cta-location="intake_error" href="${INTAKE_WA}">改用 WhatsApp 諮詢</a> <a href="mailto:${STUDIO_EMAIL}">${STUDIO_EMAIL}</a></p>
 </div>
 </main>
 
@@ -1134,7 +1134,7 @@ async function sendIntakeAckEmail(rec: Record<string, unknown>, env: Env): Promi
         subject: "Kidsmybook 已收到你的諮詢",
         html: `<p>你好${rec.parent ? ` ${rec.parent}` : ""}，</p>
 <p>我哋已收到 <strong>${student}</strong> 嘅出版諮詢。顧問會喺辦公時間內用 WhatsApp 或電郵回覆你，唔使重複提交。</p>
-<p>如要即時聯絡：<a href="${INTAKE_WA}">WhatsApp 問價</a> · <a href="mailto:${STUDIO_EMAIL}">${STUDIO_EMAIL}</a></p>
+<p>如要即時聯絡：<a href="${INTAKE_WA}">WhatsApp 諮詢</a> · <a href="mailto:${STUDIO_EMAIL}">${STUDIO_EMAIL}</a></p>
 <p>Kidsmybook<br>https://kidsmybook.com</p>`,
       }),
     });

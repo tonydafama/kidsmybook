@@ -3,17 +3,17 @@
 export const BLOG_INDEX_ZH = {
   title: "香港升學作品集・升小升中・ISBN 童書",
   description:
-    "香港家長：升小學面試、升小面試班同 ISBN 出版作品集、升中 DSS／直資 portfolio，同導師制 ISBN 出版點樣成為可引用嘅亮點。私人報價，唔保證取錄。",
-  askQuote: "WhatsApp 問價",
+    "香港家長：升小學面試、升小面試班同 ISBN 出版作品集、升中 DSS／直資 portfolio，同導師制 ISBN 出版點樣成為可引用嘅亮點。唔保證取錄。",
+  askQuote: "WhatsApp 諮詢",
 };
 
 export const PROGRAMME_ZH = {
   title: "小朋友出書計劃香港｜正式出書同大學教授審閱｜Kidsmybook",
   description:
-    "香港兒童出版：12 個月導師制，將小朋友興趣做成有 ISBN 的正式印刷童書，同大學教授合作審閱，再提供香港實體書店上架／發行路徑。私人報價。唔保證每間分店有貨，亦唔保證取錄。",
+    "香港兒童出版：12 個月導師制，將小朋友興趣做成有 ISBN 的正式印刷童書，同大學教授合作審閱，再提供香港實體書店上架／發行路徑。唔保證每間分店有貨，亦唔保證取錄。",
   eyebrow: "兒童出書 · 大學教授審閱 · 香港",
   h1: "小朋友出書計劃：正式出書，同大學教授合作審閱",
-  lead: "Kidsmybook 係香港兒童出版工作室。12 個月導師制，將小朋友興趣做成有 ISBN 的正式印刷童書；過程同大學教授合作審閱，再提供香港實體書店上架／發行路徑。私人報價。",
+  lead: "Kidsmybook 係香港兒童出版工作室。12 個月導師制，將小朋友興趣做成有 ISBN 的正式印刷童書；過程同大學教授合作審閱，再提供香港實體書店上架／發行路徑。",
   shelfLink: "童書書店上架：香港實體書店上架／發行路徑",
   notLabel: "呢個計劃唔係",
   notBody: "唔係淨係申請一個 ISBN、唔係 DIY 禮物書、唔係保證每間分店有貨，亦唔係保證入學派對。",
@@ -49,20 +49,20 @@ export const PROGRAMME_ZH = {
   faqTitle: "仲有問題？",
   faqLink: "睇晒常見問題（ISBN、幼稚園、收費方式）",
   portfolioLink: "升學作品集點樣用一本書",
-  ctaTitle: "私人報價，先了解再講範圍",
-  ctaBody: "網站唔公開價目。WhatsApp 或電郵講吓小朋友年齡、興趣同目標學校，我哋先私人報價。",
+  ctaTitle: "先了解再講範圍",
+  ctaBody: "網站唔公開價目。WhatsApp 或電郵講吓小朋友年齡、興趣同目標學校。",
   whatsappLabel: "WhatsApp 講年齡＋興趣",
-  whatsappText: "你好，想問小朋友出書計劃報價。年齡：＿＿；興趣：＿＿",
+  whatsappText: "你好，想諮詢小朋友出書計劃。年齡：＿＿；興趣：＿＿",
 };
 
 export const FAQ_PAGE_ZH = {
   title: "常見問題｜小朋友出書、ISBN、升學作品集｜Kidsmybook",
-  description: "解答香港小朋友出書、ISBN、書店上架、高才通家庭、收費方式（私人報價）等問題。歡迎 WhatsApp 查詢。",
+  description: "解答香港小朋友出書、ISBN、書店上架、高才通家庭、收費方式等問題。歡迎 WhatsApp 查詢。",
   eyebrow: "FAQ",
   h1: "常見問題：小朋友出書、ISBN、升學作品集",
-  lead: "以下係家長最常問嘅問題。收費一律私人報價，網站唔放價目表。",
+  lead: "以下係家長最常問嘅問題。網站唔放價目表。",
   ctaTitle: "未睇到你個情況？",
-  ctaBody: "WhatsApp 或電郵講小朋友年齡、而家／目標學校，同埋最想解決嘅作品集問題。我哋先了解，再私人報價。",
+  ctaBody: "WhatsApp 或電郵講小朋友年齡、而家／目標學校，同埋最想解決嘅作品集問題。我哋先了解。",
   whatsappText: "想了解小朋友出書、ISBN 同升學作品集",
   programmeLink: "睇 12 個月出書計劃",
   portfolioLink: "睇升學作品集說明",
@@ -72,7 +72,7 @@ export const FAQ_PAGE_ZH = {
 export const PORTFOLIO_ZH = {
   title: "升學作品集｜升小學、升中 DSS／直資同國際學校面試｜Kidsmybook",
   description:
-    "升小學面試、升中／DSS／直資，同國際學校 portfolio：用有 ISBN、小朋友參與嘅正式出版物做記得住嘅亮點。私人報價，唔保證取錄。",
+    "升小學面試、升中／DSS／直資，同國際學校 portfolio：用有 ISBN、小朋友參與嘅正式出版物做記得住嘅亮點。唔保證取錄。",
   eyebrow: "School portfolio · 香港",
   h1: "香港升學作品集：升小學、升中同國際學校面試點樣用一本書",
   lead: "香港本地、跨境同高才通家庭，都可以用呢條升學作品集路徑。證書堆唔掣勝。升小學、升中／直資／DSS，同國際學校面試，每年都見到好多份相近嘅鋼琴、游水、奧數履歷。一本由小朋友參與、同大學教授合作審閱、有 ISBN 嘅正式出版物，係面試官記得住、可以引用嘅亮點。",
@@ -130,32 +130,32 @@ export const PORTFOLIO_ZH = {
   whatsappLink: "WhatsApp 講吓升小學或升中面試",
   whatsappText: "想了解升學作品集點樣用一本 ISBN 童書，升小學或升中面試",
   ctaTitle: "想知呢本書適唔適合你個小朋友",
-  ctaBody: "講吓年齡、而家學校類型、一個興趣，同你最想解決嘅面試問題。報價私人，網站唔公開價錢。",
+  ctaBody: "講吓年齡、而家學校類型、一個興趣，同你最想解決嘅面試問題。網站唔公開價錢。",
   faqTitle: "升學作品集常見問題",
   faqs: [
     {
       q: "升小學面試，點解要用一本正式出版物？",
-      a: "小一自行分配、面試同叩門通常只有幾分鐘。一本小朋友參與、有 ISBN 嘅正式出版物，可以指住一頁用自己嘅說話講興趣點嚟，而唔係再厚一本獎狀複印。Kidsmybook 係出版工作室，唔係短期升小面試班，唔保證取錄。詳見 https://kidsmybook.com/primary-one-interview-portfolio 。",
+      a: "小一自行分配、面試同叩門通常只有幾分鐘。一本小朋友參與、有 ISBN 嘅正式出版物，可以指住一頁用自己嘅說話講興趣點嚟，而唔係再厚一本獎狀複印。Kidsmybook 係出版工作室，唔係短期升小面試班，唔保證取錄。詳見 https://kidsmybook.com/primary-one-interview-portfolio。",
     },
     {
       q: "升中、DSS 同直資作品集可以點放呢本書？",
-      a: "升中同直資、DSS 面試較常問持續興趣同自述。出版物可以放喺作品集前面，作為一項做完、可以核對嘅項目。學校決定取錄。詳見 https://kidsmybook.com/secondary-dss-admissions-portfolio 。",
+      a: "升中同直資、DSS 面試較常問持續興趣同自述。出版物可以放喺作品集前面，作為一項做完、可以核對嘅項目。學校決定取錄。詳見 https://kidsmybook.com/secondary-dss-admissions-portfolio。",
     },
     {
       q: "國際學校 portfolio 同本地面試係咪要兩本書？",
       a: "唔使。同一本正式出版物可以準備兩個講法：國際學校多數用英文講好奇心同項目；本地、私立同直資較常睇中文表達。唔好做成兩套互相矛盾嘅故事。",
     },
     {
-      q: "點樣索取升學作品集嘅私人報價？",
+      q: "點樣開始升學作品集諮詢？",
       a: "WhatsApp @kidsmybook 或電郵 kidsmybook@outlook.com。講小朋友年齡、目標係升小、升中定國際學校，同一個興趣。網站唔公開價目，亦唔保證學位。",
     },
     {
       q: "美術作品集同 ISBN 出版作品集有咩分別？",
-      a: "畫簿、素描同美術班作品集證明技法同練習。有 ISBN、小朋友參與嘅出版作品集係一件做完、可以翻開講嘅正式出版物。學校如果指定要交原作或畫作選輯，畫作仍然要交；書唔取代嗰份指定作品。Kidsmybook 唔保證取錄。詳見 https://kidsmybook.com/blog/art-portfolio-vs-isbn-published-book 。",
+      a: "畫簿、素描同美術班作品集證明技法同練習。有 ISBN、小朋友參與嘅出版作品集係一件做完、可以翻開講嘅正式出版物。學校如果指定要交原作或畫作選輯，畫作仍然要交；書唔取代嗰份指定作品。Kidsmybook 唔保證取錄。詳見 https://kidsmybook.com/blog/art-portfolio-vs-isbn-published-book。",
     },
     {
       q: "作品集唔夠睇、面試就快到，仲可唔可以出書？",
-      a: "如果只剩幾日或幾星期，12 個月出版計劃趕唔切。先收窄而家嘅文件，揀一件小朋友講得出嘅作品。出書適合下一個有大約一年時間嘅申請周期。報價私人，網站唔公開價目。詳見 https://kidsmybook.com/blog/portfolio-not-ready-before-interview 。",
+      a: "如果只剩幾日或幾星期，12 個月出版計劃趕唔切。先收窄而家嘅文件，揀一件小朋友講得出嘅作品。出書適合下一個有大約一年時間嘅申請周期。網站唔公開價目。詳見 https://kidsmybook.com/blog/portfolio-not-ready-before-interview。",
     },
   ],
 };
@@ -168,11 +168,11 @@ export const CHECKLIST_WHATSAPP_TEXT = "想要升學作品集準備清單";
 export const CHECKLIST_ZH = {
   title: "升學作品集準備清單｜升小、升中文件點樣收｜Kidsmybook",
   description:
-    "免費升學作品集準備清單：升小、升中要帶咩文件，證書班同補習作品放附頁，美術作品集同 ISBN 出版書點分。清單免費；完整計劃私人 WhatsApp 報價。唔保證取錄。",
+    "免費升學作品集準備清單：升小、升中要帶咩文件，證書班同補習作品放附頁，美術作品集同 ISBN 出版書點分。清單免費。唔保證取錄。",
   eyebrow: "免費清單 · 香港",
   h1: "升學作品集準備清單",
-  lead: "面試前唔使再估「帶咩」。呢頁係一份可以核對嘅文件清單：升小學、升中／DSS／直資、國際學校作品集，邊啲放前面、邊啲放附頁。清單免費。完整出版計劃私人報價，網站唔公開價目。",
-  softCta: "清單免費；完整計劃私人 WhatsApp 報價。",
+  lead: "面試前唔使再估「帶咩」。呢頁係一份可以核對嘅文件清單：升小學、升中／DSS／直資、國際學校作品集，邊啲放前面、邊啲放附頁。清單免費。完整出版計劃，網站唔公開價目。",
+  softCta: "清單免費。",
   whatsappLabel: "WhatsApp：想要升學作品集準備清單",
   whatsappText: CHECKLIST_WHATSAPP_TEXT,
   docTitle: "升小／升中作品集要準備咩",
@@ -213,12 +213,12 @@ export const CHECKLIST_ZH = {
   hubLink: "免費升學作品集準備清單",
   programmeLink: "了解 12 個月出書計劃",
   cardTitle: "準備清單",
-  cardBlurb: "升小、升中文件核對。清單免費；完整計劃私人報價。",
+  cardBlurb: "升小、升中文件核對。清單免費；完整計劃。",
   faqTitle: "準備清單常見問題",
   faqs: [
     {
       q: "呢份升學作品集準備清單收唔收費？",
-      a: "清單免費。想做完整 12 個月導師制出版計劃，報價私人，WhatsApp 先講範圍。網站唔公開價目，亦唔保證學位。",
+      a: "清單免費。想做完整 12 個月導師制出版計劃，WhatsApp 先講範圍。網站唔公開價目，亦唔保證學位。",
     },
     {
       q: "升小學同升中係咪同一份文件？",
@@ -246,7 +246,7 @@ export const EXPLORE_ZH = {
   programme: "小朋友出書計劃",
   programmeBlurb: "12 個月導師制：正式印刷，再走實體書店上架路徑。",
   faq: "常見問題",
-  faqBlurb: "書店上架、ISBN、幼稚園、高才通、私人報價。",
+  faqBlurb: "書店上架、ISBN、幼稚園、高才通。",
   portfolio: "升學作品集",
   portfolioBlurb: "升小學、升中 DSS／直資，同國際學校面試：用一本正式出版物做亮點。",
   caseLabel: "Hilary 個案",
@@ -323,7 +323,7 @@ export const PORTFOLIO_READING_ZH: { href: string; label: string }[] = [
 export const ABOUT_ZH = {
   title: "關於我們｜香港兒童出版工作室｜Kidsmybook",
   description:
-    "Kidsmybook 係香港兒童出版工作室。12 個月導師制，將小朋友興趣做成有 ISBN 的正式印刷童書，同大學教授合作審閱。私人報價，WhatsApp 或電郵。唔係升學中介，唔保證取錄。",
+    "Kidsmybook 係香港兒童出版工作室。12 個月導師制，將小朋友興趣做成有 ISBN 的正式印刷童書，同大學教授合作審閱。WhatsApp 或電郵。唔係升學中介，唔保證取錄。",
   eyebrow: "工作室 · 香港",
   h1: "關於 Kidsmybook：香港兒童出版工作室",
   lead: "Kidsmybook 係香港兒童出版工作室。12 個月導師制，將大約 3 至 18 歲小朋友嘅興趣做成有 ISBN 的正式印刷童書；過程同大學教授合作審閱，完成後再按需要配發布會、展覽、媒體同升學作品集。",
@@ -336,8 +336,8 @@ export const ABOUT_ZH = {
   disclaimerTitle: "我哋唔係升學中介",
   disclaimer:
     "Kidsmybook 係出版工作室，唔係升學中介，亦唔保證入到任何學校。最終取錄由學校決定。一本正式出版物可以令作品集更有說服力、面試更好講故事。",
-  contactTitle: "聯絡同報價",
-  contact: "報價私人，網站唔公開價目。WhatsApp 或電郵講小朋友年齡、一個興趣，同目標學校類型就得。",
+  contactTitle: "聯絡",
+  contact: "網站唔公開價目。WhatsApp 或電郵講小朋友年齡、一個興趣，同目標學校類型就得。",
   programmeLink: "睇 12 個月出書計劃",
   faqLink: "常見問題",
   portfolioLink: "升學作品集",
@@ -399,7 +399,7 @@ export const SHENGZHONG_PATH = "/secondary-dss-admissions-portfolio";
 export const GAOCAI_ZH: HubCopy = {
   title: "高才通升學作品集｜新來港家庭用 ISBN 童書做證明物｜Kidsmybook",
   description:
-    "高才通同新來港家庭：一本小朋友參與、有 ISBN 嘅正式出版物，可以放進香港升小學、升中或國際學校作品集，作為講得清楚、可以引用嘅證明物。Kidsmybook 唔係升學中介，唔保證學位。私人報價。",
+    "高才通同新來港家庭：一本小朋友參與、有 ISBN 嘅正式出版物，可以放進香港升小學、升中或國際學校作品集，作為講得清楚、可以引用嘅證明物。Kidsmybook 唔係升學中介，唔保證學位。",
   eyebrow: "高才通 · 新來港 · 香港",
   h1: "高才通同新來港家庭：升學作品集點樣用一本 ISBN 童書做證明物",
   lead: "剛以高才通或其他途徑來港嘅家庭，作品集往往未有本地學校紀錄。一本由小朋友參與、可有大學教授審閱、有 ISBN 嘅正式出版物，係一件可以帶去面試、可以引用嘅證明物：證明一段持續興趣、小朋友做過嘅工序，同埋一份完成咗嘅出版成果。",
@@ -448,10 +448,10 @@ export const GAOCAI_ZH: HubCopy = {
     },
     {
       q: "高才通第一年，幾時先開始 ISBN 出版？",
-      a: "如果下一個面試或申請仲有大約一年，可以由第 1 個月開始 12 個月導師制。如果只剩幾日或幾星期，計劃趕唔切，先用準備清單收窄而家嘅文件。時間線見 https://kidsmybook.com/blog/top-talent-pass-family-first-year-timeline 。",
+      a: "如果下一個面試或申請仲有大約一年，可以由第 1 個月開始 12 個月導師制。如果只剩幾日或幾星期，計劃趕唔切，先用準備清單收窄而家嘅文件。時間線見 https://kidsmybook.com/blog/top-talent-pass-family-first-year-timeline。",
     },
     {
-      q: "點樣索取私人報價？",
+      q: "點樣開始諮詢？",
       a: "WhatsApp @kidsmybook 或電郵 kidsmybook@outlook.com。講小朋友年齡、目標係升小、升中定國際學校，同一個興趣。網站唔公開價目。",
     },
   ],
@@ -472,7 +472,7 @@ export const GAOCAI_ZH: HubCopy = {
     { href: "/blog/secondary-dss-interview-published-book", label: "升中、DSS 同直資作品集" },
     { href: "/blog/interview-class-vs-isbn-published-book", label: "升小面試班 vs ISBN 出版作品集" },
   ],
-  ctaTitle: "先講家庭情況，再私人報價",
+  ctaTitle: "先講家庭情況，再諮詢",
   ctaBody: "網站唔公開價目，亦唔保證學位。WhatsApp 講年齡、目標學校類型同一個興趣。",
   whatsappText: "想了解高才通／新來港家庭點樣用一本 ISBN 童書做升學作品集證明物",
   cardTitle: "高才通升學作品集",
@@ -483,7 +483,7 @@ export const GAOCAI_ZH: HubCopy = {
 export const XINGQU_ZH: HubCopy = {
   title: "興趣出版｜高爾夫、鋼琴、馬術到導師制 ISBN 童書｜Kidsmybook",
   description:
-    "已經有高爾夫、鋼琴、馬術或其他持續興趣？可以將練習入面小朋友真正留意到嘅事，做成導師制 ISBN 童書，再放進升學作品集。唔使停班。私人報價，唔保證學位。",
+    "已經有高爾夫、鋼琴、馬術或其他持續興趣？可以將練習入面小朋友真正留意到嘅事，做成導師制 ISBN 童書，再放進升學作品集。唔使停班。唔保證學位。",
   eyebrow: "興趣 → 出版 · 香港",
   h1: "興趣出版：高爾夫、鋼琴、馬術點樣走到一本導師制 ISBN 童書",
   lead: "興趣班已經買到練習時間。面試作品集還差一件講得明白嘅成果：小朋友喺高爾夫、鋼琴、馬術或其他興趣入面留意過咩、做過咩、改過咩。Kidsmybook 用 12 個月導師制，將呢段興趣做成有 ISBN 嘅正式出版物，再按需要放進升學作品集。",
@@ -505,7 +505,7 @@ export const XINGQU_ZH: HubCopy = {
     "取錄由學校決定。公開具名出版個案只有 Hilary",
   ],
   pathTitle: "由興趣班到可以帶去面試嘅書",
-  pathIntro: "四步接到出書計劃同升學作品集。中途可以先 WhatsApp 問適唔適合，報價仍然私人。",
+  pathIntro: "四步接到出書計劃同升學作品集。中途可以先 WhatsApp 問適唔適合。",
   steps: [
     { name: "留低一件興趣", text: "揀一件小朋友會自己返去做嘅事。運動、樂器、動物、城市觀察都可以，唔限高爾夫、鋼琴或馬術。" },
     { name: "導師制寫成書", text: "計劃頁講五個階段：諮詢、專屬課程、出版研討同可有大學教授審閱、親子排版、印刷與上架。" },
@@ -531,7 +531,7 @@ export const XINGQU_ZH: HubCopy = {
       a: "先睇 12 個月出書計劃，完成後先放進升學作品集。Kidsmybook 唔保證學位，亦冇學校合作。",
     },
     {
-      q: "點樣索取私人報價？",
+      q: "點樣開始諮詢？",
       a: "WhatsApp @kidsmybook 或電郵 kidsmybook@outlook.com。講年齡、一件興趣，同目標係升小、升中定國際學校。網站唔公開價目。",
     },
   ],
@@ -547,7 +547,7 @@ export const XINGQU_ZH: HubCopy = {
     { href: "/primary-one-interview-portfolio", label: "升小面試作品集" },
     { href: "/secondary-dss-admissions-portfolio", label: "升中／DSS／直資作品集" },
   ],
-  ctaTitle: "講一件興趣，再私人報價",
+  ctaTitle: "講一件興趣，再諮詢",
   ctaBody: "網站唔公開價目，亦唔保證學位。WhatsApp 講年齡、興趣同目標學校類型。",
   whatsappText: "想了解由興趣（例如高爾夫、鋼琴或馬術）走到導師制 ISBN 童書同升學作品集",
   cardTitle: "興趣出版",
@@ -558,7 +558,7 @@ export const XINGQU_ZH: HubCopy = {
 export const SHENGXIAO_ZH: HubCopy = {
   title: "升小面試作品集｜小一自行分配、叩門同面試｜Kidsmybook",
   description:
-    "升小學面試、叩門同 portfolio：用有 ISBN、小朋友參與嘅正式出版物做記得住嘅一頁。Kidsmybook 係 12 個月導師制出版，唔係短期升小面試班。私人報價，唔保證取錄。",
+    "升小學面試、叩門同 portfolio：用有 ISBN、小朋友參與嘅正式出版物做記得住嘅一頁。Kidsmybook 係 12 個月導師制出版，唔係短期升小面試班。唔保證取錄。",
   eyebrow: "升小面試 · 叩門 · 香港",
   h1: "升小面試作品集：叩門同小一面試點樣用一本正式出版物",
   lead: "小一自行分配、面試同統一派位之後嘅叩門，通常只有幾分鐘。作品集唔係愈厚愈好。一本由小朋友參與、可有大學教授審閱、有 ISBN 嘅正式出版物，係面試官可以翻開、小朋友可以指住一頁講嘅一項成果。搜「升小面試」「面試班」或 portfolio 嘅家長，可以先分清：短期面試班練當場表現；Kidsmybook 做嘅係可以帶去面試嘅出版作品集。",
@@ -580,7 +580,7 @@ export const SHENGXIAO_ZH: HubCopy = {
     "公開具名個案只有 Hilary（出版時八歲，蝴蝶圖鑑）。呢個係出版例子，唔係入學結果",
   ],
   pathTitle: "由興趣到可以帶去升小面試嘅書",
-  pathIntro: "四步接到 12 個月出書計劃同免費準備清單。中途可以先 WhatsApp 問適唔適合，報價仍然私人。",
+  pathIntro: "四步接到 12 個月出書計劃同免費準備清單。中途可以先 WhatsApp 問適唔適合。",
   steps: [
     { name: "講年齡同目標", text: "諮詢時講小朋友年齡、而家或目標係本地、私立、直資定國際小學，同埋一件會自己翻開嚟做嘅興趣。" },
     { name: "導師制完成一本書", text: "大約 12 個月：創作、可有大學教授審閱、親子排版，保留小朋友自己嘅聲音。深度按年齡，唔會叫細路寫大人作文。" },
@@ -595,7 +595,7 @@ export const SHENGXIAO_ZH: HubCopy = {
     },
     {
       q: "Kidsmybook 係咪升小面試班？",
-      a: "唔係。面試班多數係短期課堂，練禮貌、常見問題同模擬面試。Kidsmybook 係 12 個月導師制出版，成果係一本可以帶去面試嘅正式出版物。兩樣可以並存，但唔係同一種服務。比較見 https://kidsmybook.com/blog/interview-class-vs-isbn-published-book 。",
+      a: "唔係。面試班多數係短期課堂，練禮貌、常見問題同模擬面試。Kidsmybook 係 12 個月導師制出版，成果係一本可以帶去面試嘅正式出版物。兩樣可以並存，但唔係同一種服務。比較見 https://kidsmybook.com/blog/interview-class-vs-isbn-published-book。",
     },
     {
       q: "叩門只剩幾日，仲可唔可以出書？",
@@ -603,10 +603,10 @@ export const SHENGXIAO_ZH: HubCopy = {
     },
     {
       q: "升中、DSS 同直資係咪用同一頁？",
-      a: "唔係。升小重點係幾分鐘講完一件事。升中同直資、DSS 較常問持續興趣同自述。見 https://kidsmybook.com/secondary-dss-admissions-portfolio 。高才通或新來港家庭另見 https://kidsmybook.com/top-talent-pass-admissions-portfolio 。",
+      a: "唔係。升小重點係幾分鐘講完一件事。升中同直資、DSS 較常問持續興趣同自述。見 https://kidsmybook.com/secondary-dss-admissions-portfolio。高才通或新來港家庭另見 https://kidsmybook.com/top-talent-pass-admissions-portfolio。",
     },
     {
-      q: "點樣索取升小作品集嘅私人報價？",
+      q: "點樣開始升小作品集諮詢？",
       a: "WhatsApp @kidsmybook 或電郵 kidsmybook@outlook.com。講年齡、目標小學類型同一個興趣。網站唔公開價目，亦唔保證學位。",
     },
   ],
@@ -627,7 +627,7 @@ export const SHENGXIAO_ZH: HubCopy = {
     { href: "/blog/sspa-discretionary-vs-dss-published-book", label: "中一自行分配唔等於唔使作品集：邊啲升中場面先要帶正式出版物" },
     { href: "/blog/portfolio-not-ready-before-interview", label: "作品集唔夠睇、臨時趕點算" },
   ],
-  ctaTitle: "先講升小面試時間，再私人報價",
+  ctaTitle: "先講升小面試時間，再諮詢",
   ctaBody: "網站唔公開價目，亦唔保證學位。WhatsApp 講年齡、目標小學類型、面試或叩門大約幾時，同一個興趣。",
   whatsappText: "想了解升小面試／叩門作品集，同 12 個月 ISBN 出版係咪適合",
   cardTitle: "升小面試作品集",
@@ -640,7 +640,7 @@ export const SHENGXIAO_ZH: HubCopy = {
 export const SHENGZHONG_ZH: HubCopy = {
   title: "升中 DSS／直資作品集｜持續興趣同 ISBN 出版｜Kidsmybook",
   description:
-    "升中、DSS 同直資 portfolio：將一本小朋友參與、有 ISBN 嘅正式出版物放喺作品集前面，作為講得完嘅持續興趣。私人報價。Kidsmybook 唔代表任何學校，唔保證取錄。",
+    "升中、DSS 同直資 portfolio：將一本小朋友參與、有 ISBN 嘅正式出版物放喺作品集前面，作為講得完嘅持續興趣。Kidsmybook 唔代表任何學校，唔保證取錄。",
   eyebrow: "升中 · DSS · 直資 · 香港",
   h1: "升中、DSS 同直資作品集：點樣放一本正式出版物",
   lead: "升中同直資、DSS 面試，較少再聽一次小學嗰疊證書。較常問嘅係持續興趣、自述，同埋遇到困難點改。一本做完、可以翻開嚟講嘅出版物，可以放喺作品集前面，作為一項可以核對嘅項目。Kidsmybook 係導師制出版工作室，用 portfolio 呢個英文都係指呢份升學作品集，唔係短期面試班。",
@@ -677,18 +677,18 @@ export const SHENGZHONG_ZH: HubCopy = {
     },
     {
       q: "Portfolio 係咪等於再報一個面試班？",
-      a: "唔係。面試班練當場表現。Portfolio 如果指 Kidsmybook，係一本小朋友參與、有 ISBN 嘅正式出版物，加上升學作品集點樣擺。比較見 https://kidsmybook.com/blog/interview-class-vs-isbn-published-book 。",
+      a: "唔係。面試班練當場表現。Portfolio 如果指 Kidsmybook，係一本小朋友參與、有 ISBN 嘅正式出版物，加上升學作品集點樣擺。比較見 https://kidsmybook.com/blog/interview-class-vs-isbn-published-book。",
     },
     {
       q: "升小面試頁同呢頁有咩分別？",
-      a: "升小面試同叩門通常只有幾分鐘，重點係講完一件事。升中較常問持續興趣同自述。升小頁：https://kidsmybook.com/primary-one-interview-portfolio 。",
+      a: "升小面試同叩門通常只有幾分鐘，重點係講完一件事。升中較常問持續興趣同自述。升小頁：https://kidsmybook.com/primary-one-interview-portfolio。",
     },
     {
       q: "高才通家庭做升中作品集，係咪要另一本書？",
-      a: "唔使。同一本正式出版物可以放進升中、DSS、直資或國際學校作品集。高才通頁講證明物，唔係簽證文件：https://kidsmybook.com/top-talent-pass-admissions-portfolio 。",
+      a: "唔使。同一本正式出版物可以放進升中、DSS、直資或國際學校作品集。高才通頁講證明物，唔係簽證文件：https://kidsmybook.com/top-talent-pass-admissions-portfolio。",
     },
     {
-      q: "點樣索取私人報價？",
+      q: "點樣開始諮詢？",
       a: "WhatsApp @kidsmybook 或電郵 kidsmybook@outlook.com。講年級、目標係直資、DSS 定其他中學，同一個興趣。網站唔公開價目，亦唔保證學位。",
     },
   ],
@@ -709,7 +709,7 @@ export const SHENGZHONG_ZH: HubCopy = {
     { href: "/blog/interview-class-vs-isbn-published-book", label: "升小面試班 vs ISBN 出版作品集" },
     { href: "/blog/international-vs-local-school-interview-portfolio", label: "國際學校 vs 本地學校面試" },
   ],
-  ctaTitle: "先講升中目標，再私人報價",
+  ctaTitle: "先講升中目標，再諮詢",
   ctaBody: "網站唔公開價目，亦唔保證學位。WhatsApp 講年級、目標學校類型同一個興趣。",
   whatsappText: "想了解升中／DSS／直資作品集點樣用一本 ISBN 童書",
   cardTitle: "升中 DSS／直資作品集",
@@ -722,7 +722,7 @@ export const SHENGZHONG_ZH: HubCopy = {
 export const SHUDIAN_ZH: HubCopy = {
   title: "童書書店上架｜小朋友書香港實體書店上架｜Kidsmybook",
   description:
-    "香港兒童出版實體上架：正式印刷，再走香港實體書店上架／發行路徑。ISBN 不等於書架有貨。店長決定入貨、陳列同退貨，唔保證每間分店都有。私人報價，WhatsApp。",
+    "香港兒童出版實體上架：正式印刷，再走香港實體書店上架／發行路徑。ISBN 不等於書架有貨。店長決定入貨、陳列同退貨，唔保證每間分店都有。",
   eyebrow: "童書書店上架 · 香港",
   h1: "童書書店上架：小朋友書點樣走上香港實體書店上架／發行路徑",
   lead: "Kidsmybook 做嘅係兒童出書：先正式印刷，再按題材同配套安排香港實體書店上架／發行路徑。呢條路同「申請到一個 ISBN」唔係同一件事。市面上書號、自助印刷、按需印刷好常見；真正放到實體書店平台、等店長決定入貨嘅童書，少得多。",
@@ -755,7 +755,7 @@ export const SHUDIAN_ZH: HubCopy = {
   faqs: [
     {
       q: "有 ISBN 係咪就等於實體書店上架？",
-      a: "唔係。ISBN 係書號，方便識別同註冊。實體書店上架係另一條路徑：正式印刷之後，先至談香港實體書店上架安排。自助申請 ISBN、印刷店同 POD 好多時停喺印好或者網上有售。詳見 https://kidsmybook.com/blog/isbn-is-not-bookstore-listing 。",
+      a: "唔係。ISBN 係書號，方便識別同註冊。實體書店上架係另一條路徑：正式印刷之後，先至談香港實體書店上架安排。自助申請 ISBN、印刷店同 POD 好多時停喺印好或者網上有售。詳見 https://kidsmybook.com/blog/isbn-is-not-bookstore-listing。",
     },
     {
       q: "Kidsmybook 係咪某間書店？",
@@ -767,15 +767,15 @@ export const SHUDIAN_ZH: HubCopy = {
     },
     {
       q: "自費出書、代印同 POD 有冇實體上架？",
-      a: "多數冇，或者只有好弱嘅分銷。自費、代印同按需印刷可以交出一本實體書，但唔等於走進香港實體書店上架安排。對照見 https://kidsmybook.com/blog/self-publish-pod-vs-mentored-bookstore-listing 。",
+      a: "多數冇，或者只有好弱嘅分銷。自費、代印同按需印刷可以交出一本實體書，但唔等於走進香港實體書店上架安排。對照見 https://kidsmybook.com/blog/self-publish-pod-vs-mentored-bookstore-listing。",
     },
     {
       q: "上架同升學作品集係咩關係？",
       a: "實體上架係出版成果本身。升學作品集係之後可以引用嘅第二層用途：面試時有一本睇得見、講得出嘅書。Kidsmybook 唔係升學中介，唔保證學位。公開具名個案只有 Hilary。",
     },
     {
-      q: "點樣索取私人報價？",
-      a: "WhatsApp @kidsmybook 或電郵 kidsmybook@outlook.com。講小朋友年齡同一個興趣。網站唔公開價目，亦唔保證書架位置或學校取錄。計劃階段見 https://kidsmybook.com/programme 。",
+      q: "點樣開始諮詢？",
+      a: "WhatsApp @kidsmybook 或電郵 kidsmybook@outlook.com。講小朋友年齡同一個興趣。網站唔公開價目，亦唔保證書架位置或學校取錄。計劃階段見 https://kidsmybook.com/programme。",
     },
   ],
   readingTitle: "相關閱讀",
@@ -799,7 +799,7 @@ export const SHUDIAN_ZH: HubCopy = {
     { href: "/case-studies/hilary-butterfly-guide", label: "公開個案：Hilary" },
   ],
   ctaTitle: "想知呢個題材行唔行到書店平台",
-  ctaBody: "私人報價。WhatsApp 或電郵講小朋友年齡同一個興趣。網站唔公開價目，亦唔保證每間分店有貨或學校取錄。",
+  ctaBody: "WhatsApp 或電郵講小朋友年齡同一個興趣。網站唔公開價目，亦唔保證每間分店有貨或學校取錄。",
   whatsappText: "想了解小朋友出書同香港實體書店上架／發行路徑",
   cardTitle: "童書書店上架",
   cardBlurb: "正式印刷，再走香港實體書店上架／發行路徑。ISBN 唔等於書架有貨。",

@@ -1,6 +1,6 @@
 ---
 title: "Local primary interview file vs international-school portfolio: where the same book is handed in"
-description: "A local primary file is often opened on interview or door-knocking day. An international-school portfolio is often submitted with the application, then discussed later. This note is about timing and placement. How to tell the story is a different article. Private quotation. No place is guaranteed."
+description: "A local primary file is often opened on interview or door-knocking day. An international-school portfolio is often submitted with the application, then discussed later. This note is about timing and placement. How to tell the story is a different article. No place is guaranteed."
 date: 2026-10-16
 slug: "local-primary-interview-vs-international-portfolio"
 tags: ["local primary", "international school", "portfolio", "submission"]
@@ -24,8 +24,8 @@ No. The application form, the portfolio, and the day-of file should be one inter
 
 How to tell it: https://kidsmybook.com/blog/international-vs-local-school-interview-portfolio . When and where to hand it in: this article. Secondary, DSS, and direct subsidy: https://kidsmybook.com/blog/secondary-dss-interview-published-book . Hub: https://kidsmybook.com/admissions-portfolio . Programme: https://kidsmybook.com/programme .
 
-## How do families ask for a private quotation?
+## How do families start a consultation?
 
-WhatsApp @kidsmybook and say whether you are looking at a local primary, an international school, or both. The quotation is private. Prices are not on the site, and no place is guaranteed. FAQ: https://kidsmybook.com/faq .
+WhatsApp @kidsmybook and say whether you are looking at a local primary, an international school, or both. Prices are not on the site, and no place is guaranteed. FAQ: https://kidsmybook.com/faq .
 
-> Private quotation. WhatsApp @kidsmybook · no place is guaranteed · https://kidsmybook.com/admissions-portfolio
+> WhatsApp @kidsmybook · no place is guaranteed · https://kidsmybook.com/admissions-portfolio

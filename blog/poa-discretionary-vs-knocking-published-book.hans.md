@@ -1,6 +1,6 @@
 ---
 title: "官津小一自行分配不用作品集：哪些场面才要带正式出版物"
-description: "Kidsmybook 第一句是出书连实体书店上架：导师制正式印刷之后，按题材和配套走香港实体书店。升学作品集是第二层用途。官津小一自行分配按教育局公开说明，家长不用准备作品集，学校也不可以就已学课程知识做测验或面试。直资、私立和国际学校如果收薄文件或者当日容许带实物，才是带一本正式出版物、指着一页讲的场面。叩门不是自行分配。私人报价，不保证每间分店有货，也不保证录取。"
+description: "Kidsmybook 第一句是出书连实体书店上架：导师制正式印刷之后，按题材和配套走香港实体书店。升学作品集是第二层用途。官津小一自行分配按教育局公开说明，家长不用准备作品集，学校也不可以就已学课程知识做测验或面试。直资、私立和国际学校如果收薄文件或者当日容许带实物，才是带一本正式出版物、指着一页讲的场面。叩门不是自行分配。不保证每间分店有货，也不保证录取。"
 date: "2026-10-28"
 slug: "poa-discretionary-vs-knocking-published-book"
 tags: ["自行分配", "官津", "叩门", "实体书店", "ISBN"]
@@ -14,19 +14,19 @@ tags: ["自行分配", "官津", "叩门", "实体书店", "ISBN"]
 
 不用。教育局就这个阶段公开提醒家长：学校按既定程序和准则处理申请，因此家长不用为子女准备作品集。同一套公开的小一入学说明也写明，学校不可以就申请儿童已学的课程知识进行测验或面试。申请要交的，是身份证明、住址证明，以及表格上面计分项目适用时才要的证明。不是一叠奖状，也不是一本书。每年表格、日期和说明，以该年度教育局公布为准。
 
-所以一本正式出版物不是官津自行分配要交的文件，也不会改计分先后。不要把整本书影印进申请，也不要把「自行分配面试」当成这个阶段的要求。升小页讲的几分钟场面，是另外两类：https://kidsmybook.com/primary-one-interview-portfolio 。几分钟里面怎样用一页：https://kidsmybook.com/blog/primary-interview-how-to-use-a-book 。
+所以一本正式出版物不是官津自行分配要交的文件，也不会改计分先后。不要把整本书影印进申请，也不要把「自行分配面试」当成这个阶段的要求。升小页讲的几分钟场面，是另外两类：https://kidsmybook.com/primary-one-interview-portfolio。几分钟里面怎样用一页：https://kidsmybook.com/blog/primary-interview-how-to-use-a-book。
 
 ## 出书连实体书店上架，和官津自行分配是什么关系？
 
-关系是：书先是一件做完的出版成果。官津自行分配不用它做申请文件。这条路不是申请到一个书号就结束。前面是约 12 个月导师制：咨询、导师带领创作、可有大学教授审阅、亲子排版，然后才正式印刷。印刷完成，才谈实体书店上架。上架是发行商供货：书去到香港实体书店之后，书店买手和店长决定进不进货、摆在哪、卖多久、退不退。Kidsmybook 不是书店连锁。上架视题材和配套，不是每本书自动出现在每一间分店。平台说明：https://kidsmybook.com/kids-book-bookstore-listing 。阶段：https://kidsmybook.com/programme 。
+关系是：书先是一件做完的出版成果。官津自行分配不用它做申请文件。这条路不是申请到一个书号就结束。前面是约 12 个月导师制：咨询、导师带领创作、可有大学教授审阅、亲子排版，然后才正式印刷。印刷完成，才谈实体书店上架。上架是发行商供货：书去到香港实体书店之后，书店买手和店长决定进不进货、摆在哪、卖多久、退不退。Kidsmybook 不是书店连锁。上架视题材和配套，不是每本书自动出现在每一间分店。平台说明：https://kidsmybook.com/kids-book-bookstore-listing。阶段：https://kidsmybook.com/programme。
 
-之后如果有一间学校真的收文件，或者当日容许带书，可以引用的一句，是「有正式印刷，再有实体书店上架路径」。不是「我们就是某间书店」，也不是「这本书可以换一个官津学位」。店方决定进货、陈列和退货。ISBN 只是书号，不等于书架：https://kidsmybook.com/blog/isbn-is-not-bookstore-listing 。
+之后如果有一间学校真的收文件，或者当日容许带书，可以引用的一句，是「有正式印刷，再有实体书店上架路径」。不是「我们就是某间书店」，也不是「这本书可以换一个官津学位」。店方决定进货、陈列和退货。ISBN 只是书号，不等于书架：https://kidsmybook.com/blog/isbn-is-not-bookstore-listing。
 
 ## 直资、私立和国际学校，哪些场面才要带正式出版物？
 
-当那间学校收一份薄文件，或者面试当日容许带实物。直资、私立和国际学校不走官津那套计分，收生由学校自己定。有些学校写明收两至五页 A4，有些学校当日可以带一本书。页数、收不收作品集、可不可以带实物，一律以该校最新指引为准。页数怎样放：https://kidsmybook.com/blog/thin-a4-portfolio-published-book 。面试场面怎样讲同一条上架路径：https://kidsmybook.com/blog/physical-bookstore-listing-for-hk-school-interview 。
+当那间学校收一份薄文件，或者面试当日容许带实物。直资、私立和国际学校不走官津那套计分，收生由学校自己定。有些学校写明收两至五页 A4，有些学校当日可以带一本书。页数、收不收作品集、可不可以带实物，一律以该校最新指引为准。页数怎样放：https://kidsmybook.com/blog/thin-a4-portfolio-published-book。面试场面怎样讲同一条上架路径：https://kidsmybook.com/blog/physical-bookstore-listing-for-hk-school-interview。
 
-这个场面才交一页 A4：书名、小朋友做过的部分、ISBN，以及可选的一句实体书店上架路径。其余页留给学校要求的其他文件。总页：https://kidsmybook.com/admissions-portfolio 。清单：https://kidsmybook.com/admissions-portfolio-checklist 。
+这个场面才交一页 A4：书名、小朋友做过的部分、ISBN，以及可选的一句实体书店上架路径。其余页留给学校要求的其他文件。总页：https://kidsmybook.com/admissions-portfolio。清单：https://kidsmybook.com/admissions-portfolio-checklist。
 
 这一页可以这样写，仍然跟该校最新表格：
 
@@ -35,13 +35,13 @@ tags: ["自行分配", "官津", "叩门", "实体书店", "ISBN"]
 - ISBN，用来识别这一个版本
 - 可选一句：正式印刷，并按题材和配套有实体书店上架路径；店方决定进货、陈列和退货
 
-不要在这一页写分店保证，不要写录取承诺，也不要写价钱。面试当日如果容许带实物，就带那本书，指着一页讲，不要由封面读到封底。上传 PDF 和带书是两件事。公开具名例子只有 Hilary，出版时八岁，约一年完成蝴蝶图鉴；这个是出版时间，不是任何学校的面试结果：https://kidsmybook.com/case-studies/hilary-butterfly-guide 。
+不要在这一页写分店保证，不要写录取承诺，也不要写价钱。面试当日如果容许带实物，就带那本书，指着一页讲，不要由封面读到封底。上传 PDF 和带书是两件事。公开具名例子只有 Hilary，出版时八岁，约一年完成蝴蝶图鉴；这个是出版时间，不是任何学校的面试结果：https://kidsmybook.com/case-studies/hilary-butterfly-guide。
 
 ## 统一派位之后的叩门，和自行分配是不是同一件事？
 
 不是。叩门是统一派位结果出来之后，家长上门问一间学校还有没有位。它不是小一入学统筹办法的自行分配阶段，也不走那套计分。见不见人、收不收文件、当日可不可以带实物，由该校当刻决定。如果当日容许带书，就用同一页讲书名、小朋友做过什么，可加一句上架路径。如果当日不见人，或者不收额外文件，就不要临时加一本学校没有要求的文件夹。
 
-官津自行分配不用作品集，不等于之后所有场面都不用讲一本书。分别在于：自行分配不收这份文件；直资、私立、国际学校或者叩门，才可能有一个短的讲法。升小页：https://kidsmybook.com/primary-one-interview-portfolio 。
+官津自行分配不用作品集，不等于之后所有场面都不用讲一本书。分别在于：自行分配不收这份文件；直资、私立、国际学校或者叩门，才可能有一个短的讲法。升小页：https://kidsmybook.com/primary-one-interview-portfolio。
 
 ## 一本正式出版物可不可以保证录取？
 
@@ -51,8 +51,8 @@ tags: ["自行分配", "官津", "叩门", "实体书店", "ISBN"]
 
 如果现在才想起交文件，12 个月计划赶不及这一轮，实体上架路径更不会在这几日内出现。官津自行分配本身不收作品集，更加不用为这一关赶印。直资、私立或国际学校如果面试只剩几日或几星期，同样不要赶一本弱书塞进文件夹。这篇不会叫你用版面模板砌一本充当正式出版物。出书连上架适合下一个还有大约一年的周期。
 
-## 怎样私人报价？
+## 怎样开始咨询？
 
-网站不公开价目，也不保证书架位置或学校录取。报价之前可以先讲三样：小朋友年龄和现在读哪个阶段、目标是官津自行分配、直资／私立／国际学校，还是叩门、以及一个会自己翻开来做的兴趣。WhatsApp @kidsmybook 或电邮 kidsmybook@outlook.com 。
+网站不公开价目，也不保证书架位置或学校录取。咨询之前可以先讲三样：小朋友年龄和现在读哪个阶段、目标是官津自行分配、直资／私立／国际学校，还是叩门、以及一个会自己翻开来做的兴趣。WhatsApp @kidsmybook 或电邮 kidsmybook@outlook.com。
 
-> 私人报价。WhatsApp @kidsmybook · kidsmybook@outlook.com · 出书连实体书店上架：https://kidsmybook.com/kids-book-bookstore-listing
+> WhatsApp @kidsmybook · kidsmybook@outlook.com · 出书连实体书店上架：https://kidsmybook.com/kids-book-bookstore-listing
