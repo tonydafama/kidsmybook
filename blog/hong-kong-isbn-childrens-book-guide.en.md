@@ -1,6 +1,6 @@
 ---
 title: "Hong Kong ISBN for children's books: 7 things parents should know"
-description: "Facts from the Hong Kong Public Libraries Books Registration Office on ISBN, legal deposit, and copyright. Kidsmybook is not the official agency. Private quotation only."
+description: "Facts from the Hong Kong Public Libraries Books Registration Office on ISBN, legal deposit, and copyright. Kidsmybook is not the official agency."
 date: 2026-10-16
 slug: "hong-kong-isbn-childrens-book-guide"
 tags: ["ISBN", "books registration", "children's books", "Hong Kong"]
@@ -20,7 +20,7 @@ Numbers for publishers operating in Hong Kong are assigned by the Books Registra
 
 ## Does the Books Registration Office charge for an ISBN?
 
-The office states that no application fee is required. How many numbers are issued depends on the publisher’s actual need and past registration record. In general, each application issues no fewer than ten ISBNs. Another batch is available after about 70 percent have been used and the related books have been delivered for registration under the Books Registration Ordinance. “No application fee” describes the Books Registration Office. It is not a Kidsmybook price. The publishing programme is quoted privately from the child’s topic and package. This site does not list prices.
+The office states that no application fee is required. How many numbers are issued depends on the publisher’s actual need and past registration record. In general, each application issues no fewer than ten ISBNs. Another batch is available after about 70 percent have been used and the related books have been delivered for registration under the Books Registration Ordinance. “No application fee” describes the Books Registration Office. It is not a Kidsmybook price. This site does not list prices.
 
 ## Do ISBNs expire, and can a family reuse someone else’s number?
 
@@ -36,6 +36,6 @@ No. The ISBN is an identifier. Books registration is a separate step. Hong Kong 
 
 ## Does an ISBN guarantee a school place?
 
-No. A number makes a book easier to identify, order, and cite, so a portfolio can describe a formal publication rather than only a keepsake. The number does not prove the depth of the work, and it does not guarantee admission. Inside the 12-month programme, Kidsmybook handles the book number and related publishing arrangements to formal-publication requirements, so a family does not have to start from zero. Professor review, the child’s own participation, and the portfolio narrative are what an interview can actually discuss. Programme: https://kidsmybook.com/programme . FAQ: https://kidsmybook.com/faq .
+No. A number makes a book easier to identify, order, and cite, so a portfolio can describe a formal publication rather than only a keepsake. The number does not prove the depth of the work, and it does not guarantee admission. Inside the 12-month programme, Kidsmybook handles the book number and related publishing arrangements to formal-publication requirements, so a family does not have to start from zero. Professor guidance, the child’s own participation, and the portfolio narrative are what an interview can actually discuss. Programme: https://kidsmybook.com/programme . FAQ: https://kidsmybook.com/faq .
 
-> Private quotation. WhatsApp @kidsmybook · kidsmybook@outlook.com . This article helps parents read public information. Application details follow the latest notice from the Books Registration Office, Hong Kong Public Libraries.
+> WhatsApp @kidsmybook · kidsmybook@outlook.com . This article helps parents read public information. Application details follow the latest notice from the Books Registration Office, Hong Kong Public Libraries.

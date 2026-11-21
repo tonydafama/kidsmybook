@@ -1,6 +1,6 @@
 ---
 title: "Book Fair booth ≠ year-round bookstore listing: how parents can tell them apart"
-description: "Seeing a book at a Hong Kong Book Fair booth or a publisher stall is not year-round stock at Hong Kong physical bookstores. Listing is a supply path. Buyers and store managers decide stock, display, and returns. Kidsmybook’s lead is a mentored book plus a listing path, not a fair booth and not an ISBN alone. Private quotation. No branch and no school place are guaranteed."
+description: "Seeing a book at a Hong Kong Book Fair booth or a publisher stall is not year-round stock at Hong Kong physical bookstores. Listing is a supply path. Buyers and store managers decide stock, display, and returns. Kidsmybook’s lead is a mentored book plus a listing path, not a fair booth and not an ISBN alone. No branch and no school place are guaranteed."
 date: 2026-10-20
 slug: "book-fair-booth-vs-year-round-bookstore-listing"
 tags: ["Hong Kong Book Fair", "bookstore listing", "children's publishing", "Hong Kong"]
@@ -28,8 +28,8 @@ The portfolio is a second use, not the first sentence of the programme. An inter
 
 No. Listing is a path and an arrangement. It depends on the title and the package. The store decides stock, display, and returns. A book seen at a fair booth, and a copy in stock at branches through the year, are two different sentences. Kidsmybook is not a bookstore chain.
 
-## How do families ask for a private quotation?
+## How do families start a consultation?
 
 Prices are not on the site. WhatsApp @kidsmybook or email kidsmybook@outlook.com . Share the child’s age and one interest they want to finish. If someone has already said “published at the book fair”, say whether that means a stall appearance, a book number, or a question about a year-round bookstore platform.
 
-> Private quotation. WhatsApp @kidsmybook · kidsmybook@outlook.com · publishing and a listing path: https://kidsmybook.com/kids-book-bookstore-listing
+> WhatsApp @kidsmybook · kidsmybook@outlook.com · publishing and a listing path: https://kidsmybook.com/kids-book-bookstore-listing

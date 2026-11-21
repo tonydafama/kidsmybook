@@ -24,7 +24,7 @@ For children with deep research in a specific field, Kidsmybook offers a complet
 If your child has deeply researched marine biology, rather than letting them talk to themselves at home, guide them to systematize that knowledge into a book like *An Investigation of Hong Kong's Intertidal Organisms*. This isn't just organizing knowledge; it's transforming intangible talent into a tangible asset.
 
 ### 2. Conversing with Top Academic Minds
-Gifted children often find their peers' topics too childish. In our publishing programme, children have the opportunity for direct academic exchange with **university professors**. The professor's review and guidance can elevate the child's thinking to a whole new level—an experience no primary or secondary classroom can provide.
+Gifted children often find their peers' topics too childish. In our publishing programme, children have the opportunity for direct academic exchange with **university professors**. The professor's guidance can elevate the child's thinking to a whole new level—an experience no primary or secondary classroom can provide.
 
 ### 3. A Paradigm-Shifting Admissions Portfolio
 When a child brings a monograph they wrote themselves, registered with an ISBN, and recommended by a university professor to a secondary school or university interview, they are no longer an ordinary applicant. They are conversing with examiners as a "young scholar." This aura and background are unmatched by any test score.

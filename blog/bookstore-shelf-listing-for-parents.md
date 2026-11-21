@@ -24,7 +24,7 @@ Kidsmybook 係香港一間做兒童出版嘅工作室。上架係按題材同配
 
 上面係一位家長形容「睇到架上有書」嘅感受。公開網站只具名 Hilary 呢個出版個案，唔會將任何家長故事寫成保證。Kidsmybook 唔係某間書店。上架視題材同配套。店長決定入貨、陳列位置同退貨，唔保證每一間分店都有每一本。
 
-完整說明見童書書店上架頁：https://kidsmybook.com/kids-book-bookstore-listing 。12 個月計劃入面，印刷與上架係最後階段：https://kidsmybook.com/programme 。自費出書同導師制嘅分別：https://kidsmybook.com/blog/self-publishing-vs-mentored-publishing 。只有書號唔等於上架：https://kidsmybook.com/blog/isbn-is-not-bookstore-listing 。自費、POD、代印同實體上架：https://kidsmybook.com/blog/self-publish-pod-vs-mentored-bookstore-listing 。
+完整說明見童書書店上架頁：https://kidsmybook.com/kids-book-bookstore-listing。12 個月計劃入面，印刷與上架係最後階段：https://kidsmybook.com/programme。自費出書同導師制嘅分別：https://kidsmybook.com/blog/self-publishing-vs-mentored-publishing。只有書號唔等於上架：https://kidsmybook.com/blog/isbn-is-not-bookstore-listing。自費、POD、代印同實體上架：https://kidsmybook.com/blog/self-publish-pod-vs-mentored-bookstore-listing。
 
 ## 實體上架係咪保證每間分店都有貨？
 
@@ -32,4 +32,4 @@ Kidsmybook 係香港一間做兒童出版嘅工作室。上架係按題材同配
 
 ## 升學作品集同書店上架係咩關係？
 
-上架係出版成果。升學作品集係之後可以引用嘅用途，唔係保證取錄。Kidsmybook 唔係升學中介。報價私人，網站唔公開價目。WhatsApp @kidsmybook 或電郵 kidsmybook@outlook.com 。
+上架係出版成果。升學作品集係之後可以引用嘅用途，唔係保證取錄。Kidsmybook 唔係升學中介。網站唔公開價目。WhatsApp @kidsmybook 或電郵 kidsmybook@outlook.com。

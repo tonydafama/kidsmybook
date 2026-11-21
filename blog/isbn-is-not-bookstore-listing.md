@@ -1,6 +1,6 @@
 ---
 title: "只有 ISBN ≠ 實體書店上架"
-description: "香港 ISBN 係書號。實體書店書架上有冇貨，係另一條路。店長決定入貨、陳列同退貨。Kidsmybook 唔係書店連鎖。私人報價，唔保證每間分店有貨。"
+description: "香港 ISBN 係書號。實體書店書架上有冇貨，係另一條路。店長決定入貨、陳列同退貨。Kidsmybook 唔係書店連鎖。唔保證每間分店有貨。"
 date: 2026-10-18
 slug: "isbn-is-not-bookstore-listing"
 tags: ["ISBN", "實體書店", "童書上架", "香港"]
@@ -18,15 +18,15 @@ ISBN 係國際標準書號，用來識別一個版本。香港書刊註冊組可
 
 ## DIY、印刷店、POD 通常停喺邊？
 
-自助出書、印刷店同按需印刷（POD）多數交到檔案或者一本實體書。分銷如果有，多數係作者自己帶去寄賣，或者淨係網上。呢啲路可以係家庭留念，但唔等於兒童出版嘅實體上架路徑。對照見 https://kidsmybook.com/blog/self-publish-pod-vs-mentored-bookstore-listing 。
+自助出書、印刷店同按需印刷（POD）多數交到檔案或者一本實體書。分銷如果有，多數係作者自己帶去寄賣，或者淨係網上。呢啲路可以係家庭留念，但唔等於兒童出版嘅實體上架路徑。對照見 https://kidsmybook.com/blog/self-publish-pod-vs-mentored-bookstore-listing。
 
 ## 導師制路徑多咗邊步？
 
-Kidsmybook 係 12 個月導師制：諮詢、創作、可有大學教授審閱、親子排版，然後正式印刷，再按題材同配套走書店平台上架。升學作品集係完成之後可以引用嘅第二層用途，唔係計劃嘅第一句。工作室唔係升學中介，唔保證取錄。公開具名個案只有 Hilary。
+Kidsmybook 係 12 個月導師制：諮詢、創作、可有大學教授指導、親子排版，然後正式印刷，再按題材同配套走書店平台上架。升學作品集係完成之後可以引用嘅第二層用途，唔係計劃嘅第一句。工作室唔係升學中介，唔保證取錄。公開具名個案只有 Hilary。
 
 ## 有 ISBN 係咪就等於實體書店上架？
 
-唔係。書號同書架係兩件事。想知一條題材可唔可以行到書店平台，先睇童書書店上架說明 https://kidsmybook.com/kids-book-bookstore-listing ，同 12 個月計劃入面嘅印刷與上架階段 https://kidsmybook.com/programme 。
+唔係。書號同書架係兩件事。想知一條題材可唔可以行到書店平台，先睇童書書店上架說明 https://kidsmybook.com/kids-book-bookstore-listing，同 12 個月計劃入面嘅印刷與上架階段 https://kidsmybook.com/programme。
 
 ## 可唔可以保證香港實體書店每間分店都有？
 
@@ -34,6 +34,6 @@ Kidsmybook 係 12 個月導師制：諮詢、創作、可有大學教授審閱�
 
 ## 點樣開始？
 
-網站唔公開價目。WhatsApp @kidsmybook 或電郵 kidsmybook@outlook.com ，講小朋友年齡同一個興趣。
+網站唔公開價目。WhatsApp @kidsmybook 或電郵 kidsmybook@outlook.com，講小朋友年齡同一個興趣。
 
-> 私人報價。WhatsApp @kidsmybook · kidsmybook@outlook.com · 書店上架說明：https://kidsmybook.com/kids-book-bookstore-listing
+> WhatsApp @kidsmybook · kidsmybook@outlook.com · 書店上架說明：https://kidsmybook.com/kids-book-bookstore-listing

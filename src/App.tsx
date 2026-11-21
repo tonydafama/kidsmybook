@@ -127,7 +127,7 @@ function HomePage({ services }: { services: ServiceItem[] }) {
         <div className="hero-copy">
           <p className="eyebrow">{t.hero.eyebrow}</p>
           <h1>{t.brandTitle}</h1>
-          <p className="lead">{t.hero.lead}</p>
+          {t.hero.lead && t.hero.lead !== t.brandTitle ? <p className="lead">{t.hero.lead}</p> : null}
           <div className="cta-row hero-cta-row">
             <a className="btn primary" href={whatsapp} target="_blank" rel="noreferrer">
               {t.hero.bookConsult}
@@ -304,7 +304,7 @@ function ServicesIndexPage({ services }: { services: ServiceItem[] }) {
                 <p className="icon">{item.icon}</p>
                 <h4>{item.title}</h4>
                 <p>{item.desc}</p>
-                <p className="price">{item.price}</p>
+                {item.price ? <p className="price">{item.price}</p> : null}
               </div>
             </a>
           ))}
@@ -324,7 +324,7 @@ function ServiceDetailPage({ item }: { item: ServiceItem }) {
         <h2>{item.title}</h2>
         <p className="lead">{item.desc}</p>
         <p>{item.detail}</p>
-        <p className="price">{item.price}</p>
+        {item.price ? <p className="price">{item.price}</p> : null}
         <h3>{t.services.suitableFor}</h3>
         <ul className="privacy-list">
           {item.audience.map((row) => (

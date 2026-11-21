@@ -104,7 +104,7 @@ This gets all 21 blog posts into Google's index queue within days.
 3. Website: https://kidsmybook.com
 4. Do not publish a studio phone number. Public contact is WhatsApp @kidsmybook and kidsmybook@outlook.com.
 5. Description (copy-paste):
-   "Hong Kong's child-authored book publishing studio. We turn a child's genuine interest into a formally published, ISBN-registered book with university professor review, on a Hong Kong physical bookstore listing / distribution path. Designed as a Primary 1 and international school admissions portfolio asset. Kidsmybook is not a bookstore chain. Store managers decide stock."
+   "Hong Kong's child-authored book publishing studio. We turn a child's genuine interest into a formally published, ISBN-registered book with university professor guidance, on a Hong Kong physical bookstore listing / distribution path. Designed as a Primary 1 and international school admissions portfolio asset. Kidsmybook is not a bookstore chain. Store managers decide stock."
 This is the single highest-ROI action — Google AI Overview cites GBP listings directly.
 
 ### D. Xiaohongshu brand account posts

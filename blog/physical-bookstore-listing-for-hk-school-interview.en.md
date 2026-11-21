@@ -1,6 +1,6 @@
 ---
 title: "Publishing plus a physical bookstore listing: what to say in a Hong Kong primary, secondary, or international-school interview"
-description: "Kidsmybook leads with publishing plus a physical bookstore listing: a formal print run, then a path toward a Hong Kong physical bookstore listing / distribution path. The store decides stock, display, and returns. A school interview is a second use. The same listing path can add one checkable sentence to a primary, secondary, or international-school conversation, rather than an ISBN number alone. Private quotation. No branch and no school place are guaranteed."
+description: "Kidsmybook leads with publishing plus a physical bookstore listing: a formal print run, then a path toward a Hong Kong physical bookstore listing / distribution path. The store decides stock, display, and returns. A school interview is a second use. The same listing path can add one checkable sentence to a primary, secondary, or international-school conversation, rather than an ISBN number alone. No branch and no school place are guaranteed."
 date: "2026-10-24"
 slug: "physical-bookstore-listing-for-hk-school-interview"
 tags: ["bookstore listing", "school interview", "primary", "secondary", "international school"]
@@ -12,7 +12,7 @@ A teacher is unlikely to walk into a branch and count copies during the meeting.
 
 ## What is the path behind publishing plus a physical bookstore listing?
 
-The path does not end when a book number is issued. The front of it is an about-12-month mentored programme: a consultation, mentor-led making, a university professor review when it fits, parent-and-child layout, and only then a formal print run. Listing is discussed after the book is printed. Listing is a distributor supply path. Once the title reaches a Hong Kong physical bookstore listing / distribution path, the store buyer and the store manager decide whether to take it in, where to place it, how long it stays, and whether to return it. Kidsmybook is not a bookstore chain. Listing depends on the title and package. A title does not appear in every branch by itself. The platform page: https://kidsmybook.com/kids-book-bookstore-listing . The stages: https://kidsmybook.com/programme .
+The path does not end when a book number is issued. The front of it is an about-12-month mentored programme: a consultation, mentor-led making, a university professor guidance when it fits, parent-and-child layout, and only then a formal print run. Listing is discussed after the book is printed. Listing is a distributor supply path. Once the title reaches a Hong Kong physical bookstore listing / distribution path, the store buyer and the store manager decide whether to take it in, where to place it, how long it stays, and whether to return it. Kidsmybook is not a bookstore chain. Listing depends on the title and package. A title does not appear in every branch by itself. The platform page: https://kidsmybook.com/kids-book-bookstore-listing . The stages: https://kidsmybook.com/programme .
 
 The sentence a parent can actually say is “it was formally printed, and it has a physical bookstore listing path”. It is not “we are a bookstore chain”, and it is not “every branch has a copy today”. The store decides stock, display, and returns. The only named public case is Hilary, who was eight and spent about a year on a butterfly guide. That is a publishing timeline, not an interview result at any school: https://kidsmybook.com/case-studies/hilary-butterfly-guide .
 
@@ -40,8 +40,8 @@ No. Kidsmybook is a publishing studio. It is not an admissions agent, it has no 
 
 If the interview or the door-knocking round is only days or weeks away, the 12-month plan will not finish for this round, and a physical listing path will not appear in those days either. This page will not ask a family to rush a print run now. Talk about one piece already in hand. Publishing plus a listing fits the next cycle that still has about a year. When the timing is too tight: https://kidsmybook.com/blog/portfolio-not-ready-before-interview .
 
-## How do families ask for a private quotation?
+## How do families start a consultation?
 
-Prices are not on the site. No shelf position and no school place are guaranteed. Before a quotation, three details help: the child’s age and current stage, whether the target is primary, secondary, or an international school, and one interest the child will open and work on. If someone has already said “an ISBN means the bookstores have it”, say that too. We will separate the book number, the printed copy, and the physical listing path first. WhatsApp @kidsmybook or email kidsmybook@outlook.com .
+Prices are not on the site. No shelf position and no school place are guaranteed. Before a consultation, three details help: the child’s age and current stage, whether the target is primary, secondary, or an international school, and one interest the child will open and work on. If someone has already said “an ISBN means the bookstores have it”, say that too. We will separate the book number, the printed copy, and the physical listing path first. WhatsApp @kidsmybook or email kidsmybook@outlook.com .
 
-> Private quotation. WhatsApp @kidsmybook · kidsmybook@outlook.com · publishing plus a physical bookstore listing: https://kidsmybook.com/kids-book-bookstore-listing
+> WhatsApp @kidsmybook · kidsmybook@outlook.com · publishing plus a physical bookstore listing: https://kidsmybook.com/kids-book-bookstore-listing

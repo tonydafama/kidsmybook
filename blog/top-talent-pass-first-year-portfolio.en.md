@@ -23,7 +23,7 @@ For Top Talent Pass families, the most effective strategy is a **paradigm shift*
 **Publishing a dedicated physical book** is the best card you can play.
 
 ### 1. Quickly Establish Authority
-Kidsmybook's publishing programme includes **review and recommendation by university professors**. For new Hong Kong families who lack local connections and endorsements, this is a highly credible academic validation.
+Kidsmybook's publishing programme includes **guidance and recommendation by university professors**. For new Hong Kong families who lack local connections and endorsements, this is a highly credible academic validation.
 
 ### 2. Demonstrate Active Exploration
 The birth of a book requires a child to actively observe, think, and create. This sends a strong message to the interviewer: this child is not passively receiving spoon-fed education, but possesses the ability for self-driven learning.

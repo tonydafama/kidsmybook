@@ -1,6 +1,6 @@
 ---
 title: "國際學校 vs 本地學校面試：出版作品集有咩分別"
-description: "同一本小朋友嘅書，國際學校同本地、直資、私立面試嘅講法唔同。講語言、自述同證據點樣準備，而唔係做兩套故事。私人報價，唔保證取錄。"
+description: "同一本小朋友嘅書，國際學校同本地、直資、私立面試嘅講法唔同。講語言、自述同證據點樣準備，而唔係做兩套故事。唔保證取錄。"
 date: 2026-10-16
 slug: "international-vs-local-school-interview-portfolio"
 tags: ["國際學校", "本地學校", "面試", "作品集"]
@@ -14,14 +14,14 @@ tags: ["國際學校", "本地學校", "面試", "作品集"]
 
 ## 語言應該用中文定英文？
 
-視乎目標學校，諮詢時先定，可以係中文、英文或中英雙語。如果兩邊都申請，書裡面保留小朋友自己嘅觀察同句子，再按面試語言準備口述，而唔係出兩本內容對不上嘅書。國際學校面試點解「一件做得深」比「樣樣都學」更易被記住，見：https://kidsmybook.com/blog/international-school-interview-portfolio-highlight 。
+視乎目標學校，諮詢時先定，可以係中文、英文或中英雙語。如果兩邊都申請，書裡面保留小朋友自己嘅觀察同句子，再按面試語言準備口述，而唔係出兩本內容對不上嘅書。國際學校面試點解「一件做得深」比「樣樣都學」更易被記住，見：https://kidsmybook.com/blog/international-school-interview-portfolio-highlight。
 
 ## 兩種學校可唔可以共用同一個故事？
 
-可以，而且應該共用。故事係：興趣點嚟、做過邊啲觀察或資料整理、邊頁係小朋友決定、邊度改過。國際學校面試可以多用項目同提問；本地或直資面試可以多用「打開呢一頁」同家庭點樣一齊完成。證據係同一本有 ISBN、可有教授審閱嘅出版物。
+可以，而且應該共用。故事係：興趣點嚟、做過邊啲觀察或資料整理、邊頁係小朋友決定、邊度改過。國際學校面試可以多用項目同提問；本地或直資面試可以多用「打開呢一頁」同家庭點樣一齊完成。證據係同一本有 ISBN、可有教授指導嘅出版物。
 
-呢個分別唔等於保證入到國際學校或本地學校。Kidsmybook 唔係升學中介。升小學用法：https://kidsmybook.com/blog/primary-interview-how-to-use-a-book 。升中、DSS 同直資：https://kidsmybook.com/blog/secondary-dss-interview-published-book 。總頁：https://kidsmybook.com/admissions-portfolio 。
+呢個分別唔等於保證入到國際學校或本地學校。Kidsmybook 唔係升學中介。升小學用法：https://kidsmybook.com/blog/primary-interview-how-to-use-a-book。升中、DSS 同直資：https://kidsmybook.com/blog/secondary-dss-interview-published-book。總頁：https://kidsmybook.com/admissions-portfolio。
 
-WhatsApp @kidsmybook ，講你同時睇緊邊類學校。報價私人，網站唔公開價目。
+WhatsApp @kidsmybook，講你同時睇緊邊類學校。網站唔公開價目。
 
-> 私人報價。WhatsApp @kidsmybook · 唔保證取錄 · https://kidsmybook.com/admissions-portfolio
+> WhatsApp @kidsmybook · 唔保證取錄 · https://kidsmybook.com/admissions-portfolio

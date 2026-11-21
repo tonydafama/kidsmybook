@@ -1,6 +1,6 @@
 ---
 title: "幼稚園作品集：細路都出得書嗎？"
-description: "K1–K3 可以用圖畫、觀察同口述故事做一本保留小朋友聲音嘅書。深度由導師同家長把關。唔係大人作文，亦唔保證入學。私人報價。"
+description: "K1–K3 可以用圖畫、觀察同口述故事做一本保留小朋友聲音嘅書。深度由導師同家長把關。唔係大人作文，亦唔保證入學。"
 date: 2026-10-13
 slug: "kindergarten-portfolio-book"
 tags: ["幼稚園", "作品集", "K1", "兒童出版"]
@@ -30,6 +30,6 @@ Kidsmybook 嘅計劃大約由 3 歲起到 18 歲，以興趣帶動。幼稚園�
 
 ## 點樣做初步了解？
 
-報價仍然私人，網站唔公開價目。WhatsApp @kidsmybook 或電郵 kidsmybook@outlook.com ，講小朋友讀 K1、K2 定 K3、一個興趣，同你最想作品集解決嘅問題。計劃全貌：https://kidsmybook.com/programme 。升學作品集頁：https://kidsmybook.com/admissions-portfolio 。
+，網站唔公開價目。WhatsApp @kidsmybook 或電郵 kidsmybook@outlook.com，講小朋友讀 K1、K2 定 K3、一個興趣，同你最想作品集解決嘅問題。計劃全貌：https://kidsmybook.com/programme。升學作品集頁：https://kidsmybook.com/admissions-portfolio。
 
-> 私人報價。WhatsApp @kidsmybook · kidsmybook@outlook.com · https://kidsmybook.com/programme
+> WhatsApp @kidsmybook · kidsmybook@outlook.com · https://kidsmybook.com/programme

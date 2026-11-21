@@ -1,6 +1,6 @@
 ---
 title: "Primary interview portfolio: how to use one published book"
-description: "Primary discretionary interviews and door-knocking are short. A thick certificate file is hard to remember. This is how a child-made ISBN book gives one story to tell. Private quotation. No school place is guaranteed."
+description: "Primary discretionary interviews and door-knocking are short. A thick certificate file is hard to remember. This is how a child-made ISBN book gives one story to tell. No school place is guaranteed."
 date: 2026-10-16
 slug: "primary-interview-how-to-use-a-book"
 tags: ["升小學", "面試", "作品集", "叩門"]
@@ -34,8 +34,8 @@ The named public case is Hilary: age 8 at publication, a bilingual butterfly gui
 
 ## How do you tell if it fits?
 
-Share the child's age, whether the target is a local, private, DSS, or international primary, and one interest. The quotation is private. Prices are not on the site. Secondary and DSS use is different: https://kidsmybook.com/blog/secondary-dss-interview-published-book . International and local interviews: https://kidsmybook.com/blog/international-vs-local-school-interview-portfolio . Hub: https://kidsmybook.com/admissions-portfolio . Primary interview page: https://kidsmybook.com/primary-one-interview-portfolio . Interview class versus ISBN publishing: https://kidsmybook.com/blog/interview-class-vs-isbn-published-book .
+Share the child's age, whether the target is a local, private, DSS, or international primary, and one interest. Prices are not on the site. Secondary and DSS use is different: https://kidsmybook.com/blog/secondary-dss-interview-published-book . International and local interviews: https://kidsmybook.com/blog/international-vs-local-school-interview-portfolio . Hub: https://kidsmybook.com/admissions-portfolio . Primary interview page: https://kidsmybook.com/primary-one-interview-portfolio . Interview class versus ISBN publishing: https://kidsmybook.com/blog/interview-class-vs-isbn-published-book .
 
 WhatsApp @kidsmybook or email kidsmybook@outlook.com .
 
-> Private quotation. WhatsApp @kidsmybook · no place is guaranteed · https://kidsmybook.com/admissions-portfolio
+> WhatsApp @kidsmybook · no place is guaranteed · https://kidsmybook.com/admissions-portfolio

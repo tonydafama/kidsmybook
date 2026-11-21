@@ -1,6 +1,6 @@
 ---
 title: "升中面试、DSS 和直资：作品集怎样放一本出版物"
-description: "升中、直资和 DSS 面试想看持续兴趣和自述。讲一本正式出版物可以放在作品集前面，和证书堆有什么分别。私人报价，不保证录取。"
+description: "升中、直资和 DSS 面试想看持续兴趣和自述。讲一本正式出版物可以放在作品集前面，和证书堆有什么分别。不保证录取。"
 date: 2026-10-16
 slug: "secondary-dss-interview-published-book"
 tags: ["升中", "DSS", "直資", "作品集"]
@@ -14,14 +14,14 @@ tags: ["升中", "DSS", "直資", "作品集"]
 
 ## 出版物应该放在作品集哪里？
 
-放在最前，作为一项做完的项目，而不是夹在证书中间。一页纸写清楚：题目、小朋友做过的部分、有没有大学教授审阅、出版年份，以及面试时准备讲的一页。后面才放其他活动。自费印刷和导师制出版的分别，见：https://kidsmybook.com/blog/self-publishing-vs-mentored-publishing 。教授审阅是参与和意见，不是录取保证：https://kidsmybook.com/blog/university-professor-child-work-review 。
+放在最前，作为一项做完的项目，而不是夹在证书中间。一页纸写清楚：题目、小朋友做过的部分、有没有大学教授指导、出版年份，以及面试时准备讲的一页。后面才放其他活动。自费印刷和导师制出版的分别，见：https://kidsmybook.com/blog/self-publishing-vs-mentored-publishing。教授指导是参与和意见，不是录取保证：https://kidsmybook.com/blog/university-professor-child-work-review。
 
 ## 这本书可不可以保证升中录取？
 
 不可以。出版工作室不是升学中介，不保证直资、DSS、私立或官津中学的录取。学校才决定。书的作用是给面试一个讲得完的故事，以及一件可以引用的正式出版物。
 
-升小学的用法见：https://kidsmybook.com/blog/primary-interview-how-to-use-a-book 。国际学校和本地学校怎样讲同一本书：https://kidsmybook.com/blog/international-vs-local-school-interview-portfolio 。总页：https://kidsmybook.com/admissions-portfolio 。升中专页：https://kidsmybook.com/secondary-dss-admissions-portfolio 。升小面试专页：https://kidsmybook.com/primary-one-interview-portfolio 。
+升小学的用法见：https://kidsmybook.com/blog/primary-interview-how-to-use-a-book。国际学校和本地学校怎样讲同一本书：https://kidsmybook.com/blog/international-vs-local-school-interview-portfolio。总页：https://kidsmybook.com/admissions-portfolio。升中专页：https://kidsmybook.com/secondary-dss-admissions-portfolio。升小面试专页：https://kidsmybook.com/primary-one-interview-portfolio。
 
-WhatsApp @kidsmybook ，讲年龄、现在读几年级、目标是直资、DSS 还是其他中学，以及一个兴趣。报价私人，网站不公开价目。
+WhatsApp @kidsmybook，讲年龄、现在读几年级、目标是直资、DSS 还是其他中学，以及一个兴趣。网站不公开价目。
 
-> 私人报价。WhatsApp @kidsmybook · 不保证录取 · https://kidsmybook.com/admissions-portfolio
+> WhatsApp @kidsmybook · 不保证录取 · https://kidsmybook.com/admissions-portfolio

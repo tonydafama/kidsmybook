@@ -1,6 +1,6 @@
 ---
 title: "升中 Clear Book／個人學習檔案：點樣放一本正式出版物"
-description: "Kidsmybook 第一句係出書連實體書店上架：導師制正式印刷之後，按題材同配套走香港實體書店。升中 Clear Book 同個人學習檔案係第二層用途。成績表、證書同自述仍然要交，書唔取代呢三樣。放最前一頁 A4：書名、小朋友做過咩、ISBN，可加一句實體書店上架路徑。唔好將成本書影印入 Clear Book。面試當日帶實體書，指住一頁講。時間緊就等下一個申請周期，唔好趕一本弱書。私人報價，唔保證每間分店有貨，亦唔保證取錄。"
+description: "Kidsmybook 第一句係出書連實體書店上架：導師制正式印刷之後，按題材同配套走香港實體書店。升中 Clear Book 同個人學習檔案係第二層用途。成績表、證書同自述仍然要交，書唔取代呢三樣。放最前一頁 A4：書名、小朋友做過咩、ISBN，可加一句實體書店上架路徑。唔好將成本書影印入 Clear Book。面試當日帶實體書，指住一頁講。時間緊就等下一個申請周期，唔好趕一本弱書。唔保證每間分店有貨，亦唔保證取錄。"
 date: "2026-10-27"
 slug: "clear-book-personal-learning-file-published-book"
 tags: ["升中", "Clear Book", "個人學習檔案", "實體書店", "ISBN"]
@@ -12,19 +12,19 @@ Clear Book 喺呢篇係指家長帶去升中、直資或 DSS 面試、可以逐�
 
 ## 出書連實體書店上架，同升中 Clear Book 係咩關係？
 
-關係係：書先係一件做完嘅出版成果，Clear Book 同個人學習檔案先至決定點樣引用佢。條路唔係申請到一個書號就完。前面係約 12 個月導師制：諮詢、導師帶領創作、可有大學教授審閱、親子排版，然後先正式印刷。印刷完成，先至談實體書店上架。上架係發行商供貨：書去到香港實體書店之後，書店買手同店長決定入唔入貨、擺喺邊、賣幾耐、退唔退。Kidsmybook 唔係書店連鎖。上架視題材同配套，唔係每本書自動出現喺每一間分店。平台說明：https://kidsmybook.com/kids-book-bookstore-listing 。階段：https://kidsmybook.com/programme 。
+關係係：書先係一件做完嘅出版成果，Clear Book 同個人學習檔案先至決定點樣引用佢。條路唔係申請到一個書號就完。前面係約 12 個月導師制：諮詢、導師帶領創作、可有大學教授指導、親子排版，然後先正式印刷。印刷完成，先至談實體書店上架。上架係發行商供貨：書去到香港實體書店之後，書店買手同店長決定入唔入貨、擺喺邊、賣幾耐、退唔退。Kidsmybook 唔係書店連鎖。上架視題材同配套，唔係每本書自動出現喺每一間分店。平台說明：https://kidsmybook.com/kids-book-bookstore-listing。階段：https://kidsmybook.com/programme。
 
-所以文件夾上面可以引用嘅一句，係「有正式印刷，再有實體書店上架路徑」。唔係「我哋就係某間書店」，亦唔係「保證每間分店今日有貨」。店方決定入貨、陳列同退貨。ISBN 只係書號，唔等於書架：https://kidsmybook.com/blog/isbn-is-not-bookstore-listing 。面試場面點講同一條路徑：https://kidsmybook.com/blog/physical-bookstore-listing-for-hk-school-interview 。升中頁：https://kidsmybook.com/secondary-dss-admissions-portfolio 。
+所以文件夾上面可以引用嘅一句，係「有正式印刷，再有實體書店上架路徑」。唔係「我哋就係某間書店」，亦唔係「保證每間分店今日有貨」。店方決定入貨、陳列同退貨。ISBN 只係書號，唔等於書架：https://kidsmybook.com/blog/isbn-is-not-bookstore-listing。面試場面點講同一條路徑：https://kidsmybook.com/blog/physical-bookstore-listing-for-hk-school-interview。升中頁：https://kidsmybook.com/secondary-dss-admissions-portfolio。
 
 ## 個人學習檔案通常要成績表、證書同自述，書可唔可以取代？
 
 唔可以。升中、直資同 DSS 嘅個人學習檔案，常見仍然要成績表、證書同自述。一本正式出版物唔取代呢三樣。學校要嘅表格、成績同證明，照該校最新指引交。書係額外放喺前面嘅一件：可以翻開，面試時講得出小朋友做過咩。佢唔係成績，唔係推薦信，亦唔係取錄。
 
-升中作品集點樣放一本出版物，另一篇講過位置：https://kidsmybook.com/blog/secondary-dss-interview-published-book 。呢篇集中 Clear Book 同個人學習檔案：前面加一頁，而唔係用書換走學校要求嘅文件。
+升中作品集點樣放一本出版物，另一篇講過位置：https://kidsmybook.com/blog/secondary-dss-interview-published-book。呢篇集中 Clear Book 同個人學習檔案：前面加一頁，而唔係用書換走學校要求嘅文件。
 
 ## Clear Book 點樣放一本正式出版物？
 
-放最前，交一頁 A4，唔好將成本書影印入 Clear Book。一頁寫四樣：書名、小朋友做過咩、ISBN，同埋可選嘅一句實體書店上架路徑。其餘位置留給成績表、證書同自述。總頁：https://kidsmybook.com/admissions-portfolio 。如果學校只收兩至五頁 A4，頁數限制見：https://kidsmybook.com/blog/thin-a4-portfolio-published-book 。
+放最前，交一頁 A4，唔好將成本書影印入 Clear Book。一頁寫四樣：書名、小朋友做過咩、ISBN，同埋可選嘅一句實體書店上架路徑。其餘位置留給成績表、證書同自述。總頁：https://kidsmybook.com/admissions-portfolio。如果學校只收兩至五頁 A4，頁數限制見：https://kidsmybook.com/blog/thin-a4-portfolio-published-book。
 
 呢一頁可以咁寫，仍然跟該校最新表格：
 
@@ -33,7 +33,7 @@ Clear Book 喺呢篇係指家長帶去升中、直資或 DSS 面試、可以逐�
 - ISBN，用來識別呢一個版本
 - 可選一句：正式印刷，並按題材同配套有實體書店上架路徑；店方決定入貨、陳列同退貨
 
-唔好喺呢一頁寫分店保證，唔好寫取錄承諾，亦唔好寫價錢。公開具名例子只有 Hilary，出版時八歲，約一年完成蝴蝶圖鑑；呢個係出版時間，唔係任何中學嘅面試結果：https://kidsmybook.com/case-studies/hilary-butterfly-guide 。
+唔好喺呢一頁寫分店保證，唔好寫取錄承諾，亦唔好寫價錢。公開具名例子只有 Hilary，出版時八歲，約一年完成蝴蝶圖鑑；呢個係出版時間，唔係任何中學嘅面試結果：https://kidsmybook.com/case-studies/hilary-butterfly-guide。
 
 ## 面試當日帶實體書，同將成本書影印入 Clear Book，係咪同一件事？
 
@@ -41,14 +41,14 @@ Clear Book 喺呢篇係指家長帶去升中、直資或 DSS 面試、可以逐�
 
 ## 證書堆同練習簿，同一本正式出版物有咩分別？
 
-證書堆證明上過班、考過級。練習簿同補習作文證明做過練習。一本正式出版物係做完、有 ISBN、可以翻開講嘅一件出版成果，再按題材同配套有實體書店上架路徑。三樣可以並存。書唔令證書消失，證書亦唔等於已經出咗書。面試官如果由第一張證書睇到最後，好難喺頭一分鐘見到一件做完嘅興趣。前面嗰一頁書，就係俾佢有一件核得到嘅出版物可以停低。證書點樣令面試疲倦：https://kidsmybook.com/blog/why-certificate-stacks-bore-interviewers 。補習作品同出版作品集：https://kidsmybook.com/blog/tutoring-work-vs-published-portfolio 。
+證書堆證明上過班、考過級。練習簿同補習作文證明做過練習。一本正式出版物係做完、有 ISBN、可以翻開講嘅一件出版成果，再按題材同配套有實體書店上架路徑。三樣可以並存。書唔令證書消失，證書亦唔等於已經出咗書。面試官如果由第一張證書睇到最後，好難喺頭一分鐘見到一件做完嘅興趣。前面嗰一頁書，就係俾佢有一件核得到嘅出版物可以停低。證書點樣令面試疲倦：https://kidsmybook.com/blog/why-certificate-stacks-bore-interviewers。補習作品同出版作品集：https://kidsmybook.com/blog/tutoring-work-vs-published-portfolio。
 
 ## 時間唔夠，應唔應該趕一本弱嘅書？
 
-唔好。如果升中面試只剩幾日或幾星期，約 12 個月計劃趕唔切呢一輪，實體上架路徑更唔會喺呢幾日內出現。呢篇唔會叫你而家趕印，亦唔會叫你用練習簿或者版面模板砌一本充當正式出版物。時間緊，等下一個仲有大約一年嘅申請周期，好過交一本趕工、講唔清楚嘅弱書。小四初開始較貼近常見嘅小五後期同小六上學期；小五先開始係趕。時間表：https://kidsmybook.com/blog/when-to-start-child-book-before-secondary-interview 。只剩幾日點收窄手上文件：https://kidsmybook.com/blog/portfolio-not-ready-before-interview 。
+唔好。如果升中面試只剩幾日或幾星期，約 12 個月計劃趕唔切呢一輪，實體上架路徑更唔會喺呢幾日內出現。呢篇唔會叫你而家趕印，亦唔會叫你用練習簿或者版面模板砌一本充當正式出版物。時間緊，等下一個仲有大約一年嘅申請周期，好過交一本趕工、講唔清楚嘅弱書。小四初開始較貼近常見嘅小五後期同小六上學期；小五先開始係趕。時間表：https://kidsmybook.com/blog/when-to-start-child-book-before-secondary-interview。只剩幾日點收窄手上文件：https://kidsmybook.com/blog/portfolio-not-ready-before-interview。
 
-## 點樣私人報價？
+## 點樣開始諮詢？
 
-網站唔公開價目，亦唔保證書架位置或學校取錄。報價之前可以先講三樣：小朋友而家讀邊個年級、目標係直資、DSS 定其他中學、同一個會自己翻開嚟做嘅興趣。WhatsApp @kidsmybook 或電郵 kidsmybook@outlook.com 。
+網站唔公開價目，亦唔保證書架位置或學校取錄。諮詢之前可以先講三樣：小朋友而家讀邊個年級、目標係直資、DSS 定其他中學、同一個會自己翻開嚟做嘅興趣。WhatsApp @kidsmybook 或電郵 kidsmybook@outlook.com。
 
-> 私人報價。WhatsApp @kidsmybook · kidsmybook@outlook.com · 出書連實體書店上架：https://kidsmybook.com/kids-book-bookstore-listing
+> WhatsApp @kidsmybook · kidsmybook@outlook.com · 出書連實體書店上架：https://kidsmybook.com/kids-book-bookstore-listing

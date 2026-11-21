@@ -1,6 +1,6 @@
 ---
 title: "Primary interview class vs an ISBN portfolio: how Hong Kong parents choose"
-description: "A primary interview class practises the room. An ISBN portfolio is a book made over 12 months of mentoring that a child can carry into the interview. Kidsmybook is not a short interview class. A last-minute interview cannot finish the book. Private quotation. No place is guaranteed."
+description: "A primary interview class practises the room. An ISBN portfolio is a book made over 12 months of mentoring that a child can carry into the interview. Kidsmybook is not a short interview class. A last-minute interview cannot finish the book. No place is guaranteed."
 date: 2026-10-17
 slug: "interview-class-vs-isbn-published-book"
 tags: ["primary interview", "interview class", "ISBN", "portfolio", "Hong Kong"]
@@ -18,7 +18,7 @@ If the interview or door-knocking round is these coming weeks, a class can help 
 
 ## Why can a last-minute interview not finish a 12-month book?
 
-The publishing plan is about a year: understand the interest, make the work with a mentor, university professor review when it fits, parent-child layout, then formal print. The named public example is Hilary, age 8 at publication, about a year on a butterfly guide. That is a publishing timeline, not an admissions result. A few days or weeks cannot finish this path. Narrow the file you already have: https://kidsmybook.com/blog/portfolio-not-ready-before-interview . Free checklist: https://kidsmybook.com/admissions-portfolio-checklist .
+The publishing plan is about a year: understand the interest, make the work with a mentor, university professor guidance when it fits, parent-child layout, then formal print. The named public example is Hilary, age 8 at publication, about a year on a butterfly guide. That is a publishing timeline, not an admissions result. A few days or weeks cannot finish this path. Narrow the file you already have: https://kidsmybook.com/blog/portfolio-not-ready-before-interview . Free checklist: https://kidsmybook.com/admissions-portfolio-checklist .
 
 ## Is Kidsmybook an interview class?
 
@@ -28,8 +28,8 @@ No. Kidsmybook is 12-month mentored publishing. The outcome is a formal ISBN pub
 
 Secondary, DSS, and direct-subsidy interviews more often ask about a sustained interest the student can explain. The book sits at the front of that file. The English word portfolio on this site means that admissions file, not another interview class. Secondary page: https://kidsmybook.com/secondary-dss-admissions-portfolio . Top Talent Pass or newly arrived families who need a citable proof object: https://kidsmybook.com/top-talent-pass-admissions-portfolio . Hub: https://kidsmybook.com/admissions-portfolio .
 
-## How do we ask for a private quote on WhatsApp?
+## How do we start a WhatsApp consultation?
 
 Prices are not on the site, and no place is guaranteed. WhatsApp @kidsmybook or email kidsmybook@outlook.com with age, whether the target is primary, secondary, or an international school, roughly when the interview is, and one interest. If only a few days remain, we will say the 12-month plan cannot be finished in time.
 
-> Private quotation. WhatsApp @kidsmybook · not an interview class · no place is guaranteed · https://kidsmybook.com/primary-one-interview-portfolio
+> WhatsApp @kidsmybook · not an interview class · no place is guaranteed · https://kidsmybook.com/primary-one-interview-portfolio

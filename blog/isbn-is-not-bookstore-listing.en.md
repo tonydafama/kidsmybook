@@ -1,6 +1,6 @@
 ---
 title: "An ISBN is not a bookstore shelf"
-description: "A Hong Kong ISBN is a book number. Stock at Hong Kong physical bookstores is a different path. Store managers decide orders, placement, and returns. Kidsmybook is not a bookstore chain. Private quotation. No branch is guaranteed."
+description: "A Hong Kong ISBN is a book number. Stock at Hong Kong physical bookstores is a different path. Store managers decide orders, placement, and returns. Kidsmybook is not a bookstore chain. No branch is guaranteed."
 date: 2026-10-18
 slug: "isbn-is-not-bookstore-listing"
 tags: ["ISBN", "bookstore", "Hong Kong"]
@@ -22,7 +22,7 @@ Self-publishing, a print shop, and print-on-demand usually hand over a file or a
 
 ## What the mentored path adds
 
-Kidsmybook is a 12-month mentored plan: consultation, creation, a possible university-professor review, parent-child layout, a formal print run, then a bookstore-platform path for the title and package. An admissions portfolio is a second use after the book exists. It is not the first sentence of the plan. The studio is not an admissions agent and does not guarantee a place. The only named public case is Hilary.
+Kidsmybook is a 12-month mentored plan: consultation, creation, a possible university-professor guidance, parent-child layout, a formal print run, then a bookstore-platform path for the title and package. An admissions portfolio is a second use after the book exists. It is not the first sentence of the plan. The studio is not an admissions agent and does not guarantee a place. The only named public case is Hilary.
 
 ## Does an ISBN mean the book is on a bookstore shelf?
 
@@ -36,4 +36,4 @@ No. Listing is a path and an arrangement. It depends on the title and package. M
 
 The site does not publish prices. WhatsApp @kidsmybook or email kidsmybook@outlook.com with the child's age and one interest.
 
-> Private quotation. WhatsApp @kidsmybook · kidsmybook@outlook.com · Bookstore path: https://kidsmybook.com/kids-book-bookstore-listing
+> WhatsApp @kidsmybook · kidsmybook@outlook.com · Bookstore path: https://kidsmybook.com/kids-book-bookstore-listing

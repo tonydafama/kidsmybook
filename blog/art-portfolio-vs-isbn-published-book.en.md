@@ -1,6 +1,6 @@
 ---
 title: "Art portfolio vs an ISBN book: which one a Hong Kong application needs"
-description: "A sketchbook and an ISBN book the child helped make are different evidence. When drawings are enough, and when a published book helps a primary, secondary, or international interview. Private quotation. No place is guaranteed."
+description: "A sketchbook and an ISBN book the child helped make are different evidence. When drawings are enough, and when a published book helps a primary, secondary, or international interview. No place is guaranteed."
 date: 2026-10-17
 slug: "art-portfolio-vs-isbn-published-book"
 tags: ["art portfolio", "ISBN", "school portfolio", "Hong Kong"]
@@ -10,7 +10,7 @@ Parents who search for an art portfolio usually want to know whether the intervi
 
 ## What is the difference between an art portfolio and an ISBN book?
 
-An art portfolio is usually a sketchbook, drawings, photos of making, or a selection from class. It shows practice. An ISBN book is a finished publication: a topic, steps the child took part in, university professor review when it fits, and book-number arrangements. In a few minutes, a loose stack of drawings can read as “my child takes art”. A book opened to one page is easier to remember as one story.
+An art portfolio is usually a sketchbook, drawings, photos of making, or a selection from class. It shows practice. An ISBN book is a finished publication: a topic, steps the child took part in, university professor guidance when it fits, and book-number arrangements. In a few minutes, a loose stack of drawings can read as “my child takes art”. A book opened to one page is easier to remember as one story.
 
 A certificate class ends with a grade sheet. Tutoring ends with practice. An art class ends with drawings. Those are three kinds of evidence. Certificate class versus ISBN: https://kidsmybook.com/blog/certificate-course-vs-isbn-publishing . Tutoring versus a published portfolio: https://kidsmybook.com/blog/tutoring-work-vs-published-portfolio .
 
@@ -32,8 +32,8 @@ Yes. Put the book first and the drawing selection behind it. In the interview, o
 
 No. Kidsmybook is a publishing studio, not an admissions agent. There is no school partnership and no guaranteed place at any primary, secondary, or international school. The school decides. A book can give the portfolio one finished story. It does not replace the school’s criteria, and it does not replace drawings the school asked for.
 
-## How do families ask for a private quotation?
+## How do families start a consultation?
 
 Prices are not on the site. WhatsApp @kidsmybook or email kidsmybook@outlook.com . Share the age, whether there is already an art class or a sketchbook, and whether the target is primary, secondary, or an international school. If the interview is only days away, read the timeline first: https://kidsmybook.com/blog/portfolio-not-ready-before-interview . Programme: https://kidsmybook.com/programme .
 
-> Private quotation. WhatsApp @kidsmybook · no place is guaranteed · https://kidsmybook.com/admissions-portfolio
+> WhatsApp @kidsmybook · no place is guaranteed · https://kidsmybook.com/admissions-portfolio

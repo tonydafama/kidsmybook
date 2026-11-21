@@ -1,6 +1,6 @@
 ---
 title: "Kindergarten portfolios: can a K1–K3 child publish a book?"
-description: "K1–K3 work can be drawings, observation, and a story the child tells, with mentors and parents setting the depth. It is not an adult essay, and it does not guarantee a school place. Private quotation."
+description: "K1–K3 work can be drawings, observation, and a story the child tells, with mentors and parents setting the depth. It is not an adult essay, and it does not guarantee a school place."
 date: 2026-10-13
 slug: "kindergarten-portfolio-book"
 tags: ["kindergarten", "portfolio", "K1", "children's publishing"]
@@ -30,6 +30,6 @@ It may not fit if the interest is still unsteady, the child resists as soon as i
 
 ## How do you start a first conversation?
 
-The quotation stays private. Prices are not on the site. WhatsApp @kidsmybook or email kidsmybook@outlook.com with K1, K2, or K3, one interest, and the portfolio problem you want to solve. Programme: https://kidsmybook.com/programme . Portfolio page: https://kidsmybook.com/admissions-portfolio .
+Prices are not on the site. WhatsApp @kidsmybook or email kidsmybook@outlook.com with K1, K2, or K3, one interest, and the portfolio problem you want to solve. Programme: https://kidsmybook.com/programme . Portfolio page: https://kidsmybook.com/admissions-portfolio .
 
-> Private quotation. WhatsApp @kidsmybook · kidsmybook@outlook.com · https://kidsmybook.com/programme
+> WhatsApp @kidsmybook · kidsmybook@outlook.com · https://kidsmybook.com/programme

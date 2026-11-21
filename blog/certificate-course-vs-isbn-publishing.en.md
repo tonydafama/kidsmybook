@@ -1,6 +1,6 @@
 ---
 title: "Certificate class vs formal ISBN publication: what a school portfolio sees"
-description: "A certificate class ends with a grade sheet. A formal ISBN book is something the child helped make and can open on one page. Both can sit in a portfolio. They are not the same evidence. Private quotation. No place is guaranteed."
+description: "A certificate class ends with a grade sheet. A formal ISBN book is something the child helped make and can open on one page. Both can sit in a portfolio. They are not the same evidence. No place is guaranteed."
 date: 2026-10-16
 slug: "certificate-course-vs-isbn-publishing"
 tags: ["certificate class", "ISBN", "school portfolio", "Hong Kong"]
@@ -18,7 +18,7 @@ Yes. A grade can be a record of practice, especially when the child really train
 
 ## What does formal publication add that a certificate does not?
 
-Four things a certificate class usually does not include: a mentor taking the interest through to a finished book, university professor review when it fits, ISBN and publishing arrangements following the public practice of the Hong Kong Books Registration Office, and a place for that book in a school portfolio. Kidsmybook is not the Books Registration Office and not an admissions agent. There is no school partnership. DIY printing versus mentor-led publishing: https://kidsmybook.com/blog/self-publishing-vs-mentored-publishing . The programme: https://kidsmybook.com/programme .
+Four things a certificate class usually does not include: a mentor taking the interest through to a finished book, university professor guidance when it fits, ISBN and publishing arrangements following the public practice of the Hong Kong Books Registration Office, and a place for that book in a school portfolio. Kidsmybook is not the Books Registration Office and not an admissions agent. There is no school partnership. DIY printing versus mentor-led publishing: https://kidsmybook.com/blog/self-publishing-vs-mentored-publishing . The programme: https://kidsmybook.com/programme .
 
 ## Can both go in the same portfolio?
 
@@ -28,4 +28,4 @@ Yes, and most families will have both. Put certificates in the back, the publica
 
 Prices are not on the site, and no place is guaranteed. WhatsApp @kidsmybook or email kidsmybook@outlook.com with age, target school type, and which certificate class is underway. FAQ: https://kidsmybook.com/faq .
 
-> Private quotation. WhatsApp @kidsmybook · no place is guaranteed · https://kidsmybook.com/programme
+> WhatsApp @kidsmybook · no place is guaranteed · https://kidsmybook.com/programme

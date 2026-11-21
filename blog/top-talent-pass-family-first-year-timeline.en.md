@@ -1,6 +1,6 @@
 ---
 title: "Top Talent Pass year one: a school-portfolio timeline"
-description: "A month-by-month plan for Top Talent Pass and newly arrived families. Start the ISBN path when about a year remains. A last-minute interview cannot finish the book. Private quotation. No place is guaranteed."
+description: "A month-by-month plan for Top Talent Pass and newly arrived families. Start the ISBN path when about a year remains. A last-minute interview cannot finish the book. No place is guaranteed."
 date: 2026-10-17
 slug: "top-talent-pass-family-first-year-timeline"
 tags: ["Top Talent Pass", "portfolio", "ISBN", "timeline"]
@@ -10,15 +10,15 @@ Families who have just arrived on the Top Talent Pass, or by another route, ofte
 
 ## How should a Top Talent Pass family schedule year one?
 
-If the next interview or application is still about a year away, start the 12-month mentored programme in month 1. The phases match the author programme: consultation, creation, university professor review when it fits, parent-child layout, then print and listing. Programme: https://kidsmybook.com/programme . Kidsmybook is not an admissions agent, has no school partnership, and does not guarantee a place.
+If the next interview or application is still about a year away, start the 12-month mentored programme in month 1. The phases match the author programme: consultation, creation, university professor guidance when it fits, parent-child layout, then print and listing. Programme: https://kidsmybook.com/programme . Kidsmybook is not an admissions agent, has no school partnership, and does not guarantee a place.
 
 ## What happens in months 1 to 12?
 
-The months follow the five published phases. Month 1 is consultation. Months 2 to 5 are mentored creation. Months 6 to 7 are publishing seminar and university professor review when it fits. Months 8 to 10 are parent-child layout. Month 11 is a check before print. The published phases do not turn month 11 into another course. Month 12 is formal print and listing. This is a publishing timeline, not an offer of admission.
+The months follow the five published phases. Month 1 is consultation. Months 2 to 5 are mentored creation. Months 6 to 7 are publishing seminar and university professor guidance when it fits. Months 8 to 10 are parent-child layout. Month 11 is a check before print. The published phases do not turn month 11 into another course. Month 12 is formal print and listing. This is a publishing timeline, not an offer of admission.
 
 - Month 1: age, whether the target is primary, secondary, or an international school, and one interest the child returns to.
 - Months 2 to 5: creation with a mentor. Keep what the child noticed, practised, and revised. Do not add another weekend certificate class for its own sake.
-- Months 6 to 7: a publishing seminar, with university professor review when it fits. Review is part of publishing. It is not a school reference.
+- Months 6 to 7: a publishing seminar, with university professor guidance when it fits. Guidance is part of publishing. It is not a school reference.
 - Months 8 to 10: parent-child layout that keeps the child's own sentences.
 - Month 11: check before print. The pages should still be something the child can explain, and the family chooses which page to open in the portfolio.
 - Month 12: formal print, and a listing path on physical bookstore platforms when that is part of the arrangement. The book is finished before it goes into the portfolio.
@@ -37,4 +37,4 @@ No. If only a few days or weeks remain, narrow the file you already have and kee
 
 Prices are not on the site, and no place is guaranteed. WhatsApp @kidsmybook or email kidsmybook@outlook.com. Share the age, the target school type, roughly when the interview is, and one interest. If only a few days remain, we will say the 12-month plan cannot be finished in time.
 
-> Private quotation. WhatsApp @kidsmybook · no place is guaranteed · https://kidsmybook.com/top-talent-pass-admissions-portfolio
+> WhatsApp @kidsmybook · no place is guaranteed · https://kidsmybook.com/top-talent-pass-admissions-portfolio

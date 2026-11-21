@@ -1,6 +1,6 @@
 ---
 title: "International vs local school interviews: how a published portfolio differs"
-description: "The same child's book is told differently in an international interview and a local, DSS, or private one. Prepare language and evidence for one story, not two. Private quotation. No place is guaranteed."
+description: "The same child's book is told differently in an international interview and a local, DSS, or private one. Prepare language and evidence for one story, not two. No place is guaranteed."
 date: 2026-10-16
 slug: "international-vs-local-school-interview-portfolio"
 tags: ["國際學校", "本地學校", "面試", "作品集"]
@@ -18,10 +18,10 @@ It depends on the target school and is decided in consultation: Chinese, English
 
 ## Can both school types share one story?
 
-Yes, and they should. The story is where the interest came from, what was observed or organised, which page the child decided, and what was revised. An international interview can spend more time on the project and on questions. A local or DSS interview can spend more time opening one page and on how the family finished it together. The evidence is the same ISBN publication, with professor review when that is part of the work.
+Yes, and they should. The story is where the interest came from, what was observed or organised, which page the child decided, and what was revised. An international interview can spend more time on the project and on questions. A local or DSS interview can spend more time opening one page and on how the family finished it together. The evidence is the same ISBN publication, with professor guidance when that is part of the work.
 
 That difference does not guarantee an international or local place. Kidsmybook is not an admissions agent. Primary use: https://kidsmybook.com/blog/primary-interview-how-to-use-a-book . Secondary, DSS, and direct subsidy: https://kidsmybook.com/blog/secondary-dss-interview-published-book . Hub: https://kidsmybook.com/admissions-portfolio .
 
-WhatsApp @kidsmybook and say which school types you are considering together. The quotation is private. Prices are not on the site.
+WhatsApp @kidsmybook and say which school types you are considering together. Prices are not on the site.
 
-> Private quotation. WhatsApp @kidsmybook · no place is guaranteed · https://kidsmybook.com/admissions-portfolio
+> WhatsApp @kidsmybook · no place is guaranteed · https://kidsmybook.com/admissions-portfolio

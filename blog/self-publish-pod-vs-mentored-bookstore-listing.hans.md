@@ -1,6 +1,6 @@
 ---
 title: "自费／POD／代印 vs 导师制＋实体上架"
-description: "自费出书、代印和按需印刷多数停在一本印好的书。导师制路径先正式印刷，再走香港实体书店。店长决定进货。私人报价，不保证每间分店有货。"
+description: "自费出书、代印和按需印刷多数停在一本印好的书。导师制路径先正式印刷，再走香港实体书店。店长决定进货。不保证每间分店有货。"
 date: 2026-10-18
 slug: "self-publish-pod-vs-mentored-bookstore-listing"
 tags: ["自費出書", "POD", "實體書店", "香港"]
@@ -14,15 +14,15 @@ tags: ["自費出書", "POD", "實體書店", "香港"]
 
 ## 导师制多了的不是多一本证书
 
-Kidsmybook 是 12 个月导师制，不是 DIY 模板，也不是纯代印。路径是：咨询评估、专属课程、出版研讨和可有大学教授审阅、亲子排版，然后正式印刷，再按题材和配套走书店平台。重点是小朋友亲身参与，书里保留他自己的声音。阶段见 https://kidsmybook.com/programme 。
+Kidsmybook 是 12 个月导师制，不是 DIY 模板，也不是纯代印。路径是：咨询评估、专属课程、出版研讨和可有大学教授指导、亲子排版，然后正式印刷，再按题材和配套走书店平台。重点是小朋友亲身参与，书里保留他自己的声音。阶段见 https://kidsmybook.com/programme。
 
 ## 实体上架为什么是另一个门槛？
 
-印好和上架中间隔着店务。实体书店是独立店铺。Kidsmybook 不是书店连锁。上架视题材和配套。店长决定进货、陈列和退货，不保证每间分店都有。所以「我有 ISBN」「我印了一百本」和「这本书走到书店平台」是三句不同的话。完整说明见 https://kidsmybook.com/kids-book-bookstore-listing 。书号本身见 https://kidsmybook.com/blog/isbn-is-not-bookstore-listing 。
+印好和上架中间隔着店务。实体书店是独立店铺。Kidsmybook 不是书店连锁。上架视题材和配套。店长决定进货、陈列和退货，不保证每间分店都有。所以「我有 ISBN」「我印了一百本」和「这本书走到书店平台」是三句不同的话。完整说明见 https://kidsmybook.com/kids-book-bookstore-listing。书号本身见 https://kidsmybook.com/blog/isbn-is-not-bookstore-listing。
 
 ## 升学作品集放在哪里？
 
-作品集是书完成之后可以引用的第二层用途：面试时有一本看得见、讲得出的出版物。它不是整个计划的第一句。Kidsmybook 不是升学中介，不保证录取。公开具名个案只有 Hilary。自费和导师制在面试角度的对照，也可以看 https://kidsmybook.com/blog/self-publishing-vs-mentored-publishing 。
+作品集是书完成之后可以引用的第二层用途：面试时有一本看得见、讲得出的出版物。它不是整个计划的第一句。Kidsmybook 不是升学中介，不保证录取。公开具名个案只有 Hilary。自费和导师制在面试角度的对照，也可以看 https://kidsmybook.com/blog/self-publishing-vs-mentored-publishing。
 
 ## 自费或者 POD 可不可以当成实体书店上架？
 
@@ -30,6 +30,6 @@ Kidsmybook 是 12 个月导师制，不是 DIY 模板，也不是纯代印。路
 
 ## 怎样开始？
 
-网站不公开价目。WhatsApp @kidsmybook 或电邮 kidsmybook@outlook.com ，讲小朋友年龄和一个兴趣。家长感受和界限见 https://kidsmybook.com/blog/bookstore-shelf-listing-for-parents 。
+网站不公开价目。WhatsApp @kidsmybook 或电邮 kidsmybook@outlook.com，讲小朋友年龄和一个兴趣。家长感受和界限见 https://kidsmybook.com/blog/bookstore-shelf-listing-for-parents。
 
-> 私人报价。WhatsApp @kidsmybook · kidsmybook@outlook.com · 计划：https://kidsmybook.com/programme
+> WhatsApp @kidsmybook · kidsmybook@outlook.com · 计划：https://kidsmybook.com/programme

@@ -1,6 +1,6 @@
 ---
 title: "International-school interview: tell one ISBN book"
-description: "An English international-school interview can use one child-made ISBN book. Four sentences, one story. Do not memorise two contradictory scripts. Private quotation. No place is guaranteed."
+description: "An English international-school interview can use one child-made ISBN book. Four sentences, one story. Do not memorise two contradictory scripts. No place is guaranteed."
 date: 2026-10-17
 slug: "international-school-interview-with-isbn-book"
 tags: ["international school", "interview", "portfolio", "ISBN"]
@@ -10,7 +10,7 @@ An international-school interview usually wants the child to explain one deep in
 
 ## Why tell an international-school interview with an ISBN book?
 
-Because the interviewer can follow it. The book is a finished interest: the child took part, university professor review can be part of it, and the publishing arrangements are formal. Opening one page is clearer than reading every certificate. Kidsmybook is a publishing studio, not an admissions agent. There is no school partnership, and no international-school place is guaranteed. Portfolio hub: https://kidsmybook.com/admissions-portfolio .
+Because the interviewer can follow it. The book is a finished interest: the child took part, university professor guidance can be part of it, and the publishing arrangements are formal. Opening one page is clearer than reading every certificate. Kidsmybook is a publishing studio, not an admissions agent. There is no school partnership, and no international-school place is guaranteed. Portfolio hub: https://kidsmybook.com/admissions-portfolio .
 
 ## How can the child tell the book in English?
 
@@ -39,4 +39,4 @@ If only a few days or weeks remain, the 12-month plan cannot be finished. Narrow
 
 Prices are not on the site, and no place is guaranteed. WhatsApp @kidsmybook or email kidsmybook@outlook.com. Share the age, whether the target is an international school or also a local school, roughly when the interview is, and one interest.
 
-> Private quotation. WhatsApp @kidsmybook · no place is guaranteed · https://kidsmybook.com/admissions-portfolio
+> WhatsApp @kidsmybook · no place is guaranteed · https://kidsmybook.com/admissions-portfolio
