@@ -135,11 +135,11 @@ export const HOME_FAQ: { q: string; a: string }[] = [
   },
 ];
 
-export const HOME_H1_ZH = "由大學教授合作指導，協助兒童正式出版 ISBN 書籍";
+export const HOME_H1_ZH = "大學教授指導出版 ISBN 書籍，上架香港主流書店. (最強Portfolio!)";
 
-export const HOME_TITLE_ZH = "Kidsmybook｜由大學教授合作指導，協助兒童正式出版 ISBN 書籍";
+export const HOME_TITLE_ZH = "Kidsmybook｜大學教授指導出版 ISBN 書籍，上架香港主流書店. (最強Portfolio!)";
 
-export const HOME_DESCRIPTION_ZH = "由大學教授合作指導，協助兒童正式出版 ISBN 書籍";
+export const HOME_DESCRIPTION_ZH = "大學教授指導出版 ISBN 書籍，上架香港主流書店. (最強Portfolio!)";
 
 const SERVICE_OG: Record<string, { file: string; width: number; height: number }> = {
   "author-programme": { file: "/services/service-author-programme.png", width: 1376, height: 768 },
