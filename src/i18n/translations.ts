@@ -284,7 +284,7 @@ const zhHant: Translations = {
   },
   hero: {
     eyebrow: "香港兒童出版工作室",
-    lead: "由大學教授合作指導，協助兒童正式出版 ISBN 書籍",
+    lead: "大學教授指導出版 ISBN 書籍，上架香港主流書店. (最強Portfolio!)",
     generateCover: "生成封面",
     bookConsult: "預約諮詢",
     featuredAlt: "Hilary 新書發布會",
@@ -554,7 +554,7 @@ const zhHant: Translations = {
 
 const zhHans: Translations = {
   ...zhHant,
-  brandTitle: "由大学教授合作指导，协助儿童正式出版 ISBN 书籍",
+  brandTitle: "大学教授指导出版 ISBN 书籍，上架香港主流书店. (最强Portfolio!)",
   brandEn: "Turn your child's passion into a published achievement.",
   nav: {
     ...zhHant.nav,
@@ -578,7 +578,7 @@ const zhHans: Translations = {
   hero: {
     ...zhHant.hero,
     eyebrow: "香港儿童出版工作室",
-    lead: "由大学教授合作指导，协助儿童正式出版 ISBN 书籍",
+    lead: "大学教授指导出版 ISBN 书籍，上架香港主流书店. (最强Portfolio!)",
     generateCover: "生成封面",
     bookConsult: "预约咨询",
     featuredAlt: "Hilary 新书发布会",
@@ -811,8 +811,8 @@ const zhHans: Translations = {
   shudianPage: SHUDIAN_HANS,
   aboutPage: ABOUT_HANS,
   seo: {
-    homeTitle: "Kidsmybook｜由大学教授合作指导，协助儿童正式出版 ISBN 书籍",
-    homeDesc: "由大学教授合作指导，协助儿童正式出版 ISBN 书籍",
+    homeTitle: "Kidsmybook｜大学教授指导出版 ISBN 书籍，上架香港主流书店. (最强Portfolio!)",
+    homeDesc: "大学教授指导出版 ISBN 书籍，上架香港主流书店. (最强Portfolio!)",
     servicesTitle: "服务｜Kidsmybook 六项儿童成就出版",
     servicesDesc:
       "出版计划、新书发布会、展览、媒体公关、直播和升学作品集，可全案或单项咨询。Author Programme、Book Launch、Exhibition、Media & PR、Live Streaming、Portfolio Package。",
@@ -834,7 +834,7 @@ const zhHans: Translations = {
 };
 
 const en: Translations = {
-  brandTitle: "Collaborative guidance from university professors, helping children formally publish an ISBN book",
+  brandTitle: "University professors guide the publication of an ISBN book, listed in mainstream Hong Kong bookstores. (Strongest portfolio!)",
   brandEn: "Publishing, launches, exhibitions, media, and portfolios — one integrated pathway.",
   nav: {
     main: "Main menu",
@@ -859,7 +859,7 @@ const en: Translations = {
   },
   hero: {
     eyebrow: "Hong Kong children's publishing studio",
-    lead: "Collaborative guidance from university professors, helping children formally publish an ISBN book",
+    lead: "University professors guide the publication of an ISBN book, listed in mainstream Hong Kong bookstores. (Strongest portfolio!)",
     generateCover: "Generate cover",
     bookConsult: "Book a consultation",
     featuredAlt: "Hilary book launch",
@@ -1099,8 +1099,8 @@ const en: Translations = {
   shudianPage: SHUDIAN_EN,
   aboutPage: ABOUT_EN,
   seo: {
-    homeTitle: "Kidsmybook | Collaborative guidance from university professors, helping children formally publish an ISBN book",
-    homeDesc: "Collaborative guidance from university professors, helping children formally publish an ISBN book",
+    homeTitle: "Kidsmybook | University professors guide the publication of an ISBN book, listed in mainstream Hong Kong bookstores. (Strongest portfolio!)",
+    homeDesc: "University professors guide the publication of an ISBN book, listed in mainstream Hong Kong bookstores. (Strongest portfolio!)",
     servicesTitle: "Services | Kidsmybook six achievement programmes",
     servicesDesc: "Author Programme, Book Launch, Exhibition, Media & PR, Live Streaming, Portfolio Package.",
     caseStudiesTitle: "Case Studies | Kidsmybook",
