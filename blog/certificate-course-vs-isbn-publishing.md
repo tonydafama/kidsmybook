@@ -18,7 +18,7 @@ tags: ["證書班", "ISBN", "面試作品集", "香港"]
 
 ## 正式出版多咗咩係證書冇嘅？
 
-多咗四件證書班通常冇嘅事：導師帶住由興趣寫到完、可有大學教授審閱、按香港書刊註冊組公開做法處理 ISBN 同出版安排，以及升學作品集點樣擺呢本書。Kidsmybook 唔係書刊註冊組，亦唔係升學中介，冇學校合作。自費印刷同導師制嘅分別見 https://kidsmybook.com/blog/self-publishing-vs-mentored-publishing。計劃全貌：https://kidsmybook.com/programme。
+多咗四件證書班通常冇嘅事：導師帶住由興趣寫到完、可有大學教授指導、按香港書刊註冊組公開做法處理 ISBN 同出版安排，以及升學作品集點樣擺呢本書。Kidsmybook 唔係書刊註冊組，亦唔係升學中介，冇學校合作。自費印刷同導師制嘅分別見 https://kidsmybook.com/blog/self-publishing-vs-mentored-publishing。計劃全貌：https://kidsmybook.com/programme。
 
 ## 兩樣可唔可以一齊放進作品集？
 

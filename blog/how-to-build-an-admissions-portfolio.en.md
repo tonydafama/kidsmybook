@@ -29,7 +29,7 @@ A certificate class proves enrolment and a grade. Keep it in the appendix: https
 
 ## When is an ISBN book the difference, rather than another certificate?
 
-Another weekend class usually adds one more sheet that looks like the family before you. A formal ISBN book the child took part in, with university professor review when it fits, is different evidence: one interest finished, and a page someone can check. Kidsmybook does not ask families to quit classes. An interest already underway can be the start of a book: https://kidsmybook.com/interest-to-published-book . A print-shop keepsake is a different path: https://kidsmybook.com/blog/self-publishing-vs-mentored-publishing .
+Another weekend class usually adds one more sheet that looks like the family before you. A formal ISBN book the child took part in, with university professor guidance when it fits, is different evidence: one interest finished, and a page someone can check. Kidsmybook does not ask families to quit classes. An interest already underway can be the start of a book: https://kidsmybook.com/interest-to-published-book . A print-shop keepsake is a different path: https://kidsmybook.com/blog/self-publishing-vs-mentored-publishing .
 
 The only named public case is Hilary, age 8 at publication, about a year on a butterfly guide. That is a publishing example, not an offer of admission: https://kidsmybook.com/case-studies/hilary-butterfly-guide .
 

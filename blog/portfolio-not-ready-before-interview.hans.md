@@ -10,7 +10,7 @@ tags: ["叩门", "面试", "作品集", "时间表"]
 
 ## 面试只剩几天，12 个月计划赶不赶得及？
 
-赶不及。Kidsmybook 的出版路径大约一年：咨询、导师带领创作、可有大学教授审阅、亲子排版，然后才正式印刷和出版安排。公开例子 Hilary 出版时八岁，约一年完成蝴蝶图鉴。这是时间例子，不是录取结果：https://kidsmybook.com/case-studies/hilary-butterfly-guide。计划阶段：https://kidsmybook.com/programme。
+赶不及。Kidsmybook 的出版路径大约一年：咨询、导师带领创作、可有大学教授指导、亲子排版，然后才正式印刷和出版安排。公开例子 Hilary 出版时八岁，约一年完成蝴蝶图鉴。这是时间例子，不是录取结果：https://kidsmybook.com/case-studies/hilary-butterfly-guide。计划阶段：https://kidsmybook.com/programme。
 
 ## 叩门或者面试季，现在可以做什么？
 
@@ -29,7 +29,7 @@ tags: ["叩门", "面试", "作品集", "时间表"]
 
 ## 临时印刷一本纪念册有没有用？
 
-可以是家庭纪念，但多数不等于导师制出版。自费印刷未必有小朋友跟着做完的工序、教授审阅、ISBN 和升学作品集包装。分别见 https://kidsmybook.com/blog/self-publishing-vs-mentored-publishing。Kidsmybook 不会说一个周末印一本就可以代替 12 个月计划，也不保证这次叩门或面试录取。
+可以是家庭纪念，但多数不等于导师制出版。自费印刷未必有小朋友跟着做完的工序、教授指导、ISBN 和升学作品集包装。分别见 https://kidsmybook.com/blog/self-publishing-vs-mentored-publishing。Kidsmybook 不会说一个周末印一本就可以代替 12 个月计划，也不保证这次叩门或面试录取。
 
 ## 怎样开始咨询？
 

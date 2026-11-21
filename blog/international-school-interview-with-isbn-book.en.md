@@ -10,7 +10,7 @@ An international-school interview usually wants the child to explain one deep in
 
 ## Why tell an international-school interview with an ISBN book?
 
-Because the interviewer can follow it. The book is a finished interest: the child took part, university professor review can be part of it, and the publishing arrangements are formal. Opening one page is clearer than reading every certificate. Kidsmybook is a publishing studio, not an admissions agent. There is no school partnership, and no international-school place is guaranteed. Portfolio hub: https://kidsmybook.com/admissions-portfolio .
+Because the interviewer can follow it. The book is a finished interest: the child took part, university professor guidance can be part of it, and the publishing arrangements are formal. Opening one page is clearer than reading every certificate. Kidsmybook is a publishing studio, not an admissions agent. There is no school partnership, and no international-school place is guaranteed. Portfolio hub: https://kidsmybook.com/admissions-portfolio .
 
 ## How can the child tell the book in English?
 

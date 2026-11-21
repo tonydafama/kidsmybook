@@ -118,11 +118,11 @@ function coverSvgDataUri(opts: {
       <rect x="44" y="44" width="936" height="1448" rx="16" fill="none" stroke="rgba(218,185,125,0.45)" stroke-width="2.5"/>
       <rect x="56" y="56" width="912" height="1424" rx="12" fill="none" stroke="rgba(218,185,125,0.22)" stroke-width="1.2"/>
       
-      <text x="512" y="140" text-anchor="middle" fill="#dab97d" font-size="20" font-family="Georgia, serif" letter-spacing="0.22em">PEER-REVIEWED MONOGRAPH SYNOPSIS</text>
+      <text x="512" y="140" text-anchor="middle" fill="#dab97d" font-size="20" font-family="Georgia, serif" letter-spacing="0.22em">PROFESSOR-GUIDED MONOGRAPH SYNOPSIS</text>
       <text x="890" y="80" text-anchor="end" fill="rgba(218,185,125,0.85)" font-size="16" font-family="Courier, monospace" letter-spacing="0.1em">ISBN 978-988-8765-43-2</text>
       <line x1="200" y1="170" x2="824" y2="170" stroke="rgba(218,185,125,0.3)" stroke-width="1"/>
       
-      <text x="100" y="280" fill="#ffffff" font-size="34" font-weight="700" font-family="Georgia, serif">【學術專著審定評語】</text>
+      <text x="100" y="280" fill="#ffffff" font-size="34" font-weight="700" font-family="Georgia, serif">【學術專著指導評語】</text>
       <text x="100" y="360" fill="rgba(255,255,255,0.88)" font-size="26" font-family="sans-serif">本專著收錄第一手實證觀測數據與系統化田野紀錄，</text>
       <text x="100" y="410" fill="rgba(255,255,255,0.88)" font-size="26" font-family="sans-serif">由青年學者執筆，經大學教授學術指導共同研討完成。</text>
       <text x="100" y="460" fill="rgba(255,255,255,0.88)" font-size="26" font-family="sans-serif">全書兼具學術嚴謹度與青年研究者之開創性視野。</text>
@@ -191,7 +191,7 @@ function coverSvgDataUri(opts: {
     
     <!-- Footer Press line -->
     <text x="100" y="1380" fill="rgba(255,255,255,0.72)" font-size="22" font-family="Georgia, serif" letter-spacing="0.1em">${footnote}</text>
-    <text x="100" y="1420" fill="#dab97d" font-size="18" font-family="Georgia, serif" letter-spacing="0.18em">KIDSMYBOOK ACADEMIC PRESS · PEER-REVIEWED MONOGRAPH</text>
+    <text x="100" y="1420" fill="#dab97d" font-size="18" font-family="Georgia, serif" letter-spacing="0.18em">KIDSMYBOOK ACADEMIC PRESS · PROFESSOR-GUIDED MONOGRAPH</text>
   </svg>`;
   return `data:image/svg+xml;utf8,${encodeURIComponent(raw)}`;
 }
@@ -291,7 +291,7 @@ export function AiBookCreatorPanel({ showBackLink = true, releaseTag }: AiBookCr
         editionLine: profile.seriesName,
       }),
       back: coverSvgDataUri({
-        title: "Peer-Reviewed Synopsis",
+        title: "Professor-Guided Synopsis",
         subtitle: profile.professorTitle,
         footnote: "Kidsmybook Academic Publishing",
         emoji: "🏛",
@@ -693,7 +693,7 @@ export function AiBookCreatorPanel({ showBackLink = true, releaseTag }: AiBookCr
                     {coverSource === "ai" ? (
                       <div className="book-cover-overlay book-cover-overlay--back">
                         <div className="book-cover-overlay__back-header">
-                          <p className="book-cover-overlay__edition">PEER-REVIEWED MONOGRAPH SYNOPSIS</p>
+                          <p className="book-cover-overlay__edition">PROFESSOR-GUIDED MONOGRAPH SYNOPSIS</p>
                           <span className="book-cover-overlay__isbn">ISBN 978-988-8765-43-2</span>
                         </div>
                         <p className="book-cover-overlay__blurb">{coverMeta.backBlurb}</p>

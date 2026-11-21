@@ -18,7 +18,7 @@ tags: ["國際學校", "本地學校", "面試", "作品集"]
 
 ## 两种学校可不可以共用同一个故事？
 
-可以，而且应该共用。故事是：兴趣从哪来、做过哪些观察或资料整理、哪一页是小朋友决定的、哪里改过。国际学校面试可以多用项目和提问；本地或直资面试可以多用「打开这一页」和家庭怎样一起完成。证据是同一本有 ISBN、可有教授审阅的出版物。
+可以，而且应该共用。故事是：兴趣从哪来、做过哪些观察或资料整理、哪一页是小朋友决定的、哪里改过。国际学校面试可以多用项目和提问；本地或直资面试可以多用「打开这一页」和家庭怎样一起完成。证据是同一本有 ISBN、可有教授指导的出版物。
 
 这个分别不等于保证进入国际学校或本地学校。Kidsmybook 不是升学中介。升小学用法：https://kidsmybook.com/blog/primary-interview-how-to-use-a-book。升中、DSS 和直资：https://kidsmybook.com/blog/secondary-dss-interview-published-book。总页：https://kidsmybook.com/admissions-portfolio。
 

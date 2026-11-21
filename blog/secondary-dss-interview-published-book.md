@@ -14,7 +14,7 @@ tags: ["升中", "DSS", "直資", "作品集"]
 
 ## 出版物應該放喺作品集邊？
 
-放喺最前，作為一項做完嘅項目，而唔係夾喺證書中間。一頁紙寫清楚：題目、小朋友做過嘅部分、有冇大學教授審閱、出版年份，同埋面試時準備講嘅一頁。後面先放其他活動。自費印刷同導師制出版嘅分別，見：https://kidsmybook.com/blog/self-publishing-vs-mentored-publishing。教授審閱係參與同意見，唔係錄取保證：https://kidsmybook.com/blog/university-professor-child-work-review。
+放喺最前，作為一項做完嘅項目，而唔係夾喺證書中間。一頁紙寫清楚：題目、小朋友做過嘅部分、有冇大學教授指導、出版年份，同埋面試時準備講嘅一頁。後面先放其他活動。自費印刷同導師制出版嘅分別，見：https://kidsmybook.com/blog/self-publishing-vs-mentored-publishing。教授指導係參與同意見，唔係錄取保證：https://kidsmybook.com/blog/university-professor-child-work-review。
 
 ## 呢本書可唔可以保證升中取錄？
 

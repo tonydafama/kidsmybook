@@ -335,7 +335,7 @@ const zhHant: Translations = {
     coverBadge: "★ 大學名師指導加持 · 香港知名書店上架 ★",
     coverBrand: "Kidsmybook Academic Publishing · Hong Kong",
     defaultBackBlurb:
-      "【學術專著審定與出版】\nKidsmybook 專為孩子打造具備國際出版規範的正式專著。\n由大學教授學術指導、正式登記國際標準書號 (ISBN)、香港實體書店公開發行。\n請於左側填寫小作者姓名與興趣題材，立即預覽專屬封面。",
+      "【學術專著指導與出版】\nKidsmybook 專為孩子打造具備國際出版規範的正式專著。\n由大學教授學術指導、正式登記國際標準書號 (ISBN)、香港實體書店公開發行。\n請於左側填寫小作者姓名與興趣題材，立即預覽專屬封面。",
     defaultProfHint: "請於左側填寫資料 · 即時預覽專屬 3D 封面",
     errNameTopic: "請填寫小作者姓名與興趣題材。",
     aiFallbackNotice: (message) => `已改為學術版型示意預覽（${message}）`,
@@ -628,7 +628,7 @@ const zhHans: Translations = {
     notifyStudio: "尚未收到？通知顾问",
     coverBadge: "★ 大学名师指导加持 · 香港知名书店上架 ★",
     defaultBackBlurb:
-      "【学术专著审定与出版】\nKidsmybook 专为孩子打造具备国际出版规范的正式专著。\n由大学教授学术指导、正式登记国际标准书号 (ISBN)、香港实体书店公开发行。\n请于左侧填写小作者姓名与兴趣题材，立即预览专属封面。",
+      "【学术专著指导与出版】\nKidsmybook 专为孩子打造具备国际出版规范的正式专著。\n由大学教授学术指导、正式登记国际标准书号 (ISBN)、香港实体书店公开发行。\n请于左侧填写小作者姓名与兴趣题材，立即预览专属封面。",
     defaultProfHint: "请于左侧填写资料 · 即时预览专属 3D 封面",
     errNameTopic: "请填写小作者姓名与兴趣题材。",
     aiFallbackNotice: (message) => `已改为学术版型示意预览（${message}）`,
@@ -910,7 +910,7 @@ const en: Translations = {
     coverBadge: "★ University mentor endorsement · Listed in Hong Kong bookstores ★",
     coverBrand: "Kidsmybook Academic Publishing · Hong Kong",
     defaultBackBlurb:
-      "[Academic monograph review & publishing]\nKidsmybook creates formal monographs that meet international publishing standards for children.\nUniversity professor guidance · Registered ISBN · Available in Hong Kong bookstores.\nFill in the young author's name and topic on the left to preview your cover.",
+      "[Academic monograph guidance & publishing]\nKidsmybook creates formal monographs that meet international publishing standards for children.\nUniversity professor guidance · Registered ISBN · Available in Hong Kong bookstores.\nFill in the young author's name and topic on the left to preview your cover.",
     defaultProfHint: "Fill in details on the left · Live 3D cover preview",
     errNameTopic: "Please enter the young author's name and interest/topic.",
     aiFallbackNotice: (message) => `Showing academic layout preview instead (${message})`,

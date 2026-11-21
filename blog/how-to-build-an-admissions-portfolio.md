@@ -29,7 +29,7 @@ tags: ["升學作品集", "清單", "ISBN", "香港"]
 
 ## 幾時 ISBN 出版先係分別，而唔係再堆證書？
 
-再報一個週末班，通常再多一張同前面家庭相似嘅紙。一本小朋友參與、可有大學教授審閱、有 ISBN 嘅正式出版物，係另一種證據：一段興趣做完，可以翻開核對。Kidsmybook 唔叫家庭停晒興趣班。已經在學嘅興趣可以係出書起點：https://kidsmybook.com/interest-to-published-book。自費印刷同導師制唔同：https://kidsmybook.com/blog/self-publishing-vs-mentored-publishing。
+再報一個週末班，通常再多一張同前面家庭相似嘅紙。一本小朋友參與、可有大學教授指導、有 ISBN 嘅正式出版物，係另一種證據：一段興趣做完，可以翻開核對。Kidsmybook 唔叫家庭停晒興趣班。已經在學嘅興趣可以係出書起點：https://kidsmybook.com/interest-to-published-book。自費印刷同導師制唔同：https://kidsmybook.com/blog/self-publishing-vs-mentored-publishing。
 
 公開具名個案只有 Hilary，出版時八歲，約一年完成蝴蝶圖鑑。呢個係出版例子，唔係取錄承諾：https://kidsmybook.com/case-studies/hilary-butterfly-guide。
 

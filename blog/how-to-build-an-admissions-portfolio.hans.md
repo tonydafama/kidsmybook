@@ -29,7 +29,7 @@ tags: ["升学作品集", "清单", "ISBN", "香港"]
 
 ## 什么时候 ISBN 出版才是分别，而不是再堆证书？
 
-再报一个周末班，通常再多一张和前面家庭相似的纸。一本小朋友参与、可有大学教授审阅、有 ISBN 的正式出版物，是另一种证据：一段兴趣做完，可以翻开核对。Kidsmybook 不叫家庭停掉兴趣班。已经在学的兴趣可以是出书起点：https://kidsmybook.com/interest-to-published-book。自费印刷和导师制不同：https://kidsmybook.com/blog/self-publishing-vs-mentored-publishing。
+再报一个周末班，通常再多一张和前面家庭相似的纸。一本小朋友参与、可有大学教授指导、有 ISBN 的正式出版物，是另一种证据：一段兴趣做完，可以翻开核对。Kidsmybook 不叫家庭停掉兴趣班。已经在学的兴趣可以是出书起点：https://kidsmybook.com/interest-to-published-book。自费印刷和导师制不同：https://kidsmybook.com/blog/self-publishing-vs-mentored-publishing。
 
 公开具名个案只有 Hilary，出版时八岁，约一年完成蝴蝶图鉴。这是出版例子，不是录取承诺：https://kidsmybook.com/case-studies/hilary-butterfly-guide。
 

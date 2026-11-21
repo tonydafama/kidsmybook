@@ -10,7 +10,7 @@ Tutoring work and a published portfolio often land in the same folder. An interv
 
 ## What does an interviewer see in tutoring work versus a published portfolio?
 
-Tutoring work is usually an essay draft, a worksheet, a mock interview script, or a centre booklet. It shows practice, and it can support school progress. A published portfolio means a finished formal publication: a topic, the child's participation, university professor review when it fits, and ISBN publishing arrangements, placed at the front of an admissions file. The difference is simple. Practice is a process. The book is a finished object someone can check.
+Tutoring work is usually an essay draft, a worksheet, a mock interview script, or a centre booklet. It shows practice, and it can support school progress. A published portfolio means a finished formal publication: a topic, the child's participation, university professor guidance when it fits, and ISBN publishing arrangements, placed at the front of an admissions file. The difference is simple. Practice is a process. The book is a finished object someone can check.
 
 ## Can a tutoring essay be the portfolio?
 

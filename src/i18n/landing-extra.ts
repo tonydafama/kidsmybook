@@ -19,20 +19,20 @@ export const PROGRAMME_HANS = {
     "想做中文、英文或中英双语——语言在咨询时一起决定",
   ],
   phasesTitle: "12 个月，五个阶段",
-  phasesIntro: "与公开说明一致：咨询评估 → 专属课程 → 出版研讨／教授审阅 → 亲子排版 → 印刷与上架。",
+  phasesIntro: "与公开说明一致：咨询评估 → 专属课程 → 出版研讨／教授指导 → 亲子排版 → 印刷与上架。",
   phases: [
     { name: "咨询评估", text: "首月：顾问访谈，了解小朋友兴趣程度和目标学校方向。" },
     { name: "专属课程", text: "第 2–5 个月：专业导师和大学教授带领定制课程，由真实兴趣出发创作。" },
-    { name: "出版研讨／教授审阅", text: "第 6–7 个月：出版研讨，大学教授审阅，提升学术和教育价值。" },
+    { name: "出版研讨／教授指导", text: "第 6–7 个月：出版研讨，大学教授指导，提升学术和教育价值。" },
     { name: "亲子排版", text: "第 8–10 个月：家长和小朋友一起做版面和设计，保留小朋友自己的声音。" },
     { name: "印刷与上架", text: "第 12 个月：正式印刷，再按题材和配套走香港实体书店上架／发行路径。店长决定进货和陈列。升学作品集是之后可以引用的成果。" },
   ],
   vsClassTitle: "和普通兴趣班有什么分别？",
   vsClass:
-    "兴趣班多数换来一张证书；我们做的是 12 个月导师制出版：由真实兴趣出发，经创作、教授审阅、正式 ISBN 出版，再可配发布会、展览、媒体和升学作品集。成果是一本面试官记得住、可以引用的正式出版物，不是再多一张一样的证书。",
+    "兴趣班多数换来一张证书；我们做的是 12 个月导师制出版：由真实兴趣出发，经创作、教授指导、正式 ISBN 出版，再可配发布会、展览、媒体和升学作品集。成果是一本面试官记得住、可以引用的正式出版物，不是再多一张一样的证书。",
   vsDiyTitle: "和自己找印刷店／自费出书有什么分别？",
   vsDiy:
-    "自费印刷、代印和按需印刷通常只是一本印好的书。ISBN 是书号，不等于实体书店书架上有货。Kidsmybook 是导师制出版：小朋友亲身参与、同大学教授合作审阅、正式印刷，再谈实体书店平台上架。店长决定进货。升学作品集是之后的用途。",
+    "自费印刷、代印和按需印刷通常只是一本印好的书。ISBN 是书号，不等于实体书店书架上有货。Kidsmybook 是导师制出版：小朋友亲身参与、与大学教授合作指导、正式印刷，再谈实体书店平台上架。店长决定进货。升学作品集是之后的用途。",
   singleTitle: "可以只做其中一项吗？",
   single:
     "可以。Author Programme 可以全案，也可以单项咨询 Book Launch、Exhibition、Media & PR、Live Streaming、Portfolio Package。适合已经有成品、想加强曝光或升学包装的家庭。",
@@ -68,7 +68,7 @@ export const PORTFOLIO_HANS = {
   description: "升小学面试、升中／DSS／直资，和国际学校 portfolio：用有 ISBN、小朋友参与的正式出版物做记得住的亮点。不保证录取。",
   eyebrow: "School portfolio · 香港",
   h1: "香港升学作品集：升小学、升中和国际学校面试怎样用一本书",
-  lead: "香港本地、跨境和高才通家庭，都可以用这条升学作品集路径。证书堆不占优。升小学、升中／直资／DSS，和国际学校面试，每年都见到很多份相近的钢琴、游泳、奥数履历。一本由小朋友参与、同大学教授合作审阅、有 ISBN 的正式出版物，是面试官记得住、可以引用的亮点。",
+  lead: "香港本地、跨境和高才通家庭，都可以用这条升学作品集路径。证书堆不占优。升小学、升中／直资／DSS，和国际学校面试，每年都见到很多份相近的钢琴、游泳、奥数履历。一本由小朋友参与、与大学教授合作指导、有 ISBN 的正式出版物，是面试官记得住、可以引用的亮点。",
   pointsTitle: "一本书可以怎么用",
   points: [
     "面试时有一个具体故事：兴趣从哪来、做过什么研究、怎样改到可以出版",
@@ -178,7 +178,7 @@ export const FAQ_HANS: { q: string; a: string }[] = [
   },
   {
     q: "是不是自己出书／self-publishing？",
-    a: "不是。这是 12 个月导师带领的出版计划：正式出版（ISBN）、大学教授审阅、发布会和公关——不是 DIY 模板，也不是自费出书工具。",
+    a: "不是。这是 12 个月导师带领的出版计划：正式出版（ISBN）、大学教授指导、发布会和公关——不是 DIY 模板，也不是自费出书工具。",
   },
   {
     q: "书可不可以在实体书店上架？",
@@ -186,7 +186,7 @@ export const FAQ_HANS: { q: string; a: string }[] = [
   },
   {
     q: "Kidsmybook 怎样帮小朋友考入香港好学校？",
-    a: "香港顶尖国际学校和私立学校，每年收到很多份一模一样的 Portfolio（钢琴、游泳、奥数）。Kidsmybook 帮家庭做出一本由小朋友亲自参与、大学教授审阅的正式出版实体书，证明热情、专注和学术潜力，让面试官更容易记住。",
+    a: "香港顶尖国际学校和私立学校，每年收到很多份一模一样的 Portfolio（钢琴、游泳、奥数）。Kidsmybook 帮家庭做出一本由小朋友亲自参与、大学教授指导的正式出版实体书，证明热情、专注和学术潜力，让面试官更容易记住。",
   },
   {
     q: "这个计划适合高才通（Top Talent Pass）家庭吗？",
@@ -194,7 +194,7 @@ export const FAQ_HANS: { q: string; a: string }[] = [
   },
   {
     q: "整个出版计划需要多久时间？",
-    a: "完整计划为期 12 个月，分为 5 个阶段：首月咨询评估、第 2-5 个月专属课程（专业导师与教授指导）、第 6-7 个月出版研讨与教授审阅、第 8-10 个月亲子排版设计，最后第 12 个月正式印刷并于实体书店平台上架。",
+    a: "完整计划为期 12 个月，分为 5 个阶段：首月咨询评估、第 2-5 个月专属课程（专业导师与教授指导）、第 6-7 个月出版研讨与教授指导、第 8-10 个月亲子排版设计，最后第 12 个月正式印刷并于实体书店平台上架。",
   },
   {
     q: "收费怎么算？",
@@ -202,11 +202,11 @@ export const FAQ_HANS: { q: string; a: string }[] = [
   },
   {
     q: "小朋友出书和普通兴趣班有什么分别？",
-    a: "兴趣班多数换来一张证书；我们做的是 12 个月导师制出版：由真实兴趣出发，经创作、教授审阅、正式 ISBN 出版，再可配发布会、展览、媒体和升学作品集。成果是一本面试官记得住、可以引用的正式出版物，不是再多一张一样的证书。",
+    a: "兴趣班多数换来一张证书；我们做的是 12 个月导师制出版：由真实兴趣出发，经创作、教授指导、正式 ISBN 出版，再可配发布会、展览、媒体和升学作品集。成果是一本面试官记得住、可以引用的正式出版物，不是再多一张一样的证书。",
   },
   {
     q: "和自己找印刷店／自费出书有什么分别？",
-    a: "自费印刷通常只是一本纪念册，不一定有导师带领、学术审阅、ISBN 注册流程和书店上架路径。Kidsmybook 是导师制出版计划，重点是小朋友亲身参与、教授审阅、正式出版和升学可用的作品集包装——不是 DIY 模板或纯代印。",
+    a: "自费印刷通常只是一本纪念册，不一定有导师带领、学术指导、ISBN 注册流程和书店上架路径。Kidsmybook 是导师制出版计划，重点是小朋友亲身参与、教授指导、正式出版和升学可用的作品集包装——不是 DIY 模板或纯代印。",
   },
   {
     q: "香港申请 ISBN 是怎样的？你们会处理吗？",
@@ -268,20 +268,20 @@ export const PROGRAMME_EN = {
     "Chinese, English, or bilingual books — the language is chosen in consultation",
   ],
   phasesTitle: "12 months, five phases",
-  phasesIntro: "Consultation → dedicated classes → publishing seminar and professor review → parent-child layout → print and listing.",
+  phasesIntro: "Consultation → dedicated classes → publishing seminar and professor guidance → parent-child layout → print and listing.",
   phases: [
     { name: "Consultation and assessment", text: "Month 1: an advisor interview on the child's interest and target-school direction." },
     { name: "Dedicated classes", text: "Months 2–5: tutors and university professors run classes built from the real interest." },
-    { name: "Publishing seminar and review", text: "Months 6–7: a publishing seminar and university professor review." },
+    { name: "Publishing seminar and guidance", text: "Months 6–7: a publishing seminar and university professor guidance." },
     { name: "Parent-child layout", text: "Months 8–10: parent and child shape the layout while keeping the child's voice." },
     { name: "Print and listing", text: "Month 12: a formal print run, then a Hong Kong physical bookstore listing / distribution path, depending on the title and package. Store managers decide stock and placement. An admissions portfolio is a later use." },
   ],
   vsClassTitle: "How is this different from an interest class?",
   vsClass:
-    "An interest class usually ends with another certificate. This is a 12-month mentored publication: a real interest, creation, professor review, a formal ISBN book, then launch, exhibition, media, and an admissions portfolio if you want them. The result is a citable book an interviewer can remember.",
+    "An interest class usually ends with another certificate. This is a 12-month mentored publication: a real interest, creation, professor guidance, a formal ISBN book, then launch, exhibition, media, and an admissions portfolio if you want them. The result is a citable book an interviewer can remember.",
   vsDiyTitle: "How is this different from a print shop or DIY self-publishing?",
   vsDiy:
-    "A self-funded print, a print-shop job, or print-on-demand usually stops at a finished copy. An ISBN is a number, not a physical bookstore shelf. Kidsmybook is mentor-led publishing: the child takes part, university professors collaborate on the review, the book is printed, then a bookstore-platform path is arranged. Store managers decide stock. An admissions portfolio comes after that.",
+    "A self-funded print, a print-shop job, or print-on-demand usually stops at a finished copy. An ISBN is a number, not a physical bookstore shelf. Kidsmybook is mentor-led publishing: the child takes part, university professors collaborate in guiding the work, the book is printed, then a bookstore-platform path is arranged. Store managers decide stock. An admissions portfolio comes after that.",
   singleTitle: "Can we book only one part?",
   single:
     "Yes. The Author Programme can be the full year, or a single consultation for Book Launch, Exhibition, Media & PR, Live Streaming, or Portfolio Package. That suits families who already have a finished work.",
@@ -431,7 +431,7 @@ export const FAQ_EN: { q: string; a: string }[] = [
   },
   {
     q: "Is Kidsmybook self-publishing?",
-    a: "No. It is a guided, mentor-led 12-month publishing programme with formal publication (ISBN), university professor review, launch events, and PR — not a DIY template or self-publishing tool.",
+    a: "No. It is a guided, mentor-led 12-month publishing programme with formal publication (ISBN), university professor guidance, launch events, and PR — not a DIY template or self-publishing tool.",
   },
   {
     q: "Can the published book be listed in a bookstore?",
@@ -439,7 +439,7 @@ export const FAQ_EN: { q: string; a: string }[] = [
   },
   {
     q: "How does Kidsmybook help with Hong Kong school admissions?",
-    a: "Top international and private schools in Hong Kong receive many identical portfolios filled with standard certificates (piano, swimming, olympiad math). Kidsmybook helps families create a citable published book co-authored by the child and reviewed by a university professor — proof of genuine interest that interviewers remember.",
+    a: "Top international and private schools in Hong Kong receive many identical portfolios filled with standard certificates (piano, swimming, olympiad math). Kidsmybook helps families create a citable published book co-authored by the child and guided in collaboration with a university professor — proof of genuine interest that interviewers remember.",
   },
   {
     q: "Is this programme suitable for Top Talent Pass families?",
@@ -447,7 +447,7 @@ export const FAQ_EN: { q: string; a: string }[] = [
   },
   {
     q: "How long does the entire publishing programme take?",
-    a: "The full programme lasts 12 months across five phases: Month 1 consultation and assessment; Months 2-5 dedicated classes with tutors and professors; Months 6-7 publishing seminar and professor review; Months 8-10 parent-child layout and design; Month 12 formal print and listing.",
+    a: "The full programme lasts 12 months across five phases: Month 1 consultation and assessment; Months 2-5 dedicated classes with tutors and professors; Months 6-7 publishing seminar and professor guidance; Months 8-10 parent-child layout and design; Month 12 formal print and listing.",
   },
   {
     q: "How much does it cost?",
@@ -455,11 +455,11 @@ export const FAQ_EN: { q: string; a: string }[] = [
   },
   {
     q: "How is a published book different from a regular interest class?",
-    a: "Interest classes usually end with another certificate. We run a 12-month mentored publication: a real interest, creation, professor review, a formal ISBN book, then launch, exhibition, media, and an admissions portfolio if wanted. The result is a citable publication an interviewer can remember.",
+    a: "Interest classes usually end with another certificate. We run a 12-month mentored publication: a real interest, creation, professor guidance, a formal ISBN book, then launch, exhibition, media, and an admissions portfolio if wanted. The result is a citable publication an interviewer can remember.",
   },
   {
     q: "How is this different from a print shop or DIY self-publishing?",
-    a: "A self-funded print run is often a keepsake. It may not include mentoring, academic review, an ISBN registration path, or bookstore listing. Kidsmybook is mentor-led publishing: the child participates, professors may review, and the family receives a formal publication packaged for admissions — not a DIY template or print-only service.",
+    a: "A self-funded print run is often a keepsake. It may not include mentoring, academic guidance, an ISBN registration path, or bookstore listing. Kidsmybook is mentor-led publishing: the child participates, professors may guide, and the family receives a formal publication packaged for admissions — not a DIY template or print-only service.",
   },
   {
     q: "How does ISBN registration work in Hong Kong? Do you handle it?",
@@ -509,7 +509,7 @@ export const GAOCAI_HANS: HubCopy = {
     "高才通和新来港家庭：一本小朋友参与、有 ISBN 的正式出版物，可以放进香港升小学、升中或国际学校作品集，作为讲得清楚、可以引用的证明物。Kidsmybook 不是升学中介，不保证学位。",
   eyebrow: "高才通 · 新来港 · 香港",
   h1: "高才通和新来港家庭：升学作品集怎样用一本 ISBN 童书做证明物",
-  lead: "刚以高才通或其他途径来港的家庭，作品集往往还没有本地学校纪录。一本由小朋友参与、可有大学教授审阅、有 ISBN 的正式出版物，是一件可以带去面试、可以引用的证明物：证明一段持续兴趣、小朋友做过的工序，以及一份做完的出版成果。",
+  lead: "刚以高才通或其他途径来港的家庭，作品集往往还没有本地学校纪录。一本由小朋友参与、可有大学教授指导、有 ISBN 的正式出版物，是一件可以带去面试、可以引用的证明物：证明一段持续兴趣、小朋友做过的工序，以及一份做完的出版成果。",
   notLabel: "诚实界限",
   notBody:
     "Kidsmybook 是出版工作室，不是升学中介，没有学校合作，也不保证任何学位。书不取代签证文件、成绩表或学校报告，也不是有书就录取。最终录取由学校决定。",
@@ -531,7 +531,7 @@ export const GAOCAI_HANS: HubCopy = {
   pathIntro: "和 12 个月出书计划同一条路径。高才通家庭不必先成为本地专家才可以开始。",
   steps: [
     { name: "讲一件兴趣", text: "咨询时讲年龄、现在或目标是升小、升中还是国际学校，以及一件小朋友会自己翻开来做的事。" },
-    { name: "导师制完成一本书", text: "12 个月：创作、可有大学教授审阅、亲子排版，保留小朋友自己的声音。" },
+    { name: "导师制完成一本书", text: "12 个月：创作、可有大学教授指导、亲子排版，保留小朋友自己的声音。" },
     { name: "ISBN 和正式出版", text: "按正式出版要求处理书号和出版安排。书号细节以香港公共图书馆书刊注册组为准。Kidsmybook 不是该组。" },
     { name: "放进升学作品集", text: "同一本实物，按升小学、升中、DSS、直资或国际学校准备讲法。作品集总页讲怎么用。" },
   ],
@@ -551,7 +551,7 @@ export const GAOCAI_HANS: HubCopy = {
     },
     {
       q: "这本书证明兴趣，还是证明成绩？",
-      a: "证明一段做完的兴趣和小朋友的参与，包括可有教授审阅和 ISBN 出版安排。它不是学科成绩，也不是公开考试分数。",
+      a: "证明一段做完的兴趣和小朋友的参与，包括可有教授指导和 ISBN 出版安排。它不是学科成绩，也不是公开考试分数。",
     },
     {
       q: "高才通第一年，什么时候才开始 ISBN 出版？",
@@ -615,7 +615,7 @@ export const XINGQU_HANS: HubCopy = {
   pathIntro: "四步接到出书计划和升学作品集。中途可以先 WhatsApp 问适不适合。",
   steps: [
     { name: "留下一件兴趣", text: "选一件小朋友会自己回去做的事。运动、乐器、动物、城市观察都可以，不限高尔夫、钢琴或马术。" },
-    { name: "导师制写成书", text: "计划页讲五个阶段：咨询、专属课程、出版研讨和可有大学教授审阅、亲子排版、印刷与上架。" },
+    { name: "导师制写成书", text: "计划页讲五个阶段：咨询、专属课程、出版研讨和可有大学教授指导、亲子排版、印刷与上架。" },
     { name: "正式 ISBN 出版", text: "书是正式出版物，不是兴趣班再多一张证书。书号安排按香港书刊注册组公开做法处理；Kidsmybook 不是官方机构。" },
     { name: "接到升学作品集", text: "完成后才放进升小学、升中或国际学校作品集。怎样带、怎样讲，见作品集总页。" },
   ],
@@ -627,7 +627,7 @@ export const XINGQU_HANS: HubCopy = {
     },
     {
       q: "出书是不是取代兴趣班和考级？",
-      a: "不是。教练和考级继续负责练习。Kidsmybook 负责导师制出版：小朋友参与、可有大学教授审阅、ISBN 和升学作品集包装。",
+      a: "不是。教练和考级继续负责练习。Kidsmybook 负责导师制出版：小朋友参与、可有大学教授指导、ISBN 和升学作品集包装。",
     },
     {
       q: "是不是一定要高尔夫、钢琴或马术才可以出书？",
@@ -668,7 +668,7 @@ export const GAOCAI_EN: HubCopy = {
     "Top Talent Pass and newly arrived families: a child-made ISBN book can sit in a Hong Kong primary, secondary, or international-school portfolio as something an interviewer can cite. Kidsmybook is not an admissions agent and does not guarantee a place.",
   eyebrow: "Top Talent Pass · newly arrived · Hong Kong",
   h1: "Top Talent Pass and newly arrived families: an ISBN children's book as portfolio proof",
-  lead: "Families who have just arrived often have no local school file yet. A formally published ISBN book the child took part in — with university professor review when it fits — is an object you can carry into an interview and cite: a sustained interest, the steps the child actually did, and a finished publication.",
+  lead: "Families who have just arrived often have no local school file yet. A formally published ISBN book the child took part in — with university professor guidance when it fits — is an object you can carry into an interview and cite: a sustained interest, the steps the child actually did, and a finished publication.",
   notLabel: "Honest limits",
   notBody:
     "Kidsmybook is a publishing studio, not an admissions agent. There is no school partnership and no guaranteed place. The book does not replace visa papers, transcripts, or a school report, and it is not an offer of admission. The school decides.",
@@ -690,7 +690,7 @@ export const GAOCAI_EN: HubCopy = {
   pathIntro: "The same 12-month author programme. A Top Talent Pass family does not need to become a local expert before starting.",
   steps: [
     { name: "Name one interest", text: "In consultation: age, whether the target is primary, secondary, or an international school, and one thing the child returns to." },
-    { name: "A mentored book", text: "Twelve months: creation, university professor review when it fits, and parent-child layout that keeps the child's voice." },
+    { name: "A mentored book", text: "Twelve months: creation, university professor guidance when it fits, and parent-child layout that keeps the child's voice." },
     { name: "ISBN and formal publication", text: "Book number and publishing arrangements follow the formal path. Details follow the Hong Kong Public Libraries Books Registration Office. Kidsmybook is not that office." },
     { name: "Place it in the portfolio", text: "One physical book, told for primary, secondary, DSS, direct-subsidy, or international interviews. The portfolio page explains the use." },
   ],
@@ -710,7 +710,7 @@ export const GAOCAI_EN: HubCopy = {
     },
     {
       q: "Does the book prove an interest or a grade?",
-      a: "It shows a finished interest and the child's participation, including professor review when it fits and ISBN publishing arrangements. It is not a subject score and not a public exam result.",
+      a: "It shows a finished interest and the child's participation, including professor guidance when it fits and ISBN publishing arrangements. It is not a subject score and not a public exam result.",
     },
     {
       q: "When should a Top Talent Pass family start the ISBN path in year one?",
@@ -774,7 +774,7 @@ export const XINGQU_EN: HubCopy = {
   pathIntro: "Four steps connect the author programme and the school portfolio. A WhatsApp note can test fit first.",
   steps: [
     { name: "Keep one interest", text: "Choose something the child returns to. Sport, an instrument, animals, or city observation all work. Golf, piano, and riding are examples, not a list of finished books." },
-    { name: "Write it with a mentor", text: "The programme page sets five phases: consultation, classes, a publishing seminar with university professor review when it fits, parent-child layout, then print and listing." },
+    { name: "Write it with a mentor", text: "The programme page sets five phases: consultation, classes, a publishing seminar with university professor guidance when it fits, parent-child layout, then print and listing." },
     { name: "Formal ISBN publication", text: "The result is a formal publication, not another class certificate. ISBN arrangements follow the Books Registration Office. Kidsmybook is not that office." },
     { name: "Move it into the portfolio", text: "After the book is finished, place it in a primary, secondary, or international-school portfolio. The portfolio page explains what to carry and how to tell it." },
   ],
@@ -786,7 +786,7 @@ export const XINGQU_EN: HubCopy = {
     },
     {
       q: "Does the book replace the class or the grade exam?",
-      a: "No. The coach and the exam keep the practice. Kidsmybook runs mentor-led publishing: the child takes part, university professors may review, and the family gets ISBN arrangements plus portfolio packaging.",
+      a: "No. The coach and the exam keep the practice. Kidsmybook runs mentor-led publishing: the child takes part, university professors may guide, and the family gets ISBN arrangements plus portfolio packaging.",
     },
     {
       q: "Does the interest have to be golf, piano, or riding?",
@@ -824,7 +824,7 @@ export const XINGQU_EN: HubCopy = {
 export const ABOUT_HANS = {
   title: "关于我们｜香港儿童出版工作室｜Kidsmybook",
   description:
-    "Kidsmybook 是香港儿童出版工作室。12 个月导师制，把小朋友的兴趣做成有 ISBN 的正式印刷童书，同大学教授合作审阅。WhatsApp 或电邮。不是升学中介，不保证录取。",
+    "Kidsmybook 是香港儿童出版工作室。12 个月导师制，把小朋友的兴趣做成有 ISBN 的正式印刷童书，与大学教授合作指导。WhatsApp 或电邮。不是升学中介，不保证录取。",
   eyebrow: "工作室 · 香港",
   h1: "关于 Kidsmybook：香港儿童出版工作室",
   lead: "Kidsmybook 是香港儿童出版工作室。12 个月导师制，把大约 3 至 18 岁小朋友的兴趣做成有 ISBN 的正式印刷童书；过程与大学教授合作指导，完成后再按需要配发布会、展览、媒体和升学作品集。",
@@ -832,7 +832,7 @@ export const ABOUT_HANS = {
   coverage: "香港本地、跨境和高才通家庭都可以用这条路径。语言可以是中文、英文或中英双语，视乎小朋友学校语境，在咨询时再定。",
   programmeTitle: "12 个月导师制，先讲重点",
   programme:
-    "大约一年：先了解兴趣和目标学校方向，再由导师带领创作，同大学教授合作审阅，然后亲子排版，最后正式印刷，并提供香港实体书店上架／发行路径。阶段细节见出书计划页；这页讲工作室是谁。",
+    "大约一年：先了解兴趣和目标学校方向，再由导师带领创作，与大学教授合作指导，然后亲子排版，最后正式印刷，并提供香港实体书店上架／发行路径。阶段细节见出书计划页；这页讲工作室是谁。",
   disclaimerTitle: "我们不是升学中介",
   disclaimer:
     "Kidsmybook 是出版工作室，不是升学中介，也不保证进入任何学校。最终录取由学校决定。一本正式出版物可以让作品集更有说服力、面试更好讲故事。",
@@ -855,7 +855,7 @@ export const ABOUT_EN = {
     "Hong Kong local families, cross-border families, and Top Talent Pass households can use this path. The book can be Chinese, English, or bilingual, chosen for the child's school context during consultation.",
   programmeTitle: "The 12-month programme, in brief",
   programme:
-    "The year starts with the child's interest and school direction, continues with mentor-led making and review in collaboration with university professors, then parent-and-child layout, and ends with a formal print run and a Hong Kong physical bookstore listing / distribution path. The programme page has the phases. This page says who the studio is.",
+    "The year starts with the child's interest and school direction, continues with mentor-led making and guidance in collaboration with university professors, then parent-and-child layout, and ends with a formal print run and a Hong Kong physical bookstore listing / distribution path. The programme page has the phases. This page says who the studio is.",
   disclaimerTitle: "Not an admissions agent",
   disclaimer:
     "Kidsmybook is a publishing studio, not an admissions agent, and does not guarantee a school place. The school decides. A formal publication can make a portfolio clearer and an interview easier to tell.",
@@ -1020,7 +1020,7 @@ export const SHENGXIAO_HANS: HubCopy = {
     "升小学面试、叩门和 portfolio：用有 ISBN、小朋友参与的正式出版物做记得住的一页。Kidsmybook 是 12 个月导师制出版，不是短期升小面试班。不保证录取。",
   eyebrow: "升小面试 · 叩门 · 香港",
   h1: "升小面试作品集：叩门和小一面试怎样用一本正式出版物",
-  lead: "小一自行分配、面试和统一派位之后的叩门，通常只有几分钟。作品集不是越厚越好。一本由小朋友参与、可有大学教授审阅、有 ISBN 的正式出版物，是面试官可以翻开、小朋友可以指着一页讲的一项成果。搜索「升小面试」「面试班」或 portfolio 的家长，可以先分清：短期面试班练当场表现；Kidsmybook 做的是可以带去面试的出版作品集。",
+  lead: "小一自行分配、面试和统一派位之后的叩门，通常只有几分钟。作品集不是越厚越好。一本由小朋友参与、可有大学教授指导、有 ISBN 的正式出版物，是面试官可以翻开、小朋友可以指着一页讲的一项成果。搜索「升小面试」「面试班」或 portfolio 的家长，可以先分清：短期面试班练当场表现；Kidsmybook 做的是可以带去面试的出版作品集。",
   notLabel: "这页不是",
   notBody:
     "不是几堂升小面试班，不是模拟面试稿班，也不是保证进入任何小学。Kidsmybook 是出版工作室，没有学校合作，不代表任何学校招生。临近面试只剩几天或几星期，12 个月出版计划赶不及。",
@@ -1042,7 +1042,7 @@ export const SHENGXIAO_HANS: HubCopy = {
   pathIntro: "四步接到 12 个月出书计划和免费准备清单。中途可以先 WhatsApp 问适不适合。",
   steps: [
     { name: "讲年龄和目标", text: "咨询时讲小朋友年龄、现在或目标是本地、私立、直资还是国际小学，以及一件会自己翻开来做的兴趣。" },
-    { name: "导师制完成一本书", text: "大约 12 个月：创作、可有大学教授审阅、亲子排版，保留小朋友自己的声音。深度按年龄，不会叫孩子写大人作文。" },
+    { name: "导师制完成一本书", text: "大约 12 个月：创作、可有大学教授指导、亲子排版，保留小朋友自己的声音。深度按年龄，不会叫孩子写大人作文。" },
     { name: "ISBN 和正式出版", text: "按香港公共图书馆书刊注册组公开做法处理书号和出版安排。Kidsmybook 不是该组。" },
     { name: "放进升小作品集", text: "面试或叩门当日只打开一页。证书放后面。文件核对见免费准备清单。" },
   ],
@@ -1109,7 +1109,7 @@ export const SHENGZHONG_HANS: HubCopy = {
   listTitle: "升中作品集前面可以放什么",
   listItems: [
     "一件做完的兴趣：起点、过程、修改，小朋友自己讲得出",
-    "正式出版物：题目、小朋友做过的部分、可有大学教授审阅、出版安排",
+    "正式出版物：题目、小朋友做过的部分、可有大学教授指导、出版安排",
     "面试时准备打开的一页，而不是十个周末班各一张证书",
     "同一本书可以再准备升小或国际学校的讲法，但不要做成两套矛盾故事",
   ],
@@ -1124,7 +1124,7 @@ export const SHENGZHONG_HANS: HubCopy = {
   pathIntro: "和出书计划同一条路径。升中家庭可以同时看升小页、免费清单和高才通页，按自己的申请先选。",
   steps: [
     { name: "先定目标年级", text: "讲现在读几年级、目标是直资、DSS 还是其他中学，以及一个已经在做的兴趣。" },
-    { name: "用一年完成出版物", text: "12 个月导师制：创作、可有大学教授审阅、亲子排版、印刷与上架。不是几堂面试班。" },
+    { name: "用一年完成出版物", text: "12 个月导师制：创作、可有大学教授指导、亲子排版、印刷与上架。不是几堂面试班。" },
     { name: "放在作品集最前", text: "一页纸写题目、小朋友做过的部分和准备讲的一页。证书和补习作品放附页。" },
     { name: "按学校准备讲法", text: "直资、DSS 和国际学校可以是两种讲法、同一本书。文件核对见准备清单。高才通家庭另见证明物页。" },
   ],
@@ -1184,7 +1184,7 @@ export const SHENGXIAO_EN: HubCopy = {
     "Hong Kong primary interviews, door-knocking, and portfolios: an ISBN book the child helped make is one page someone can remember. Kidsmybook is a 12-month mentored publishing path, not a short interview class. No place is guaranteed.",
   eyebrow: "Primary interview · door-knocking · Hong Kong",
   h1: "Primary interview portfolio: one published book for door-knocking and P1 interviews",
-  lead: "Discretionary-place interviews and door-knocking after central allocation usually last a few minutes. A thicker file is not a better file. A formal ISBN book the child helped make — with university professor review when it fits — is one finished piece an interviewer can open and a child can point to. Parents searching for a primary interview, an interview class, or a portfolio can separate two jobs: a short class practises the room; Kidsmybook makes a publication you can carry in.",
+  lead: "Discretionary-place interviews and door-knocking after central allocation usually last a few minutes. A thicker file is not a better file. A formal ISBN book the child helped make — with university professor guidance when it fits — is one finished piece an interviewer can open and a child can point to. Parents searching for a primary interview, an interview class, or a portfolio can separate two jobs: a short class practises the room; Kidsmybook makes a publication you can carry in.",
   notLabel: "What this page is not",
   notBody:
     "It is not a few-session primary interview class, not a mock-script course, and not a promise of any primary place. Kidsmybook is a publishing studio, has no school partnership, and does not represent any school's admissions. If the interview is only days or weeks away, a 12-month publishing programme cannot be finished in time.",
@@ -1206,7 +1206,7 @@ export const SHENGXIAO_EN: HubCopy = {
   pathIntro: "Four steps connect the 12-month author programme and the free checklist. A WhatsApp note can test fit first.",
   steps: [
     { name: "Name the age and the target", text: "In consultation, share the age, whether the target is a local, private, DSS, or international primary, and one interest the child returns to." },
-    { name: "Finish one book with a mentor", text: "About 12 months: making the work, university professor review when it fits, and parent-child layout, in the child's own voice. Depth follows age." },
+    { name: "Finish one book with a mentor", text: "About 12 months: making the work, university professor guidance when it fits, and parent-child layout, in the child's own voice. Depth follows age." },
     { name: "ISBN and formal publication", text: "ISBN and publishing arrangements follow the public practice of the Hong Kong Books Registration Office. Kidsmybook is not that office." },
     { name: "Place it in the primary file", text: "On interview or door-knocking day, open one page. Certificates stay behind it. The free checklist is the document check." },
   ],
@@ -1273,7 +1273,7 @@ export const SHENGZHONG_EN: HubCopy = {
   listTitle: "What can sit at the front of a secondary portfolio",
   listItems: [
     "One finished interest: the start, the work, and the revision, in the student's own words",
-    "A formal publication: the topic, the child's part, professor review when it fits, and the publishing arrangements",
+    "A formal publication: the topic, the child's part, professor guidance when it fits, and the publishing arrangements",
     "One page prepared for the interview, not ten weekend classes with one certificate each",
     "The same book can be told again for primary or international interviews, without two contradictory stories",
   ],
@@ -1288,7 +1288,7 @@ export const SHENGZHONG_EN: HubCopy = {
   pathIntro: "The path is the author programme. Secondary families can also read the primary page, the free checklist, and the Top Talent Pass page, and start with the application they actually have.",
   steps: [
     { name: "Name the year and the target", text: "Share the current year, whether the target is DSS, direct subsidy, or another secondary, and one interest already underway." },
-    { name: "Finish a publication over a year", text: "Twelve months of mentoring: making the work, university professor review when it fits, parent-child layout, then print and listing. It is not a few interview classes." },
+    { name: "Finish a publication over a year", text: "Twelve months of mentoring: making the work, university professor guidance when it fits, parent-child layout, then print and listing. It is not a few interview classes." },
     { name: "Put it at the front", text: "One sheet names the topic, the child's part, and the page to open. Certificates and tutoring work stay in the appendix." },
     { name: "Prepare the telling for that school", text: "DSS, direct subsidy, and an international school can be two tellings of one book. The checklist is the document check. Top Talent Pass families also have a proof-object page." },
   ],
@@ -1367,9 +1367,9 @@ export const SHUDIAN_HANS: HubCopy = {
     "店长有权不进货、改陈列，或者退货；网站不会写全线分店保证有售",
   ],
   pathTitle: "和 12 个月计划怎样接上",
-  pathIntro: "上架不是第一步。前面还有导师带领创作、可有大学教授审阅、亲子排版。印刷与上架是计划最后阶段。阶段细节见出书计划。",
+  pathIntro: "上架不是第一步。前面还有导师带领创作、可有大学教授指导、亲子排版。印刷与上架是计划最后阶段。阶段细节见出书计划。",
   steps: [
-    { name: "创作和审阅", text: "第 2–7 个月：导师带领，可有大学教授审阅。书先要是小朋友自己的作品。" },
+    { name: "创作和指导", text: "第 2–7 个月：导师带领，可有大学教授指导。书先要是小朋友自己的作品。" },
     { name: "排版", text: "第 8–10 个月：家长和小朋友一起做版面，才适合正式印刷。" },
     { name: "正式印刷", text: "第 12 个月：印成实体书。印刷完成仍然不等于书店有货。" },
     { name: "书店平台上架", text: "按题材和配套，安排香港实体书店上架／发行路径。进货、陈列和退货由店方决定。" },
@@ -1455,9 +1455,9 @@ export const SHUDIAN_EN: HubCopy = {
     "A manager can decline the title, move it, or return it. This site does not promise every branch",
   ],
   pathTitle: "How this joins the 12-month plan",
-  pathIntro: "Listing is not step one. Mentored creation, a possible university-professor review, and parent-child layout come first. Print and listing are the last phase. See the programme page for the phases.",
+  pathIntro: "Listing is not step one. Mentored creation, a possible university-professor guidance, and parent-child layout come first. Print and listing are the last phase. See the programme page for the phases.",
   steps: [
-    { name: "Create and review", text: "Months 2–7: mentors lead. A university professor may review. The book has to be the child's own work first." },
+    { name: "Create and guide", text: "Months 2–7: mentors lead. A university professor may guide. The book has to be the child's own work first." },
     { name: "Layout", text: "Months 8–10: parent and child shape the pages before a formal print run." },
     { name: "Formal print", text: "Month 12: the book is printed. A printed copy is still not a bookstore shelf." },
     { name: "Bookstore platform", text: "A Hong Kong physical bookstore listing / distribution path is arranged for the title and package. The store decides stock, placement, and returns." },

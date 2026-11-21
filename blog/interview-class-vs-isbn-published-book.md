@@ -18,7 +18,7 @@ tags: ["升小面試", "面試班", "ISBN", "作品集", "portfolio"]
 
 ## 點解臨近面試趕唔切一本 12 個月嘅書？
 
-出版計劃大約一年：先了解興趣，再由導師帶領創作，可有大學教授審閱，然後親子排版，最後正式印刷。公開具名例子 Hilary 出版時八歲，約一年完成蝴蝶圖鑑，呢個係出版過程，唔係入學結果。如果只剩幾日或幾星期，呢條路徑趕唔切。先收窄而家手上嘅文件：https://kidsmybook.com/blog/portfolio-not-ready-before-interview。免費清單：https://kidsmybook.com/admissions-portfolio-checklist。
+出版計劃大約一年：先了解興趣，再由導師帶領創作，可有大學教授指導，然後親子排版，最後正式印刷。公開具名例子 Hilary 出版時八歲，約一年完成蝴蝶圖鑑，呢個係出版過程，唔係入學結果。如果只剩幾日或幾星期，呢條路徑趕唔切。先收窄而家手上嘅文件：https://kidsmybook.com/blog/portfolio-not-ready-before-interview。免費清單：https://kidsmybook.com/admissions-portfolio-checklist。
 
 ## Kidsmybook 係咪面試班？
 

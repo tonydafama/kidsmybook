@@ -20,7 +20,7 @@ tags: ["合集", "个人出书", "实体书店", "香港"]
 
 ## Kidsmybook 这条路多了什么？
 
-Kidsmybook 是大约 12 个月的导师制：咨询、创作、可有大学教授审阅、亲子排版，然后正式印刷。小朋友参与的是一本个人书，不是合集里面的一篇。印刷之后，才按题材和配套谈香港实体书店上架／发行路径。Kidsmybook 不是书店连锁。店长决定进货、陈列和退货，不保证每间分店都有。所以可以讲「出书连上架路径」，不可以讲「有书号就有货」。阶段见 https://kidsmybook.com/programme。书店平台说明见 https://kidsmybook.com/kids-book-bookstore-listing。自费、代印和按需印刷多数停在一本印好的书：https://kidsmybook.com/blog/self-publish-pod-vs-mentored-bookstore-listing。家长想知上架实际可以意味什么：https://kidsmybook.com/blog/bookstore-shelf-listing-for-parents。
+Kidsmybook 是大约 12 个月的导师制：咨询、创作、可有大学教授指导、亲子排版，然后正式印刷。小朋友参与的是一本个人书，不是合集里面的一篇。印刷之后，才按题材和配套谈香港实体书店上架／发行路径。Kidsmybook 不是书店连锁。店长决定进货、陈列和退货，不保证每间分店都有。所以可以讲「出书连上架路径」，不可以讲「有书号就有货」。阶段见 https://kidsmybook.com/programme。书店平台说明见 https://kidsmybook.com/kids-book-bookstore-listing。自费、代印和按需印刷多数停在一本印好的书：https://kidsmybook.com/blog/self-publish-pod-vs-mentored-bookstore-listing。家长想知上架实际可以意味什么：https://kidsmybook.com/blog/bookstore-shelf-listing-for-parents。
 
 ## 升学作品集怎样看合集和一本个人书？
 

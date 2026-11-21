@@ -10,7 +10,7 @@ Parents who search for an art portfolio usually want to know whether the intervi
 
 ## What is the difference between an art portfolio and an ISBN book?
 
-An art portfolio is usually a sketchbook, drawings, photos of making, or a selection from class. It shows practice. An ISBN book is a finished publication: a topic, steps the child took part in, university professor review when it fits, and book-number arrangements. In a few minutes, a loose stack of drawings can read as “my child takes art”. A book opened to one page is easier to remember as one story.
+An art portfolio is usually a sketchbook, drawings, photos of making, or a selection from class. It shows practice. An ISBN book is a finished publication: a topic, steps the child took part in, university professor guidance when it fits, and book-number arrangements. In a few minutes, a loose stack of drawings can read as “my child takes art”. A book opened to one page is easier to remember as one story.
 
 A certificate class ends with a grade sheet. Tutoring ends with practice. An art class ends with drawings. Those are three kinds of evidence. Certificate class versus ISBN: https://kidsmybook.com/blog/certificate-course-vs-isbn-publishing . Tutoring versus a published portfolio: https://kidsmybook.com/blog/tutoring-work-vs-published-portfolio .
 

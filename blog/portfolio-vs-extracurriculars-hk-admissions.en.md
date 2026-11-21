@@ -24,7 +24,7 @@ In contrast, transforming a child's genuine interest into a **formally published
 No two children will write the exact same book. Whether it's *My Insect Observation Diary* or *Science Experiments in the Kitchen*, a book represents the child's exclusive perspective. When the interviewer turns the pages, they see a living, breathing person, not a cold certificate.
 
 ### 2. Authoritative Endorsement
-Kidsmybook's publishing programme invites **university professors to participate in the review process**. When a principal sees an academic's recommendation on the back cover, the weight and persuasiveness of that portfolio far exceed a standard tutoring center award.
+Kidsmybook's publishing programme invites **university professors to take part in guiding the work**. When a principal sees an academic's recommendation on the back cover, the weight and persuasiveness of that portfolio far exceed a standard tutoring center award.
 
 ### 3. Long-term Dedication
 Completing a book takes months. This proves to the school that the child possesses high levels of focus, patience, and execution—the exact traits top schools look for.

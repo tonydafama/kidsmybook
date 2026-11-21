@@ -27,7 +27,7 @@
       "@id": "https://kidsmybook.com/#year-programme",
       "name": "Kidsmybook 12-Month Child Achievement Publishing Programme",
       "provider": { "@id": "https://kidsmybook.com/#organization" },
-      "description": "A 12-month professional publishing plan for children. Real-life-story adaptation co-created with the child; university professors join the review to raise academic and educational value. The finished book is printed and listed on physical bookstore platforms as a highlight for school admissions.",
+      "description": "A 12-month professional publishing plan for children. Real-life-story adaptation co-created with the child; university professors take part in guiding the work to raise academic and educational value. The finished book is printed and listed on physical bookstore platforms as a highlight for school admissions.",
       "inLanguage": "zh-Hant",
       "audience": {
         "@type": "PeopleAudience",
@@ -40,7 +40,7 @@
         "courseMode": "Onsite",
         "courseWorkload": "P12M",
         "name": "12-Month Programme — 5 Phases",
-        "description": "Phase 1 (Month 1): Consultation & assessment — advisor interview to understand the child's interest level and target schools. Phase 2 (Months 2-5): Dedicated classes with professional tutors and university professors, customised. Phase 3 (Months 6-7): Publishing seminar + university professor review to raise academic value. Phase 4 (Months 8-10): Parent and child co-create layout and design. Phase 5 (Month 12): Formal print and listing on platforms to brighten the admissions portfolio."
+        "description": "Phase 1 (Month 1): Consultation & assessment — advisor interview to understand the child's interest level and target schools. Phase 2 (Months 2-5): Dedicated classes with professional tutors and university professors, customised. Phase 3 (Months 6-7): Publishing seminar + university professor guidance to raise academic value. Phase 4 (Months 8-10): Parent and child co-create layout and design. Phase 5 (Month 12): Formal print and listing on platforms to brighten the admissions portfolio."
       },
       "offers": {
         "@type": "Offer",
@@ -71,7 +71,7 @@
       "serviceType": "Child Achievement Publishing — Author Programme",
       "name": "Author Programme",
       "provider": { "@id": "https://kidsmybook.com/#organization" },
-      "description": "A 12-month mentored publishing programme: from a child's interest to a formally published, ISBN-registered book with university professor review, then launch, exhibition, media/PR, and an admissions-ready portfolio.",
+      "description": "A 12-month mentored publishing programme: from a child's interest to a formally published, ISBN-registered book with university professor guidance, then launch, exhibition, media/PR, and an admissions-ready portfolio.",
       "audience": {
         "@type": "PeopleAudience",
         "suggestedMinAge": 3,
@@ -138,7 +138,7 @@
           "name": "Is Kidsmybook self-publishing?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "No. It is a guided, mentor-led 12-month publishing programme with formal publication (ISBN), university professor review, launch events, and PR — not a DIY template or self-publishing tool."
+            "text": "No. It is a guided, mentor-led 12-month publishing programme with formal publication (ISBN), university professor guidance, launch events, and PR — not a DIY template or self-publishing tool."
           }
         },
         {
@@ -154,7 +154,7 @@
           "name": "How long does the Kidsmybook programme take?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The full programme is 12 months across five phases: Month 1 consultation & assessment; Months 2-5 dedicated classes with tutors and professors; Months 6-7 publishing seminar and professor review; Months 8-10 parent-child layout and design; Month 12 formal print and listing."
+            "text": "The full programme is 12 months across five phases: Month 1 consultation & assessment; Months 2-5 dedicated classes with tutors and professors; Months 6-7 publishing seminar and professor guidance; Months 8-10 parent-child layout and design; Month 12 formal print and listing."
           }
         },
         {

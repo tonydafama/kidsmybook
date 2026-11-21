@@ -12,7 +12,7 @@ Clear Book 喺呢篇係指家長帶去升中、直資或 DSS 面試、可以逐�
 
 ## 出書連實體書店上架，同升中 Clear Book 係咩關係？
 
-關係係：書先係一件做完嘅出版成果，Clear Book 同個人學習檔案先至決定點樣引用佢。條路唔係申請到一個書號就完。前面係約 12 個月導師制：諮詢、導師帶領創作、可有大學教授審閱、親子排版，然後先正式印刷。印刷完成，先至談實體書店上架。上架係發行商供貨：書去到香港實體書店之後，書店買手同店長決定入唔入貨、擺喺邊、賣幾耐、退唔退。Kidsmybook 唔係書店連鎖。上架視題材同配套，唔係每本書自動出現喺每一間分店。平台說明：https://kidsmybook.com/kids-book-bookstore-listing。階段：https://kidsmybook.com/programme。
+關係係：書先係一件做完嘅出版成果，Clear Book 同個人學習檔案先至決定點樣引用佢。條路唔係申請到一個書號就完。前面係約 12 個月導師制：諮詢、導師帶領創作、可有大學教授指導、親子排版，然後先正式印刷。印刷完成，先至談實體書店上架。上架係發行商供貨：書去到香港實體書店之後，書店買手同店長決定入唔入貨、擺喺邊、賣幾耐、退唔退。Kidsmybook 唔係書店連鎖。上架視題材同配套，唔係每本書自動出現喺每一間分店。平台說明：https://kidsmybook.com/kids-book-bookstore-listing。階段：https://kidsmybook.com/programme。
 
 所以文件夾上面可以引用嘅一句，係「有正式印刷，再有實體書店上架路徑」。唔係「我哋就係某間書店」，亦唔係「保證每間分店今日有貨」。店方決定入貨、陳列同退貨。ISBN 只係書號，唔等於書架：https://kidsmybook.com/blog/isbn-is-not-bookstore-listing。面試場面點講同一條路徑：https://kidsmybook.com/blog/physical-bookstore-listing-for-hk-school-interview。升中頁：https://kidsmybook.com/secondary-dss-admissions-portfolio。
 

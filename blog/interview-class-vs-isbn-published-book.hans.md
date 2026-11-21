@@ -18,7 +18,7 @@ tags: ["升小面试", "面试班", "ISBN", "作品集", "portfolio"]
 
 ## 为什么临近面试赶不及一本 12 个月的书？
 
-出版计划大约一年：先了解兴趣，再由导师带领创作，可有大学教授审阅，然后亲子排版，最后正式印刷。公开具名例子 Hilary 出版时八岁，约一年完成蝴蝶图鉴，这是出版过程，不是入学结果。如果只剩几天或几星期，这条路径赶不及。先收窄现在手上的文件：https://kidsmybook.com/blog/portfolio-not-ready-before-interview。免费清单：https://kidsmybook.com/admissions-portfolio-checklist。
+出版计划大约一年：先了解兴趣，再由导师带领创作，可有大学教授指导，然后亲子排版，最后正式印刷。公开具名例子 Hilary 出版时八岁，约一年完成蝴蝶图鉴，这是出版过程，不是入学结果。如果只剩几天或几星期，这条路径赶不及。先收窄现在手上的文件：https://kidsmybook.com/blog/portfolio-not-ready-before-interview。免费清单：https://kidsmybook.com/admissions-portfolio-checklist。
 
 ## Kidsmybook 是不是面试班？
 

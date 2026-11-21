@@ -10,7 +10,7 @@ After allocation, or when an interview letter arrives suddenly, parents ask whet
 
 ## Can a 12-month programme finish if the interview is days away?
 
-No. The Kidsmybook path is about a year: consultation, mentored creation, university professor review when it fits, parent-child layout, then formal print and publishing arrangements. The public example is Hilary, age 8 at publication, about a year on a butterfly guide. That is a timing example, not an admissions result: https://kidsmybook.com/case-studies/hilary-butterfly-guide . Phases: https://kidsmybook.com/programme .
+No. The Kidsmybook path is about a year: consultation, mentored creation, university professor guidance when it fits, parent-child layout, then formal print and publishing arrangements. The public example is Hilary, age 8 at publication, about a year on a butterfly guide. That is a timing example, not an admissions result: https://kidsmybook.com/case-studies/hilary-butterfly-guide . Phases: https://kidsmybook.com/programme .
 
 ## What can you still do in door-knocking or interview season?
 
@@ -29,7 +29,7 @@ Start when the next application cycle still has about a year. The book adds one 
 
 ## Does a last-minute keepsake print help?
 
-It can be a family keepsake. It is usually not mentor-led publishing. A self-funded print run may not include a process the child finished, professor review, ISBN arrangements, or portfolio packaging. The comparison is here: https://kidsmybook.com/blog/self-publishing-vs-mentored-publishing . Kidsmybook does not say a weekend print replaces the 12-month programme, and it does not guarantee this door-knocking visit or this interview.
+It can be a family keepsake. It is usually not mentor-led publishing. A self-funded print run may not include a process the child finished, professor guidance, ISBN arrangements, or portfolio packaging. The comparison is here: https://kidsmybook.com/blog/self-publishing-vs-mentored-publishing . Kidsmybook does not say a weekend print replaces the 12-month programme, and it does not guarantee this door-knocking visit or this interview.
 
 ## How do families start a consultation?
 

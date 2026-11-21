@@ -20,7 +20,7 @@ tags: ["合集", "個人出書", "實體書店", "香港"]
 
 ## Kidsmybook 條路多咗咩？
 
-Kidsmybook 係約 12 個月導師制：諮詢、創作、可有大學教授審閱、親子排版，然後正式印刷。小朋友參與嘅係一本個人書，唔係合集入面一篇。印刷之後，先按題材同配套談香港實體書店上架／發行路徑。Kidsmybook 唔係書店連鎖。店長決定入貨、陳列同退貨，唔保證每間分店都有。所以可以講「出書連上架路徑」，唔可以講「有書號就有貨」。階段見 https://kidsmybook.com/programme。書店平台說明見 https://kidsmybook.com/kids-book-bookstore-listing。自費、代印同按需印刷多數停喺一本印好嘅書：https://kidsmybook.com/blog/self-publish-pod-vs-mentored-bookstore-listing。家長想知上架實際可以意味住咩：https://kidsmybook.com/blog/bookstore-shelf-listing-for-parents。
+Kidsmybook 係約 12 個月導師制：諮詢、創作、可有大學教授指導、親子排版，然後正式印刷。小朋友參與嘅係一本個人書，唔係合集入面一篇。印刷之後，先按題材同配套談香港實體書店上架／發行路徑。Kidsmybook 唔係書店連鎖。店長決定入貨、陳列同退貨，唔保證每間分店都有。所以可以講「出書連上架路徑」，唔可以講「有書號就有貨」。階段見 https://kidsmybook.com/programme。書店平台說明見 https://kidsmybook.com/kids-book-bookstore-listing。自費、代印同按需印刷多數停喺一本印好嘅書：https://kidsmybook.com/blog/self-publish-pod-vs-mentored-bookstore-listing。家長想知上架實際可以意味住咩：https://kidsmybook.com/blog/bookstore-shelf-listing-for-parents。
 
 ## 升學作品集點樣睇合集同一本個人書？
 

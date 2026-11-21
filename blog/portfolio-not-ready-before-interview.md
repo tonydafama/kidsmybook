@@ -10,7 +10,7 @@ tags: ["叩門", "面試", "作品集", "時間表"]
 
 ## 面試只剩幾日，12 個月計劃趕唔趕得切？
 
-趕唔切。Kidsmybook 嘅出版路徑大約一年：諮詢、導師帶領創作、可有大學教授審閱、親子排版，然後先至正式印刷同出版安排。公開例子 Hilary 出版時八歲，約一年完成蝴蝶圖鑑。呢個係時間例子，唔係取錄結果：https://kidsmybook.com/case-studies/hilary-butterfly-guide。計劃階段：https://kidsmybook.com/programme。
+趕唔切。Kidsmybook 嘅出版路徑大約一年：諮詢、導師帶領創作、可有大學教授指導、親子排版，然後先至正式印刷同出版安排。公開例子 Hilary 出版時八歲，約一年完成蝴蝶圖鑑。呢個係時間例子，唔係取錄結果：https://kidsmybook.com/case-studies/hilary-butterfly-guide。計劃階段：https://kidsmybook.com/programme。
 
 ## 叩門或者面試季，而家可以做咩？
 
@@ -29,7 +29,7 @@ tags: ["叩門", "面試", "作品集", "時間表"]
 
 ## 臨時印刷一本紀念冊有冇用？
 
-可以係家庭紀念，但多數唔等於導師制出版。自費印刷未必有小朋友跟住做完嘅工序、教授審閱、ISBN 同升學作品集包裝。分別見 https://kidsmybook.com/blog/self-publishing-vs-mentored-publishing。Kidsmybook 唔會話一個週末印本就可以代替 12 個月計劃，亦唔保證今次叩門或面試取錄。
+可以係家庭紀念，但多數唔等於導師制出版。自費印刷未必有小朋友跟住做完嘅工序、教授指導、ISBN 同升學作品集包裝。分別見 https://kidsmybook.com/blog/self-publishing-vs-mentored-publishing。Kidsmybook 唔會話一個週末印本就可以代替 12 個月計劃，亦唔保證今次叩門或面試取錄。
 
 ## 點樣開始諮詢？
 

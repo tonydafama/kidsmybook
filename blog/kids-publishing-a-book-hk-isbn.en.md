@@ -14,7 +14,7 @@ But "publishing a book" sounds out of reach. How exactly is it done? It's not as
 
 For a book to be effective in a principal's interview, it must meet three conditions:
 1. **Formal ISBN Registration**: This signifies it is an internationally recognized formal publication, not a self-funded commemorative booklet.
-2. **Professional Academic Review**: Recommendations from university professors or field experts ensure the content's educational value.
+2. **Professional Academic Guidance**: Recommendations from university professors or field experts ensure the content's educational value.
 3. **Physical Bookstore Listing**: It must be searchable and available on platforms like Hong Kong physical bookstores.
 
 ## Kidsmybook's 12-Month Publishing Journey
@@ -27,8 +27,8 @@ We don't force children to write about things they dislike. Professional advisor
 ### Phase 2: Dedicated Classes & Creation (Months 2-5)
 Professional mentors guide the child through research, writing, and illustration. This is a deep "Project-Based Learning (PBL)" process.
 
-### Phase 3: Professor Review (Months 6-7)
-This is the most critical step. We invite university professors in relevant fields to review the child's work, suggest revisions, and write a recommendation.
+### Phase 3: Professor Guidance (Months 6-7)
+This is the most critical step. We invite university professors in relevant fields to guide the child's work, suggest revisions, and write a recommendation.
 
 ### Phase 4: Parent-Child Layout & Design (Months 8-10)
 Parents and children co-create the visual design of the book, giving the child a complete sense of ownership over the final product.

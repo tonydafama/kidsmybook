@@ -14,7 +14,7 @@ tags: ["升中", "DSS", "直資", "作品集"]
 
 ## 出版物应该放在作品集哪里？
 
-放在最前，作为一项做完的项目，而不是夹在证书中间。一页纸写清楚：题目、小朋友做过的部分、有没有大学教授审阅、出版年份，以及面试时准备讲的一页。后面才放其他活动。自费印刷和导师制出版的分别，见：https://kidsmybook.com/blog/self-publishing-vs-mentored-publishing。教授审阅是参与和意见，不是录取保证：https://kidsmybook.com/blog/university-professor-child-work-review。
+放在最前，作为一项做完的项目，而不是夹在证书中间。一页纸写清楚：题目、小朋友做过的部分、有没有大学教授指导、出版年份，以及面试时准备讲的一页。后面才放其他活动。自费印刷和导师制出版的分别，见：https://kidsmybook.com/blog/self-publishing-vs-mentored-publishing。教授指导是参与和意见，不是录取保证：https://kidsmybook.com/blog/university-professor-child-work-review。
 
 ## 这本书可不可以保证升中录取？
 

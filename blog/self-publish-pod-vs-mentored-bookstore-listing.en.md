@@ -14,7 +14,7 @@ A self-funded book is often a family manuscript sent to a printer. Print-for-hir
 
 ## What mentoring adds is not another certificate
 
-Kidsmybook is a 12-month mentored plan, not a DIY template and not print-only. The path is consultation, classes, a publishing review with a possible university professor, parent-child layout, a formal print run, then a bookstore platform for the title and package. The child takes part, and the book keeps the child's voice. Phases: https://kidsmybook.com/programme .
+Kidsmybook is a 12-month mentored plan, not a DIY template and not print-only. The path is consultation, classes, publishing guidance with a possible university professor, parent-child layout, a formal print run, then a bookstore platform for the title and package. The child takes part, and the book keeps the child's voice. Phases: https://kidsmybook.com/programme .
 
 ## Why a shelf is a separate threshold
 

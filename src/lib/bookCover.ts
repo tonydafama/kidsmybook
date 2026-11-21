@@ -466,5 +466,5 @@ export function buildPolishedBackBlurb(opts: {
   const profile = getScholarlyProfile(opts.interests, opts.name);
   const author = opts.name.trim() || "Young Scholar";
 
-  return `【學術專著審定評語】\n本著作由青年學者 ${author} 執筆，特邀 ${profile.professorName}（${profile.professorTitle}）共同研討指導。\n全書收錄第一手實證觀測數據、精準科學圖鑑與系統化分析，展現卓越之學術探究熱情與跨領域研究潛力。正式收錄於 Kidsmybook 青年學者出版計劃，作為頂尖名校升學 Portfolio 權威專著。`;
+  return `【學術專著指導評語】\n本著作由青年學者 ${author} 執筆，特邀 ${profile.professorName}（${profile.professorTitle}）共同研討指導。\n全書收錄第一手實證觀測數據、精準科學圖鑑與系統化分析，展現卓越之學術探究熱情與跨領域研究潛力。正式收錄於 Kidsmybook 青年學者出版計劃，作為頂尖名校升學 Portfolio 權威專著。`;
 }

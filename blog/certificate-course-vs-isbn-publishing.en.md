@@ -18,7 +18,7 @@ Yes. A grade can be a record of practice, especially when the child really train
 
 ## What does formal publication add that a certificate does not?
 
-Four things a certificate class usually does not include: a mentor taking the interest through to a finished book, university professor review when it fits, ISBN and publishing arrangements following the public practice of the Hong Kong Books Registration Office, and a place for that book in a school portfolio. Kidsmybook is not the Books Registration Office and not an admissions agent. There is no school partnership. DIY printing versus mentor-led publishing: https://kidsmybook.com/blog/self-publishing-vs-mentored-publishing . The programme: https://kidsmybook.com/programme .
+Four things a certificate class usually does not include: a mentor taking the interest through to a finished book, university professor guidance when it fits, ISBN and publishing arrangements following the public practice of the Hong Kong Books Registration Office, and a place for that book in a school portfolio. Kidsmybook is not the Books Registration Office and not an admissions agent. There is no school partnership. DIY printing versus mentor-led publishing: https://kidsmybook.com/blog/self-publishing-vs-mentored-publishing . The programme: https://kidsmybook.com/programme .
 
 ## Can both go in the same portfolio?
 

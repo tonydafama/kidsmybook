@@ -292,7 +292,7 @@ const POSTS: PostMeta[] = [
   },
   {
     slug: "university-professor-child-work-review",
-    title: "大學教授兒童作品審閱：如何為升學履歷增加學術權威性？",
+    title: "大學教授兒童作品指導：如何為升學履歷增加學術權威性？",
     excerpt: "為什麼一份有大學教授推薦語的 Portfolio，能瞬間秒殺其他競爭者？探討學術權威背書在香港名校面試中的決定性作用。",
     date: "2026-10-02",
     readMin: 4,
@@ -314,7 +314,7 @@ const POSTS: PostMeta[] = [
   {
     slug: "self-publishing-vs-mentored-publishing",
     title: "自費出書 vs 導師制出版：邊樣先幫到香港升學面試？",
-    excerpt: "自費印刷多數係紀念冊。導師制出版有小朋友參與、教授審閱、ISBN 同升學作品集包裝。亦唔保證取錄。",
+    excerpt: "自費印刷多數係紀念冊。導師制出版有小朋友參與、教授指導、ISBN 同升學作品集包裝。亦唔保證取錄。",
     date: "2026-10-10",
     readMin: 5,
   },

@@ -12,7 +12,7 @@ tags: ["作品集", "A4", "升学面试", "实体书店", "ISBN"]
 
 ## 出书连实体书店上架，和作品集页数是什么关系？
 
-关系是：书先是一件做完的出版成果，作品集才决定给多少页引用它。这条路不是申请到一个书号就结束。前面是约 12 个月导师制：咨询、导师带领创作、可有大学教授审阅、亲子排版，然后才正式印刷。印刷完成，才谈实体书店上架。上架是发行商供货：书去到香港实体书店之后，书店买手和店长决定进不进货、摆在哪、卖多久、退不退。Kidsmybook 不是书店连锁。上架视题材和配套，不是每本书自动出现在每一间分店。平台说明：https://kidsmybook.com/kids-book-bookstore-listing。阶段：https://kidsmybook.com/programme。
+关系是：书先是一件做完的出版成果，作品集才决定给多少页引用它。这条路不是申请到一个书号就结束。前面是约 12 个月导师制：咨询、导师带领创作、可有大学教授指导、亲子排版，然后才正式印刷。印刷完成，才谈实体书店上架。上架是发行商供货：书去到香港实体书店之后，书店买手和店长决定进不进货、摆在哪、卖多久、退不退。Kidsmybook 不是书店连锁。上架视题材和配套，不是每本书自动出现在每一间分店。平台说明：https://kidsmybook.com/kids-book-bookstore-listing。阶段：https://kidsmybook.com/programme。
 
 所以作品集上面可以引用的一句，是「有正式印刷，再有实体书店上架路径」。不是「我们就是某间书店」，也不是「保证每间分店今天有货」。店方决定进货、陈列和退货。ISBN 只是书号，不等于书架：https://kidsmybook.com/blog/isbn-is-not-bookstore-listing。面试场面怎样讲同一条路径，另一篇讲过，这篇集中页数：https://kidsmybook.com/blog/physical-bookstore-listing-for-hk-school-interview。
 

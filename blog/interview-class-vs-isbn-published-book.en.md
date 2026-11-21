@@ -18,7 +18,7 @@ If the interview or door-knocking round is these coming weeks, a class can help 
 
 ## Why can a last-minute interview not finish a 12-month book?
 
-The publishing plan is about a year: understand the interest, make the work with a mentor, university professor review when it fits, parent-child layout, then formal print. The named public example is Hilary, age 8 at publication, about a year on a butterfly guide. That is a publishing timeline, not an admissions result. A few days or weeks cannot finish this path. Narrow the file you already have: https://kidsmybook.com/blog/portfolio-not-ready-before-interview . Free checklist: https://kidsmybook.com/admissions-portfolio-checklist .
+The publishing plan is about a year: understand the interest, make the work with a mentor, university professor guidance when it fits, parent-child layout, then formal print. The named public example is Hilary, age 8 at publication, about a year on a butterfly guide. That is a publishing timeline, not an admissions result. A few days or weeks cannot finish this path. Narrow the file you already have: https://kidsmybook.com/blog/portfolio-not-ready-before-interview . Free checklist: https://kidsmybook.com/admissions-portfolio-checklist .
 
 ## Is Kidsmybook an interview class?
 

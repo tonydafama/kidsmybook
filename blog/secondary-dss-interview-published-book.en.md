@@ -14,7 +14,7 @@ Each school sets its own criteria. Kidsmybook does not represent any DSS, direct
 
 ## Where should the publication sit?
 
-At the front, as a finished project, not between certificates. One page can state the title, what the child did, whether a university professor reviewed it, the publication year, and which page they will talk about. Other activities come after. Print-shop books versus mentor-led publishing: https://kidsmybook.com/blog/self-publishing-vs-mentored-publishing . Professor review is participation and comment, not an offer: https://kidsmybook.com/blog/university-professor-child-work-review .
+At the front, as a finished project, not between certificates. One page can state the title, what the child did, whether a university professor guided it, the publication year, and which page they will talk about. Other activities come after. Print-shop books versus mentor-led publishing: https://kidsmybook.com/blog/self-publishing-vs-mentored-publishing . Professor guidance is participation and comment, not an offer: https://kidsmybook.com/blog/university-professor-child-work-review .
 
 ## Can the book guarantee a secondary place?
 

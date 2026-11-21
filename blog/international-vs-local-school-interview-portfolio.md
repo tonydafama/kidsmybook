@@ -18,7 +18,7 @@ tags: ["國際學校", "本地學校", "面試", "作品集"]
 
 ## 兩種學校可唔可以共用同一個故事？
 
-可以，而且應該共用。故事係：興趣點嚟、做過邊啲觀察或資料整理、邊頁係小朋友決定、邊度改過。國際學校面試可以多用項目同提問；本地或直資面試可以多用「打開呢一頁」同家庭點樣一齊完成。證據係同一本有 ISBN、可有教授審閱嘅出版物。
+可以，而且應該共用。故事係：興趣點嚟、做過邊啲觀察或資料整理、邊頁係小朋友決定、邊度改過。國際學校面試可以多用項目同提問；本地或直資面試可以多用「打開呢一頁」同家庭點樣一齊完成。證據係同一本有 ISBN、可有教授指導嘅出版物。
 
 呢個分別唔等於保證入到國際學校或本地學校。Kidsmybook 唔係升學中介。升小學用法：https://kidsmybook.com/blog/primary-interview-how-to-use-a-book。升中、DSS 同直資：https://kidsmybook.com/blog/secondary-dss-interview-published-book。總頁：https://kidsmybook.com/admissions-portfolio。
 

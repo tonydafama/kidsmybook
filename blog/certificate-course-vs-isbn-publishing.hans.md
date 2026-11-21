@@ -18,7 +18,7 @@ tags: ["证书班", "ISBN", "面试作品集", "香港"]
 
 ## 正式出版多了什么是证书没有的？
 
-多了四件证书班通常没有的事：导师带着由兴趣写到完、可有大学教授审阅、按香港书刊注册组公开做法处理 ISBN 和出版安排，以及升学作品集怎样放这本书。Kidsmybook 不是书刊注册组，也不是升学中介，没有学校合作。自费印刷和导师制的分别见 https://kidsmybook.com/blog/self-publishing-vs-mentored-publishing。计划全貌：https://kidsmybook.com/programme。
+多了四件证书班通常没有的事：导师带着由兴趣写到完、可有大学教授指导、按香港书刊注册组公开做法处理 ISBN 和出版安排，以及升学作品集怎样放这本书。Kidsmybook 不是书刊注册组，也不是升学中介，没有学校合作。自费印刷和导师制的分别见 https://kidsmybook.com/blog/self-publishing-vs-mentored-publishing。计划全貌：https://kidsmybook.com/programme。
 
 ## 两样可不可以一起放进作品集？
 

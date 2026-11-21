@@ -22,7 +22,7 @@ Self-publishing, a print shop, and print-on-demand usually hand over a file or a
 
 ## What the mentored path adds
 
-Kidsmybook is a 12-month mentored plan: consultation, creation, a possible university-professor review, parent-child layout, a formal print run, then a bookstore-platform path for the title and package. An admissions portfolio is a second use after the book exists. It is not the first sentence of the plan. The studio is not an admissions agent and does not guarantee a place. The only named public case is Hilary.
+Kidsmybook is a 12-month mentored plan: consultation, creation, a possible university-professor guidance, parent-child layout, a formal print run, then a bookstore-platform path for the title and package. An admissions portfolio is a second use after the book exists. It is not the first sentence of the plan. The studio is not an admissions agent and does not guarantee a place. The only named public case is Hilary.
 
 ## Does an ISBN mean the book is on a bookstore shelf?
 
