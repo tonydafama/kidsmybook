@@ -179,16 +179,17 @@ main {
 
 .hero {
   display: grid;
-  gap: 20px;
-  grid-template-columns: 1.15fr 0.85fr;
-  align-items: start;
-  padding: 18px clamp(16px, 3vw, 42px) 28px;
+  gap: clamp(28px, 4vw, 48px);
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  align-items: center;
+  padding: clamp(28px, 4vw, 48px) clamp(20px, 3.5vw, 42px) clamp(32px, 4vw, 52px);
   position: relative;
+  overflow: visible;
 }
 
 .hero--premium {
-  padding-top: clamp(18px, 3vw, 28px);
-  padding-bottom: clamp(18px, 3vw, 28px);
+  padding-top: clamp(28px, 4vw, 48px);
+  padding-bottom: clamp(32px, 4vw, 52px);
 }
 
 .hero-aurora {
@@ -205,6 +206,8 @@ main {
 .hero-copy {
   position: relative;
   z-index: 1;
+  min-width: 0;
+  max-width: 36rem;
   animation: fade-rise 0.7s var(--ease) backwards;
 }
 
@@ -228,20 +231,37 @@ main {
   letter-spacing: 0.16em;
 }
 
-.hero-copy h1 {
-  margin: 10px 0;
+.hero-brand {
+  margin: 12px 0 0;
+  color: #f3e7d2;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(44px, 6.2vw, 72px);
+  line-height: 1.05;
+  letter-spacing: 0.04em;
+}
+
+.hero-copy h1,
+.hero-headline {
+  margin: 14px 0 0;
   color: var(--ink);
   font-family: var(--font-display);
   font-weight: 600;
-  line-height: 1.06;
-  letter-spacing: 0.02em;
-  font-size: clamp(36px, 5.3vw, 64px);
+  line-height: 1.32;
+  letter-spacing: 0.01em;
+  font-size: clamp(22px, 2.6vw, 32px);
+  white-space: pre-line;
+  overflow: visible;
+  overflow-wrap: break-word;
+  word-break: keep-all;
 }
 
 .lead {
-  margin: 0;
-  line-height: 1.75;
+  margin: 14px 0 0;
+  max-width: 34rem;
+  line-height: 1.7;
   color: #d9d2c5;
+  font-size: clamp(15px, 1.5vw, 17px);
 }
 
 .lead.en {
@@ -254,10 +274,11 @@ main {
 
 .hero-visual {
   border-radius: var(--radius-lg);
-  padding: 14px;
+  padding: 16px;
   display: grid;
-  gap: 10px;
+  gap: 12px;
   align-content: start;
+  min-width: 0;
 }
 
 .hero-visual--glass {
@@ -348,7 +369,7 @@ main {
 .hero-showcase-img img {
   display: block;
   width: 100%;
-  height: 280px;
+  height: clamp(240px, 32vw, 340px);
   object-fit: cover;
   object-position: center 58%;
 }
@@ -2048,6 +2069,15 @@ select:focus {
 @media (max-width: 980px) {
   .hero {
     grid-template-columns: 1fr;
+    align-items: stretch;
+  }
+
+  .hero-copy {
+    max-width: none;
+  }
+
+  .hero-showcase-img img {
+    height: clamp(220px, 56vw, 320px);
   }
 
   .service-grid {

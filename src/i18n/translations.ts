@@ -27,7 +27,7 @@ import {
 } from "./landing-extra";
 import { ABOUT_ZH, BLOG_INDEX_ZH, CHECKLIST_ZH, EXPLORE_ZH, FAQ_PAGE_ZH, GAOCAI_ZH, PORTFOLIO_ZH, PROGRAMME_ZH, SHENGXIAO_ZH, SHENGZHONG_ZH, SHUDIAN_ZH, XINGQU_ZH, type HubCopy } from "../seo/landing-zh";
 import { WA_QUOTE_EN, WA_QUOTE_HANS, WA_QUOTE_ZH } from "../lib/contact";
-import { HOME_DESCRIPTION_ZH, HOME_FAQ, HOME_H1_ZH, HOME_TITLE_ZH } from "../seo/meta";
+import { HOME_DESCRIPTION_ZH, HOME_FAQ, HOME_TITLE_ZH } from "../seo/meta";
 
 export type ServiceSlug =
   | "author-programme"
@@ -260,7 +260,7 @@ export type Translations = {
 };
 
 const zhHant: Translations = {
-  brandTitle: HOME_H1_ZH,
+  brandTitle: "大學教授指導出版 ISBN 書籍，\n上架香港主流書店.\n(最強 Portfolio!)",
   brandEn: "Turn your child's passion into a published achievement.",
   nav: {
     main: "主選單",
@@ -284,7 +284,7 @@ const zhHant: Translations = {
   },
   hero: {
     eyebrow: "香港兒童出版工作室",
-    lead: "大學教授指導出版 ISBN 書籍，上架香港主流書店. (最強Portfolio!)",
+    lead: "12 個月導師制：正式印刷 ISBN 童書，再走香港實體書店上架路徑。私人報價。",
     generateCover: "生成封面",
     bookConsult: "預約諮詢",
     featuredAlt: "Hilary 新書發布會",
@@ -554,7 +554,7 @@ const zhHant: Translations = {
 
 const zhHans: Translations = {
   ...zhHant,
-  brandTitle: "大学教授指导出版 ISBN 书籍，上架香港主流书店. (最强Portfolio!)",
+  brandTitle: "大学教授指导出版 ISBN 书籍，\n上架香港主流书店.\n(最强 Portfolio!)",
   brandEn: "Turn your child's passion into a published achievement.",
   nav: {
     ...zhHant.nav,
@@ -578,7 +578,7 @@ const zhHans: Translations = {
   hero: {
     ...zhHant.hero,
     eyebrow: "香港儿童出版工作室",
-    lead: "大学教授指导出版 ISBN 书籍，上架香港主流书店. (最强Portfolio!)",
+    lead: "12 个月导师制：正式印刷 ISBN 童书，再走香港实体书店上架路径。私人报价。",
     generateCover: "生成封面",
     bookConsult: "预约咨询",
     featuredAlt: "Hilary 新书发布会",
@@ -811,8 +811,8 @@ const zhHans: Translations = {
   shudianPage: SHUDIAN_HANS,
   aboutPage: ABOUT_HANS,
   seo: {
-    homeTitle: "Kidsmybook｜大学教授指导出版 ISBN 书籍，上架香港主流书店. (最强Portfolio!)",
-    homeDesc: "大学教授指导出版 ISBN 书籍，上架香港主流书店. (最强Portfolio!)",
+    homeTitle: "Kidsmybook｜大学教授指导出版 ISBN 书籍，上架香港主流书店. (最强 Portfolio!)",
+    homeDesc: "大学教授指导出版 ISBN 书籍，上架香港主流书店. (最强 Portfolio!)",
     servicesTitle: "服务｜Kidsmybook 六项儿童成就出版",
     servicesDesc:
       "出版计划、新书发布会、展览、媒体公关、直播和升学作品集，可全案或单项咨询。Author Programme、Book Launch、Exhibition、Media & PR、Live Streaming、Portfolio Package。",
@@ -834,7 +834,8 @@ const zhHans: Translations = {
 };
 
 const en: Translations = {
-  brandTitle: "University professors guide the publication of an ISBN book, listed in mainstream Hong Kong bookstores. (Strongest portfolio!)",
+  brandTitle:
+    "University professors guide ISBN publication,\nlisted in mainstream Hong\u00A0Kong bookstores.\n(Strongest portfolio!)",
   brandEn: "Publishing, launches, exhibitions, media, and portfolios — one integrated pathway.",
   nav: {
     main: "Main menu",
@@ -859,7 +860,7 @@ const en: Translations = {
   },
   hero: {
     eyebrow: "Hong Kong children's publishing studio",
-    lead: "University professors guide the publication of an ISBN book, listed in mainstream Hong Kong bookstores. (Strongest portfolio!)",
+    lead: "Twelve mentored months: a formal ISBN children's book, then a Hong Kong bookstore listing path. Private quotation.",
     generateCover: "Generate cover",
     bookConsult: "Book a consultation",
     featuredAlt: "Hilary book launch",
