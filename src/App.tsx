@@ -124,25 +124,34 @@ function HomePage({ services }: { services: ServiceItem[] }) {
     <>
       <header className="hero hero--premium">
         <div className="hero-aurora" aria-hidden />
-        <div className="hero-copy">
-          <p className="eyebrow">{t.hero.eyebrow}</p>
-          <h1>{t.brandTitle}</h1>
-          {t.hero.lead && t.hero.lead !== t.brandTitle ? <p className="lead">{t.hero.lead}</p> : null}
+        <div className="hero-spotlight" aria-hidden />
+        <div className="hero-copy hero-copy--panel">
+          <p className="eyebrow hero-eyebrow">{t.hero.eyebrow}</p>
+          <p className="hero-brand" aria-hidden="true">
+            Kidsmybook
+          </p>
+          <h1 className="hero-headline">
+            <span className="hero-headline__primary">{t.hero.titlePrimary}</span>
+            <span className="hero-headline__secondary">{t.hero.titleSecondary}</span>
+            <span className="hero-headline__accent">{t.hero.titleAccent}</span>
+            <span className="sr-only">{t.brandTitle.replace(/\n/g, " ")}</span>
+          </h1>
+          {t.hero.lead ? <p className="lead hero-lead">{t.hero.lead}</p> : null}
           <div className="cta-row hero-cta-row">
-            <a className="btn primary" href={whatsapp} target="_blank" rel="noreferrer">
+            <a className="btn primary btn-lg hero-btn" href={whatsapp} target="_blank" rel="noreferrer">
               {t.hero.bookConsult}
             </a>
-            <a className="btn ghost" href={appHref("/#ai-book-lab")}>
+            <a className="btn ghost btn-lg hero-btn" href={appHref("/#ai-book-lab")}>
               {t.hero.generateCover}
             </a>
           </div>
           <p className="hero-secondary-links">
-            <a href={appHref("/intake-form")} rel="noreferrer">
+            <a className="hero-chip-link" href={appHref("/intake-form")} rel="noreferrer">
               {t.nav.intake ?? "升學諮詢"}
             </a>
           </p>
         </div>
-        <div className="hero-visual hero-visual--glass">
+        <figure className="hero-visual hero-visual--glass">
           <div className="hero-visual-shine" aria-hidden />
           <div className="hero-showcase-img">
             <img
@@ -151,10 +160,17 @@ function HomePage({ services }: { services: ServiceItem[] }) {
               loading="eager"
               decoding="async"
             />
+            <div className="hero-showcase-vignette" aria-hidden />
+            <span className="hero-badge hero-badge--overlay">{t.hero.badge}</span>
           </div>
-          <div className="hero-badge">{t.hero.badge}</div>
-          <p className="hero-stat-line">{t.hero.statLine}</p>
-        </div>
+          <figcaption className="hero-stat-chips" aria-label={t.hero.statLine}>
+            {t.hero.statItems.map((item) => (
+              <span key={item} className="hero-stat-chip">
+                {item}
+              </span>
+            ))}
+          </figcaption>
+        </figure>
       </header>
 
       <main className="content-flow">
