@@ -43,7 +43,8 @@ If you are a Hermes / Desktop / Laptop bot: you were **wrong** on 2026-09-08. Re
 
 ## Do
 
-- `git pull` before editing. Build + `wrangler deploy` for Worker/site changes, then curl the live URL.
+- `git pull` before editing. **Laptop → push `main` → auto deploy:** GitHub Actions (`.github/workflows/deploy-live.yml`) should build + `wrangler deploy` on every `main` push when `CLOUDFLARE_API_TOKEN` is set in repo secrets. Cloud Agents: pull latest `main` and verify live with `curl`—do not ask Anthony to deploy by hand if CI handles it.
+- If CI is unavailable: build + `wrangler deploy` locally, then curl the live URL.
 - Keep blogs trilingual (`.md` / `.hans.md` / `.en.md`) and `POSTS` in `src/BlogPages.tsx` in sync with `worker` sitemap + `public/sitemap.xml`.
 - Intake: Telegram notify the studio. Email ack to the parent **only** if contact contains an email and `RESEND_API_KEY` is set. Do not WhatsApp-blast strangers without Meta templates.
 - Xiaohongshu: copy-paste posts in `XIAOHONGSHU_POSTS.md` for the **official brand account**. Owner pastes. No fake identity.

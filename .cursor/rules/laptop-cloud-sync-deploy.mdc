@@ -1,0 +1,26 @@
+---
+description: Laptop → GitHub → auto deploy → Cloud Agent sync (owner preference)
+alwaysApply: true
+---
+
+# Laptop / Cloud Agent sync & immediate live update
+
+**Owner (Anthony) preference:** Work on the **laptop** (Composer / Desktop / local Agent). Changes should reach **main**, **deploy to kidsmybook.com**, and **Cloud Agents** should stay in sync—without manual “remember to deploy” each time.
+
+## Canonical flow
+
+1. **Laptop:** edit → `git pull origin main` → commit → `git push origin main` (or merge PR to `main`).
+2. **GitHub Actions:** `.github/workflows/deploy-live.yml` runs `npm run build` + `wrangler deploy` on every push to `main` (needs `CLOUDFLARE_API_TOKEN` repo secret).
+3. **Cloud Agent (this VM):** at task start, `git fetch origin main && git pull origin main` if the task depends on latest code. After own edits: commit, push to `main` or open PR; **do not claim live** until CI deploy finishes or you verified with `curl https://kidsmybook.com/`.
+4. **Verification:** after any deploy claim, `curl` homepage (and `/llms.txt` if SEO/llms changed). Check for expected markers (e.g. new CSS class names), not only `dist/`.
+
+## If live is still old
+
+- Merge alone does **not** update the site—Worker assets must deploy.
+- If Actions failed: owner runs once `npx wrangler login` locally, or fix `CLOUDFLARE_API_TOKEN` in GitHub → Settings → Secrets.
+- Hard refresh / cache when checking in browser.
+
+## Agent must not
+
+- Wait for the owner to manually `wrangler deploy` when `main` already has the fix and CI is configured.
+- Report “✅ live” without curling the production URL after deploy.
