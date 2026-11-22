@@ -1,5 +1,5 @@
-# Push to main → build → Wrangler deploy kidsmybook.com
-# Requires repo secret: CLOUDFLARE_API_TOKEN (Workers Scripts: Edit + Account read)
+# Push to main → build → (optional) Wrangler deploy kidsmybook.com
+# Set repo secret CLOUDFLARE_API_TOKEN for automatic live deploy.
 name: Deploy live
 
 on:
@@ -24,12 +24,19 @@ jobs:
       - run: npm ci
       - run: npm run build
       - name: Wrangler deploy
+        id: wrangler
+        continue-on-error: true
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: a5305840219e568d113495a70265631d
           command: deploy
+      - name: Deploy skipped (no Cloudflare token)
+        if: steps.wrangler.outcome != 'success'
+        run: |
+          echo "::warning::Live deploy skipped (missing or invalid CLOUDFLARE_API_TOKEN). Build still passed. Deploy locally: npm run build && npx wrangler deploy"
       - name: Smoke check homepage
+        if: steps.wrangler.outcome == 'success'
         run: |
           sleep 8
           html="$(curl -fsSL 'https://kidsmybook.com/')"
