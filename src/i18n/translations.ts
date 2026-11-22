@@ -87,12 +87,16 @@ export type Translations = {
   };
   hero: {
     eyebrow: string;
+    titlePrimary: string;
+    titleSecondary: string;
+    titleAccent: string;
     lead: string;
     generateCover: string;
     bookConsult: string;
     featuredAlt: string;
     badge: string;
     statLine: string;
+    statItems: string[];
   };
   aiLab: {
     eyebrow: string;
@@ -284,12 +288,16 @@ const zhHant: Translations = {
   },
   hero: {
     eyebrow: "香港兒童出版工作室",
+    titlePrimary: "大學教授指導出版",
+    titleSecondary: "ISBN 書籍，上架香港主流書店",
+    titleAccent: "最強 Portfolio",
     lead: "12 個月導師制：正式印刷 ISBN 童書，再走香港實體書店上架路徑。私人報價。",
     generateCover: "生成封面",
     bookConsult: "預約諮詢",
     featuredAlt: "Hilary 新書發布會",
     badge: "Hilary · 8 歲",
     statLine: "一年成書 · 發布會 · 媒體報導 · 3,569 線上觀看",
+    statItems: ["一年成書", "發布會", "媒體報導", "3,569 線上觀看"],
   },
   aiLab: {
     eyebrow: "Academic Press · Young Scholar Series",
@@ -578,12 +586,16 @@ const zhHans: Translations = {
   hero: {
     ...zhHant.hero,
     eyebrow: "香港儿童出版工作室",
+    titlePrimary: "大学教授指导出版",
+    titleSecondary: "ISBN 书籍，上架香港主流书店",
+    titleAccent: "最强 Portfolio",
     lead: "12 个月导师制：正式印刷 ISBN 童书，再走香港实体书店上架路径。私人报价。",
     generateCover: "生成封面",
     bookConsult: "预约咨询",
     featuredAlt: "Hilary 新书发布会",
     badge: "Hilary · 8 岁",
     statLine: "一年成书 · 发布会 · 媒体报道 · 3,569 线上观看",
+    statItems: ["一年成书", "发布会", "媒体报道", "3,569 线上观看"],
   },
   aiLab: {
     ...zhHant.aiLab,
@@ -860,12 +872,16 @@ const en: Translations = {
   },
   hero: {
     eyebrow: "Hong Kong children's publishing studio",
+    titlePrimary: "University professors guide ISBN publication",
+    titleSecondary: "Listed in mainstream Hong Kong bookstores",
+    titleAccent: "Strongest portfolio",
     lead: "Twelve mentored months: a formal ISBN children's book, then a Hong Kong bookstore listing path. Private quotation.",
     generateCover: "Generate cover",
     bookConsult: "Book a consultation",
     featuredAlt: "Hilary book launch",
     badge: "Hilary · age 8",
     statLine: "One year to publish · Launch event · Media coverage · 3,569 online views",
+    statItems: ["One year to publish", "Launch event", "Media coverage", "3,569 online views"],
   },
   aiLab: {
     eyebrow: "Academic Press · Young Scholar Series",
