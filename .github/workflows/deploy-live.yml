@@ -33,4 +33,4 @@ jobs:
         run: |
           sleep 8
           html="$(curl -fsSL 'https://kidsmybook.com/')"
-          echo "$html" | head -c 4000 | rg -q '</html>' || (echo 'Homepage fetch failed' && exit 1)
+          echo "$html" | rg -q 'data-hero="v2"' || (echo 'Homepage missing hero v2 marker' && exit 1)

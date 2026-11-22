@@ -122,55 +122,46 @@ function HomePage({ services }: { services: ServiceItem[] }) {
 
   return (
     <>
-      <header className="hero hero--premium">
-        <div className="hero-aurora" aria-hidden />
-        <div className="hero-spotlight" aria-hidden />
-        <div className="hero-copy hero-copy--panel">
-          <p className="eyebrow hero-eyebrow">{t.hero.eyebrow}</p>
-          <p className="hero-brand" aria-hidden="true">
-            Kidsmybook
-          </p>
-          <h1 className="hero-headline">
-            <span className="hero-headline__primary">{t.hero.titlePrimary}</span>
-            <span className="hero-headline__secondary">{t.hero.titleSecondary}</span>
-            <span className="hero-headline__accent">{t.hero.titleAccent}</span>
-            <span className="sr-only">{t.brandTitle.replace(/\n/g, " ")}</span>
-          </h1>
-          {t.hero.lead ? <p className="lead hero-lead">{t.hero.lead}</p> : null}
-          <div className="cta-row hero-cta-row">
-            <a className="btn primary btn-lg hero-btn" href={whatsapp} target="_blank" rel="noreferrer">
-              {t.hero.bookConsult}
-            </a>
-            <a className="btn ghost btn-lg hero-btn" href={appHref("/#ai-book-lab")}>
-              {t.hero.generateCover}
-            </a>
-          </div>
-          <p className="hero-secondary-links">
-            <a className="hero-chip-link" href={appHref("/intake-form")} rel="noreferrer">
+      <header className="hero hero--editorial" data-hero="v2">
+        <div className="hero__ambient" aria-hidden />
+        <div className="hero__grid">
+          <div className="hero__copy">
+            <p className="hero__eyebrow">{t.hero.eyebrow}</p>
+            <h1 className="hero__title-block">
+              <span className="hero__title-main">{t.hero.titlePrimary}</span>
+              <span className="hero__title-sub">
+                {t.hero.titleSecondary}
+                <em className="hero__title-highlight">{t.hero.titleAccent}</em>
+              </span>
+              <span className="sr-only">{t.brandTitle.replace(/\n/g, " ")}</span>
+            </h1>
+            {t.hero.lead ? <p className="hero__lead">{t.hero.lead}</p> : null}
+            <div className="hero__actions cta-row">
+              <a className="btn primary hero__btn" href={whatsapp} target="_blank" rel="noreferrer">
+                {t.hero.bookConsult}
+              </a>
+              <a className="btn ghost hero__btn" href={appHref("/#ai-book-lab")}>
+                {t.hero.generateCover}
+              </a>
+            </div>
+            <a className="hero__link" href={appHref("/intake-form")} rel="noreferrer">
               {t.nav.intake ?? "升學諮詢"}
             </a>
-          </p>
-        </div>
-        <figure className="hero-visual hero-visual--glass">
-          <div className="hero-visual-shine" aria-hidden />
-          <div className="hero-showcase-img">
-            <img
-              src={publicAssetSrc(HERO_FEATURED_SRC, FEATURED_ART_CACHE)}
-              alt={t.hero.featuredAlt}
-              loading="eager"
-              decoding="async"
-            />
-            <div className="hero-showcase-vignette" aria-hidden />
-            <span className="hero-badge hero-badge--overlay">{t.hero.badge}</span>
           </div>
-          <figcaption className="hero-stat-chips" aria-label={t.hero.statLine}>
-            {t.hero.statItems.map((item) => (
-              <span key={item} className="hero-stat-chip">
-                {item}
-              </span>
-            ))}
-          </figcaption>
-        </figure>
+          <figure className="hero__media">
+            <div className="hero__frame">
+              <img
+                className="hero__photo"
+                src={publicAssetSrc(HERO_FEATURED_SRC, FEATURED_ART_CACHE)}
+                alt={t.hero.featuredAlt}
+                loading="eager"
+                decoding="async"
+              />
+              <span className="hero__badge">{t.hero.badge}</span>
+            </div>
+            <figcaption className="hero__proof">{t.hero.statLine}</figcaption>
+          </figure>
+        </div>
       </header>
 
       <main className="content-flow">
@@ -651,7 +642,7 @@ export default function App() {
 
   return (
     <div className="site">
-      <nav className="top-nav" aria-label={t.nav.main}>
+      <nav className={`top-nav${isHome ? " top-nav--home" : ""}`} aria-label={t.nav.main}>
         <a className="brand" href={appHref("/")}>
           <span className="brand-mark" aria-hidden />
           kidsmybook.com
