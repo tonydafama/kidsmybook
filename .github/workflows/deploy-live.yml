@@ -1,0 +1,36 @@
+# Push to main → build → Wrangler deploy kidsmybook.com
+# Requires repo secret: CLOUDFLARE_API_TOKEN (Workers Scripts: Edit + Account read)
+name: Deploy live
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-live
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - name: Wrangler deploy
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: a5305840219e568d113495a70265631d
+          command: deploy
+      - name: Smoke check homepage
+        run: |
+          sleep 8
+          html="$(curl -fsSL 'https://kidsmybook.com/')"
+          echo "$html" | head -c 4000 | rg -q '</html>' || (echo 'Homepage fetch failed' && exit 1)
