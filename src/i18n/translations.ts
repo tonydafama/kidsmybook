@@ -264,7 +264,7 @@ export type Translations = {
 };
 
 const zhHant: Translations = {
-  brandTitle: "大學教授指導出版 ISBN 書籍，\n上架香港主流書店.\n(最強 Portfolio!)",
+  brandTitle: "大學教授指導出版 ISBN 童書，上架香港主流書店，升學作品集亮點",
   brandEn: "Turn your child's passion into a published achievement.",
   nav: {
     main: "主選單",
@@ -288,10 +288,10 @@ const zhHant: Translations = {
   },
   hero: {
     eyebrow: "香港兒童出版工作室",
-    titlePrimary: "大學教授指導出版",
-    titleSecondary: "ISBN 書籍，上架香港主流書店",
-    titleAccent: "最強 Portfolio",
-    lead: "12 個月導師制：正式印刷 ISBN 童書，再走香港實體書店上架路徑。私人報價。",
+    titlePrimary: "大學教授指導出版 ISBN 童書",
+    titleSecondary: "上架香港主流書店 ·",
+    titleAccent: "升學作品集亮點",
+    lead: "12 個月導師制，由興趣到正式印刷；再走實體書店上架路徑。私人報價。",
     generateCover: "生成封面",
     bookConsult: "預約諮詢",
     featuredAlt: "Hilary 新書發布會",
@@ -586,9 +586,9 @@ const zhHans: Translations = {
   hero: {
     ...zhHant.hero,
     eyebrow: "香港儿童出版工作室",
-    titlePrimary: "大学教授指导出版",
-    titleSecondary: "ISBN 书籍，上架香港主流书店",
-    titleAccent: "最强 Portfolio",
+    titlePrimary: "大学教授指导出版 ISBN 童书",
+    titleSecondary: "上架香港主流书店 ·",
+    titleAccent: "升学作品集亮点",
     lead: "12 个月导师制：正式印刷 ISBN 童书，再走香港实体书店上架路径。私人报价。",
     generateCover: "生成封面",
     bookConsult: "预约咨询",
@@ -872,9 +872,9 @@ const en: Translations = {
   },
   hero: {
     eyebrow: "Hong Kong children's publishing studio",
-    titlePrimary: "University professors guide ISBN publication",
-    titleSecondary: "Listed in mainstream Hong Kong bookstores",
-    titleAccent: "Strongest portfolio",
+    titlePrimary: "University professors guide ISBN children's books",
+    titleSecondary: "Listed in mainstream Hong Kong bookstores ·",
+    titleAccent: "A standout admissions portfolio",
     lead: "Twelve mentored months: a formal ISBN children's book, then a Hong Kong bookstore listing path. Private quotation.",
     generateCover: "Generate cover",
     bookConsult: "Book a consultation",

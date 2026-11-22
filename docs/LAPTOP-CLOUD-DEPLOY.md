@@ -29,4 +29,4 @@ Agents read `.cursor/rules/laptop-cloud-sync-deploy.mdc`: they pull `main`, push
 ## Check deploy
 
 - GitHub → Actions → **Deploy live**  
-- Or: `curl -sL 'https://kidsmybook.com/' | rg 'hero-headline__primary'` (after hero redesign)
+- Or: `curl -sL 'https://kidsmybook.com/' | rg 'data-hero="v2"'` (after hero redesign)
