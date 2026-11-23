@@ -14,6 +14,39 @@ export type CoverPromptInput = {
 };
 
 const COVER_API = "/api/cover-generate";
+/** Slightly above the worker's 90s Flux abort so a late JSON error still arrives. */
+const COVER_CLIENT_TIMEOUT_MS = 100_000;
+
+export class CoverGenerateError extends Error {
+  readonly status: number;
+  readonly code: string;
+
+  constructor(message: string, status: number, code = "upstream") {
+    super(message);
+    this.name = "CoverGenerateError";
+    this.status = status;
+    this.code = code;
+  }
+}
+
+type CoverApiPayload = {
+  frontUrl?: string;
+  backUrl?: string;
+  error?: string;
+  code?: string;
+};
+
+function isHttpUrl(value: string | undefined): value is string {
+  return Boolean(value && /^https?:\/\//i.test(value));
+}
+
+function failureCode(status: number, code: string | undefined): string {
+  if (code === "daily_limit" || code === "timeout" || code === "not_configured" || code === "upstream") return code;
+  if (status === 429) return "daily_limit";
+  if (status === 504) return "timeout";
+  if (status === 503) return "not_configured";
+  return "upstream";
+}
 
 export function buildCoverImagePrompt(input: CoverPromptInput): string {
   const profile = getScholarlyProfile(input.interests || input.bookTopic, input.name);
@@ -57,18 +90,45 @@ export async function generateBookCoverPair(input: {
   const frontPrompt = buildCoverImagePrompt({ ...base, variant: "front" });
   const backPrompt = buildCoverImagePrompt({ ...base, variant: "back" });
 
-  const res = await fetch(COVER_API, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ frontPrompt, backPrompt }),
-  });
-
-  const payload = (await res.json()) as { frontUrl?: string; backUrl?: string; error?: string };
-  if (!res.ok) {
-    throw new Error(payload.error ?? `Cover API HTTP ${res.status}`);
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), COVER_CLIENT_TIMEOUT_MS);
+  try {
+    const res = await fetch(COVER_API, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ frontPrompt, backPrompt }),
+      signal: controller.signal,
+    });
+    const text = await res.text();
+    let payload: CoverApiPayload;
+    try {
+      payload = JSON.parse(text) as CoverApiPayload;
+    } catch {
+      throw new CoverGenerateError(
+        `Cover API returned a non-JSON response (HTTP ${res.status}).`,
+        res.status || 502,
+        "upstream",
+      );
+    }
+    if (!res.ok) {
+      throw new CoverGenerateError(
+        payload.error?.trim() || `Cover API HTTP ${res.status}`,
+        res.status,
+        failureCode(res.status, payload.code),
+      );
+    }
+    if (!isHttpUrl(payload.frontUrl) || !isHttpUrl(payload.backUrl)) {
+      throw new CoverGenerateError("Cover API returned incomplete image URLs.", 502, "upstream");
+    }
+    return { frontUrl: payload.frontUrl, backUrl: payload.backUrl };
+  } catch (err) {
+    if (err instanceof CoverGenerateError) throw err;
+    if (err instanceof Error && err.name === "AbortError") {
+      throw new CoverGenerateError("The cover request timed out after 100 seconds.", 504, "timeout");
+    }
+    const message = err instanceof Error && err.message ? err.message : "Cover request failed";
+    throw new CoverGenerateError(message, 0, "upstream");
+  } finally {
+    clearTimeout(timer);
   }
-  if (!payload.frontUrl || !payload.backUrl) {
-    throw new Error("Cover API returned incomplete image URLs");
-  }
-  return { frontUrl: payload.frontUrl, backUrl: payload.backUrl };
 }

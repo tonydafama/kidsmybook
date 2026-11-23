@@ -118,6 +118,13 @@ export type Translations = {
     generating: string;
     generatePhase: string;
     aiTimingHint: string;
+    illustrationFailedTitle: string;
+    illustrationFailedDesc: string;
+    illustrationMissingReason: string;
+    artworkLoadFailed: string;
+    dailyLimitNotice: string;
+    timeoutNotice: string;
+    retryGenerate: string;
     previewKicker: string;
     dragHintIdle: string;
     dragHintReady: string;
@@ -323,7 +330,14 @@ const zhHant: Translations = {
     generateBtn: "生成 3D 專屬封面",
     generating: "正在繪製學者級封面…",
     generatePhase: "正在繪製專業學者級封面…",
-    aiTimingHint: "AI 學術繪製約需 15–30 秒。",
+    aiTimingHint: "AI 學術繪製通常約 15–90 秒。若插圖未生成，頁面會寫明原因。",
+    illustrationFailedTitle: "AI 插圖未生成",
+    illustrationFailedDesc: "右邊是學術版型示意，不是已完成的插圖封面。",
+    illustrationMissingReason: "這個預覽連結沒有 AI 插圖網址，所以無法顯示生成圖。",
+    artworkLoadFailed: "瀏覽器無法顯示傳回的 AI 圖片。",
+    dailyLimitNotice: "今日這個網絡的 AI 封面已達每日 3 次成功生成上限，請明日再試。",
+    timeoutNotice: "AI 繪圖逾時，插圖沒有在時限內生成。",
+    retryGenerate: "再試一次",
     previewKicker: "3D 精裝學術專著預覽",
     dragHintIdle: "生成後在此預覽 3D 學術專著",
     dragHintReady: "拖曳可旋轉 · 查看封底學者評語與書脊",
@@ -346,7 +360,7 @@ const zhHant: Translations = {
       "【學術專著指導與出版】\nKidsmybook 專為孩子打造具備國際出版規範的正式專著。\n由大學教授學術指導、正式登記國際標準書號 (ISBN)、香港實體書店公開發行。\n請於左側填寫小作者姓名與興趣題材，立即預覽專屬封面。",
     defaultProfHint: "請於左側填寫資料 · 即時預覽專屬 3D 封面",
     errNameTopic: "請填寫小作者姓名與興趣題材。",
-    aiFallbackNotice: (message) => `已改為學術版型示意預覽（${message}）`,
+    aiFallbackNotice: (message) => `AI 插圖沒有生成。原因：${message}`,
     consultSummaryHeader: "【Kidsmybook 專著封面預覽】",
     consultChild: "小作者",
     consultTopic: "興趣題材",
@@ -621,7 +635,14 @@ const zhHans: Translations = {
     generateBtn: "生成 3D 专属封面",
     generating: "正在绘制学者级封面…",
     generatePhase: "正在绘制专业学者级封面…",
-    aiTimingHint: "AI 学术绘制约需 15–30 秒。",
+    aiTimingHint: "AI 学术绘制通常约 15–90 秒。若插图未生成，页面会写明原因。",
+    illustrationFailedTitle: "AI 插图未生成",
+    illustrationFailedDesc: "右边是学术版型示意，不是已完成的插图封面。",
+    illustrationMissingReason: "这个预览链接没有 AI 插图网址，所以无法显示生成图。",
+    artworkLoadFailed: "浏览器无法显示传回的 AI 图片。",
+    dailyLimitNotice: "今日这个网络的 AI 封面已达每日 3 次成功生成上限，请明日再试。",
+    timeoutNotice: "AI 绘图超时，插图没有在时限内生成。",
+    retryGenerate: "再试一次",
     previewKicker: "3D 精装学术专著预览",
     dragHintIdle: "生成后在此预览 3D 学术专著",
     dragHintReady: "拖曳可旋转 · 查看封底学者评语与书脊",
@@ -643,7 +664,7 @@ const zhHans: Translations = {
       "【学术专著指导与出版】\nKidsmybook 专为孩子打造具备国际出版规范的正式专著。\n由大学教授学术指导、正式登记国际标准书号 (ISBN)、香港实体书店公开发行。\n请于左侧填写小作者姓名与兴趣题材，立即预览专属封面。",
     defaultProfHint: "请于左侧填写资料 · 即时预览专属 3D 封面",
     errNameTopic: "请填写小作者姓名与兴趣题材。",
-    aiFallbackNotice: (message) => `已改为学术版型示意预览（${message}）`,
+    aiFallbackNotice: (message) => `AI 插图没有生成。原因：${message}`,
     consultSummaryHeader: "【Kidsmybook 专著封面预览】",
     consultChild: "小作者",
     consultTopic: "兴趣题材",
@@ -907,7 +928,14 @@ const en: Translations = {
     generateBtn: "Generate 3D Cover",
     generating: "Rendering scholar-grade cover…",
     generatePhase: "Rendering professional scholar-grade cover…",
-    aiTimingHint: "AI academic rendering takes about 15–30 seconds.",
+    aiTimingHint: "AI rendering usually takes 15–90 seconds. If no illustration is produced, the page states the reason.",
+    illustrationFailedTitle: "AI illustration was not generated",
+    illustrationFailedDesc: "The book on the right is a typography preview, not a finished illustrated cover.",
+    illustrationMissingReason: "This preview link has no AI artwork URL, so the generated image cannot be shown.",
+    artworkLoadFailed: "The browser could not display the AI image that was returned.",
+    dailyLimitNotice: "This network has reached the daily limit of 3 successful AI covers. Please try again tomorrow.",
+    timeoutNotice: "AI illustration timed out before an image was produced.",
+    retryGenerate: "Try again",
     previewKicker: "3D hardcover monograph preview",
     dragHintIdle: "Your 3D academic monograph preview appears here after generation",
     dragHintReady: "Drag to rotate · View back-cover blurb and spine",
@@ -930,7 +958,7 @@ const en: Translations = {
       "[Academic monograph guidance & publishing]\nKidsmybook creates formal monographs that meet international publishing standards for children.\nUniversity professor guidance · Registered ISBN · Available in Hong Kong bookstores.\nFill in the young author's name and topic on the left to preview your cover.",
     defaultProfHint: "Fill in details on the left · Live 3D cover preview",
     errNameTopic: "Please enter the young author's name and interest/topic.",
-    aiFallbackNotice: (message) => `Showing academic layout preview instead (${message})`,
+    aiFallbackNotice: (message) => `The AI illustration was not generated. Reason: ${message}`,
     consultSummaryHeader: "[Kidsmybook monograph cover preview]",
     consultChild: "Young author",
     consultTopic: "Interest / topic",
