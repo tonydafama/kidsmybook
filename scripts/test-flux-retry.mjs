@@ -69,17 +69,25 @@ async function rejects(run, check) {
 }
 
 async function main() {
-  assert.equal(FLUX_ATTEMPT_TIMEOUT_MS, 90_000);
-  assert.equal(FLUX_OVERALL_BUDGET_MS, 90_000);
+  assert.equal(FLUX_ATTEMPT_TIMEOUT_MS, 180_000);
+  assert.equal(FLUX_OVERALL_BUDGET_MS, 180_000);
   assert.equal(FLUX_MAX_ATTEMPTS, 3);
   const monicaSource = fs.readFileSync(new URL("../src/lib/monica.ts", import.meta.url), "utf8");
   const clientMatch = monicaSource.match(/COVER_CLIENT_TIMEOUT_MS = ([\d_]+)/);
   assert.ok(clientMatch, "browser cover timeout constant missing");
   const clientTimeoutMs = Number(clientMatch[1].replaceAll("_", ""));
+  assert.equal(clientTimeoutMs, 200_000);
   assert.ok(
-    clientTimeoutMs >= FLUX_OVERALL_BUDGET_MS + 5_000,
-    "worker budget must finish before the browser abort so the JSON error still arrives",
+    clientTimeoutMs >= FLUX_OVERALL_BUDGET_MS + 10_000 && clientTimeoutMs <= FLUX_OVERALL_BUDGET_MS + 20_000,
+    "browser wait must stay 10–20s above the 180s worker budget",
   );
+  assert.match(monicaSource, /The cover request timed out after 180 seconds\./);
+  const translations = fs.readFileSync(new URL("../src/i18n/translations.ts", import.meta.url), "utf8");
+  assert.match(translations, /timeoutNotice: "AI 繪圖逾時，插圖沒有在 180 秒內生成。"/);
+  assert.match(translations, /timeoutNotice: "AI 绘图超时，插图没有在 180 秒内生成。"/);
+  assert.match(translations, /timeoutNotice: "AI illustration timed out after 180 seconds\."/);
+  const workerSource = fs.readFileSync(new URL("../worker/index.ts", import.meta.url), "utf8");
+  assert.match(workerSource, /AI illustration timed out after \$\{FLUX_ATTEMPT_TIMEOUT_MS \/ 1000\} seconds\./);
 
   {
     const seen = withClock(({ time, calls }) => {
