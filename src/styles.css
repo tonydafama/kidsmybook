@@ -2188,7 +2188,7 @@ select:focus {
 
 /* AI Book Creator (homepage #ai-book-lab) */
 #ai-book-lab {
-  scroll-margin-top: 88px;
+  scroll-margin-top: calc(var(--sticky-nav-h, 72px) + 16px);
 }
 
 #services,
