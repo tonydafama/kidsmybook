@@ -14,7 +14,10 @@ export type CoverPromptInput = {
 };
 
 const COVER_API = "/api/cover-generate";
-/** Slightly above the worker's 90s Flux abort so a late JSON error still arrives. */
+/**
+ * Slightly above the worker Flux budget. Retries stay inside that 90s budget
+ * (worker/fluxImage.ts), so this 100s wait still receives a late JSON error.
+ */
 const COVER_CLIENT_TIMEOUT_MS = 100_000;
 
 export class CoverGenerateError extends Error {

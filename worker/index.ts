@@ -1,6 +1,7 @@
 import { STUDIO_EMAIL, WA_QUOTE_ZH, whatsappHref } from "../src/seo/linkify";
 import { markerComment, normalizeRoutePath, prerenderAssetPath } from "../src/seo/meta";
 import { englishSlugRedirect } from "../src/seo/slug-redirects";
+import { FLUX_ATTEMPT_TIMEOUT_MS, generateFluxImage } from "./fluxImage";
 
 export interface Env {
   ASSETS: Fetcher;
@@ -16,9 +17,6 @@ export interface Env {
   WHATSAPP_VERIFY_TOKEN?: string;
 }
 
-const MONICA_FLUX_URL = "https://openapi.monica.im/v1/image/gen/flux";
-/** Hung Flux calls only. Workers HTTP wall time is not capped while the browser stays connected. */
-const FLUX_TIMEOUT_MS = 90_000;
 const COVER_DAILY_SUCCESS_LIMIT = 3;
 const CORS_HEADERS: Record<string, string> = {
   "Access-Control-Allow-Origin": "*",
@@ -30,52 +28,6 @@ type CoverGenerateBody = {
   frontPrompt?: string;
   backPrompt?: string;
 };
-
-type MonicaFluxResponse = {
-  data?: { url?: string }[];
-  error?: { code?: string; message?: string };
-};
-
-async function generateFluxImage(prompt: string, apiKey: string): Promise<string> {
-  const controller = new AbortController();
-  const timeoutId = setTimeout(() => controller.abort(), FLUX_TIMEOUT_MS);
-
-  try {
-    const res = await fetch(MONICA_FLUX_URL, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${apiKey}`,
-      },
-      body: JSON.stringify({
-        prompt,
-        model: "flux_dev",
-        num_outputs: 1,
-        size: "768x1344",
-      }),
-      signal: controller.signal,
-    });
-
-    const text = await res.text();
-    let payload: MonicaFluxResponse;
-    try {
-      payload = JSON.parse(text) as MonicaFluxResponse;
-    } catch {
-      throw new Error(`Monica API returned unexpected response (${res.status}): ${text.slice(0, 100)}`);
-    }
-
-    if (!res.ok) {
-      const msg = payload.error?.message ?? `Monica API HTTP ${res.status}`;
-      throw new Error(msg);
-    }
-
-    const url = payload.data?.[0]?.url;
-    if (!url) throw new Error("Monica API returned no image URL");
-    return url;
-  } finally {
-    clearTimeout(timeoutId);
-  }
-}
 
 async function handleCoverGenerate(request: Request, env: Env): Promise<Response> {
   if (request.method === "OPTIONS") {
@@ -126,7 +78,7 @@ async function handleCoverGenerate(request: Request, env: Env): Promise<Response
   }
 
   try {
-    // Generate primary front cover artwork
+    // Retries stay inside generateFluxImage. Only a returned URL increments the daily success cap.
     const frontUrl = await generateFluxImage(frontPrompt, apiKey);
     
     // For back cover, use the high-quality companion front artwork background
@@ -145,7 +97,10 @@ async function handleCoverGenerate(request: Request, env: Env): Promise<Response
     return json({ frontUrl, backUrl }, 200);
   } catch (err) {
     if (err instanceof Error && err.name === "AbortError") {
-      return json({ error: "AI illustration timed out after 90 seconds.", code: "timeout" }, 504);
+      return json(
+        { error: `AI illustration timed out after ${FLUX_ATTEMPT_TIMEOUT_MS / 1000} seconds.`, code: "timeout" },
+        504,
+      );
     }
     const message = err instanceof Error ? err.message : "Cover generation failed";
     return json({ error: message, code: "upstream" }, 502);
