@@ -1,12 +1,23 @@
 import { STUDIO_EMAIL, WA_QUOTE_ZH, whatsappHref } from "../src/seo/linkify";
 import { markerComment, normalizeRoutePath, prerenderAssetPath } from "../src/seo/meta";
 import { englishSlugRedirect } from "../src/seo/slug-redirects";
-import { FLUX_ATTEMPT_TIMEOUT_MS, generateFluxImage } from "./fluxImage";
+import {
+  COVER_ATTEMPT_TIMEOUT_MS,
+  coverImageHttpResponse,
+  coverImageIdFromPath,
+  generateStoredCover,
+  kvCoverStore,
+  loadCoverImage,
+} from "./coverImage";
+
+interface WorkersAiBinding {
+  run: (model: string, inputs: unknown) => Promise<unknown>;
+}
 
 export interface Env {
   ASSETS: Fetcher;
   kidsmybook_leads: KVNamespace;
-  MONICA_API_KEY?: string;
+  AI?: WorkersAiBinding;
   PREVIEW_LEAD_WEBHOOK?: string;
   TELEGRAM_BOT_TOKEN?: string;
   TELEGRAM_CHAT_ID?: string;
@@ -60,9 +71,8 @@ async function handleCoverGenerate(request: Request, env: Env): Promise<Response
     );
   }
 
-  const apiKey = env.MONICA_API_KEY?.trim();
-  if (!apiKey) {
-    return json({ error: "Cover API is not configured (missing MONICA_API_KEY).", code: "not_configured" }, 503);
+  if (!env.AI) {
+    return json({ error: "Cover API is not configured (missing Workers AI binding).", code: "not_configured" }, 503);
   }
 
   let body: CoverGenerateBody;
@@ -78,11 +88,14 @@ async function handleCoverGenerate(request: Request, env: Env): Promise<Response
   }
 
   try {
-    // Retries stay inside generateFluxImage. Only a returned URL increments the daily success cap.
-    const frontUrl = await generateFluxImage(frontPrompt, apiKey);
-    
-    // For back cover, use the high-quality companion front artwork background
-    const backUrl = frontUrl;
+    // Retries stay inside generateStoredCover. Only a stored image increments the daily success cap.
+    // Back cover reuses the front artwork.
+    const { frontUrl, backUrl } = await generateStoredCover({
+      prompt: frontPrompt,
+      ai: env.AI,
+      store: kvCoverStore(env.kidsmybook_leads),
+      origin: new URL(request.url).origin,
+    });
 
     // Increment rate limit counter on success
     try {
@@ -98,7 +111,7 @@ async function handleCoverGenerate(request: Request, env: Env): Promise<Response
   } catch (err) {
     if (err instanceof Error && err.name === "AbortError") {
       return json(
-        { error: `AI illustration timed out after ${FLUX_ATTEMPT_TIMEOUT_MS / 1000} seconds.`, code: "timeout" },
+        { error: `AI illustration timed out after ${COVER_ATTEMPT_TIMEOUT_MS / 1000} seconds.`, code: "timeout" },
         504,
       );
     }
@@ -1181,6 +1194,11 @@ export default {
       if (pw !== ADMIN_PASSWORD) return json({ error: "Forbidden" }, 403);
       await runSeoHealthCheck(env);
       return json({ ok: true, note: "SEO asset health check sent to Telegram if credentials exist." });
+    }
+    const coverImageId = coverImageIdFromPath(url.pathname);
+    if (coverImageId && (request.method === "GET" || request.method === "HEAD")) {
+      const image = await loadCoverImage(kvCoverStore(env.kidsmybook_leads), coverImageId);
+      return coverImageHttpResponse(image, request.method);
     }
     if (url.pathname === "/api/cover-generate") {
       return handleCoverGenerate(request, env);

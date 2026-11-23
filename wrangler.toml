@@ -8,6 +8,11 @@ account_id = "a5305840219e568d113495a70265631d"
 binding = "kidsmybook_leads"
 id = "ee8d200a425a45fbba808eb6383b3e44"
 
+# Workers AI for /api/cover-generate. No third-party key.
+# The Cloudflare account must have Workers AI enabled; deploy attaches this binding.
+[ai]
+binding = "AI"
+
 [assets]
 directory = "./dist"
 binding = "ASSETS"

@@ -1,12 +1,10 @@
 import fs from "node:fs";
 import path from "node:path";
-import { defineConfig, loadEnv, type Plugin } from "vite";
+import { defineConfig, type Plugin } from "vite";
 import react from "@vitejs/plugin-react";
 import type { IncomingMessage, ServerResponse } from "node:http";
 import { prerenderAssetPath } from "./src/seo/meta";
 import { englishSlugRedirect } from "./src/seo/slug-redirects";
-
-const MONICA_FLUX_URL = "https://openapi.monica.im/v1/image/gen/flux";
 
 function readJsonBody(req: IncomingMessage): Promise<unknown> {
   return new Promise((resolve, reject) => {
@@ -21,22 +19,6 @@ function readJsonBody(req: IncomingMessage): Promise<unknown> {
     });
     req.on("error", reject);
   });
-}
-
-async function fluxImage(prompt: string, apiKey: string): Promise<string> {
-  const res = await fetch(MONICA_FLUX_URL, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      Authorization: `Bearer ${apiKey}`,
-    },
-    body: JSON.stringify({ prompt, model: "flux_dev", num_outputs: 1, size: "768x1344" }),
-  });
-  const data = (await res.json()) as { data?: { url?: string }[]; error?: { message?: string } };
-  if (!res.ok) throw new Error(data.error?.message ?? `Monica HTTP ${res.status}`);
-  const url = data.data?.[0]?.url;
-  if (!url) throw new Error("Monica returned no image URL");
-  return url;
 }
 
 /** Same 301 map the Worker uses, so preview and dev do not serve retired pinyin URLs. */
@@ -90,7 +72,7 @@ function prerenderPreviewPlugin(): Plugin {
   };
 }
 
-function coverApiDevPlugin(apiKey: string): Plugin {
+function coverApiDevPlugin(): Plugin {
   return {
     name: "cover-api-dev",
     configureServer(server) {
@@ -101,33 +83,15 @@ function coverApiDevPlugin(apiKey: string): Plugin {
           return;
         }
         if (req.method !== "POST") return next();
-
+        await readJsonBody(req).catch(() => undefined);
         res.setHeader("Content-Type", "application/json");
-        if (!apiKey) {
-          res.statusCode = 503;
-          res.end(JSON.stringify({ error: "Set MONICA_API_KEY or VITE_MONICA_API_KEY in .env.local" }));
-          return;
-        }
-
-        try {
-          const body = (await readJsonBody(req)) as { frontPrompt?: string; backPrompt?: string };
-          const frontPrompt = body.frontPrompt?.trim();
-          const backPrompt = body.backPrompt?.trim();
-          if (!frontPrompt || !backPrompt) {
-            res.statusCode = 400;
-            res.end(JSON.stringify({ error: "frontPrompt and backPrompt are required." }));
-            return;
-          }
-        const [frontUrl, backUrl] = await (async () => {
-          const front = await fluxImage(frontPrompt, apiKey);
-          return [front, front];
-        })();
-          res.statusCode = 200;
-          res.end(JSON.stringify({ frontUrl, backUrl }));
-        } catch (err) {
-          res.statusCode = 502;
-          res.end(JSON.stringify({ error: err instanceof Error ? err.message : "Cover generation failed" }));
-        }
+        res.statusCode = 503;
+        res.end(
+          JSON.stringify({
+            error: "Cover generation runs on the Cloudflare Worker with Workers AI. Use wrangler dev for a local AI binding.",
+            code: "not_configured",
+          }),
+        );
       });
 
       server.middlewares.use("/api/preview-lead", async (req, res, next) => {
@@ -162,12 +126,9 @@ function coverApiDevPlugin(apiKey: string): Plugin {
   };
 }
 
-export default defineConfig(({ mode }) => {
-  const env = loadEnv(mode, process.cwd(), "");
-  const monicaKey = env.MONICA_API_KEY || env.VITE_MONICA_API_KEY || "";
-
+export default defineConfig(() => {
   return {
-    plugins: [react(), coverApiDevPlugin(monicaKey), pinyinSlugRedirectPlugin(), prerenderPreviewPlugin()],
+    plugins: [react(), coverApiDevPlugin(), pinyinSlugRedirectPlugin(), prerenderPreviewPlugin()],
     base: "/",
   };
 });
