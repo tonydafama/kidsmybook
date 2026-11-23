@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState, type CSSProperties } from "react";
+import { useEffect, useLayoutEffect, useMemo, useRef, useState, type CSSProperties } from "react";
 import { useLocale } from "./i18n/LocaleContext";
 import { AGE_RANGE_KEYS, type AgeRangeKey, type Translations } from "./i18n/translations";
 import { buildPolishedBackBlurb, deriveBookTopic, getScholarlyProfile, INITIAL_DEFAULT_PROFILE } from "./lib/bookCover";
@@ -16,6 +16,20 @@ function localAppHref(path: string): string {
 }
 
 const WHATSAPP_NUMBER = import.meta.env.VITE_WHATSAPP_NUMBER || "85291214157";
+
+/** Sticky nav height used by `#ai-book-lab` scroll-margin. */
+function syncCoverLabNavOffset() {
+  const nav = document.querySelector<HTMLElement>(".top-nav");
+  if (!nav) return;
+  const height = Math.ceil(nav.getBoundingClientRect().height);
+  document.documentElement.style.setProperty("--sticky-nav-h", `${height}px`);
+}
+
+/** Put the lab heading just below the sticky nav. Do not center the book. */
+function scrollCoverLabIntoView(behavior: ScrollBehavior) {
+  syncCoverLabNavOffset();
+  document.getElementById("ai-book-lab")?.scrollIntoView({ behavior, block: "start" });
+}
 
 function parseAgeParam(raw: string | null | undefined): AgeRangeKey | "" {
   if (!raw?.trim()) return "";
@@ -318,7 +332,6 @@ export function AiBookCreatorPanel({ showBackLink = true, releaseTag }: AiBookCr
 
   const [rotation, setRotation] = useState(REST_ROTATION);
   const [dragging, setDragging] = useState<{ startX: number; startY: number; baseX: number; baseY: number } | null>(null);
-  const previewAnchorRef = useRef<HTMLDivElement>(null);
 
   const theme = OPEN_THEME;
 
@@ -332,11 +345,19 @@ export function AiBookCreatorPanel({ showBackLink = true, releaseTag }: AiBookCr
     setCoverMeta((prev) => ({ ...prev, backBlurb: t.aiLab.defaultBackBlurb }));
   }, [t, previewReady]);
 
+  useLayoutEffect(() => {
+    syncCoverLabNavOffset();
+    const nav = document.querySelector<HTMLElement>(".top-nav");
+    const observer = new ResizeObserver(() => syncCoverLabNavOffset());
+    if (nav) observer.observe(nav);
+    return () => observer.disconnect();
+  }, []);
+
   useEffect(() => {
-    if (!previewReady || !previewAnchorRef.current) return;
-    const timeout = window.setTimeout(() => {
-      previewAnchorRef.current?.scrollIntoView({ behavior: "smooth", block: "center" });
-    }, 120);
+    const fromHash = window.location.hash === "#ai-book-lab";
+    if (!previewReady && !fromHash) return;
+    const behavior: ScrollBehavior = previewReady ? "smooth" : "auto";
+    const timeout = window.setTimeout(() => scrollCoverLabIntoView(behavior), 120);
     return () => window.clearTimeout(timeout);
   }, [previewReady]);
 
@@ -782,7 +803,6 @@ export function AiBookCreatorPanel({ showBackLink = true, releaseTag }: AiBookCr
         <div className="ai-book-side">
           <p className="ai-form-kicker">{t.aiLab.previewKicker}</p>
           <div
-            ref={previewAnchorRef}
             className={`book-stage-wrap ai-book-stage-wrap ai-book-stage-wrap--hero ${previewReady ? "ai-book-stage-wrap--ready" : ""}`}
           >
             <div className="ai-book-pedestal" aria-hidden />
