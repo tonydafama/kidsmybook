@@ -2,17 +2,16 @@ const MONICA_FLUX_URL = "https://openapi.monica.im/v1/image/gen/flux";
 
 /**
  * Per-attempt cap for one Monica Flux call.
- * Hung calls only. Worker CPU time is not the wall clock spent waiting on fetch,
- * so retries do not need a higher wrangler cpu_ms.
+ * Waiting on fetch is not Workers CPU time (paid default is 30s CPU; HTTP duration
+ * is unbounded while the browser stays connected), so this 180s wait does not need a higher cpu_ms.
  */
-export const FLUX_ATTEMPT_TIMEOUT_MS = 90_000;
+export const FLUX_ATTEMPT_TIMEOUT_MS = 180_000;
 
 /**
- * Whole generateFluxImage wait. Kept at the old single-attempt abort so a retry
- * spends time the failed call did not use. The browser aborts at 100s
- * (COVER_CLIENT_TIMEOUT_MS); staying at 90s leaves room for the JSON error.
+ * Whole generateFluxImage wait. A retry spends time the failed call did not use.
+ * The browser waits 200s (COVER_CLIENT_TIMEOUT_MS) so this 180s budget can still return JSON.
  */
-export const FLUX_OVERALL_BUDGET_MS = 90_000;
+export const FLUX_OVERALL_BUDGET_MS = 180_000;
 
 /** One to two seconds. Long enough to let a gateway 504 clear, short enough to stay in budget. */
 export const FLUX_RETRY_BACKOFF_MS = 1_500;
