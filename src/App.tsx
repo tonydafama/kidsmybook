@@ -129,8 +129,8 @@ function HomePage({ services }: { services: ServiceItem[] }) {
             <p className="hero__eyebrow">{t.hero.eyebrow}</p>
             <h1 className="hero__title-block">
               <span className="hero__title-main">{t.hero.titlePrimary}</span>
+              <span className="hero__title-main">{t.hero.titleSecondary}</span>
               <span className="hero__title-sub">
-                {t.hero.titleSecondary}
                 <em className="hero__title-highlight">{t.hero.titleAccent}</em>
               </span>
               <span className="sr-only">{t.brandTitle.replace(/\n/g, " ")}</span>

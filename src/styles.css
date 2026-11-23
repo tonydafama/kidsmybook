@@ -313,7 +313,7 @@ main {
 
 .hero__title-highlight {
   display: inline;
-  margin-left: 0.35em;
+  margin-left: 0;
   font-style: normal;
   font-weight: 600;
   color: #e8cba0;
