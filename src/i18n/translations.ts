@@ -264,7 +264,7 @@ export type Translations = {
 };
 
 const zhHant: Translations = {
-  brandTitle: "大學教授指導出版 ISBN 童書，上架香港主流書店，升學作品集亮點",
+  brandTitle: "大學教授指導出書，上架香港主流書店，升學作品亮點，最強Portfolio",
   brandEn: "Turn your child's passion into a published achievement.",
   nav: {
     main: "主選單",
@@ -288,10 +288,10 @@ const zhHant: Translations = {
   },
   hero: {
     eyebrow: "香港兒童出版工作室",
-    titlePrimary: "大學教授指導出版 ISBN 童書",
-    titleSecondary: "上架香港主流書店 ·",
-    titleAccent: "升學作品集亮點",
-    lead: "12 個月導師制，由興趣到正式印刷；再走實體書店上架路徑。私人報價。",
+    titlePrimary: "大學教授指導出書",
+    titleSecondary: "上架香港主流書店",
+    titleAccent: "升學作品亮點，最強Portfolio",
+    lead: "由興趣到正式印刷出書實體書店上架",
     generateCover: "生成封面",
     bookConsult: "預約諮詢",
     featuredAlt: "Hilary 新書發布會",
@@ -586,10 +586,10 @@ const zhHans: Translations = {
   hero: {
     ...zhHant.hero,
     eyebrow: "香港儿童出版工作室",
-    titlePrimary: "大学教授指导出版 ISBN 童书",
-    titleSecondary: "上架香港主流书店 ·",
-    titleAccent: "升学作品集亮点",
-    lead: "12 个月导师制：正式印刷 ISBN 童书，再走香港实体书店上架路径。私人报价。",
+    titlePrimary: "大学教授指导出书",
+    titleSecondary: "上架香港主流书店",
+    titleAccent: "升学作品亮点，最强Portfolio",
+    lead: "由兴趣到正式印刷出书实体书店上架",
     generateCover: "生成封面",
     bookConsult: "预约咨询",
     featuredAlt: "Hilary 新书发布会",
@@ -872,10 +872,10 @@ const en: Translations = {
   },
   hero: {
     eyebrow: "Hong Kong children's publishing studio",
-    titlePrimary: "University professors guide ISBN children's books",
-    titleSecondary: "Listed in mainstream Hong Kong bookstores ·",
-    titleAccent: "A standout admissions portfolio",
-    lead: "Twelve mentored months: a formal ISBN children's book, then a Hong Kong bookstore listing path. Private quotation.",
+    titlePrimary: "University professors guide book publishing",
+    titleSecondary: "Listed in mainstream Hong Kong bookstores",
+    titleAccent: "Admissions work highlight, strongest Portfolio",
+    lead: "From interest to formal print publication and physical bookstore listing",
     generateCover: "Generate cover",
     bookConsult: "Book a consultation",
     featuredAlt: "Hilary book launch",
