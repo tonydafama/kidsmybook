@@ -55,7 +55,7 @@ function rawCoverFailure(err: unknown): CoverFailure {
     return { code: err.code || "upstream", reason: err.message };
   }
   if (err instanceof Error && err.name === "AbortError") {
-    return { code: "timeout", reason: "The cover request timed out." };
+    return { code: "timeout", reason: "The cover request timed out after 45 seconds." };
   }
   if (err instanceof Error && err.message) return { code: "upstream", reason: err.message };
   return { code: "upstream", reason: "AI cover unavailable" };

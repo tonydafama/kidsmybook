@@ -15,10 +15,10 @@ export type CoverPromptInput = {
 
 const COVER_API = "/api/cover-generate";
 /**
- * Slightly above the worker Flux budget. Retries stay inside that 90s budget
- * (worker/fluxImage.ts), so this 100s wait still receives a late JSON error.
+ * 10s above the Worker AI budget (45s in worker/coverImage.ts) so a timeout JSON still arrives.
+ * Parent-facing copy says 45 seconds, the illustration budget, not this cushion.
  */
-const COVER_CLIENT_TIMEOUT_MS = 100_000;
+const COVER_CLIENT_TIMEOUT_MS = 55_000;
 
 export class CoverGenerateError extends Error {
   readonly status: number;
@@ -127,7 +127,7 @@ export async function generateBookCoverPair(input: {
   } catch (err) {
     if (err instanceof CoverGenerateError) throw err;
     if (err instanceof Error && err.name === "AbortError") {
-      throw new CoverGenerateError("The cover request timed out after 100 seconds.", 504, "timeout");
+      throw new CoverGenerateError("The cover request timed out after 45 seconds.", 504, "timeout");
     }
     const message = err instanceof Error && err.message ? err.message : "Cover request failed";
     throw new CoverGenerateError(message, 0, "upstream");
