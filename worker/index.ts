@@ -17,6 +17,9 @@ export interface Env {
 }
 
 const MONICA_FLUX_URL = "https://openapi.monica.im/v1/image/gen/flux";
+/** Hung Flux calls only. Workers HTTP wall time is not capped while the browser stays connected. */
+const FLUX_TIMEOUT_MS = 90_000;
+const COVER_DAILY_SUCCESS_LIMIT = 3;
 const CORS_HEADERS: Record<string, string> = {
   "Access-Control-Allow-Origin": "*",
   "Access-Control-Allow-Methods": "POST, OPTIONS",
@@ -35,7 +38,7 @@ type MonicaFluxResponse = {
 
 async function generateFluxImage(prompt: string, apiKey: string): Promise<string> {
   const controller = new AbortController();
-  const timeoutId = setTimeout(() => controller.abort(), 55000); // 55s timeout
+  const timeoutId = setTimeout(() => controller.abort(), FLUX_TIMEOUT_MS);
 
   try {
     const res = await fetch(MONICA_FLUX_URL, {
@@ -79,7 +82,7 @@ async function handleCoverGenerate(request: Request, env: Env): Promise<Response
     return new Response(null, { status: 204, headers: CORS_HEADERS });
   }
 
-  // Rate Limiting: Max 3 requests per IP per day (using Cloudflare Cache API)
+  // Successful generations only: 3 per IP per UTC day. Failures do not consume the cap.
   const ip = request.headers.get("cf-connecting-ip") || "unknown-ip";
   const cache = caches.default;
   const today = new Date().toISOString().split("T")[0]; // e.g., "2026-09-03"
@@ -95,13 +98,19 @@ async function handleCoverGenerate(request: Request, env: Env): Promise<Response
     console.error("Cache read error:", err);
   }
 
-  if (count >= 3) {
-    return json({ error: "Daily limit reached. Please try again tomorrow." }, 429);
+  if (count >= COVER_DAILY_SUCCESS_LIMIT) {
+    return json(
+      {
+        error: `Daily limit reached: ${COVER_DAILY_SUCCESS_LIMIT} successful AI cover generations per IP per day. Please try again tomorrow.`,
+        code: "daily_limit",
+      },
+      429,
+    );
   }
 
   const apiKey = env.MONICA_API_KEY?.trim();
   if (!apiKey) {
-    return json({ error: "Cover API is not configured (missing MONICA_API_KEY)." }, 503);
+    return json({ error: "Cover API is not configured (missing MONICA_API_KEY).", code: "not_configured" }, 503);
   }
 
   let body: CoverGenerateBody;
@@ -135,8 +144,11 @@ async function handleCoverGenerate(request: Request, env: Env): Promise<Response
 
     return json({ frontUrl, backUrl }, 200);
   } catch (err) {
+    if (err instanceof Error && err.name === "AbortError") {
+      return json({ error: "AI illustration timed out after 90 seconds.", code: "timeout" }, 504);
+    }
     const message = err instanceof Error ? err.message : "Cover generation failed";
-    return json({ error: message }, 502);
+    return json({ error: message, code: "upstream" }, 502);
   }
 }
 

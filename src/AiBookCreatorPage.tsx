@@ -1,10 +1,11 @@
 import { useEffect, useMemo, useRef, useState, type CSSProperties } from "react";
 import { useLocale } from "./i18n/LocaleContext";
-import { AGE_RANGE_KEYS, type AgeRangeKey } from "./i18n/translations";
+import { AGE_RANGE_KEYS, type AgeRangeKey, type Translations } from "./i18n/translations";
 import { buildPolishedBackBlurb, deriveBookTopic, getScholarlyProfile, INITIAL_DEFAULT_PROFILE } from "./lib/bookCover";
+import { fitCoverTitle } from "./lib/coverTitle";
 import { trackWhatsappClick } from "./lib/analytics";
 import { getCoverEnquiry, postPreviewLead, setCoverEnquiry } from "./lib/coverEnquiry";
-import { generateBookCoverPair } from "./lib/monica";
+import { CoverGenerateError, generateBookCoverPair } from "./lib/monica";
 
 const APP_BASE = import.meta.env.BASE_URL;
 
@@ -33,6 +34,40 @@ function escapeXml(text: string): string {
     .replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;")
     .replace(/'/g, "&apos;");
+}
+
+function isHttpUrl(value: string | undefined | null): value is string {
+  return Boolean(value && /^https?:\/\//i.test(value));
+}
+
+function svgLines(lines: string[], x: number, startY: number, lineHeight: number, attrs: string): string {
+  if (!lines.length) return "";
+  const body = lines
+    .map((line, index) => `<tspan x="${x}" y="${startY + index * lineHeight}">${escapeXml(line)}</tspan>`)
+    .join("");
+  return `<text ${attrs}>${body}</text>`;
+}
+
+type CoverFailure = { code: string; reason: string };
+
+function rawCoverFailure(err: unknown): CoverFailure {
+  if (err instanceof CoverGenerateError) {
+    return { code: err.code || "upstream", reason: err.message };
+  }
+  if (err instanceof Error && err.name === "AbortError") {
+    return { code: "timeout", reason: "The cover request timed out." };
+  }
+  if (err instanceof Error && err.message) return { code: "upstream", reason: err.message };
+  return { code: "upstream", reason: "AI cover unavailable" };
+}
+
+function illustrationAlertText(code: string, reason: string, copy: Translations["aiLab"]): string {
+  const detail = reason.trim();
+  if (code === "daily_limit") return detail ? `${copy.dailyLimitNotice} ${detail}` : copy.dailyLimitNotice;
+  if (code === "timeout") return detail ? `${copy.timeoutNotice} ${detail}` : copy.timeoutNotice;
+  if (code === "artwork_load") return copy.aiFallbackNotice(detail || copy.artworkLoadFailed);
+  if (!detail || code === "missing") return copy.aiFallbackNotice(copy.illustrationMissingReason);
+  return copy.aiFallbackNotice(detail);
 }
 
 const REST_ROTATION = { x: 12, y: -28 };
@@ -96,13 +131,8 @@ function coverSvgDataUri(opts: {
   editionLine?: string;
   profTitle?: string;
 }) {
-  const title = escapeXml(opts.title);
-  const titleZh = escapeXml(opts.titleZh ?? "");
-  const subtitle = escapeXml(opts.subtitle);
   const footnote = escapeXml(opts.footnote);
-  const profTitle = escapeXml(opts.profTitle ?? "Faculty of Science · Academic Advisory Board");
   const edition = escapeXml(opts.editionLine ?? "YOUNG SCHOLAR MONOGRAPH SERIES · OXFORD & CAMBRIDGE ADVISORY");
-  const titleSize = opts.title.length > 40 ? 52 : opts.title.length > 26 ? 62 : 72;
 
   if (opts.variant === "back") {
     const rawBack = `
@@ -144,6 +174,61 @@ function coverSvgDataUri(opts: {
     return `data:image/svg+xml;utf8,${encodeURIComponent(rawBack)}`;
   }
 
+  const textX = 112;
+  const maxTextWidth = 760;
+  const titleFit = fitCoverTitle(opts.title, maxTextWidth, 4);
+  const zhFit = opts.titleZh?.trim()
+    ? fitCoverTitle(opts.titleZh, maxTextWidth, 2, [34, 30, 26, 22])
+    : { fontSize: 34, lines: [] as string[] };
+  const subtitleFit = fitCoverTitle(opts.subtitle, maxTextWidth, 2, [32, 26, 22]);
+  const profFit = fitCoverTitle(
+    opts.profTitle ?? "Faculty of Science · Academic Advisory Board",
+    maxTextWidth,
+    3,
+    [20, 18, 16],
+  );
+  const titleLh = Math.round(titleFit.fontSize * 1.16);
+  const zhLh = Math.round(zhFit.fontSize * 1.3);
+  const subLh = Math.round(subtitleFit.fontSize * 1.25);
+  const profLh = Math.round(profFit.fontSize * 1.35);
+  const zhBlock = zhFit.lines.length ? 14 + zhFit.lines.length * zhLh : 0;
+  const profBlock = profFit.lines.length ? 8 + profFit.lines.length * profLh : 0;
+  const stack = titleFit.lines.length * titleLh + zhBlock + 34 + subtitleFit.lines.length * subLh + profBlock;
+  const titleStartY = Math.max(600, 1040 - stack);
+  const zhStartY = titleStartY + titleFit.lines.length * titleLh + 14;
+  const ruleY =
+    (zhFit.lines.length ? zhStartY + zhFit.lines.length * zhLh : titleStartY + titleFit.lines.length * titleLh) + 28;
+  const subStartY = ruleY + 46;
+  const profStartY = subStartY + subtitleFit.lines.length * subLh + 8;
+  const titleSvg = svgLines(
+    titleFit.lines,
+    textX,
+    titleStartY,
+    titleLh,
+    `fill="#ffffff" font-size="${titleFit.fontSize}" font-weight="700" font-family="Georgia, serif"`,
+  );
+  const zhSvg = svgLines(
+    zhFit.lines,
+    textX,
+    zhStartY,
+    zhLh,
+    `fill="#dab97d" font-size="${zhFit.fontSize}" font-family="Georgia, serif"`,
+  );
+  const subtitleSvg = svgLines(
+    subtitleFit.lines,
+    textX,
+    subStartY,
+    subLh,
+    `fill="rgba(255,255,255,0.96)" font-size="${subtitleFit.fontSize}" font-weight="700" font-family="Georgia, serif"`,
+  );
+  const profSvg = svgLines(
+    profFit.lines,
+    textX,
+    profStartY,
+    profLh,
+    `fill="rgba(218,185,125,0.88)" font-size="${profFit.fontSize}" font-family="Georgia, serif"`,
+  );
+
   const raw = `
   <svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1536" viewBox="0 0 1024 1536">
     <defs>
@@ -180,14 +265,14 @@ function coverSvgDataUri(opts: {
     </g>
 
     <!-- Book Titles -->
-    <text x="100" y="720" fill="#ffffff" font-size="${titleSize}" font-weight="700" font-family="Georgia, serif">${title}</text>
-    ${titleZh ? `<text x="100" y="800" fill="#dab97d" font-size="34" font-family="Georgia, serif" letter-spacing="0.06em">${titleZh}</text>` : ""}
+    ${titleSvg}
+    ${zhSvg}
     
-    <line x1="100" y1="860" x2="924" y2="860" stroke="rgba(218,185,125,0.35)" stroke-width="1.5"/>
+    <line x1="${textX}" y1="${ruleY}" x2="912" y2="${ruleY}" stroke="rgba(218,185,125,0.35)" stroke-width="1.5"/>
 
     <!-- Authorship & Co-Author Professor -->
-    <text x="100" y="930" fill="rgba(255,255,255,0.96)" font-size="36" font-weight="700" font-family="Georgia, serif">${subtitle}</text>
-    <text x="100" y="980" fill="rgba(218,185,125,0.88)" font-size="22" font-family="Georgia, serif">${profTitle}</text>
+    ${subtitleSvg}
+    ${profSvg}
     
     <!-- Footer Press line -->
     <text x="100" y="1380" fill="rgba(255,255,255,0.72)" font-size="22" font-family="Georgia, serif" letter-spacing="0.1em">${footnote}</text>
@@ -210,11 +295,13 @@ export function AiBookCreatorPanel({ showBackLink = true, releaseTag }: AiBookCr
   const [step, setStep] = useState<"form" | "ready">("form");
   const [shareCopied, setShareCopied] = useState<"link" | "wechat" | null>(null);
   const [formError, setFormError] = useState("");
-  const [apiNotice, setApiNotice] = useState("");
-  const [coverSource, setCoverSource] = useState<"idle" | "svg" | "ai">("idle");
+  const [coverOutcome, setCoverOutcome] = useState<"idle" | "ai" | "fallback">("idle");
+  const [coverErrorCode, setCoverErrorCode] = useState("");
+  const [coverErrorReason, setCoverErrorReason] = useState("");
   const [generatePhase, setGeneratePhase] = useState("");
   const [previewReady, setPreviewReady] = useState(false);
   const [isGenerating, setIsGenerating] = useState(false);
+  const artworkErrorOnce = useRef(false);
 
   const initialProfile = INITIAL_DEFAULT_PROFILE;
 
@@ -256,7 +343,8 @@ export function AiBookCreatorPanel({ showBackLink = true, releaseTag }: AiBookCr
   const buildPreviewQuery = (
     name: string,
     ageLine: string,
-    imageUrls?: { front: string; back: string }
+    imageUrls?: { front: string; back: string },
+    failure?: CoverFailure,
   ) => {
     const params = new URLSearchParams();
     params.set("preview", "1");
@@ -264,9 +352,22 @@ export function AiBookCreatorPanel({ showBackLink = true, releaseTag }: AiBookCr
     params.set("age", ageLine);
     if (interests.trim()) params.set("interests", interests.trim());
     if (personality.trim()) params.set("personality", personality.trim());
-    if (imageUrls?.front.startsWith("http")) params.set("frontImg", imageUrls.front);
-    if (imageUrls?.back.startsWith("http")) params.set("backImg", imageUrls.back);
+    if (isHttpUrl(imageUrls?.front) && isHttpUrl(imageUrls?.back)) {
+      params.set("frontImg", imageUrls.front);
+      params.set("backImg", imageUrls.back);
+    } else {
+      params.set("illustration", "failed");
+      params.set("coverCode", failure?.code || "missing");
+      const reason = failure?.reason.replace(/\s+/g, " ").trim().slice(0, 220) ?? "";
+      if (reason) params.set("coverError", reason);
+    }
     return params.toString();
+  };
+
+  const publishPreviewUrl = (query: string) => {
+    const next = `${window.location.pathname}?${query}#ai-book-lab`;
+    window.history.replaceState(null, "", next);
+    return `${window.location.origin}${next}`;
   };
 
   const applySvgCovers = (
@@ -302,7 +403,6 @@ export function AiBookCreatorPanel({ showBackLink = true, releaseTag }: AiBookCr
         variant: "back",
       }),
     });
-    setCoverSource("svg");
   };
 
   const resetBookView = () => {
@@ -337,8 +437,8 @@ export function AiBookCreatorPanel({ showBackLink = true, releaseTag }: AiBookCr
         topic: interests.trim(),
         personality: personality.trim(),
         previewUrl,
-        frontImg: imageUrls?.front?.startsWith("http") ? imageUrls.front : "",
-        backImg: imageUrls?.back?.startsWith("http") ? imageUrls.back : "",
+        frontImg: isHttpUrl(imageUrls?.front) ? imageUrls.front : "",
+        backImg: isHttpUrl(imageUrls?.back) ? imageUrls.back : "",
       },
       false,
     );
@@ -354,7 +454,6 @@ export function AiBookCreatorPanel({ showBackLink = true, releaseTag }: AiBookCr
     }
     
     setFormError("");
-    setApiNotice("");
     setIsGenerating(true);
     setGeneratePhase(t.aiLab.generatePhase);
     resetBookView();
@@ -381,6 +480,16 @@ export function AiBookCreatorPanel({ showBackLink = true, releaseTag }: AiBookCr
       subfieldZh: copy.subfieldZh,
     });
 
+    const showFallback = (failure: CoverFailure) => {
+      applySvgCovers(name, theme, profile);
+      setCoverOutcome("fallback");
+      setCoverErrorCode(failure.code || "upstream");
+      setCoverErrorReason(failure.reason);
+      setPreviewReady(true);
+      setStep("ready");
+      return publishPreviewUrl(buildPreviewQuery(name, ageLine, undefined, failure));
+    };
+
     let previewUrl = "";
     let generatedImages: { front: string; back: string } | undefined;
     try {
@@ -396,23 +505,16 @@ export function AiBookCreatorPanel({ showBackLink = true, releaseTag }: AiBookCr
         bookTopic,
       });
       generatedImages = { front: pair.frontUrl, back: pair.backUrl };
+      artworkErrorOnce.current = false;
       setCovers({ front: pair.frontUrl, back: pair.backUrl });
-      setCoverSource("ai");
-      setApiNotice("");
+      setCoverOutcome("ai");
+      setCoverErrorCode("");
+      setCoverErrorReason("");
       setPreviewReady(true);
       setStep("ready");
-      const query = buildPreviewQuery(name, ageLine, generatedImages);
-      previewUrl = `${window.location.origin}${window.location.pathname}?${query}#ai-book-lab`;
-      window.history.replaceState(null, "", `${window.location.pathname}?${query}#ai-book-lab`);
+      previewUrl = publishPreviewUrl(buildPreviewQuery(name, ageLine, generatedImages));
     } catch (err) {
-      applySvgCovers(name, theme, profile);
-      setPreviewReady(true);
-      setStep("ready");
-      const message = err instanceof Error ? err.message : "AI cover unavailable";
-      setApiNotice(t.aiLab.aiFallbackNotice(message));
-      const query = buildPreviewQuery(name, ageLine);
-      previewUrl = `${window.location.origin}${window.location.pathname}?${query}#ai-book-lab`;
-      window.history.replaceState(null, "", `${window.location.pathname}?${query}#ai-book-lab`);
+      previewUrl = showFallback(rawCoverFailure(err));
     } finally {
       setIsGenerating(false);
       setGeneratePhase("");
@@ -461,11 +563,17 @@ export function AiBookCreatorPanel({ showBackLink = true, releaseTag }: AiBookCr
         subfieldZh: copy.subfieldZh,
       });
 
-      if (frontImg?.startsWith("http") && backImg?.startsWith("http")) {
+      if (isHttpUrl(frontImg) && isHttpUrl(backImg)) {
+        artworkErrorOnce.current = false;
         setCovers({ front: frontImg, back: backImg });
-        setCoverSource("ai");
+        setCoverOutcome("ai");
+        setCoverErrorCode("");
+        setCoverErrorReason("");
       } else {
         applySvgCovers(name, theme, profile);
+        setCoverOutcome("fallback");
+        setCoverErrorCode(params.get("coverCode")?.trim() || "missing");
+        setCoverErrorReason(params.get("coverError")?.trim() || "");
       }
       setPreviewReady(true);
       setStep("ready");
@@ -477,10 +585,11 @@ export function AiBookCreatorPanel({ showBackLink = true, releaseTag }: AiBookCr
     const query = buildPreviewQuery(
       childName.trim(),
       age.trim(),
-      coverSource === "ai" ? covers : undefined
+      coverOutcome === "ai" ? covers : undefined,
+      coverOutcome === "fallback" ? { code: coverErrorCode || "missing", reason: coverErrorReason } : undefined,
     );
     return `${window.location.origin}${window.location.pathname}?${query}#ai-book-lab`;
-  }, [previewReady, childName, age, interests, personality, coverSource, covers]);
+  }, [previewReady, childName, age, interests, personality, coverOutcome, coverErrorCode, coverErrorReason, covers]);
 
   useEffect(() => {
     if (step !== "ready" || !childName.trim() || !previewShareUrl) {
@@ -494,10 +603,10 @@ export function AiBookCreatorPanel({ showBackLink = true, releaseTag }: AiBookCr
       topic: interests.trim(),
       personality: personality.trim(),
       previewUrl: previewShareUrl,
-      frontImg: coverSource === "ai" && covers.front.startsWith("http") ? covers.front : "",
-      backImg: coverSource === "ai" && covers.back.startsWith("http") ? covers.back : "",
+      frontImg: coverOutcome === "ai" && isHttpUrl(covers.front) ? covers.front : "",
+      backImg: coverOutcome === "ai" && isHttpUrl(covers.back) ? covers.back : "",
     });
-  }, [step, childName, age, interests, personality, previewShareUrl, coverSource, covers, t]);
+  }, [step, childName, age, interests, personality, previewShareUrl, coverOutcome, covers, t]);
 
   useEffect(() => () => setCoverEnquiry(null), []);
 
@@ -514,8 +623,8 @@ export function AiBookCreatorPanel({ showBackLink = true, releaseTag }: AiBookCr
         topic,
         personality: personality.trim(),
         previewUrl: previewShareUrl,
-        frontImg: coverSource === "ai" && covers.front.startsWith("http") ? covers.front : "",
-        backImg: coverSource === "ai" && covers.back.startsWith("http") ? covers.back : "",
+        frontImg: coverOutcome === "ai" && isHttpUrl(covers.front) ? covers.front : "",
+        backImg: coverOutcome === "ai" && isHttpUrl(covers.back) ? covers.back : "",
       },
       true,
     );
@@ -529,6 +638,23 @@ export function AiBookCreatorPanel({ showBackLink = true, releaseTag }: AiBookCr
     setShareCopied("link");
     window.setTimeout(() => setShareCopied(null), 2000);
   };
+
+  const onCoverImageError = () => {
+    if (artworkErrorOnce.current || coverOutcome !== "ai") return;
+    artworkErrorOnce.current = true;
+    const name = childName.trim();
+    const profile = getScholarlyProfile(interests.trim(), name);
+    const failure = { code: "artwork_load", reason: "" };
+    applySvgCovers(name, theme, profile);
+    setCoverOutcome("fallback");
+    setCoverErrorCode(failure.code);
+    setCoverErrorReason("");
+    setPreviewReady(true);
+    setStep("ready");
+    publishPreviewUrl(buildPreviewQuery(name, age.trim(), undefined, failure));
+  };
+
+  const illustrated = step === "ready" && coverOutcome === "ai";
 
   return (
     <section className="panel panel-showcase ai-book-hero-panel" id="ai-book-lab">
@@ -600,9 +726,8 @@ export function AiBookCreatorPanel({ showBackLink = true, releaseTag }: AiBookCr
           </label>
 
           {formError ? <p className="ai-form-error" role="alert">{formError}</p> : null}
-          {apiNotice ? <p className="ai-form-notice" role="status">{apiNotice}</p> : null}
 
-          {step === "form" ? (
+          {step !== "ready" ? (
             <>
               <button
                 type="button"
@@ -614,10 +739,34 @@ export function AiBookCreatorPanel({ showBackLink = true, releaseTag }: AiBookCr
               </button>
               <p className="meta ai-form-hint">{t.aiLab.aiTimingHint}</p>
             </>
-          ) : (
+          ) : illustrated ? (
             <div className="ai-cta-card ai-cta-card--ready">
               <h4>{t.aiLab.successTitle}</h4>
               <p className="ai-cta-copy">{t.aiLab.successDesc}</p>
+              <div className="ai-cta-row">
+                <button type="button" className="btn primary wa-btn ai-cta-primary" onClick={() => openCoverWhatsapp("ai_book")}>
+                  {t.aiLab.getLinkBtn}
+                </button>
+              </div>
+              <button type="button" className="btn ghost ai-share-copy-btn" onClick={() => void copyShareLink()}>
+                {shareCopied === "link" ? t.aiLab.copiedLink : t.aiLab.copyLink}
+              </button>
+            </div>
+          ) : (
+            <div className="ai-cta-card ai-cta-card--failed">
+              <h4>{t.aiLab.illustrationFailedTitle}</h4>
+              <p className="ai-cta-copy">{t.aiLab.illustrationFailedDesc}</p>
+              <p className="ai-illustration-alert" role="alert">
+                {illustrationAlertText(coverErrorCode, coverErrorReason, t.aiLab)}
+              </p>
+              <button
+                type="button"
+                className="btn primary ai-generate-btn"
+                onClick={() => void generatePreview()}
+                disabled={isGenerating}
+              >
+                {isGenerating ? generatePhase || t.aiLab.generating : t.aiLab.retryGenerate}
+              </button>
               <div className="ai-cta-row">
                 <button type="button" className="btn primary wa-btn ai-cta-primary" onClick={() => openCoverWhatsapp("ai_book")}>
                   {t.aiLab.getLinkBtn}
@@ -639,7 +788,7 @@ export function AiBookCreatorPanel({ showBackLink = true, releaseTag }: AiBookCr
             <div className="ai-book-pedestal" aria-hidden />
             <div className="book-stage">
               <div
-                className={`book-vol ${previewReady ? "book-vol--ready" : ""} ${coverSource === "ai" ? "book-vol--ai" : ""} ${dragging ? "book-vol--dragging" : ""}`}
+                className={`book-vol ${previewReady ? "book-vol--ready" : ""} ${illustrated ? "book-vol--ai" : ""} ${dragging ? "book-vol--dragging" : ""}`}
                 onPointerDown={(event) => {
                   (event.currentTarget as HTMLDivElement).setPointerCapture(event.pointerId);
                   setDragging({
@@ -668,9 +817,16 @@ export function AiBookCreatorPanel({ showBackLink = true, releaseTag }: AiBookCr
                   }
                 >
                   <div className="book-vol__face book-vol__face--front">
-                    <img className="book-vol__cover-img" src={covers.front} alt="" draggable={false} />
+                    <img
+                      className="book-vol__cover-img"
+                      src={covers.front}
+                      alt=""
+                      draggable={false}
+                      referrerPolicy="no-referrer"
+                      onError={onCoverImageError}
+                    />
                     <div className="book-cover-frame-square" aria-hidden />
-                    {coverSource === "ai" ? (
+                    {illustrated ? (
                       <div className="book-cover-overlay book-cover-overlay--front">
                         <div className="book-cover-overlay__header-row">
                           <p className="book-cover-overlay__edition">{coverMeta.seriesName}</p>
@@ -688,9 +844,16 @@ export function AiBookCreatorPanel({ showBackLink = true, releaseTag }: AiBookCr
                     ) : null}
                   </div>
                   <div className="book-vol__face book-vol__face--back">
-                    <img className="book-vol__cover-img" src={covers.back} alt="" draggable={false} />
+                    <img
+                      className="book-vol__cover-img"
+                      src={covers.back}
+                      alt=""
+                      draggable={false}
+                      referrerPolicy="no-referrer"
+                      onError={onCoverImageError}
+                    />
                     <div className="book-cover-frame-square" aria-hidden />
-                    {coverSource === "ai" ? (
+                    {illustrated ? (
                       <div className="book-cover-overlay book-cover-overlay--back">
                         <div className="book-cover-overlay__back-header">
                           <p className="book-cover-overlay__edition">PROFESSOR-GUIDED MONOGRAPH SYNOPSIS</p>
